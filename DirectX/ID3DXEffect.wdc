@@ -1,0 +1,319 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXEffect
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19df49fc1c89d191
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXEffect est une classe
+      	un objet ID3DXBaseEffect
+      	
+      Fin
+      
+      constant
+      	
+      	// Méthodes de l'interface ID3DXEffect (VTABLE)
+      	ID3DXEffect_GetPool									= ::ID3DXBaseEffect___IDXBASE + 1
+      	ID3DXEffect_SetTechnique							= ::ID3DXBaseEffect___IDXBASE + 2
+      	ID3DXEffect_GetCurrentTechnique						= ::ID3DXBaseEffect___IDXBASE + 3
+      	ID3DXEffect_ValidateTechnique						= ::ID3DXBaseEffect___IDXBASE + 4
+      	ID3DXEffect_FindNextValidTechnique					= ::ID3DXBaseEffect___IDXBASE + 5
+      	ID3DXEffect_IsParameterUsed							= ::ID3DXBaseEffect___IDXBASE + 6
+      	ID3DXEffect_Begin									= ::ID3DXBaseEffect___IDXBASE + 7
+      	ID3DXEffect_BeginPass								= ::ID3DXBaseEffect___IDXBASE + 8
+      	ID3DXEffect_CommitChanges							= ::ID3DXBaseEffect___IDXBASE + 9
+      	ID3DXEffect_EndPass									= ::ID3DXBaseEffect___IDXBASE + 10
+      	ID3DXEffect_End										= ::ID3DXBaseEffect___IDXBASE + 11
+      	ID3DXEffect_GetDevice								= ::ID3DXBaseEffect___IDXBASE + 12
+      	ID3DXEffect_OnLostDevice							= ::ID3DXBaseEffect___IDXBASE + 13
+      	ID3DXEffect_OnResetDevice							= ::ID3DXBaseEffect___IDXBASE + 14
+      	ID3DXEffect_SetStateManager							= ::ID3DXBaseEffect___IDXBASE + 15
+      	ID3DXEffect_GetStateManager							= ::ID3DXBaseEffect___IDXBASE + 16
+      	ID3DXEffect_BeginParameterBlock						= ::ID3DXBaseEffect___IDXBASE + 17
+      	ID3DXEffect_EndParameterBlock						= ::ID3DXBaseEffect___IDXBASE + 18
+      	ID3DXEffect_ApplyParameterBlock						= ::ID3DXBaseEffect___IDXBASE + 19
+      	ID3DXEffect_DeleteParameterBlock					= ::ID3DXBaseEffect___IDXBASE + 20
+      	ID3DXEffect_CloneEffect								= ::ID3DXBaseEffect___IDXBASE + 21
+      	ID3DXEffect_SetRawValue								= ::ID3DXBaseEffect___IDXBASE + 22
+      	ID3DXEffect___IDXBASE								= ::ID3DXBaseEffect___IDXBASE + 22
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1864290117914120593
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur ID3DXBaseEffect(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Effect.IID_ID3DXEffect
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1864290117914186129
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetPool
+     procedure_id : 1866472274473968658
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetPool
+      Procédure GetPool(pclPool est un ID3DXEffectPool dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvPool est un entier systeme
+      
+      	// Appel
+      	HRESULT = :call(ID3DXEffect_GetPool, &ppvPool)
+      	
+      	// Allocation
+      	__BindInterface(pclPool, ppvPool, ID3DXEffectPool)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : SetTechnique
+     procedure_id : 1866472283063970752
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetTechnique
+      Procédure SetTechnique(hTechnique est un entier sans signe)
+      RENVOYER :CALL(ID3DXEffect_SetTechnique, hTechnique)
+     type : 458752
+   -
+     name : GetCurrentTechnique
+     procedure_id : 1866472291653972830
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetCurrentTechnique
+      Procédure GetCurrentTechnique()
+      RENVOYER :CALL(ID3DXEffect_GetCurrentTechnique)
+     type : 458752
+   -
+     name : ValidateTechnique
+     procedure_id : 1866472300243974971
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ValidateTechnique
+      Procédure ValidateTechnique(hTechnique est un entier sans signe)
+      RENVOYER :CALL(ID3DXEffect_ValidateTechnique, hTechnique)
+     type : 458752
+   -
+     name : FindNextValidTechnique
+     procedure_id : 1866472308833911325
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode FindNextValidTechnique
+      Procédure FindNextValidTechnique(hTechnique est un entier sans signe, Technique est un entier sans signe)
+      RENVOYER :CALL(ID3DXEffect_FindNextValidTechnique, hTechnique, &Technique)
+     type : 458752
+   -
+     name : IsParameterUsed
+     procedure_id : 1866472313128945998
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode IsParameterUsed
+      Procédure IsParameterUsed(hParameter est un entier sans signe, hTechnique est un entier sans signe)
+      RENVOYER :CALL(ID3DXEffect_IsParameterUsed, hParameter, hTechnique)
+     type : 458752
+   -
+     name : Begin
+     internal_properties : CAAAAAgAAABKtXZQVT6tyBc2O8Y+U4Qrb3itwYAR7D6lOwdbCYsOwwv40B3BmXfXwoIz6UG+99iTSAPLvxfr6ul+HLcRYvlt/smcKdS4aYbHv1xCl1LX3/QTRk+/jxPhYQupGEZxdGsw94UpEXtg6XqTuw==
+     procedure_id : 1866472321718948076
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Begin
+      Procédure Begin(Passes est un entier sans signe, Flags est un entier sans signe)
+      RENVOYER :CALL(ID3DXEffect_Begin, &Passes, Flags)
+     type : 458752
+   -
+     name : BeginPass
+     procedure_id : 1866472330308949936
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode BeginPass
+      Procédure BeginPass(Pass est un entier sans signe)
+      RENVOYER :CALL(ID3DXEffect_BeginPass, Pass)
+     type : 458752
+   -
+     name : CommitChanges
+     procedure_id : 1866472338898951795
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CommitChanges
+      Procédure CommitChanges()
+      RENVOYER :CALL(ID3DXEffect_CommitChanges)
+     type : 458752
+   -
+     name : EndPass
+     procedure_id : 1866472351783922293
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode EndPass
+      Procédure EndPass()
+      RENVOYER :CALL(ID3DXEffect_EndPass)
+     type : 458752
+   -
+     name : End_
+     procedure_id : 1866472360373924714
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode End
+      Procédure End_()
+      RENVOYER :CALL(ID3DXEffect_End)
+     type : 458752
+   -
+     name : GetDevice
+     procedure_id : 1866472390438768357
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDevice 
+      Procédure GetDevice(pclDevice est un IDirect3DDevice9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvDevice est un entier systeme
+      
+      	// Appel	
+      	HRESULT = :CALL(ID3DXEffect_GetDevice, &ppvDevice)
+      	
+      	// Allocation
+      	__BindInterface(pclDevice, ppvDevice, IDirect3DDevice9)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : OnLostDevice
+     procedure_id : 1866472399028770482
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode OnLostDevice
+      Procédure OnLostDevice()
+      RENVOYER :CALL(ID3DXEffect_OnLostDevice)
+     type : 458752
+   -
+     name : OnResetDevice
+     procedure_id : 1866472407618772747
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode OnResetDevice
+      Procédure OnResetDevice()
+      RENVOYER :CALL(ID3DXEffect_OnResetDevice)
+     type : 458752
+   -
+     name : SetStateManager
+     procedure_id : 1866472416208774888
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetStateManager
+      Procédure SetStateManager(pclManager est un ID3DXEffectStateManager dynamique)
+      RENVOYER :CALL(ID3DXEffect_SetStateManager, ptr(pclManager))
+     type : 458752
+   -
+     name : GetStateManager
+     procedure_id : 1866472429093744668
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetStateManager
+      Procédure GetStateManager(pclManager est un ID3DXEffectStateManager dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvManager est un entier systeme
+      	
+      	// Appel	
+      	HRESULT = :CALL(ID3DXEffect_GetStateManager, &ppvManager)
+      	
+      	// Allocation
+      	pclManager = pID3DXEffectStateManager.__ID3DXEffectStateManagerObjects[ppvManager]
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : BeginParameterBlock
+     procedure_id : 1866472437683746808
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode BeginParameterBlock
+      Procédure BeginParameterBlock()
+      RENVOYER :CALL(ID3DXEffect_BeginParameterBlock)
+     type : 458752
+   -
+     name : EndParameterBlock
+     procedure_id : 1866472446273748964
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode EndParameterBlock
+      Procédure EndParameterBlock()
+      RENVOYER :CALL(ID3DXEffect_EndParameterBlock)
+     type : 458752
+   -
+     name : ApplyParameterBlock
+     procedure_id : 1866472454863751292
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ApplyParameterBlock
+      Procédure ApplyParameterBlock(hParameterBlock est un entier sans signe)
+      RENVOYER :CALL(ID3DXEffect_ApplyParameterBlock, hParameterBlock)
+     type : 458752
+   -
+     name : DeleteParameterBlock
+     procedure_id : 1866472463453753838
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode DeleteParameterBlock
+      Procédure DeleteParameterBlock(hParameterBlock est un entier sans signe)
+      RENVOYER :CALL(ID3DXEffect_DeleteParameterBlock, hParameterBlock)
+     type : 458752
+   -
+     name : CloneEffect
+     procedure_id : 1866472476338723446
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CloneEffect
+      Procédure CloneEffect(pclDevice est un IDirect3DDevice9 dynamique, pclEffect est un ID3DXEffect dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvEffect est un entier systeme
+      	
+      	// Appel	
+      	HRESULT = :CALL(ID3DXEffect_CloneEffect, ptr(pclDevice), &ppvEffect)
+      	
+      	// Allocation
+      	__BindInterface(pclEffect, ppvEffect, ID3DXEffect)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : SetRawValue
+     procedure_id : 1866472480633758243
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetRawValue
+      Procédure SetRawValue(hParameter est un entier sans signe, pData est un entier systeme, ByteOffset est un entier sans signe, dwBytes est un entier sans signe)
+      RENVOYER :CALL(ID3DXEffect_SetRawValue, hParameter, pData, ByteOffset, dwBytes)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000c4cb2fc
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,158 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IDispatch
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19895f3903d92892
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      IDispatch est une classe	
+      	un objet IUnknown
+      
+      FIN
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface IDispatch (VTABLE)
+      	IDispatch_GetTypeInfoCount 	= ::IUnknown___IDXBASE + 1
+      	IDispatch_GetTypeInfo	 	= ::IUnknown___IDXBASE + 2
+      	IDispatch_GetIDsOfNames	  	= ::IUnknown___IDXBASE + 3
+      	IDispatch_Invoke			= ::IUnknown___IDXBASE + 4
+      	IDispatch___IDXBASE			= ::IUnknown___IDXBASE + 4
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1840106621239961746
+     type_code : 27
+     code : |1-
+      Procédure Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = COMUtils.IID_IDispatch
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1840106621240027282
+     type_code : 28
+     code : |1+
+      Procédure Destructeur()
+      
+     type : 655360
+   -
+     name : GetTypeInfoCount
+     internal_properties : CAAAAAgAAABmtoXjJgaLOr93ylKWFYl3hXVyAmQJ4Wip8ZVpVJvt3D1WncCSvmuPIvME3EKUNS0fJHODDSYcaXeTO8J5uvuER6JC4x4mQjaFaNW3U+UPciuPLdzeU3Wyc0GPThIzNLK9rocAW0xlLh3XXT+/E4vNk0crM4ucDvWJZRl2LKFq2XW/qb4RPNXQUFZJsbxe+jfY62dVknGWlnucJoVnqj4VPikl
+     procedure_id : 1840108824559877251
+     type_code : 12
+     code : |1-
+      // Résumé : (MSDN) Retrieves the number of type information interfaces that an object provides (either 0 or 1).
+      // Syntaxe :
+      //[ <Résultat> = ] GetTypeInfoCount (<pctInfo> est entier)
+      //
+      // Paramètres :
+      //	pctInfo (entier) : [in] Points to a location that receives the number of type information interfaces provided by the object. If the object provides type information, this number is 1; otherwise the number is 0.
+      // Valeur de retour :
+      // 	entier système :      Valeur de retour de type C++ HRESULT
+      //
+      Procédure GetTypeInfoCount(local pctInfo est un entier)
+      RENVOYER :CALL(IDispatch_GetTypeInfoCount, pctInfo)
+     type : 458752
+   -
+     name : GetIDsOfNames
+     internal_properties : CAAAAAgAAADnGPyM+LhHOxq3beJZQXVcOKgynm610tJ3nf8KQoJSD9XTWQcDg+LLcENK4nDD+uvG8vW/VupT18P21cIhtmrZY9f0CNbN7x2ZtvNAVBewUcdlzKq04cbNPO43xZzkz5YkxWYTZYB6dH2tEh0xoCdSCv76rgHHWE9K76BXsSthe0c317TkXL141nMbPqdiCvkaWdVbL4bvgSWEK/swgn79xX6/4nR11ombvgrx9c9xAvyGlmpjOHMm5N/SwD5zGukexOwCr9A4JEv524cjzh4MdwcYa2/VGNWg6gKf
+     procedure_id : 1840109305596260782
+     type_code : 12
+     code : |1-
+      // Résumé : (MSDN) Maps a single member and an optional set of argument names to a corresponding set of integer DISPIDs, which can be used on subsequent calls to IDispatch::Invoke. The dispatch function DispGetIDsOfNames provides a standard implementation of GetIDsOfNames.
+      // Syntaxe :
+      //[ <Résultat> = ] GetIDsOfNames (<riid> est entier, <rgszNames> est entier, <cNames> est entier sans signe sur 2 octets, <lcid> est entier, <rgDispid> est entier)
+      //
+      // Paramètres :
+      //	riid (entier) : [in] Reserved for future use. Must be IID_NULL.
+      //	rgszNames (entier) : [in] Passed-in array of names to be mapped.
+      //	cNames (entier sans signe sur 2 octets) : [in] Count of the names to be mapped.
+      //	lcid (entier) : [in] The locale context in which to interpret the names.
+      //	rgDispid (entier) : [in] Caller-allocated array, each element of which contains an identifier (ID) corresponding to one of the names passed in the rgszNames array. The first element represents the member name. The subsequent elements represent each of the member's parameters.
+      // Valeur de retour :
+      // 	entier système :      Valeur de retour de type C++ HRESULT
+      //
+      Procédure GetIDsOfNames(local riid est un entier, local rgszNames est un entier, local cNames est un entier sans signe sur 2, local lcid est un entier, local rgDispid est un entier)
+      RENVOYER :CALL(IDispatch_GetTypeInfoCount, riid, rgszNames, cNames, lcid, rgDispid)
+     type : 458752
+   -
+     name : GetTypeInfo
+     internal_properties : CAAAAAgAAAAl7edSU+9/7IZ7D9lkL/tMFK2AclqY4KXJxvDkRTUs6Zsvukz7oZde3w6Okrr+NolNTMtwZNZDZeD0Y3ds9rKVB4fQXMU/+fUip1FlP9zzLXLZX1Qc4mV0nxWlQaaWtxIFZdYf6M97tOZRHB/oAmVMyY+bRthtbJNcmbiCx2BK52m767m66SqXcV4A+NXmRn1x4r4zkhKbfe8eu2hxar4EsJ5I+lQOUTKKXR9JXo/KyEHJp5VR2ESsGH5dSiNKO5GTM3lm+qE=
+     procedure_id : 1840110422287821453
+     type_code : 12
+     code : |1-
+      // Résumé : (MSDN) Retrieves the type information for an object, which can then be used to get the type information for an interface.
+      // Syntaxe :
+      //[ <Résultat> = ] GetTypeInfo (<iTInfo> est entier sans signe sur 2 octets, <lcid> est entier, <ppTInfo>)
+      //
+      // Paramètres :
+      //	iTInfo (entier sans signe sur 2 octets) : [in] The type information to return. Pass 0 to retrieve type information for the IDispatch implementation.
+      //	lcid (entier) : [in] The locale identifier for the type information. An object may be able to return different type information for different languages. This is important for classes that support localized member names. For classes that do not support localized member names, this parameter can be ignored.
+      //	ppTInfo : [out] Receives a pointer to the requested type information object.
+      // Valeur de retour :
+      // 	entier système :      Valeur de retour de type C++ HRESULT
+      //
+      Procédure GetTypeInfo(local iTInfo est un entier sans signe sur 2, local lcid est un entier, ppTInfo est un ITypeInfo dynamique)
+      
+      	HRESULT 	est un entier systeme
+      	ppvppTInfo	est un entier
+      	
+      	// Appel
+      	HRESULT = :CALL(IDispatch_GetTypeInfo, iTInfo, lcid, &ppvppTInfo)
+      	
+      	// Ré-alloue l'objet
+      	__BindInterface(ppTInfo, ppvppTInfo, ITypeInfo)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : Invoke
+     internal_properties : CAAAAAgAAABFxvUKU0TeM09eNoevbohU3UfppXXJqsVSMv0zs1HIk3yz/2lPpM7hJWP7S9kO76YtDdH9shA54VI6MkLwj+AUpfJflx0nRSExp7lBWcFYFQOMCumkfHz4ZlbylkCRQuq2iLvvrYkOkpagRA3gKrnI9sNYEWE4a36K+PM0dqWsvfqWWDlFM7ZDbcKes5wd1cY5sJwyfndQUPQbSqSdlXnycuSR6Vcqy8Xl32ldyZsoF0hqiGWYaCw4SAvs5wIz0ybdhoBt8o6MkslDFW527ESX4fNg1vyM96+4Omzwn8dqbV5fsX3c+nk1XmaoghteTu/E5u8m2yGHSTLNueI=
+     procedure_id : 1840111255511539793
+     type_code : 12
+     code : |1-
+      // Résumé : (MSDN) Provides access to properties and methods exposed by an object. The dispatch function DispInvoke provides a standard implementation of IDispatch::Invoke.
+      // Syntaxe :
+      //[ <Résultat> = ] Invoke (<dispIdMember> est entier, <riid> est entier, <lcid> est entier, <wFlags> est entier sur 2 octets, <pDispParams> est entier, <pVarResult> est entier, <pExcepInfo> est entier, <puArgErr> est entier)
+      //
+      // Paramètres :
+      //	dispIdMember (entier) : [in] Identifies the member. Use IDispatch::GetIDsOfNames or the object's documentation to obtain the dispatch identifier.
+      //	riid (entier) : [in] Reserved for future use. Must be IID_NULL.
+      //	lcid (entier) : [in] The locale context in which to interpret arguments. The lcid is used by the GetIDsOfNames function, and is also passed to IDispatch::Invoke to allow the object to interpret its arguments specific to a locale.
+      //	wFlags (entier sur 2 octets) : [in] Flags describing the context of the Invoke call
+      //	pDispParams (entier) : [out] Pointer to a DISPPARAMS structure containing an array of arguments, an array of argument DISPIDs for named arguments, and counts for the number of elements in the arrays.
+      //	pVarResult (entier) : [out] Pointer to the location where the result is to be stored, or NULL if the caller expects no result. This argument is ignored if DISPATCH_PROPERTYPUT or DISPATCH_PROPERTYPUTREF is specified.
+      //	pExcepInfo (entier) : [out] Pointer to a structure that contains exception information. This structure should be filled in if DISP_E_EXCEPTION is returned. Can be NULL
+      //	puArgErr (entier) : [out] The index within rgvarg of the first argument that has an error. Arguments are stored in pDispParams->rgvarg in reverse order, so the first argument is the one with the highest index in the array. This parameter is returned only when the resulting return value is DISP_E_TYPEMISMATCH or DISP_E_PARAMNOTFOUND. This argument can be set to null.
+      // Valeur de retour :
+      // 	entier système :      Valeur de retour de type C++ HRESULT
+      //
+      Procédure Invoke(local dispIdMember est un entier, local riid est un entier, local lcid est un entier, local wFlags est un entier sur 2, local pDispParams est un entier, local pVarResult est un entier, local pExcepInfo est un entier, local puArgErr est un entier)
+      RENVOYER :CALL(IDispatch_Invoke, dispIdMember, riid, lcid, wFlags, pDispParams, pVarResult, pExcepInfo, puArgErr)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000c2db2cd
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

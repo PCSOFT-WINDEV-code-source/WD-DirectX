@@ -1,0 +1,424 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pD3DX9Effect
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x19df359012730d86
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+      ////////////////////////////////////////////////////////////
+      // <Constantes>
+      
+      constant
+      	D3DXFX_DONOTSAVESTATE         = 1 //(1 << 0)
+      	D3DXFX_DONOTSAVESHADERSTATE   = 2 //(1 << 1)
+      	D3DXFX_DONOTSAVESAMPLERSTATE  = 4 //(1 << 2)
+      	
+      	D3DXFX_NOT_CLONEABLE          = 2048 //(1 << 11)
+      	D3DXFX_LARGEADDRESSAWARE      = 131072 //(1 << 17)
+      	
+      	D3DX_PARAMETER_SHARED       = 1 //(1 << 0)
+      	D3DX_PARAMETER_LITERAL      = 2 //(1 << 1)
+      	D3DX_PARAMETER_ANNOTATION   = 4 //(1 << 2)
+      FIN
+      
+      // </Constantes>
+      
+      	
+      ////////////////////////////////////////////////////////////
+      // <IIDs>
+      
+      IID_ID3DXEffectPool				est un iid
+      IID_ID3DXBaseEffect				est un iid
+      IID_ID3DXEffectStateManager		est un iid
+      IID_ID3DXEffect					est un iid
+      IID_ID3DXEffectCompiler			est un iid
+      
+      // </IIDs>
+      
+      ////////////////////////////////////////////////////////////
+      // <Déclaration des IIDs>
+      
+      DEFINE_GUID(IID_ID3DXEffectPool, 			0x9537ab04, 0x3250, 0x412e, 0x82, 0x13, 0xfc, 0xd2, 0xf8, 0x67, 0x79, 0x33)
+      DEFINE_GUID(IID_ID3DXBaseEffect, 			0x017c18ac, 0x103f, 0x4417, 0x8c, 0x51, 0x6b, 0xf6, 0xef, 0x1e, 0x56, 0xbe)
+      DEFINE_GUID(IID_ID3DXEffectStateManager, 	0x79aab587, 0x6dbc, 0x4fa7, 0x82, 0xde, 0x37, 0xfa, 0x17, 0x81, 0xc5, 0xce)
+      DEFINE_GUID(IID_ID3DXEffect, 				0xf6ceb4b3, 0x4e4c, 0x40dd, 0xb8, 0x83, 0x8d, 0x8d, 0xe5, 0xea, 0x0c, 0xd5)
+      DEFINE_GUID(IID_ID3DXEffectCompiler, 		0x51b8a949, 0x1a31, 0x47e6, 0xbe, 0xa0, 0x4b, 0x30, 0xdb, 0x53, 0xf1, 0xe0)
+      
+      // </Déclaration des IIDs>
+     type : 720896
+  procedures :
+   -
+     name : D3DXCreateEffectPool
+     procedure_id : 1864294194052156148
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateEffectPool
+      Procédure D3DXCreateEffectPool(pclPool est un ID3DXEffectPool dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXEffectPool est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreateEffectPool", &ppvID3DXEffectPool)
+      	
+      	// Allocation
+      	__BindInterface(pclPool, ppvID3DXEffectPool, ID3DXEffectPool)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXCreateEffectFromFileA
+     procedure_id : 1864294563419429639
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateEffectFromFileA
+      Procédure D3DXCreateEffectFromFileA(pclDevice est un IDirect3DDevice9 dynamique, SrcFile est une chaine, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, Flags est un entier sans signe, pclPool est un ID3DXEffectPool dynamique, pclEffect est un ID3DXEffect dynamique, pclCompilationErrors est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXEffect est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateEffectFromFileA", PTR(pclDevice), &SrcFile, PTR(Defines), PTR(pclInclude), Flags, PTR(pclPool), &ppvID3DXEffect, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclEffect, ppvID3DXEffect, ID3DXEffect)
+      	__BindInterface(pclCompilationErrors, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateEffectFromFileW
+     procedure_id : 1864301941599425007
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateEffectFromFileW
+      Procédure D3DXCreateEffectFromFileW(pclDevice est un IDirect3DDevice9 dynamique, SrcFile est une chaine unicode, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, Flags est un entier sans signe, pclPool est un ID3DXEffectPool dynamique, pclEffect est un ID3DXEffect dynamique, pclCompilationErrors est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXEffect est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateEffectFromFileW", PTR(pclDevice), &SrcFile, PTR(Defines), PTR(pclInclude), Flags, PTR(pclPool), &ppvID3DXEffect, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclEffect, ppvID3DXEffect, ID3DXEffect)
+      	__BindInterface(pclCompilationErrors, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateEffectFromResourceA
+     procedure_id : 1864302358211284044
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateEffectFromResourceA
+      Procédure D3DXCreateEffectFromResourceA(pclDevice est un IDirect3DDevice9 dynamique, hSrcModule est un entier systeme, SrcResource est une chaine, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, Flags est un entier sans signe, pclPool est un ID3DXEffectPool dynamique, pclEffect est un ID3DXEffect dynamique, pclCompilationErrors est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXEffect est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateEffectFromResourceA", PTR(pclDevice), hSrcModule, &SrcResource, PTR(Defines), PTR(pclInclude), Flags, PTR(pclPool), &ppvID3DXEffect, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclEffect, ppvID3DXEffect, ID3DXEffect)
+      	__BindInterface(pclCompilationErrors, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateEffectFromResourceW
+     procedure_id : 1864302547189955158
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateEffectFromResourceW
+      Procédure D3DXCreateEffectFromResourceW(pclDevice est un IDirect3DDevice9 dynamique, hSrcModule est un entier systeme, SrcResource est une chaine unicode, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, Flags est un entier sans signe, pclPool est un ID3DXEffectPool dynamique, pclEffect est un ID3DXEffect dynamique, pclCompilationErrors est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXEffect est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateEffectFromResourceW", PTR(pclDevice), hSrcModule, &SrcResource, PTR(Defines), PTR(pclInclude), Flags, PTR(pclPool), &ppvID3DXEffect, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclEffect, ppvID3DXEffect, ID3DXEffect)
+      	__BindInterface(pclCompilationErrors, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateEffect
+     procedure_id : 1864302671744035478
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateEffect
+      Procédure D3DXCreateEffect(pclDevice est un IDirect3DDevice9 dynamique, SrcData est un entier systeme, SrcDataLen est un entier sans signe, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, Flags est un entier sans signe, pclPool est un ID3DXEffectPool dynamique, pclEffect est un ID3DXEffect dynamique, pclCompilationErrors est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXEffect est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateEffect", PTR(pclDevice), SrcData, SrcDataLen, PTR(Defines), PTR(pclInclude), Flags, PTR(pclPool), &ppvID3DXEffect, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclEffect, ppvID3DXEffect, ID3DXEffect)
+      	__BindInterface(pclCompilationErrors, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateEffectFromFileExA
+     procedure_id : 1864302895082386865
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateEffectFromFileExA
+      Procédure D3DXCreateEffectFromFileExA(pclDevice est un IDirect3DDevice9 dynamique, SrcFile est une chaine, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, SkipConstants est une chaine, Flags est un entier sans signe, pclPool est un ID3DXEffectPool dynamique, pclEffect est un ID3DXEffect dynamique, pclCompilationErrors est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXEffect est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateEffectFromFileExA", PTR(pclDevice), &SrcFile, PTR(Defines), PTR(pclInclude), &SkipConstants, Flags, PTR(pclPool), &ppvID3DXEffect, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclEffect, ppvID3DXEffect, ID3DXEffect)
+      	__BindInterface(pclCompilationErrors, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateEffectFromFileExW
+     procedure_id : 1864303045406343032
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateEffectFromFileExW
+      Procédure D3DXCreateEffectFromFileExW(pclDevice est un IDirect3DDevice9 dynamique, SrcFile est une chaine unicode, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, SkipConstants est une chaine, Flags est un entier sans signe, pclPool est un ID3DXEffectPool dynamique, pclEffect est un ID3DXEffect dynamique, pclCompilationErrors est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXEffect est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateEffectFromFileExW", PTR(pclDevice), &SrcFile, PTR(Defines), PTR(pclInclude), &SkipConstants, Flags, PTR(pclPool), &ppvID3DXEffect, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclEffect, ppvID3DXEffect, ID3DXEffect)
+      	__BindInterface(pclCompilationErrors, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateEffectFromResourceExA
+     procedure_id : 1864303144190613866
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateEffectFromResourceExA
+      Procédure D3DXCreateEffectFromResourceExA(pclDevice est un IDirect3DDevice9 dynamique, hSrcModule est un entier systeme, SrcResource est une chaine, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, SkipConstants est une chaine, Flags est un entier sans signe, pclPool est un ID3DXEffectPool dynamique, pclEffect est un ID3DXEffect dynamique, pclCompilationErrors est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXEffect est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateEffectFromResourceExA", PTR(pclDevice), hSrcModule, &SrcResource, PTR(Defines), PTR(pclInclude), &SkipConstants, Flags, PTR(pclPool), &ppvID3DXEffect, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclEffect, ppvID3DXEffect, ID3DXEffect)
+      	__BindInterface(pclCompilationErrors, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateEffectFromResourceExW
+     procedure_id : 1864303247269917922
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateEffectFromResourceExW
+      Procédure D3DXCreateEffectFromResourceExW(pclDevice est un IDirect3DDevice9 dynamique, hSrcModule est un entier systeme, SrcResource est une chaine unicode, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, SkipConstants est une chaine, Flags est un entier sans signe, pclPool est un ID3DXEffectPool dynamique, pclEffect est un ID3DXEffect dynamique, pclCompilationErrors est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXEffect est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateEffectFromResourceExW", PTR(pclDevice), hSrcModule, &SrcResource, PTR(Defines), PTR(pclInclude), &SkipConstants, Flags, PTR(pclPool), &ppvID3DXEffect, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclEffect, ppvID3DXEffect, ID3DXEffect)
+      	__BindInterface(pclCompilationErrors, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateEffectEx
+     procedure_id : 1864303354644191333
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateEffectEx
+      Procédure D3DXCreateEffectEx(pclDevice est un IDirect3DDevice9 dynamique, SrcData est un entier systeme, SrcDataLen est un entier sans signe, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, SkipConstants est une chaine, Flags est un entier sans signe, pclPool est un ID3DXEffectPool dynamique, pclEffect est un ID3DXEffect dynamique, pclCompilationErrors est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXEffect est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateEffectEx", PTR(pclDevice), SrcData, SrcDataLen, PTR(Defines), PTR(pclInclude), &SkipConstants, Flags, PTR(pclPool), &ppvID3DXEffect, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclEffect, ppvID3DXEffect, ID3DXEffect)
+      	__BindInterface(pclCompilationErrors, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateEffectCompilerFromFileA
+     procedure_id : 1864308070518331170
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateEffectCompilerFromFileA
+      Procédure D3DXCreateEffectCompilerFromFileA(SrcFile est une chaine, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, Flags est un entier sans signe, pclCompiler est un ID3DXEffectCompiler dynamique, pclParseErrors est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXEffectCompiler est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateEffectCompilerFromFileA", &SrcFile, PTR(Defines), PTR(pclInclude), Flags, &ppvID3DXEffectCompiler, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclCompiler, ppvID3DXEffectCompiler, ID3DXEffectCompiler)
+      	__BindInterface(pclParseErrors, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateEffectCompilerFromFileW
+     procedure_id : 1864308418410763968
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateEffectCompilerFromFileW
+      Procédure D3DXCreateEffectCompilerFromFileW(SrcFile est une chaine unicode, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, Flags est un entier sans signe, pclCompiler est un ID3DXEffectCompiler dynamique, pclParseErrors est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXEffectCompiler est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateEffectCompilerFromFileW", &SrcFile, PTR(Defines), PTR(pclInclude), Flags, &ppvID3DXEffectCompiler, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclCompiler, ppvID3DXEffectCompiler, ID3DXEffectCompiler)
+      	__BindInterface(pclParseErrors, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateEffectCompilerFromResourceA
+     procedure_id : 1864308508605097745
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateEffectCompilerFromResourceA
+      Procédure D3DXCreateEffectCompilerFromResourceA(hSrcModule est un entier systeme, SrcResource est une chaine, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, Flags est un entier sans signe, pclCompiler est un ID3DXEffectCompiler dynamique, pclParseErrors est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXEffectCompiler est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateEffectCompilerFromResourceA", hSrcModule, &SrcResource, PTR(Defines), PTR(pclInclude), Flags, &ppvID3DXEffectCompiler, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclCompiler, ppvID3DXEffectCompiler, ID3DXEffectCompiler)
+      	__BindInterface(pclParseErrors, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateEffectCompilerFromResourceW
+     procedure_id : 1864308667518990736
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateEffectCompilerFromResourceW
+      Procédure D3DXCreateEffectCompilerFromResourceW(hSrcModule est un entier systeme, SrcResource est une chaine unicode, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, Flags est un entier sans signe, pclCompiler est un ID3DXEffectCompiler dynamique, pclParseErrors est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXEffectCompiler est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateEffectCompilerFromResourceW", hSrcModule, &SrcResource, PTR(Defines), PTR(pclInclude), Flags, &ppvID3DXEffectCompiler, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclCompiler, ppvID3DXEffectCompiler, ID3DXEffectCompiler)
+      	__BindInterface(pclParseErrors, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateEffectCompiler
+     procedure_id : 1864308757713324169
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateEffect
+      Procédure D3DXCreateEffectCompiler(SrcData est un entier systeme, SrcDataLen est un entier sans signe, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, Flags est un entier sans signe, pclCompiler est un ID3DXEffectCompiler dynamique, pclParseErrors est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXEffectCompiler est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateEffect", SrcData, SrcDataLen, PTR(Defines), PTR(pclInclude), Flags, &ppvID3DXEffectCompiler, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclCompiler, ppvID3DXEffectCompiler, ID3DXEffectCompiler)
+      	__BindInterface(pclParseErrors, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXDisassembleEffect
+     procedure_id : 1864309036886264164
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXDisassembleEffect
+      Procédure D3DXDisassembleEffect(pclEffect est un id3dxeffect dynamique, bEnableColorCode est un booléen, pclDisassembly est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXDisassembleEffect", PTR(pclEffect), bEnableColorCode, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclDisassembly, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x10d999010e45b4ff
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

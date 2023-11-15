@@ -1,0 +1,230 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXFont
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19dc993801455872
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXFont est une classe
+      	un objet IUnknown
+      	
+      FIN
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ID3DXFont (VTABLE)
+      	ID3DXFont_GetDevice				= ::IUnknown___IDXBASE + 1
+      	ID3DXFont_GetDescA				= ::IUnknown___IDXBASE + 2
+      	ID3DXFont_GetDescW				= ::IUnknown___IDXBASE + 3
+      	ID3DXFont_GetTextMetricsA		= ::IUnknown___IDXBASE + 4
+      	ID3DXFont_GetTextMetricsW		= ::IUnknown___IDXBASE + 5
+      	ID3DXFont_GetDC					= ::IUnknown___IDXBASE + 6
+      	ID3DXFont_GetGlyphData			= ::IUnknown___IDXBASE + 7
+      	ID3DXFont_PreloadCharacters		= ::IUnknown___IDXBASE + 8
+      	ID3DXFont_PreloadGlyphs			= ::IUnknown___IDXBASE + 9
+      	ID3DXFont_PreloadTextA			= ::IUnknown___IDXBASE + 10
+      	ID3DXFont_PreloadTextW			= ::IUnknown___IDXBASE + 11
+      	ID3DXFont_DrawTextA				= ::IUnknown___IDXBASE + 12
+      	ID3DXFont_DrawTextW				= ::IUnknown___IDXBASE + 13
+      	ID3DXFont_OnLostDevice			= ::IUnknown___IDXBASE + 14
+      	ID3DXFont_OnResetDevice			= ::IUnknown___IDXBASE + 15
+      	ID3DXFont_GetDesc				= ::IUnknown___IDXBASE + 16
+      	ID3DXFont_PreloadText			= ::IUnknown___IDXBASE + 17
+      	ID3DXFont___IDXBASE				= ::IUnknown___IDXBASE + 17
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863532811643148402
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Core.IID_ID3DXFont
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863532811643213938
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetDescA
+     procedure_id : 1866445250504155755
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDescA
+      Procédure GetDescA(Desc est un D3DXFONT_DESCA)
+      RENVOYER :CALL(id3dxfont_GetDescA, &Desc)
+     type : 458752
+   -
+     name : GetDescW
+     procedure_id : 1866445259094157911
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDescW
+      Procédure GetDescW(Desc est un D3DXFONT_DESCw)
+      RENVOYER :CALL(id3dxfont_GetDescW, &Desc)
+     type : 458752
+   -
+     name : GetTextMetricsA
+     procedure_id : 1866445267684159880
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetTextMetricsA
+      Procédure GetTextMetricsA(TextMetrics est un TEXTMETRICA)
+      RENVOYER :CALL(id3dxfont_GetTextMetricsA, &TextMetrics)
+     type : 458752
+   -
+     name : GetTextMetricsW
+     procedure_id : 1866445276274161927
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetTextMetricsW
+      Procédure GetTextMetricsW(TextMetrics est un TEXTMETRICW)
+      RENVOYER :CALL(id3dxfont_GetTextMetricsW, &TextMetrics)
+     type : 458752
+   -
+     name : GetDC
+     procedure_id : 1866445284864098875
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDC
+      Procédure GetDC()
+      RENVOYER :CALL(id3dxfont_GetDC)
+     type : 458752
+   -
+     name : GetGlyphData
+     procedure_id : 1866445293454100968
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetGlyphData
+      Procédure GetGlyphData(Glyph est un entier sans signe, pclTexture est un IDirect3DTexture9 dynamique, BlackBox est un rect, CellInc est un point)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      
+      	// Appel
+      	HRESULT = :CALL(id3dxfont_GetGlyphData, Glyph, &ppvTexture, PTR(BlackBox), PTR(CellInc))
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DTexture9)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : PreloadCharacters
+     procedure_id : 1866445302044102968
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode PreloadCharacters
+      Procédure PreloadCharacters(First est un entier sans signe, Last est un entier sans signe)
+      RENVOYER :CALL(id3dxfont_PreloadCharacters, First, Last)
+     type : 458752
+   -
+     name : PreloadGlyphs
+     procedure_id : 1866445310634105015
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode PreloadGlyphs
+      Procédure PreloadGlyphs(First est un entier sans signe, Last est un entier sans signe)
+      RENVOYER :CALL(id3dxfont_PreloadGlyphs, First, Last)
+     type : 458752
+   -
+     name : PreloadTextA
+     procedure_id : 1866445319224107171
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode PreloadTextA
+      Procédure PreloadTextA(sString est une chaine ansi, nCount est un entier sans signe)
+      RENVOYER :CALL(id3dxfont_PreloadTextA, &sString, nCount)
+     type : 458752
+   -
+     name : PreloadTextW
+     procedure_id : 1866445327814109467
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode PreloadTextW
+      Procédure PreloadTextW(sString est une chaine unicode, nCount est un entier sans signe)
+      RENVOYER :CALL(id3dxfont_PreloadTextW, &sString, nCount)
+     type : 458752
+   -
+     name : DrawTextA
+     procedure_id : 1866445336404111249
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode DrawTextA
+      Procédure DrawTextA(pclSprite est un ID3DXSprite dynamique, sString est une chaine ansi, nCount est un entier sans signe, rect est un rect, Format est un entier sans signe, Color est un entier sans signe)
+      RENVOYER :CALL(id3dxfont_DrawTextA, ptr(pclSprite), &sString, nCount, PTR(rect), Format, Color)
+     type : 458752
+   -
+     name : DrawTextW
+     procedure_id : 1866445340699146015
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode DrawTextW
+      Procédure DrawTextW(pclSprite est un ID3DXSprite dynamique, sString est une chaine unicode, nCount est un entier sans signe, rect est un rect, Format est un entier sans signe, Color est un entier sans signe)
+      RENVOYER :CALL(id3dxfont_DrawTextW, PTR(pclSprite), &sString, nCount, PTR(rect), Format, Color)
+     type : 458752
+   -
+     name : OnLostDevice
+     procedure_id : 1866445349289147984
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode OnLostDevice
+      Procédure OnLostDevice()
+      RENVOYER :CALL(id3dxfont_OnLostDevice)
+     type : 458752
+   -
+     name : OnResetDevice
+     procedure_id : 1866445357879150281
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode OnResetDevice
+      Procédure OnResetDevice()
+      RENVOYER :CALL(id3dxfont_OnResetDevice)
+     type : 458752
+   -
+     name : GetDevice
+     procedure_id : 1866445984954023469
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDevice
+      Procédure GetDevice(pclDevice est un IDirect3DDevice9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvDevice est un entier systeme
+      
+      	// Appel
+      	HRESULT = :call(ID3DXFont_GetDevice, &ppvDevice)
+      	
+      	// Allocation
+      	__BindInterface(pclDevice, ppvDevice, IDirect3DDevice9)
+      	
+      renvoyer HRESULT
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000d7eb405
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

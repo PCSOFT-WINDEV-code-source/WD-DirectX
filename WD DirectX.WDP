@@ -1,0 +1,240 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WD DirectX
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : Le projet a pour but de ...
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : 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
+ configurations :
+  -
+    name : WD DirectX
+    internal_properties : CAAAAAgAAAD+kBxoCYmClBHDkv+rt1vkoAkpYZimVVEkTtOJC1AlaFkxVw91euxQM8VpMmJzLtejDxPA0HOm9tpNqQw6tP9eZFHe7Qqkay5E/iZRjaJYhPXW9wAiGgtomg2gOthCQYKah4Pzjm77KcKktS0rmnNOScGMTFtPE8WkD+1HgHioszBAh0wUqsWoiNFY3u8nqPmgVc8EUb0g30zKgmUG95pma4Tg4fxs8truCvV53uw2gBCJDx5pOrtH4f/PSKbNaDTN6duWxdTdzKbesTSygKzsvzRgqDcA5gBkPCYPWn320eZ/+9HdmGIbF3euAht6Pv2tq8vZCT0uj9hCyM8ECTbkiBgEgi7Uc07nHNE31SJtjB476dHLUL+4+SLDJ/3aCZqo4liOsLhDB4RoTuEKP1k7QxICRnfJDatHSPxcWW/J1VDjNJSxpuRY32Xrsrj5EwWmSk8dxcDpMwSBf2HRdpL/5gXbd47nIOI4sKjc9NOgwk3aDhNMQJ060frVeUHcOghVMlwMugkMOFW24xZnE/SQEvxbV+R4K5cxEWdl98h7LYYIfZKQSXjEGzbVRELougyYRPgmi6iX3Lb75o0XdxvinSoCeT11NpHpdQA2UtEpsZkKGcecyPNASXIAV6VtZ1prwnMeYvwlToemdan0eiHIdRbFIgmoD2M3c3KhI0I4Bchn4WO5E3mmSGeb0g2LVtY3I2j7t+Dz7tXZBxzbom/bfa/SXBUFn51QzgFhu2bJIKnzzjzVHbNlF5E4IIEHOSy2/e7jMpEOLud/EmmdDA44bAOzVMjafvVtrn7ezUGgcjzB+FTqaUjECHY7c6MAhzoIUfWjvYY8UN5MAAzlufcAwwIqN8MlLVxrEBimvjz1lHl3kcefeVxI7QW54bU3E/vJydgYcw825rjUH3cffpZMYhSKP40T7+hEMIrLhN8yQdsFX0cnsN9DXY8/eNUQ+6F0oh8Mkt7NpUc0eGeOpjyVpqQKLnPL/R07nyA8Ynew3g+eSJujQBs8GVJtkp4LJBOwjybxPU+0K6aszu5gJ1sv2ZP/7RfTALxveCEu6WNM7+AJP5+p4A+ml0ftrazit3OdDEwCmnEts1CXyUHtMfU3AXNDS2+KhzCUPw6h8xRMFRc6ujgL4bRSn7sApvSvvc50CXjyqiGTrMfykdHmjlxUHLTsRbexdWAsEAnSVh9oqg+IxYmPVRGvH0HjZ3nJiC9eacOr0qaxuMUwNa1IXUGWzGH/oQf5Bw4ANQ7dXzhcddgyjPgwbOAfke3Q2zegEBmYzP6bQ+6xqxgFUxaRM9ZmjYMiFom98pDaZyxVYiu30ZJOvhEj7uNDSPecANRT3DMYzrFHhtywfDUltTK+tJdTipZiTO9tq/MDYat/kAcR7fH/vsfDZMBD2kJeWF195H84b8d5ximKPeTCenYfKRUqi8+bgRZdj1cvxTHuciqCNcyzFLCZoQbxd/ab3TfoNNj6KmYFLfPWFtOnepREmHLHQyW5XpkgaYSCzvfYfBJTlU6uiX6pNlq2cqQ5q/KIAbV9ktCYd/Sp3ctFcYfVYxmAlO1/+ktbv+wM5DeiBlFQ/m8jWaDpSjclZTdmmpifU4tvjV2bR/iV98jqRQ1YCpeIL8dsq/mczonVq+5GejwQ4CDrwjDbrYFEjRFNnrboYWguIIn7RY8VJJPUxjihtw6qKdtcH8yoK+13H2aPqOSIPFQKs6putbj/kyXsVvaZa4AzE2SQjpbyKUa2h8kHUnuonfvppanxCPvKuquJxdjwPQDMNsOU7HlFQ4NtG1+qw4EDT7tE7vYwc9+Htm1WczWb95/veCzSO9siIwyxRUEY2RFSh2+3+KVfSWz7R5dbtgHDS8uj3TdOr2GItluNfdq83AEhg5oABZBunOUoedHuBJgILvKwr+99xNmZQBsqnYGWB4UyH9D0aWmmPY4RHYhJESkS7/ai8/JN4ynhly/YHpAg0N/nVKLo+qPyHlhssOeb0e/BoJP0NyMizoBZfsm8q51iitdSfpxQ3OxFKWHN3hQ3HahqbRK6y2slSS93PjvZP83TYHzlpX6QJdmxfRkBtLUXs7ILSnUZE7CtRtxdbS18dKuzrl0OJLWSr/yJs/c96tTDaRnMY8HDS4ptuEb/vlgQuAHu+MaoMRa+4Ggk+ln+pO5BCYGiKerkuPMZ0875jnnohnGvKzXyljlEB41Ol1gWVdtKFeOMe5GLB1xihc0jacDP9VtPMZ3z3S4zGGZsC4jYhKszgq7O+muMK6qNMKHomv8QzseVPdmmkIVGvWUwVphdCG23fKcm/CCnErLVyapkOA64e4ICklrCvVdMW6WW9/PSC+narC5DTZYgHzUop0UNAxgyS2axlwTVyJOnGSJrQjsJ/aPJAN0aiVIQtdBohLxR1OjXM1WvVxH9DfED0JreXzBruAFefAar4HkJO4Jkt8XXyglAW7MLaCXYg/rcIK3oOotSjNT0NOcod6vvwv33XRH24fIQbvHeBe4RDe5oGLRIavAcPrIZIA3WPahqMIDL7kMArHk4pG5Ecy9+nV7GjdQfPdSdednocTVBmVZK5Avyh/hQuOuQV3H/n0KBAyulcH1GKfpCsviFkDu++YpFGjB117c+DrX6S1IYC3cp+wgkXcoEyJmXdAp7+6twXRtyZwZc/W70Uh5gic6++btXa4ntR9q1+UW0gDODYilCP4DlVf5pCbCIUsWjV94sY8F/PWSwg7iGb2MY/kLo5Q4LzvYijzOddPIXV4fhjIyeIG2E+l/WYWvTnyy7PF4fH0B/UGHIsUz6MF0uBpgT6Ab8a2n5eqY+SR71RvqUr0zhlXF9Xwwi2YcRsS1ElqJXpH1yuDACpjEPvcmSmMh7mtuHYnz5nOCJEkBH7XNzzmBYs2ABZIFEVDrYqT2SelwJdY1ubgJN7TCRn3zZnnvuYaD7vptPiPJwUW19GyD6FNYFBi+0H37MbBK2OT7mkSH2t12IFJbVyfMaPxBvnjYBc6Zsil4VulGiWqDI3h/A7GYTPBBX9kwIzaJ7b/SEGpgtwWZJUzOx15/p1sG9uhwn0BOIqqHfRNMBj72jX3K6VNBDREX/mTPnAmaUHldoQqPMQfuifHUgiiJqRLRP+FYO3uF1ROXnlK1I3vqpgs9mGdwiiOkBpB9XahyHWsu8burwLUNIzOIHwYXZeaM1liIVNl0BANJDoD72VA+UMXCPsoxUiEsM4c+Ub02nyEH739CRzCl+7nJAdNRzHIa5zLeex9sl+FKUUeIMUpvI9TwrzjZwuL0vzOAfDoUeWS3TY7xBZoWeHnz2in0XL9vKadvzfHul8BULqAo7u+X+V0gYO4cGPJN7nDgxVPNJOkXwahTP6AzoxNMfNf5C4K5ZCrK5tspX0q1uL9hTo5wVfrAH8gQrf/Pa69WxbJHbHNpV6QnWtTCQbGSCzh6BcQcxpC1YYT0FkHVSo7NPYzBUmVF8X6gIctqLaPZpJKHWu8t1GRt98BX1d/sAZsYzswerWm1KRVlIaYzU8ZmTA5JLWB//EiJwHp5AQ92Ii+tFqNayqNgtTiGC/vI9WX9BByiam2gf4JCgfV2ek6VvhwjFvjLunTZgbEXT8Ok06wgDolLTX3fvBmdkkFVTwezJIQrJWyKMuXIGz65xSut0xh4cdWhA+9Ypq8CBzlUIq+XPchzIUhI/qiA/udg9ZU6N/W6aewdgNZD2AVNjzCB1LbBRlkXF2H4TF4x7tBlyXVl3FDnuWMmYL9Q1X8feBOWIZEphcJkVRrPCt9UHJL6oCj1VZpQ7fmNy6sqnlGIPAglrQA8xqaIdJIS1c7/sZF3jK5Fp6mtWY53JQtG3hCt66Ak5lpduyRM/ZWr3gm+CYVeBHiQ5XQUF0unyJunWptcJvW/6xbQENSkfKgGggSrxVUyB+kJ+obeA3jHCV7Ch9JwRBAuVUeNQTeaJM/YT4RKEWMcSDTBh3rrpzq3UNU9cPhghnp+vjmzm0k/AD8Y8Z59KF+lOGHAwp7vJj0rFLUzr1bGNCLPIpbCSE3X4nXr0YgMWs6Er+hNMcDsXuCHjUv0F8knKIPegPY1Hifsp8frq0DxVVuEDkI6ZXrtegxPCOB70/emA4+Gj3d2jnmgCIZCjRPx2UCU1oPOK1ijJGYVIGCOcFXvAiUEDROMtMneppaojgLLCDXPdrVbo5WGT3nwYYx6TG6hMIfrJu1Qxj6OlaWs6ZezNyoag78d+s0JdBevvmBsFNKm4OD/LZA2RQMAp7NSn50ICqeJ/6TkUJkw64Iyqp1dMOZGyb4yYuctLJ/Ko0UxaMMaOunpuoRMJYG8PIKL+ZGK7/ljgGLfM/PLCThDDVCC4XfNfRhecTaP0hruuM7pKkTc1QXTnMuSgp/MfyQo6XGefAx/fcdui/D+xbx4Id8f+I1yxsAfxytH/Rxhy08eOeXYVLRb2MvwUGi/RSsP8mu28F4udV0qgirov77m4SzNiQ9TYBZmL2CCUkgZFMp9Er3S7k7xObPBL1hpkTfCnW+VJpLWwPGVmahiN+XcLzDbT7CtpFqAF3rYiYMyim1h8R0JDX23NWKP2fB908lwQYswVgsJ0VRfOmN0N92gP+5EqQtzOx0qh5oDnN/dczcFu3FiPUrcgLMdIpiYlN1/tMfB0MW4PZW2/K32B5Q==
+    configuration_id : 7642067245118500790
+    type : 1
+    generation_name : WD DirectX.exe
+    version :
+     major_version : 21
+     internal_generation_version : 2
+    icon_filename : .\directx.ico
+    language : 1
+    new_features_help :
+     name : ""
+     internal_properties : CAAAAAgAAADbV+gCqdrLP4/7Ammds0MOOy1GrgRw50p9A9uprrC3IU+2a+IbHPmQta7NUXYV5QmzQ52I4IJk9g7MWA==
+ elements :
+  identifier : 0x4c7660eb00426b60
+  elements :
+   -
+     name : FEN_01b_CreationDevicePleinEcran
+     identifier : 0x49ec6e2e0004a8ab
+     internal_properties : CAAAAAgAAADxTSl9yve/8P+ODWncarcr+UoUhCt4M7Sa9HUsWad3YV+9sqkNNc3ZmIJ8RMwE/OzUXA==
+     physical_name : .\FEN_01b_CreationDevicePleinEcran.wdw
+     type : 2
+   -
+     name : FEN_04_Eclairage
+     identifier : 0x49ec445300012b00
+     internal_properties : CAAAAAgAAACV8f0hnvuz7Pt6ybWYNwdjzZgU1Gn256qaVLQlMNA6ziKedWZB+YkVxH54QMAwyDiAgA==
+     physical_name : .\FEN_04_Eclairage.wdw
+     type : 2
+   -
+     name : FEN_05a_Texturage
+     identifier : 0x49eddb790001b0f2
+     internal_properties : CAAAAAgAAAAHA2+zcC2FprF0P7+CAhFpdzTy6s2iX7qeO+G4gW8vObMthlVX438LzkiyDpZKNqoSEg==
+     physical_name : .\FEN_05a_Texturage.wdw
+     type : 2
+   -
+     name : FEN_09_Effets
+     identifier : 0x49edfc910002f2f3
+     internal_properties : CAAAAAgAAAAHA2+zcC2FprF0P7+CAx1V366GHqe0lvpaROS1JBz22jqadVZX438LzkiyDpZKNqoSEg==
+     physical_name : .\FEN_09_Effets.wdw
+     type : 2
+   -
+     name : FEN_06_Meshes
+     identifier : 0x49ec4e97000343ce
+     internal_properties : CAAAAAgAAAAUcny4B3w0N4BTEhI1p/46oIPvtwQB+JyiOqI/hLxQsBT61/S0TuTu7VdBv0e5QbcBAQ==
+     physical_name : .\FEN_06_Meshes.wdw
+     type : 2
+   -
+     name : FEN_05b_TexturageEclairage
+     identifier : 0x49ec49ce0002926a
+     internal_properties : CAAAAAgAAAAoJhAMu+DI05xvbs5BxM6SlNETy2LHY8FGKTkYI81P2dfLKiGYojC6uWNdW9sV7eMtNQ==
+     physical_name : .\FEN_05b_TexturageEclairage.wdw
+     type : 2
+   -
+     name : FEN_Exemple
+     identifier : 0x4a26b2b20000e551
+     internal_properties : CAAAAAgAAAA0EhwYp5yUl6Az8vJV+dKWgOdP1+ilB3GyVuixKuauEvLcNRaUrkRODTehH+cZ4dchIQ==
+     physical_name : .\FEN_Exemple.wdw
+     type : 2
+   -
+     name : FEN_07_Texte
+     identifier : 0x49edfc6a00005a2e
+     internal_properties : CAAAAAgAAAAVcX2hHnszbHv6STUYrfPftSQctHXyketa7BZ74j5cVLwE7+zBeQmVRP74wECwSLgAAA==
+     physical_name : .\FEN_07_Texte.wdw
+     type : 2
+   -
+     name : FEN_01a_CreationDevice
+     identifier : 0x49ec33d40010b69b
+     internal_properties : CAAAAAgAAACGjO4y8a4GKTb1sDwXtejQui25KS4TBw+Fu3ghhpr69sII5fbKcAKMT8kzjRXLtymTkw==
+     physical_name : .\FEN_01a_CreationDevice.wdw
+     type : 2
+   -
+     name : FEN_03a_Matrices
+     identifier : 0x49ec3be9000049e5
+     internal_properties : CAAAAAgAAADsasTQ75ScTxjbqoq9JFoeAG3PV27bC3eZtmEwq2UvkXdbupEs1mx2Zd/ZJ+/hmQ/5eQ==
+     physical_name : .\FEN_03a_Matrices.wdw
+     type : 2
+   -
+     name : FEN_03b_Cube
+     identifier : 0x49ec7576000516b9
+     internal_properties : CAAAAAgAAAC1kZ2BPhsTzJtaKRU40OerJZIo+FuIvTmhHC9qY9051yGDTA+hWen15F5YoGCQaFigoA==
+     physical_name : .\FEN_03b_Cube.wdw
+     type : 2
+   -
+     name : FEN_10_Animation
+     identifier : 0x49f1ed960000ce36
+     internal_properties : CAAAAAgAAAAqIBJ2tfK65eJxPLiDFBRM1nc9dbhdz4O5Uk1MY61nmau7dmVe5H4Iy3VvSckH8+UvNw==
+     physical_name : .\FEN_10_Animation.wdw
+     type : 2
+   -
+     name : FEN_02_Vertices
+     identifier : 0x49ec378b00013b83
+     internal_properties : CAAAAAgAAAA5FWGlAn83OIdGFRE0rv/LodKcLJOohrCBOIkQRctD9Qsh7v21TeXx4FpEvES8RLQcJA==
+     physical_name : .\FEN_02_Vertices.wdw
+     type : 2
+   -
+     name : FEN_08_Camera
+     identifier : 0x49edfc760001885f
+     internal_properties : CAAAAAgAAAA3Ex8DoJ2VlqEkLw8y3eGpD3KOhjvoEKOtSdqHQv4cNIBsSxCnU+/7/jiiHuYa5toiIg==
+     physical_name : .\FEN_08_Camera.wdw
+     type : 2
+   -
+     name : FENMDL_DirectX
+     identifier : 0x49ec370400002a92
+     internal_properties : CAAAAAgAAAD9WdXJ9qMLFCOycX3QfL8LHSpgQGO41F1ej5PGN/mdU+V/sLsJMcHNjLYgmBjIsCDoaA==
+     physical_name : .\Modèle_FEN_CreationDevice.wdt
+     type : 18
+   -
+     name : TEST_Exemple
+     identifier : 0x4c7664bf00b75e18
+     internal_properties : CAAAAAgAAACLh/OXFFHZgk0Q21vua5mB+7qiuvMIyMGCcqz11DzeakKyHc77B5snKhSOaiqmUkaOlg==
+     physical_name : .\TEST_Exemple.wxt
+     type : 17
+  other_elements :
+   -
+     physical_name : .\Types.rtf
+  uml_model : .\Modèle DirectX.uml
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components :
+   -
+     physical_name : .\DirectX\DirectX.wci
+ report_and_queries_enabled : false
+ common_generation_directory : true
+ languages :
+  - fr-FR
+ code_elements :
+  internal_properties : CAAAAAgAAADyta1ztdEgrYxL2OIfroDzF7WpTxHA43nOPaiO8dWw0Vx+ktT0kYY/W+5/dMYhNYy+qZVHZb8274tsI4CTf3ye4wZX+srPcRKhBS20
+  type_code : 0
+  p_codes :
+   -
+     code : |1-
+      
+     type : 196608
+   -
+     code : |1-
+      
+     type : 196610
+   -
+     code : |1-
+      
+     type : 196619
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : WD DirectX
+     identifier : 0x4c7660eb00536c0c
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+ children :
+  -
+    explorer_type : windows
+    children :
+     -
+       name : Tutoriels
+       explorer_type : custom_folder
+       children :
+        -
+          name : FEN_01a_CreationDevice
+          explorer_type : element
+          type : 2
+        -
+          name : FEN_02_Vertices
+          explorer_type : element
+          type : 2
+        -
+          name : FEN_04_Eclairage
+          explorer_type : element
+          type : 2
+        -
+          name : FEN_05b_TexturageEclairage
+          explorer_type : element
+          type : 2
+        -
+          name : FEN_06_Meshes
+          explorer_type : element
+          type : 2
+        -
+          name : FEN_01b_CreationDevicePleinEcran
+          explorer_type : element
+          type : 2
+        -
+          name : FEN_03b_Cube
+          explorer_type : element
+          type : 2
+        -
+          name : FEN_03a_Matrices
+          explorer_type : element
+          type : 2
+        -
+          name : FEN_08_Camera
+          explorer_type : element
+          type : 2
+        -
+          name : FEN_07_Texte
+          explorer_type : element
+          type : 2
+        -
+          name : FEN_05a_Texturage
+          explorer_type : element
+          type : 2
+        -
+          name : FEN_09_Effets
+          explorer_type : element
+          type : 2
+        -
+          name : FEN_10_Animation
+          explorer_type : element
+          type : 2
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==

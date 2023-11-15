@@ -1,0 +1,99 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IDirect3DStateBlock9
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19ddc58a0de27db8
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      IDirect3DStateBlock9 est une classe
+      	un objet IUnknown
+      	
+      Fin
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface IDirect3DStateBlock9 (VTABLE)
+      	IDirect3DStateBlock9_GetDevice 		= ::IUnknown___IDXBASE + 1
+      	IDirect3DStateBlock9_Capture 		= ::IUnknown___IDXBASE + 2
+      	IDirect3DStateBlock9_Apply	 		= ::IUnknown___IDXBASE + 3
+      	IDirect3DStateBlock9___IDXBASE		= ::IUnknown___IDXBASE + 3
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863863017530424760
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3D9.IID_IDirect3DStateBlock9
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863863017530490296
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetDevice
+     procedure_id : 1866827069044649947
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDevice 
+      Procédure GetDevice(pclDevice est un IDirect3DDevice9 dynamique)
+      
+      	HRESULT est un entier système
+      	ppvDevice est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DStateBlock9_GetDevice, &ppvDevice)
+      	
+      	// Allocation
+      	__BindInterface(pclDevice, ppvDevice, IDirect3DDevice9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : Capture
+     procedure_id : 1866827077634652025
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Capture
+      Procédure Capture()
+      RENVOYER :CALL(IDirect3DStateBlock9_Capture)
+     type : 458752
+   -
+     name : Apply
+     internal_properties : CAAAAAgAAAB8t6DKQF9jWeP1NHV7nfNOwoWZX2iH0cGY4AI4X2YlY0K6XLf0TtpSMZGfnuPMuaXEsM5gAqGBIJ2uuPJQRuoxVwBTC/pZunImhVFIpyIin6nmTzLjMeeubXE8sl5VTsRREGcYYrlhX2xN0n0BkB9K0hYC9CGnVk1A7VKPqlLIVR0z64ZsML7bOg/jQQ+Xv+yC4sgsjnONfIC3prPpbA/01XpSZQPn7NtW2n4luYwDec4IB3uWmHPK7H7gOR0t7eSS7EyzRo8uVaqQmgMIBN0mq81VsPM2kKI0d586
+     procedure_id : 1866827086224654212
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Apply
+      Procédure Apply()
+      RENVOYER :CALL(IDirect3DStateBlock9_Apply)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000a06b0f8
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

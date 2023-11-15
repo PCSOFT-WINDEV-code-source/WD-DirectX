@@ -1,0 +1,248 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IDirect3DDevice9Ex
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19ddcb841192d7ba
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      IDirect3DDevice9Ex est une classe
+      	un objet IDirect3DDevice9
+      
+      Fin
+      
+      constant
+      	// Méthodes de l'interface IDirect3DDevice9Ex (VTABLE)
+      	IDirect3DDevice9Ex_SetConvolutionMonoKernel			= ::IDirect3DDevice9___IDXBASE + 1
+      	IDirect3DDevice9Ex_ComposeRects						= ::IDirect3DDevice9___IDXBASE + 2
+      	IDirect3DDevice9Ex_PresentEx						= ::IDirect3DDevice9___IDXBASE + 3
+      	IDirect3DDevice9Ex_GetGPUThreadPriority				= ::IDirect3DDevice9___IDXBASE + 4
+      	IDirect3DDevice9Ex_SetGPUThreadPriority				= ::IDirect3DDevice9___IDXBASE + 5
+      	IDirect3DDevice9Ex_WaitForVBlank					= ::IDirect3DDevice9___IDXBASE + 6
+      	IDirect3DDevice9Ex_CheckResourceResidency			= ::IDirect3DDevice9___IDXBASE + 7
+      	IDirect3DDevice9Ex_SetMaximumFrameLatency			= ::IDirect3DDevice9___IDXBASE + 8
+      	IDirect3DDevice9Ex_GetMaximumFrameLatency			= ::IDirect3DDevice9___IDXBASE + 9
+      	IDirect3DDevice9Ex_CheckDeviceState					= ::IDirect3DDevice9___IDXBASE + 10
+      	IDirect3DDevice9Ex_CreateRenderTargetEx				= ::IDirect3DDevice9___IDXBASE + 11
+      	IDirect3DDevice9Ex_CreateOffscreenPlainSurfaceEx	= ::IDirect3DDevice9___IDXBASE + 12
+      	IDirect3DDevice9Ex_CreateDepthStencilSurfaceEx		= ::IDirect3DDevice9___IDXBASE + 13
+      	IDirect3DDevice9Ex_ResetEx							= ::IDirect3DDevice9___IDXBASE + 14
+      	IDirect3DDevice9Ex_GetDisplayModeEx					= ::IDirect3DDevice9___IDXBASE + 15
+      	IDirect3DDevice9Ex___IDXBASE						= ::IDirect3DDevice9___IDXBASE + 15
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863869588892276666
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IDirect3DDevice9(nInterface)
+      
+      	// Définition de l'IID
+      	:IID = pD3D9.IID_IDirect3DDevice9Ex
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863869588892342202
+     type_code : 28
+     code : |1+
+      Procédure Destructeur()
+      
+     type : 655360
+   -
+     name : SetConvolutionMonoKernel
+     procedure_id : 1866839283950278282
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetConvolutionMonoKernel
+      Procédure SetConvolutionMonoKernel(Width est un entier sans signe, Height est un entier sans signe, tabRows est un tableau de reels sur 4, tabColumns est un tableau de reels sur 4)
+      renvoyer :call(IDirect3DDevice9Ex_SetConvolutionMonoKernel, Width, Height, ptr(tabRows), ptr(tabColumns))
+     type : 458752
+   -
+     name : ComposeRects
+     procedure_id : 1866839292540280329
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ComposeRects
+      Procédure ComposeRects(pclSrc est un IDirect3DSurface9 dynamique, pclDst est un IDirect3DSurface9 dynamique, pclSrcRectDescs est IDirect3DVertexBuffer9 dynamique, NumRects est un entier sans signe, pclDstRectDescs est IDirect3DVertexBuffer9 dynamique, Operation est un entier sans signe, Xoffset est un entier, YOffset est un entier)
+      RENVOYER :CALL(IDirect3DDevice9Ex_ComposeRects, ptr(pclSrc), ptr(pclDst), ptr(pclSrcRectDescs), NumRects, ptr(pclDstRectDescs), Operation, Xoffset, YOffset)
+     type : 458752
+   -
+     name : PresentEx
+     procedure_id : 1866839301130282516
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode PresentEx
+      Procédure PresentEx(SourceRect est un rect, DestRect est un rect, hDestWindowOverride est un entier, DirtyRegion est un rgndata, dwFlags est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9Ex_PresentEx, PTR(SourceRect), PTR(DestRect), hDestWindowOverride, PTR(DirtyRegion), dwFlags)
+     type : 458752
+   -
+     name : GetGPUThreadPriority
+     procedure_id : 1866839314015252186
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetGPUThreadPriority
+      Procédure GetGPUThreadPriority(Priority est un entier)
+      RENVOYER :CALL(IDirect3DDevice9Ex_GetGPUThreadPriority, &Priority)
+     type : 458752
+   -
+     name : SetGPUThreadPriority
+     procedure_id : 1866839322605254592
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetGPUThreadPriority
+      Procédure SetGPUThreadPriority(Priority est un entier)
+      RENVOYER :CALL(IDirect3DDevice9Ex_SetGPUThreadPriority, Priority)
+     type : 458752
+   -
+     name : WaitForVBlank
+     procedure_id : 1866839331195256498
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode WaitForVBlank
+      Procédure WaitForVBlank(iSwapChain est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9Ex_WaitForVBlank, iSwapChain)
+     type : 458752
+   -
+     name : CheckResourceResidency
+     procedure_id : 1866839339785193415
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CheckResourceResidency
+      Procédure CheckResourceResidency(pclResourceArray est un idirect3dresource9 dynamique, NumResources est un entier sans signe)
+      
+      	HRESULT est un entier système
+      	ppvResourceArray est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9Ex_CheckResourceResidency, &ppvResourceArray, NumResources)
+      	
+      	// Allocation
+      	__BindInterface(pclResourceArray, ppvResourceArray, IDirect3DResource9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : SetMaximumFrameLatency
+     procedure_id : 1866839348375195852
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetMaximumFrameLatency
+      Procédure SetMaximumFrameLatency(MaxLatency est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9Ex_SetMaximumFrameLatency, MaxLatency)
+     type : 458752
+   -
+     name : GetMaximumFrameLatency
+     procedure_id : 1866839356965197820
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetMaximumFrameLatency
+      Procédure GetMaximumFrameLatency(MaxLatency est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9Ex_GetMaximumFrameLatency, &MaxLatency)
+     type : 458752
+   -
+     name : CheckDeviceState
+     procedure_id : 1866839365555200257
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CheckDeviceState
+      Procédure CheckDeviceState(hDestinationWindow est un entier)
+      RENVOYER :CALL(IDirect3DDevice9Ex_CheckDeviceState, hDestinationWindow)
+     type : 458752
+   -
+     name : CreateRenderTargetEx
+     procedure_id : 1866839378440169959
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CreateRenderTargetEx
+      Procédure CreateRenderTargetEx(Width est un entier sans signe, Height est un entier sans signe, Format est un entier sans signe, MultiSampleType est un entier sans signe, MultiSampleQuality est un entier sans signe, Lockable est un booléen, pclSurface est IDirect3DSurface9 dynamique, pSharedHandle est un entier système, Usage est un entier sans signe)
+      
+      	HRESULT est un entier système
+      	ppvSurface est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9Ex_CreateRenderTargetEx, Width, Height, Format, MultiSampleType, MultiSampleQuality, Lockable, &ppvSurface, pSharedHandle, Usage)
+      	
+      	// Allocation
+      	__BindInterface(pclSurface, ppvSurface, IDirect3DSurface9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : CreateOffscreenPlainSurfaceEx
+     procedure_id : 1866839387030172521
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CreateOffscreenPlainSurfaceEx
+      Procédure CreateOffscreenPlainSurfaceEx(Width est un entier sans signe, Height est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, pclSurface est un IDirect3DSurface9 dynamique, pSharedHandle est un entier système, Usage est un entier sans signe)
+      
+      	HRESULT est un entier système
+      	ppvSurface est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9Ex_CreateOffscreenPlainSurfaceEx, Width, Height, Format, Pool, &ppvSurface, pSharedHandle, Usage)
+      	
+      	// Allocation
+      	__BindInterface(pclSurface, ppvSurface, IDirect3DSurface9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : CreateDepthStencilSurfaceEx
+     procedure_id : 1866839395620174770
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CreateDepthStencilSurfaceEx
+      Procédure CreateDepthStencilSurfaceEx(Width est un entier sans signe, Height est un entier sans signe, Format est un entier sans signe, MultiSampleType est un entier sans signe, MultiSampleQuality est un entier sans signe, Discard est un booléen, pclSurface est IDirect3DSurface9 dynamique, pSharedHandle est un entier système, Usage est un entier sans signe)
+      
+      	HRESULT est un entier système
+      	ppvSurface est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9Ex_CreateDepthStencilSurfaceEx, Width, Height, Format, MultiSampleType, MultiSampleQuality, Discard, &ppvSurface, pSharedHandle, Usage)
+      	
+      	// Allocation
+      	__BindInterface(pclSurface, ppvSurface, IDirect3DSurface9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : ResetEx
+     procedure_id : 1866839404210177160
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ResetEx
+      Procédure ResetEx(PresentationParameters est un D3DPRESENT_PARAMETERS, FullscreenDisplayMode est un D3DDISPLAYMODEEX)
+      RENVOYER :CALL(IDirect3DDevice9Ex_ResetEx, &PresentationParameters, &FullscreenDisplayMode)
+     type : 458752
+   -
+     name : GetDisplayModeEx
+     procedure_id : 1866839417095146815
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDisplayModeEx
+      Procédure GetDisplayModeEx(iSwapChain est un entier sans signe, Mode est un D3DDISPLAYMODEEX, Rotation est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9Ex_GetDisplayModeEx, iSwapChain, &Mode, &Rotation)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000c39b2dd
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

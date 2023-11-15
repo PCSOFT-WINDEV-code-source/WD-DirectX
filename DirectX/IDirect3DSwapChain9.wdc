@@ -1,0 +1,150 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IDirect3DSwapChain9
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19ddc2270dd84347
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      IDirect3DSwapChain9 est une classe
+      	un objet IUnknown
+      	
+      Fin
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface IDirect3DSwapChain9 (VTABLE)
+      	IDirect3DSwapChain9_RegisterSoftwareDevice 		= ::IUnknown___IDXBASE + 1
+      	IDirect3DSwapChain9_Present 					= ::IUnknown___IDXBASE + 2
+      	IDirect3DSwapChain9_GetFrontBufferData 			= ::IUnknown___IDXBASE + 3
+      	IDirect3DSwapChain9_GetBackBuffer 				= ::IUnknown___IDXBASE + 4
+      	IDirect3DSwapChain9_GetRasterStatus 			= ::IUnknown___IDXBASE + 5
+      	IDirect3DSwapChain9_GetDisplayMode 				= ::IUnknown___IDXBASE + 6
+      	IDirect3DSwapChain9_GetDevice 					= ::IUnknown___IDXBASE + 7
+      	IDirect3DSwapChain9_GetPresentParameters 		= ::IUnknown___IDXBASE + 8
+      	IDirect3DSwapChain9___IDXBASE				 	= ::IUnknown___IDXBASE + 8
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863859293793108807
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3D9.IID_IDirect3DSwapChain9
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863859293793174343
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : Present
+     internal_properties : CAAAAAgAAABKtXZQVT6tyBc2O8Y+U4Qrb3itwYAR7D6lOwdbCYsOwwv40B3BmXfXwoIz6UG+99iTSAPLvxfr6ul+HLcRYvlt/smcKdS4aYbHv1xCl1LX3/QTRk+/jxPhYQupGEZxdGsw94UpEXtg6XqTuw==
+     procedure_id : 1866827399757339829
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Present
+      Procédure Present(SourceRect est un rect, DestRect est un rect, hDestWindowOverride est un entier, DirtyRegion est un rgndata, dwFlags est un entier sans signe)
+      renvoyer :call(IDirect3DSwapChain9_Present, PTR(SourceRect), PTR(DestRect), hDestWindowOverride, PTR(DirtyRegion), dwFlags)
+     type : 458752
+   -
+     name : GetFrontBufferData
+     procedure_id : 1866827408347341829
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetFrontBufferData
+      Procédure GetFrontBufferData(pclDestSurface est un IDirect3DSurface9 dynamique)
+      RENVOYER :CALL(IDirect3DSwapChain9_GetFrontBufferData, ptr(pclDestSurface))
+     type : 458752
+   -
+     name : GetBackBuffer
+     procedure_id : 1866827416937343704
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetBackBuffer
+      Procédure GetBackBuffer(iBackBuffer est un entier sans signe, Type est un entier sans signe, pclBackBuffer est un IDirect3DSurface9 dynamique)
+      
+      	HRESULT est un entier système
+      	ppvBackBuffer est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DSwapChain9_GetBackBuffer, iBackBuffer, Type, &ppvBackBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclBackBuffer, ppvBackBuffer, IDirect3dSurface9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetRasterStatus
+     procedure_id : 1866827425527345938
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetRasterStatus
+      Procédure GetRasterStatus(RasterStatus est un D3DRASTER_STATUS)
+      RENVOYER :CALL(IDirect3DSwapChain9_GetRasterStatus, &RasterStatus)
+     type : 458752
+   -
+     name : GetDisplayMode
+     procedure_id : 1866827434117348250
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDisplayMode
+      Procédure GetDisplayMode(Mode est un D3DDISPLAYMODE)
+      RENVOYER :CALL(IDirect3DSwapChain9_GetDisplayMode, &Mode)
+     type : 458752
+   -
+     name : GetDevice
+     procedure_id : 1866827442707350203
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDevice
+      Procédure GetDevice(pclDevice est un IDirect3DDevice9 dynamique)
+      
+      	HRESULT est un entier système
+      	ppvDevice est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DSwapChain9_GetDevice, &ppvDevice)
+      	
+      	// Allocation
+      	__BindInterface(pclDevice, ppvDevice, IDirect3DDevice9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetPresentParameters
+     procedure_id : 1866827451297352125
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetPresentParameters
+      Procédure GetPresentParameters(PresentationParameters est un D3DPRESENT_PARAMETERS)
+      RENVOYER :CALL(IDirect3DSwapChain9_GetPresentParameters, &PresentationParameters)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000b9fb250
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

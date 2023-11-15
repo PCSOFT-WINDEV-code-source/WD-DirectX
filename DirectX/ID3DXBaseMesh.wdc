@@ -1,0 +1,318 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXBaseMesh
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19ddcd0a12b9c9d5
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXBaseMesh est une classe
+      	un objet IUnknown
+      	
+      FIN
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ID3DXBaseMesh (VTABLE)
+      	ID3DXBaseMesh_DrawSubset					= ::IUnknown___IDXBASE + 1
+      	ID3DXBaseMesh_GetNumFaces					= ::IUnknown___IDXBASE + 2
+      	ID3DXBaseMesh_GetNumVertices				= ::IUnknown___IDXBASE + 3
+      	ID3DXBaseMesh_GetFVF						= ::IUnknown___IDXBASE + 4
+      	ID3DXBaseMesh_GetDeclaration				= ::IUnknown___IDXBASE + 5
+      	ID3DXBaseMesh_GetNumBytesPerVertex			= ::IUnknown___IDXBASE + 6
+      	ID3DXBaseMesh_GetOptions					= ::IUnknown___IDXBASE + 7
+      	ID3DXBaseMesh_GetDevice						= ::IUnknown___IDXBASE + 8
+      	ID3DXBaseMesh_CloneMeshFVF					= ::IUnknown___IDXBASE + 9
+      	ID3DXBaseMesh_CloneMesh						= ::IUnknown___IDXBASE + 10
+      	ID3DXBaseMesh_GetVertexBuffer				= ::IUnknown___IDXBASE + 11
+      	ID3DXBaseMesh_GetIndexBuffer				= ::IUnknown___IDXBASE + 12
+      	ID3DXBaseMesh_LockVertexBuffer				= ::IUnknown___IDXBASE + 13
+      	ID3DXBaseMesh_UnlockVertexBuffer			= ::IUnknown___IDXBASE + 14
+      	ID3DXBaseMesh_LockIndexBuffer				= ::IUnknown___IDXBASE + 15
+      	ID3DXBaseMesh_UnlockIndexBuffer				= ::IUnknown___IDXBASE + 16
+      	ID3DXBaseMesh_GetAttributeTable				= ::IUnknown___IDXBASE + 17
+      	ID3DXBaseMesh_ConvertPointRepsToAdjacency	= ::IUnknown___IDXBASE + 18
+      	ID3DXBaseMesh_ConvertAdjacencyToPointReps	= ::IUnknown___IDXBASE + 19
+      	ID3DXBaseMesh_GenerateAdjacency				= ::IUnknown___IDXBASE + 20
+      	ID3DXBaseMesh_UpdateSemantics				= ::IUnknown___IDXBASE + 21
+      	ID3DXBaseMesh___IDXBASE						= ::IUnknown___IDXBASE + 21
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863871263948851669
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Mesh.IID_ID3DXBaseMesh
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863871263948917205
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : DrawSubset
+     procedure_id : 1866480641075748133
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode DrawSubset
+      Procédure DrawSubset(AttribId est un entier sans signe)
+      renvoyer :call(ID3DXBaseMesh_DrawSubset, AttribId)
+     type : 458752
+   -
+     name : GetNumFaces
+     procedure_id : 1866480649665750273
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumFaces
+      Procédure GetNumFaces()
+      RENVOYER :CALL(ID3DXBaseMesh_GetNumFaces)
+     type : 458752
+   -
+     name : GetNumVertices
+     procedure_id : 1866480658255752382
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumVertices
+      Procédure GetNumVertices()
+      RENVOYER :CALL(ID3DXBaseMesh_GetNumVertices)
+     type : 458752
+   -
+     name : GetFVF
+     procedure_id : 1866480666845754788
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetFVF
+      Procédure GetFVF()
+      RENVOYER :CALL(ID3DXBaseMesh_GetFVF)
+     type : 458752
+   -
+     name : GetDeclaration
+     procedure_id : 1866480675435757053
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDeclaration
+      Procédure GetDeclaration(tabDeclaration est un tableau de MAX_FVF_DECL_SIZE D3DVERTEXELEMENT9)
+      RENVOYER :CALL(ID3DXBaseMesh_GetDeclaration, ptr(tabDeclaration))
+     type : 458752
+   -
+     name : GetNumBytesPerVertex
+     procedure_id : 1866480688320727160
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumBytesPerVertex
+      Procédure GetNumBytesPerVertex()
+      RENVOYER :CALL(ID3DXBaseMesh_GetNumBytesPerVertex)
+     type : 458752
+   -
+     name : GetOptions
+     procedure_id : 1866480696910729098
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetOptions
+      Procédure GetOptions()
+      RENVOYER :CALL(ID3DXBaseMesh_GetOptions)
+     type : 458752
+   -
+     name : GetDevice
+     procedure_id : 1866480705500731082
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDevice
+      Procédure GetDevice(pclDevice est un IDirect3DDevice9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvDevice est un entier systeme
+      
+      	// Appel
+      	HRESULT = :CALL(ID3DXBaseMesh_GetDevice, &ppvDevice)
+      	
+      	// Allocation
+      	__BindInterface(pclDevice, ppvDevice, IDirect3DDevice9)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : CloneMeshFVF
+     procedure_id : 1866480714090733332
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CloneMeshFVF
+      Procédure CloneMeshFVF(Options est un entier sans signe, FVF est un entier sans signe, pclDevice est un IDirect3DDevice9 dynamique, pclCloneMesh est un ID3DXMesh dynamique)
+      	
+      	HRESULT est un entier systeme
+      	ppvCloneMesh est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXBaseMesh_CloneMeshFVF, Options, FVF, ptr(pclDevice), &ppvCloneMesh)
+      	
+      		// Allocation
+      	__BindInterface(pclCloneMesh, ppvCloneMesh, ID3DXMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : CloneMesh
+     procedure_id : 1866480722680735285
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CloneMesh
+      Procédure CloneMesh(Options est un entier sans signe, tabDeclaration est un tableau de D3DVERTEXELEMENT9, pclDevice est un IDirect3DDevice9 dynamique, pclCloneMesh est un ID3DXMesh dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvCloneMesh est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXBaseMesh_CloneMesh, Options, ptr(tabDeclaration), PTR(pclDevice), &ppvCloneMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclCloneMesh, ppvCloneMesh, ID3DXMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetVertexBuffer
+     procedure_id : 1866480726975769724
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetVertexBuffer
+      Procédure GetVertexBuffer(pclVB est un IDirect3DVertexBuffer9 dynamique)
+      	
+      	HRESULT est un entier systeme
+      	ppvVB est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXBaseMesh_GetVertexBuffer, &ppvVB)
+      	
+      	// Allocation
+      	__BindInterface(pclVB, ppvVB, IDirect3DVertexBuffer9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetIndexBuffer
+     procedure_id : 1866480735565771693
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetIndexBuffer
+      Procédure GetIndexBuffer(pclIB est un IDirect3DIndexBuffer9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvIB est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXBaseMesh_GetIndexBuffer, &ppvIB)
+      	
+      	// Allocation
+      	__BindInterface(pclIB, ppvIB, IDirect3DIndexBuffer9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : LockVertexBuffer
+     procedure_id : 1866480744155774005
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode LockVertexBuffer
+      Procédure LockVertexBuffer(Flags est un entier sans signe, ppData est un entier systeme)
+      RENVOYER :CALL(ID3DXBaseMesh_LockVertexBuffer, Flags, &ppData)
+     type : 458752
+   -
+     name : UnlockVertexBuffer
+     procedure_id : 1866480752745710469
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UnlockVertexBuffer
+      Procédure UnlockVertexBuffer()
+      RENVOYER :CALL(ID3DXBaseMesh_UnlockVertexBuffer)
+     type : 458752
+   -
+     name : LockIndexBuffer
+     procedure_id : 1866480769925649401
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode LockIndexBuffer
+      Procédure LockIndexBuffer(Flags est un entier sans signe, ppData est un entier systeme)
+      RENVOYER :CALL(ID3DXBaseMesh_LockIndexBuffer, Flags, &ppData)
+     type : 458752
+   -
+     name : UnlockIndexBuffer
+     procedure_id : 1866480782810619804
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UnlockIndexBuffer
+      Procédure UnlockIndexBuffer()
+      RENVOYER :CALL(ID3DXBaseMesh_UnlockIndexBuffer)
+     type : 458752
+   -
+     name : GetAttributeTable
+     procedure_id : 1866480791400621820
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetAttributeTable
+      Procédure GetAttributeTable(tabAttribTable est un tableau de D3DXATTRIBUTERANGE, AttribTableSize est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseMesh_GetAttributeTable, ptr(tabAttribTable), &AttribTableSize)
+     type : 458752
+   -
+     name : ConvertPointRepsToAdjacency
+     procedure_id : 1866480799990624054
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ConvertPointRepsToAdjacency
+      Procédure ConvertPointRepsToAdjacency(tabPRep est un tableau d'entiers sans signe, tabAdjacency est un tableau d'entiers sans signe)
+      RENVOYER :CALL(ID3DXBaseMesh_ConvertPointRepsToAdjacency, ptr(tabPRep), ptr(tabAdjacency))
+     type : 458752
+   -
+     name : ConvertAdjacencyToPointReps
+     procedure_id : 1866480808580625882
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ConvertAdjacencyToPointReps
+      Procédure ConvertAdjacencyToPointReps(tabAdjacency est un tableau d'entiers sans signe, tabPRep est un tableau d'entiers sans signe)
+      RENVOYER :CALL(ID3DXBaseMesh_ConvertAdjacencyToPointReps, PTR(tabAdjacency), ptr(tabPRep))
+     type : 458752
+   -
+     name : GenerateAdjacency
+     procedure_id : 1866480817170628101
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GenerateAdjacency
+      Procédure GenerateAdjacency(Epsilon est un reel sur 4, tabAdjacency est un tableau d'entiers sans signe)
+      RENVOYER :CALL(ID3DXBaseMesh_GenerateAdjacency, Epsilon, ptr(tabAdjacency))
+     type : 458752
+   -
+     name : UpdateSemantics
+     procedure_id : 1866480825760629976
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UpdateSemantics
+      Procédure UpdateSemantics(tabDeclaration est un tableau de MAX_FVF_DECL_SIZE D3DVERTEXELEMENT9)
+      RENVOYER :CALL(ID3DXBaseMesh_UpdateSemantics, ptr(tabDeclaration))
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000abeb175
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

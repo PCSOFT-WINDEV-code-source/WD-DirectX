@@ -1,0 +1,1651 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pD3DX9Mesh
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x19dcb61e326e3809
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAA4uEZEbl9hgcGArbaegEONIfzAmbfKCN/RAgRvhnYA4nK2aaGjj4dECio1Z+3KGYWPV9JXaXc+fp5iZXdjfGEZBLHY4AVZfmgllAtynOfwpddlFvsEQ4EGNr/lbVfU3eve5o1s4tS0SG5n2P7sfYS9GxAQ/t6VgrxQOY+/oAelPQatu8uv+40i9oSe+3gwwAOY/slv10RLAQhXqi08l3uahmsU1Ffgz/RmT4ADnXXqCcfDUL2yAmA8hASUIiRvk7rVDE/iNkb/KNMbGXJKVQb9OAOJjBOzUO6ALJgLwkdYcu6RZu+7abHcasZf6dr5b4jPLB6/XtQTprMHtcMKapXfkg3Xe1sADEmFkmZ+ia0Gvgyut+Ct2FiMzqhJf1/fpvM13RHljR6da5YE/MkPk3aBKV8QHMzD063lZ0BKYfE9E/q8q5WMzJ+Bah1uMBZndk1aAv9sDumSwbH3BwLkNXrkDOu1ZQUUIvXgKG8iuPdEg05hxnKb0C1b9JJ91lnoDSdtMsVnECvaTh2isRLjJyEVjGPvk6XEJoJhdIQ2Kim1XJk2PIy7vcSs+tBfCm4buEq5bZbDp4ROXdYF5iMcpz6j0jE5
+     code : |1+
+      
+      /////////////////////////////////////////////////
+      // <Constantes>
+      
+      CONSTANT
+      	// D3DXPATCHMESHTYPE
+      	D3DXPATCHMESH_RECT   = 0x001
+      	D3DXPATCHMESH_TRI    = 0x002
+      	D3DXPATCHMESH_NPATCH = 0x003
+      	
+      	// D3DXMESH
+      	D3DXMESH_32BIT                  = 0x001
+      	D3DXMESH_DONOTCLIP              = 0x002
+      	D3DXMESH_POINTS                 = 0x004
+      	D3DXMESH_RTPATCHES              = 0x008
+      	D3DXMESH_NPATCHES               = 0x4000
+      	D3DXMESH_VB_SYSTEMMEM           = 0x010
+      	D3DXMESH_VB_MANAGED             = 0x020
+      	D3DXMESH_VB_WRITEONLY           = 0x040
+      	D3DXMESH_VB_DYNAMIC             = 0x080
+      	D3DXMESH_VB_SOFTWAREPROCESSING  = 0x8000
+      	D3DXMESH_IB_SYSTEMMEM           = 0x100
+      	D3DXMESH_IB_MANAGED             = 0x200
+      	D3DXMESH_IB_WRITEONLY           = 0x400
+      	D3DXMESH_IB_DYNAMIC             = 0x800
+      	D3DXMESH_IB_SOFTWAREPROCESSING  = 0x10000
+      	D3DXMESH_VB_SHARE               = 0x1000
+      	D3DXMESH_USEHWONLY              = 0x2000
+      	D3DXMESH_SYSTEMMEM              = 0x110
+      	D3DXMESH_MANAGED                = 0x220
+      	D3DXMESH_WRITEONLY              = 0x440
+      	D3DXMESH_DYNAMIC                = 0x880
+      	D3DXMESH_SOFTWAREPROCESSING     = 0x18000
+      	
+      	// D3DXPATCHMESH
+      	D3DXPATCHMESH_DEFAULT = 000
+      	
+      	// D3DXMESHSIMP
+      	D3DXCLEAN_BACKFACING	 = 0x00000001
+      	D3DXCLEAN_BOWTIES		 = 0x00000002
+      	D3DXCLEAN_SKINNING		 = D3DXCLEAN_BACKFACING
+      	D3DXCLEAN_OPTIMIZATION	 = D3DXCLEAN_BACKFACING
+      	D3DXCLEAN_SIMPLIFICATION = D3DXCLEAN_BACKFACING + D3DXCLEAN_BOWTIES
+      	
+      	// MAX_FVF_DECL_SIZE
+      	MAX_FVF_DECL_SIZE = MAXD3DDECLLENGTH + 1
+      	
+      	// D3DXTANGENT
+      	D3DXTANGENT_WRAP_U =                    0x01
+      	D3DXTANGENT_WRAP_V =                    0x02
+      	D3DXTANGENT_WRAP_UV =                   0x03
+      	D3DXTANGENT_DONT_NORMALIZE_PARTIALS =   0x04
+      	D3DXTANGENT_DONT_ORTHOGONALIZE =        0x08
+      	D3DXTANGENT_ORTHOGONALIZE_FROM_V =      0x010
+      	D3DXTANGENT_ORTHOGONALIZE_FROM_U =      0x020
+      	D3DXTANGENT_WEIGHT_BY_AREA =            0x040
+      	D3DXTANGENT_WEIGHT_EQUAL =              0x080
+      	D3DXTANGENT_WIND_CW =                   0x0100
+      	D3DXTANGENT_CALCULATE_NORMALS =         0x0200
+      	D3DXTANGENT_GENERATE_IN_PLACE =         0x0400
+      	
+      	// D3DXIMT
+      	D3DXIMT_WRAP_U =                    0x01
+      	D3DXIMT_WRAP_V =                    0x02
+      	D3DXIMT_WRAP_UV =                   0x03
+      	
+      	// D3DXUVATLAS
+      	D3DXUVATLAS_DEFAULT               = 0x00
+      	D3DXUVATLAS_GEODESIC_FAST         = 0x01
+      	D3DXUVATLAS_GEODESIC_QUALITY      = 0x02
+      	
+      	// D3DXEFFECTDEFAULTTYPE
+      	D3DXEDT_STRING = 0x1
+      	D3DXEDT_FLOATS = 0x2
+      	D3DXEDT_DWORD  = 0x3
+      	
+      	// D3DXWELDEPSILONSFLAGS
+      	D3DXWELDEPSILONS_WELDALL             = 0x1
+      	D3DXWELDEPSILONS_WELDPARTIALMATCHES  = 0x2
+      	D3DXWELDEPSILONS_DONOTREMOVEVERTICES = 0x4
+      	D3DXWELDEPSILONS_DONOTSPLIT          = 0x8
+      	
+      	UNUSED16 = 0xffff
+      	UNUSED32 = 0xffffffff
+      	
+      	// D3DXMESHOPT
+      	D3DXMESHOPT_COMPACT       = 0x01000000
+      	D3DXMESHOPT_ATTRSORT      = 0x02000000
+      	D3DXMESHOPT_VERTEXCACHE   = 0x04000000
+      	D3DXMESHOPT_STRIPREORDER  = 0x08000000
+      	D3DXMESHOPT_IGNOREVERTS   = 0x10000000
+      	D3DXMESHOPT_DONOTSPLIT    = 0x20000000
+      	D3DXMESHOPT_DEVICEINDEPENDENT = 0x00400000
+      	
+      	// D3DXSHCOMPRESSQUALITYTYPE
+      	D3DXSHCQUAL_FASTLOWQUALITY  = 1
+      	D3DXSHCQUAL_SLOWHIGHQUALITY = 2
+      	
+      	// D3DXSHGPUSIMOPT
+      	D3DXSHGPUSIMOPT_SHADOWRES256  = 1
+      	D3DXSHGPUSIMOPT_SHADOWRES512  = 0
+      	D3DXSHGPUSIMOPT_SHADOWRES1024 = 2
+      	D3DXSHGPUSIMOPT_SHADOWRES2048 = 3	
+      	D3DXSHGPUSIMOPT_HIGHQUALITY = 4
+      		
+      	XSKINEXP_TEMPLATES = [
+      	xof 0303txt 0032
+      	template XSkinMeshHeader 
+      	{ 
+      	<3CF169CE-FF7C-44ab-93C0-F78F62D172E2> 
+      	WORD nMaxSkinWeightsPerVertex; 
+      	WORD nMaxSkinWeightsPerFace; 
+      	WORD nBones; 
+      	} 
+      	template VertexDuplicationIndices 
+      	{ 
+      	<B8D65549-D7C9-4995-89CF-53A9A8B031E3> 
+      	DWORD nIndices; 
+      	DWORD nOriginalVertices; 
+      	array DWORD indices[nIndices]; 
+      	} 
+      	template FaceAdjacency 
+      	{ 
+      	<A64C844A-E282-4756-8B80-250CDE04398C> 
+      	DWORD nIndices; 
+      	array DWORD indices[nIndices]; 
+      	} 
+      	template SkinWeights 
+      	{ 
+      	<6F0D123B-BAD2-4167-A0D0-80224F25FABB> 
+      	STRING transformNodeName; 
+      	DWORD nWeights; 
+      	array DWORD vertexIndices\[nWeights\]; 
+      	array float weights\[nWeights\]; 
+      	Matrix4x4 matrixOffset; 
+      	} 
+      	template Patch 
+      	{ 
+      	<A3EB5D44-FC22-429D-9AFB-3221CB9719A6> 
+      	DWORD nControlIndices; 
+      	array DWORD controlIndices[nControlIndices]; 
+      	} 
+      	template PatchMesh 
+      	{ 
+      	<D02C95CC-EDBA-4305-9B5D-1820D7704BBF> 
+      	DWORD nVertices; 
+      	array Vector vertices[nVertices]; 
+      	DWORD nPatches; 
+      	array Patch patches[nPatches]; 
+      	[ ... ] 
+      	} 
+      	template PatchMesh9 
+      	{ 
+      	<B9EC94E1-B9A6-4251-BA18-94893F02C0EA> 
+      	DWORD Type; 
+      	DWORD Degree; 
+      	DWORD Basis; 
+      	DWORD nVertices; 
+      	array Vector vertices[nVertices]; 
+      	DWORD nPatches; 
+      	array Patch patches[nPatches]; 
+      	[ ... ] 
+      	}  
+      	template EffectFloats 
+      	{ 
+      	<F1CFE2B3-0DE3-4e28-AFA1-155A750A282D> 
+      	DWORD nFloats; 
+      	array float Floats[nFloats]; 
+      	} 
+      	template EffectString 
+      	{ 
+      	<D55B097E-BDB6-4c52-B03D-6051C89D0E42> 
+      	STRING Value; 
+      	} 
+      	template EffectDWord 
+      	{ 
+      	<622C0ED0-956E-4da9-908A-2AF94F3CE716> 
+      	DWORD Value; 
+      	}  
+      	template EffectParamFloats 
+      	{ 
+      	<3014B9A0-62F5-478c-9B86-E4AC9F4E418B> 
+      	STRING ParamName; 
+      	DWORD nFloats; 
+      	array float Floats[nFloats]; 
+      	}  
+      	template EffectParamString 
+      	{ 
+      	<1DBC4C88-94C1-46ee-9076-2C28818C9481> 
+      	STRING ParamName; 
+      	STRING Value; 
+      	} 
+      	template EffectParamDWord 
+      	{ 
+      	<E13963BC-AE51-4c5d-B00F-CFA3A9D97CE5> 
+      	STRING ParamName; 
+      	DWORD Value; 
+      	} 
+      	template EffectInstance 
+      	{ 
+      	<E331F7E4-0559-4cc2-8E99-1CEC1657928F> 
+      	STRING EffectFilename; 
+      	[ ... ] 
+      	}  
+      	template AnimTicksPerSecond 
+      	{ 
+      	<9E415A43-7BA6-4a73-8743-B73D47E88476> 
+      	DWORD AnimTicksPerSecond; 
+      	} 
+      	template CompressedAnimationSet 
+      	{ 
+      	<7F9B00B3-F125-4890-876E-1C42BF697C4D> 
+      	DWORD CompressedBlockSize; 
+      	FLOAT TicksPerSec; 
+      	DWORD PlaybackType; 
+      	DWORD BufferLength; 
+      	array DWORD CompressedData[BufferLength]; 
+      	} 
+      	]
+      	
+      	XEXTENSIONS_TEMPLATES = [
+      	xof 0303txt 0032
+      	template FVFData 
+      	{ 
+      	<B6E70A0E-8EF9-4e83-94AD-ECC8B0C04897> 
+      	DWORD dwFVF; 
+      	DWORD nDWords; 
+      	array DWORD data[nDWords]; 
+      	} 
+      	template VertexElement 
+      	{ 
+      	<F752461C-1E23-48f6-B9F8-8350850F336F> 
+      	DWORD Type; 
+      	DWORD Method; 
+      	DWORD Usage; 
+      	DWORD UsageIndex; 
+      	} 
+      	template DeclData 
+      	{ 
+      	<BF22E553-292C-4781-9FEA-62BD554BDD93> 
+      	DWORD nElements; 
+      	array VertexElement Elements[nElements]; 
+      	DWORD nDWords; 
+      	array DWORD data[nDWords]; 
+      	} 
+      	template PMAttributeRange 
+      	{ 
+      	<917E0427-C61E-4a14-9C64-AFE65F9E9844> 
+      	DWORD iFaceOffset; 
+      	DWORD nFacesMin; 
+      	DWORD nFacesMax; 
+      	DWORD iVertexOffset; 
+      	DWORD nVerticesMin; 
+      	DWORD nVerticesMax; 
+      	} 
+      	template PMVSplitRecord 
+      	{ 
+      	<574CCC14-F0B3-4333-822D-93E8A8A08E4C> 
+      	DWORD iFaceCLW; 
+      	DWORD iVlrOffset; 
+      	DWORD iCode; 
+      	} 
+      	template PMInfo 
+      	{ 
+      	<B6C3E656-EC8B-4b92-9B62-681659522947> 
+      	DWORD nAttributes; 
+      	array PMAttributeRange attributeRanges[nAttributes]; 
+      	DWORD nMaxValence; 
+      	DWORD nMinLogicalVertices; 
+      	DWORD nMaxLogicalVertices; 
+      	DWORD nVSplits; 
+      	array PMVSplitRecord splitRecords[nVSplits]; 
+      	DWORD nAttributeMispredicts; 
+      	array DWORD attributeMispredicts[nAttributeMispredicts]; 
+      	} 
+      	]
+      FIN
+      
+      // </Constantes>
+      
+      /////////////////////////////////////////////////
+      // <IIDs>
+      
+      IID_ID3DXBaseMesh						est un iid
+      IID_ID3DXMesh							est un iid
+      IID_ID3DXPMesh							est un iid
+      IID_ID3DXSPMesh							est un iid
+      IID_ID3DXSkinInfo						est un iid
+      IID_ID3DXPatchMesh						est un iid
+      IID_ID3DXPRTBuffer						est un iid
+      IID_ID3DXPRTCompBuffer					est un iid
+      IID_ID3DXTextureGutterHelper			est un iid
+      IID_ID3DXPRTEngine						est un iid
+      
+      DXFILEOBJ_XSkinMeshHeader				est un GUID
+      DXFILEOBJ_VertexDuplicationIndices		est un GUID
+      DXFILEOBJ_FaceAdjacency					est un GUID
+      DXFILEOBJ_SkinWeights					est un GUID
+      DXFILEOBJ_Patch							est un GUID
+      DXFILEOBJ_PatchMesh						est un GUID
+      DXFILEOBJ_PatchMesh9					est un GUID
+      DXFILEOBJ_PMInfo						est un GUID
+      DXFILEOBJ_PMAttributeRange				est un GUID
+      DXFILEOBJ_PMVSplitRecord				est un GUID
+      DXFILEOBJ_FVFData						est un GUID
+      DXFILEOBJ_VertexElement					est un GUID
+      DXFILEOBJ_DeclData						est un GUID
+      DXFILEOBJ_EffectFloats					est un GUID
+      DXFILEOBJ_EffectString					est un GUID
+      DXFILEOBJ_EffectDWord					est un GUID
+      DXFILEOBJ_EffectParamFloats				est un GUID
+      DXFILEOBJ_EffectParamString				est un GUID
+      DXFILEOBJ_EffectParamDWord				est un GUID
+      DXFILEOBJ_EffectInstance				est un GUID
+      DXFILEOBJ_AnimTicksPerSecond			est un GUID
+      DXFILEOBJ_CompressedAnimationSet		est un GUID
+      
+      // </IIDs>
+      
+      //////////////////////////////////////////////////
+      // <Déclaration des IIDs>
+      
+      DEFINE_GUID(IID_ID3DXBaseMesh, 					0x7ed943dd, 0x52e8, 0x40b5, 0xa8, 0xd8, 0x76, 0x68, 0x5c, 0x40, 0x63, 0x30)
+      DEFINE_GUID(IID_ID3DXMesh, 						0x4020e5c2, 0x1403, 0x4929, 0x88, 0x3f, 0xe2, 0xe8, 0x49, 0xfa, 0xc1, 0x95)
+      DEFINE_GUID(IID_ID3DXPMesh, 					0x8875769a, 0xd579, 0x4088, 0xaa, 0xeb, 0x53, 0x4d, 0x1a, 0xd8, 0x4e, 0x96)
+      DEFINE_GUID(IID_ID3DXSPMesh, 					0x667ea4c7, 0xf1cd, 0x4386, 0xb5, 0x23, 0x7c, 0x02, 0x90, 0xb8, 0x3c, 0xc5)
+      DEFINE_GUID(IID_ID3DXSkinInfo, 					0x11eaa540, 0xf9a6, 0x4d49, 0xae, 0x6a, 0xe1, 0x92, 0x21, 0xf7, 0x0c, 0xc4)
+      DEFINE_GUID(IID_ID3DXPatchMesh, 				0x3ce6cc22, 0xdbf2, 0x44f4, 0x89, 0x4d, 0xf9, 0xc3, 0x4a, 0x33, 0x71, 0x39)
+      DEFINE_GUID(IID_ID3DXPRTBuffer, 				0xf1827e47, 0x00a8, 0x49cd, 0x90, 0x8c, 0x9d, 0x11, 0x95, 0x5f, 0x87, 0x28)
+      DEFINE_GUID(IID_ID3DXPRTCompBuffer, 			0xa758d465, 0xfe8d, 0x45ad, 0x9c, 0xf0, 0xd0, 0x1e, 0x56, 0x26, 0x6a, 0x07)
+      DEFINE_GUID(IID_ID3DXTextureGutterHelper, 		0x838f01ec, 0x9729, 0x4527, 0xaa, 0xdb, 0xdf, 0x70, 0xad, 0xe7, 0xfe, 0xa9)
+      DEFINE_GUID(IID_ID3DXPRTEngine, 				0x683a4278, 0xcd5f, 0x4d24, 0x90, 0xad, 0xc4, 0xe1, 0xb6, 0x85, 0x5d, 0x53)
+      
+      DEFINE_GUID(DXFILEOBJ_XSkinMeshHeader,			0x3cf169ce, 0xff7c, 0x44ab, 0x93, 0xc0, 0xf7, 0x8f, 0x62, 0xd1, 0x72, 0xe2)
+      DEFINE_GUID(DXFILEOBJ_VertexDuplicationIndices, 0xb8d65549, 0xd7c9, 0x4995, 0x89, 0xcf, 0x53, 0xa9, 0xa8, 0xb0, 0x31, 0xe3)
+      DEFINE_GUID(DXFILEOBJ_FaceAdjacency, 			0xa64c844a, 0xe282, 0x4756, 0x8b, 0x80, 0x25, 0x0c, 0xde, 0x04, 0x39, 0x8c)
+      DEFINE_GUID(DXFILEOBJ_SkinWeights, 				0x6f0d123b, 0xbad2, 0x4167, 0xa0, 0xd0, 0x80, 0x22, 0x4f, 0x25, 0xfa, 0xbb)
+      DEFINE_GUID(DXFILEOBJ_Patch, 					0xa3eb5d44, 0xfc22, 0x429d, 0x9a, 0xfb, 0x32, 0x21, 0xcb, 0x97, 0x19, 0xa6)
+      DEFINE_GUID(DXFILEOBJ_PatchMesh, 				0xd02c95cc, 0xedba, 0x4305, 0x9b, 0x5d, 0x18, 0x20, 0xd7, 0x70, 0x4b, 0xbf)
+      DEFINE_GUID(DXFILEOBJ_PatchMesh9, 				0xb9ec94e1, 0xb9a6, 0x4251, 0xba, 0x18, 0x94, 0x89, 0x3f, 0x02, 0xc0, 0xea)
+      DEFINE_GUID(DXFILEOBJ_PMInfo, 					0xb6c3e656, 0xec8b, 0x4b92, 0x9b, 0x62, 0x68, 0x16, 0x59, 0x52, 0x29, 0x47)
+      DEFINE_GUID(DXFILEOBJ_PMAttributeRange, 		0x917e0427, 0xc61e, 0x4a14, 0x9c, 0x64, 0xaf, 0xe6, 0x5f, 0x9e, 0x98, 0x44)
+      DEFINE_GUID(DXFILEOBJ_PMVSplitRecord,			0x574ccc14, 0xf0b3, 0x4333, 0x82, 0x2d, 0x93, 0xe8, 0xa8, 0xa0, 0x8e, 0x4c)
+      DEFINE_GUID(DXFILEOBJ_FVFData, 					0xb6e70a0e, 0x8ef9, 0x4e83, 0x94, 0xad, 0xec, 0xc8, 0xb0, 0xc0, 0x48, 0x97)
+      DEFINE_GUID(DXFILEOBJ_VertexElement, 			0xf752461c, 0x1e23, 0x48f6, 0xb9, 0xf8, 0x83, 0x50, 0x85, 0x0f, 0x33, 0x6f)
+      DEFINE_GUID(DXFILEOBJ_DeclData, 				0xbf22e553, 0x292c, 0x4781, 0x9f, 0xea, 0x62, 0xbd, 0x55, 0x4b, 0xdd, 0x93)
+      DEFINE_GUID(DXFILEOBJ_EffectFloats, 			0xf1cfe2b3, 0x0de3, 0x4e28, 0xaf, 0xa1, 0x15, 0x5a, 0x75, 0x0a, 0x28, 0x2d)
+      DEFINE_GUID(DXFILEOBJ_EffectString, 			0xd55b097e, 0xbdb6, 0x4c52, 0xb0, 0x3d, 0x60, 0x51, 0xc8, 0x9d, 0x0e, 0x42)
+      DEFINE_GUID(DXFILEOBJ_EffectDWord,				0x622c0ed0, 0x956e, 0x4da9, 0x90, 0x8a, 0x2a, 0xf9, 0x4f, 0x3c, 0xe7, 0x16)
+      DEFINE_GUID(DXFILEOBJ_EffectParamFloats, 		0x3014b9a0, 0x62f5, 0x478c, 0x9b, 0x86, 0xe4, 0xac, 0x9f, 0x4e, 0x41, 0x8b)
+      DEFINE_GUID(DXFILEOBJ_EffectParamString, 		0x1dbc4c88, 0x94c1, 0x46ee, 0x90, 0x76, 0x2c, 0x28, 0x81, 0x8c, 0x94, 0x81)
+      DEFINE_GUID(DXFILEOBJ_EffectParamDWord,			0xe13963bc, 0xae51, 0x4c5d, 0xb0, 0x0f, 0xcf, 0xa3, 0xa9, 0xd9, 0x7c, 0xe5)
+      DEFINE_GUID(DXFILEOBJ_EffectInstance, 			0xe331f7e4, 0x0559, 0x4cc2, 0x8e, 0x99, 0x1c, 0xec, 0x16, 0x57, 0x92, 0x8f)
+      DEFINE_GUID(DXFILEOBJ_AnimTicksPerSecond, 		0x9e415a43, 0x7ba6, 0x4a73, 0x87, 0x43, 0xb7, 0x3d, 0x47, 0xe8, 0x84, 0x76)
+      DEFINE_GUID(DXFILEOBJ_CompressedAnimationSet, 	0x7f9b00b3, 0xf125, 0x4890, 0x87, 0x6e, 0x1c, 0x42, 0xbf, 0x69, 0x7c, 0x4d)
+      
+      // </Déclaration des IIDs>
+     type : 720896
+  procedures :
+   -
+     name : D3DXCreateMesh
+     procedure_id : 1863877225368910158
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateMesh
+      Procédure D3DXCreateMesh(NumFaces est un entier sans signe, NumVertices est un entier sans signe, Options est un entier sans signe, Declaration est un D3DVERTEXELEMENT9, pclD3DDevice est un IDirect3DDevice9 dynamique, pclMesh est un ID3DXMesh dynamique)
+      	
+      	HRESULT	est un entier systeme
+      	ppvID3DXMesh est un entier systeme
+      
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateMesh", NumFaces, NumVertices, Options, &Declaration, PTR(pclD3DDevice), &ppvID3DXMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclMesh, ppvID3DXMesh, ID3DXMesh)
+      
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXCreateMeshFVF
+     procedure_id : 1863877242548783180
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateMeshFVF
+      Procédure D3DXCreateMeshFVF(NumFaces est un entier sans signe, NumVertices est un entier sans signe, Options est un entier sans signe, FVF est un entier sans signe, pclD3DDevice est un IDirect3DDevice9 dynamique, pclMesh est un ID3DXMesh dynamique)
+      
+      	HRESULT	est un entier systeme
+      	ppvID3DXMesh est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateMeshFVF", NumFaces, NumVertices, Options, FVF, PTR(pclD3DDevice), &ppvID3DXMesh)
+      
+      	// Allocation
+      	__BindInterface(pclMesh, ppvID3DXMesh, ID3DXMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateSPMesh
+     procedure_id : 1863878204621550101
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateSPMesh
+      Procédure D3DXCreateSPMesh(pclMesh est un ID3DXMesh dynamique, Adjacency est un entier sans signe, VertexAttributeWeights est un D3DXATTRIBUTEWEIGHTS, VertexWeights est un reel sur 4, pclSMesh est un ID3DXSPMesh dynamique)
+      	
+      	HRESULT	est un entier systeme
+      	ppvID3DXSPMesh est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateSPMesh", PTR(pclMesh), &Adjacency, &VertexAttributeWeights, &VertexWeights, &ppvID3DXSPMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclSMesh, ppvID3DXSPMesh, ID3DXSPMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCleanMesh
+     procedure_id : 1863878737197553228
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCleanMesh
+      Procédure D3DXCleanMesh(CleanType est un entier sans signe, pclMeshIn est un ID3DXMesh dynamique, AdjacencyIn est un entier sans signe, pclMeshOut est un ID3DXMesh dynamique, AdjacencyOut est un entier sans signe, pclErrorsAndWarnings est un ID3DXBuffer dynamique)
+      
+      	HRESULT	est un entier systeme
+      	ppvID3DXMesh est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCleanMesh", CleanType, PTR(pclMeshIn), &AdjacencyIn, &ppvID3DXMesh, &AdjacencyOut, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclMeshOut, ppvID3DXMesh, ID3DXMesh)
+      	__BindInterface(pclErrorsAndWarnings, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXValidMesh
+     procedure_id : 1863879579011208156
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXValidMesh
+      Procédure D3DXValidMesh(pclMeshIn est un ID3DXMesh, Adjacency est un entier sans signe, pclErrorsAndWarnings est un ID3DXBuffer dynamique)
+      
+      	HRESULT	est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXValidMesh", PTR(pclMeshIn), &Adjacency, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclErrorsAndWarnings, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXGeneratePMesh
+     procedure_id : 1863896389550017447
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGeneratePMesh
+      Procédure D3DXGeneratePMesh(pclMesh est un ID3DXMesh dynamique, Adjacency est un entier sans signe, VertexAttributeWeights est un D3DXATTRIBUTEWEIGHTS, VertexWeights est un reel sur 4, MinValue est un entier sans signe, Options est un entier sans signe, pclPMesh est un ID3DXPMesh dynamique)
+      
+      	HRESULT	est un entier systeme
+      	ppvID3DXPMesh est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXGeneratePMesh", PTR(pclMesh), &Adjacency, &VertexAttributeWeights, &VertexWeights, MinValue, Options, &ppvID3DXPMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclPMesh, ppvID3DXPMesh, ID3DXPMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXSimplifyMesh
+     procedure_id : 1863897008025387257
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSimplifyMesh
+      Procédure D3DXSimplifyMesh(pclMesh est un ID3DXMesh dynamique, Adjacency est un entier sans signe, VertexAttributeWeights est un D3DXATTRIBUTEWEIGHTS, VertexWeights est un reel sur 4, MinValue est un entier sans signe, Options est un entier sans signe, pclMeshOut est un ID3DXMesh dynamique)
+      
+      	HRESULT	est un entier systeme
+      	ppvID3DXMesh est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXSimplifyMesh", PTR(pclMesh), &Adjacency, &VertexAttributeWeights, &VertexWeights, MinValue, Options, &ppvID3DXMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclMeshOut, ppvID3DXMesh, ID3DXMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXComputeBoundingSphere
+     procedure_id : 1863897334442977055
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXComputeBoundingSphere
+      Procédure D3DXComputeBoundingSphere(FirstPosition est un entier systeme, NumVertices est un entier sans signe, dwStride est un entier sans signe, Center est un D3DXVECTOR3, Radius est un reel sur 4)
+      renvoyer api(pD3D9.D3DX9, "D3DXComputeBoundingSphere", FirstPosition, NumVertices, dwStride, &Center, &Radius)
+     type : 458752
+   -
+     name : D3DXComputeBoundingBox
+     procedure_id : 1863898266450966883
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXComputeBoundingBox
+      Procédure D3DXComputeBoundingBox(FirstPosition est un entier systeme, NumVertices est un entier sans signe, dwStride est un entier sans signe, vMin est un D3DXVECTOR3, vMax est un D3DXVECTOR3)
+      renvoyer api(pD3D9.D3DX9, "D3DXComputeBoundingBox", FirstPosition, NumVertices, dwStride, &vMin, &vMax)
+     type : 458752
+   -
+     name : D3DXComputeNormals
+     procedure_id : 1863899722444957198
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXComputeNormals
+      Procédure D3DXComputeNormals(pclMesh est un ID3DXMesh dynamique, tabAdjacency est un tableau d'entier sans signe)
+      RENVOYER API(pD3D9.D3DX9, "D3DXComputeNormals", PTR(pclMesh), ptr(tabAdjacency))
+     type : 458752
+   -
+     name : D3DXCreateBuffer
+     procedure_id : 1863899971553117868
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateBuffer
+      Procédure D3DXCreateBuffer(NumBytes est un entier sans signe, pclBuffer est un id3dxbuffer dynamique)
+      
+      	HRESULT	est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateBuffer", NumBytes, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclBuffer, ppvID3DXBuffer, id3dxbuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXLoadMeshFromXA
+     procedure_id : 1863900658747914556
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadMeshFromXA
+      Procédure D3DXLoadMeshFromXA(FileName est une chaine, Options est un entier sans signe, pclD3DDevice est un IDirect3DDevice9 dynamique, pclAdjacency est un id3dxbuffer dynamique, pclMaterials est un id3dxbuffer dynamique, pclEffectInstances est un id3dxbuffer dynamique, NumMaterials est un entier sans signe, pclMesh est un ID3DXMesh dynamique)
+      
+      	HRESULT	est un entier systeme
+      	ppvAdjacency 		est un entier systeme
+      	ppvMaterials 		est un entier systeme
+      	ppvEffectInstances 	est un entier systeme
+      	ppvID3DXMesh 		est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXLoadMeshFromXA", &FileName, Options, PTR(pclD3DDevice), &ppvAdjacency, &ppvMaterials, &ppvEffectInstances, &NumMaterials, &ppvID3DXMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclAdjacency, ppvAdjacency, ID3DXBuffer)
+      	__BindInterface(pclMaterials, ppvMaterials, ID3DXBuffer)
+      	__BindInterface(pclEffectInstances, ppvEffectInstances, ID3DXBuffer)
+      	__BindInterface(pclMesh, ppvID3DXMesh, ID3DXMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXLoadMeshFromXW
+     procedure_id : 1863901625115649460
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadMeshFromXW
+      Procédure D3DXLoadMeshFromXW(FileName est une chaine unicode, Options est un entier sans signe, pclD3DDevice est un IDirect3DDevice9 dynamique, pclAdjacency est un id3dxbuffer dynamique, pclMaterials est un id3dxbuffer dynamique, pclEffectInstances est un id3dxbuffer dynamique, NumMaterials est un entier sans signe, pclMesh est un ID3DXMesh dynamique)
+      
+      	HRESULT	est un entier systeme
+      	ppvAdjacency 		est un entier systeme
+      	ppvMaterials 		est un entier systeme
+      	ppvEffectInstances 	est un entier systeme
+      	ppvID3DXMesh 		est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXLoadMeshFromXW", &FileName, Options, PTR(pclD3DDevice), &ppvAdjacency, &ppvMaterials, &ppvEffectInstances, &NumMaterials, &ppvID3DXMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclAdjacency, ppvAdjacency, ID3DXBuffer)
+      	__BindInterface(pclMaterials, ppvMaterials, ID3DXBuffer)
+      	__BindInterface(pclEffectInstances, ppvEffectInstances, ID3DXBuffer)
+      	__BindInterface(pclMesh, ppvID3DXMesh, ID3DXMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXLoadMeshFromXInMemory
+     procedure_id : 1863902046022477010
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadMeshFromXInMemory
+      Procédure D3DXLoadMeshFromXInMemory(Memory est un entier systeme, SizeOfMemory est un entier sans signe, Options est un entier sans signe, pclD3DDevice est un IDirect3DDevice9 dynamique, pclAdjacency est un id3dxbuffer dynamique, pclMaterials est un id3dxbuffer dynamique, pclEffectInstances est un id3dxbuffer dynamique, NumMaterials est un entier sans signe, pclMesh est un ID3DXMesh dynamique)
+      
+      	HRESULT	est un entier systeme
+      	ppvAdjacency 		est un entier systeme
+      	ppvMaterials 		est un entier systeme
+      	ppvEffectInstances 	est un entier systeme
+      	ppvID3DXMesh 		est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXLoadMeshFromXInMemory", Memory, SizeOfMemory, Options, PTR(pclD3DDevice), &ppvAdjacency, &ppvMaterials, &ppvEffectInstances, &NumMaterials, &ppvID3DXMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclAdjacency, ppvAdjacency, ID3DXBuffer)
+      	__BindInterface(pclMaterials, ppvMaterials, ID3DXBuffer)
+      	__BindInterface(pclEffectInstances, ppvEffectInstances, ID3DXBuffer)
+      	__BindInterface(pclMesh, ppvID3DXMesh, ID3DXMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXLoadMeshFromXResource
+     procedure_id : 1863902235001148046
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadMeshFromXResource
+      Procédure D3DXLoadMeshFromXResource(Module est un entier systeme, Name est une chaine, Type est une chaine, Options est un entier sans signe, pclD3DDevice est un IDirect3DDevice9 dynamique, pclAdjacency est un id3dxbuffer dynamique, pclMaterials est un id3dxbuffer dynamique, pclEffectInstances est un id3dxbuffer dynamique, NumMaterials est un entier sans signe, pclMesh est un ID3DXMesh dynamique)
+      
+      	HRESULT	est un entier systeme
+      	ppvAdjacency 		est un entier systeme
+      	ppvMaterials 		est un entier systeme
+      	ppvEffectInstances 	est un entier systeme
+      	ppvID3DXMesh 		est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXLoadMeshFromXResource", Module, &Name, &Type, Options, PTR(pclD3DDevice), &ppvAdjacency, &ppvMaterials, &ppvEffectInstances, &NumMaterials, &ppvID3DXMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclAdjacency, ppvAdjacency, ID3DXBuffer)
+      	__BindInterface(pclMaterials, ppvMaterials, ID3DXBuffer)
+      	__BindInterface(pclEffectInstances, ppvEffectInstances, ID3DXBuffer)
+      	__BindInterface(pclMesh, ppvID3DXMesh, ID3DXMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXSaveMeshToXA
+     procedure_id : 1863942628829450749
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSaveMeshToXA
+      Procédure D3DXSaveMeshToXA(Filename est une chaine, pclMesh est un id3dxmesh dynamique, Adjacency est un tableau d'entiers sans signe, Materials est un tableau de D3DXMATERIAL, EffectInstances est un tableau de D3DXEFFECTINSTANCE, NumMaterials est un entier sans signe, Format est un entier sans signe)
+      renvoyer api(pD3D9.D3DX9, "D3DXSaveMeshToXA", &Filename, PTR(pclMesh), PTR(Adjacency), PTR(Materials), PTR(EffectInstances), NumMaterials, Format)
+     type : 458752
+   -
+     name : D3DXSaveMeshToXW
+     procedure_id : 1863943436283359977
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSaveMeshToXW
+      Procédure D3DXSaveMeshToXW(Filename est une chaine unicode, pclMesh est un id3dxmesh dynamique, Adjacency est un tableau d'entiers sans signe, Materials est un tableau de D3DXMATERIAL, EffectInstances est un tableau de D3DXEFFECTINSTANCE, NumMaterials est un entier sans signe, Format est un entier sans signe)
+      renvoyer api(pD3D9.D3DX9, "D3DXSaveMeshToXW", &Filename, PTR(pclMesh), PTR(Adjacency), PTR(Materials), PTR(EffectInstances), NumMaterials, Format)
+     type : 458752
+   -
+     name : D3DXCreatePMeshFromStream
+     procedure_id : 1863948100686627529
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreatePMeshFromStream
+      Procédure D3DXCreatePMeshFromStream(pclStream est un istream dynamique, Options est un entier sans signe, pclD3DDevice est un IDirect3DDevice9 dynamique, pclMaterials est un ID3DXBuffer dynamique, pclEffectInstances est un ID3DXBuffer dynamique, NumMaterials est un entier sans signe, pclPMesh est un id3dxpmesh dynamique)
+      
+      	HRESULT	est un entier systeme
+      	ppvMaterials 		est un entier systeme
+      	ppvEffectInstances 	est un entier systeme
+      	ppvID3DXPMesh 		est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXLoadMeshFromXInMemory", PTR(pclStream), Options, PTR(pclD3DDevice), &ppvMaterials, &ppvEffectInstances, &NumMaterials, &ppvID3DXPMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclMaterials, ppvMaterials, ID3DXBuffer)
+      	__BindInterface(pclEffectInstances, ppvEffectInstances, ID3DXBuffer)
+      		__BindInterface(pclPMesh, ppvID3DXPMesh, ID3DXPMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateSkinInfo
+     procedure_id : 1863949058464360683
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateSkinInfo
+      Procédure D3DXCreateSkinInfo(NumVertices est un entier sans signe, Declaration est un tableau de D3DVERTEXELEMENT9, NumBones est un entier sans signe, pclSkinInfo est un ID3DXSkinInfo dynamique)
+      
+      	HRESULT	est un entier systeme
+      	ppvID3DXSkinInfo 		est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateSkinInfo", NumVertices, PTR(Declaration), NumBones, &ppvID3DXSkinInfo)
+      	
+      	// Allocation
+      	__BindInterface(pclSkinInfo, ppvID3DXSkinInfo, ID3DXSkinInfo)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateSkinInfoFVF
+     procedure_id : 1863949612515205266
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateSkinInfoFVF
+      Procédure D3DXCreateSkinInfoFVF(NumVertices est un entier sans signe, FVF est un entier sans signe, NumBones est un entier sans signe, pclSkinInfo est un ID3DXSkinInfo dynamique)
+      
+      	HRESULT	est un entier systeme
+      	ppvID3DXSkinInfo 		est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateSkinInfoFVF", NumVertices, FVF, NumBones, &ppvID3DXSkinInfo)
+      	
+      	// Allocation
+      	__BindInterface(pclSkinInfo, ppvID3DXSkinInfo, ID3DXSkinInfo)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXLoadMeshFromXof
+     procedure_id : 1863954087876560774
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadMeshFromXof
+      Procédure D3DXLoadMeshFromXof(pclXofMesh est un id3dxfiledata dynamique, Options est un entier sans signe, pclD3DDevice est un IDirect3DDevice9 dynamique, pclAdjacency est un id3dxbuffer dynamique, pclMaterials est un id3dxbuffer dynamique, pclEffectInstances est un id3dxbuffer dynamique, NumMaterials est un entier sans signe, pclMesh est un id3dxmesh dynamique)
+      
+      	HRESULT	est un entier systeme
+      	ppvAdjacency 		est un entier systeme
+      	ppvMaterials 		est un entier systeme
+      	ppvEffectInstances 	est un entier systeme
+      	ppvID3DXMesh 		est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXLoadMeshFromXof", PTR(pclXofMesh), Options, PTR(pclD3DDevice), &ppvAdjacency, &ppvMaterials, &ppvEffectInstances, &NumMaterials, &ppvID3DXMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclAdjacency, ppvAdjacency, ID3DXBuffer)
+      	__BindInterface(pclMaterials, ppvMaterials, ID3DXBuffer)
+      	__BindInterface(pclEffectInstances, ppvEffectInstances, ID3DXBuffer)
+      	__BindInterface(pclMesh, ppvID3DXMesh, ID3DXMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXLoadSkinMeshFromXof
+     procedure_id : 1863954770776454252
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadSkinMeshFromXof
+      Procédure D3DXLoadSkinMeshFromXof(pclXofMesh est un id3dxfiledata dynamique, Options est un entier sans signe, pclD3DDevice est un IDirect3DDevice9 dynamique, pclAdjacency est un id3dxbuffer dynamique, pclMaterials est un id3dxbuffer dynamique, pclEffectInstances est un id3dxbuffer dynamique, MatOut est un entier sans signe, pclSkinInfo est un ID3DXSkinInfo dynamique, pclMesh est un id3dxmesh dynamique)
+      
+      	HRESULT	est un entier systeme
+      	ppvAdjacency 		est un entier systeme
+      	ppvMaterials 		est un entier systeme
+      	ppvEffectInstances 	est un entier systeme
+      	ppvID3DXSkinInfo	est un entier systeme
+      	ppvID3DXMesh 		est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXLoadSkinMeshFromXof", PTR(pclXofMesh), Options, PTR(pclD3DDevice), &ppvAdjacency, &ppvMaterials, &ppvEffectInstances, &MatOut, &ppvID3DXSkinInfo, &ppvID3DXMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclAdjacency, ppvAdjacency, ID3DXBuffer)
+      	__BindInterface(pclMaterials, ppvMaterials, ID3DXBuffer)
+      	__BindInterface(pclEffectInstances, ppvEffectInstances, ID3DXBuffer)
+      	__BindInterface(pclMesh, ppvID3DXMesh, ID3DXMesh)
+      	__BindInterface(pclSkinInfo, ppvID3DXSkinInfo, ID3DXSkinInfo)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateSkinInfoFromBlendedMesh
+     procedure_id : 1863956149461015829
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateSkinInfoFromBlendedMesh
+      Procédure D3DXCreateSkinInfoFromBlendedMesh(pclMesh est un id3dxmesh dynamique, NumBones est un entier sans signe, BoneCombinationTable est un tableau de D3DXBONECOMBINATION, pclSkinInfo est un ID3DXSkinInfo dynamique)
+      	
+      	HRESULT	est un entier systeme
+      	ppvID3DXSkinInfo 		est un entier systeme
+      
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateSkinInfoFromBlendedMesh", PTR(pclMesh), NumBones, PTR(BoneCombinationTable), &ppvID3DXSkinInfo)
+      	
+      	// Allocation
+      	__BindInterface(pclSkinInfo, ppvID3DXSkinInfo, ID3DXSkinInfo)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXTessellateNPatches
+     procedure_id : 1863956866720655474
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXTessellateNPatches
+      Procédure D3DXTessellateNPatches(pclMeshIn est un id3dxmesh dynamique, tabAdjacencyIn est un tableau d'entiers sans signe, NumSegs est un reel sur 4, QuadraticInterpNormals est un booléen, pclMeshOut est un id3dxmesh dynamique, pclAdjacencyOut est un id3dxbuffer dynamique)
+      
+      	HRESULT	est un entier systeme
+      	ppvAdjacency 		est un entier systeme
+      	ppvID3DXMesh 		est un entier systeme
+      		
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXTessellateNPatches", PTR(pclMeshIn), PTR(tabAdjacencyIn), NumSegs, QuadraticInterpNormals, &ppvID3DXMesh, &ppvAdjacency)
+      	
+      	// Allocation
+      	__BindInterface(pclAdjacencyOut, ppvAdjacency, ID3DXBuffer)
+      	__BindInterface(pclMeshOut, ppvID3DXMesh, ID3DXMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXGenerateOutputDecl
+     procedure_id : 1863961492610831564
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGenerateOutputDecl
+      Procédure D3DXGenerateOutputDecl(Output est un D3DVERTEXELEMENT9, Input_ est un D3DVERTEXELEMENT9)
+      renvoyer API(pD3D9.D3DX9, "D3DXGenerateOutputDecl", &Output, &Input_)
+     type : 458752
+   -
+     name : D3DXLoadPatchMeshFromXof
+     procedure_id : 1863961900632820172
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadMeshFromXof
+      Procédure D3DXLoadPatchMeshFromXof(pclXofMesh est un id3dxfiledata dynamique, Options est un entier sans signe, pclD3DDevice est un IDirect3DDevice9 dynamique, pclMaterials est un id3dxbuffer dynamique, pclEffectInstances est un id3dxbuffer dynamique, NumMaterials est un entier sans signe, pclPatchMesh est un id3dxpatchmesh dynamique)
+      
+      	HRESULT	est un entier systeme
+      	ppvMaterials 		est un entier systeme
+      	ppvEffectInstances 	est un entier systeme
+      	ppvID3DXPatchMesh 		est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXLoadPatchMeshFromXof", PTR(pclXofMesh), Options, PTR(pclD3DDevice), &ppvMaterials, &ppvEffectInstances, &NumMaterials, &ppvID3DXPatchMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclMaterials, ppvMaterials, ID3DXBuffer)
+      	__BindInterface(pclEffectInstances, ppvEffectInstances, ID3DXBuffer)
+      	__BindInterface(pclPatchMesh, ppvID3DXPatchMesh, ID3DXPatchMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXRectPatchSize
+     procedure_id : 1863962888475331855
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXRectPatchSize
+      Procédure D3DXRectPatchSize(NumSegs est un reel sur 4, dwTriangles est un entier sans signe, dwVertices est un entier sans signe)
+      RENVOYER API(pD3D9.D3DX9, "D3DXRectPatchSize", &NumSegs, &dwTriangles, &dwVertices)
+     type : 458752
+   -
+     name : D3DXTriPatchSize
+     procedure_id : 1863963137583492509
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXTriPatchSize
+      Procédure D3DXTriPatchSize(NumSegs est un reel sur 4, dwTriangles est un entier sans signe, dwVertices est un entier sans signe)
+      RENVOYER API(pD3D9.D3DX9, "D3DXTriPatchSize", &NumSegs, &dwTriangles, &dwVertices)
+     type : 458752
+   -
+     name : D3DXTessellateRectPatch
+     procedure_id : 1863963360921909370
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXTessellateRectPatch
+      Procédure D3DXTessellateRectPatch(pclVB est un IDirect3DVertexBuffer9 dynamique, NumSegs est un reel sur 4, InDecl est un D3DVERTEXELEMENT9, RectPatchInfo est un D3DRECTPATCH_INFO, pclMeshOut est un id3dxmesh dynamique)
+      
+      	HRESULT	est un entier systeme
+      	ppvID3DXMesh 		est un entier systeme
+      		
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXTessellateRectPatch", PTR(pclVB), NumSegs, &InDecl, &RectPatchInfo, &ppvID3DXMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclMeshOut, ppvID3DXMesh, ID3DXMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXTessellateTriPatch
+     procedure_id : 1863963794713642536
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXTessellateTriPatch
+      Procédure D3DXTessellateTriPatch(pclVB est un IDirect3DVertexBuffer9 dynamique, NumSegs est un reel sur 4, InDecl est un D3DVERTEXELEMENT9, TriPatchInfo est un D3DTRIPATCH_INFO, pclMeshOut est un id3dxmesh dynamique)
+      
+      	HRESULT	est un entier systeme
+      	ppvID3DXMesh 		est un entier systeme
+      		
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXTessellateTriPatch", PTR(pclVB), NumSegs, &InDecl, &TriPatchInfo, &ppvID3DXMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclMeshOut, ppvID3DXMesh, ID3DXMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateNPatchMesh
+     procedure_id : 1865821161922018142
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateNPatchMesh
+      Procédure D3DXCreateNPatchMesh(pclMeshSystem est un id3dxmesh dynamique, pclPatchMesh est un ID3DXPatchMesh dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvPatchMesh est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreateNPatchMesh", ptr(pclMeshSystem), &ppvPatchMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclPatchMesh, ppvPatchMesh, ID3DXPatchMesh)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXCreatePatchMesh
+     procedure_id : 1865821561354004298
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreatePatchMesh
+      Procédure D3DXCreatePatchMesh(pclMeshSystem est un id3dxmesh dynamique, dwNumPatches est un entier sans signe, dwNumVertices est un entier sans signe, dwOptions est un entier sans signe, Decl est un tableau de D3DVERTEXELEMENT9, pclDevice est un IDirect3DDevice9 dynamique, pclPatchMesh est un ID3DXPatchMesh dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvPatchMesh est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreatePatchMesh", ptr(pclMeshSystem), dwNumPatches, dwNumVertices, dwOptions, ptr(Decl), ptr(pclDevice), &ppvPatchMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclPatchMesh, ppvPatchMesh, ID3DXPatchMesh)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXValidPatchMesh
+     procedure_id : 1865821922131341824
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXValidPatchMesh
+      Procédure D3DXValidPatchMesh(pclPatchMesh est un id3dxPatchmesh dynamique, dwcDegenerateVertices est un entier sans signe, dwcDegeneratePatches est un entier sans signe, pclErrorsAndWarnings est un ID3DXBuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXValidPatchMesh", ptr(pclPatchMesh), &dwcDegenerateVertices, &dwcDegeneratePatches, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclErrorsAndWarnings, ppvID3DXBuffer, ID3DXBuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXGetFVFVertexSize
+     procedure_id : 1865822274318741201
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGetFVFVertexSize
+      Procédure D3DXGetFVFVertexSize(FVF est un entier sans signe)
+      renvoyer API(pD3D9.D3DX9, "D3DXGetFVFVertexSize", FVF)
+     type : 458752
+   -
+     name : D3DXGetDeclVertexSize
+     procedure_id : 1865822424642631708
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGetDeclVertexSize
+      Procédure D3DXGetDeclVertexSize(Decl est un tableau de D3DVERTEXELEMENT9, Stream est un entier sans signe)
+      renvoyer API(pD3D9.D3DX9, "D3DXGetDeclVertexSize", PTR(Decl), Stream)
+     type : 458752
+   -
+     name : D3DXGetDeclLength
+     procedure_id : 1865822570671620096
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGetDeclLength
+      Procédure D3DXGetDeclLength(Decl est un tableau de  D3DVERTEXELEMENT9)
+      renvoyer API(pD3D9.D3DX9, "D3DXGetDeclLength", ptr(Decl))
+     type : 458752
+   -
+     name : D3DXDeclaratorFromFVF
+     procedure_id : 1865822708111719520
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXDeclaratorFromFVF
+      Procédure D3DXDeclaratorFromFVF(FVF est un entier sans signe, Decl est un tableau de MAX_FVF_DECL_SIZE D3DVERTEXELEMENT9)
+      RENVOYER API(pD3D9.D3DX9, "D3DXDeclaratorFromFVF", FVF, PTR(Decl))
+     type : 458752
+   -
+     name : D3DXFVFFromDeclarator
+     procedure_id : 1865823919292581809
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXFVFFromDeclarator
+      Procédure D3DXFVFFromDeclarator(Decl est un tableau de D3DVERTEXELEMENT9, FVF est un entier sans signe)
+      RENVOYER API(pD3D9.D3DX9, "D3DXFVFFromDeclarator", PTR(Decl), &FVF)
+     type : 458752
+   -
+     name : D3DXWeldVertices
+     procedure_id : 1865825392468280716
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXWeldVertices
+      Procédure D3DXWeldVertices(pclMesh est un id3dxmesh dynamique, Flags est un entier sans signe, Epsilons est un D3DXWELDEPSILONS, AdjacencyOut est un entier sans signe, FaceRemap est un entier sans signe, pclVertexRemap est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXWeldVertices", PTR(pclMesh), Flags, &Epsilons, &AdjacencyOut, &FaceRemap, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclVertexRemap, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXIntersect
+     procedure_id : 1865826221397030682
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXIntersect
+      Procédure D3DXIntersect(pclMesh est un id3dxbasemesh dynamique, RayPos est un D3DXVECTOR3, RayDir est un D3DXVECTOR3, Hit est un booléen, FaceIndex est un entier sans signe, U est un reel sur 4, V est un reel sur 4, Dist est un reel sur 4, pclAllHits est un id3dxbuffer dynamique, CountOfHits est un entier sans signe)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXIntersect", PTR(pclMesh), &RayPos, &RayDir, &Hit, &FaceIndex, &U, &V, &Dist, &ppvID3DXBuffer, &CountOfHits)
+      	
+      	// Allocation
+      	__BindInterface(pclAllHits, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXIntersectSubset
+     procedure_id : 1865826779742843232
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXIntersectSubset
+      Procédure D3DXIntersectSubset(pclMesh est un id3dxbasemesh dynamique, AttribId est un entier sans signe, RayPos est un D3DXVECTOR3, RayDir est un D3DXVECTOR3, Hit est un booléen, FaceIndex est un entier sans signe, U est un reel sur 4, V est un reel sur 4, Dist est un reel sur 4, pclAllHits est un id3dxbuffer dynamique, CountOfHits est un entier sans signe)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXIntersectSubset", PTR(pclMesh), AttribId, &RayPos, &RayDir, &Hit, &FaceIndex, &U, &V, &Dist, &ppvID3DXBuffer, &CountOfHits)
+      	
+      	// Allocation
+      	__BindInterface(pclAllHits, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXSplitMesh
+     procedure_id : 1865827247894322566
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSplitMesh
+      Procédure D3DXSplitMesh(pclMesh est un id3dxbasemesh dynamique, AdjacencyIn est un tableau d'entier sans signe, MaxSize_ est un entier sans signe, Options est un entier sans signe, MeshesOut est un entier sans signe, pclMeshArrayOut est un id3dxbuffer dynamique, pclAdjacencyArrayOut est un id3dxbuffer dynamique, pclFaceRemapArrayOut est un id3dxbuffer dynamique, pclVertRemapArrayOut est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvMeshArrayOut est un entier systeme
+      	ppvAdjacencyArrayOut est un entier systeme
+      	ppvFaceRemapArrayOut est un entier systeme
+      	ppvVertRemapArrayOut est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXSplitMesh", PTR(pclMesh), ptr(AdjacencyIn), MaxSize_, Options, &MeshesOut, &ppvMeshArrayOut, &ppvAdjacencyArrayOut, &ppvFaceRemapArrayOut, &ppvVertRemapArrayOut)
+      	
+      	// Allocation
+      	__BindInterface(pclMeshArrayOut, ppvMeshArrayOut, ID3DXBuffer)
+      	__BindInterface(pclAdjacencyArrayOut, ppvAdjacencyArrayOut, ID3DXBuffer)
+      	__BindInterface(pclFaceRemapArrayOut, ppvFaceRemapArrayOut, ID3DXBuffer)
+      	__BindInterface(pclVertRemapArrayOut, ppvVertRemapArrayOut, ID3DXBuffer)
+      	
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXIntersectTri
+     procedure_id : 1865828330226135993
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXIntersectTri
+      Procédure D3DXIntersectTri(pclMesh est un id3dxbasemesh dynamique, p0 est un D3DXVECTOR3, p1 est un D3DXVECTOR3, p2 est un D3DXVECTOR3, RayPos est un D3DXVECTOR3, RayDir est un D3DXVECTOR3, U est un reel sur 4, V est un reel sur 4, Dist est un reel sur 4)
+      renvoyer API(pD3D9.D3DX9, "D3DXIntersectTri", PTR(pclMesh), &p0, &p1, &p2, &RayPos, &RayDir, &U, &V, &Dist)
+     type : 458752
+   -
+     name : D3DXSphereBoundProbe
+     procedure_id : 1865829034600870739
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSphereBoundProbe
+      Procédure D3DXSphereBoundProbe(Center est un D3DXVECTOR3, Radius est un reel sur 4, RayPosition est un D3DXVECTOR3, RayDirection est un D3DXVECTOR3)
+      renvoyer api(pd3d9.D3Dx9, "D3DXSphereBoundProbe", &Center, Radius, &RayPosition, &RayDirection)
+     type : 458752
+   -
+     name : D3DXBoxBoundProbe
+     procedure_id : 1865829296593937104
+     type_code : 15
+     code : |1-
+      	// Résumé : Fonction D3DXBoxBoundProbe
+      Procédure D3DXBoxBoundProbe(Min_ est un D3DXVECTOR3, Max_ est un D3DXVECTOR3, RayPosition est un D3DXVECTOR3, RayDirection est un D3DXVECTOR3)
+      renvoyer api(pd3d9.D3Dx9, "D3DXBoxBoundProbe", &Min_, &Max_, &RayPosition, &RayDirection)
+     type : 458752
+   -
+     name : D3DXComputeTangentFrame
+     procedure_id : 1865829446917827268
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXComputeTangentFrame
+      Procédure D3DXComputeTangentFrame(pclMesh est un id3dxmesh dynamique, dwOptions est un entier sans signe)
+      RENVOYER API(pD3D9.D3DX9, "D3DXComputeTangentFrame", ptr(pclMesh), dwOptions)
+     type : 458752
+   -
+     name : D3DXComputeTangentFrameEx
+     procedure_id : 1865829743270639753
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXComputeTangentFrameEx
+      Procédure D3DXComputeTangentFrameEx(pclMesh est un id3dxmesh dynamique, dwTextureInSemantic est un entier sans signe, dwTextureInIndex est un entier sans signe, dwUPartialOutSemantic est un entier sans signe, dwUPartialOutIndex est un entier sans signe, dwVPartialOutSemantic est un entier sans signe, dwVPartialOutIndex est un entier sans signe, dwNormalOutSemantic est un entier sans signe, dwNormalOutIndex est un entier sans signe, dwOptions est un entier sans signe, dwAdjacency est un tableau d'entier sans signe,  PartialEdgeThreshold est un reel sur 4, ...
+      									SingularPointThreshold est un reel sur 4, NormalEdgeThreshold est un reel sur 4, pclMeshOut est un id3dxmesh dynamique, pclVertexMapping est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvMesh est un entier systeme
+      	ppvVertexMapping est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXComputeTangentFrameEx", PTR(pclMesh), dwTextureInSemantic, dwTextureInIndex, dwUPartialOutSemantic, dwUPartialOutIndex, dwVPartialOutSemantic, dwVPartialOutIndex, dwNormalOutSemantic, dwNormalOutIndex, dwOptions, ptr(dwAdjacency), PartialEdgeThreshold, SingularPointThreshold, NormalEdgeThreshold, &ppvMesh, &ppvVertexMapping)
+      	
+      	// Allocation
+      	__BindInterface(pclMeshOut, ppvMesh, ID3DXMesh)
+      	__BindInterface(pclVertexMapping, ppvVertexMapping, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXComputeTangent
+     procedure_id : 1865831031760932310
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXComputeTangent
+      Procédure D3DXComputeTangent(pclMesh est un id3dxmesh dynamique, TexStage est un entier sans signe, TangentIndex est un entier sans signe, BinormIndex est un entier sans signe, Wrap est un entier sans signe, Adjacency est un tableau d'entier sans signe)
+      RENVOYER API(pD3D9.D3DX9, "D3DXComputeTangent", PTR(pclMesh), TexStage, TangentIndex, BinormIndex, Wrap, ptr(Adjacency))
+     type : 458752
+   -
+     name : D3DXUVAtlasPartition
+     procedure_id : 1866073271925826854
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXUVAtlasPartition
+      Procédure D3DXUVAtlasPartition(pclMesh est un id3dxmesh dynamique, uMaxChartNumber est un entier sans signe, fMaxStretch est un reel sur 4, uWidth est un entier sans signe, uHeight est un entier sans signe, fGutter est un reel sur 4, dwTextureIndex est un entier sans signe, dwAdjacency est un tableau d'entiers sans signe, dwFalseEdgeAdjacency est un tableau d'entiers sans signe, fIMTArray est un tableau de reel sur 4, StatusCallback est un entier systeme, fCallbackFrequency est un reel sur 4, pUserContext est un entier systeme, dwOptions est un entier sans signe, ...
+      							pclMeshOut est un ID3DXMesh dynamique, pclFacePartitionning est un id3dxbuffer dynamique, pclVertexRemapArray est un id3dxbuffer dynamique, pclPartitionResultAdjacency est un id3dxbuffer dynamique, fMaxStretchOut est un reel sur 4, uNumChartsOut est un entier sans signe)
+      
+      
+      	HRESULT est un entier systeme
+      	ppvMesh est un entier systeme
+      	ppvFacePartitionning est un entier systeme
+      	ppvVertexMapping est un entier systeme
+      	ppvPartitionResultAdjacency est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXUVAtlasPartition", PTR(pclMesh), uMaxChartNumber, fMaxStretch, uWidth, uHeight, fGutter, dwTextureIndex, ptr(dwAdjacency), ptr(dwFalseEdgeAdjacency), ptr(fIMTArray), StatusCallback, fCallbackFrequency, pUserContext, dwOptions, &ppvMesh, &ppvFacePartitionning, &ppvVertexMapping, &ppvPartitionResultAdjacency, &fMaxStretchOut, &uNumChartsOut)
+      	
+      	// Allocation
+      	__BindInterface(pclMeshOut, ppvMesh, ID3DXMesh)
+      	__BindInterface(pclFacePartitionning, ppvFacePartitionning, ID3DXBuffer)
+      	__BindInterface(pclVertexRemapArray, ppvVertexMapping, ID3DXBuffer)
+      	__BindInterface(pclPartitionResultAdjacency, ppvPartitionResultAdjacency, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXUVAtlasCreate
+     procedure_id : 1866074796639309147
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXUVAtlasCreate
+      Procédure D3DXUVAtlasCreate(pclMesh est un id3dxmesh dynamique, uMaxChartNumber est un entier sans signe, fMaxStretch est un reel sur 4, uWidth est un entier sans signe, uHeight est un entier sans signe, fGutter est un reel sur 4, dwTextureIndex est un entier sans signe, dwAdjacency est un tableau d'entiers sans signe, dwFalseEdgeAdjacency est un tableau d'entiers sans signe, fIMTArray est un tableau de reel sur 4, StatusCallback est un entier systeme, fCallbackFrequency est un reel sur 4, pUserContext est un entier systeme, dwOptions est un entier sans signe, ...
+      							pclMeshOut est un ID3DXMesh dynamique, pclFacePartitionning est un id3dxbuffer dynamique, pclVertexRemapArray est un id3dxbuffer dynamique, fMaxStretchOut est un reel sur 4, uNumChartsOut est un entier sans signe)
+      
+      
+      	HRESULT est un entier systeme
+      	ppvMesh est un entier systeme
+      	ppvFacePartitionning est un entier systeme
+      	ppvVertexMapping est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXUVAtlasCreate", PTR(pclMesh), uMaxChartNumber, fMaxStretch, uWidth, uHeight, fGutter, dwTextureIndex, ptr(dwAdjacency), ptr(dwFalseEdgeAdjacency), ptr(fIMTArray), StatusCallback, fCallbackFrequency, pUserContext, dwOptions, &ppvMesh, &ppvFacePartitionning, &ppvVertexMapping, &fMaxStretchOut, &uNumChartsOut)
+      	
+      	// Allocation
+      	__BindInterface(pclMeshOut, ppvMesh, ID3DXMesh)
+      	__BindInterface(pclFacePartitionning, ppvFacePartitionning, ID3DXBuffer)
+      	__BindInterface(pclVertexRemapArray, ppvVertexMapping, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXUVAtlasPack
+     procedure_id : 1866075191776327663
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXUVAtlasPack
+      Procédure D3DXUVAtlasPack(pclMesh est un id3dxmesh dynamique, uWidth est un entier sans signe, uHeight est un entier sans signe, fGutter est un reel sur 4, dwTextureIndex est un entier sans signe, dwPartitionResultAdjacency est un tableau d'entiers sans signe, StatusCallback est un entier systeme, fCallbackFrequency est un reel sur 4, pUserContext est un entier systeme, dwOptions est un entier sans signe, ...
+      						  pclFacePartitionning est un id3dxbuffer dynamique)
+      
+      
+      	HRESULT est un entier systeme
+      	ppvFacePartitionning est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXUVAtlasPack", PTR(pclMesh), uWidth, uHeight, fGutter, dwTextureIndex, ptr(dwPartitionResultAdjacency), StatusCallback, fCallbackFrequency, pUserContext, dwOptions, &ppvFacePartitionning)
+      	
+      	// Allocation
+      	__BindInterface(pclFacePartitionning, ppvFacePartitionning, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXComputeIMTFromPerVertexSignal
+     procedure_id : 1866075900446030829
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXComputeIMTFromPerVertexSignal
+      Procédure D3DXComputeIMTFromPerVertexSignal(pclMesh est un id3dxmesh dynamique, fVertexSignal est un tableau de reel sur 4, uSignalDimension est un entier sans signe, uSignalStride est un entier sans signe, dwOptions est un entier sans signe, StatusCallback est un entier systeme, pUserContext est un entier systeme, pclIMTData est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvIMTData est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXComputeIMTFromPerVertexSignal", PTR(pclMesh), ptr(fVertexSignal), uSignalDimension, uSignalStride, dwOptions, StatusCallback, pUserContext, &ppvIMTData)
+      	
+      	// Allocation
+      	__BindInterface(pclIMTData, ppvIMTData, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXComputeIMTFromSignal
+     procedure_id : 1866076574755921480
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXComputeIMTFromSignal
+      Procédure D3DXComputeIMTFromSignal(pclMesh est un id3dxmesh dynamique, dwTextureIndex est un entier sans signe, uSignalDimension est un entier sans signe, fMaxUVDistance est un reel sur 4, dwOptions est un entier sans signe, SignalCallback est un entier systeme, pUserData est un entier systeme, StatusCallback est un entier systeme, pUserContext est un entier systeme, pclIMTData est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvIMTData est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXComputeIMTFromSignal", PTR(pclMesh), dwTextureIndex, uSignalDimension, fMaxUVDistance, dwOptions, SignalCallback, pUserData, StatusCallback, pUserContext, &ppvIMTData)
+      	
+      	// Allocation
+      	__BindInterface(pclIMTData, ppvIMTData, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXComputeIMTFromTexture
+     procedure_id : 1866077017137656708
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXComputeIMTFromTexture
+      Procédure D3DXComputeIMTFromTexture(pclMesh est un id3dxmesh dynamique, pclTexture est un IDirect3DTexture9 dynamique, dwTextureIndex est un entier sans signe, dwOptions est un entier sans signe, StatusCallback est un entier systeme, pUserContext est un entier systeme, pclIMTData est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvIMTData est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXComputeIMTFromTexture", PTR(pclMesh), ptr(pclTexture), dwTextureIndex, dwOptions, StatusCallback, pUserContext, &ppvIMTData)
+      	
+      	// Allocation
+      	__BindInterface(pclIMTData, ppvIMTData, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXComputeIMTFromPerTexelSignal
+     procedure_id : 1866077463814293931
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXComputeIMTFromPerTexelSignal
+      Procédure D3DXComputeIMTFromPerTexelSignal(pclMesh est un id3dxmesh dynamique, dwTextureIndex est un entier sans signe, fTexelSignal est un tableau de reel sur 4, uWidth est un entier sans signe, uHeight est un entier sans signe, uSignalDimension est un entier sans signe, uComponents est un entier sans signe, dwOptions est un entier sans signe, StatusCallback est un entier systeme, pUserContext est un entier systeme, pclIMTData est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvIMTData est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXComputeIMTFromPerTexelSignal", PTR(pclMesh), dwTextureIndex, ptr(fTexelSignal), uWidth, uHeight, uSignalDimension, uComponents, dwOptions, StatusCallback, pUserContext, &ppvIMTData)
+      	
+      	// Allocation
+      	__BindInterface(pclIMTData, ppvIMTData, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXConvertMeshSubsetToSingleStrip
+     procedure_id : 1866078743752790743
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXConvertMeshSubsetToSingleStrip
+      Procédure D3DXConvertMeshSubsetToSingleStrip(pclMeshIn est un id3dxmesh dynamique, AttribId est un entier sans signe, IBOptions est un entier sans signe, pclIndexBuffer est un id3dxbuffer dynamique, NumIndices est un entier sans signe)
+      
+      	HRESULT est un entier systeme
+      	ppvIndexBuffer est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXConvertMeshSubsetToSingleStrip", PTR(pclMeshIn), AttribId, IBOptions, &ppvIndexBuffer, &NumIndices)
+      	
+      	// Allocation
+      	__BindInterface(pclIndexBuffer, ppvIndexBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXConvertMeshSubsetToStrips
+     procedure_id : 1866079572681541225
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXConvertMeshSubsetToStrips
+      Procédure D3DXConvertMeshSubsetToStrips(pclMeshIn est un id3dxmesh dynamique, AttribId est un entier sans signe, IBOptions est un entier sans signe, pclIndexBuffer est un id3dxbuffer dynamique, NumIndices est un entier sans signe, pclStripLengths est un id3dxbuffer dynamique, NumStrips est un entier sans signe)
+      
+      	HRESULT est un entier systeme
+      	ppvIndexBuffer est un entier systeme
+      	ppvStripLengths est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXConvertMeshSubsetToStrips", PTR(pclMeshIn), AttribId, IBOptions, &ppvIndexBuffer, &NumIndices, &ppvStripLengths, &NumStrips)
+      	
+      	// Allocation
+      	__BindInterface(pclIndexBuffer, ppvIndexBuffer, ID3DXBuffer)
+      	__BindInterface(pclStripLengths, ppvStripLengths, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXOptimizeFaces
+     procedure_id : 1866079980703463314
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXOptimizeFaces
+      Procédure D3DXOptimizeFaces(pbIndices est un entier systeme, cFaces est un entier sans signe, cVertices est un entier sans signe, b32BitIndices est un booléen, FaceRemap est un entier sans signe)
+      renvoyer API(pD3D9.D3DX9, "D3DXOptimizeFaces", pbIndices, cFaces, cVertices, b32BitIndices, &FaceRemap)
+     type : 458752
+   -
+     name : D3DXOptimizeVertices
+     procedure_id : 1866080289941181151
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXOptimizeVertices
+      Procédure D3DXOptimizeVertices(pbIndices est un entier systeme, cFaces est un entier sans signe, cVertices est un entier sans signe, b32BitIndices est un booléen, VertexRemap est un entier sans signe)
+      renvoyer API(pD3D9.D3DX9, "D3DXOptimizeVertices", pbIndices, cFaces, cVertices, b32BitIndices, &VertexRemap)
+     type : 458752
+   -
+     name : D3DXCreatePRTBuffer
+     procedure_id : 1866083519765728416
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreatePRTBuffer
+      Procédure D3DXCreatePRTBuffer(NumSamples est un entier sans signe, NumCoeffs est un entier sans signe, NumChannels est un entier sans signe, pclBuffer est un ID3DXPRTBuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvBuffer est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreatePRTBuffer", NumSamples, NumCoeffs, NumChannels, &ppvBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclBuffer, ppvBuffer, ID3DXPRTBuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXCreatePRTBufferTex
+     procedure_id : 1866083936377587547
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreatePRTBufferTex
+      Procédure D3DXCreatePRTBufferTex(Width est un entier sans signe, Height est un entier sans signe, NumCoeffs est un entier sans signe, NumChannels est un entier sans signe, pclBuffer est un ID3DXPRTBuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvBuffer est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreatePRTBufferTex", Width, Height, NumCoeffs, NumChannels, &ppvBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclBuffer, ppvBuffer, ID3DXPRTBuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXLoadPRTBufferFromFileA
+     procedure_id : 1866084125356257834
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadPRTBufferFromFileA
+      Procédure D3DXLoadPRTBufferFromFileA(FileName est une chaine, pclBuffer est un ID3DXPRTBuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvBuffer est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXLoadPRTBufferFromFileA", &FileName, &ppvBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclBuffer, ppvBuffer, ID3DXPRTBuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXLoadPRTBufferFromFileW
+     procedure_id : 1866084271385180187
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadPRTBufferFromFileW
+      Procédure D3DXLoadPRTBufferFromFileW(FileName est une chaine unicode, pclBuffer est un ID3DXPRTBuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvBuffer est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXLoadPRTBufferFromFileW", &FileName, &ppvBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclBuffer, ppvBuffer, ID3DXPRTBuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXSavePRTBufferToFileA
+     procedure_id : 1866084361579579827
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSavePRTBufferToFileA
+      Procédure D3DXSavePRTBufferToFileA(FileName est une chaine, pclBuffer est un ID3DXPRTBuffer dynamique)
+      renvoyer api(pd3d9.d3dx9, "D3DXSavePRTBufferToFileA", &FileName, ptr(pclBuffer))
+     type : 458752
+   -
+     name : D3DXSavePRTBufferToFileW
+     procedure_id : 1866084486133660880
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSavePRTBufferToFileW
+      Procédure D3DXSavePRTBufferToFileW(FileName est une chaine unicode, pclBuffer est un ID3DXPRTBuffer dynamique)
+      renvoyer api(pd3d9.d3dx9, "D3DXSavePRTBufferToFileW", &FileName, ptr(pclBuffer))
+     type : 458752
+   -
+     name : D3DXLoadPRTCompBufferFromFileA
+     procedure_id : 1866084572033092117
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadPRTCompBufferFromFileA
+      Procédure D3DXLoadPRTCompBufferFromFileA(FileName est une chaine, pclBuffer est un ID3DXPRTcompBuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvBuffer est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXLoadPRTCompBufferFromFileA", &FileName, &ppvBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclBuffer, ppvBuffer, ID3DXPRTcompBuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXLoadPRTCompBufferFromFileW
+     procedure_id : 1866084572033157700
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadPRTCompBufferFromFileW
+      Procédure D3DXLoadPRTCompBufferFromFileW(FileName est une chaine unicode, pclBuffer est un ID3DXPRTcompBuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvBuffer est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXLoadPRTCompBufferFromFileW", &FileName, &ppvBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclBuffer, ppvBuffer, ID3DXPRTcompBuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXSavePRTCompBufferToFileA
+     procedure_id : 1866084812551382077
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSavePRTCompBufferToFileA
+      Procédure D3DXSavePRTCompBufferToFileA(FileName est une chaine, pclBuffer est un ID3DXPRTcompBuffer dynamique)
+      renvoyer api(pd3d9.d3dx9, "D3DXSavePRTCompBufferToFileA", &FileName, ptr(pclBuffer))
+     type : 458752
+   -
+     name : D3DXSavePRTCompBufferToFileW
+     procedure_id : 1866084812551447676
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSavePRTCompBufferToFileW
+      Procédure D3DXSavePRTCompBufferToFileW(FileName est une chaine unicode, pclBuffer est un ID3DXPRTcompBuffer dynamique)
+      renvoyer api(pd3d9.d3dx9, "D3DXSavePRTCompBufferToFileW", &FileName, ptr(pclBuffer))
+     type : 458752
+   -
+     name : D3DXCreatePRTCompBuffer
+     procedure_id : 1866085023004894226
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreatePRTCompBuffer
+      Procédure D3DXCreatePRTCompBuffer(Quality est un entier sans signe, NumClusters est un entier sans signe, NumPCA est un entier sans signe, CB est un entier systeme, lpUserContext est un entier systeme, pclBufferIn est un id3dxprtbuffer dynamique, pclBufferOut est un ID3DXPRTCompBuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvBuffer est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreatePRTCompBuffer", Quality, NumClusters, NumPCA, CB, lpUserContext, ptr(pclBufferIn), &ppvBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclBufferOut, ppvBuffer, ID3DXPRTCompBuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXCreateTextureGutterHelper
+     procedure_id : 1866085431026881992
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateTextureGutterHelper
+      Procédure D3DXCreateTextureGutterHelper(Width est un entier sans signe, Height est un entier sans signe, pclMesh est un id3dxmesh dynamique, GutterSize est un reel sur 4, pclBuffer est un ID3DXTextureGutterHelper dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvBuffer est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreateTextureGutterHelper", Width, Height, ptr(pclMesh), GutterSize, &ppvBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclBuffer, ppvBuffer, ID3DXTextureGutterHelper)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXCreatePRTEngine
+     procedure_id : 1866085718789757483
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreatePRTEngine
+      Procédure D3DXCreatePRTEngine(pclMesh est un id3dxmesh dynamique, Adjacency est un tableau d'entiers sans signe, ExtractUVs est un booléen, pclBlockerMesh est un id3dxmesh dynamique, pclEngine est un ID3DXPRTEngine dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvEngine est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreatePRTEngine", ptr(pclMesh), ptr(Adjacency), ExtractUVs, ptr(pclBlockerMesh), &ppvEngine)
+      	
+      	// Allocation
+      	__BindInterface(pclEngine, ppvEngine, ID3DXPRTEngine)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXConcatenateMeshes
+     procedure_id : 1866086341560094933
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXConcatenateMeshes
+      Procédure D3DXConcatenateMeshes(tabMeshes est un tableau de id3dxmesh dynamique, nNumMeshes est un entier sans signe, nOptions est un entier sans signe, tabGeomXForms est un tableau de D3DXMATRIX, tabTextureXForms est un tableau de d3dxmatrix, tabDecl est un tableau de D3DVERTEXELEMENT9, pclDevice est un IDirect3DDevice9 dynamique, pclMeshOut est un ID3DXMesh dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvMeshOut est un entier systeme
+      	tabPtr	   est un tableau d'entiers systeme
+      	
+      	// Construit un tableau de pointeurs
+      	pour i = 1 _a_ tabMeshes..Occurrence
+      		ajoute(tabPtr, ptr(tabMeshes[i]))
+      	FIN
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXConcatenateMeshes", &tabPtr, nNumMeshes, nOptions, ptr(tabGeomXForms), ptr(tabTextureXForms), ptr(tabDecl), ptr(pclDevice), &ppvMeshOut)
+      		
+      	// Allocation
+      	__BindInterface(pclMeshOut, ppvMeshOut, id3dxmesh)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXSHPRTCompSuperCluster
+     procedure_id : 1866087853388607944
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSHPRTCompSuperCluster
+      Procédure D3DXSHPRTCompSuperCluster(pClusterIDs est un entier systeme, pclScene est un id3dxmesh dynamique, MaxNumClusters est un entier sans signe, NumClusters est un entier sans signe, tabSuperClusterIDS est un tableau d'entiers sans signe, NumSuperClusters est un entier sans signe)
+      renvoyer api(pd3d9.d3dx9, "D3DXSHPRTCompSuperCluster", pClusterIDs, ptr(pclScene), MaxNumClusters, NumClusters, &tabSuperClusterIDS, &NumSuperClusters)
+     type : 458752
+   -
+     name : D3DXSHPRTCompSplitMeshSC
+     procedure_id : 1866088446094167567
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSHPRTCompSplitMeshSC
+      Procédure D3DXSHPRTCompSplitMeshSC(pClusterIDs est un entier systeme, NumVertices est un entier sans signe, NumClusters est un entier sans signe, tabSuperClusterIDs est un tableau d'entier sans signe, NumSuperClusters est un entier sans signe, pInputIB est un entier systeme, InputIBIs32Bit est un booléen, NumFaces est un entier sans signe, pclIBData est un id3dxbuffer dynamique, ...
+      								   IBDataLength est un entier sans signe, OutputIBIs32Bit est un booléen, pclFaceRemap est un id3dxbuffer dynamique, pclVertData est un id3dxbuffer dynamique, VertDataLength est un entier sans signe, tabSCClusterList est un tableau d'entiers sans signe, SCData est un D3DXSHPRTSPLITMESHCLUSTERDATA)
+      
+      	HRESULT est un entier systeme
+      	ppvFaceRemap est un entier systeme
+      	ppvVertData est un entier systeme
+      	ppvIBData est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXSHPRTCompSplitMeshSC", pClusterIDs, NumVertices, NumClusters, ptr(tabSuperClusterIDs), NumSuperClusters, pInputIB, InputIBIs32Bit, NumFaces, &ppvIBData, &IBDataLength, OutputIBIs32Bit, &ppvFaceRemap, &ppvVertData, &VertDataLength, ptr(tabSCClusterList), &SCData)
+      	
+      	// Allocation
+      	__BindInterface(pclFaceRemap, ppvFaceRemap, id3dxbuffer)
+      	__BindInterface(pclVertData, ppvVertData, id3dxbuffer)
+      	__BindInterface(pclIBData, ppvIBData, id3dxbuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x10d999010e58b51f
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

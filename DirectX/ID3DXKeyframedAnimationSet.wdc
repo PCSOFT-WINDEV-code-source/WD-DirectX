@@ -1,0 +1,309 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXKeyframedAnimationSet
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19e5f25d088112aa
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXKeyframedAnimationSet est une classe
+      	un objet ID3DXAnimationSet
+      	
+      Fin
+      
+      constant
+      	
+      	// Méthodes de l'interface ID3DXKeyframedAnimationSet (VTABLE)
+      	ID3DXKeyframedAnimationSet_GetPlaybackType						= ::ID3DXAnimationSet___IDXBASE + 1
+      	ID3DXKeyframedAnimationSet_GetSourceTicksPerSecond				= ::ID3DXAnimationSet___IDXBASE + 2
+      	ID3DXKeyframedAnimationSet_GetNumScaleKeys						= ::ID3DXAnimationSet___IDXBASE + 3
+      	ID3DXKeyframedAnimationSet_GetScaleKeys							= ::ID3DXAnimationSet___IDXBASE + 4
+      	ID3DXKeyframedAnimationSet_GetScaleKey							= ::ID3DXAnimationSet___IDXBASE + 5
+      	ID3DXKeyframedAnimationSet_SetScaleKey							= ::ID3DXAnimationSet___IDXBASE + 6
+      	ID3DXKeyframedAnimationSet_GetNumRotationKeys					= ::ID3DXAnimationSet___IDXBASE + 7
+      	ID3DXKeyframedAnimationSet_GetRotationKeys						= ::ID3DXAnimationSet___IDXBASE + 8
+      	ID3DXKeyframedAnimationSet_GetRotationKey						= ::ID3DXAnimationSet___IDXBASE + 9
+      	ID3DXKeyframedAnimationSet_SetRotationKey						= ::ID3DXAnimationSet___IDXBASE + 10
+      	ID3DXKeyframedAnimationSet_GetNumTranslationKeys				= ::ID3DXAnimationSet___IDXBASE + 11
+      	ID3DXKeyframedAnimationSet_GetTranslationKeys					= ::ID3DXAnimationSet___IDXBASE + 12
+      	ID3DXKeyframedAnimationSet_GetTranslationKey					= ::ID3DXAnimationSet___IDXBASE + 13
+      	ID3DXKeyframedAnimationSet_SetTranslationKey					= ::ID3DXAnimationSet___IDXBASE + 14
+      	ID3DXKeyframedAnimationSet_GetNumCallbackKeys					= ::ID3DXAnimationSet___IDXBASE + 15
+      	ID3DXKeyframedAnimationSet_GetCallbackKeys						= ::ID3DXAnimationSet___IDXBASE + 16
+      	ID3DXKeyframedAnimationSet_GetCallbackKey						= ::ID3DXAnimationSet___IDXBASE + 17
+      	ID3DXKeyframedAnimationSet_SetCallbackKey						= ::ID3DXAnimationSet___IDXBASE + 19
+      	ID3DXKeyframedAnimationSet_UnregisterScaleKey					= ::ID3DXAnimationSet___IDXBASE + 20
+      	ID3DXKeyframedAnimationSet_UnregisterRotationKey				= ::ID3DXAnimationSet___IDXBASE + 21
+      	ID3DXKeyframedAnimationSet_UnregisterTranslationKey				= ::ID3DXAnimationSet___IDXBASE + 22
+      	ID3DXKeyframedAnimationSet_RegisterAnimationSRTKeys				= ::ID3DXAnimationSet___IDXBASE + 23
+      	ID3DXKeyframedAnimationSet_Compress								= ::ID3DXAnimationSet___IDXBASE + 24
+      	ID3DXKeyframedAnimationSet_UnregisterAnimation					= ::ID3DXAnimationSet___IDXBASE + 25
+      	ID3DXKeyframedAnimationSet___IDXBASE							= ::ID3DXAnimationSet___IDXBASE + 25
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1866164102003561130
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur ID3DXAnimationSet(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Anim.IID_ID3DXKeyframedAnimationSet
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1866164102003626666
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetPlaybackType
+     procedure_id : 1866427632500099945
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetPlaybackType
+      Procédure GetPlaybackType()
+      renvoyer :call(ID3DXKeyframedAnimationSet_GetPlaybackType)
+     type : 458752
+   -
+     name : GetSourceTicksPerSecond
+     procedure_id : 1866427641090102148
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetSourceTicksPerSecond
+      Procédure GetSourceTicksPerSecond()
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_GetSourceTicksPerSecond)
+     type : 458752
+   -
+     name : GetNumScaleKeys
+     procedure_id : 1866427649680104226
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumScaleKeys
+      Procédure GetNumScaleKeys(Animation est un entier sans signe)
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_GetNumScaleKeys, Animation)
+     type : 458752
+   -
+     name : GetScaleKeys
+     procedure_id : 1866427658270106678
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetScaleKeys
+      Procédure GetScaleKeys(Animation est un entier sans signe, tabScaleKeys est un tableau de D3DXKEY_VECTOR3)
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_GetScaleKeys, Animation, ptr(tabScaleKeys))
+     type : 458752
+   -
+     name : GetScaleKey
+     procedure_id : 1866427666860109022
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetScaleKey
+      Procédure GetScaleKey(Animation est un entier sans signe, ScaleKey est un D3DXKEY_VECTOR3)
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_GetScaleKey, Animation, &ScaleKey)
+     type : 458752
+   -
+     name : SetScaleKey
+     procedure_id : 1866427675450110975
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetScaleKey
+      Procédure SetScaleKey(Animation est un entier sans signe, ScaleKey est un D3DXKEY_VECTOR3)
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_SetScaleKey, Animation, &ScaleKey)
+     type : 458752
+   -
+     name : GetNumRotationKeys
+     procedure_id : 1866427684040113224
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumRotationKeys
+      Procédure GetNumRotationKeys(Animation est un entier sans signe)
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_GetNumRotationKeys, Animation)
+     type : 458752
+   -
+     name : GetRotationKeys
+     procedure_id : 1866427692630115084
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetRotationKeys
+      Procédure GetRotationKeys(Animation est un entier sans signe, tabRotationKeys est un tableau de D3DXKEY_QUATERNION)
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_GetRotationKeys, Animation, PTR(tabRotationKeys))
+     type : 458752
+   -
+     name : GetRotationKey
+     procedure_id : 1866427701220117037
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetRotationKey
+      Procédure GetRotationKey(Animation est un entier sans signe, RotationKey est un D3DXKEY_QUATERNION)
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_GetRotationKey, Animation, &RotationKey)
+     type : 458752
+   -
+     name : SetRotationKey
+     procedure_id : 1866427709810118959
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetRotationKey
+      Procédure SetRotationKey(Animation est un entier sans signe, RotationKey est un D3DXKEY_QUATERNION)
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_SetRotationKey, Animation, &RotationKey)
+     type : 458752
+   -
+     name : GetNumTranslationKeys
+     procedure_id : 1866427726990057922
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumTranslationKeys
+      Procédure GetNumTranslationKeys(Animation est un entier sans signe)
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_GetNumTranslationKeys, Animation)
+     type : 458752
+   -
+     name : GetTranslationKeys
+     procedure_id : 1866427735580060063
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetTranslationKeys
+      Procédure GetTranslationKeys(Animation est un entier sans signe, tabTranslationKeys est un tableau de D3DXKEY_VECTOR3)
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_GetTranslationKeys, Animation, ptr(tabTranslationKeys))
+     type : 458752
+   -
+     name : GetTranslationKey
+     procedure_id : 1866427744170062281
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetTranslationKey
+      Procédure GetTranslationKey(Animation est un entier sans signe, TranslationKey est un D3DXKEY_VECTOR3)
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_GetTranslationKey, Animation, &TranslationKey)
+     type : 458752
+   -
+     name : SetTranslationKey
+     procedure_id : 1866427752760064640
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetTranslationKey
+      Procédure SetTranslationKey(Animation est un entier sans signe, TranslationKey est un D3DXKEY_VECTOR3)
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_SetTranslationKey, Animation, &TranslationKey)
+     type : 458752
+   -
+     name : GetNumCallbackKeys
+     procedure_id : 1866427761350066890
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumCallbackKeys
+      Procédure GetNumCallbackKeys()
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_GetNumCallbackKeys)
+     type : 458752
+   -
+     name : GetCallbackKeys
+     procedure_id : 1866427774235036872
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetCallbackKeys
+      Procédure GetCallbackKeys(tabCallbackKeys est un tableau de D3DXKEY_CALLBACK)
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_GetCallbackKeys, ptr(tabCallbackKeys))
+     type : 458752
+   -
+     name : GetCallbackKey
+     procedure_id : 1866427782825039262
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetCallbackKey
+      Procédure GetCallbackKey(Key est un entier sans signe, CallbackKey est un D3DXKEY_CALLBACK)
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_GetCallbackKey, Key, &CallbackKey)
+     type : 458752
+   -
+     name : SetCallbackKey
+     procedure_id : 1866427791415041106
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetCallbackKey
+      Procédure SetCallbackKey(Key est un entier sans signe, CallbackKey est un D3DXKEY_CALLBACK)
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_SetCallbackKey, Key, &CallbackKey)
+     type : 458752
+   -
+     name : UnregisterScaleKey
+     procedure_id : 1866427800005043465
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UnregisterScaleKey
+      Procédure UnregisterScaleKey(Animation est un entier sans signe, Key est un entier sans signe)
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_UnregisterScaleKey, Animation, Key)
+     type : 458752
+   -
+     name : UnregisterRotationKey
+     procedure_id : 1866427808595045512
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UnregisterRotationKey
+      Procédure UnregisterRotationKey(Animation est un entier sans signe, Key est un entier sans signe)
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_UnregisterRotationKey, Animation, Key)
+     type : 458752
+   -
+     name : UnregisterTranslationKey
+     procedure_id : 1866427817185047496
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UnregisterTranslationKey
+      Procédure UnregisterTranslationKey(Animation est un entier sans signe, Key est un entier sans signe)
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_UnregisterTranslationKey, Animation, Key)
+     type : 458752
+   -
+     name : RegisterAnimationSRTKeys
+     procedure_id : 1866427825775049871
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode RegisterAnimationSRTKeys
+      Procédure RegisterAnimationSRTKeys(sName est une chaine, nNumScaleKeys est un entier sans signe, nNumRotationKeys est un entier sans signe, nNumTranslationKeys est un entier sans signe, tabScaleKeys est un tableau de D3DXKEY_VECTOR3, tabRotationKeys est un tableau de D3DXKEY_QUATERNION, tabTranslationKeys est un tableau de D3DXKEY_VECTOR3, nAnimationIndex est un entier sans signe)
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_RegisterAnimationSRTKeys, &sName, nNumScaleKeys, nNumRotationKeys, nNumTranslationKeys, ptr(tabScaleKeys), ptr(tabRotationKeys), ptr(tabTranslationKeys), &nAnimationIndex)
+     type : 458752
+   -
+     name : Compress
+     internal_properties : CAAAAAgAAAB77kTfyD8PWiLriJ2kmkj6J7Rny/v+X9uE31W0cmrB+uzRJPDQ+2ylNu9oYyrI5fj/Y8qeaoBNnbgpxkVM2Smk7l4jKeYhsCKHrINWrnLhZQ0cmoQAZ99ZKMSz0wpmPnvjjiOA623KibxwUSqRxP8XVaZWrhWW06b2hoKq2xnyQnVHXQ/oYGKCwzKGY7Z72tEJA/FfX6Juv1mYT9jS44IpKDW7uL7awYb/TOuNw44mrv5cDgdB66umUth2PvlwlgwWTDQV1T6REECv7Id4AEfyFWRmgKUfsiR/KytqHL3uKKMjCwR670jSniHrvIAimgwxb2GDBqH4Gtb9L81dNAOMaQXP94DnFx+E0Du49FDLUAQvGM8QMimZbH+dOg==
+     procedure_id : 1866427842954923391
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Compress
+      Procédure Compress(nFlags est un entier sans signe, rLossiness est un reel sur 4, Hierarchy est un d3dxframe, pclCompressedData est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvCompressedData est un entier systeme
+      
+      	// Appel
+      	HRESULT = :CALL(ID3DXKeyframedAnimationSet_Compress, nFlags, rLossiness, &Hierarchy, &ppvCompressedData)
+      	
+      	// Allocation
+      	__BindInterface(pclCompressedData, ppvCompressedData, ID3DXBuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : UnregisterAnimation
+     procedure_id : 1866427851544925095
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UnregisterAnimation
+      Procédure UnregisterAnimation(Index est un entier sans signe)
+      RENVOYER :CALL(ID3DXKeyframedAnimationSet_UnregisterAnimation, Index)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000da6b434
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

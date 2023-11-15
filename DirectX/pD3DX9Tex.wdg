@@ -1,0 +1,1116 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pD3DX9Tex
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x19dcc2530117e8f1
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+      ///////////////////////////////////////////////////////////////
+      // <Constantes>
+      
+      CONSTANT
+      	D3DX_FILTER_NONE             = 1 //(1 << 0)
+      	D3DX_FILTER_POINT            = 2 //(2 << 0)
+      	D3DX_FILTER_LINEAR           = 3 //(3 << 0)
+      	D3DX_FILTER_TRIANGLE         = 4 //(4 << 0)
+      	D3DX_FILTER_BOX              = 5 //(5 << 0)
+      	
+      	D3DX_FILTER_MIRROR_U         = 65536 //(1 << 16)
+      	D3DX_FILTER_MIRROR_V         = 131072 //(2 << 16)
+      	D3DX_FILTER_MIRROR_W         = 262144 //(4 << 16)
+      	D3DX_FILTER_MIRROR           = 458752 //(7 << 16)
+      	
+      	D3DX_FILTER_DITHER           = 524288 //(1 << 19)
+      	D3DX_FILTER_DITHER_DIFFUSION = 1048576 //(2 << 19)
+      	
+      	D3DX_FILTER_SRGB_IN          = 2097152 //(1 << 21)
+      	D3DX_FILTER_SRGB_OUT         = 4194304 //(2 << 21)
+      	D3DX_FILTER_SRGB             = 6291456 //(3 << 21)
+      	
+      	D3DX_SKIP_DDS_MIP_LEVELS_MASK   = 0x1F
+      	D3DX_SKIP_DDS_MIP_LEVELS_SHIFT  = 26
+      	
+      	D3DX_NORMALMAP_MIRROR_U     = 65536 //(1 << 16)
+      	D3DX_NORMALMAP_MIRROR_V     = 131072 //(2 << 16)
+      	D3DX_NORMALMAP_MIRROR       = 196608 //(3 << 16)
+      	D3DX_NORMALMAP_INVERTSIGN   = 524288 //(8 << 16)
+      	D3DX_NORMALMAP_COMPUTE_OCCLUSION = 1048576 //(16 << 16)
+      	
+      	D3DX_CHANNEL_RED            = 1 //(1 << 0)
+      	D3DX_CHANNEL_BLUE           = 2 //(1 << 1)
+      	D3DX_CHANNEL_GREEN          = 4 //(1 << 2)
+      	D3DX_CHANNEL_ALPHA          = 8 //(1 << 3)
+      	D3DX_CHANNEL_LUMINANCE      = 16 //(1 << 4)
+      	
+      	// D3DXIMAGE_FILEFORMAT
+      	D3DXIFF_BMP         = 0
+      	D3DXIFF_JPG         = 1
+      	D3DXIFF_TGA         = 2
+      	D3DXIFF_PNG         = 3
+      	D3DXIFF_DDS         = 4
+      	D3DXIFF_PPM         = 5
+      	D3DXIFF_DIB         = 6
+      	D3DXIFF_HDR         = 7
+      	D3DXIFF_PFM         = 8
+      FIN
+      
+      // </Constantes>
+     type : 720896
+  procedures :
+   -
+     name : D3DX_SKIP_DDS_MIP_LEVELS
+     procedure_id : 1863578797854996264
+     type_code : 15
+     code : |1-
+      // Résumé : Macro D3DX_SKIP_DDS_MIP_LEVELS
+      Procédure D3DX_SKIP_DDS_MIP_LEVELS(levels, filter_)
+      renvoyer ((((levels) & D3DX_SKIP_DDS_MIP_LEVELS_MASK) bitdecalegauche D3DX_SKIP_DDS_MIP_LEVELS_SHIFT) | ((filter_) = D3DX_DEFAULT ? D3DX_FILTER_BOX sinon (filter_)))
+     type : 458752
+   -
+     name : D3DXGetImageInfoFromFileA
+     procedure_id : 1863580107820064304
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGetImageInfoFromFileA
+      Procédure D3DXGetImageInfoFromFileA(srcFile est une chaine, srcInfo est un D3DXIMAGE_INFO)
+      renvoyer api(pd3d9.d3dx9, "D3DXGetImageInfoFromFileA", &srcFile, &srcInfo)
+     type : 458752
+   -
+     name : D3DXGetImageInfoFromFileW
+     procedure_id : 1863580339748352015
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGetImageInfoFromFileW
+      Procédure D3DXGetImageInfoFromFileW(srcFile est une chaine unicode, srcInfo est un D3DXIMAGE_INFO)
+      renvoyer api(pd3d9.d3dx9, "D3DXGetImageInfoFromFileW", &srcFile, &srcInfo)
+     type : 458752
+   -
+     name : D3DXGetImageInfoFromResourceA
+     procedure_id : 1863580429942751889
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGetImageInfoFromResourceA
+      Procédure D3DXGetImageInfoFromResourceA(hSrcModule est un entier, srcResource est une chaine, srcInfo est un D3DXIMAGE_INFO)
+      renvoyer api(pd3d9.d3dx9, "D3DXGetImageInfoFromResourceA", hSrcModule, &srcResource, &srcInfo)
+     type : 458752
+   -
+     name : D3DXGetImageInfoFromResourceW
+     procedure_id : 1863580597446515278
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGetImageInfoFromResourceW
+      Procédure D3DXGetImageInfoFromResourceW(hSrcModule est un entier, srcResource est une chaine unicode, srcInfo est un D3DXIMAGE_INFO)
+      renvoyer api(pd3d9.d3dx9, "D3DXGetImageInfoFromResourceW", hSrcModule, &srcResource, &srcInfo)
+     type : 458752
+   -
+     name : D3DXGetImageInfoFromFileInMemory
+     procedure_id : 1863580691935883977
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGetImageInfoFromFileInMemory
+      Procédure D3DXGetImageInfoFromFileInMemory(psrcData est un entier systeme, srcDataSize est un entier sans signe, srcInfo est un D3DXIMAGE_INFO)
+      renvoyer api(pd3d9.d3dx9, "D3DXGetImageInfoFromFileInMemory", psrcData, srcDataSize, &srcInfo)
+     type : 458752
+   -
+     name : D3DXLoadSurfaceFromFileA
+     procedure_id : 1865787579321314574
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadSurfaceFromFileA
+      Procédure D3DXLoadSurfaceFromFileA(pclDestSurface est un IDirect3DSurface9 dynamique, DestPalette est une PALETTEENTRY, DestRect est un rect, SrcFile est une chaine, srcRect est un rect, Filter_ est un entier sans signe, ColorKey est un entier sans signe, srcInfo est un D3DXIMAGE_INFO)
+      renvoyer api(pd3d9.d3dx9, "D3DXLoadSurfaceFromFileA", PTR(pclDestSurface), PTR(DestPalette), PTR(DestRect), &SrcFile, PTR(srcRect), Filter_, ColorKey, PTR(srcInfo))
+     type : 458752
+   -
+     name : D3DXLoadSurfaceFromFileW
+     procedure_id : 1865788764732367643
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadSurfaceFromFileW
+      Procédure D3DXLoadSurfaceFromFileW(pclDestSurface est un IDirect3DSurface9 dynamique, DestPalette est une PALETTEENTRY, DestRect est un rect, SrcFile est une chaine unicode, srcRect est un rect, Filter_ est un entier sans signe, ColorKey est un entier sans signe, srcInfo est un D3DXIMAGE_INFO)
+      renvoyer api(pd3d9.d3dx9, "D3DXLoadSurfaceFromFileW", PTR(pclDestSurface), PTR(DestPalette), PTR(DestRect), &SrcFile, PTR(srcRect), Filter_, ColorKey, PTR(srcInfo))
+     type : 458752
+   -
+     name : D3DXLoadSurfaceFromResourceA
+     procedure_id : 1865788863516704216
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadSurfaceFromResourceA
+      Procédure D3DXLoadSurfaceFromResourceA(pclDestSurface est un IDirect3DSurface9 dynamique, DestPalette est une PALETTEENTRY, DestRect est un rect, hSrcModule est un entier, SrcResource est une chaine, srcRect est un rect, Filter_ est un entier sans signe, ColorKey est un entier sans signe, srcInfo est un D3DXIMAGE_INFO)
+      renvoyer api(pd3d9.d3dx9, "D3DXLoadSurfaceFromResourceA", PTR(pclDestSurface), ptr(DestPalette), PTR(DestRect), hSrcModule, &SrcResource, PTR(srcRect), Filter_, ColorKey, PTR(srcInfo))
+     type : 458752
+   -
+     name : D3DXLoadSurfaceFromResourceW
+     procedure_id : 1865788996660721358
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadSurfaceFromResourceW
+      Procédure D3DXLoadSurfaceFromResourceW(pclDestSurface est un IDirect3DSurface9 dynamique, DestPalette est une PALETTEENTRY, DestRect est un rect, hSrcModule est un entier, SrcResource est une chaine unicode, srcRect est un rect, Filter_ est un entier sans signe, ColorKey est un entier sans signe, srcInfo est un D3DXIMAGE_INFO)
+      renvoyer api(pd3d9.d3dx9, "D3DXLoadSurfaceFromResourceW", PTR(pclDestSurface), PTR(DestPalette), PTR(DestRect), hSrcModule, &SrcResource, PTR(srcRect), Filter_, ColorKey, PTR(srcInfo))
+     type : 458752
+   -
+     name : D3DXLoadSurfaceFromFileInMemory
+     procedure_id : 1865789108329962548
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadSurfaceFromFileInMemory
+      Procédure D3DXLoadSurfaceFromFileInMemory(pclDestSurface est un IDirect3DSurface9 dynamique, DestPalette est une PALETTEENTRY, DestRect est un rect, SrcData est un entier systeme, SrcDataSize est un entier sans signe, srcRect est un rect, Filter_ est un entier sans signe, ColorKey est un entier sans signe, srcInfo est un D3DXIMAGE_INFO)
+      renvoyer api(pd3d9.d3dx9, "D3DXLoadSurfaceFromFileInMemory", PTR(pclDestSurface), PTR(DestPalette), PTR(DestRect), SrcData, SrcDataSize, PTR(srcRect), Filter_, ColorKey, PTR(srcInfo))
+     type : 458752
+   -
+     name : D3DXLoadSurfaceFromSurface
+     procedure_id : 1865789443337423929
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadSurfaceFromSurface
+      Procédure D3DXLoadSurfaceFromSurface(pclDestSurface est un IDirect3DSurface9 dynamique, DestPalette est une PALETTEENTRY, DestRect est un rect, pclSrcSurface est un IDirect3DSurface9 dynamique, SrcPalette est un PALETTEENTRY, srcRect est un rect, Filter_ est un entier sans signe, ColorKey est un entier sans signe)
+      renvoyer api(pd3d9.d3dx9, "D3DXLoadSurfaceFromSurface", PTR(pclDestSurface), PTR(DestPalette), PTR(DestRect), PTR(pclSrcSurface),	 PTR(SrcPalette), PTR(srcRect), Filter_, ColorKey)
+     type : 458752
+   -
+     name : D3DXLoadSurfaceFromMemory
+     procedure_id : 1865789735395268791
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadSurfaceFromMemory
+      Procédure D3DXLoadSurfaceFromMemory(pclDestSurface est un IDirect3DSurface9 dynamique, DestPalette est une PALETTEENTRY, DestRect est un rect, SrcMemory est un entier systeme, SrcFormat est un entier sans signe, SrcPitch est un entier sans signe, SrcPalette est un PALETTEENTRY, srcRect est un rect, Filter_ est un entier sans signe, ColorKey est un entier sans signe)
+      renvoyer api(pd3d9.d3dx9, "D3DXLoadSurfaceFromMemory", PTR(pclDestSurface), PTR(DestPalette), PTR(DestRect), SrcMemory, SrcFormat, SrcPitch, PTR(SrcPalette), PTR(srcRect), Filter_, ColorKey)
+     type : 458752
+   -
+     name : D3DXSaveSurfaceToFileA
+     procedure_id : 1865790263676369112
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSaveSurfaceToFileA
+      Procédure D3DXSaveSurfaceToFileA(Destfile est une chaine, DestFormat est un entier, pclSrcSurface est un IDirect3DSurface9 dynamique, SrcPalette est un PALETTEENTRY, srcRect est un rect)
+      RENVOYER API(pD3D9.D3DX9, "D3DXSaveSurfaceToFileA", &Destfile, DestFormat, PTR(pclSrcSurface), PTR(SrcPalette), PTR(srcRect))
+     type : 458752
+   -
+     name : D3DXSaveSurfaceToFileW
+     procedure_id : 1865790663108355237
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSaveSurfaceToFileW
+      Procédure D3DXSaveSurfaceToFileW(Destfile est une chaine unicode, DestFormat est un entier, pclSrcSurface est un IDirect3DSurface9 dynamique, SrcPalette est un PALETTEENTRY, srcRect est un rect)
+      RENVOYER API(pD3D9.D3DX9, "D3DXSaveSurfaceToFileW", &Destfile, DestFormat, PTR(pclSrcSurface), &SrcPalette, &srcRect)
+     type : 458752
+   -
+     name : D3DXSaveSurfaceToFileInMemory
+     procedure_id : 1865790766187725281
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSaveSurfaceToFileInMemory
+      Procédure D3DXSaveSurfaceToFileInMemory(pclDestBuf est un id3dxbuffer dynamique, DestFormat est un entier, pclSrcSurface est un IDirect3DSurface9 dynamique, SrcPalette est un PALETTEENTRY, srcRect est un rect)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pD3D9.D3DX9, "D3DXSaveSurfaceToFileInMemory", &ppvID3DXBuffer, DestFormat, PTR(pclSrcSurface), PTR(SrcPalette), PTR(srcRect))
+      	
+      	// Allocation
+      	__BindInterface(pclDestBuf, ppvID3DXBuffer, ID3DXBuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXLoadVolumeFromFileA
+     procedure_id : 1865791230044235494
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadVolumeFromFileA
+      Procédure D3DXLoadVolumeFromFileA(pclDestVolume est un IDirect3DVolume9 dynamique, DestPalette est une PALETTEENTRY, DestBox est un d3dbox, SrcFile est une chaine, srcBox est un d3dbox, Filter_ est un entier sans signe, ColorKey est un entier sans signe, srcInfo est un D3DXIMAGE_INFO)
+      renvoyer api(pd3d9.d3dx9, "D3DXLoadVolumeFromFileA", PTR(pclDestVolume), &DestPalette, &DestBox, &SrcFile, &srcBox, Filter_, ColorKey, &srcInfo)
+     type : 458752
+   -
+     name : D3DXLoadVolumeFromFileW
+     procedure_id : 1865791457677555472
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadVolumeFromFileW
+      Procédure D3DXLoadVolumeFromFileW(pclDestVolume est un IDirect3DVolume9 dynamique, DestPalette est une PALETTEENTRY, DestBox est un d3dbox, SrcFile est une chaine unicode, srcBox est un d3dbox, Filter_ est un entier sans signe, ColorKey est un entier sans signe, srcInfo est un D3DXIMAGE_INFO)
+      renvoyer api(pd3d9.d3dx9, "D3DXLoadVolumeFromFileW", PTR(pclDestVolume), &DestPalette, &DestBox, &SrcFile, &srcBox, Filter_, ColorKey, &srcInfo)
+     type : 458752
+   -
+     name : D3DXLoadVolumeFromResourceA
+     procedure_id : 1865791569346796086
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadVolumeFromResourceA
+      Procédure D3DXLoadVolumeFromResourceA(pclDestVolume est un IDirect3DVolume9 dynamique, DestPalette est une PALETTEENTRY, DestBox est un d3dbox, hSrcModule est un entier, SrcResource est une chaine, srcBox est un d3dbox, Filter_ est un entier sans signe, ColorKey est un entier sans signe, srcInfo est un D3DXIMAGE_INFO)
+      renvoyer api(pd3d9.d3dx9, "D3DXLoadVolumeFromResourceA", PTR(pclDestVolume), &DestPalette, &DestBox, hSrcModule, &SrcResource, &srcBox, Filter_, ColorKey, &srcInfo)
+     type : 458752
+   -
+     name : D3DXLoadVolumeFromResourceW
+     procedure_id : 1865791706785782365
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadVolumeFromResourceW
+      Procédure D3DXLoadVolumeFromResourceW(pclDestVolume est un IDirect3DVolume9 dynamique, DestPalette est une PALETTEENTRY, DestBox est un d3dbox, hSrcModule est un entier, SrcResource est une chaine unicode, srcBox est un d3dbox, Filter_ est un entier sans signe, ColorKey est un entier sans signe, srcInfo est un D3DXIMAGE_INFO)
+      renvoyer api(pd3d9.d3dx9, "D3DXLoadVolumeFromResourceW", PTR(pclDestVolume), &DestPalette, &DestBox, hSrcModule, &SrcResource, &srcBox, Filter_, ColorKey, &srcInfo)
+     type : 458752
+   -
+     name : D3DXLoadVolumeFromFileInMemory
+     procedure_id : 1865791792685212946
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadVolumeFromFileInMemory
+      Procédure D3DXLoadVolumeFromFileInMemory(pclDestVolume est un IDirect3DVolume9 dynamique, DestPalette est une PALETTEENTRY, DestBox est un d3dbox, SrcData est un entier systeme, SrcDataSize est un entier sans signe, srcBox est un d3dbox, Filter_ est un entier sans signe, ColorKey est un entier sans signe, srcInfo est un D3DXIMAGE_INFO)
+      renvoyer api(pd3d9.d3dx9, "D3DXLoadVolumeFromFileInMemory", PTR(pclDestVolume), &DestPalette, &DestBox, SrcData, SrcDataSize, &srcBox, Filter_, ColorKey, &srcInfo)
+     type : 458752
+   -
+     name : D3DXLoadVolumeFromVolume
+     procedure_id : 1865791934419232791
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadVolumeFromVolume
+      Procédure D3DXLoadVolumeFromVolume(pclDestVolume est un IDirect3DVolume9 dynamique, DestPalette est une PALETTEENTRY, DestBox est un d3dbox, pclSrcVolume est un IDirect3DVolume9 dynamique, SrcPalette est un PALETTEENTRY, srcBox est un d3dbox, Filter_ est un entier sans signe, ColorKey est un entier sans signe)
+      renvoyer api(pd3d9.d3dx9, "D3DXLoadVolumeFromVolume", PTR(pclDestVolume), &DestPalette, &DestBox, PTR(pclSrcVolume), &SrcPalette, &srcBox, Filter_, ColorKey)
+     type : 458752
+   -
+     name : D3DXLoadVolumeFromMemory
+     procedure_id : 1865792475585171929
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadVolumeFromMemory
+      Procédure D3DXLoadVolumeFromMemory(pclDestVolume est un IDirect3DVolume9 dynamique, DestPalette est une PALETTEENTRY, DestBox est un d3dbox, SrcMemory est un entier systeme, SrcFormat est un entier sans signe, SrcRowPitch est un entier sans signe, SrcSlicePitch est un entier sans signe, SrcPalette est un PALETTEENTRY, srcBox est un d3dbox, Filter_ est un entier sans signe, ColorKey est un entier sans signe)
+      renvoyer api(pd3d9.d3dx9, "D3DXLoadVolumeFromMemory", PTR(pclDestVolume), &DestPalette, &DestBox, SrcMemory, SrcFormat, SrcRowPitch, SrcSlicePitch, &SrcPalette, &srcBox, Filter_, ColorKey)
+     type : 458752
+   -
+     name : D3DXSaveVolumeToFileA
+     procedure_id : 1865792802002762865
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSaveVolumeToFileA
+      	Procédure D3DXSaveVolumeToFileA(Destfile est une chaine, DestFormat est un entier, pclSrcVolume est un IDirect3DVolume9 dynamique, SrcPalette est un PALETTEENTRY, srcBox est un d3dbox)
+      RENVOYER API(pD3D9.D3DX9, "D3DXSaveVolumeToFileA", &Destfile, DestFormat, PTR(pclSrcVolume), &SrcPalette, &srcBox)
+     type : 458752
+   -
+     name : D3DXSaveVolumeToFileW
+     procedure_id : 1865792952326653497
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSaveVolumeToFileW
+      Procédure D3DXSaveVolumeToFileW(Destfile est une chaine unicode, DestFormat est un entier, pclSrcVolume est un IDirect3DVolume9 dynamique, SrcPalette est un PALETTEENTRY, srcBox est un d3dbox)
+      RENVOYER API(pD3D9.D3DX9, "D3DXSaveVolumeToFileW", &Destfile, DestFormat, PTR(pclSrcVolume), &SrcPalette, &srcBox)
+     type : 458752
+   -
+     name : D3DXSaveVolumeToFileInMemory
+     procedure_id : 1865793038226084453
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSaveVolumeToFileInMemory
+      Procédure D3DXSaveVolumeToFileInMemory(pclDestBuf est un id3dxbuffer dynamique, DestFormat est un entier, pclSrcVolume est un IDirect3DVolume9 dynamique, SrcPalette est un PALETTEENTRY, srcBox est un d3dbox)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pD3D9.D3DX9, "D3DXSaveVolumeToFileInMemory", &ppvID3DXBuffer, DestFormat, PTR(pclSrcVolume), &SrcPalette, &srcBox)
+      	
+      	// Allocation
+      	__BindInterface(pclDestBuf, ppvID3DXBuffer, ID3DXBuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXCheckTextureRequirements
+     procedure_id : 1865793764075595962
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCheckTextureRequirements
+      Procédure D3DXCheckTextureRequirements(pclDevice est un IDirect3DDevice9 dynamique, Width est un entier sans signe, Height est un entier sans signe, NumMipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe)
+      RENVOYER API(pD3D9.D3DX9, "D3DXCheckTextureRequirements", PTR(pclDevice), &Width, &Height, &NumMipLevels, Usage, &Format, Pool)
+     type : 458752
+   -
+     name : D3DXCheckCubeTextureRequirements
+     procedure_id : 1865794210752298019
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCheckCubeTextureRequirements
+      Procédure D3DXCheckCubeTextureRequirements(pclDevice est un IDirect3DDevice9 dynamique, Size est un entier sans signe, NumMipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe)
+      RENVOYER API(pD3D9.D3DX9, "D3DXCheckCubeTextureRequirements", PTR(pclDevice), &Size, &NumMipLevels, Usage, &Format, Pool)
+     type : 458752
+   -
+     name : D3DXCheckVolumeTextureRequirements
+     procedure_id : 1865794331011410247
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCheckVolumeTextureRequirements
+      Procédure D3DXCheckVolumeTextureRequirements(pclDevice est un IDirect3DDevice9 dynamique, Width est un entier sans signe, Height est un entier sans signe, Depth est un entier sans signe, NumMipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe)
+      RENVOYER API(pD3D9.D3DX9, "D3DXCheckVolumeTextureRequirements", PTR(pclDevice), &Width, &Height, &Depth, &NumMipLevels, Usage, &Format, Pool)
+     type : 458752
+   -
+     name : D3DXCreateTexture
+     procedure_id : 1865800777757381276
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateTexture
+      Procédure D3DXCreateTexture(pclDevice est un IDirect3DDevice9 dynamique, Width est un entier sans signe, Height est un entier sans signe, NumMipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, pclTexture est un IDirect3DTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateTexture", PTR(pclDevice), Width, Height, NumMipLevels, Usage, Format, Pool, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateCubeTexture
+     procedure_id : 1865801168599496020
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateCubeTexture
+      Procédure D3DXCreateCubeTexture(pclDevice est un IDirect3DDevice9 dynamique, Size est un entier sans signe, NumMipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, pclCubeTexture est un IDirect3DCubeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvCubeTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateCubeTexture", PTR(pclDevice), Size, NumMipLevels, Usage, Format, Pool, &ppvCubeTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclCubeTexture, ppvCubeTexture, IDirect3DCubeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateVolumeTexture
+     procedure_id : 1865801396232815593
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateVolumeTexture
+      Procédure D3DXCreateVolumeTexture(pclDevice est un IDirect3DDevice9 dynamique, Width est un entier sans signe, Height est un entier sans signe, Depth est un entier sans signe, NumMipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, pclVolumeTexture est un IDirect3DVolumeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvVolumeTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateVolumeTexture", PTR(pclDevice), Width, Height, Depth, NumMipLevels, Usage, Format, Pool, &ppvVolumeTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclVolumeTexture, ppvVolumeTexture, IDirect3DVolumeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateTextureFromFileA
+     procedure_id : 1865801757010152463
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateTextureFromFileA
+      Procédure D3DXCreateTextureFromFileA(pclDevice est un IDirect3DDevice9 dynamique, SrcFile est une chaine, pclTexture est un IDirect3DTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateTextureFromFileA", PTR(pclDevice), &SrcFile, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateTextureFromFileW
+     procedure_id : 1865801885859201826
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateTextureFromFileW
+      Procédure D3DXCreateTextureFromFileW(pclDevice est un IDirect3DDevice9 dynamique, SrcFile est une chaine unicode, pclTexture est un IDirect3DTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateTextureFromFileW", PTR(pclDevice), &SrcFile, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateCubeTextureFromFileA
+     procedure_id : 1865801941693855002
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateCubeTextureFromFileA
+      Procédure D3DXCreateCubeTextureFromFileA(pclDevice est un IDirect3DDevice9 dynamique, SrcFile est une chaine, pclCubeTexture est un IDirect3DCubeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateCubeTextureFromFileA", PTR(pclDevice), &SrcFile, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclCubeTexture, ppvTexture, IDirect3DCubeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateCubeTextureFromFileW
+     procedure_id : 1865802066248000639
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateCubeTextureFromFileW
+      Procédure D3DXCreateCubeTextureFromFileW(pclDevice est un IDirect3DDevice9 dynamique, SrcFile est une chaine unicode, pclCubeTexture est un IDirect3DCubeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateCubeTextureFromFileW", PTR(pclDevice), &SrcFile, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclCubeTexture, ppvTexture, IDirect3DCubeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateVolumeTextureFromFileA
+     procedure_id : 1865802134967494114
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateVolumeTextureFromFileA
+      Procédure D3DXCreateVolumeTextureFromFileA(pclDevice est un IDirect3DDevice9 dynamique, SrcFile est une chaine, pclVolumeTexture est un IDirect3DVolumeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateVolumeTextureFromFileA", PTR(pclDevice), &SrcFile, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclVolumeTexture, ppvTexture, IDirect3DVolumeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateVolumeTextureFromFileW
+     procedure_id : 1865802238046798388
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateVolumeTextureFromFileW
+      Procédure D3DXCreateVolumeTextureFromFileW(pclDevice est un IDirect3DDevice9 dynamique, SrcFile est une chaine unicode, pclVolumeTexture est un IDirect3DVolumeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateVolumeTextureFromFileW", PTR(pclDevice), &SrcFile, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclVolumeTexture, ppvTexture, IDirect3DVolumeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateTextureFromResourceA
+     procedure_id : 1865802332536166713
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateTextureFromResourceA
+      Procédure D3DXCreateTextureFromResourceA(pclDevice est un IDirect3DDevice9 dynamique, hSrcModule est un entier, SrcResource est une chaine, pclTexture est un IDirect3DTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateTextureFromResourceA", PTR(pclDevice), hSrcModule, &SrcResource, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateTextureFromResourceW
+     procedure_id : 1865802457090247547
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateTextureFromResourceW
+      Procédure D3DXCreateTextureFromResourceW(pclDevice est un IDirect3DDevice9 dynamique, hSrcModule est un entier, SrcResource est une chaine unicode, pclTexture est un IDirect3DTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateTextureFromResourceW", PTR(pclDevice), hSrcModule, &SrcResource, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateCubeTextureFromResourceA
+     procedure_id : 1865802521514837327
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateCubeTextureFromResourceA
+      Procédure D3DXCreateCubeTextureFromResourceA(pclDevice est un IDirect3DDevice9 dynamique, hSrcModule est un entier, SrcResource est une chaine, pclTexture est un IDirect3DCubeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateCubeTextureFromResourceA", PTR(pclDevice), hSrcModule, &SrcResource, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DCubeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateCubeTextureFromResourceW
+     procedure_id : 1865802598824332054
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateCubeTextureFromResourceW
+      Procédure D3DXCreateCubeTextureFromResourceW(pclDevice est un IDirect3DDevice9 dynamique, hSrcModule est un entier, SrcResource est une chaine unicode, pclTexture est un IDirect3DCubeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateCubeTextureFromResourceW", PTR(pclDevice), hSrcModule, &SrcResource, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DCubeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateVolumeTextureFromResourceA
+     procedure_id : 1865802684723697708
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateVolumeTextureFromResourceA
+      Procédure D3DXCreateVolumeTextureFromResourceA(pclDevice est un IDirect3DDevice9 dynamique, hSrcModule est un entier, SrcResource est une chaine, pclTexture est un IDirect3DVolumeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateVolumeTextureFromResourceA", PTR(pclDevice), hSrcModule, &SrcResource, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DVolumeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateVolumeTextureFromResourceW
+     procedure_id : 1865802766328161243
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateVolumeTextureFromResourceW
+      Procédure D3DXCreateVolumeTextureFromResourceW(pclDevice est un IDirect3DDevice9 dynamique, hSrcModule est un entier, SrcResource est une chaine unicode, pclTexture est un IDirect3DVolumeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateVolumeTextureFromResourceW", PTR(pclDevice), hSrcModule, &SrcResource, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DVolumeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateTextureFromFileExA
+     procedure_id : 1865802839342687612
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateTextureFromFileExA
+      Procédure D3DXCreateTextureFromFileExA(pclDevice est un IDirect3DDevice9 dynamique, SrcFile est une chaine, Width est un entier sans signe, Height est un entier sans signe, MipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, Filter_ est un entier sans signe, MipFilter est un entier sans signe, ColorKey est un entier sans signe, SrcInfo est un D3DXIMAGE_INFO, Palette est un PALETTEENTRY, pclTexture est un IDirect3DTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateTextureFromFileExA", PTR(pclDevice), &SrcFile, Width, Height, MipLevels, Usage, Format, Pool, Filter_, MipFilter, ColorKey, &SrcInfo, &Palette, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateTextureFromFileExW
+     procedure_id : 1865803406278436813
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateTextureFromFileExW
+      Procédure D3DXCreateTextureFromFileExW(pclDevice est un IDirect3DDevice9 dynamique, SrcFile est une chaine unicode, Width est un entier sans signe, Height est un entier sans signe, MipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, Filter_ est un entier sans signe, MipFilter est un entier sans signe, ColorKey est un entier sans signe, SrcInfo est un D3DXIMAGE_INFO, Palette est un PALETTEENTRY, pclTexture est un IDirect3DTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateTextureFromFileExW", PTR(pclDevice), &SrcFile, Width, Height, MipLevels, Usage, Format, Pool, Filter_, MipFilter, ColorKey, &SrcInfo, &Palette, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateCubeTextureFromFileExA
+     procedure_id : 1865803496472837234
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateCubeTextureFromFileExA
+      Procédure D3DXCreateCubeTextureFromFileExA(pclDevice est un IDirect3DDevice9 dynamique, SrcFile est une chaine, Size est un entier sans signe, MipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, Filter_ est un entier sans signe, MipFilter est un entier sans signe, ColorKey est un entier sans signe, SrcInfo est un D3DXIMAGE_INFO, Palette est un PALETTEENTRY, pclTexture est un IDirect3DCubeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateCubeTextureFromFileExA", PTR(pclDevice), &SrcFile, Size, MipLevels, Usage, Format, Pool, Filter_, MipFilter, ColorKey, &SrcInfo, &Palette, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DCubeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateCubeTextureFromFileExW
+     procedure_id : 1865803676861505115
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateCubeTextureFromFileExW
+      Procédure D3DXCreateCubeTextureFromFileExW(pclDevice est un IDirect3DDevice9 dynamique, SrcFile est une chaine unicode, Size est un entier sans signe, MipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, Filter_ est un entier sans signe, MipFilter est un entier sans signe, ColorKey est un entier sans signe, SrcInfo est un D3DXIMAGE_INFO, Palette est un PALETTEENTRY, pclTexture est un IDirect3DCubeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateCubeTextureFromFileExW", PTR(pclDevice), &SrcFile, Size, MipLevels, Usage, Format, Pool, Filter_, MipFilter, ColorKey, &SrcInfo, &Palette, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DCubeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateVolumeTextureFromFileExA
+     procedure_id : 1865803762760936961
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateVolumeTextureFromFileExA
+      Procédure D3DXCreateVolumeTextureFromFileExA(pclDevice est un IDirect3DDevice9 dynamique, SrcFile est une chaine, Width est un entier sans signe, Height est un entier sans signe, Depth est un entier sans signe, MipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, Filter_ est un entier sans signe, MipFilter est un entier sans signe, ColorKey est un entier sans signe, SrcInfo est un D3DXIMAGE_INFO, Palette est un PALETTEENTRY, pclTexture est un IDirect3DVolumeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateVolumeTextureFromFileExA", PTR(pclDevice), &SrcFile, Width, Height, Depth, MipLevels, Usage, Format, Pool, Filter_, MipFilter, ColorKey, &SrcInfo, &Palette, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DVolumeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateVolumeTextureFromFileExW
+     procedure_id : 1865803930264700770
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateVolumeTextureFromFileExW
+      Procédure D3DXCreateVolumeTextureFromFileExW(pclDevice est un IDirect3DDevice9 dynamique, SrcFile est une chaine unicode, Width est un entier sans signe, Height est un entier sans signe, Depth est un entier sans signe, MipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, Filter_ est un entier sans signe, MipFilter est un entier sans signe, ColorKey est un entier sans signe, SrcInfo est un D3DXIMAGE_INFO, Palette est un PALETTEENTRY, pclTexture est un IDirect3DVolumeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateVolumeTextureFromFileExW", PTR(pclDevice), &SrcFile, Width, Height, Depth, MipLevels, Usage, Format, Pool, Filter_, MipFilter, ColorKey, &SrcInfo, &Palette, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DVolumeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateTextureFromResourceExA
+     procedure_id : 1865804076293688347
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateTextureFromResourceExA
+      Procédure D3DXCreateTextureFromResourceExA(pclDevice est un IDirect3DDevice9 dynamique, hSrcModule est un entier, SrcResource est une chaine, Width est un entier sans signe, Height est un entier sans signe, MipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, Filter_ est un entier sans signe, MipFilter est un entier sans signe, ColorKey est un entier sans signe, SrcInfo est un D3DXIMAGE_INFO, Palette est un PALETTEENTRY, pclTexture est un IDirect3DTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateTextureFromResourceExA", PTR(pclDevice), hSrcModule, &SrcResource, Width, Height, MipLevels, Usage, Format, Pool, Filter_, MipFilter, ColorKey, &SrcInfo, &Palette, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateTextureFromResourceExW
+     procedure_id : 1865804183667960900
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateTextureFromResourceExW
+      Procédure D3DXCreateTextureFromResourceExW(pclDevice est un IDirect3DDevice9 dynamique, hSrcModule est un entier, SrcResource est une chaine unicode, Width est un entier sans signe, Height est un entier sans signe, MipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, Filter_ est un entier sans signe, MipFilter est un entier sans signe, ColorKey est un entier sans signe, SrcInfo est un D3DXIMAGE_INFO, Palette est un PALETTEENTRY, pclTexture est un IDirect3DTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateTextureFromResourceExW", PTR(pclDevice), hSrcModule, &SrcResource, Width, Height, MipLevels, Usage, Format, Pool, Filter_, MipFilter, ColorKey, &SrcInfo, &Palette, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateCubeTextureFromResourceExA
+     procedure_id : 1865804260977456000
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateCubeTextureFromResourceExA
+      Procédure D3DXCreateCubeTextureFromResourceExA(pclDevice est un IDirect3DDevice9 dynamique, hSrcModule est un entier, SrcResource est une chaine, Size est un entier sans signe, MipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, Filter_ est un entier sans signe, MipFilter est un entier sans signe, ColorKey est un entier sans signe, SrcInfo est un D3DXIMAGE_INFO, Palette est un PALETTEENTRY, pclTexture est un IDirect3DCubeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateCubeTextureFromResourceExA", PTR(pclDevice), hSrcModule, &SrcResource, Size, MipLevels, Usage, Format, Pool, Filter_, MipFilter, ColorKey, &SrcInfo, &Palette, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DCubeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateCubeTextureFromResourceExW
+     procedure_id : 1865804351171790323
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateCubeTextureFromResourceExW
+      Procédure D3DXCreateCubeTextureFromResourceExW(pclDevice est un IDirect3DDevice9 dynamique, hSrcModule est un entier, SrcResource est une chaine unicode, Size est un entier sans signe, MipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, Filter_ est un entier sans signe, MipFilter est un entier sans signe, ColorKey est un entier sans signe, SrcInfo est un D3DXIMAGE_INFO, Palette est un PALETTEENTRY, pclTexture est un IDirect3DCubeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateCubeTextureFromResourceExW", PTR(pclDevice), hSrcModule, &SrcResource, Size, MipLevels, Usage, Format, Pool, Filter_, MipFilter, ColorKey, &SrcInfo, &Palette, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DCubeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateVolumeTextureFromResourceExA
+     procedure_id : 1865804518675684472
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateVolumeTextureFromFileExA
+      Procédure D3DXCreateVolumeTextureFromResourceExA(pclDevice est un IDirect3DDevice9 dynamique, hSrcModule est un entier, SrcResource est une chaine, Width est un entier sans signe, Height est un entier sans signe, Depth est un entier sans signe, MipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, Filter_ est un entier sans signe, MipFilter est un entier sans signe, ColorKey est un entier sans signe, SrcInfo est un D3DXIMAGE_INFO, Palette est un PALETTEENTRY, pclTexture est un IDirect3DVolumeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateVolumeTextureFromFileExA", PTR(pclDevice), hSrcModule, &SrcResource, Width, Height, Depth, MipLevels, Usage, Format, Pool, Filter_, MipFilter, ColorKey, &SrcInfo, &Palette, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DVolumeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateVolumeTextureFromResourceExW
+     procedure_id : 1865804742014036405
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateVolumeTextureFromResourceExW
+      Procédure D3DXCreateVolumeTextureFromResourceExW(pclDevice est un IDirect3DDevice9 dynamique, hSrcModule est un entier, SrcResource est une chaine unicode, Width est un entier sans signe, Height est un entier sans signe, Depth est un entier sans signe, MipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, Filter_ est un entier sans signe, MipFilter est un entier sans signe, ColorKey est un entier sans signe, SrcInfo est un D3DXIMAGE_INFO, Palette est un PALETTEENTRY, pclTexture est un IDirect3DVolumeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateVolumeTextureFromResourceExW", PTR(pclDevice), hSrcModule, &SrcResource, Width, Height, Depth, MipLevels, Usage, Format, Pool, Filter_, MipFilter, ColorKey, &SrcInfo, &Palette, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DVolumeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateCubeTextureFromFileInMemory
+     procedure_id : 1865810505936330999
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateCubeTextureFromFileInMemory
+      Procédure D3DXCreateCubeTextureFromFileInMemory(pclDevice est un IDirect3DDevice9 dynamique, SrcData est un entier systeme, SrcDataSize est un entier sans signe, pclCubeTexture est un IDirect3DCubeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateCubeTextureFromFileInMemory", PTR(pclDevice), SrcData, SrcDataSize, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclCubeTexture, ppvTexture, IDirect3DCubeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateTextureFromFileInMemory
+     procedure_id : 1865810505936396581
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateTextureFromFileInMemory
+      Procédure D3DXCreateTextureFromFileInMemory(pclDevice est un IDirect3DDevice9 dynamique, SrcData est un entier systeme, SrcDataSize est un entier sans signe, pclTexture est un IDirect3DTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateTextureFromFileInMemory", PTR(pclDevice), SrcData, SrcDataSize, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateVolumeTextureFromFileInMemory
+     procedure_id : 1865810505936462180
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateVolumeTextureFromFileInMemory
+      Procédure D3DXCreateVolumeTextureFromFileInMemory(pclDevice est un IDirect3DDevice9 dynamique, SrcData est un entier systeme, SrcDataSize est un entier sans signe, pclVolumeTexture est un IDirect3DVolumeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateVolumeTextureFromFileInMemory", PTR(pclDevice), SrcData, SrcDataSize, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclVolumeTexture, ppvTexture, IDirect3DVolumeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateCubeTextureFromFileInMemoryEx
+     procedure_id : 1865810875303670618
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateCubeTextureFromFileInMemoryEx
+      Procédure D3DXCreateCubeTextureFromFileInMemoryEx(pclDevice est un IDirect3DDevice9 dynamique, SrcData est un entier systeme, SrcDataSize est un entier sans signe, Size est un entier sans signe, MipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, Filter_ est un entier sans signe, MipFilter est un entier sans signe, ColorKey est un entier sans signe, SrcInfo est un D3DXIMAGE_INFO, Palette est un PALETTEENTRY, pclTexture est un IDirect3DCubeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateCubeTextureFromFileInMemoryEx", PTR(pclDevice), SrcData, SrcDataSize, Size, MipLevels, Usage, Format, Pool, Filter_, MipFilter, ColorKey, &SrcInfo, &Palette, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DCubeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateTextureFromFileInMemoryEx
+     procedure_id : 1865810875303736216
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateTextureFromFileInMemoryEx
+      Procédure D3DXCreateTextureFromFileInMemoryEx(pclDevice est un IDirect3DDevice9 dynamique, SrcData est un entier systeme, SrcDataSize est un entier sans signe, Width est un entier sans signe, Height est un entier sans signe, MipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, Filter_ est un entier sans signe, MipFilter est un entier sans signe, ColorKey est un entier sans signe, SrcInfo est un D3DXIMAGE_INFO, Palette est un PALETTEENTRY, pclTexture est un IDirect3DTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateTextureFromFileInMemoryEx", PTR(pclDevice), SrcData, SrcDataSize, Width, Height, MipLevels, Usage, Format, Pool, Filter_, MipFilter, ColorKey, &SrcInfo, &Palette, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateVolumeTextureFromFileInMemoryEx
+     procedure_id : 1865810879598769111
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateVolumeTextureFromFileInMemoryEx
+      Procédure D3DXCreateVolumeTextureFromFileInMemoryEx(pclDevice est un IDirect3DDevice9 dynamique, SrcData est un entier systeme, SrcDataSize est un entier sans signe, Width est un entier sans signe, Height est un entier sans signe, Depth est un entier sans signe, MipLevels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, Filter_ est un entier sans signe, MipFilter est un entier sans signe, ColorKey est un entier sans signe, SrcInfo est un D3DXIMAGE_INFO, Palette est un PALETTEENTRY, pclTexture est un IDirect3DVolumeTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateVolumeTextureFromFileInMemoryEx", PTR(pclDevice), SrcData, SrcDataSize, Width, Height, Depth, MipLevels, Usage, Format, Pool, Filter_, MipFilter, ColorKey, &SrcInfo, &Palette, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DVolumeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXSaveTextureToFileA
+     procedure_id : 1865811300505662321
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSaveTextureToFileA
+      Procédure D3DXSaveTextureToFileA(DestFile est une chaine, DestFormat est un entier sans signe, pclSrcTexture est un IDirect3DBaseTexture9 dynamique, SrcPalette est un PALETTEENTRY)
+      renvoyer API(pD3D9.D3DX9, "D3DXSaveTextureToFileA", &DestFile, DestFormat, PTR(pclSrcTexture), &SrcPalette)
+     type : 458752
+   -
+     name : D3DXSaveTextureToFileW
+     procedure_id : 1865811708527585050
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSaveTextureToFileW
+      Procédure D3DXSaveTextureToFileW(DestFile est une chaine unicode, DestFormat est un entier sans signe, pclSrcTexture est un IDirect3DBaseTexture9 dynamique, SrcPalette est un PALETTEENTRY)
+      renvoyer API(pD3D9.D3DX9, "D3DXSaveTextureToFileW", &DestFile, DestFormat, PTR(pclSrcTexture), &SrcPalette)
+     type : 458752
+   -
+     name : D3DXSaveTextureToFileInMemory
+     procedure_id : 1865811781542111903
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSaveTextureToFileInMemory
+      Procédure D3DXSaveTextureToFileInMemory(pclDestBuf est un id3dxbuffer dynamique, DestFormat est un entier sans signe, pclSrcTexture est un IDirect3DBaseTexture9 dynamique, SrcPalette est un PALETTEENTRY)
+      
+      	HRESULT est un entier systeme
+      	ppvBuffer est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXSaveTextureToFileInMemory", &ppvBuffer, DestFormat, PTR(pclSrcTexture), &SrcPalette)
+      	
+      	// Allocation
+      	__BindInterface(pclDestBuf, ppvBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXFilterTexture
+     procedure_id : 1865812473031941642
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXFilterTexture
+      Procédure D3DXFilterTexture(pclBaseTexture est un IDirect3DBaseTexture9 dynamique, Palette est un PALETTEENTRY, SrcLevel est un entier sans signe, Filter_ est un entier sans signe)
+      RENVOYER API(pD3D9.D3DX9, "D3DXFilterTexture", PTR(pclBaseTexture), &Palette, SrcLevel, Filter_)
+     type : 458752
+   -
+     name : D3DXFilterCubeTexture
+     procedure_id : 1865812713550166144
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXFilterCubeTexture
+      Procédure D3DXFilterCubeTexture(pclBaseTexture est un IDirect3DBaseTexture9 dynamique, Palette est un PALETTEENTRY, SrcLevel est un entier sans signe, Filter_ est un entier sans signe)
+      RENVOYER D3DXFilterTexture(pclBaseTexture, Palette, SrcLevel, Filter_)
+     type : 458752
+   -
+     name : D3DXFilterVolumeTexture
+     procedure_id : 1865812833809278871
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXFilterVolumeTexture
+      Procédure D3DXFilterVolumeTexture(pclBaseTexture est un IDirect3DBaseTexture9 dynamique, Palette est un PALETTEENTRY, SrcLevel est un entier sans signe, Filter_ est un entier sans signe)
+      RENVOYER D3DXFilterTexture(pclBaseTexture, Palette, SrcLevel, Filter_)
+     type : 458752
+   -
+     name : D3DXFillTexture
+     procedure_id : 1865812924003678418
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXFillTexture
+      Procédure D3DXFillTexture(pclTexture est un IDirect3DTexture9 dynamique, cbFonctionWL est un entier systeme, pData est un entier systeme)
+      RENVOYER API(pD3D9.D3DX9, "D3DXFilterTexture", PTR(pclTexture), cbFonctionWL, pData)
+     type : 458752
+   -
+     name : D3DXFillCubeTexture
+     procedure_id : 1865813340615603490
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXFillCubeTexture
+      Procédure D3DXFillCubeTexture(pclTexture est un IDirect3DCubeTexture9 dynamique, cbFonctionWL est un entier systeme, pData est un entier systeme)
+      RENVOYER API(pD3D9.D3DX9, "D3DXFillCubeTexture", PTR(pclTexture), cbFonctionWL, pData)
+     type : 458752
+   -
+     name : D3DXFillVolumeTexture
+     procedure_id : 1865813400745159581
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXFillVolumeTexture
+      Procédure D3DXFillVolumeTexture(pclTexture est un IDirect3DVolumeTexture9 dynamique, cbFonctionWL est un entier systeme, pData est un entier systeme)
+      RENVOYER API(pD3D9.D3DX9, "D3DXFillVolumeTexture", PTR(pclTexture), cbFonctionWL, pData)
+     type : 458752
+   -
+     name : D3DXFillTextureTx
+     procedure_id : 1865813611198671012
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXFillTextureTx
+      Procédure D3DXFillTextureTx(pclTexture est un IDirect3DTexture9 dynamique, pclTextureShader est un ID3DXTextureShader dynamique)
+      RENVOYER API(pD3D9.D3DX9, "D3DXFillTextureTx", PTR(pclTexture), PTR(pclTextureShader))
+     type : 458752
+   -
+     name : D3DXFillCubeTextureTX
+     procedure_id : 1865813740047720297
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXFillCubeTextureTX
+      Procédure D3DXFillCubeTextureTX(pclTexture est un IDirect3DCubeTexture9 dynamique, pclTextureShader est un ID3DXTextureShader dynamique)
+      RENVOYER API(pD3D9.D3DX9, "D3DXFillCubeTextureTX", PTR(pclTexture), PTR(pclTextureShader))
+     type : 458752
+   -
+     name : D3DXFillVolumeTextureTX
+     procedure_id : 1865813791587405725
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXFillVolumeTextureTX
+      Procédure D3DXFillVolumeTextureTX(pclTexture est un IDirect3DVolumeTexture9 dynamique, pclTextureShader est un ID3DXTextureShader dynamique)
+      RENVOYER API(pD3D9.D3DX9, "D3DXFillVolumeTextureTX", PTR(pclTexture), PTR(pclTextureShader))
+     type : 458752
+   -
+     name : D3DXComputeNormalMap
+     procedure_id : 1865814646348158841
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXComputeNormalMap
+      Procédure D3DXComputeNormalMap(pclTexture est un IDirect3DTexture9 dynamique, pclSrcTexture est un IDirect3DTexture9 dynamique, SrcPalette est un PALETTEENTRY, Flags est un entier sans signe, Channel est un entier sans signe, Amplitude est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXComputeNormalMap", PTR(pclTexture), PTR(pclSrcTexture), &SrcPalette, Flags, Channel, Amplitude)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x10d999010df8b492
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

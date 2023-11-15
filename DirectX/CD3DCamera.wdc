@@ -1,0 +1,289 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CD3DCamera
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19ec7b5104b7f564
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      CD3DCamera est une classe
+      
+      	public constant
+      		m_Position	est un D3DXVECTOR3		// Position de la caméra
+      		m_Vue		est un D3DXVECTOR3		// Direction de la vue
+      		m_Up		est un D3DXVECTOR3		// Elévation de la caméra
+      		
+      	protege
+      		m_sDX		est une chaine			// Champ image recevant la scène DirectX
+      		m_rVitesse	est un reel	sur 4		// Vitesse de la caméra
+      
+      Fin
+      
+      CONSTANT
+      	VITESSE_CAMERA = 0.03					// Vitesse par défaut de la caméra
+      FIN
+      
+      externe "winconst.wl"
+      externe "keyconst.wl"
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1868003533353710948
+     type_code : 27
+     code : |1-
+      Procédure Constructeur(local sDX est une chaine)
+      
+      	// Conserve le nom du champ
+      	m_sdx = sDX
+      	
+      	// Vitesse
+      	m_rVitesse = VITESSE_CAMERA
+      	
+      	// Survol souris
+      	evenement(OnMouseMove, m_sdx, WM_MOUSEMOVE)
+      	evenement(OnMouseWheel, FenEnExécution(), WM_MOUSEWHEEL)
+      	
+      	// Touches du clavier
+      	evenement(OnKeyDown, FenEnExécution() + ".*", wm_keydown)
+      	evenement(OnKeyDown, FenEnExécution(), wm_keydown)
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1868003533353776484
+     type_code : 28
+     code : |1+
+      Procédure Destructeur()
+      
+     type : 655360
+   -
+     name : SetPosition
+     procedure_id : 1868003919900857695
+     type_code : 12
+     code : |1-
+      // Résumé : Définit la position de la caméra
+      Procédure SetPosition(px est un réel sur 4, py est un réel sur 4, pz est un réel sur 4, vx est un réel sur 4, vy est un réel sur 4, vz est un réel sur 4, ux est un réel sur 4, uy est un réel sur 4, uz est un réel sur 4)
+      
+      	// Enregistre la position, la vue et l'élévation
+      	m_Position 	= [px, py, pz]
+      	m_Vue 		= [vx, vy, vz]
+      	m_Up 		= [ux, uy, uz]
+     type : 458752
+   -
+     name : Déplace
+     internal_properties : CAAAAAgAAADAvGBQ/4XODzLqSL1xZSGiyu8ple0daiNs3pQUs/pjtK6a0Rd/yb0gcFhFH2hf3FFthCTjwKL8Kthcfcilv7iUTH7NhiJy/jhc+1F+LXxdyuSJj3apfkIu19aWhQ+E7v9v1TbaOS3thRNCeFb8LHUQqs4zS63rRpYEvCDCjKW1EW2AlPVR8FK9FRlDf5Y6e4tHk7j4iPDFU4bGD29F2VXbvn2ajayBkgyqgHcYekC1ak5mNaSM1yyknkiQkQoGKQT6zgeKYOTmJAnheHBZ6h6gP5ybv6aW1Pjdk4juwOUjwV954Mbb2b0IPYLiY22f9NzFkDn5P5q43+fmT5LpXplXTtNO0j7M7nW8+eaIgT63LPFHVHUAGajpe6Gpm88=
+     procedure_id : 1868005599235100112
+     type_code : 12
+     code : |1+
+      // Résumé : Déplace la caméra
+      Procédure virtuelle protegee Déplace(rVitesse est un réel sur 4, bDirection est un booléen = vrai)
+      
+      	vVecteur est un D3DXVECTOR3
+      	
+      	// Calcule le vecteur de la vue
+      	D3DXVec3Substract(vVecteur, m_Vue, m_Position)
+      	
+      	SI PAS bDirection ALORS 
+      
+      		// Déplace la caméra en glissant à gauche ou à droite de la position actuelle
+      		m_Position:x 	= m_Position:x 	- vVecteur:z * rVitesse
+      		m_Position:z 	= m_Position:z 	+ vVecteur:x * rVitesse		
+      		m_Vue:x 		= m_Vue:x 		- vVecteur:z * rVitesse
+      		m_Vue:z 		= m_Vue:z 		+ vVecteur:x * rVitesse	
+      	
+      	sinon
+      		
+      		// Déplace la caméra en avant ou en arrière de la position actuelle
+      		m_Position:x 	= m_Position:x 	+ vVecteur:x * rVitesse
+      		m_Position:z 	= m_Position:z 	+ vVecteur:z * rVitesse		
+      		m_Vue:x 		= m_Vue:x 		+ vVecteur:x * rVitesse
+      		m_Vue:z 		= m_Vue:z 		+ vVecteur:z * rVitesse		
+      	FIN
+      	
+     type : 458752
+   -
+     name : Rotation
+     procedure_id : 1868006264955120225
+     type_code : 12
+     code : |1-
+      // Résumé : Tourne la caméra
+      Procédure VIRTUELLE PROTÉGÉE Rotation(rVitesse est un réel sur 4)
+      
+      	vVecteur est un D3DXVECTOR3
+      	
+      	// Calcule le vecteur de la vue
+      	D3DXVec3Substract(vVecteur, m_Vue, m_Position)
+      	
+      	// Tourne la caméra dans le sens demandé
+      	m_Vue:z = m_Position:z + (sin(D3DXToDegree(rVitesse)) 		* vVecteur:x  + cosinus(D3DXToDegree(rVitesse)) * vVecteur:z)
+      	m_Vue:x = m_Position:x + (Cosinus(D3DXToDegree(rVitesse)) 	* vVecteur:x  - Sin(D3DXToDegree(rVitesse)) 	* vVecteur:z)
+     type : 458752
+   -
+     name : OnMouseMove
+     procedure_id : 1868007025164377637
+     type_code : 12
+     code : |1-
+      // Résumé : Evénement : Survol souris
+      Procédure virtuelle privee OnMouseMove()
+      
+      	stSourisPosition 	est un point
+      	nMilieuX, nMilieuY 	sont des entiers
+      	rAngleY, rAngleZ 	sont des reels sur 4
+      	
+      	// Centre de l'image
+      	nMilieuX = {m_sdx, indchamp}..largeur / 2
+      	nMilieuY = {m_sdx, indchamp}..hauteur / 2
+      	
+      	// Récupère la position de la souris
+      	stSourisPosition = [poidsfaible(_eve.lparam), PoidsFort(_EVE.lParam)]
+      	
+      	// Si la souris est au centre
+      	si stSourisPosition:x = nMilieuX _et_ stSourisPosition:y = nMilieuY alors retour
+      	
+      	// Place le curseur de la souris au centre
+      	CurseurPos(cpClient, nMilieuX, nMilieuY)
+      	
+      	// Calcule la direction de la souris
+      	rAngleY = (nMilieuX - stSourisPosition:x) / 1000.0 * (m_rVitesse * 30)
+      	rAngleZ = (nMilieuY - stSourisPosition:Y) / 1000.0 * (m_rVitesse * 30)
+      	
+      	// Plus l'angle vertical est grand, plus la vitesse de la caméra est grande
+      	m_Vue:y += rAngleZ * 2.0
+      	
+      	// Limites
+      	si m_Vue:y - m_Position:y > 8  alors m_Vue:y = m_Position:y + 8
+      	si m_Vue:y - m_Position:y < -8 alors m_Vue:y = m_Position:y - 8
+      	
+      	// Effectue la rotation
+      	Rotation(rAngleY)
+     type : 458752
+   -
+     name : OnKeyDown
+     internal_properties : CAAAAAgAAAD7s/OpfE2GmdfSPm4l0eLmw2hBU6EsBiB7b3Np1iLkmiCnlMbToPdf/lXofB0uEJH8DexT+ac5GX8q0cQ+s1GYmURV2WpmYgpzycTIQflnCj+xo6V9KE4zNRVx8mcR+9n56vx6yrryM8yvDf9b7CF9z7mWLpLQkajE2F+snTZM
+     procedure_id : 1868015851368527942
+     type_code : 12
+     code : |1-
+      // Résumé : Evénement : Touches du clavier
+      Procédure VIRTUELLE PRIVÉE OnKeyDown()
+      
+      	// Flèche haut ou "Z" 
+      	si ToucheEnfoncée(vk_up) _ou_ ToucheEnfoncée(asc("Z")) ALORS
+      		
+      		// Avance
+      		deplace(m_rVitesse)
+      	FIN
+      	
+      	// Flèche bas ou "S"
+      	SI ToucheEnfoncée(VK_DOWN) _OU_ ToucheEnfoncée(Asc("S")) ALORS
+      		
+      		// Recule
+      		Déplace(-m_rVitesse)
+      	FIN
+      	
+      	// Flèche gauche ou "Q"
+      	SI ToucheEnfoncée(VK_left) _OU_ ToucheEnfoncée(Asc("Q")) ALORS
+      		
+      		// Si SHIFT est enfoncé
+      		si ToucheEnfoncée(teshift) alors
+      			
+      			// Tourne à gauche
+      			Rotation(m_rVitesse)
+      		sinon
+      			
+      			// Glisse à gauche
+      			Déplace(m_rVitesse, faux)
+      		FIN
+      	FIN
+      	
+      	// Flèche droite ou "D"
+      	SI ToucheEnfoncée(VK_RIGHT) _OU_ ToucheEnfoncée(Asc("D")) ALORS
+      		
+      		// Si SHIFT est enfoncé
+      		SI ToucheEnfoncée(teShift) ALORS
+      			
+      			// Tourne à droite
+      			Rotation(-m_rVitesse)
+      		SINON
+      			
+      			// Glisse à droite
+      			Déplace(-m_rVitesse, Faux)
+      		FIN
+      	FIN
+      	
+      	// Page précédente ou "A"
+      	SI ToucheEnfoncée(VK_prior) _OU_ ToucheEnfoncée(Asc("A")) ALORS
+      		
+      		// Elève la caméra
+      		elevation(-m_rVitesse)
+      	FIN
+      	
+      	// Page suivante ou "E"
+      	SI ToucheEnfoncée(VK_NEXT) _OU_ ToucheEnfoncée(Asc("E")) ALORS
+      		
+      		// Elève la caméra
+      		Elévation(m_rVitesse)
+      	FIN
+     type : 458752
+   -
+     name : OnMouseWheel
+     procedure_id : 1868393778591334746
+     type_code : 12
+     code : |1-
+      // Résumé : Evénement : WM_MOUSEWHEEL
+      Procédure privee virtuelle OnMouseWheel()
+      
+      	rAngleZ est un reel sur 4
+      	
+      	// Récupère le sens de rotation
+      	rAngleZ = poidsfort(_eve.wparam) / 120
+      
+      	// Déplace la caméra en avant ou en arrière en fonction de la molette de la souris
+      	Déplace(m_rVitesse * rAngleZ)
+     type : 458752
+   -
+     name : Elévation
+     procedure_id : 1868408772536877977
+     type_code : 12
+     code : |1+
+      // Résumé : Déplace la caméra
+      Procédure virtuelle protegee Elévation(rVitesse est un réel sur 4)
+      
+      	vVecteur est un D3DXVECTOR3
+      	
+      	// Calcule le vecteur de la vue
+      	D3DXVec3Substract(vVecteur, m_Vue, m_Position)
+      	
+      	// Déplace la caméra vers le haut ou le bas
+      	m_Position:y 	+= rVitesse
+      	m_Vue:y 		+= rVitesse
+     type : 458752
+   -
+     name : SetVitesse
+     procedure_id : 1884702533679468680
+     type_code : 12
+     code : |1-
+      // Résumé : Définit la vitesse de la caméra
+      Procédure SetVitesse(local rVitesse est un reel sur 4)
+      
+      	m_rVitesse = rVitesse
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000ad7b185
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

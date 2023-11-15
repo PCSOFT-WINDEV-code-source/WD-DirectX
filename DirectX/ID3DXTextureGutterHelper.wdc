@@ -1,0 +1,198 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXTextureGutterHelper
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19e5a789048cca20
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXTextureGutterHelper est une classe
+      	un objet IUnknown
+      	
+      FIN
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ID3DXTextureGutterHelper (VTABLE)
+      	ID3DXTextureGutterHelper_GetWidth			= ::IUnknown___IDXBASE + 1
+      	ID3DXTextureGutterHelper_GetHeight			= ::IUnknown___IDXBASE + 2
+      	ID3DXTextureGutterHelper_ApplyGuttersFloat	= ::IUnknown___IDXBASE + 3
+      	ID3DXTextureGutterHelper_ApplyGuttersTex	= ::IUnknown___IDXBASE + 4
+      	ID3DXTextureGutterHelper_ApplyGuttersPRT	= ::IUnknown___IDXBASE + 5
+      	ID3DXTextureGutterHelper_ResampleTex		= ::IUnknown___IDXBASE + 6
+      	ID3DXTextureGutterHelper_GetFaceMap			= ::IUnknown___IDXBASE + 7
+      	ID3DXTextureGutterHelper_GetBaryMap			= ::IUnknown___IDXBASE + 8
+      	ID3DXTextureGutterHelper_GetTexelMap		= ::IUnknown___IDXBASE + 9
+      	ID3DXTextureGutterHelper_GetGutterMap		= ::IUnknown___IDXBASE + 10
+      	ID3DXTextureGutterHelper_SetFaceMap			= ::IUnknown___IDXBASE + 11
+      	ID3DXTextureGutterHelper_SetBaryMap			= ::IUnknown___IDXBASE + 12
+      	ID3DXTextureGutterHelper_SetTexelMap		= ::IUnknown___IDXBASE + 13
+      	ID3DXTextureGutterHelper_SetGutterMap		= ::IUnknown___IDXBASE + 14
+      	ID3DXTextureGutterHelper___IDXBASE			= ::IUnknown___IDXBASE + 14
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1866081827543697952
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Mesh.IID_ID3DXTextureGutterHelper
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1866081827543763488
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetWidth
+     procedure_id : 1866527305984796146
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetWidth
+      Procédure GetWidth()
+      renvoyer :call(ID3DXTextureGutterHelper_GetWidth)
+     type : 458752
+   -
+     name : GetHeight
+     procedure_id : 1866527314574798224
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetHeight
+      Procédure GetHeight()
+      RENVOYER :CALL(ID3DXTextureGutterHelper_GetHeight)
+     type : 458752
+   -
+     name : ApplyGuttersFloat
+     procedure_id : 1866527323164800006
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ApplyGuttersFloat
+      Procédure ApplyGuttersFloat(tabDataIn est un tableau de réels sur 4, NumCoeffs est un entier sans signe, Width est un entier sans signe, Height est un entier sans signe)
+      RENVOYER :CALL(ID3DXTextureGutterHelper_ApplyGuttersFloat, ptr(tabDataIn), NumCoeffs, Width, Height)
+     type : 458752
+   -
+     name : ApplyGuttersTex
+     procedure_id : 1866527327459834616
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ApplyGuttersTex
+      Procédure ApplyGuttersTex(pclTexture est un IDirect3DTexture9 dynamique)
+      RENVOYER :CALL(ID3DXTextureGutterHelper_ApplyGuttersTex, ptr(pclTexture))
+     type : 458752
+   -
+     name : ApplyGuttersPRT
+     procedure_id : 1866527344639773033
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ApplyGuttersPRT
+      Procédure ApplyGuttersPRT(pclBuffer est un ID3DXPRTBuffer dynamique)
+      RENVOYER :CALL(ID3DXTextureGutterHelper_ApplyGuttersPRT, ptr(pclBuffer))
+     type : 458752
+   -
+     name : ResampleTex
+     procedure_id : 1866527353229774909
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ResampleTex
+      Procédure ResampleTex(pclTextureIn est un IDirect3DTexture9 dynamique, pclMeshIn est un ID3DXMesh dynamique, Usage est un entier sans signe, UsageIndex est un entier sans signe, pclTextureOut est un IDirect3DTexture9 dynamique)
+      RENVOYER :CALL(ID3DXTextureGutterHelper_ResampleTex, ptr(pclTextureIn), ptr(pclMeshIn), Usage, UsageIndex, ptr(pclTextureOut))
+     type : 458752
+   -
+     name : GetFaceMap
+     procedure_id : 1866527366114745468
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetFaceMap
+      Procédure GetFaceMap(tabFaceData est un tableau d'entiers sans signe)
+      RENVOYER :CALL(ID3DXTextureGutterHelper_GetFaceMap, ptr(tabFaceData))
+     type : 458752
+   -
+     name : GetBaryMap
+     procedure_id : 1866527374704747219
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetBaryMap
+      Procédure GetBaryMap(tabBaryData est un tableau de D3DXVECTOR2)
+      RENVOYER :CALL(ID3DXTextureGutterHelper_GetBaryMap, ptr(tabBaryData))
+     type : 458752
+   -
+     name : GetTexelMap
+     procedure_id : 1866527387589718075
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetTexelMap
+      Procédure GetTexelMap(tabTexelData est un tableau de D3DXVECTOR2)
+      RENVOYER :CALL(ID3DXTextureGutterHelper_GetTexelMap, PTR(tabTexelData))
+     type : 458752
+   -
+     name : GetGutterMap
+     procedure_id : 1866527400474688634
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetGutterMap
+      Procédure GetGutterMap(tabGutterData est un tableau d'entiers sans signe)
+      RENVOYER :CALL(ID3DXTextureGutterHelper_GetGutterMap, ptr(tabGutterData))
+     type : 458752
+   -
+     name : SetFaceMap
+     procedure_id : 1866527409064690400
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetFaceMap 
+      Procédure SetFaceMap(tabFaceData est un tableau d'entiers sans signe)
+      RENVOYER :CALL(ID3DXTextureGutterHelper_SetFaceMap, ptr(tabFaceData))
+     type : 458752
+   -
+     name : SetBaryMap
+     procedure_id : 1866527421949661397
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetBaryMap
+      Procédure SetBaryMap(tabBaryData est un tableau de D3DXVECTOR2)
+      RENVOYER :CALL(ID3DXTextureGutterHelper_SetBaryMap, ptr(tabBaryData))
+     type : 458752
+   -
+     name : SetTexelMap
+     procedure_id : 1866527430539663319
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetTexelMap
+      Procédure SetTexelMap(tabTexelData est un tableau de D3DXVECTOR2)
+      RENVOYER :CALL(ID3DXTextureGutterHelper_SetTexelMap, ptr(tabTexelData))
+     type : 458752
+   -
+     name : SetGutterMap
+     procedure_id : 1866527439129665475
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetGutterMap
+      Procédure SetGutterMap(tabGutterData est un tableau d'entiers sans signe)
+      RENVOYER :CALL(ID3DXTextureGutterHelper_SetGutterMap, ptr(tabGutterData))
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000b32b1e3
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

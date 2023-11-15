@@ -1,0 +1,133 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pDXSetup
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x19e4952b036b0f73
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+      constant
+      	// DLL
+      	DXSETUP = "DSetup.dll"	
+      Fin
+     type : 720896
+   -
+     code : |1-
+      
+     type : 720898
+  procedures :
+   -
+     name : DirectXSetupGetVersion
+     internal_properties : CAAAAAgAAAAeQeZWqR4YD9gNuw5ISpse4q5d4YfQh8vxSSLWonylqfGpzXAstIQfjtu5yNZJ9N/c91UXiZv53fcJCNn0zKQH2jXtD1BPimLproJX87E+1RbRiyhFUUvyPW0p6P5mipLcRRthNLb+/G4cHMU2fOcWaLmnLrlIMic+6HTcyeP/rQgO
+     procedure_id : 1865780157611773811
+     type_code : 15
+     code : |1-
+      // Résumé : Récupère les informations de la version installée de DirectX
+      // Syntaxe :
+      //[ <Résultat> = ] DirectXSetupGetVersion (<nVersion> est entier, <nRévision> est entier)
+      //
+      // Paramètres :
+      //	nVersion (entier) : Numéro de version de DirectX
+      //	nRévision (entier) : Numéro de révision de DirectX
+      // Valeur de retour :
+      // 	booléen : Vrai si l'appel a réussi, Faux dans le cas contraire
+      //
+      // Traitement automatique des exceptions :   exécuter le bloc de code CAS EXCEPTION:
+      //
+      Procédure DirectXSetupGetVersion(nVersion est un entier, nRévision est un entier)
+      
+      	nRetour est un entier
+      
+      	// Appel de la fonction
+      	nRetour = api(DXSETUP, "DirectXSetupGetVersion", &nVersion, &nRévision)
+      	
+      renvoyer (nRetour <> 0)
+      	
+      CAS EXCEPTION:
+      	renvoyer faux
+     type : 458752
+   -
+     name : DirectXGetD3DX9Dll
+     internal_properties : CAAAAAgAAACyTWnUYsrL9+ZRCLoVXOf9skuEgLGhFOBtwlFO16ORAhdluC2TWMwNQzYKWywZbo96j58UuOzPcxXlVStAKr4jO5psXmP8gQqEEdaSvaJbhfhLvoNmqr60tMgXAO3WRLgA6VINWIwGpcY6OAGAuDFQyZ8tzPoz9ItwLXz6cYVn1kSnnTzdn4nxmyGUjOYOlA6QrdKvHsJwwP1VjAnwbVAgleXS1MlT4frG4lOfq9sT+RnaKNViL2ZPWsADrWuTR/0bvK4y6OeqAktO+pprOGggF5UKqkVO
+     procedure_id : 1865780157611839347
+     type_code : 15
+     code : |1-
+      // Résumé : Détermine et renvoie le chemin de la DLL D3DX9 la plus récente
+      // Syntaxe :
+      //[ <Résultat> = ] DirectXGetD3DX9Dll ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	chaîne : Chemin de la DLL D3DX9.DLL
+      //
+      Procédure restreinte DirectXGetD3DX9Dll()
+      
+      	sListeDLL est une chaine
+      	sDLL	  est une chaine
+      	tabDLL	  est un tableau de chaines
+      	nVersion  est un entier
+      	
+      	// Récupère la version de DirectX
+      	DirectXSetupGetVersion(nVersion, null)
+      	
+      	si nVersion = 0 _et_ ErreurDétectée ALORS
+      		// DSetup a échoué, on va tenter de trouver la DLL de DX9
+      	sinon
+      		// DirectX 9.0 minimum doit être installé
+      		si nVersion > 0 _et_ PoidsFaible(nVersion) < 9 alors
+      			renvoyer ""
+      		FIN
+      	FIN
+      	
+      	si fFichierExiste(SysRep(srSystème) + ["\"] + "d3dx9.dll") alors
+      		
+      		// Récupère la DLL
+      		sDLL = SysRep(srSystème) + ["\"] + "d3dx9.dll"
+      	sinon
+      		
+      		// Récupère la liste des DLL d3dx9_xx.dll
+      		sListeDLL = Minuscule(fListeFichier(SysRep(srSystème) + ["\"] + "d3dx9_??.dll"))
+      		
+      		// Aucune DLL D3DX9 n'a été trouvé (problablement sous Vista : le runtime DirectX 9 n'est pas présent)
+      		SI sListeDLL = "" ALORS			
+      			Erreur("DirectX 9.0 n'est pas correctement installé sur votre système.", "", "Visitez l'adresse :", "http://www.microsoft.com/downloads/details.aspx?displaylang=fr&FamilyID=2da43d38-db71-4c1b-bc6a-9b6652cd92a3", "", "pour télécharger les dernières mises à jour de DirectX.")
+      			LanceAppliAssociée("http://www.microsoft.com/downloads/details.aspx?displaylang=fr&FamilyID=2da43d38-db71-4c1b-bc6a-9b6652cd92a3")
+      			FinProgramme(Vrai)
+      		FIN
+      		
+      		ChaîneVersTableau(sListeDLL, tabDLL, RC)
+      		
+      		SI tabDLL..Occurrence > 0 ALORS
+      			
+      			// Tri des DLL par ordre décroissant
+      			Trie(tabDLL, ttDécroissant)
+      			
+      			// Récupère la DLL la plus récente
+      			sDLL = tabDLL[1]
+      		FIN
+      	FIN
+      		
+      renvoyer sDLL
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x10d999010fa8b742
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,1028 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : COMUtils
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1946931b0f1dea02
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  internal_properties : CAAAAAgAAAC026UHS3GfXIjmoe0mON1vzqb4R58MoMWOP7eOruV+O8NejfzeRQ2Mw8o/Tg4N4Srxxq7eh+5esaQVq5VsEq3HbtAWihxbLEvhtdCsSDCLqA==
+  type_code : 31
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAACcoBHBXyEse7vyzKJFq257NIEhU+MiDlxw1Eb75xBS4/BWRRhdvgD5N8G576YIvpO5+sCrYPs43shVlwuf/sDjzgwk5ZWtq5sSuuFjeEnupTv/ZV4teUW6UNL5woSlRjmBeu4anfk74BhQaDdcmDwFAhGyv64pxf3Eygyw87c2d4aniBx5d1lug4pwmjkKEknY
+     code : |1-
+      
+      // Collection de procédures utilitaires
+      // Domaine : COM
+      
+      GUID 		est une structure  
+      	Data1 est un entier sur 4 sans signé	
+      	Data2 est un entier sur 2 sans signé	
+      	Data3 est un entier sur 2 sans signé	
+      	Data4 est un tableau fixe de 8 entiers sans signe sur 1
+      FIN
+      
+      // CLSID est un GUID
+      CLSID est une structure
+      	Data1 est un entier sur 4 sans signe	
+      	Data2 est un entier sur 2 sans signe	
+      	Data3 est un entier sur 2 sans signe	
+      	Data4 est un tableau fixe de 8 entiers sans signe sur 1
+      FIN
+      
+      // UUID est un GUID
+      UUID est une structure
+      	nData1 est un entier sur 4 sans signe	
+      	nData2 est un entier sur 2 sans signe	
+      	nData3 est un entier sur 2 sans signe	
+      	tabData4 est un tableau fixe de 8 entiers sans signe sur 1
+      FIN
+      
+      // IID est un GUID
+      IID est une structure
+      	Data1 est un entier sur 4 sans signe	
+      	Data2 est un entier sur 2 sans signe	
+      	Data3 est un entier sur 2 sans signe	
+      	Data4 est un tableau fixe de 8 entiers sans signe sur 1
+      FIN
+      
+      // DISPPARAMS
+      DISPPARAMS est une structure
+      	rgvarg				est un entier systeme	
+      	rgdispidNamedArgs	est un entier systeme	
+      	cArgs				est un entier sans signe sur 2
+      	cNamedArgs			est un entier sans signe sur 2
+      FIN
+      
+      // EXCEPINFO
+      EXCEPINFO est une structure
+      	wCode				est un entier sans signe sur 2
+      	wReserved			est un entier sans signe sur 2
+      	bstrSource			est un entier systeme
+      	bstrDescription		est un entier systeme
+      	bstrHelpFile		est un entier systeme
+      	dwHelpContext		est un entier sans signe
+      	pvReserved			est un entier systeme
+      	pfnDeferredFillIn	est un entier système
+      	scode				est un entier
+      FIN
+      
+      LUID		est une structure
+      	LowPart		est un entier sans signe
+      	HightPart 	est un entier
+      FIN
+      
+      VTABLE 		est une structure
+      	Pointeur	est un entier système	
+      	Méthodes	est un tableau d'entiers système	
+      FIN
+      
+      FILETIME 	est une structure
+      	dwLowDateTime est un entier sans signe
+      	dwHighDateTime est un entier sans signe
+      FIN
+      
+      STATSTG 	est une structure
+      	pwcsName est un entier systeme
+      	Type est un entier sans signe
+      	cbSize est un entier sur 8 sans signe
+      	mtime, ctime, atime sont des filetime
+      	grfMode, grfLockSupported est un entier sans signe
+      	clsid est un clsid
+      	grfStateBits, reserved est un entier sans signe
+      FIN
+      
+      constant
+      	OLE32 = "Ole32.dll"
+      FIN
+      
+      // Charge OLE32
+      __ole32inst est un entier systeme = chargedll(ole32)
+      
+      // Initialise COM (peut échoué en mode test)
+      CoInitializeEx(null, COINIT_MULTITHREADED)
+      
+      ///////////////////////////////////////////////////////////
+      // <IIDs>
+      
+      IID_IUnknown 			est un IID
+      IID_IDispatch 			est un IID
+      IID_ITypeInfo 			est un IID
+      IID_ISequentialStream 	est un IID
+      IID_IStream 			est un IID
+      
+      // </IIDs>
+      
+      ///////////////////////////////////////////////////////////
+      // <Déclarations des IIDs>
+      
+      DEFINE_GUID(IID_IUnknown, 			0x00000000, 0x0000, 0x0000, 0xC0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x46)
+      DEFINE_GUID(IID_IDispatch, 			0x00020400, 0x0000, 0x0000, 0xC0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x46)
+      DEFINE_GUID(IID_ITypeInfo, 			0x00020401, 0x0000, 0x0000, 0xC0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x46)
+      DEFINE_GUID(IID_ISequentialStream, 	0x0c733a30, 0x2a1c, 0x11ce, 0xad, 0xe5, 0x00, 0xaa, 0x00, 0x44, 0x77, 0x3d)
+      DEFINE_GUID(IID_IStream, 			0x0000000c, 0x0000, 0x0000, 0xC0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x46)
+      
+      // </Déclarations des IIDs>
+      
+      ///////////////////////////////////////////////////////////
+      // <Enumérations>
+      
+      constant
+      	
+      	// <CLSCTX>
+      	CLSCTX_INPROC_SERVER        = 0x1 
+      	CLSCTX_INPROC_HANDLER       = 0x2 
+      	CLSCTX_LOCAL_SERVER         = 0x4 
+      	CLSCTX_INPROC_SERVER16      = 0x8
+      	CLSCTX_REMOTE_SERVER        = 0x10
+      	CLSCTX_INPROC_HANDLER16     = 0x20
+      	CLSCTX_RESERVED1            = 0x40
+      	CLSCTX_RESERVED2            = 0x80
+      	CLSCTX_RESERVED3            = 0x100
+      	CLSCTX_RESERVED4            = 0x200
+      	CLSCTX_NO_CODE_DOWNLOAD     = 0x400
+      	CLSCTX_RESERVED5            = 0x800
+      	CLSCTX_NO_CUSTOM_MARSHAL    = 0x1000
+      	CLSCTX_ENABLE_CODE_DOWNLOAD = 0x2000
+      	CLSCTX_NO_FAILURE_LOG       = 0x4000
+      	CLSCTX_DISABLE_AAA          = 0x8000
+      	CLSCTX_ENABLE_AAA           = 0x10000
+      	CLSCTX_FROM_DEFAULT_CONTEXT = 0x20000
+      	CLSCTX_ACTIVATE_32_BIT_SERVER = 0x40000
+      	CLSCTX_ACTIVATE_64_BIT_SERVER = 0x80000
+      	// </CLSCTX>
+      	
+      	// <COINIT>
+      	COINIT_MULTITHREADED     = 0x0
+      	COINIT_APARTMENTTHREADED = 0x2
+      	COINIT_DISABLE_OLE1DDE   = 0x4
+      	COINIT_SPEED_OVER_MEMORY = 0x8
+      	// </COINIT>
+      	
+      	// <DISPATH>
+      	DISPATCH_METHOD				= 0x1
+      	DISPATCH_PROPERTYGET		= 0x2
+      	DISPATCH_PROPERTYPUT		= 0x4
+      	DISPATCH_PROPERTYPUTREF		= 0x8
+      	// </DISPATH>	
+      	
+      	// STGTY
+      	STGTY_STORAGE   = 1
+      	STGTY_STREAM    = 2
+      	STGTY_LOCKBYTES = 3
+      	STGTY_PROPERTY  = 4
+      	
+      	// STREAM_SEEK
+      	STREAM_SEEK_SET = 0
+      	STREAM_SEEK_CUR = 1
+      	STREAM_SEEK_END = 2
+      	
+      	// LOCK
+      	LOCK_WRITE      = 1
+      	LOCK_EXCLUSIVE  = 2
+      	LOCK_ONLYONCE   = 4
+      	
+      	E_NOTIMPL		= 0x80004001
+      	E_NOINTERFACE	= 0x80004002
+      	E_FAIL			= 0x80004005
+      	
+      	// STATFLAG
+      	STATFLAG_DEFAULT   = 0
+      	STATFLAG_NONAME    = 1
+      	STATFLAG_NOOPEN    = 2
+      FIN
+      
+      // </Enumération>
+     type : 720896
+   -
+     code : |1-
+      
+      // Dé-initialise COM
+      CoUninitialize()
+      
+      // Décharge OLE32
+      DéchargeDLL(__ole32inst)
+     type : 720898
+  procedures :
+   -
+     name : SUCCEEDED
+     internal_properties : CAAAAAgAAACc4JhFPN0HPwS3gW27B02FBP1VEqoe502pD5NdX6zdKnB7mE4G/x1CQIURifD/cgAw8sxcN0bwZvgQ0w+bk9SF1d1aggbMat5A1asS7Q6eB80d2l6j6hknDS6mUcV+ZvfN+1/2KGGKwpzz441FDC8QCz0mBDESFGfQiWGv74g=
+     procedure_id : 1821304843745028610
+     type_code : 15
+     code : |1-
+      // Résumé : Vérifie si une valeur de retour de type C++ HRESULT signifie une opération réussie. 
+      // Syntaxe :
+      //[ <Résultat> = ] SUCCEEDED (<Status>)
+      //
+      // Paramètres :
+      //	Status : Valeur de retour de type C++ HRESULT
+      // Valeur de retour :
+      // 	booléen : Vrai si la valeur de retour indique un succès, Faux sinon
+      //
+      Procédure SUCCEEDED(local Status)
+      renvoyer ( Status >= 0 )
+     type : 458752
+   -
+     name : StringFromIID
+     procedure_id : 1821304843745094146
+     type_code : 15
+     code : |1-
+      // Résumé : Convertit un identifiant d'interface en une chaîne de caractères imprimable
+      // Syntaxe :
+      //[ <Résultat> = ] StringFromIID (<iid> est IID, <sz> est chaîne)
+      //
+      // Paramètres :
+      //	iid (IID) : [in] Identifiant d'interface à convertir
+      //	sz (chaîne) : [out] Chaîne recevant le résultat
+      // Valeur de retour :
+      // 	entier système : Valeur de retour de type C++ HRESULT
+      //
+      Procédure StringFromIID(iid est un IID, sz est une chaine)
+      
+      	HRESULT 	est un entier systeme
+      	lpolestr 	est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(OLE32, "StringFromIID", &iid, &lpolestr)
+      	
+      	// Récupère la chaîne
+      	sz = (chainerecupere(lpolestr, crAdresseUNICODE))
+      	
+      	// Libère le pointeur
+      	CoTaskMemFree(lpolestr)
+      
+      renvoyer HRESULT 
+     type : 458752
+   -
+     name : StringFromGUID2
+     procedure_id : 1821304843745159682
+     type_code : 15
+     code : |1-
+      // Résumé : Convertit un GUID en une chaîne de caractères imprimable
+      // Syntaxe :
+      //[ <Résultat> = ] StringFromGUID2 (<guid> est GUID, <sz> est chaîne, <cchMax> est entier)
+      //
+      // Paramètres :
+      //	guid (GUID) :  [in] GUID à convertir
+      //	sz (chaîne) :   [out] Chaîne recevant le résultat
+      //	cchMax (entier) : [in] Nombre de caractères à renvoyer
+      // Valeur de retour :
+      // 	entier système : Valeur de retour de type C++ HRESULT
+      //
+      Procédure StringFromGUID2(guid est un GUID, sz est une chaine, local cchMax est un entier)
+      
+      	HRESULT est un entier systeme
+      	lpolestr 	est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(OLE32, "StringFromGUID2", &guid, &lpolestr, cchMax)
+      	
+      	// Récupère la chaîne
+      	sz = (ChaîneRécupère(lpolestr, crAdresseUNICODE))
+      	
+      	// Libère le pointeur
+      	CoTaskMemFree(lpolestr)
+      
+      renvoyer HRESULT 
+     type : 458752
+   -
+     name : StringFromCLSID
+     procedure_id : 1821304843745225218
+     type_code : 15
+     code : |1-
+      // Résumé : Convertit un identifiant de classe (CLSID) en une chaîne de caractère imprimable
+      // Syntaxe :
+      //[ <Résultat> = ] StringFromCLSID (<clsid> est CLSID, <sz> est chaîne)
+      //
+      // Paramètres :
+      //	clsid (CLSID) : [in] Identifiant de classe (CLSID) à convertir
+      //	sz (chaîne) :   [out] Chaîne recevant le résultat
+      // Valeur de retour :
+      // 	entier système : Valeur de retour de type C++ HRESULT
+      //
+      Procédure StringFromCLSID(clsid est un CLSID, sz est une chaine)
+      
+      	HRESULT est un entier systeme
+      	lpolestr 	est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(OLE32, "StringFromCLSID", &clsid, &lpolestr)
+      	
+      	// Récupère la chaîne
+      	sz = (ChaîneRécupère(lpolestr, crAdresseUNICODE))
+      	
+      	// Libère le pointeur
+      	CoTaskMemFree(lpolestr)
+      
+      renvoyer HRESULT 
+     type : 458752
+   -
+     name : IsEqualIID
+     internal_properties : CAAAAAgAAAC2qbRQAQQ2x5hU7jBZIeSTI0Fhl7OiuUJKS31GpcIEVTLSwjVCCKqw7+AVgj8YkpI53hDYecp0GVgbr+0+IpSlKC709wMBDWOv+ehqV+hxEuiKeHH3pRm0Vn/WekWT5Fe7BaVtZSjCuPgXieS4v+65dvmKe+IeHTQfA/o+9TE0dbMW01sIkAylJbiMJ97QC2Py
+     procedure_id : 1821304843745290754
+     type_code : 15
+     code : |1-
+      // Résumé : Détermine si deux identifiants d'interface sont égaux
+      // Syntaxe :
+      //[ <Résultat> = ] IsEqualIID (<iid1> est IID, <iid2> est IID)
+      //
+      // Paramètres :
+      //	iid1 (IID) : [in] Identifiant d'interface à comparer avec <iid2>
+      //	iid2 (IID) : [in] Identifiant d'interface à comparer avec <iid1>
+      // Valeur de retour :
+      // 	booléen : Vrai si les identifiants d'interface sont égaux, Faux dans le cas contraire
+      //
+      Procédure IsEqualIID(iid1 est un IID, iid2 est un IID)
+      
+      	BRESULT est un booléen
+      
+      	// FONCTION C++ DECLAREE INLINE DANS GUIDDEF.H
+      	BRESULT = IsEqualGUID(&iid1, &iid2)
+      
+      renvoyer BRESULT
+     type : 458752
+   -
+     name : IsEqualCLSID
+     internal_properties : CAAAAAgAAAA2KTTQgYS2RxjUbrDZoWQTo8HhFzMiOcLKy/3GJUKE1bJSQrXCiOow72AVAr+YEpI53hDY+cp0GdgbL+0+IpQlqK50dwOBjePvuSiqlyix0ihKODE35Vn0lj8WuoXTJBf7xWUtpWgC+DjXCWQ4P2459nkK+2KenbSfg3q+dbG09TOWU9uIEIwlpTgMp15Qi+Ny
+     procedure_id : 1821304843745356290
+     type_code : 15
+     code : |1-
+      // Résumé : Détermine si deux identifiants de classe (CLSID) sont égaux
+      // Syntaxe :
+      //[ <Résultat> = ] IsEqualCLSID (<clsid1> est CLSID, <clsid2> est CLSID)
+      //
+      // Paramètres :
+      //	clsid1 (CLSID) : [in] Identifiant de classe (CLSID) à comparer avec <clsid2>
+      //	clsid2 (CLSID) : [in] Identifiant de classe (CLSID) à comparer avec <clsid1>
+      // Valeur de retour :
+      // 	booléen : Vrai si les identifiants de classe (CLSID) sont égaux, Faux dans le cas contraire
+      //
+      Procédure IsEqualCLSID(clsid1 est un CLSID, clsid2 est un CLSID)
+      
+      	BRESULT est un booléen
+      	
+      	// FONCTION C++ DECLAREE INLINE DANS GUIDDEF.H
+      	BRESULT = IsEqualGUID(&clsid1, &clsid2)
+      
+      renvoyer BRESULT
+     type : 458752
+   -
+     name : IsEqualGUID
+     internal_properties : CAAAAAgAAAA/68l+mOrSZKASXr3VZgkhkZvnnXeqXo/V0Zl1j//XZqi6p+dWuPvxyuj/zzHVppx1hAz4eoGNOsAKvtoOSGqZIYC4AlXwhMDmO4FM16Ig9cUVMurBznUhh2UrZsuVA5IWN6dqy0UOMQ1DZgYvxigdKJo7L3dqLLLZzqwFYiQZYPD8eTb87bY8fja+HJQD
+     procedure_id : 1821304843745421826
+     type_code : 15
+     code : |1-
+      // Résumé : Détermine si deux GUID sont égaux
+      // Syntaxe :
+      //[ <Résultat> = ] IsEqualGUID (<rguid1> est entier, <rguid2> est entier)
+      //
+      // Paramètres :
+      //	rguid1 (entier) : [in] Pointeur du GUID à comparer avec <guid2>
+      //	rguid2 (entier) : [in] Pointeur du GUID à comparer avec <guid1>
+      // Valeur de retour :
+      // 	booléen : Vrai si les GUID sont égaux, Faux dans le cas contraire
+      //
+      Procédure IsEqualGUID(rguid1 est un entier, rguid2 est un entier)
+      
+      	BRESULT 	est un booléen
+      	
+      	// FONCTION C++ DECLAREE INLINE DANS GUIDDEF.H
+      	
+      	refguid1	est un tableau de 4 entiers sur 4
+      	refguid2	est un tableau de 4 entiers sur 4
+      
+      	transfert(&refguid1, rguid1, 16)
+      	transfert(&refguid2, rguid2, 16)
+      
+      	BRESULT = ( refguid1[1] = refguid2[1] _et_ ...
+      				refguid1[2] = refguid2[2] _ET_ ...
+      				refguid1[3] = refguid2[3] _ET_ ...
+      				refguid1[4] = refguid2[4] ...
+      			  )
+      	
+      renvoyer BRESULT
+     type : 458752
+   -
+     name : IIDFromString
+     procedure_id : 1821304843745487362
+     type_code : 15
+     code : |1-
+      // Résumé : Convertit une chaîne générée par la fonction StringFromIID en un identifiant d'interface (IID)
+      // Syntaxe :
+      //[ <Résultat> = ] IIDFromString (<sz> est chaîne, <iid> est IID)
+      //
+      // Paramètres :
+      //	sz (chaîne) : [in] Chaîne représentant l'identifiant d'interface (IID)
+      //	iid (IID) : [out] Identifiant d'interface (IID) recevant l'identifiant correspondant à <sz>
+      // Valeur de retour :
+      // 	entier système : Valeur de retour de type C++ HRESULT
+      //
+      Procédure IIDFromString(local sz est une chaîne, iid est un IID)
+      	
+      	HRESULT est un entier systeme
+      	olestr  est une chaine unicode
+      	
+      	olestr = sz
+      	HRESULT = API(OLE32, "IIDFromString", &olestr, &iid)
+      
+      RENVOYER HRESULT 
+     type : 458752
+   -
+     name : CLSIDFromString
+     procedure_id : 1821304843745552898
+     type_code : 15
+     code : |1-
+      // Résumé : Convertit une chaîne générée par la fonction StringFromCLSID en un identifiant de classe (CLSID)
+      // Syntaxe :
+      //[ <Résultat> = ] CLSIDFromString (<sz> est chaîne, <clsid> est CLSID)
+      //
+      // Paramètres :
+      //	sz (chaîne) : [in] Chaîne représentant l'identifiant de classe (CLSID)
+      //	clsid (CLSID) : [out] Identifiant de classe (CLSID) recevant l'identifiant correspondant à <sz>
+      // Valeur de retour :
+      // 	entier système : Valeur de retour de type C++ HRESULT
+      //
+      Procédure CLSIDFromString(local sz est une chaine, clsid est un CLSID)
+      	
+      	HRESULT est un entier systeme
+      	olestr  est une chaine unicode
+      	
+      	olestr = sz
+      	HRESULT = API(OLE32, "CLSIDFromString", &olestr, &clsid)	
+      
+      RENVOYER HRESULT 
+     type : 458752
+   -
+     name : DEFINE_GUID
+     internal_properties : CAAAAAgAAAAQUmCswPVeKsNm7cUQKl+Cdq9PF/1BKF0lK7zuRfxNaAFKTUC0J5VYNqQ972vsafQVjGvROvsr2GeInAbVBI404PKFxo098bh7UI8KI15+wl/KFHqZkq6/7Xo8XKyoIlnBxCHpfAF7+QyNAxAikMx6+o/P9GpNgol7X5oqeovU2oxwjr+rWtYHGEEutmzMUr8m32ATAezyRkVHUwFhR75Ah7hD3chf6Qg3QN/sZjnGX5RrhzptyZl3edoIShulBrk9puRItigmjN9zzGmjeKt5qHa95vGRl23ghSyBavId/NJA0bgvDIxL1ONDmLINbm+65sVaRnYTFg==
+     procedure_id : 1821304843745618434
+     type_code : 15
+     code : |1-
+      // Résumé : Associe une variable de type GUID avec ses valeurs
+      // Syntaxe :
+      //[ <Résultat> = ] DEFINE_GUID (<name>, <l> est entier sans signe sur 4 octets, <w1> est entier sans signe sur 2 octets, <w2> est entier sans signe sur 2 octets, <b1> est entier sans signe sur 1 octet, <b2> est entier sans signe sur 1 octet, <b3> est entier sans signe sur 1 octet, <b4> est entier sans signe sur 1 octet, <b5> est entier sans signe sur 1 octet, <b6> est entier sans signe sur 1 octet, <b7> est entier sans signe sur 1 octet, <b8> est entier sans signe sur 1 octet)
+      //
+      // Paramètres :
+      //	name : Variable de type GUID/CLSID/IID
+      //	l (entier sans signe sur 4 octets) : Data1
+      //	w1 (entier sans signe sur 2 octets) : Data2
+      //	w2 (entier sans signe sur 2 octets) : Data3
+      //	b1 (entier sans signe sur 1 octet) : Data4[1]
+      //	b2 (entier sans signe sur 1 octet) : Data4[2]
+      //	b3 (entier sans signe sur 1 octet) : Data4[3]
+      //	b4 (entier sans signe sur 1 octet) : Data4[4]
+      //	b5 (entier sans signe sur 1 octet) : Data4[5]
+      //	b6 (entier sans signe sur 1 octet) : Data4[6]
+      //	b7 (entier sans signe sur 1 octet) : Data4[7]
+      //	b8 (entier sans signe sur 1 octet) : Data4[8]
+      // Valeur de retour :
+      // 	GUID : Copie du GUID
+      //
+      Procédure DEFINE_GUID(name, local l est un entier sans signe sur 4, local w1 est un entier sans signe sur 2, local w2 est un entier sans signe sur 2, local b1 est un entier sans signe sur 1, local b2 est un entier sans signe sur 1, local b3 est un entier sans signe sur 1, local b4 est un entier sans signe sur 1, local b5 est un entier sans signe sur 1, local b6 est un entier sans signe sur 1, local b7 est un entier sans signe sur 1, local b8 est un entier sans signe sur 1)
+      
+      	stGUID est un guid
+      
+      	// MACRO C++ DECLAREE DANS GUIDDEF.H
+      	stGUID = [ l, w1, w2, [ b1, b2, b3, b4, b5, b6, b7, b8 ] ]
+      	
+      	// Copie
+      	transfert(&name, &stGUID, dimension(stGUID))
+      	
+      renvoyer stGUID
+     type : 458752
+   -
+     name : DEFINE_OLEGUID
+     internal_properties : CAAAAAgAAACdHYClD94YYDKF0jP2xBIBqextaoURjwUCVagz8BXpGxzmURi/20ADSOfyMYC5tBqC0u5CJQXRoWbzI6XZM2s0vtFvx/TTfB815pvAq8K8B0uluJtrUJmZWcPmhRuR7eRo3fLhi0EIR1HL2YnJUEDRUJa8pDlC4hTR9tDft1siIV8nfzqRDpVJjwMGJrxEeazYBR0KTYV2m3rQux+8VxBLuGgHsWF4
+     procedure_id : 1821304843745683970
+     type_code : 15
+     code : |1-
+      // Résumé : Associe un OLEGUID avec ses valeurs
+      // Syntaxe :
+      //[ <Résultat> = ] DEFINE_OLEGUID (<name> est GUID, <l> est entier sans signe sur 4 octets, <w1> est entier sans signe sur 2 octets, <w2> est entier sans signe sur 2 octets)
+      //
+      // Paramètres :
+      //	name (GUID) : Variable de type GUID
+      //	l (entier sans signe sur 4 octets) : Data1
+      //	w1 (entier sans signe sur 2 octets) : Data2
+      //	w2 (entier sans signe sur 2 octets) : Data3
+      // Valeur de retour :
+      // 	GUID : Copie du GUID
+      //
+      Procédure DEFINE_OLEGUID(name est un guid, local l est un entier sans signe sur 4, local w1 est un entier sans signe sur 2, local w2 est un entier sans signe sur 2)
+      
+      	// MACRO C++ DECLAREE DANS GUIDDEF.H
+      	
+      renvoyer DEFINE_GUID(name, l, w1, w2, 0xc0, 0, 0, 0, 0, 0, 0, 0x46)
+     type : 458752
+   -
+     name : CoTaskMemFree
+     procedure_id : 1821304843745749506
+     type_code : 15
+     code : |1-
+      // Résumé : Libère un bloc mémoire alloué au préalable au travers des fonctions CoTaskMemAlloc ou CoTaskMemRealloc
+      // Syntaxe :
+      //CoTaskMemFree (<pv> est entier)
+      //
+      // Paramètres :
+      //	pv (entier) : [in] Pointeur du bloc mémoire à libérer
+      // Valeur de retour :
+      // 	Aucune
+      //
+      Procédure CoTaskMemFree(local pv est un entier)
+      
+      	api(ole32, "CoTaskMemFree", pv)
+     type : 458752
+   -
+     name : FAILED
+     internal_properties : CAAAAAgAAACusgoXwm8VKRZhs6NFqccPnkeXT/BGU5Ep/9Xn/YBxfqhjPPowawkSpKk3G2aL2hCs5tTkecqQyvgQoXnx95QuSgpfXb8VC8mJfs5/3v9tQIISB+Gw5+YymruxDn53NUCC8ISlUdorHUUcncu7hrWatWfY0mckInUiW7MdHXo=
+     procedure_id : 1821304843745815042
+     type_code : 15
+     code : |1-
+      // Résumé : Vérifie si une valeur de retour de type C++ HRESULT signifie une opération échouée. 
+      // Syntaxe :
+      //[ <Résultat> = ] FAILED (<Status>)
+      //
+      // Paramètres :
+      //	Status : Valeur de retour de type C++ HRESULT
+      // Valeur de retour :
+      // 	booléen : Vrai si la valeur de retour indique un échec, Faux sinon
+      //
+      Procédure FAILED(local Status)
+      renvoyer ( Status < 0 )
+     type : 458752
+   -
+     name : IS_ERROR
+     internal_properties : CAAAAAgAAAD/Vjc/dC90StbxntKRDtLq+7W5jRsxPOjOPHzK3iDZBCpzq6us2jzztykoeFzpgLKuX2YJEyGH6PWgh1Rtjd/d3AGC7En5yZLL/agkpRFbKdpLhIKqgZYJDoArvSunDVd6V5f0QdL53r8Tn+9buSICSheU/CQhBQltA75ZhDJI
+     procedure_id : 1821304843745880578
+     type_code : 15
+     code : |1-
+      // Résumé : Détermine si une valeur de retour de type C++ HRESULT contient un code d'erreur
+      // Syntaxe :
+      //[ <Résultat> = ] IS_ERROR (<Status>)
+      //
+      // Paramètres :
+      //	Status : Valeur de retour de type C++ HRESULT
+      // Valeur de retour :
+      // 	booléen : Vrai si la valeur de retour contient un code d'erreur, Faux sinon
+      //
+      Procédure IS_ERROR(LOCAL Status)
+      renvoyer ( ( Status bitdecaledroite 31 = 1 ) )
+     type : 458752
+   -
+     name : CoCreateInstance
+     internal_properties : CAAAAAgAAADebABpFDPValyY1BmMIrllzdgiQ038FvZ6IujhUhorVXJYHclctgFAaPPYSMYJo5w/CdTRLpTN2tV/fGRg/V7LeFu0l8IJDVjpgnnugQBLNWIfxAoqbrk=
+     procedure_id : 1821304843745946114
+     type_code : 15
+     code : |1-
+      // Résumé : Crée un objet unique non initialisé de classe spécifiée par un identifiant de classe (CLSID)
+      // Syntaxe :
+      //[ <Résultat> = ] CoCreateInstance (<clsid> est CLSID, <pclUnkOuter> est IUnknown dynamique, <dwClsContext> est entier sans signe sur 4 octets, <iid> est IID, <v> est IUnknown dynamique [, <__wlClassName>])
+      //
+      // Paramètres :
+      //	clsid (CLSID) : [in] Identifiant de classe qui sera utilisé pour créer l'objet
+      //	pclUnkOuter (IUnknown dynamique) : [in] Null (pour indiquer que l'objet ne fait pas partie d'un agrégat) ou interface agrégée
+      //	dwClsContext (entier sans signe sur 4 octets) : [in] Contexte dans lequel le code qui gère l'objet créé sera exécuté. Les valeurs possibles sont contenues dans l'énumération CLSCTX.
+      //	iid (IID) : [in] Identifiant d'interface (IID) à utiliser pour communiquer avec l'objet
+      //	v (IUnknown dynamique) : [out] Objet dynamique dérivé de IUnknown recevant l'objet créé. En cas d'erreur, <v> contient un objet Null
+      // 	__wlClassName : Nom de la classe instanciée par <v> (par défaut : IUnknown)
+      // Valeur de retour :
+      // 	entier système : Valeur de retour de type C++ HRESULT
+      //
+      
+      Procédure CoCreateInstance(clsid est un CLSID, pclUnkOuter est un iunknown dynamique, local dwClsContext est un entier sans signe, iid est un IID, v est un iunknown dynamique, __wlClassName = iunknown)
+      
+      	HRESULT est un entier système
+      	ppvIUnknown est un entier système
+      	
+      	HRESULT = api(ole32, "CoCreateInstance", &clsid, PTR(pclUnkOuter), dwClsContext, &iid, &ppvIUnknown)
+      	
+      	// Crée l'objet associé
+      	__BindInterface(v, ppvIUnknown, __wlClassName)
+      	
+      renvoyer HRESULT
+      
+      CAS EXCEPTION:
+      	HRESULT = -1
+      	renvoyer HRESULT
+     type : 458752
+   -
+     name : SAFE_RELEASE
+     internal_properties : CAAAAAgAAADebABpFDPValyY1BmMIrllzdgiQ038FvZ6IujhUhorVXJYHclctgFAaPPYSMYJo5w/CdTRLpTN2tV/fGRg/V7LeFu0l8IJDVjpgnnugQBLNWIfxAoqbrk=
+     procedure_id : 1821304843746011650
+     type_code : 15
+     code : |1-
+      // Résumé : Libère un objet dérivé de IUnknown
+      // Syntaxe :
+      //SAFE_RELEASE (<v> est IUnknown dynamique)
+      //
+      // Paramètres :
+      //	v (IUnknown dynamique) : Objet dynamique dérivé de IUnknown à libérer
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Traitement automatique des exceptions :   exécuter le bloc de code CAS EXCEPTION:
+      //
+      Procédure SAFE_RELEASE(v est un IUnknown dynamique)
+      	
+      	si v <> null alors
+      		
+      		// Appel de la méthode IUnknown::Release
+      		v:Release()
+      	fin
+      	
+      	// Libération
+      	libérer v
+      	v = null
+      	
+      CAS EXCEPTION:
+      	retour
+     type : 458752
+   -
+     name : __BindInterface
+     internal_properties : CAAAAAgAAAATcqFTsce1xspwLH1NCIgBD9f44WCtXnwpQfkev/aIzxYWzYsneTI8D00OEfkLUMz+y1dnQghTPIZ0RRkWYLNCBCzSIgfawfUssxyGXlbtu23ccYj88pxJIyGlZG96nuSQqTK9dFXx7V0zMZ0wvHgSB4FzgTFTRCsgUVM+kZhLWSm1rYC04FwjrTsbrxoXrOiC659EaBUWhny+yJyMdJm9SqGBShpu/g8=
+     procedure_id : 1821304843746077186
+     type_code : 15
+     code : |1-
+      // Résumé : Ré-alloue un objet dérivé de IUnknown
+      // Syntaxe :
+      //__BindInterface (<v> est IUnknown dynamique, <ppv> est entier système [, <__wlClassName>])
+      //
+      // Paramètres :
+      //	v (IUnknown dynamique) : Objet dérivé de IUnknown à ré-allouer
+      //	ppv (entier système) : Pointeur d'interface à utiliser (si <ppv> est Null, aucun appel de méthode ne pourra être effectué sur <v>)
+      //	__wlClassName : Nom de la classe de l'objet
+      // Valeur de retour :
+      // 	Aucune
+      //
+      
+      Procédure PUBLIQUE  __BindInterface(v est un IUnknown dynamique, local ppv est un entier systeme, local __wlClassName = IUnknown)
+      
+      //	extern __ObjectAlloc
+      
+      	// On libère v
+      	SAFE_RELEASE(v)	
+      	
+      	// Ré-alloue l'objet
+      	SI ppv <> Null ALORS
+      		
+      		// Allocation dynamique par réflexion
+      		v = allouer un __wlClassName(ppv)
+      		
+      //		__wlObjectAlloc est une chaine
+      //		
+      //		// Récupère le nom de la classe
+      //		__wlClassName = (__wlClassName = "" ? IUnknown SINON __wlClassName)
+      //			
+      //		// Crée le code permettant d'allouer l'objet	
+      //		__wlObjectAlloc = ChaîneConstruit([
+      //		PROCEDURE __ObjectAlloc(v, ppv)
+      //		v = allouer un %1(ppv)
+      //		], __wlClassName)
+      //			
+      //		// Compile le code		
+      //		Compile("__ObjectAlloc", __wlObjectAlloc)
+      //		
+      //		// Appel du code
+      //		__ObjectAlloc(v, ppv)			
+      	FIN
+      	
+      CAS EXCEPTION:
+      	
+      	// On libère v
+      	SAFE_RELEASE(v)	
+      	retour
+      	
+      //Fin:
+      //	// Supprime le code compilé
+      //	Compile("__ObjectAlloc", "")
+     type : 458752
+   -
+     name : __ToCLSID
+     internal_properties : CAAAAAgAAAAsMIidfA33z6TX0b1r153F1N01kso+J80ZH/M9X+zduvBLqP6mz21yYIUBeUBvosCAMgwcZ8YwJmig869bk3TdnSUCWl5UEgYo3SOK1eZmvzWFQnab8gHP9XZ+SY1WLs81Y2eu4EkyKiRra1UdNGfYY5X+LBlqLL9o4TGfn/g=
+     procedure_id : 1821319820329099452
+     type_code : 15
+     code : |1-
+      // Résumé : Convertit un GUID/IID en CLSID
+      // Syntaxe :
+      //[ <Résultat> = ] __ToCLSID (<_name>)
+      //
+      // Paramètres :
+      //	_name : Variable de type GUID/IID à convertir en CLSID
+      // Valeur de retour :
+      // 	CLSID : CLSID généré
+      //
+      Procédure __ToCLSID(_name)
+      
+      	stCLSID est un clsid
+      	transfert(&stCLSID, &_name, dimension(stCLSID))
+      	
+      renvoyer stCLSID
+     type : 458752
+   -
+     name : __ToIID
+     internal_properties : CAAAAAgAAABv5odvTB9kygaRvrLhzhI6i6UJDYuR/PiuLKwavlDphMrTyxtMqozTh0nIOKyp4CLeL9YpY6EH+JVwl2RtHU+FFCn6VOFhMbrjFaAsnVnDkbKTXErCKT6x5lgDZSOvVR9Sn2+cufohpjfr17cTIWrKAl9spPwJ7dEl+46J9KLY
+     procedure_id : 1821320254121289701
+     type_code : 15
+     code : |1-
+      // Résumé : Convertit un GUID/CLSID en IID
+      // Syntaxe :
+      //[ <Résultat> = ] __ToIID (<_name>)
+      //
+      // Paramètres :
+      //	_name : Variable de type GUID/CLSID à convertir en IID
+      // Valeur de retour :
+      // 	IID : IID généré
+      //
+      Procédure __ToIID(_name)
+      
+      	stIID est un IID
+      	transfert(&stIID, &_name, dimension(stIID))
+      	
+      renvoyer stIID
+     type : 458752
+   -
+     name : __ToGUID
+     internal_properties : CAAAAAgAAADscEhdPM23D2SXkf0rF12FFJ110hqeJ405vxM9v8y9WrBryL5Gry1yQGUh+aBPAuDAkqxcB2Zw5ojAk+/7c1RNbXVyig7EYtaYbTNa5dYWb0VVsqYLopGfpcZOWZ2GHj+F8xceUDmCOtSrK5Vd9CcYI9W+7Fkq7P+ooXFfXzg=
+     procedure_id : 1821320468869705264
+     type_code : 15
+     code : |1-
+      // Résumé : Convertit un IID/CLSID en GUID
+      // Syntaxe :
+      //[ <Résultat> = ] __ToGUID (<_name>)
+      //
+      // Paramètres :
+      //	_name : Variable de type IID/CLSID à convertir en GUID
+      // Valeur de retour :
+      // 	GUID : GUID généré
+      //
+      Procédure __ToGUID(_name)
+      
+      	stGUID est un GUID
+      	transfert(&stGUID, &_name, dimension(stGUID))
+      	
+      renvoyer stGUID
+     type : 458752
+   -
+     name : CoInitializeEx
+     internal_properties : CAAAAAgAAAC4SXJwl0kMgfXhDZZnObt6Ss+hz7CSU6mnHqdt/rAw2ZH/5y5T1HFdu8i7AxgpLWKoC+OgfQ32iviz990hoOvtoyM8lHB8fLjuNAzhRH+D+s7eiwUodYaSCEnJPHv+xm+s/Jq2Y3eXHR/1fnKrDA==
+     procedure_id : 1821325609945641304
+     type_code : 15
+     code : |1-
+      // Résumé : Méthode 
+      // Syntaxe :
+      //[ <Résultat> = ] CoInitializeEx (<pvReserved> est entier, <dwCoInit> est entier)
+      //
+      // Paramètres :
+      //	pvReserved (entier) : Réservé, doit être Null
+      //	dwCoInit (entier) : Flag ou combinaison de flags indiquant le mode de concurrence utilisé pour le thread courant
+      // Valeur de retour :
+      // 	entier sur 8 octets : Valeur de retour de type C++ HRESULT
+      //
+      Procédure CoInitializeEx(pvReserved est un entier, local dwCoInit est un entier)
+      
+      	HRESULT est un entier sur 8	
+      	HRESULT = api(ole32, "CoInitializeEx", pvReserved, dwCoInit)
+      	
+      renvoyer HRESULT 
+     type : 458752
+   -
+     name : CoUninitialize
+     internal_properties : CAAAAAgAAACMHqAuKXSseIJySyNCmt2a5z2MJad5AISX3/IZpPIsr4KbdlVRb6WmfybemVi8ZS0IdTFSKjrIry7cIfUU9TF2hXnQ+XN1ohGWuXCrYSj9Q9D8q/5nDrKF/jRD+B4RrgS2Cib7Znj/GBGkizNX
+     procedure_id : 1821326769586884310
+     type_code : 15
+     code : |1-
+      // Résumé : Ferme la librairie COM pour le thread courant, décharge les DLL chargées par le thread et libère les ressources utilisées
+      // Syntaxe :
+      // CoUninitialize ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      Procédure CoUninitialize()
+      
+      	api(ole32, "CoUninitialize")
+     type : 458752
+   -
+     name : MAKE_HRESULT
+     procedure_id : 1863174710142641324
+     type_code : 15
+     code : |1-
+      // Résumé : Macro MAKE_HRESULT
+      Procédure MAKE_HRESULT(sev, fac, code)
+      renvoyer (sev bitdecalegauche 31 | fac bitdecalegauche 16 | code)
+     type : 458752
+   -
+     name : PTRObj
+     internal_properties : CAAAAAgAAADebABpFDPValyY1BmMIrllzdgiQ038FvZ6IujhUhorVXJYHclctgFAaPPYSMYJo5w/CdTRLpTN2tV/fGRg/V7LeFu0l8IJDVjpgnnugQBLNWIfxAoqbrk=
+     procedure_id : 1863502381832092339
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie le pointeur d'une interface// Traitement automatique des exceptions :   exécuter le bloc de code CAS EXCEPTION:
+      //
+      
+      Procédure PRIVEE PTRObj(v est un objetcom dynamique)
+      
+      	ppvV est un entier systeme
+      
+      	// Si l'objet n'est pas nul
+      	si v <> Null ALORS
+      		
+      		// Récupère le pointeur
+      		ppvV = v:Interface	
+      	sinon
+      		ppvV = 0
+      	FIN
+      	
+      renvoyer ppvV
+      
+      CAS EXCEPTION:
+      	ppvV = 0
+      	renvoyer ppvV
+     type : 458752
+   -
+     name : PTRTab
+     procedure_id : 1863959027089249870
+     type_code : 15
+     code : |1-
+      // Résumé : Récupère le pointeur d'un tableau
+      Procédure PRIVEE PTRTab(_wlTableau)
+      
+      	ppv_wlTableau est un entier systeme
+      	
+      	// Si le tableau est Null
+      	si _wlTableau = null _ou_ _wlTableau..occurrence = 0 alors
+      		
+      		// Pointeur null
+      		ppv_wlTableau = null
+      		renvoyer ppv_wlTableau
+      	sinon
+      		
+      		// Sinon tente de récupérer le pointeur sur le tableau
+      		QUAND EXCEPTION DANS
+      			ppv_wlTableau = &_wlTableau
+      		FAIRE
+      		
+      			// En cas d'erreur, pointeur null
+      			ppv_wlTableau = Null
+      		FIN
+      	FIN
+      		
+      renvoyer ppv_wlTableau
+     type : 458752
+   -
+     name : PTRVTbl
+     internal_properties : CAAAAAgAAADebABpFDPValyY1BmMIrllzdgiQ038FvZ6IujhUhorVXJYHclctgFAaPPYSMYJo5w/CdTRLpTN2tV/fGRg/V7LeFu0l8IJDVjpgnnugQBLNWIfxAoqbrk=
+     procedure_id : 1864285298922664838
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie le pointeur d'une interface WL
+      Procédure PTRVTbl(v est un objetcom dynamique)
+      
+      	ppvV est un entier systeme
+      
+      	// Si l'objet n'est pas nul
+      	si v <> Null ALORS
+      		
+      		// Récupère le pointeur
+      		ppvV = &v
+      	sinon
+      		ppvV = 0
+      	FIN
+      	
+      renvoyer ppvV
+      
+      CAS EXCEPTION:
+      	ppvV = 0
+      	renvoyer ppvV
+     type : 458752
+   -
+     name : PTR
+     procedure_id : 1865813907552794592
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie le pointeur d'un élément
+      Procédure PTR(e = null)
+      
+      	nPointeur est un entier systeme
+      	nData	  est un entier
+      
+      	si MesParamètres..NbReçus = 1 alors
+      
+      		// Tableau
+      		si typevar(e) = wltableau alors
+      			
+      			// Pointeur du tableau
+      			nPointeur = PTRTab(e)
+      			
+      		// Objet
+      		sinon si typevar(e) = wlInstance  alors
+      			
+      			// Pointeur de l'interface
+      			nPointeur = PTRObj(e)	
+      			
+      		// Structure
+      		SINON SI TypeVar(e) = wlStructure  ALORS
+      						
+      			quand exception dans
+      				si e = null alors 
+      					// Pointeur Null
+      					nPointeur = null
+      				sinon
+      					// Pointeur de la structure
+      					nPointeur = &e
+      				FIN
+      			FAIRE
+      				// Vérifie si la structure est nulle
+      				transfert(&nData, &e, dimension(nData))
+      				si nData = null alors
+      					
+      					nPointeur = null
+      				sinon
+      	
+      					// Pointeur de la structure
+      					nPointeur = &e
+      				FIN		
+      			FIN
+      
+      			
+      		// Chaînes
+      		sinon si typevar(e) dans (wlChaîne, wlChaîneUnicode, wlBuffer)
+      			
+      			// La chaîne est vide
+      			si e ~= "" ALORS
+      				
+      				// Pointeur nul
+      				nPointeur = null
+      			sinon
+      				
+      				// Pointeur direct de la variable
+      				nPointeur = &e		
+      			FIN
+      			
+      		// Autre
+      		sinon
+      			
+      			// Pointeur direct de la variable
+      			nPointeur = &e
+      		FIN
+      	sinon
+      	
+      		// Pointeur nul
+      		nPointeur = null
+      	fin
+      	
+      renvoyer nPointeur
+     type : 458752
+   -
+     name : CreateStreamOnHGlobal
+     procedure_id : 1866175647442147445
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction CreateStreamOnHGlobal
+      Procédure CreateStreamOnHGlobal(hGlobal est un entier systeme, fDeleteOnRelease est un booléen, pclIStream est un istream dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvIStream est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(ole32, "CreateStreamOnHGlobal", hGlobal, fDeleteOnRelease, &ppvIStream)
+      	
+      	// Allocation
+      	__BindInterface(pclIStream, ppvIStream, istream)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : sizeOf
+     procedure_id : 1866876904270494313
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie la taille d'un objet
+      Procédure sizeOf(e)
+      
+      	si TypeVar(e) = wlTableau ALORS
+      		// Renvoie la taille totale du tableau
+      		RENVOYER tableauinfo(e, tiTailleTotale)
+      	sinon
+      		renvoyer dimension(e)
+      	FIN
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x10d999010fbdb770
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

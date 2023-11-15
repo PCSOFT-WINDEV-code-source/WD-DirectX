@@ -1,0 +1,1355 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IDirect3DDevice9
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19dc95d7052523db
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      IDirect3DDevice9 est une classe
+      	un objet IUnknown
+      
+      Fin
+      
+      constant
+      	// Méthodes de l'interface IDirect3DDevice9 (VTABLE)
+      	IDirect3DDevice9_TestCooperativeLevel			= ::IUnknown___IDXBASE + 1
+      	IDirect3DDevice9_GetAvailableTextureMem			= ::IUnknown___IDXBASE + 2
+      	IDirect3DDevice9_EvictManagedResources			= ::IUnknown___IDXBASE + 3
+      	IDirect3DDevice9_GetDirect3D					= ::IUnknown___IDXBASE + 4
+      	IDirect3DDevice9_GetDeviceCaps					= ::IUnknown___IDXBASE + 5
+      	IDirect3DDevice9_GetDisplayMode					= ::IUnknown___IDXBASE + 6
+      	IDirect3DDevice9_GetCreationParameters			= ::IUnknown___IDXBASE + 7
+      	IDirect3DDevice9_SetCursorProperties			= ::IUnknown___IDXBASE + 8
+      	IDirect3DDevice9_SetCursorPosition				= ::IUnknown___IDXBASE + 9
+      	IDirect3DDevice9_ShowCursor						= ::IUnknown___IDXBASE + 10
+      	IDirect3DDevice9_CreateAdditionalSwapChain		= ::IUnknown___IDXBASE + 11
+      	IDirect3DDevice9_GetSwapChain					= ::IUnknown___IDXBASE + 12
+      	IDirect3DDevice9_GetNumberOfSwapChains			= ::IUnknown___IDXBASE + 13
+      	IDirect3DDevice9_Reset							= ::IUnknown___IDXBASE + 14
+      	IDirect3DDevice9_Present						= ::IUnknown___IDXBASE + 15
+      	IDirect3DDevice9_GetBackBuffer					= ::IUnknown___IDXBASE + 16
+      	IDirect3DDevice9_GetRasterStatus				= ::IUnknown___IDXBASE + 17
+      	IDirect3DDevice9_SetDialogBoxMode				= ::IUnknown___IDXBASE + 18
+      	IDirect3DDevice9_SetGammaRamp					= ::IUnknown___IDXBASE + 19
+      	IDirect3DDevice9_GetGammaRamp					= ::IUnknown___IDXBASE + 20
+      	IDirect3DDevice9_CreateTexture					= ::IUnknown___IDXBASE + 21
+      	IDirect3DDevice9_CreateVolumeTexture			= ::IUnknown___IDXBASE + 22
+      	IDirect3DDevice9_CreateCubeTexture				= ::IUnknown___IDXBASE + 23
+      	IDirect3DDevice9_CreateVertexBuffer				= ::IUnknown___IDXBASE + 24
+      	IDirect3DDevice9_CreateIndexBuffer				= ::IUnknown___IDXBASE + 25
+      	IDirect3DDevice9_CreateRenderTarget				= ::IUnknown___IDXBASE + 26
+      	IDirect3DDevice9_CreateDepthStencilSurface		= ::IUnknown___IDXBASE + 27
+      	IDirect3DDevice9_UpdateSurface					= ::IUnknown___IDXBASE + 28
+      	IDirect3DDevice9_UpdateTexture					= ::IUnknown___IDXBASE + 29
+      	IDirect3DDevice9_GetRenderTargetData			= ::IUnknown___IDXBASE + 30
+      	IDirect3DDevice9_GetFrontBufferData				= ::IUnknown___IDXBASE + 31
+      	IDirect3DDevice9_StretchRect					= ::IUnknown___IDXBASE + 32
+      	IDirect3DDevice9_ColorFill						= ::IUnknown___IDXBASE + 33
+      	IDirect3DDevice9_CreateOffscreenPlainSurface	= ::IUnknown___IDXBASE + 34
+      	IDirect3DDevice9_SetRenderTarget				= ::IUnknown___IDXBASE + 35
+      	IDirect3DDevice9_GetRenderTarget				= ::IUnknown___IDXBASE + 36
+      	IDirect3DDevice9_SetDepthStencilSurface			= ::IUnknown___IDXBASE + 37
+      	IDirect3DDevice9_GetDepthStencilSurface			= ::IUnknown___IDXBASE + 38
+      	IDirect3DDevice9_BeginScene						= ::IUnknown___IDXBASE + 39
+      	IDirect3DDevice9_EndScene						= ::IUnknown___IDXBASE + 40
+      	IDirect3DDevice9_Clear							= ::IUnknown___IDXBASE + 41
+      	IDirect3DDevice9_SetTransform					= ::IUnknown___IDXBASE + 42
+      	IDirect3DDevice9_GetTransform					= ::IUnknown___IDXBASE + 43
+      	IDirect3DDevice9_MultiplyTransform				= ::IUnknown___IDXBASE + 44
+      	IDirect3DDevice9_SetViewport					= ::IUnknown___IDXBASE + 45
+      	IDirect3DDevice9_GetViewport					= ::IUnknown___IDXBASE + 46
+      	IDirect3DDevice9_SetMaterial					= ::IUnknown___IDXBASE + 47
+      	IDirect3DDevice9_GetMaterial					= ::IUnknown___IDXBASE + 48
+      	IDirect3DDevice9_SetLight						= ::IUnknown___IDXBASE + 49
+      	IDirect3DDevice9_GetLight						= ::IUnknown___IDXBASE + 50
+      	IDirect3DDevice9_LightEnable					= ::IUnknown___IDXBASE + 51
+      	IDirect3DDevice9_GetLightEnable					= ::IUnknown___IDXBASE + 52
+      	IDirect3DDevice9_SetClipPlane					= ::IUnknown___IDXBASE + 53
+      	IDirect3DDevice9_GetClipPlane					= ::IUnknown___IDXBASE + 54
+      	IDirect3DDevice9_SetRenderState					= ::IUnknown___IDXBASE + 55
+      	IDirect3DDevice9_GetRenderState					= ::IUnknown___IDXBASE + 56
+      	IDirect3DDevice9_CreateStateBlock				= ::IUnknown___IDXBASE + 57
+      	IDirect3DDevice9_BeginStateBlock				= ::IUnknown___IDXBASE + 58
+      	IDirect3DDevice9_EndStateBlock					= ::IUnknown___IDXBASE + 59
+      	IDirect3DDevice9_SetClipStatus					= ::IUnknown___IDXBASE + 60
+      	IDirect3DDevice9_GetClipStatus					= ::IUnknown___IDXBASE + 61
+      	IDirect3DDevice9_GetTexture						= ::IUnknown___IDXBASE + 62
+      	IDirect3DDevice9_SetTexture						= ::IUnknown___IDXBASE + 63
+      	IDirect3DDevice9_GetTextureStageState			= ::IUnknown___IDXBASE + 64
+      	IDirect3DDevice9_SetTextureStageState			= ::IUnknown___IDXBASE + 65
+      	IDirect3DDevice9_GetSamplerState				= ::IUnknown___IDXBASE + 66
+      	IDirect3DDevice9_SetSamplerState				= ::IUnknown___IDXBASE + 67
+      	IDirect3DDevice9_ValidateDevice					= ::IUnknown___IDXBASE + 68
+      	IDirect3DDevice9_SetPaletteEntries				= ::IUnknown___IDXBASE + 69
+      	IDirect3DDevice9_GetPaletteEntries				= ::IUnknown___IDXBASE + 70
+      	IDirect3DDevice9_SetCurrentTexturePalette		= ::IUnknown___IDXBASE + 71
+      	IDirect3DDevice9_GetCurrentTexturePalette		= ::IUnknown___IDXBASE + 72
+      	IDirect3DDevice9_SetScissorRect					= ::IUnknown___IDXBASE + 73
+      	IDirect3DDevice9_GetScissorRect					= ::IUnknown___IDXBASE + 74
+      	IDirect3DDevice9_SetSoftwareVertexProcessing	= ::IUnknown___IDXBASE + 75
+      	IDirect3DDevice9_GetSoftwareVertexProcessing	= ::IUnknown___IDXBASE + 76
+      	IDirect3DDevice9_SetNPatchMode					= ::IUnknown___IDXBASE + 77
+      	IDirect3DDevice9_GetNPatchMode					= ::IUnknown___IDXBASE + 78
+      	IDirect3DDevice9_DrawPrimitive					= ::IUnknown___IDXBASE + 79
+      	IDirect3DDevice9_DrawIndexedPrimitive			= ::IUnknown___IDXBASE + 80
+      	IDirect3DDevice9_DrawPrimitiveUP				= ::IUnknown___IDXBASE + 81
+      	IDirect3DDevice9_DrawIndexedPrimitiveUP			= ::IUnknown___IDXBASE + 82
+      	IDirect3DDevice9_ProcessVertices				= ::IUnknown___IDXBASE + 83
+      	IDirect3DDevice9_CreateVertexDeclaration		= ::IUnknown___IDXBASE + 84
+      	IDirect3DDevice9_SetVertexDeclaration			= ::IUnknown___IDXBASE + 85
+      	IDirect3DDevice9_GetVertexDeclaration			= ::IUnknown___IDXBASE + 86
+      	IDirect3DDevice9_SetFVF							= ::IUnknown___IDXBASE + 87
+      	IDirect3DDevice9_GetFVF							= ::IUnknown___IDXBASE + 88
+      	IDirect3DDevice9_CreateVertexShader				= ::IUnknown___IDXBASE + 89
+      	IDirect3DDevice9_SetVertexShader				= ::IUnknown___IDXBASE + 90
+      	IDirect3DDevice9_GetVertexShader				= ::IUnknown___IDXBASE + 91
+      	IDirect3DDevice9_SetVertexShaderConstantF		= ::IUnknown___IDXBASE + 92
+      	IDirect3DDevice9_GetVertexShaderConstantF		= ::IUnknown___IDXBASE + 93
+      	IDirect3DDevice9_SetVertexShaderConstantI		= ::IUnknown___IDXBASE + 94
+      	IDirect3DDevice9_GetVertexShaderConstantI		= ::IUnknown___IDXBASE + 95
+      	IDirect3DDevice9_SetVertexShaderConstantB		= ::IUnknown___IDXBASE + 96
+      	IDirect3DDevice9_GetVertexShaderConstantB		= ::IUnknown___IDXBASE + 97
+      	IDirect3DDevice9_SetStreamSource				= ::IUnknown___IDXBASE + 98
+      	IDirect3DDevice9_GetStreamSource				= ::IUnknown___IDXBASE + 99
+      	IDirect3DDevice9_SetStreamSourceFreq			= ::IUnknown___IDXBASE + 100
+      	IDirect3DDevice9_GetStreamSourceFreq			= ::IUnknown___IDXBASE + 101
+      	IDirect3DDevice9_SetIndices						= ::IUnknown___IDXBASE + 102
+      	IDirect3DDevice9_GetIndices						= ::IUnknown___IDXBASE + 103
+      	IDirect3DDevice9_CreatePixelShader				= ::IUnknown___IDXBASE + 104
+      	IDirect3DDevice9_SetPixelShader					= ::IUnknown___IDXBASE + 105
+      	IDirect3DDevice9_GetPixelShader					= ::IUnknown___IDXBASE + 106
+      	IDirect3DDevice9_SetPixelShaderConstantF		= ::IUnknown___IDXBASE + 107
+      	IDirect3DDevice9_GetPixelShaderConstantF		= ::IUnknown___IDXBASE + 108
+      	IDirect3DDevice9_SetPixelShaderConstantI		= ::IUnknown___IDXBASE + 109
+      	IDirect3DDevice9_GetPixelShaderConstantI		= ::IUnknown___IDXBASE + 110
+      	IDirect3DDevice9_SetPixelShaderConstantB		= ::IUnknown___IDXBASE + 111
+      	IDirect3DDevice9_GetPixelShaderConstantB		= ::IUnknown___IDXBASE + 112
+      	IDirect3DDevice9_DrawRectPatch					= ::IUnknown___IDXBASE + 113
+      	IDirect3DDevice9_DrawTriPatch					= ::IUnknown___IDXBASE + 114
+      	IDirect3DDevice9_DeletePatch					= ::IUnknown___IDXBASE + 115
+      	IDirect3DDevice9_CreateQuery					= ::IUnknown___IDXBASE + 116
+      	IDirect3DDevice9___IDXBASE						= ::IUnknown___IDXBASE + 116
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863529096561435611
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      
+      	// Définition de l'IID
+      	:IID = pD3D9.IID_IDirect3DDevice9
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863529096561501147
+     type_code : 28
+     code : |1+
+      Procédure Destructeur()
+      
+     type : 655360
+   -
+     name : BeginScene
+     procedure_id : 1866810769623910536
+     type_code : 12
+     code : |1-
+      Procédure BeginScene()
+      RENVOYER :CALL(IDirect3DDevice9_BeginScene)
+     type : 458752
+   -
+     name : BeginStateBlock
+     procedure_id : 1866810769623976103
+     type_code : 12
+     code : |1-
+      Procédure BeginStateBlock()
+      renvoyer :CALL(IDirect3DDevice9_BeginStateBlock)
+     type : 458752
+   -
+     name : Clear
+     procedure_id : 1866810769624041670
+     type_code : 12
+     code : |1-
+      Procédure Clear(Count_ est un entier sans signe, tabRects est un tableau de d3drect, Flags est un entier sans signe, Color est un entier sans signe, Z est un reel sur 4, Stencil est un entier sans signe)
+      renvoyer :CALL(idirect3ddevice9_Clear, Count_, ptr(tabRects), Flags, Color, Z, Stencil)
+     type : 458752
+   -
+     name : ColorFill
+     procedure_id : 1866810769624107237
+     type_code : 12
+     code : |1-
+      Procédure ColorFill(pclSurface est un IDirect3DSurface9 dynamique, Rect est un RECT, Color est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_ColorFill, ptr(pclSurface), PTR(Rect), Color)
+     type : 458752
+   -
+     name : CreateAdditionalSwapChain
+     procedure_id : 1866810769624172820
+     type_code : 12
+     code : |1-
+      PROCEDURE CreateAdditionalSwapChain(PresentationParameters est un D3DPRESENT_PARAMETERS, pclIDirect3DSwapChain9 est un iDirect3DSwapChain9 dynamique)
+      
+      	ppvIDirect3DSwapChain9 	est un entier système
+      	HRESULT 				est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_CreateAdditionalSwapChain, &PresentationParameters, &ppvIDirect3DSwapChain9)
+      	
+      	// Allocation
+      	__BindInterface(pclIDirect3DSwapChain9, ppvIDirect3DSwapChain9, IDirect3DSwapChain9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : CreateCubeTexture
+     procedure_id : 1866810769624238450
+     type_code : 12
+     code : |1-
+      Procédure CreateCubeTexture(EdgeLength est un entier sans signe, Levels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, pclIDirect3DCubeTexture9 est un IDirect3DCubeTexture9 dynamique, pSharedHandle est un entier systeme = null)
+      
+      	ppvIDirect3DCubeTexture9	est un entier système
+      	HRESULT						est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_CreateCubeTexture, EdgeLength, Levels, Usage, Format, Pool, &ppvIDirect3DCubeTexture9, pSharedHandle)
+      	
+      	// Alloue un objet IDirect3DCubeTexture9
+      	__BindInterface(pclIDirect3DCubeTexture9, ppvIDirect3DCubeTexture9, IDirect3DCubeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : CreateDepthStencilSurface
+     procedure_id : 1866810769624304033
+     type_code : 12
+     code : |1-
+      Procédure CreateDepthStencilSurface(Width est un entier sans signe, Height est un entier sans signe, Format est un entier sans signe, MultiSample est un entier sans signe, MultisampleQuality est un entier sans signe, Discard est un booléen, pclIDirect3DSurface9 est un IDirect3DSurface9 dynamique, pSharedHandle est un entier systeme = null)
+      	
+      	ppvIDirect3DSurface9	est un entier systeme
+      	HRESULT					est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_CreateDepthStencilSurface, Width, Height, Format, MultiSample, MultisampleQuality, Discard, &ppvIDirect3DSurface9, pSharedHandle)
+      	
+      	// Alloue un objet IDirect3DSurface9
+      	__BindInterface(pclIDirect3DSurface9, ppvIDirect3DSurface9, IDirect3DSurface9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : CreateIndexBuffer
+     procedure_id : 1866810769624369600
+     type_code : 12
+     code : |1-
+      Procédure CreateIndexBuffer(Length_ est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, pclIDirect3DIndexBuffer9 est un IDirect3DIndexBuffer9 dynamique, pSharedHandle est un entier = null)
+      
+      	ppvIDirect3DIndexBuffer9 	est un entier systeme
+      	HRESULT						est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_CreateIndexBuffer, Length_, Usage, Format, Pool, &ppvIDirect3DIndexBuffer9, pSharedHandle)
+      	
+      	// Alloue un objet IDirect3DIndexBuffer9
+      	__BindInterface(pclIDirect3DIndexBuffer9, ppvIDirect3DIndexBuffer9, IDirect3DIndexBuffer9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : CreateOffscreenPlainSurface
+     procedure_id : 1866810769624435183
+     type_code : 12
+     code : |1-
+      Procédure CreateOffscreenPlainSurface(Width est un entier sans signe, Height est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, pclSurface est un IDirect3DSurface9 dynamique, pSharedHandle est un entier systeme = null)
+      
+      	ppvIDirect3DSurface9	est un entier systeme
+      	HRESULT					est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_CreateOffscreenPlainSurface, Width, Height, Format, Pool, &ppvIDirect3DSurface9, pSharedHandle)
+      	
+      	// Alloue un objet IDirect3DSurface9
+      	__BindInterface(pclSurface, ppvIDirect3DSurface9, IDirect3DSurface9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : CreatePixelShader
+     procedure_id : 1866810769624500765
+     type_code : 12
+     code : |1-
+      Procédure CreatePixelShader(pFunction est un entier système, pclShader est un IDirect3DPixelShader9 dynamique)
+      
+      	ppvIDirect3DPixelShader9	est un entier systeme
+      	HRESULT						est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_CreatePixelShader, pFunction, &ppvIDirect3DPixelShader9)
+      	
+      	// Alloue un objet IDirect3DPixelShader9
+      	__BindInterface(pclShader, ppvIDirect3DPixelShader9, IDirect3DPixelShader9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : CreateQuery
+     procedure_id : 1866810769624566348
+     type_code : 12
+     code : |1-
+      Procédure CreateQuery(Type est un entier sans signe, pclQuery est un IDirect3DQuery9 dynamique)
+      
+      	ppvIDirect3DQuery9		est un entier systeme
+      	HRESULT					est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_CreateQuery,  Type, &ppvIDirect3DQuery9)
+      	
+      	// Alloue un objet IDirect3DQuery9
+      	__BindInterface(pclQuery, ppvIDirect3DQuery9, IDirect3DQuery9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : CreateRenderTarget
+     procedure_id : 1866810769624631947
+     type_code : 12
+     code : |1-
+      Procédure CreateRenderTarget(Width est un entier sans signe, Height est un entier sans signe, Format est un entier sans signe, MultiSample est un entier sans signe, MultisampleQuality est un entier sans signe, Lockable est un booléen, pclIDirect3DSurface9 est un IDirect3DSurface9 dynamique, pSharedHandle est un entier systeme = null)
+      	
+      	ppvIDirect3DSurface9	est un entier systeme
+      	HRESULT					est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_CreateRenderTarget, Width, Height, Format, MultiSample, MultisampleQuality, Lockable, &ppvIDirect3DSurface9, pSharedHandle)
+      	
+      	// Alloue un objet IDirect3DSurface9
+      	__BindInterface(pclIDirect3DSurface9, ppvIDirect3DSurface9, IDirect3DSurface9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : CreateStateBlock
+     procedure_id : 1866810769624697529
+     type_code : 12
+     code : |1-
+      Procédure CreateStateBlock(Type est un entier sans signe, pclIDirect3DStateBlock9 est un IDirect3DStateBlock9 dynamique)
+      
+      	ppvIDirect3DStateBlock9		est un entier systeme
+      	HRESULT						est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_CreateStateBlock, Type, &ppvIDirect3DStateBlock9)
+      	
+      	// Alloue un objet IDirect3DStateBlock9
+      	__BindInterface(pclIDirect3DStateBlock9, ppvIDirect3DStateBlock9, IDirect3DStateBlock9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : CreateTexture
+     procedure_id : 1866810769624763128
+     type_code : 12
+     code : |1-
+      PROCEDURE CreateTexture(Width est un entier sans signe, Height est un entier sans signe, Levels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, pclIDirect3DTexture9 est un IDirect3DTexture9 dynamique, pSharedHandle est un entier systeme = null)
+      
+      	ppvIDirect3DTexture9 	est un entier systeme
+      	HRESULT					est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_CreateTexture, Width, Height, Levels, Usage, Format, Pool, &ppvIDirect3DTexture9, pSharedHandle)
+      	
+      	// Alloue un objet IDirect3DTexture9
+      	__BindInterface(pclIDirect3DTexture9, ppvIDirect3DTexture9, IDirect3DTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : CreateVertexBuffer
+     procedure_id : 1866810769624828711
+     type_code : 12
+     code : |1-
+      Procédure CreateVertexBuffer(Length_ est un entier sans signe, Usage est un entier sans signe, FVF est un entier sans signe, Pool est un entier sans signe, pclIDirect3DVertexBuffer9 est un IDirect3DVertexBuffer9 dynamique, pSharedHandle est un entier systeme = null)
+      	
+      	ppvIDirect3DVertexBuffer9	est un entier
+      	HRESULT						est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_CreateVertexBuffer, Length_, Usage, FVF, Pool, &ppvIDirect3DVertexBuffer9, pSharedHandle)
+      	
+      	// Alloue un objet IDirect3DVertexBuffer9
+      	__BindInterface(pclIDirect3DVertexBuffer9, ppvIDirect3DVertexBuffer9, IDirect3DVertexBuffer9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : CreateVertexDeclaration
+     procedure_id : 1866810769624894309
+     type_code : 12
+     code : |1-
+      Procédure CreateVertexDeclaration(tabVertexElements est un tableau de D3DVERTEXELEMENT9, pclIDirect3DVertexDeclaration est un IDirect3DVertexDeclaration9 dynamique)
+      
+      	ppvIDirect3DVertexDeclaration9	est un entier systeme
+      	HRESULT							est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_CreateVertexDeclaration, ptr(tabVertexElements), &ppvIDirect3DVertexDeclaration9)
+      	
+      	// Alloue un objet IDirect3DVertexDeclaration9
+      	__BindInterface(pclIDirect3DVertexDeclaration, ppvIDirect3DVertexDeclaration9, IDirect3DVertexDeclaration9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : CreateVertexShader
+     procedure_id : 1866810769624959923
+     type_code : 12
+     code : |1-
+      Procédure CreateVertexShader(pFunction est un entier systeme, pclIDirect3DVertexShader9 est un IDirect3DVertexShader9 dynamique)
+      
+      	ppvIDirect3DVertexShader9	est un entier systeme
+      	HRESULT						est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_CreateVertexShader, pFunction, &ppvIDirect3DVertexShader9)
+      	
+      	// Alloue un objet IDirect3DVertexShader9
+      	__BindInterface(pclIDirect3DVertexShader9, ppvIDirect3DVertexShader9, IDirect3DVertexShader9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : CreateVolumeTexture
+     procedure_id : 1866810773919992817
+     type_code : 12
+     code : |1-
+      Procédure CreateVolumeTexture(Width est un entier sans signe, Height est un entier sans signe, Depth est un entier sans signe, Levels est un entier sans signe, Usage est un entier sans signe, Format est un entier sans signe, Pool est un entier sans signe, pclIDirect3DVolumeTexture9 est un IDirect3DVolumeTexture9 dynamique, pSharedHandle est un entier systeme = null)
+      
+      	ppvIDirect3DVolumeTexture9 	est un entier systeme
+      	HRESULT						est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_CreateVolumeTexture, Width, Height, Depth, Levels, Usage, Format, Pool, &ppvIDirect3DVolumeTexture9, pSharedHandle)
+      	
+      	// Alloue un objet IDirect3DVolumeTexture9
+      	__BindInterface(pclIDirect3DVolumeTexture9, ppvIDirect3DVolumeTexture9, IDirect3DVolumeTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : DeletePatch
+     procedure_id : 1866810773920058416
+     type_code : 12
+     code : |1-
+      Procédure DeletePatch(dwHandle est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_DeletePatch, dwHandle)
+     type : 458752
+   -
+     name : DrawIndexedPrimitive
+     procedure_id : 1866810773920124030
+     type_code : 12
+     code : |1-
+      Procédure DrawIndexedPrimitive(PrimitiveType est un entier sans signe, BaseVertexIndex est un entier sans signe, MinVertexIndex est un entier sans signe, NumVertices est un entier sans signe, StartIndex est un entier sans signe, PrimCount est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_DrawIndexedPrimitive, PrimitiveType, BaseVertexIndex, MinVertexIndex, NumVertices, StartIndex, PrimCount)
+     type : 458752
+   -
+     name : DrawIndexedPrimitiveUP
+     procedure_id : 1866810773920189644
+     type_code : 12
+     code : |1-
+      Procédure DrawIndexedPrimitiveUP(PrimitiveType est un entier sans signe, MinVertexIndex est un entier sans signe, NumVertices est un entier sans signe, PrimitiveCount est un entier sans signe, pIndexData est un entier systeme, IndexDataFormat est un entier sans signe, pVertexStreamZeroData est un entier systeme, VertexStreamZeroStride est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_DrawIndexedPrimitiveUP, PrimitiveType, MinVertexIndex, NumVertices, PrimitiveCount, pIndexData, IndexDataFormat, pVertexStreamZeroData, VertexStreamZeroStride)
+     type : 458752
+   -
+     name : DrawPrimitive
+     procedure_id : 1866810773920255258
+     type_code : 12
+     code : |1-
+      Procédure DrawPrimitive(PrimitiveType est un entier sans signe, StartVertex est un entier sans signe, PrimitiveCount est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_DrawPrimitive, PrimitiveType, StartVertex, PrimitiveCount)
+     type : 458752
+   -
+     name : DrawPrimitiveUP
+     procedure_id : 1866810773920320872
+     type_code : 12
+     code : |1-
+      procédure DrawPrimitiveUP(PrimitiveType est un entier sans signe, PrimitiveCount est un entier sans signe, pVertexStreamZeroData est un entier systeme, VertexStreamZeroStride est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_DrawPrimitiveUP, PrimitiveType, PrimitiveCount, pVertexStreamZeroData, VertexStreamZeroStride)
+     type : 458752
+   -
+     name : DrawRectPatch
+     procedure_id : 1866810773920386486
+     type_code : 12
+     code : |1-
+      Procédure DrawRectPatch(Handle_ est un entier sans signe, tabNumSegs est un tableau de reels sur 4, RectPatchInfo est un d3dRectPatch_Info)
+      RENVOYER :CALL(IDirect3DDevice9_DrawRectPatch, Handle_, ptr(tabNumSegs), &RectPatchInfo)
+     type : 458752
+   -
+     name : DrawTriPatch
+     procedure_id : 1866810773920452100
+     type_code : 12
+     code : |1-
+      Procédure DrawTriPatch(Handle_ est un entier sans signe, tabNumSegs est un tableau de reels sur 4, TriPatchInfo est un d3dTriPatch_Info)
+      RENVOYER :CALL(IDirect3DDevice9_DrawTriPatch, Handle_, ptr(tabNumSegs), &TriPatchInfo)
+     type : 458752
+   -
+     name : EndScene
+     procedure_id : 1866810773920517729
+     type_code : 12
+     code : |1-
+      Procédure EndScene()
+      RENVOYER :CALL(IDirect3DDevice9_EndScene)
+     type : 458752
+   -
+     name : EndStateBlock
+     procedure_id : 1866810773920583343
+     type_code : 12
+     code : |1-
+      Procédure EndStateBlock(pclIDirect3DStateBlock9 est un IDirect3DStateBlock9 dynamique)
+      
+      	ppvIDirect3DStateBlock9	est un entier systeme
+      	HRESULT					est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_EndStateBlock, &ppvIDirect3DStateBlock9)
+      	
+      	// Alloue un objet IDirect3DStateBlock9
+      	__BindInterface(pclIDirect3DStateBlock9, ppvIDirect3DStateBlock9, IDirect3DStateBlock9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : EvictManagedResources
+     procedure_id : 1866810773920648973
+     type_code : 12
+     code : |1-
+      Procédure EvictManagedResources()
+      RENVOYER :CALL(IDirect3DDevice9_EvictManagedResources)
+     type : 458752
+   -
+     name : GetAvailableTextureMem
+     procedure_id : 1866810773920714603
+     type_code : 12
+     code : |1-
+      Procédure GetAvailableTextureMem()
+      RENVOYER :CALL(IDirect3DDevice9_GetAvailableTextureMem)
+     type : 458752
+   -
+     name : GetBackBuffer
+     procedure_id : 1866810778215747528
+     type_code : 12
+     code : |1-
+      PROCEDURE GetBackBuffer(iSwapChain est un entier sans signe, iBackBuffer est un entier sans signe, Type est un entier sans signe, pclIDirect3DSurface9 est un IDirect3DSurface9 dynamique)
+      
+      	ppvIDirect3DSurface9 	est un entier systeme
+      	HRESULT					est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_GetBackBuffer, iSwapChain, iBackBuffer, Type, &ppvIDirect3DSurface9)
+      	
+      	// Alloue un objet IDirect3DSurface9
+      	__BindInterface(pclIDirect3DSurface9, ppvIDirect3DSurface9, IDirect3DSurface9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetClipPlane
+     procedure_id : 1866810778215813173
+     type_code : 12
+     code : |1-
+      Procédure GetClipPlane(Index est un entier sans signe, tabPlane est un tableau de reel sur 4)
+      RENVOYER :CALL(IDirect3DDevice9_GetClipPlane, Index, ptr(tabPlane))
+     type : 458752
+   -
+     name : GetClipStatus
+     procedure_id : 1866810778215878803
+     type_code : 12
+     code : |1-
+      Procédure GetClipStatus(ClipStatus est un D3DCLIPSTATUS9)
+      renvoyer :CALL(IDirect3DDevice9_GetClipStatus, &ClipStatus)
+     type : 458752
+   -
+     name : GetCreationParameters
+     procedure_id : 1866810778215944433
+     type_code : 12
+     code : |1-
+      PROCEDURE GetCreationParameters(Parameters est un D3DDEVICE_CREATION_PARAMETERS )
+      RENVOYER :CALL(IDirect3DDevice9_GetCreationParameters, &Parameters)
+     type : 458752
+   -
+     name : GetCurrentTexturePalette
+     procedure_id : 1866810778216010062
+     type_code : 12
+     code : |1-
+      Procédure GetCurrentTexturePalette(PaletteNumber est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_GetCurrentTexturePalette, &PaletteNumber)
+     type : 458752
+   -
+     name : GetDepthStencilSurface
+     procedure_id : 1866810778216075707
+     type_code : 12
+     code : |1-
+      Procédure GetDepthStencilSurface(pclZStencilSurface est un IDirect3DSurface9 dynamique)
+      
+      	ppvIDirect3DSurface9	est un entier système
+      	HRESULT					est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_GetDepthStencilSurface, &ppvIDirect3DSurface9)
+      	
+      	// Alloue un objet IDirect3DSurface9
+      	__BindInterface(pclZStencilSurface, ppvIDirect3DSurface9, IDirect3DSurface9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetDeviceCaps
+     procedure_id : 1866810778216141337
+     type_code : 12
+     code : |1-
+      Procédure GetDeviceCaps(Caps est un D3DCAPS9)
+      renvoyer :CALL(IDirect3DDevice9_GetDeviceCaps, &Caps)
+     type : 458752
+   -
+     name : GetDirect3D
+     procedure_id : 1866810778216206967
+     type_code : 12
+     code : |1-
+      Procédure GetDirect3D(pclIDirect3D9 est un IDirect3D9 dynamique)
+      
+      	ppvIDirect3D9 est un entier système
+      	HRESULT	est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_GetDirect3D, &ppvIDirect3D9)
+      	
+      	// Alloue un objet IDirect3D9
+      	__BindInterface(pclIDirect3D9, ppvIDirect3D9, IDirect3D9)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : GetDisplayMode
+     procedure_id : 1866810778216272581
+     type_code : 12
+     code : |1-
+      Procédure GetDisplayMode(iSwapChain est un entier sans signe, Mode est un D3DDISPLAYMODE)
+      RENVOYER :CALL(IDirect3DDevice9_GetDisplayMode, iSwapChain, &Mode)
+     type : 458752
+   -
+     name : GetFrontBufferData
+     procedure_id : 1866810778216338195
+     type_code : 12
+     code : |1-
+      Procédure GetFrontBufferData(iSwapChain est un entier sans signe, pclDestSurface est un IDirect3DSurface9 dynamique)
+      renvoyer :CALL(IDirect3DDevice9_GetFrontBufferData, iSwapChain, ptr(pclDestSurface))
+     type : 458752
+   -
+     name : GetFVF
+     procedure_id : 1866810778216403809
+     type_code : 12
+     code : |1-
+      Procédure GetFVF(FVF est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_GetFVF, &FVF)
+     type : 458752
+   -
+     name : GetGammaRamp
+     procedure_id : 1866810782511436719
+     type_code : 12
+     code : |1-
+      PROCEDURE GetGammaRamp(iSwapChain est un entier sans signe, Ramp est un D3DGAMMARAMP)
+      RENVOYER :CALL(IDirect3DDevice9_GetGammaRamp, iSwapChain, &Ramp)
+     type : 458752
+   -
+     name : GetIndices
+     procedure_id : 1866810782511502333
+     type_code : 12
+     code : |1-
+      Procédure GetIndices(pclIndexData est un IDirect3DIndexBuffer9 dynamique)
+      	
+      	ppvIDirect3DVertexBuffer9	est un entier système
+      	HRESULT						est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_GetIndices,  &ppvIDirect3DVertexBuffer9)
+      	
+      	// Alloue un objet IDirect3DVertexBuffer9
+      	__BindInterface(pclIndexData, ppvIDirect3DVertexBuffer9, IDirect3DIndexBuffer9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetLight
+     procedure_id : 1866810782511567947
+     type_code : 12
+     code : |1-
+      Procédure GetLight(Index est un entier sans signe, Light est un D3DLIGHT9)
+      renvoyer :CALL(IDirect3DDevice9_GetLight, Index, &Light)
+     type : 458752
+   -
+     name : GetLightEnable
+     procedure_id : 1866810782511633576
+     type_code : 12
+     code : |1-
+      Procédure GetLightEnable(Index est un entier sans signe, Enable est un booléen)
+      RENVOYER :CALL(IDirect3DDevice9_GetLightEnable, Index, &Enable)
+     type : 458752
+   -
+     name : GetMaterial
+     procedure_id : 1866810782511699190
+     type_code : 12
+     code : |1-
+      Procédure GetMaterial(Material est un D3DMATERIAL9)
+      RENVOYER :CALL(IDirect3DDevice9_GetMaterial, &Material)
+     type : 458752
+   -
+     name : GetNPatchMode
+     procedure_id : 1866810782511764804
+     type_code : 12
+     code : |1-
+      Procédure GetNPatchMode()
+      RENVOYER :CALL(IDirect3DDevice9_GetNPatchMode)
+     type : 458752
+   -
+     name : GetNumberOfSwapChains
+     procedure_id : 1866810782511830418
+     type_code : 12
+     code : |1-
+      PROCEDURE GetNumberOfSwapChains()
+      RENVOYER :CALL(IDirect3DDevice9_GetNumberOfSwapChains)
+     type : 458752
+   -
+     name : GetPaletteEntries
+     procedure_id : 1866810782511896032
+     type_code : 12
+     code : |1-
+      Procédure GetPaletteEntries(PaletteNumber est un entier sans signe, Entries est un PALETTEENTRY)
+      renvoyer :CALL(IDirect3DDevice9_GetPaletteEntries, PaletteNumber, &Entries)
+     type : 458752
+   -
+     name : GetPixelShader
+     procedure_id : 1866810782511961662
+     type_code : 12
+     code : |1-
+      Procédure GetPixelShader(pclShader est un IDirect3DPixelShader9 dynamique)
+      
+      	ppvIDirect3DPixelShader9	est un entier système
+      	HRESULT						est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_GetPixelShader,  &ppvIDirect3DPixelShader9)
+      	
+      	// Alloue un objet IDirect3DPixelShader9
+      	__BindInterface(pclShader, ppvIDirect3DPixelShader9, IDirect3DPixelShader9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetPixelShaderConstantB
+     procedure_id : 1866810782512027276
+     type_code : 12
+     code : |1-
+      Procédure GetPixelShaderConstantB(StartRegister est un entier sans signe, tabConstantData est un tableau de booléens, BoolCount est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_GetPixelShaderConstantB, StartRegister, ptr(tabConstantData), BoolCount)
+     type : 458752
+   -
+     name : GetPixelShaderConstantF
+     procedure_id : 1866810782512092890
+     type_code : 12
+     code : |1-
+      Procédure GetPixelShaderConstantF(StartRegister est un entier sans signe, tabConstantData est un tableau de reels sur 4, Vector4fCount est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_GetPixelShaderConstantF, StartRegister, PTR(tabConstantData), Vector4fCount)
+     type : 458752
+   -
+     name : GetPixelShaderConstantI
+     procedure_id : 1866810782512158504
+     type_code : 12
+     code : |1-
+      Procédure GetPixelShaderConstantI(StartRegister est un entier sans signe, tabConstantData est un tableau d'entiers, Vector4iCount est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_GetPixelShaderConstantI, StartRegister, PTR(tabConstantData), Vector4iCount)
+     type : 458752
+   -
+     name : GetRasterStatus
+     procedure_id : 1866810782512224118
+     type_code : 12
+     code : |1-
+      PROCEDURE GetRasterStatus(iSwapChain est un entier sans signe, RasterStatus est un D3DRASTER_STATUS )
+      RENVOYER :CALL(IDirect3DDevice9_GetRasterStatus, iSwapChain, &RasterStatus)
+     type : 458752
+   -
+     name : GetRenderState
+     procedure_id : 1866810786807257043
+     type_code : 12
+     code : |1-
+      Procédure GetRenderState(State est un entier sans signe, Value est un entier sans signe)
+      renvoyer :CALL(IDirect3DDevice9_GetRenderState, State, &Value)
+     type : 458752
+   -
+     name : GetRenderTarget
+     procedure_id : 1866810786807322657
+     type_code : 12
+     code : |1-
+      Procédure GetRenderTarget(RenderTargetIndex est un entier sans signe, pclRenderTarget est un IDirect3DSurface9 dynamique)
+      
+      	ppvIDirect3DSurface9	est un entier système
+      	HRESULT					est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_GetRenderTarget, RenderTargetIndex, &ppvIDirect3DSurface9)
+      	
+      	// Alloue un objet IDirect3DSurface9
+      	__BindInterface(pclRenderTarget, ppvIDirect3DSurface9, IDirect3DSurface9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetRenderTargetData
+     procedure_id : 1866810786807388287
+     type_code : 12
+     code : |1-
+      Procédure GetRenderTargetData(pclRenderTarget est un IDirect3DSurface9 dynamique, pclDestSurface est un IDirect3DSurface9 dynamique)
+      renvoyer :CALL(IDirect3DDevice9_GetRenderTargetData, ptr(pclRenderTarget), ptr(pclDestSurface))
+     type : 458752
+   -
+     name : GetSamplerState
+     procedure_id : 1866810786807453901
+     type_code : 12
+     code : |1-
+      Procédure GetSamplerState(Sampler est un entier sans signe, Type est un entier sans signe, Value est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_GetSamplerState, Sampler, Type, &Value)
+     type : 458752
+   -
+     name : GetScissorRect
+     procedure_id : 1866810786807519515
+     type_code : 12
+     code : |1-
+      Procédure GetScissorRect(Rect est un rect)
+      RENVOYER :CALL(IDirect3DDevice9_GetScissorRect, PTR(Rect))
+     type : 458752
+   -
+     name : GetSoftwareVertexProcessing
+     procedure_id : 1866810786807585145
+     type_code : 12
+     code : |1-
+      Procédure GetSoftwareVertexProcessing()
+      renvoyer :CALL(IDirect3DDevice9_GetSoftwareVertexProcessing)
+     type : 458752
+   -
+     name : GetStreamSource
+     procedure_id : 1866810786807650759
+     type_code : 12
+     code : |1-
+      Procédure GetStreamSource(StreamNumber est un entier sans signe, pclStreamData est un IDirect3DVertexBuffer9 dynamique, OffsetInBytes est un entier sans signe, Stride est un entier sans signe)
+      	
+      	ppvIDirect3DVertexBuffer9	est un entier système
+      	HRESULT						est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_GetStreamSource, StreamNumber, &ppvIDirect3DVertexBuffer9, &OffsetInBytes, &Stride)
+      	
+      	// Alloue un objet IDirect3DVertexBuffer9
+      	__BindInterface(pclStreamData, ppvIDirect3DVertexBuffer9, IDirect3DVertexBuffer9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetStreamSourceFreq
+     procedure_id : 1866810786807716388
+     type_code : 12
+     code : |1-
+      Procédure GetStreamSourceFreq(StreamNumber est un entier sans signe, Divider est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_SetStreamSourceFreq, StreamNumber, &Divider)
+     type : 458752
+   -
+     name : GetSwapChain
+     procedure_id : 1866810786807782002
+     type_code : 12
+     code : |1-
+      PROCEDURE GetSwapChain(iSwapChain est un entier sans signe, pclIDirect3DSwapChain9 est un IDirect3DSwapChain9 dynamique)
+      	
+      	ppvIDirect3DSwapChain9 	est un entier système
+      	HRESULT 				est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_GetSwapChain, iSwapChain, &ppvIDirect3DSwapChain9)
+      	
+      	// Alloue un objet IDirect3DSwapChain9
+      	__BindInterface(pclIDirect3DSwapChain9, ppvIDirect3DSwapChain9, IDirect3DSwapChain9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetTexture
+     procedure_id : 1866810786807847632
+     type_code : 12
+     code : |1-
+      Procédure GetTexture(Stage est un entier sans signe, pclTexture est un IDirect3DBaseTexture9 dynamique)
+      	
+      	ppvIDirect3DBaseTexture9	est un entier système
+      	HRESULT						est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_GetTexture, Stage, &ppvIDirect3DBaseTexture9)
+      	
+      	// Alloue un objet IDirect3DBaseTexture9
+      	__BindInterface(pclTexture, ppvIDirect3DBaseTexture9, IDirect3DBaseTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetTextureStageState
+     procedure_id : 1866810786807913261
+     type_code : 12
+     code : |1-
+      Procédure GetTextureStageState(Stage est un entier sans signe, Type est un entier sans signe, Value est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_GetTextureStageState, Stage, Type, &Value)
+     type : 458752
+   -
+     name : GetTransform
+     procedure_id : 1866810791102946171
+     type_code : 12
+     code : |1-
+      Procédure GetTransform(State est un entier sans signe, Matrix est un d3dXmatrix)
+      RENVOYER :CALL(IDirect3DDevice9_GetTransform, State, &Matrix)
+     type : 458752
+   -
+     name : GetVertexDeclaration
+     procedure_id : 1866810791103011801
+     type_code : 12
+     code : |1-
+      Procédure GetVertexDeclaration(pclIDirect3DVertexDeclaration est un IDirect3DVertexDeclaration9 dynamique)
+      
+      	ppvIDirect3DVertexDeclaration9	est un entier système
+      	HRESULT							est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_GetVertexDeclaration, &ppvIDirect3DVertexDeclaration9)
+      	
+      	// Alloue un objet IDirect3DVertexDeclaration9
+      	__BindInterface(pclIDirect3DVertexDeclaration, ppvIDirect3DVertexDeclaration9, IDirect3DVertexDeclaration9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetVertexShader
+     procedure_id : 1866810791103077431
+     type_code : 12
+     code : |1-
+      Procédure GetVertexShader(pclIDirect3DVertexShader9 est un IDirect3DVertexShader9 dynamique)
+      
+      	ppvIDirect3DVertexShader9	est un entier système
+      	HRESULT						est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DDevice9_GetVertexShader, &ppvIDirect3DVertexShader9)
+      	
+      	// Alloue un objet IDirect3DVertexShader9
+      	__BindInterface(pclIDirect3DVertexShader9, ppvIDirect3DVertexShader9, IDirect3DVertexShader9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetVertexShaderConstantB
+     procedure_id : 1866810791103143060
+     type_code : 12
+     code : |1-
+      Procédure GetVertexShaderConstantB(StartRegister est un entier sans signe, tabConstantData est un tableau de booléen, BoolCount est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_GetVertexShaderConstantB, StartRegister, ptr(tabConstantData), BoolCount)
+     type : 458752
+   -
+     name : GetVertexShaderConstantF
+     procedure_id : 1866810791103208674
+     type_code : 12
+     code : |1-
+      Procédure GetVertexShaderConstantF(StartRegister est un entier sans signe, tabConstantData est un tableau de reels sur 4, Vector4fCount est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_GetVertexShaderConstantF, StartRegister, PTR(tabConstantData), Vector4fCount)
+     type : 458752
+   -
+     name : GetVertexShaderConstantI
+     procedure_id : 1866810791103274304
+     type_code : 12
+     code : |1-
+      Procédure GetVertexShaderConstantI(StartRegister est un entier sans signe, tabConstantData est un tableau d'entiers, Vector4iCount est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_GetVertexShaderConstantI, StartRegister, PTR(tabConstantData), Vector4iCount)
+     type : 458752
+   -
+     name : GetViewport
+     procedure_id : 1866810791103339918
+     type_code : 12
+     code : |1-
+      Procédure GetViewport(Viewport est un D3DVIEWPORT9)
+      RENVOYER :CALL(IDirect3DDevice9_GetViewport, &Viewport)
+     type : 458752
+   -
+     name : LightEnable
+     procedure_id : 1866810791103405547
+     type_code : 12
+     code : |1-
+      Procédure LightEnable(Index est un entier sans signe, Enable est un booléen)
+      RENVOYER :CALL(IDirect3DDevice9_LightEnable, Index, Enable)
+     type : 458752
+   -
+     name : MultiplyTransform
+     procedure_id : 1866810791103471177
+     type_code : 12
+     code : |1-
+      Procédure MultiplyTransform(State est un entier sans signe, Matrix est un D3DXMATRIX)
+      RENVOYER :CALL(IDirect3DDevice9_MultiplyTransform, State, &Matrix)
+     type : 458752
+   -
+     name : Present
+     procedure_id : 1866810791103536807
+     type_code : 12
+     code : |1-
+      PROCEDURE Present(SourceRect est un rect dynamique, DestRect est un rect dynamique, hDestWindowOverride est un entier systeme, DirtyRegion est un RGNDATA dynamique)
+      RENVOYER :CALL(IDirect3DDevice9_Present, PTR(SourceRect), PTR(DestRect), hDestWindowOverride, PTR(DirtyRegion))
+     type : 458752
+   -
+     name : Reset
+     internal_properties : CAAAAAgAAABpkLWRYA7Mz/65FTfP45n14yQwfyhPDA/4qXIpU1xnXExrlUVzRLBu4YoLvcI1As2kAFAYBUpriKqdBm8IpLRdtAsUE7S1CjlUkuVGJD9ZkEEwClGm3Cy35qtSLzMebRkL+uyOUgI/PUFv/H1aofkNTjgtXGkMN42WQo46EKW7/QuWDiKZ+Gmpk88P+MVbS+5JmOmLPbvyfkiejGZHO1bCoYQcve1LU692Y5FMFeGBKI6qxtr3Hl+YwI6Jvhx4IET88zaVp65EjP3Pxhu4bLEfwypeDrRFURX3ZSSG4Qavv3asel3wp9Vs8oUlWzrs3lasnMWITupd9uvuhHTeWlHABAK3vzj0h9Tjf5f2V2/g1eghMaTJICAh
+     procedure_id : 1866810791103602436
+     type_code : 12
+     code : |1-
+      PROCEDURE Reset(PresentationParameters est un D3DPRESENT_PARAMETERS)
+      RENVOYER :CALL(IDirect3DDevice9_Reset, &PresentationParameters)
+     type : 458752
+   -
+     name : SetClipPlane
+     procedure_id : 1866810795398635362
+     type_code : 12
+     code : |1-
+      Procédure SetClipPlane(Index est un entier sans signe, tabPlane est un tableau de reel sur 4)
+      RENVOYER :CALL(IDirect3DDevice9_SetClipPlane, Index, ptr(tabPlane))
+     type : 458752
+   -
+     name : SetClipStatus
+     procedure_id : 1866810795398700991
+     type_code : 12
+     code : |1-
+      Procédure SetClipStatus(ClipStatus est un D3DCLIPSTATUS9)
+      renvoyer :CALL(IDirect3DDevice9_SetClipStatus, &ClipStatus)
+     type : 458752
+   -
+     name : SetCurrentTexturePalette
+     procedure_id : 1866810795398766621
+     type_code : 12
+     code : |1-
+      Procédure SetCurrentTexturePalette(PaletteNumber est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_SetCurrentTexturePalette, PaletteNumber)
+     type : 458752
+   -
+     name : SetCursorPosition
+     procedure_id : 1866810795398832251
+     type_code : 12
+     code : |1-
+      PROCEDURE SetCursorPosition(X est un entier sans signe, Y est un entier sans signe, Flags est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_SetCursorPosition, X, Y, Flags)
+     type : 458752
+   -
+     name : SetCursorProperties
+     procedure_id : 1866810795398897865
+     type_code : 12
+     code : |1-
+      PROCEDURE SetCursorProperties(XHotSpot est un entier sans signe, YHotSpot est un entier sans signe, pclCursorBitmap est un IDirect3DSurface9 dynamique)
+      RENVOYER :CALL(IDirect3DDevice9_SetCursorProperties, XHotSpot, YHotSpot, ptr(pclCursorBitmap))
+     type : 458752
+   -
+     name : SetDepthStencilSurface
+     procedure_id : 1866810795398963494
+     type_code : 12
+     code : |1-
+      Procédure SetDepthStencilSurface(pclNewZStencil est un IDirect3DSurface9 dynamique)
+      RENVOYER :CALL(IDirect3DDevice9_SetDepthStencilSurface, ptr(pclNewZStencil))
+     type : 458752
+   -
+     name : SetDialogBoxMode
+     procedure_id : 1866810795399029124
+     type_code : 12
+     code : |1-
+      PROCEDURE SetDialogBoxMode(bEnableDialogs est un booléen)
+      RENVOYER :CALL(IDirect3DDevice9_SetDialogBoxMode, bEnableDialogs)
+     type : 458752
+   -
+     name : SetFVF
+     procedure_id : 1866810795399094753
+     type_code : 12
+     code : |1-
+      Procédure SetFVF(FVF est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_SetFVF, FVF)
+     type : 458752
+   -
+     name : SetGammaRamp
+     procedure_id : 1866810795399160383
+     type_code : 12
+     code : |1-
+      PROCEDURE SetGammaRamp(iSwapChain est un entier sans signe, Flags est un entier sans signe, Ramp est un D3DGAMMARAMP )
+      RENVOYER :CALL(IDirect3DDevice9_SetGammaRamp, iSwapChain, Flags, &Ramp)
+     type : 458752
+   -
+     name : SetIndices
+     procedure_id : 1866810795399226013
+     type_code : 12
+     code : |1-
+      Procédure SetIndices(pclIndexData est un IDirect3DIndexBuffer9 dynamique)
+      RENVOYER :CALL(IDirect3DDevice9_SetIndices, ptr(pclIndexData))
+     type : 458752
+   -
+     name : SetLight
+     procedure_id : 1866810795399291642
+     type_code : 12
+     code : |1-
+      Procédure SetLight(Index est un entier sans signe, Light est un D3DLIGHT9)
+      renvoyer :CALL(IDirect3DDevice9_SetLight, Index, &Light)
+     type : 458752
+   -
+     name : SetMaterial
+     procedure_id : 1866810799694324568
+     type_code : 12
+     code : |1-
+      Procédure SetMaterial(Material est un D3DMATERIAL9 dynamique)
+      RENVOYER :CALL(IDirect3DDevice9_SetMaterial, ptr(Material))
+     type : 458752
+   -
+     name : SetNPatchMode
+     procedure_id : 1866810799694390197
+     type_code : 12
+     code : |1-
+      Procédure SetNPatchMode(NSegments est un reel sur 4)
+      RENVOYER :CALL(IDirect3DDevice9_SetNPatchMode, NSegments)
+     type : 458752
+   -
+     name : SetPaletteEntries
+     procedure_id : 1866810799694455827
+     type_code : 12
+     code : |1-
+      Procédure SetPaletteEntries(PaletteNumber est un entier sans signe, Entries est un PALETTEENTRY)
+      renvoyer :CALL(IDirect3DDevice9_SetPaletteEntries, PaletteNumber, &Entries)
+     type : 458752
+   -
+     name : SetPixelShader
+     procedure_id : 1866810799694521472
+     type_code : 12
+     code : |1-
+      Procédure SetPixelShader(pclShader est un IDirect3DPixelShader9 dynamique)
+      renvoyer :CALL(IDirect3DDevice9_SetPixelShader, ptr(pclShader))
+     type : 458752
+   -
+     name : SetPixelShaderConstantB
+     procedure_id : 1866810799694587102
+     type_code : 12
+     code : |1-
+      Procédure SetPixelShaderConstantB(StartRegister est un entier sans signe, tabConstantData est un tableau de booléens, BoolCount est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_SetPixelShaderConstantB, StartRegister, ptr(tabConstantData), BoolCount)
+     type : 458752
+   -
+     name : SetPixelShaderConstantF
+     procedure_id : 1866810799694652731
+     type_code : 12
+     code : |1-
+      Procédure SetPixelShaderConstantF(StartRegister est un entier sans signe, tabConstantData est un tableau de réels sur 4, Vector4fCount est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_SetPixelShaderConstantF, StartRegister, PTR(tabConstantData), Vector4fCount)
+     type : 458752
+   -
+     name : SetPixelShaderConstantI
+     procedure_id : 1866810799694718361
+     type_code : 12
+     code : |1-
+      Procédure SetPixelShaderConstantI(StartRegister est un entier sans signe, tabConstantData est un tableau d'entiers, Vector4iCount est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_SetPixelShaderConstantI, StartRegister, PTR(tabConstantData), Vector4iCount)
+     type : 458752
+   -
+     name : SetRenderState
+     procedure_id : 1866810799694784006
+     type_code : 12
+     code : |1-
+      Procédure SetRenderState(State est un entier sans signe, Value est un entier sans signe)
+      renvoyer :CALL(IDirect3DDevice9_SetRenderState, State, Value)
+     type : 458752
+   -
+     name : SetRenderTarget
+     procedure_id : 1866810799694849636
+     type_code : 12
+     code : |1-
+      Procédure SetRenderTarget(RenderTargetIndex est un entier sans signe, pclRenderTarget est un IDirect3DSurface9 dynamique)
+      RENVOYER :CALL(IDirect3DDevice9_SetRenderTarget, RenderTargetIndex, ptr(pclRenderTarget))
+     type : 458752
+   -
+     name : SetSamplerState
+     procedure_id : 1866810799694915265
+     type_code : 12
+     code : |1-
+      Procédure SetSamplerState(Sampler est un entier sans signe, Type est un entier sans signe, Value est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_SetSamplerState, Sampler, Type, Value)
+     type : 458752
+   -
+     name : SetScissorRect
+     procedure_id : 1866810799694980895
+     type_code : 12
+     code : |1-
+      Procédure SetScissorRect(Rect est un rect)
+      RENVOYER :CALL(IDirect3DDevice9_SetScissorRect, PTR(Rect))
+     type : 458752
+   -
+     name : SetSoftwareVertexProcessing
+     procedure_id : 1866810803990013836
+     type_code : 12
+     code : |1-
+      Procédure SetSoftwareVertexProcessing(bSoftware est un booléen)
+      renvoyer :CALL(IDirect3DDevice9_SetSoftwareVertexProcessing, bSoftware)
+     type : 458752
+   -
+     name : SetStreamSource
+     procedure_id : 1866810803990079466
+     type_code : 12
+     code : |1-
+      Procédure SetStreamSource(StreamNumber est un entier sans signe, pclStreamData est un IDirect3DVertexBuffer9 dynamique, OffsetInBytes est un entier sans signe, Stride est un entier sans signe)
+      renvoyer :CALL(IDirect3DDevice9_SetStreamSource, StreamNumber, ptr(pclStreamData), OffsetInBytes, Stride)
+     type : 458752
+   -
+     name : SetStreamSourceFreq
+     procedure_id : 1866810803990145095
+     type_code : 12
+     code : |1-
+      Procédure SetStreamSourceFreq(StreamNumber est un entier sans signe, Setting est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_SetStreamSourceFreq, StreamNumber, Setting)
+     type : 458752
+   -
+     name : SetTexture
+     procedure_id : 1866810803990210741
+     type_code : 12
+     code : |1-
+      Procédure SetTexture(Stage est un entier sans signe, pclTexture est un IDirect3DBaseTexture9 dynamique)
+      renvoyer :CALL(IDirect3DDevice9_SetTexture, Stage, PTR(pclTexture))
+     type : 458752
+   -
+     name : SetTextureStageState
+     procedure_id : 1866810803990276370
+     type_code : 12
+     code : |1-
+      Procédure SetTextureStageState(Stage est un entier sans signe, Type est un entier sans signe, Value est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_SetTextureStageState, Stage, Type, Value)
+     type : 458752
+   -
+     name : SetTransform
+     procedure_id : 1866810803990342015
+     type_code : 12
+     code : |1-
+      Procédure SetTransform(State est un entier sans signe, Matrix est un D3DXMATRIX)
+      RENVOYER :CALL(IDirect3DDevice9_SetTransform, State, &Matrix)
+     type : 458752
+   -
+     name : SetVertexDeclaration
+     procedure_id : 1866810803990407645
+     type_code : 12
+     code : |1-
+      Procédure SetVertexDeclaration(pclIDirect3DVertexDeclaration est un IDirect3DVertexDeclaration9 dynamique)
+      RENVOYER :CALL(IDirect3DDevice9_SetVertexDeclaration, ptr(pclIDirect3DVertexDeclaration))
+     type : 458752
+   -
+     name : SetVertexShader
+     procedure_id : 1866810803990473290
+     type_code : 12
+     code : |1-
+      Procédure SetVertexShader(pclIDirect3DVertexShader9 est un IDirect3DVertexShader9 dynamique)
+      renvoyer :CALL(IDirect3DDevice9_SetVertexShader, ptr(pclIDirect3DVertexShader9))
+     type : 458752
+   -
+     name : SetVertexShaderConstantB
+     procedure_id : 1866810803990538920
+     type_code : 12
+     code : |1-
+      Procédure SetVertexShaderConstantB(StartRegister est un entier sans signe, tabConstantData est un tableau de booléens, BoolCount est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_SetVertexShaderConstantB, StartRegister, ptr(tabConstantData), BoolCount)
+     type : 458752
+   -
+     name : SetVertexShaderConstantF
+     procedure_id : 1866810803990604549
+     type_code : 12
+     code : |1-
+      Procédure SetVertexShaderConstantF(StartRegister est un entier sans signe, tabConstantData est un tableau de réels sur 4, Vector4fCount est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_SetVertexShaderConstantF, StartRegister, PTR(tabConstantData), Vector4fCount)
+     type : 458752
+   -
+     name : SetVertexShaderConstantI
+     procedure_id : 1866810808285637491
+     type_code : 12
+     code : |1-
+      Procédure SetVertexShaderConstantI(StartRegister est un entier sans signe, tabConstantData est un tableau d'entiers, Vector4iCount est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_SetVertexShaderConstantI, StartRegister, PTR(tabConstantData), Vector4iCount)
+     type : 458752
+   -
+     name : SetViewport
+     procedure_id : 1866810808285703136
+     type_code : 12
+     code : |1-
+      Procédure SetViewport(Viewport est un D3DVIEWPORT9)
+      RENVOYER :CALL(IDirect3DDevice9_SetViewport, &Viewport)
+     type : 458752
+   -
+     name : ShowCursor
+     procedure_id : 1866810808285768765
+     type_code : 12
+     code : |1-
+      PROCEDURE ShowCursor(bShow est un booléen)
+      RENVOYER :CALL(IDirect3DDevice9_ShowCursor, bShow)
+     type : 458752
+   -
+     name : StretchRect
+     procedure_id : 1866810808285834411
+     type_code : 12
+     code : |1-
+      Procédure StretchRect(pclSourceSurface est un IDirect3DSurface9 dynamique, SourceRECT est un rect, pclDestinationSurface est un IDirect3DSurface9 dynamique, DestRect est un rect, Filter_ est un entier sans signe)
+      renvoyer :CALL(IDirect3DDevice9_StretchRect, ptr(pclSourceSurface), PTR(SourceRECT), ptr(pclDestinationSurface), PTR(DestRect), Filter_)
+     type : 458752
+   -
+     name : TestCooperativeLevel
+     procedure_id : 1866810808285900040
+     type_code : 12
+     code : |1-
+      Procédure TestCooperativeLevel()
+      renvoyer :CALL(IDirect3DDevice9_TestCooperativeLevel)
+     type : 458752
+   -
+     name : UpdateSurface
+     procedure_id : 1866810808285965685
+     type_code : 12
+     code : |1-
+      Procédure UpdateSurface(pclSourceSurface est un IDirect3DSurface9 dynamique, SourceRECT est un rect dynamique, pclDestinationSurface est un IDirect3DSurface9 dynamique, DestPoint est un point dynamique)
+      renvoyer :CALL(IDirect3DDevice9_UpdateSurface, ptr(pclSourceSurface), (SourceRECT = null ? null sinon &SourceRECT), ptr(pclDestinationSurface), (DestPoint = null ? null sinon &DestPoint))
+     type : 458752
+   -
+     name : UpdateTexture
+     procedure_id : 1866810808286031331
+     type_code : 12
+     code : |1-
+      Procédure UpdateTexture(pclSourceTexture est un IDirect3DBaseTexture9 dynamique, pclDestinationTexture est un IDirect3DBaseTexture9 dynamique)
+      renvoyer :CALL(idirect3ddevice9_UpdateTexture, ptr(pclSourceTexture), ptr(pclDestinationTexture))
+     type : 458752
+   -
+     name : ValidateDevice
+     procedure_id : 1866810808286096976
+     type_code : 12
+     code : |1-
+      Procédure ValidateDevice(NumPasses est un entier sans signe)
+      RENVOYER :CALL(IDirect3DDevice9_ValidateDevice, &NumPasses)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000a0db108
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,953 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CD3DFont
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19ec979f42ff8527
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAAFccM2Drk9TBdvL++RrVDM9uo5VNVzn+88uNMnQvRagZtJpPkJ2fZGPMlXELfi7FM1SMNI1+O06otv+TJ05iETJVeG85SZwdBQnNjpN6wHE6ATipdoEDsMAQ002lPa17GgkvyikP/rcj/AuK7f7OSILALB7raCuuoaMk3KahQ9TLCCQQ6u8+p/dyLSomYumLwU+ljGkhLVFCeLtA9Y6z9s4ZkbF0nLzwiNt6L6Hg==
+     code : |1-
+      FONT2DVERTEX est une structure
+      	p est un D3DXVECTOR4
+      	color est un entier sans signe
+      	tu, tv est un réel sur 4	
+      FIN
+      
+      FONT3DVERTEX est une structure
+      	p est un D3DXVECTOR3
+      	n est un D3DXVECTOR3
+      	tu, tv est un réel sur 4	
+      FIN
+      
+      BITMAPINFOHEADER est une structure
+      	biSize est un entier sans signe
+      	biWidth, biHeight sont des entiers
+      	biPlanes, biBitCount sont des entiers sur 2
+      	biCompression, biSizeImage est un entier sans signe
+      	biXPelsPerMeter, biYPelsPerMeter sont des entiers
+      	biClrUsed, biClrImportant est un entier sans signe
+      FIN
+      
+      RGBQUAD est une structure
+      	red, green, blue, reserved sont des entiers sur 1 sans signe
+      FIN
+      
+      BITMAPINFO est une structure
+      	bmiHeader est un  BITMAPINFOHEADER
+      	tabBmiColors est un tableau fixe de 1 RGBQUAD	
+      FIN
+      
+      constant	
+      	MAX_ASCII_CODE	 = 256
+      FIN
+      
+      CD3DFont est une classe
+      
+      	protege
+      		
+      		// Propriétés de la police
+      		m_strFontName			est une chaine
+      		m_dwFontHeight			est un entier sans signe
+      		m_dwFontFlags			est un entier sans signe
+      		
+      		// Objets
+      		m_pclDevice				est un IDirect3DDevice9 dynamique
+      		m_pclTexture			est un IDirect3DTexture9 dynamique
+      		m_pclVertexBuffer		est un IDirect3DVertexBuffer9 dynamique
+      		
+      		// Propriétés de la texture
+      		m_dwTexWidth			est un entier sans signe
+      		m_dwTexHeight			est un entier sans signe
+      		m_fTextScale			est un réel sur 4
+      		m_fTexCoords			est un tableau de MAX_ASCII_CODE par 4 reels sur 4
+      		m_dwSpacing				est un entier sans signe
+      		
+      		// Stateblocks
+      		m_pclStateBlockSaved 	est un IDirect3DStateBlock9 dynamique
+      		m_pclStateBlockDrawText	est un IDirect3DStateBlock9 dynamique		
+      Fin
+      
+      constant
+      	GDI32			 = "gdi32"
+      	KERNEL32		 = "kernel32"
+      	MAX_NUM_VERTICES = 300
+      	
+      	D3DFVF_FONT2DVERTEX = D3DFVF_XYZRHW + D3DFVF_DIFFUSE + D3DFVF_TEX1
+      	D3DFVF_FONT3DVERTEX = D3DFVF_XYZ + d3dfvf_normal + D3DFVF_TEX1
+      	
+      	// D3DFONT
+      	D3DFONT_BOLD        = 1
+      	D3DFONT_ITALIC      = 2
+      	D3DFONT_ZENABLE     = 4
+      	
+      	D3DFONT_TWOSIDED    = 8
+      	D3DFONT_FILTERED    = 16
+      
+      	D3DFONT_CENTERED_X  = 32
+      	D3DFONT_CENTERED_Y  = 64
+      	D3DFONT_TOP         = 128
+      	D3DFONT_BOTTOM      = 256
+      	D3DFONT_RIGHT       = 512
+      	D3DFONT_LEFT        = 0
+      	
+      	// Font Weights
+      	FW_DONTCARE                     = 0 
+      	FW_THIN                         = 100
+      	FW_EXTRALIGHT                   = 200
+      	FW_ULTRALIGHT                   = 200
+      	FW_LIGHT                        = 300	 
+      	FW_NORMAL                       = 400
+      	FW_REGULAR                      = 400
+      	FW_MEDIUM                       = 500
+      	FW_SEMIBOLD                     = 600
+      	FW_DEMIBOLD                     = 600	 
+      	FW_BOLD                         = 700
+      	FW_EXTRABOLD                    = 800
+      	FW_ULTRABOLD                    = 800
+      	FW_HEAVY                        = 900
+      	FW_BLACK                        = 900
+      	
+      	// Font quality
+      	DEFAULT_QUALITY                 = 0
+      	ANTIALIASED_QUALITY             = 1
+      	NONANTIALIASED_QUALITY          = 2
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1868034655731615015
+     type_code : 27
+     code : |1-
+      Procédure Constructeur(strFontName est une chaine, dwHeight est un entier sans signe = 0, dwFlags est un entier sans signe = null)
+      
+      	// Conserve les données
+      	m_strFontName 	= strFontName
+      	m_dwFontHeight 	= dwHeight
+      	m_dwFontFlags	= dwFlags
+      	
+      	// Initialisation
+      	m_dwSpacing					= 0
+      	m_pclDevice					= null
+      	m_pclTexture				= Null
+      	m_pclVertexBuffer			= Null
+      	m_pclStateBlockSaved		= Null
+      	m_pclStateBlockDrawText		= Null
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1868034655731680551
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+      
+      	// Destruction des ressources
+      	InvalidateDeviceObjects()	
+      	DeleteDeviceObjects()
+     type : 655360
+   -
+     name : InitDeviceObjects
+     internal_properties : CAAAAAgAAACXpOOwWSpLJWEu/pSmfuGypFKXmfee1tknsaAf+zK1+UaYeSJBHnD85wMLTzk0gK8tGfUPPlr9FWxoURJB3EUIN5RxfVWgRgP1Y3k8JsTuAff0GBzEsYNlyOcW+Rwwch+h5Jop14lJntO4hsjxpk1Ixc/28gFbJN/FuKSnKHjM8lljJkkr6Sw1DBcu7aY2oTbKYABSlKyOmAhFEOFkGgJ7ewaJPtjP1DL0nsiBj5UpmULtek0=
+     procedure_id : 1868037073798307059
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode InitDeviceObjects
+      Procédure InitDeviceObjects(pclDevice est un IDirect3DDevice9 dynamique)
+      
+      	HRESULT 	est un entier système
+      	d3dCaps 	est un D3DCAPS9
+      	pBitmapBits	est un entier système
+      	bmi			est un bitmapinfo
+      	hDC			est un entier système
+      	hBmBitmap	est un entier système
+      	nHauteur	est un entier
+      	nScale		est un entier
+      	dwBold		est un entier sans signe
+      	dwItalic	est un entier sans signe
+      	hFont		est un entier système
+      	hbmOld		est un entier système
+      	hFontOld	est un entier système
+      	x, y 		est un entier sans signe
+      	szStr 		est une chaine unicode
+      	size 		est un point
+      	d3dlr 		est un D3DLOCKED_RECT
+      	pDstRow		est un entier système
+      	pSrc16		est un entier système
+      	bAlpha		est un entier sur 1 sans signe
+      	tabBitmap	est un tableau d'entiers sur 1 sans signe
+      	tabLocked	est un tableau d'entiers sur 2 sans signe
+      	
+      	// Récupère le "device"
+      	m_pclDevice = pclDevice
+      	m_pclDevice:AddRef()
+      	
+      	// Par défaut, aucun agrandissement
+      	m_fTextScale = 1.0
+      	
+      	// Taille des textures
+      	selon vrai
+      		cas m_dwFontHeight > 60
+      			m_dwTexWidth 	= 2048
+      			m_dwTexHeight 	= 2048		
+      
+      		cas m_dwFontHeight > 30
+      			m_dwTexWidth 	= 1024
+      			m_dwTexHeight 	= 1024	
+      
+      		cas m_dwFontHeight > 15
+      			m_dwTexWidth 	= 512
+      			m_dwTexHeight 	= 512
+      
+      		autres cas
+      			m_dwTexWidth 	= 256 + 32
+      			m_dwTexHeight 	= 256 + 32
+      	FIN
+      	
+      	// Récupère les capacités du "device"
+      	m_pclDevice:GetDeviceCaps(d3dCaps)
+      	
+      	// Vérifie que le "device" peut supporter la taille de la texture
+      	si m_dwTexWidth > d3dCaps:MaxTextureWidth ALORS
+      		
+      		// On devra agrandir la police
+      		m_fTextScale = d3dCaps:MaxTextureWidth / m_dwTexWidth
+      		
+      		// Valeurs maximales
+      		m_dwTexWidth = d3dCaps:MaxTextureWidth
+      		m_dwTexHeight = d3dCaps:MaxTextureWidth
+      	FIN
+      	
+      	// Crée une texture pour la police
+      	HRESULT = m_pclDevice:CreateTexture(m_dwTexWidth, m_dwTexHeight, 1, 0, D3DFMT_A4R4G4B4, D3DPOOL_MANAGED, m_pclTexture, null)
+      	si failed(HRESULT) _ou_ m_pcltexture = null alors
+      		renvoyer HRESULT
+      	FIN
+      	
+      	// Préparation de la création de la bitmap
+      	bmi:bmiHeader:biSize 		= sizeof(bmi:bmiheader)
+      	bmi:bmiHeader:biWidth 		= m_dwTexWidth
+      	bmi:bmiHeader:biHeight 		= -m_dwTexHeight
+      	bmi:bmiHeader:biPlanes		= 1
+      	bmi:bmiHeader:biCompression	= 0 // 0 : BI_RGB
+      	bmi:bmiHeader:biBitCount	= 32
+      	
+      		
+      	// Crée un DC et une bitmap pour la police	
+      	hDC 		= API(GDI32, "CreateCompatibleDC", Null)
+      	hBmBitmap	= api(GDI32, "CreateDIBSection", hDC, &bmi, 0, &pBitmapBits, null, 0) // 0 : DIB_RGB_COLORS
+      	
+      	api(GDI32, "SetMapMode", hDC, 1) // 1 : MM_TEXT
+      	
+      	// Crée la police
+      	nScale   = (SysMétrique(90) * m_fTextScale) // 90 : LOGPIXELSY
+      	nHauteur = -((m_dwFontHeight * nScale) / 72) // api(KERNEL32, "MulDiv", m_dwFontHeight, nScale, 72)
+      	
+      	dwBold	 = m_dwFontFlags & D3DFONT_BOLD 	? FW_BOLD sinon FW_NORMAL
+      	dwItalic = m_dwFontFlags & D3DFONT_ITALIC 	? vrai sinon faux
+      	
+      	hFont	 = api(GDI32, "CreateFontA", nHauteur, 0, 0, 0, dwBold, dwItalic, faux, faux, 1, 0, 0, ANTIALIASED_QUALITY, 2, m_strFontName)
+      	si hFont = null alors 
+      		renvoyer E_FAIL
+      	FIN
+      	
+      	hbmOld 		= api(GDI32, "SelectObject", hDC, hBmBitmap)
+      	hFontOld	= API(GDI32, "SelectObject", hDC, hFont)
+      	
+      	// Propriétés du texte
+      	api(GDI32, "SetTextColor",	hDC, blanc)
+      	api(GDI32, "SetBkColor", 	hDC, noir)
+      	api(GDI32, "SetTextAlign", 	hDC, 0)		// 0 : TA_TOP
+      	
+      	api(GDI32, "GetTextExtentPoint32A", hDC, " ", 1, &size)
+      	x = arrondi(size:y * 0.3)
+      	m_dwSpacing = x
+      	
+      	// Pour chaque caractère imprimable
+      	pour c = 32 _a_ MAX_ASCII_CODE - 1
+      		
+      		szStr = caract(c)
+      		
+      		// Récupère la taille du caractère
+      		API(GDI32, "GetTextExtentPoint32W", hDC, szStr, 1, &size)
+      		
+      		// Si on dépasse la largeur, on revient à la ligne
+      		si (x + size:x + m_dwSpacing) > m_dwTexWidth ALORS
+      			x = m_dwSpacing
+      			y += size:y + 1
+      		FIN
+      		
+      		// Dessin du caractère
+      		api(GDI32, "ExtTextOutW", hDC, x + 0, y + 0, 0x0002, null, &szStr, 1, null) // 0x0002 : ETO_OPAQUE
+      		
+      		// Conserve les coordonnées du caractère
+      		m_fTexCoords[c - 32 + 1][0 + 1] = (x + 0 - m_dwSpacing) 		/ m_dwTexWidth
+      		m_fTexCoords[c - 32 + 1][1 + 1] = (y + 0 + 0) 					/ m_dwTexHeight
+      		m_fTexCoords[c - 32 + 1][2 + 1] = (x + size:x + m_dwSpacing) 	/ m_dwTexWidth
+      		m_fTexCoords[c - 32 + 1][3 + 1] = (y + size:y + 0) 				/ m_dwTexWidth
+      		
+      		// Avance
+      		x += size:x + (2 * m_dwSpacing)
+      	FIN
+      	
+      	dimension(tabBitmap, m_dwTexWidth * m_dwTexHeight * 4)
+      	transfert(&tabBitmap, pBitmapBits, sizeof(tabBitmap))
+      	
+      	// Récupère le pointeur de la texture
+      	m_pclTexture:LockRect(0, d3dlr, null, 0)	
+      	
+      	dimension(tabLocked, m_dwTexHeight * m_dwTexWidth)
+      	pSrc16 = 0
+      				
+      	pour i = 1 _a_ tabLocked..Occurrence
+      		transfert(&pDstRow, &tabBitmap + pSrc16, 4)
+      		
+      		// Récupère la valeur de la couche alpha
+      		bAlpha = ((pDstRow & 0xff) bitdecaledroite 4)
+      					
+      		// 
+      		si bAlpha > 0 ALORS				
+      			tabLocked[i] = (bAlpha bitdecalegauche 12) | 0x0fff
+      		sinon
+      			tabLocked[i] = 0x0000
+      		FIN				
+      			
+      		pSrc16 += 4		
+      	FIN
+      	
+      	transfert(d3dlr:pBits, &tabLocked, sizeof(tabLocked))
+      	
+      	// Libère le pointeur
+      	m_pclTexture:UnlockRect(0)
+      
+      	// Nettoyage
+      	api(GDI32, "SelectObject", hDC, hbmOld)
+      	api(GDI32, "SelectObject", hDC, hFontOld)
+      	api(GDI32, "DeleteObject", hBmBitmap) 
+      	api(GDI32, "DeleteObject", hFont) 
+      	api(GDI32, "DeleteDC",   hDC) 
+      	
+      renvoyer 0
+     type : 458752
+   -
+     name : RestoreDeviceObjects
+     internal_properties : CAAAAAgAAACylEJ4GE77SFYvxITUhI5zJMh1HK914QRhpD5b6+VgdHBh/eb2FTP/V8mbbPEOvDalTBzZf3gx40IM+9aZPFzGC0nlRVCpTN2Vqliczl0dk2WXLi4tZOAsVwgtiuHI5ePQ0qowFK2YlDG4jY1Qyq7qwmXKvSIzSzFPCFUSCVZjQ1uqSRHtYE3n2QrG9qDRGmKn6yojEw==
+     procedure_id : 1868048218153793531
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode RestoreDeviceObjects
+      Procédure RestoreDeviceObjects()
+      
+      	HRESULT 	est un entier système
+      	v1 			est un FONT2DVERTEX
+      	v2			est un FONT3DVERTEX
+      	
+      	vertexSize	est un entier = max(sizeof(v1), sizeof(v2))
+      	
+      	HRESULT = m_pclDevice:CreateVertexBuffer(MAX_NUM_VERTICES * vertexSize, D3DUSAGE_WRITEONLY | D3DUSAGE_DYNAMIC, 0, D3DPOOL_DEFAULT, m_pclVertexBuffer, null)
+      	si failed(HRESULT) _ou_ m_pclVertexBuffer = Null ALORS
+      		renvoyer HRESULT
+      	FIN
+      	
+      	// Crée les stateblocks pour le rendu du texte
+      	pour which = 0 _a_ 1
+      		
+      		m_pclDevice:BeginStateBlock()
+      		
+      			// Sélectionne la texture de la police
+      			m_pclDevice:SetTexture(0, m_pclTexture)
+      			
+      			// Si le Z-Buffer doit être activé
+      			si (m_dwFontFlags & D3DFONT_ZENABLE) ALORS
+      				m_pclDevice:SetRenderState(D3DRS_ZENABLE, vrai)
+      			sinon
+      				m_pclDevice:SetRenderState(D3DRS_ZENABLE, faux)
+      			FIN
+      		
+      			m_pclDevice:SetRenderState( D3DRS_ALPHABLENDENABLE, vrai)
+      			m_pclDevice:SetRenderState( D3DRS_SRCBLEND, D3DBLEND_SRCALPHA)
+      			m_pclDevice:SetRenderState( D3DRS_DESTBLEND, D3DBLEND_INVSRCALPHA)
+      			m_pclDevice:SetRenderState( D3DRS_ALPHATESTENABLE, Vrai)
+      			m_pclDevice:SetRenderState( D3DRS_ALPHAREF, 0x08)
+      			m_pclDevice:SetRenderState( D3DRS_ALPHAFUNC, D3DCMP_GREATEREQUAL)
+      			m_pclDevice:SetRenderState( D3DRS_FILLMODE, D3DFILL_SOLID)
+      			m_pclDevice:SetRenderState( D3DRS_CULLMODE, D3DCULL_CCW)
+      			m_pclDevice:SetRenderState( D3DRS_STENCILENABLE, faux)
+      			m_pclDevice:SetRenderState( D3DRS_CLIPPING, Vrai)
+      			m_pclDevice:SetRenderState( D3DRS_CLIPPLANEENABLE, Faux)
+      			m_pclDevice:SetRenderState( D3DRS_VERTEXBLEND, D3DVBF_DISABLE)
+      			m_pclDevice:SetRenderState( D3DRS_INDEXEDVERTEXBLENDENABLE, Faux)
+      			m_pclDevice:SetRenderState( D3DRS_FOGENABLE, Faux)
+      			m_pclDevice:SetRenderState( D3DRS_COLORWRITEENABLE, D3DCOLORWRITEENABLE_RED | D3DCOLORWRITEENABLE_GREEN | D3DCOLORWRITEENABLE_BLUE | D3DCOLORWRITEENABLE_ALPHA)
+      			m_pclDevice:SetTextureStageState( 0, D3DTSS_COLOROP, D3DTOP_MODULATE)
+      			m_pclDevice:SetTextureStageState( 0, D3DTSS_COLORARG1, D3DTA_TEXTURE)
+      			m_pclDevice:SetTextureStageState( 0, D3DTSS_COLORARG2, D3DTA_DIFFUSE)
+      			m_pclDevice:SetTextureStageState( 0, D3DTSS_ALPHAOP, D3DTOP_MODULATE)
+      			m_pclDevice:SetTextureStageState( 0, D3DTSS_ALPHAARG1, D3DTA_TEXTURE)
+      			m_pclDevice:SetTextureStageState( 0, D3DTSS_ALPHAARG2, D3DTA_DIFFUSE)
+      			m_pclDevice:SetTextureStageState( 0, D3DTSS_TEXCOORDINDEX, 0)
+      			m_pclDevice:SetTextureStageState( 0, D3DTSS_TEXTURETRANSFORMFLAGS, D3DTTFF_DISABLE)
+      			m_pclDevice:SetTextureStageState( 1, D3DTSS_COLOROP, D3DTOP_DISABLE)
+      			m_pclDevice:SetTextureStageState( 1, D3DTSS_ALPHAOP, D3DTOP_DISABLE)
+      			m_pclDevice:SetSamplerState( 0, D3DSAMP_MINFILTER, D3DTEXF_POINT)
+      			m_pclDevice:SetSamplerState( 0, D3DSAMP_MAGFILTER, D3DTEXF_POINT)
+      			m_pclDevice:SetSamplerState( 0, D3DSAMP_MIPFILTER, D3DTEXF_NONE)
+      			
+      		si which = 0 ALORS
+      			m_pclDevice:EndStateBlock(m_pclStateBlockSaved)
+      		sinon
+      			m_pclDevice:EndStateBlock(m_pclStateBlockDrawText)
+      		FIN		
+      	FIN
+      	
+      renvoyer 0
+     type : 458752
+   -
+     name : InvalidateDeviceObjects
+     procedure_id : 1868050490191563144
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode InvalidateDeviceObjects
+      Procédure InvalidateDeviceObjects()
+      
+      	SAFE_RELEASE(m_pclVertexBuffer)
+      	SAFE_RELEASE(m_pclStateBlockSaved)
+      	SAFE_RELEASE(m_pclStateBlockDrawText)
+      
+      renvoyer 0
+     type : 458752
+   -
+     name : DeleteDeviceObjects
+     procedure_id : 1868050692055072497
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode DeleteDeviceObjects
+      Procédure DeleteDeviceObjects()
+      
+      	SAFE_RELEASE(m_pclTexture)
+      	m_pclDevice = null
+      	
+      RENVOYER 0
+     type : 458752
+   -
+     name : GetTextExtent
+     procedure_id : 1868051924710777585
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetTextExtent
+      Procédure GetTextExtent(sTexte est une chaine, size est un POINT)
+      
+      	si sTexte = "" alors renvoyer e_fail
+      	
+      	fRowWidth 	est un réel sur 4 = 0.0
+      	fRowHeight	est un réel sur 4 = (m_fTexCoords[0 + 1][3 + 1] - m_fTexCoords[0 + 1][1 + 1]) * m_dwTexHeight
+      	fWidth		est un réel sur 4 = 0.0
+      	fHeight		est un réel sur 4 = fRowHeight
+      	c			est une chaine
+      	i			est un entier
+      	tx1, tx2	est un réel sur 4
+      	
+      	pour i = 1 _a_ taille(sTexte)
+      		
+      		si sTexte[[i sur 2]] = rc ALORS
+      			fRowWidth = 0.0
+      			fHeight += fRowHeight
+      			
+      			c = sTexte[[i sur 2]]	
+      			i ++			
+      		sinon
+      			c = sTexte[[i]]	
+      		FIN		
+      		
+      		si asc(c) - 32 < 0 _ou_ (asc(c) - 32 >= MAX_ASCII_CODE - 32) ALORS
+      			continuer
+      		FIN
+      		
+      		tx1 = m_fTexCoords[asc(c) - 32 + 1][0 + 1]
+      		tx2 = m_fTexCoords[Asc(c) - 32 + 1][2 + 1]
+      		
+      		fRowWidth += (tx2 - tx1) * m_dwTexWidth - 2 * m_dwSpacing
+      		si fRowWidth > fWidth ALORS
+      			fWidth = fRowWidth
+      		FIN		
+      	FIN
+      	
+      	size:x = fWidth
+      	size:y = fHeight
+      	
+      renvoyer 0
+     type : 458752
+   -
+     name : DrawTextScaled
+     internal_properties : CAAAAAgAAADp8tUCJ/x60aMQUirMbOs0RmCKafiW7jGdF9iR2ZyDt+jW4iLzhrCsZzsrFzlkeOddqY1/HnqF7TQYuQJ5dEXof3wBFR2YZtOlK6lk1lQWuVe0QFwEkev9YGda5disXhslaB6Fi611AsekCmQNcklU+dNKHvWvgEP5lKiD5LSILu3nCmUvbahpUMMyyRKSvczozZ2LKyUTX7PEHZI/B/VZ0YUMldHW789BO7OYRAvDS5S/RHM=
+     procedure_id : 1868053689942353464
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode DrawTextScaled
+      Procédure DrawTextScaled(x est un réel sur 4, y est un réel sur 4, z est un réel sur 4, fXScale est un réel sur 4, fYScale est un réel sur 4, dwColor est un entier sans signe, sTexte est une chaine, dwFlags est un entier sans signe)
+      
+      	v1 			est un FONT2DVERTEX
+      	vp 			est un d3dviewport9
+      	fLineHeight	est un réel sur 4
+      	sTextTemp	est une chaine
+      	xFinale		est un réel sur 4
+      	tx1			est un réel sur 4
+      	ty1			est un réel sur 4
+      	tx2			est un réel sur 4
+      	ty2			est un réel sur 4
+      	w			est un réel sur 4
+      	h			est un réel sur 4
+      	sx, sy, sz	est un réel sur 4
+      	rhw			est un réel sur 4
+      	fStartX		est un réel sur 4
+      	nDwNumTri	est un entier sans signe
+      	tabVert		est un tableau de FONT2DVERTEX
+      	pVertices	est un entier système
+      	i			est un entier
+      
+      	si m_pclDevice = null alors renvoyer e_fail
+      	
+      	// Prépare le rendu
+      	m_pclStateBlockSaved:Capture()
+      	m_pclStateBlockDrawText:Apply()
+      	m_pclDevice:SetFVF(d3dfvf_font2dvertex)
+      	m_pclDevice:SetPixelShader(null)
+      	m_pclDevice:SetStreamSource(0, m_pclVertexBuffer, 0, sizeof(v1))
+      	
+      	// Prépare les filtres
+      	si dwFlags & D3DFONT_FILTERED ALORS
+      		m_pclDevice:SetSamplerState(0, D3DSAMP_MINFILTER, D3DTEXF_LINEAR)
+      		m_pclDevice:SetSamplerState(0, D3DSAMP_MagFILTER, D3DTEXF_LINEAR)
+      	FIN
+      	
+      	m_pclDevice:GetViewport(vp)
+      	fLineHeight = (m_fTexCoords[0 + 1][3 + 1] - m_fTexCoords[0 + 1][1 + 1]) * m_dwTexHeight
+      	
+      	// Centre le bloc de texte dans le viewport
+      	si dwFlags & D3DFONT_CENTERED_X ALORS
+      		
+      		sTextTemp = sTexte
+      		xFinale = 0.0
+      		
+      		pour i = 1 _a_ taille(sTextTemp)
+      			
+      			si sTextTemp[[i sur 2]] = rc ALORS
+      				// Non supporté
+      				sortir
+      			FIN
+      			
+      			SI Asc(sTextTemp[[i]]) - 32 < 0 _OU_ (Asc(sTextTemp[[i]]) - 32 >= MAX_ASCII_CODE - 32) ALORS
+      				continuer
+      			FIN
+      			
+      			tx1 = m_fTexCoords[Asc(sTextTemp[[i]]) - 32 + 1][0 + 1]
+      			tx2 = m_fTexCoords[Asc(sTextTemp[[i]]) - 32 + 1][2 + 1]
+      			w   = ((tx2 - tx1) * m_dwTexWidth) * (fXScale * vp:Height) / fLineHeight 
+      		
+      			xFinale += w - (2 * m_dwSpacing) * (fXScale * vp:Height) / fLineHeight			
+      		FIN
+      		
+      		x = -xFinale / vp:Width		
+      	FIN
+      	
+      	si dwFlags & D3DFONT_CENTERED_Y ALORS
+      		y = -fLineHeight / vp:Height
+      	FIN
+      	
+      	sx  = (x + 1.0) * vp:Width / 2
+      	sy  = (y + 1.0) * vp:Height / 2
+      	sz  = z
+      	rhw = 1.0
+      	
+      	// Ajustement pour l'espacement
+      	sx -= m_dwSpacing * (fXScale * vp:Height) / fLineHeight
+      	fStartX = sx
+      	
+      	// Remplissage du "vertex buffer"
+      	m_pclVertexBuffer:Lock(0, 0, pVertices, D3DLOCK_DISCARD)
+      		
+      	pour i = 1 _a_ taille(sTexte)
+      		
+      		si sTexte[[i sur 2]] = rc ALORS
+      			sx = fStartX
+      			sy += fYScale * vp:height
+      			i ++
+      		FIN
+      		
+      		SI Asc(sTexte[[i]]) - 32 < 0 _OU_ (Asc(sTexte[[i]]) - 32 >= MAX_ASCII_CODE - 32) ALORS
+      			CONTINUER
+      		FIN
+      		
+      		tx1 = m_fTexCoords[asc(sTexte[[i]]) - 32 + 1][0 + 1]
+      		ty1 = m_fTexCoords[asc(sTexte[[i]]) - 32 + 1][1 + 1]
+      		tx2 = m_fTexCoords[asc(sTexte[[i]]) - 32 + 1][2 + 1]
+      		ty2 = m_fTexCoords[asc(sTexte[[i]]) - 32 + 1][3 + 1]
+      		
+      		w = (tx2 - tx1) * m_dwTexWidth
+      		h = (ty2 - ty1) * m_dwTexHeight
+      		
+      		w = w * (fXScale * vp:height) / fLineHeight
+      		h = h * (fYScale * vp:height) / fLineHeight
+      		
+      		si pas sTexte[[i]] = " " ALORS
+      			
+      			v1 = [[sx + 0 - 0.5, sy + h - 0.5, sz, rhw], dwColor, tx1, ty2]; Ajoute(tabVert, v1)
+      			v1 = [[sx + 0 - 0.5, sy + 0 - 0.5, sz, rhw], dwColor, tx1, ty1]; Ajoute(tabVert, v1)
+      			v1 = [[sx + w - 0.5, sy + h - 0.5, sz, rhw], dwColor, tx2, ty2]; Ajoute(tabVert, v1)
+      			v1 = [[sx + w - 0.5, sy + 0 - 0.5, sz, rhw], dwColor, tx2, ty1]; Ajoute(tabVert, v1)
+      			v1 = [[sx + w - 0.5, sy + h - 0.5, sz, rhw], dwColor, tx2, ty2]; Ajoute(tabVert, v1)
+      			v1 = [[sx + 0 - 0.5, sy + 0 - 0.5, sz, rhw], dwColor, tx1, ty1]; Ajoute(tabVert, v1)
+      						
+      			nDwNumTri += 2
+      			
+      			si nDwNumTri * 3 > MAX_NUM_VERTICES - 6 ALORS
+      				
+      				transfert(pVertices, &tabVert, sizeof(tabVert))
+      				supprimetout(tabVert)
+      				
+      				// Débloque et re-bloque le vertex buffer
+      				m_pclVertexBuffer:Unlock()
+      				m_pclDevice:DrawPrimitive(D3DPT_TRIANGLELIST, 0, nDwNumTri)
+      				m_pclVertexBuffer:Lock(0, 0, pVertices, D3DLOCK_DISCARD)
+      				nDwNumTri = 0				
+      			FIN			
+      		FIN
+      		
+      		sx += w - (2 * m_dwSpacing) * (fXScale * vp:Height) / fLineHeight		
+      	FIN
+      	
+      	si nDwNumTri > 0 alors
+      	
+      		Transfert(pVertices, &tabVert, sizeOf(tabVert))
+      		SupprimeTout(tabVert)
+      	fin
+      	
+      	// Débloque
+      	m_pclVertexBuffer:Unlock()
+      	
+      	SI nDwNumTri > 0 ALORS
+      		m_pclDevice:DrawPrimitive(D3DPT_TRIANGLELIST, 0, nDwNumTri)
+      	fin
+      	
+      	m_pclStateBlockSaved:Apply()
+      	
+      renvoyer 0
+     type : 458752
+   -
+     name : DrawText
+     internal_properties : CAAAAAgAAABjD4FLdW6iexWi+JyixvWOiD6sE/uIkJuxQ5YROTxXmxh26rQ9YAIOt3OZnxV4ZLMBXZ1xwDRzT8iMg8pxZHkUP7RR548KOG35t48oalS20bec5Coy790jEG9PgpOhdSyu2VuCwmYe7aIfX8mwH1RRzhB3y+S4eXIYA+V4X2nfh8b4X+LOHkmIAzovzmU3YGGVsqLAOlZEzsK/eh/6NPBHJwvCH1vM2cF3yXn6zsdbx+cGzvk=
+     procedure_id : 1868059702896657299
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode DrawTextScaled
+      Procédure DrawText(sx est un réel sur 4, sy est un réel sur 4, sz est un réel sur 4, dwColor est un entier sans signe, sTexte est une chaine, dwFlags est un entier sans signe)
+      
+      	v1 			est un FONT2DVERTEX
+      	vp 			est un d3dviewport9
+      	fLineHeight	est un réel sur 4
+      	sTextTemp	est une chaine
+      	xFinale		est un réel sur 4
+      	tx1			est un réel sur 4
+      	ty1			est un réel sur 4
+      	tx2			est un réel sur 4
+      	ty2			est un réel sur 4
+      	w			est un réel sur 4
+      	h			est un réel sur 4
+      	rhw			est un réel sur 4
+      	fStartX		est un réel sur 4
+      	nDwNumTri	est un entier sans signe
+      	tabVert		est un tableau de FONT2DVERTEX
+      	pVertices	est un entier système
+      	i			est un entier
+      
+      	si m_pclDevice = null alors renvoyer e_fail
+      	
+      	// Prépare le rendu
+      	m_pclStateBlockSaved:Capture()
+      	m_pclStateBlockDrawText:Apply()
+      	m_pclDevice:SetFVF(d3dfvf_font2dvertex)
+      	m_pclDevice:SetPixelShader(null)
+      	m_pclDevice:SetStreamSource(0, m_pclVertexBuffer, 0, sizeof(v1))
+      	
+      	// Prépare les filtres
+      	si dwFlags & D3DFONT_FILTERED ALORS
+      		m_pclDevice:SetSamplerState(0, D3DSAMP_MINFILTER, D3DTEXF_LINEAR)
+      		m_pclDevice:SetSamplerState(0, D3DSAMP_MagFILTER, D3DTEXF_LINEAR)
+      	FIN
+      	
+      	m_pclDevice:GetViewport(vp)
+      	fLineHeight = (m_fTexCoords[0 + 1][3 + 1] - m_fTexCoords[0 + 1][1 + 1]) * m_dwTexHeight
+      	
+      	// Centre le bloc de texte dans le viewport
+      	si dwFlags & D3DFONT_CENTERED_X _ou_ dwFlags & D3DFONT_RIGHT ALORS
+      		
+      		sTextTemp = sTexte
+      		xFinale = 0.0
+      		
+      		pour i = 1 _a_ taille(sTextTemp)
+      			
+      			si sTextTemp[[i sur 2]] = rc ALORS
+      				// Non supporté
+      				sortir
+      			FIN
+      			
+      			SI Asc(sTextTemp[[i]]) - 32 < 0 _OU_ (Asc(sTextTemp[[i]]) - 32 >= MAX_ASCII_CODE - 32) ALORS
+      				continuer
+      			FIN
+      			
+      			tx1 = m_fTexCoords[Asc(sTextTemp[[i]]) - 32 + 1][0 + 1]
+      			tx2 = m_fTexCoords[Asc(sTextTemp[[i]]) - 32 + 1][2 + 1]
+      			w   = ((tx2 - tx1) * m_dwTexWidth / m_fTextScale)
+      		
+      			xFinale += w - (2 * m_dwSpacing)
+      		FIN
+      		
+      		si dwFlags & D3DFONT_CENTERED_X alors
+      			sx = (vp:Width - xFinale) / 2.0
+      		sinon
+      			sx = vp:Width - xFinale
+      		fin
+      	FIN
+      	
+      	SI dwFlags & D3DFONT_left ALORS
+      		sx = 0.0
+      	FIN
+      		
+      	si dwFlags & D3DFONT_CENTERED_Y ALORS
+      		
+      		// Centrage vertical
+      		sy = (vp:Height - fLineHeight) / 2.0
+      		
+      	fin
+      	
+      	si dwFlags & D3DFONT_BOTTOM ALORS
+      		
+      		// Alignement vertical bas
+      		sy = vp:Height - fLineHeight
+      		
+      	fin
+      	
+      	SI dwFlags & D3DFONT_TOP ALORS
+      		
+      		// Alignement vertical haut
+      		sy = 0
+      	FIN
+      		
+      	sx  -= m_dwSpacing
+      	fStartX = sx
+      	
+      	// Remplissage du "vertex buffer"
+      	m_pclVertexBuffer:Lock(0, 0, pVertices, D3DLOCK_DISCARD)
+      		
+      	pour i = 1 _a_ taille(sTexte)
+      		
+      		si sTexte[[i sur 2]] = rc ALORS
+      			sx = fStartX
+      			sy += fLineHeight //m_fTexCoords[0 + 1][3 + 1] - m_fTexCoords[0 + 1][1 + 1] * m_dwTexHeight
+      			i ++
+      		FIN
+      		
+      		SI Asc(sTexte[[i]]) - 32 < 0 _OU_ (Asc(sTexte[[i]]) - 32 >= MAX_ASCII_CODE - 32) ALORS
+      			CONTINUER
+      		FIN
+      		
+      		tx1 = m_fTexCoords[asc(sTexte[[i]]) - 32 + 1][0 + 1]
+      		ty1 = m_fTexCoords[asc(sTexte[[i]]) - 32 + 1][1 + 1]
+      		tx2 = m_fTexCoords[asc(sTexte[[i]]) - 32 + 1][2 + 1]
+      		ty2 = m_fTexCoords[asc(sTexte[[i]]) - 32 + 1][3 + 1]
+      		
+      		w = (tx2 - tx1) * m_dwTexWidth / m_fTextScale
+      		h = (ty2 - ty1) * m_dwTexHeight / m_fTextScale
+      		
+      		si pas sTexte[[i]] = " " ALORS
+      			
+      			v1 = [[sx + 0 - 0.5, sy + h - 0.5, sz, rhw], dwColor, tx1, ty2]; Ajoute(tabVert, v1)
+      			v1 = [[sx + 0 - 0.5, sy + 0 - 0.5, sz, rhw], dwColor, tx1, ty1]; Ajoute(tabVert, v1)
+      			v1 = [[sx + w - 0.5, sy + h - 0.5, sz, rhw], dwColor, tx2, ty2]; Ajoute(tabVert, v1)
+      			v1 = [[sx + w - 0.5, sy + 0 - 0.5, sz, rhw], dwColor, tx2, ty1]; Ajoute(tabVert, v1)
+      			v1 = [[sx + w - 0.5, sy + h - 0.5, sz, rhw], dwColor, tx2, ty2]; Ajoute(tabVert, v1)
+      			v1 = [[sx + 0 - 0.5, sy + 0 - 0.5, sz, rhw], dwColor, tx1, ty1]; Ajoute(tabVert, v1)	
+      			
+      			nDwNumTri += 2
+      			
+      			si nDwNumTri * 3 > MAX_NUM_VERTICES - 6 ALORS
+      				
+      				transfert(pVertices, &tabVert, sizeof(tabVert))
+      				supprimetout(tabVert)
+      				
+      				// Débloque et re-bloque le vertex buffer
+      				m_pclVertexBuffer:Unlock()
+      				m_pclDevice:DrawPrimitive(D3DPT_TRIANGLELIST, 0, nDwNumTri)
+      				m_pclVertexBuffer:Lock(0, 0, pVertices, D3DLOCK_DISCARD)
+      				nDwNumTri = 0				
+      			FIN			
+      		FIN
+      		
+      		sx += w - (2 * m_dwSpacing)
+      	FIN
+      	
+      	si nDwNumTri > 0 alors
+      	
+      		Transfert(pVertices, &tabVert, sizeOf(tabVert))
+      		SupprimeTout(tabVert)
+      	fin
+      	
+      	// Débloque
+      	m_pclVertexBuffer:Unlock()
+      	
+      	SI nDwNumTri > 0 ALORS
+      		m_pclDevice:DrawPrimitive(D3DPT_TRIANGLELIST, 0, nDwNumTri)
+      	fin
+      	
+      	m_pclStateBlockSaved:Apply()
+      	
+      renvoyer 0
+     type : 458752
+   -
+     name : Render3DText
+     internal_properties : CAAAAAgAAAB4aMQM/jyNr9RWDpdLCO23tplJoujiZqZ04rC3Cbs6Ac6NHK96CW/zGdWD1GhW0dBlcn7BeHH/WPjI2/1W2XLB1fZEoYY48JLJEzMEziORuTgid3Yva+xCimmpXCAruFaIhqoZkLAzc4clnE7qdEwnAI+QdNi8VFwBDSBXyT6DrVpdCqWEYKLy7jDeVVVWIVw6UuO/RJUlmihy+4VPmlcxEJlO7vk+2uCXvC98U1+bXzfZcIIKIFXJnljgJBIWg2j7
+     procedure_id : 1868061107351027364
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Render3DText
+      Procédure Render3DText(sTexte est une chaine, dwFlags est un entier sans signe)
+      
+      	v1 			est un FONT3DVERTEX
+      	tx1			est un réel sur 4
+      	ty1			est un réel sur 4
+      	tx2			est un réel sur 4
+      	ty2			est un réel sur 4
+      	w			est un réel sur 4
+      	h			est un réel sur 4
+      	fStartX		est un réel sur 4
+      	nDwNumTri	est un entier sans signe
+      	tabVert		est un tableau de FONT3DVERTEX
+      	pVertices	est un entier système
+      	i			est un entier
+      	x, y		est un réel sur 4
+      	sz			est un point
+      
+      	si m_pclDevice = null alors renvoyer e_fail
+      	
+      	// Prépare le rendu
+      	m_pclStateBlockSaved:Capture()
+      	m_pclStateBlockDrawText:Apply()
+      	m_pclDevice:SetFVF(d3dfvf_font3dvertex)
+      	m_pclDevice:SetPixelShader(null)
+      	m_pclDevice:SetStreamSource(0, m_pclVertexBuffer, 0, sizeof(v1))
+      	
+      	// Prépare les filtres
+      	si dwFlags & D3DFONT_FILTERED ALORS
+      		m_pclDevice:SetSamplerState(0, D3DSAMP_MINFILTER, D3DTEXF_LINEAR)
+      		m_pclDevice:SetSamplerState(0, D3DSAMP_MagFILTER, D3DTEXF_LINEAR)
+      	FIN
+      	
+      	x = 0
+      	y = 0
+      	
+      	// Centre le bloc de texte dans le viewport
+      	si dwFlags & D3DFONT_CENTERED_X ALORS
+      		
+      		GetTextExtent(sTexte, sz)
+      		x = -(sz:x / 10.0) / 2.0
+      	FIN
+      	
+      	si dwFlags & D3DFONT_CENTERED_Y ALORS
+      		
+      		GetTextExtent(sTexte, sz)
+      		y = -(sz:y / 10.0) / 2.0
+      	FIN
+      	
+      	SI dwFlags & D3DFONT_TWOSIDED ALORS
+      		m_pclDevice:SetRenderState(D3DRS_CULLMODE, D3DCULL_NONE)
+      	FIN
+      	
+      	x -= m_dwSpacing / 10.0
+      	fStartX = x
+      	
+      	// Remplissage du "vertex buffer"
+      	m_pclVertexBuffer:Lock(0, 0, pVertices, D3DLOCK_DISCARD)
+      		
+      	pour i = 1 _a_ taille(sTexte)
+      		
+      		si sTexte[[i sur 2]] = rc ALORS
+      			x = fStartX
+      			y -= m_fTexCoords[0 + 1][3 + 1] - m_fTexCoords[0 + 1][1 + 1] * m_dwTexHeight / 10.0
+      			i ++
+      		FIN
+      		
+      		SI Asc(sTexte[[i]]) - 32 < 0 _OU_ (Asc(sTexte[[i]]) - 32 >= MAX_ASCII_CODE - 32) ALORS
+      			CONTINUER
+      		FIN
+      		
+      		tx1 = m_fTexCoords[asc(sTexte[[i]]) - 32 + 1][0 + 1]
+      		ty1 = m_fTexCoords[asc(sTexte[[i]]) - 32 + 1][1 + 1]
+      		tx2 = m_fTexCoords[asc(sTexte[[i]]) - 32 + 1][2 + 1]
+      		ty2 = m_fTexCoords[asc(sTexte[[i]]) - 32 + 1][3 + 1]
+      		
+      		w = (tx2 - tx1) * m_dwTexWidth / (10.0 * m_fTextScale)
+      		h = (ty2 - ty1) * m_dwTexHeight / (10.0 * m_fTextScale)
+      		
+      		si pas sTexte[[i]] = " " ALORS
+      			
+      			v1 = [[x + 0, y + 0, 0], [0, 0, -1], tx1, ty2]; Ajoute(tabVert, v1)
+      			v1 = [[x + 0, y + h, 0], [0, 0, -1], tx1, ty1]; Ajoute(tabVert, v1)
+      			v1 = [[x + w, y + 0, 0], [0, 0, -1], tx2, ty2]; Ajoute(tabVert, v1)
+      			v1 = [[x + w, y + h, 0], [0, 0, -1], tx2, ty1]; Ajoute(tabVert, v1)
+      			v1 = [[x + w, y + 0, 0], [0, 0, -1], tx2, ty2]; Ajoute(tabVert, v1)
+      			v1 = [[x + 0, y + h, 0], [0, 0, -1], tx1, ty1]; Ajoute(tabVert, v1)
+      			
+      			nDwNumTri += 2
+      			
+      			si nDwNumTri * 3 > MAX_NUM_VERTICES - 6 ALORS
+      				
+      				transfert(pVertices, &tabVert, sizeof(tabVert))
+      				supprimetout(tabVert)
+      				
+      				// Débloque et re-bloque le vertex buffer
+      				m_pclVertexBuffer:Unlock()
+      				m_pclDevice:DrawPrimitive(D3DPT_TRIANGLELIST, 0, nDwNumTri)
+      				m_pclVertexBuffer:Lock(0, 0, pVertices, D3DLOCK_DISCARD)
+      				nDwNumTri = 0				
+      			FIN			
+      		FIN
+      		
+      		x += w - (2 * m_dwSpacing) / 10.0
+      	FIN
+      	
+      	si nDwNumTri > 0 alors
+      	
+      		Transfert(pVertices, &tabVert, sizeOf(tabVert))
+      		SupprimeTout(tabVert)
+      	fin
+      	
+      	// Débloque
+      	m_pclVertexBuffer:Unlock()
+      	
+      	SI nDwNumTri > 0 ALORS
+      		m_pclDevice:DrawPrimitive(D3DPT_TRIANGLELIST, 0, nDwNumTri)
+      	fin
+      	
+      	m_pclStateBlockSaved:Apply()
+      	
+      renvoyer 0
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d998ff0994b05c
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

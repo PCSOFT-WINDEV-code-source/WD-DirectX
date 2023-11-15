@@ -1,0 +1,138 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IUnknown
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19468b6e0c95ef20
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      IUnknown est une classe
+      	un objet objetcom
+      	
+      Fin
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface IUnknown (VTABLE)
+      	IUnknown_QueryInterface = 0
+      	IUnknown_AddRef			= 1
+      	IUnknown_Release		= 2
+      	IUnknown___IDXBASE		= 2
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1821296404091825952
+     type_code : 27
+     code : |1-
+      Procédure Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur ObjetCom(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = COMUtils.IID_IUnknown
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1821296404091891488
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+      
+      	Release()
+     type : 655360
+   -
+     name : QueryInterface
+     internal_properties : CAAAAAgAAAARayNE+1t72E0xZ32BfF067RbvNrG+hqaByJuvuuv0ckBUBxA7WcZkXg629RXR8VNCFWTrI3DJHzASmbcBJ0XkydZIZgwQH4BAFbAOx9htA5vYMVLMMZkhbPsj3KifQEQ3GGXk59Q1boWvp4PzQzuHNbHtk6uyGL+7oeFuZPWOjU0df+bh/JBNzhJPtNDHwhiHOjYyQ7e1R1B2KMSiVbI/mYuzyOfrD5hYx6WCRtagg1HuAg==
+     procedure_id : 1821296829293687051
+     type_code : 12
+     code : |1-
+      // Résumé : (MSDN) Returns a pointer to a specified interface on an object to which a client currently holds an interface pointer. This function must call IUnknown::AddRef on the pointer it returns.
+      // Syntaxe :
+      //[ <Résultat> = ] QueryInterface (<_iid> est entier, <vObject> est IUnknown dynamique [, <wlClassName> est chaîne])
+      //
+      // Paramètres :
+      //	_iid (entier) : [in] Identifier of the interface being requested
+      //	vObject (IUnknown dynamique) : [out] Address of pointer variable that receives the interface pointer requested in riid. Upon successful return, *ppvObject contains the requested interface pointer to the object. If the object does not support the interface specified in iid, *ppvObject is set to NULL.
+      //	wlClassName (chaîne) : Nom de la classe correspondante à vObjet
+      // Valeur de retour :
+      // 	entier système :      Valeur de retour de type C++ HRESULT
+      //
+      Procédure QueryInterface(local _iid est un entier, vObject est un IUnknown dynamique, local wlClassName est une chaine = IUnknown)
+      
+      	HRESULT 	est un entier systeme
+      	ppvObject	est un entier
+      
+      	// Appel
+      	HRESULT = :CALL(IUnknown_QueryInterface, _iid, &ppvObject)
+      	
+      	// Ré-alloue l'objet
+      	__BindInterface(vObject, ppvObject, wlClassName)
+      			
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : AddRef
+     internal_properties : CAAAAAgAAADcAceILnwbHgdztqpWXRVH1WFCjlyxDUSxPbGp3BupdK3KvYT6vidTqj8AZILU8a03aGOvzVaQhR+f5wK5cs/kJ656B9YGVpKtZFEfsw174ns1bz7oXbOwCdcBEOQlGhyn5InCBeZDzDs1JymZPfE/JaXdTW3G9Pvfi9toHkvgy0+V41ADDtsmVqw7m26wCMGS0Znn/NO8/Nm6IEc9lrI2y5Of
+     procedure_id : 1821296855063562323
+     type_code : 12
+     code : |1-
+      // Résumé : (MSDN) The IUnknown::AddRef method increments the reference count for an interface on an object. It should be called for every new copy of a pointer to an interface on a given object.
+      // Syntaxe :
+      //[ <Résultat> = ] AddRef ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	entier système : (MSDN) An integer from 1 to n, the value of the new reference count. This information is meant to be used for diagnostic/testing purposes only.
+      //
+      Procédure AddRef()
+      renvoyer :CALL(IUnknown_AddRef)
+     type : 458752
+   -
+     name : Release
+     internal_properties : CAAAAAgAAABftf/3YAXzEyktwMPh54/bI6YAvbskK+UTp3i08pHDKptjcdTxk9r/vVvkTRA0V/YYdhZJm3sHxSpg/Pjy0/lEjxGf5/iX/ie4GiwvM2/fF+XbMeYY6c2HuBGLPfSUdk/S4qtVt5XAnV8JA57/ZH/KoGvRhBW12LXufCzs7v5lXc+iTqLgWEBnUc9IOjchf4z16YfoykMFKed3y6INdU8ECbSIpolWwM3nd+TmWN4UCjLG
+     procedure_id : 1821296863653565181
+     type_code : 12
+     code : |1-
+      // Résumé : (MSDN) Decrements the reference count for the calling interface on a object. If the reference count on the object falls to 0, the object is freed from memory.
+      // Syntaxe :
+      //[ <Résultat> = ] Release ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	variant : (MSDN) Resulting value of the reference count, which is used for diagnostic/testing purposes only.
+      //
+      
+      Procédure Release()
+      
+      	retour = :CALL(IUnknown_Release)
+      	si retour = 0 ALORS
+      		m_Interface..Adresse = 0
+      	FIN
+      	
+      CAS EXCEPTION:
+      	m_Interface..Adresse = 0
+      	renvoyer 0
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000b09b1b4
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

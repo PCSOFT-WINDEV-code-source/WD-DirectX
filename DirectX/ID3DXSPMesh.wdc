@@ -1,0 +1,268 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXSPMesh
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19ddce8412ec903f
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXSPMesh est une classe
+      	un objet IUnknown
+      	
+      FIN
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ID3DXSPMesh (VTABLE)
+      	ID3DXSPMesh_GetNumFaces					= ::IUnknown___IDXBASE + 1
+      	ID3DXSPMesh_GetNumVertices				= ::IUnknown___IDXBASE + 2
+      	ID3DXSPMesh_GetFVF						= ::IUnknown___IDXBASE + 3
+      	ID3DXSPMesh_GetDeclaration				= ::IUnknown___IDXBASE + 4
+      	ID3DXSPMesh_GetOptions					= ::IUnknown___IDXBASE + 5
+      	ID3DXSPMesh_GetDevice					= ::IUnknown___IDXBASE + 6
+      	ID3DXSPMesh_CloneMeshFVF				= ::IUnknown___IDXBASE + 7
+      	ID3DXSPMesh_CloneMesh					= ::IUnknown___IDXBASE + 8
+      	ID3DXSPMesh_ClonePMeshFVF				= ::IUnknown___IDXBASE + 9
+      	ID3DXSPMesh_ClonePMesh					= ::IUnknown___IDXBASE + 10
+      	ID3DXSPMesh_ReduceFaces					= ::IUnknown___IDXBASE + 11
+      	ID3DXSPMesh_ReduceVertices				= ::IUnknown___IDXBASE + 12
+      	ID3DXSPMesh_GetMaxFaces					= ::IUnknown___IDXBASE + 13
+      	ID3DXSPMesh_GetMaxVertices				= ::IUnknown___IDXBASE + 14
+      	ID3DXSPMesh_GetVertexAttributeWeights	= ::IUnknown___IDXBASE + 15
+      	ID3DXSPMesh_GetVertexWeights			= ::IUnknown___IDXBASE + 16
+      	ID3DXSPMesh___IDXBASE					= ::IUnknown___IDXBASE + 16
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863872887449817151
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Mesh.IID_ID3DXSPMesh
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863872887449882687
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : CloneMesh
+     procedure_id : 1866503636338167902
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CloneMesh
+      Procédure CloneMesh(Options est un entier sans signe, tabDeclaration est un tableau de D3DVERTEXELEMENT9, pclDevice est un IDirect3DDevice9 dynamique, tabAdjacencyOut est un tableau d'entiers sans signe, VertexRemapOut est un entier sans signe, pclCloneMesh est un ID3DXMesh dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvCloneMesh est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXSPMesh_CloneMesh, Options, ptr(tabDeclaration), PTR(pclDevice), ptr(tabAdjacencyOut), &VertexRemapOut, &ppvCloneMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclCloneMesh, ppvCloneMesh, ID3DXMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : CloneMeshFVF
+     procedure_id : 1866503636338233532
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CloneMeshFVF
+      Procédure CloneMeshFVF(Options est un entier sans signe, FVF est un entier sans signe, pclDevice est un IDirect3DDevice9 dynamique, tabAdjacencyOut est un tableau d'entiers sans signe, VertexRemapOut est un entier sans signe, pclCloneMesh est un ID3DXMesh dynamique)
+      	
+      	HRESULT est un entier systeme
+      	ppvCloneMesh est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXSPMesh_CloneMeshFVF, Options, FVF, ptr(pclDevice), PTR(tabAdjacencyOut), &VertexRemapOut, &ppvCloneMesh)
+      	
+      		// Allocation
+      	__BindInterface(pclCloneMesh, ppvCloneMesh, ID3DXMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetDeclaration
+     procedure_id : 1866503636338299114
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDeclaration
+      Procédure GetDeclaration(tabDeclaration est un tableau de MAX_FVF_DECL_SIZE D3DVERTEXELEMENT9)
+      RENVOYER :CALL(ID3DXSPMesh_GetDeclaration, ptr(tabDeclaration))
+     type : 458752
+   -
+     name : GetDevice
+     procedure_id : 1866503636338364697
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDevice
+      Procédure GetDevice(pclDevice est un IDirect3DDevice9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvDevice est un entier systeme
+      
+      	// Appel
+      	HRESULT = :CALL(ID3DXSPMesh_GetDevice, &ppvDevice)
+      	
+      	// Allocation
+      	__BindInterface(pclDevice, ppvDevice, IDirect3DDevice9)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : GetFVF
+     procedure_id : 1866503636338430264
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetFVF
+      Procédure GetFVF()
+      RENVOYER :CALL(ID3DXSPMesh_GetFVF)
+     type : 458752
+   -
+     name : GetNumFaces
+     procedure_id : 1866503640633463159
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumFaces
+      Procédure GetNumFaces()
+      RENVOYER :CALL(ID3DXSPMesh_GetNumFaces)
+     type : 458752
+   -
+     name : GetNumVertices
+     procedure_id : 1866503640633528742
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumVertices
+      Procédure GetNumVertices()
+      RENVOYER :CALL(ID3DXSPMesh_GetNumVertices)
+     type : 458752
+   -
+     name : GetOptions
+     procedure_id : 1866503640633594324
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetOptions
+      Procédure GetOptions()
+      RENVOYER :CALL(ID3DXSPMesh_GetOptions)
+     type : 458752
+   -
+     name : ClonePMesh
+     procedure_id : 1866503713648121053
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ClonePMesh
+      Procédure ClonePMesh(dwOptions est un entier sans signe, tabDeclaration est un tableau de D3DVERTEXELEMENT9, pclDevice est un IDirect3DDevice9 dynamique, dwVertexRemapOut est un entier sans signe, tabErrorsByFace est un tableau de reels sur 4, pclCloneMesh est un ID3DXPMesh dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvCloneMesh est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXSPMesh_ClonePMesh, dwOptions, ptr(tabDeclaration), PTR(pclDevice), &dwVertexRemapOut, ptr(tabErrorsByFace), &ppvCloneMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclCloneMesh, ppvCloneMesh, ID3DXPMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : ClonePMeshFVF
+     procedure_id : 1866503713648186667
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ClonePMeshFVF
+      Procédure ClonePMeshFVF(dwOptions est un entier sans signe, dwFVF est un entier sans signe, pclDevice est un IDirect3DDevice9 dynamique, dwVertexRemapOut est un entier sans signe, tabErrorsByFace est un tableau de reels sur 4, pclCloneMesh est un ID3DXPMesh dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvCloneMesh est un entier systeme
+      
+      	// Appel
+      	HRESULT = :call(ID3DXSPMesh_ClonePMeshFVF, dwOptions, dwFVF, ptr(pclDevice), &dwVertexRemapOut, PTR(tabErrorsByFace), &ppvCloneMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclCloneMesh, ppvCloneMesh, ID3DXPMesh)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : GetMaxFaces
+     procedure_id : 1866503833907299425
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetMaxFaces
+      Procédure GetMaxFaces()
+      RENVOYER :CALL(ID3DXSPMesh_GetMaxFaces)
+     type : 458752
+   -
+     name : GetMaxVertices
+     procedure_id : 1866503833907365023
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetMaxVertices
+      Procédure GetMaxVertices()
+      RENVOYER :CALL(ID3DXSPMesh_GetMaxVertices)
+     type : 458752
+   -
+     name : ReduceFaces
+     procedure_id : 1866503876857113020
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ReduceFaces
+      Procédure ReduceFaces(dwFaces est un entier sans signe)
+      RENVOYER :CALL(ID3DXSPMesh_ReduceFaces, dwFaces)
+     type : 458752
+   -
+     name : ReduceVertices
+     procedure_id : 1866503894037051562
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ReduceVertices
+      Procédure ReduceVertices(Vertices est un entier sans signe)
+      RENVOYER :CALL(ID3DXSPMesh_ReduceVertices, Vertices)
+     type : 458752
+   -
+     name : GetVertexAttributeWeights
+     procedure_id : 1866503906922022683
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetVertexAttributeWeights
+      Procédure GetVertexAttributeWeights(VertexAttributeWeights est un D3DXATTRIBUTEWEIGHTS)
+      RENVOYER :CALL(ID3DXSPMesh_GetVertexAttributeWeights, &VertexAttributeWeights)
+     type : 458752
+   -
+     name : GetVertexWeights
+     procedure_id : 1866503919806993180
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetVertexWeights
+      Procédure GetVertexWeights(tabVertexWeights est un tableau de reels sur 4)
+      RENVOYER :CALL(ID3DXSPMesh_GetVertexWeights, ptr(tabVertexWeights))
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d9990009d7b0c9
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

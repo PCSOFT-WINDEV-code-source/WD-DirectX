@@ -1,0 +1,301 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_02_Vertices
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_02_Vertices
+ identifier : 0x29ec5689b4564f24
+ internal_properties : CAAAAAgAAAAbXSMyvqb2qmf1H+RqIQ88HHymWMwb3AKjbuWoFhJ9MiOeuJBJxW2hauo1vevnlCXjfvPo5MBkGkeZ5ehQpXVkfHm5iClYe41f99mSfCPM610iLjFPppEkZLzqZu2HRlr9Ejeh/E7NlL+ghEgvrup8AhdrHILe2zjzddGjbVW2c/opWIkTIaQIon1UrisLZB5CYmE+MblZQBupYELPTFNFtqQELJgxfP7ZpBHLZ/70vzvMwz4H2uIdVIG42U9JRUYBxzo4p1z+2oXXMGNT+kDYPT00WKDjzGuDftckC2kkXhP7NqSZkksBgdaNDJ9NnPM3iZFP/rofKiuPy6w77E1sa9jzyEEXfBjDrLoq1i0JD3k5R7bu+Tm/CusjH344BMx/gCvjG2Wy7mMbF9TxcK8iVdv0yo2ZUOYCziZAVQL+UBtJyXvYgcQ9LoL1wOruXYMllbT80p8Yq5vM686By91B15cU2m1gm2you2NhmmpqVQ2IaJbKcvqrWEp9rLW03onLSCksESpcPHvTp65iezhjx7zbW21TYOzW43+Dp4reUqUl0EhjmIXha+0WuX8v/V27v7v2P3oUDn2H2i/7tfL1ayD1HPR4W1VaQTxP+XnM5QU3LQqW5gxa/BTglGN6g51urlmawhe1byuZdkJDvPRGcmK8lLEVFCoAT93di1P9SM52yjBdjkMprKDPcdAIKxXBcZFuIKMhFHwksrYDSfVi2gGlVnyM7oEpOW+B+bHVMwubL+G3UUJyTJRkCuNRoZmIDFqMP43nDl+mJF+AYvcofXZ7KChRLx+2MYw7JT4xnjRs4IctUEFpCEhvO/4bC1qnT0Rs8hsfWPqrmevDO7hxVRarWPnpXkZR3g/YpPjWP7kxJ74aM+ZtBy27z7EbFbbCSD8NEbPqdCKCADG9n/xyyM+dezzIziQUyZQpAGiwFe4b3RNtr5zj5QHiOPaVqTgEf0dp/emwNAzcsAvgvE9p8WAf6rA5TSJ/n3LWoSpaW//npxEb9dNw2Gq4CL46Mb+hffcpOkBiprXRjbj+kCg67r/Rbhh/B5CJEn1R9N+5CvYC
+ properties :
+  width : 796
+  height : 606
+  widthClient : 794
+  heightClient : 574
+ controls :
+  -
+    name : BTN_Echap
+    identifier : 0x2c76672b6586d49e
+    internal_properties : CAAAAAgAAACF3IAGG7A4mch93fN7F9yNeDVvao+weGyYWHMzq6cscw3lEQyIu6Gez+FZ5FkqWHg+oVMLNHoNtsP/UBioM5k2gUq4wxHsT0suG8MVvMPSWLeXHzC5OeSQMwfgaGvSjcUvuuCQlyxRNBJWqU472aXQErNoVKi7mptPGC3Dw2Bobq4ZAhVdidaNDx8E3gDCjWmXst2tElsVnBfx1SPnUtAxJtjbnUBwYdJKL3Ti7YNZ+gXV7zNcWlfW2aHu7AOsvBDQ53gjvlcHU/j0G8wOMK8L+/MM7Jzk3UJBWA57ZN2DCIBb2CEnwV6d2ZsRDq91yPktcQgI2uodv5i87w/2akmIRqUBlzwBnIVSFuLDZbWpwTLuQmzeDm9gODHEKoiba8YoYEMyWngNzlm+NgpoPYhvxtoIpdbt6lnghxP4QDmVY0Dq1oI6UrHWnrlK7n0N5Xq92nROSdcZepXqtWsOs/E+0PFqc8OoUh/M26rQKrfH+MH0E4MYKdauyOdrJEc2KwJSDQ5S97QhM/KbnTt2RmwiWepCCIUsyuis/w3hbX0cM4jjbj8brDN6zaEajXcQ0G3mYEsaEL+IjITraXIYbcvS6/JVpLKsjXUbF2HxNiVOH/GjzuzqvRXfdMCk2Zw0AFQXdRwQqQ82Os3IqIqTSgKzqGnbhQnAe2Nftp9RE0wJP0zqIfuIpdVfm5ZsyQSv
+    properties :
+     x : 6
+     y : -55
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAADQZyvpRjJZltgKBVFD+SKMukTEU1n2G2jmPSjnx1ZKdSF2vB36egNKcReVrz/xwpIZdIpZoyUu0CjPxu+MpGLAedmE/39iAmJIcu72BpKoWkpseLXy2lnJGPSMFw==
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : IMG_DX
+    identifier : 0x29ec5689b4584f24
+    internal_properties : CAAAAAgAAADaSawMdHyVwp+RcqA0Z97MzXwdmoBLw8x4Q2roD69H4xvS/QXwIATlnrBYNOyBh02wXDz0bUQjoWAcgujtnz5/0i3te4NNlEK/e8VQk2k4llE/NIwlllbHfTRQsr+hkIml4Y2VpZFFkTeNfD2D+vgfA8yfPq8hTIg7FruusYOM/sXvoTVGGiPSMZbKgYcuje51KcV+B11Gs70yvRXGX8YsPsz0s6jFLex0zh9iWvsynpqN+ttpGWEKcb+vUB49xiurxM8acWT5in2hdf9rNS0nNpXB/606qoRjJugag3Rhb5F/E1cGVzf5F9GCNxsggyLsOudfczv4ukQFfayK11Pm2G08UqClTkrGwqaJLH6qh1jxeQSYSageY63Mun171WppXfV7F1hSqKWVcwiNPyOlmeCsjrhRFoTBa2HXqMLRDM3LoeYdLUGn+3tqFl3ki+FV+KwJkLaao9bl/WzW0So4jX/DjEcmKV/bj4H2pRCtjA/uiCbIo+UDxj5B+KuMywB4nfuhXR4AygEUEvrUgp5LCs6CrwyqG24/F+pNOVPUaCjBEhmMvKhtt2mltCgX0Oc6JM4NKI3HF2LK1DZjtAAw6OCOMEPt4TUXk7lvmm8NztVSq9uI7hi5sWkmID0am3SL9Tk=
+    properties :
+     width : 794
+     height : 574
+    type : 8
+    code_elements :
+     internal_properties : CAAAAAgAAAAjW0JkwpJU6bb4H6gOVG5BbTnI6bKQ5jZqh7f+RvG3nM4Lbyno7TyJc8vGsvwgufYtqM9vZ26FX9b1xFxJoxL2v5dwS+B51GY3n8VNnqblK4fCWhAm64k9EtSiN68W
+     type_code : 8
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x29ec5689b4594f24
+  internal_properties : CAAAAAgAAAD7S+2GOLjEeheq9Y6YZGIRPpLnwB8KUS2je4S4X5oxSGrv51WBBaVxxbk/BTEdUwW0fnnvlhQNIBAuQTAO0S9+S8FMTvDhqkS1JydqFJBfHlbZSFzBkZAjjJ5aIH/cuMnF4Pme57TAyYvjnlkzTJmN5UX9hu+BEl3AsIsso5gsz3oX/KHp1ai/xWZCb54MlUFXdWmT2EOpULKqea/LH9EOlTkaiWsV2aM2/FfXQjTSY3NhAR6zEzKHYKVJwiZULchG0D4LNvRbPifZJPDMmlF6ptz+Rg0QN6SXG5jU7HifIzmkonwDFnOJQw==
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABHSPkb1tqgSCqRR5dekoL1A/XsC+f7MghpgAiNjk2p+zU290UKFNsf/RG2TXCdD8pkYIQPTC757XGg+l+qdKnSy80OOFd+coZmWvKACTZS1VsEXFXvfAVoTQ4G
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAA56G2ZlwXHNi+2z617ZwKatIeyy01XSXO1/4B2a4bh+5Sd8d7NYkTTJI1W9PW9F2MryJyJN/4micVVz82Kb530GTNfF5uamBmhi/DU1nXOfDWo7HJVvj6lCrELKvzndHGOgx6gGzocsVqahUrmMernO34KlXuLzf6qWZcICFwdcfhf7Y36e8X1YgTB9DeBpSxen5SSnxN4pUcxGOponbGjYHvVJzU/p7ZN0Bg=
+     code : |1-
+      
+      //
+      // Cette fenêtre permet d'effectuer le rendu de "vertices".
+      // On aborde ici le concept de "vertex buffer", un objet Direct3D utilisé pour stocker des vertices.
+      //
+      
+      // Objets
+      gpclD3D				est un IDirect3D9 dynamique					// Objet de base permettant de créer un "device"
+      gpclD3DDevice 		est un IDirect3DDevice9 dynamique			// Objet de manipulation du "device"
+      gpclVertexBuffer	est un IDirect3DVertexBuffer9 dynamique		// Objet permettant de stocker des vertices
+      
+      // Structure personnalisée pour stocker un type de vertex 
+      VERTEXPERSO est une structure
+      	x, y, z, rhw sont des reels sur 4			// Position du vertex
+      	color 		 est un entier sans signe		// Couleur du vertex
+      FIN
+      
+      // Décrit le type de notre vertex personnalisé
+      constant
+      	D3DFVF_VERTEXPERSO = D3DFVF_XYZRHW + D3DFVF_DIFFUSE
+      FIN
+   -
+     internal_properties : CAAAAAgAAAA7Evr0L+Ei/amyQ912fk4LCkziAFUSRImNjpwemp3DARRh0SEA7y3zUl0y//FYDaynW61LCBlGuxj1VYITS1OsrxNzN/aNS30LNGwtJ8Fw5wWq3y3n7fN2/zDpNx0JgAozX8AK9F3dHIyGw9h1iNqmfbwwIPq3RDzdorZvS320tw==
+     code : |1-
+      
+      // Initialise Direct3D
+      si D3DInit() ALORS
+      	
+      	// Initialise le "vertex buffer"
+      	si D3DInitVertexBuffer() ALORS
+      		
+      		// Démarre le rendu
+      		d3daffiche()
+      	sinon
+      		SI EnModeTestAutomatique ALORS
+      			TestEcritRésultat(terInfo, "DirectX n'est pas disponible sur cette machine" + RC + ErreurInfo)
+      			Ferme
+      			RETOUR
+      		FIN
+      		
+      		erreur("Impossible d'initialiser le vertex buffer")
+      	FIN	
+      sinon
+      	SI EnModeTestAutomatique ALORS
+      		TestEcritRésultat(terInfo, "DirectX n'est pas disponible sur cette machine")
+      		Ferme
+      		RETOUR
+      	FIN
+      	
+      	Erreur("Impossible d'initialiser Direct3D")
+      FIN
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : D3DInit
+     internal_properties : CAAAAAgAAACfnOtHkXqbUUbSQjc4hhdzzc5aYwq7eIFO/kMP7STOEQVE5BzuYZFn8zRAK66BwYeMCbLD1RZqn4is4/pBFEmkLxQhh28KuO0pZ3+IalRWcRcMZBrCv81TsK83+ktZzZQ2MRNq6o5WpfrXJ2FoVwz5lkgvM+wA0crQW81wV2jcdeSrepCIVV/rVuoqGZOoDDK6G3+8Cg+74b0bZV9Apqvp54vsJP9u3/UaeLLidpqQKkr1ckU=
+     procedure_id : 1867963096331144996
+     type_code : 14
+     code : |1-
+      // Résumé : Initialise Direct3D
+      Procédure D3DInit()
+      
+      	stD3DPP est un D3DPRESENT_PARAMETERS
+      
+      	// Création de l'objet Direct3D
+      	gpclD3D = Direct3DCreate9(D3D_SDK_VERSION)
+      	
+      	// Vérifie si l'objet Direct3D a pu être créé
+      	si gpclD3D = Null ALORS
+      		renvoyer faux	
+      	FIN
+      	
+      	// Paramétrage de la structure utilisée pour créer un "device" Direct3D
+      	stD3DPP:Windowed = vrai														// Mode fenêtré
+      	stD3DPP:SwapEffect = D3DSWAPEFFECT_DISCARD									
+      	stD3DPP:BackBufferFormat = D3DFMT_UNKNOWN
+      	
+      	// Création du "device" Direct3D
+      	// On utilise ici l'écran par défaut (D3DADAPTER_DEFAULT) et un "device" matériel (D3DDEVTYPE_HAL)
+      	si failed(gpclD3D:CreateDevice(D3DADAPTER_DEFAULT, D3DDEVTYPE_HAL, handle(img_dx), D3DCREATE_HARDWARE_VERTEXPROCESSING, stD3DPP, gpclD3DDevice)) _ou_ gpclD3DDevice = null ALORS
+      		renvoyer faux
+      	FIN
+      	
+      renvoyer vrai
+     type : 458752
+   -
+     name : D3DInitVertexBuffer
+     internal_properties : CAAAAAgAAACo7ulruJlB1eKhvHugVkCA080Lva0mwQLDFzROcoBJOzaQ2TbQB5f0DbBNmRc2IA8OpalkE6gu3ARJnUp/zB1ai1ey/UDakKcsAQJFTULUx1bGxlwhtGWiyFyoXcHi5q6UlVsuO/MfnVyL97lBbYZMVNTtacirMHMZJTmD48bvsG2qdE2XhU8DmMefB1/0n/DNFBUgODmlRlPZ1nz7b3j0rGPbT80O+zA1CRGNc6LxDMMnCAIxdiUSo+RswagOAFcrLtAGg0y3+mTRLzJPdGDnPMVdnuLnTuz+SPXZ89FR77agPTrNu4+ASqI=
+     procedure_id : 1867963096331210532
+     type_code : 14
+     code : |1-
+      // Résumé : Initialise le "vertex buffer"
+      Procédure D3DInitVertexBuffer()
+      
+      	pBuffer est un entier système
+      
+      	// Crée les trois vertices pour effectuer le rendu d'un triangle
+      	tabVertices est un tableau de VERTEXPERSO = [ ...
+      		[150.0,  50.0, 0.5, 1.0, D3DCOLOR_ARGB(255, 255, 0, 0)], 	// x, y, z, rhw, couleur
+      		[250.0, 250.0, 0.5, 1.0, D3DCOLOR_ARGB(255, 0, 255, 0)], 
+      		[ 50.0, 250.0, 0.5, 1.0, D3DCOLOR_ARGB(255, 0, 0, 255)]
+      	]
+      	
+      	// Crée le "vertex buffer" en lui allouant la taille mémoire nécessaire pour stocker les trois vertices (fonction sizeOf)
+      	si failed(gpclD3DDevice:CreateVertexBuffer(sizeof(tabVertices), 0, D3DFVF_VERTEXPERSO, D3DPOOL_DEFAULT, gpclVertexBuffer, null)) _ou_ gpclVertexBuffer = Null ALORS
+      		renvoyer faux
+      	FIN
+      	
+      	// On doit maintenant remplir le "vertex buffer" avec nos trois vertices
+      	
+      	// On commence donc par récupérer le pointeur mémoire du "vertex buffer"
+      	si failed(gpclVertexBuffer:Lock(0, sizeof(tabVertices), pBuffer, 0)) ALORS
+      		renvoyer faux
+      	FIN
+      	
+      	// On copie le tableau des vertices dans le "vertex buffer"
+      	transfert(pBuffer, &tabVertices, sizeof(tabVertices))
+      	
+      	// On libère le pointeur mémoire du "vertex buffer"
+      	gpclVertexBuffer:Unlock()
+      	
+      renvoyer vrai
+     type : 458752
+   -
+     name : D3DAffiche
+     internal_properties : CAAAAAgAAADeNakG+AZMOwfIBzfIVCx4bE3+oYaMWmzDg3gAFeg2MxSMfhlBPWqngbKxltou1Ig1xyuNK9rDU0lppBYJUAfDjv3QZ2CNVEuf4E16zusliIry6wpBKplkFvgYUS7CsMn0/o+S/yOxdK8CT8KXy/0rdKAB1DwIfvDReI7IvTu12wvqCoMyHbCY3ySdY6H9sScNBgAk4XpxXXzQqMhuI7wrN3ZP8BbuBDl+x1zi06RKPVgzScKOk2Eu0bX7yPZp+KO4OVOuwG95J1TcxEpRn/W0ztteaQsk0iFLS+88tQrSQxuvJEhk9xHA0pef
+     procedure_id : 1867963096331276068
+     type_code : 14
+     code : |1-
+      // Résumé : Rendu et affichage du "device" Direct3D
+      // Procédure automatique :
+      // La procédure est exécutée manuellement, lors d'un appel dans le code
+      // Elle sera répétée en boucle, en attendant  entre chaque appel
+      // Chaque appel suivant exécute une seule fois la procédure, sans timer
+      // 
+      Procédure D3DAffiche()
+      
+      	stVertex est un vertexperso
+      
+      	// Si le "device" Direct3D est invalide, on sort
+      	si gpclD3DDevice = null alors retour
+      	
+      	// Efface le "backbuffer" avec une couleur bleue
+      	gpclD3DDevice:Clear(0, null, D3DCLEAR_TARGET, D3DCOLOR_XRGB(0, 0, 255), 1.0, 0.0)
+      	
+      	// Démarre la scène
+      	si SUCCEEDED(gpclD3DDevice:BeginScene()) ALORS
+      		
+      		// On dessine le triangle stocké dans le "vertex buffer"
+      		
+      		// Pour cela, on indique au "device" la source des données
+      		gpclD3DDevice:SetStreamSource(0, gpclVertexBuffer, 0, sizeof(stVertex))
+      		
+      		// On indique le format des vertices
+      		gpclD3DDevice:SetFVF(D3DFVF_VERTEXPERSO)
+      		
+      		// Et on dessine les vertices
+      		gpclD3DDevice:DrawPrimitive(D3DPT_TRIANGLELIST, 0, 1)
+      		
+      		// Fin de la scène
+      		gpclD3DDevice:EndScene()
+      	FIN
+      	
+      	// Affichage du "backbuffer"
+      	gpclD3DDevice:Present(null, null, null, null)
+     type : 458752
+  templates :
+   -
+     name : FEN_02_Vertices
+     identifier : 0x1543d3fb366e25b5
+     code_elements :
+      internal_properties : CAAAAAgAAABNl6pxR2DKWRb0vMqcS5/zagckXmkwhjA+MYUP6QBsmbkEQ6J6ZqIuhQFkBSN+oftur2Y+ojr4/+GsgmBloOpI+UZs1ynLWxKQI8+8cpixTy5yXVDvd36ENT/vHpBSWrPjgJEYNflimTZHmWoMxcfkfHHv8ccZ7KLRZ34z7DamwbZJirOsDoi1LLEwlkVhCBJkGmIg6GxXuv9ASO/0tnGTxzCjAGV2hZNsiQtEEkG5
+      type_code : 1
+      p_codes :
+       -
+         code : |1-
+          
+       -
+         code : |1-
+          
+         type : 34
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+       -
+         code : |1-
+          
+         type : 2
+       -
+         code : |1-
+          
+         type : 11
+       -
+         code : |1-
+          
+         type : 12
+       -
+         code : |1-
+          
+         type : 17
+       -
+         code : |1-
+          
+         type : 13
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAAD41EFVWFF7SAwzd+8+tTlPQzQOqrePoffe3zujAQsXVPKhnbz1Vze9uX1xEHfGZ53L/ImwBVh7QM0ijTy26nuXl6nmgRuF687jh7MrAxkw2m0o/GTSE2RmszekPw==
+  original_name : FEN_Fenêtre1
+resources :
+ string_res :
+  identifier : 0x10d999010fe2b7af
+  internal_properties : CAAAAAgAAACa/HBK/CUtN70EwGNqHiA5Ong4hctn68fiPi5bW47/f5kdMy4EhFbbsLDr9WzJV0mJiQ==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

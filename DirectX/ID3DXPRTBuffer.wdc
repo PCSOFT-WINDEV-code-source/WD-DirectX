@@ -1,0 +1,219 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXPRTBuffer
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19e5a6900467fd7f
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXPRTBuffer est une classe
+      	un objet IUnknown
+      	
+      FIN
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ID3DXPRTBuffer (VTABLE)
+      	ID3DXPRTBuffer_GetNumSamples		= ::IUnknown___IDXBASE + 1
+      	ID3DXPRTBuffer_GetNumCoeffs			= ::IUnknown___IDXBASE + 2
+      	ID3DXPRTBuffer_GetNumChannels		= ::IUnknown___IDXBASE + 3
+      	ID3DXPRTBuffer_IsTexture			= ::IUnknown___IDXBASE + 4
+      	ID3DXPRTBuffer_GetWidth				= ::IUnknown___IDXBASE + 5
+      	ID3DXPRTBuffer_GetHeight			= ::IUnknown___IDXBASE + 6
+      	ID3DXPRTBuffer_Resize				= ::IUnknown___IDXBASE + 7
+      	ID3DXPRTBuffer_LockBuffer			= ::IUnknown___IDXBASE + 8
+      	ID3DXPRTBuffer_UnlockBuffer			= ::IUnknown___IDXBASE + 9
+      	ID3DXPRTBuffer_ScaleBuffer			= ::IUnknown___IDXBASE + 10
+      	ID3DXPRTBuffer_AddBuffer			= ::IUnknown___IDXBASE + 11
+      	ID3DXPRTBuffer_AttachGH				= ::IUnknown___IDXBASE + 12
+      	ID3DXPRTBuffer_ReleaseGH			= ::IUnknown___IDXBASE + 13
+      	ID3DXPRTBuffer_EvalGH				= ::IUnknown___IDXBASE + 14
+      	ID3DXPRTBuffer_ExtractTexture		= ::IUnknown___IDXBASE + 15
+      	ID3DXPRTBuffer_ExtractToMesh		= ::IUnknown___IDXBASE + 16
+      	ID3DXPRTBuffer___IDXBASE			= ::IUnknown___IDXBASE + 16
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1866080758094429567
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Mesh.IID_ID3DXPRTBuffer
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1866080758094495103
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetNumSamples
+     procedure_id : 1866523045374477250
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumSamples
+      Procédure GetNumSamples()
+      renvoyer :call(ID3DXPRTBuffer_GetNumSamples)
+     type : 458752
+   -
+     name : GetNumCoeffs
+     procedure_id : 1866523053964479188
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumCoeffs
+      Procédure GetNumCoeffs()
+      RENVOYER :CALL(ID3DXPRTBuffer_GetNumCoeffs)
+     type : 458752
+   -
+     name : GetNumChannels
+     procedure_id : 1866523062554481172
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumChannels
+      Procédure GetNumChannels()
+      RENVOYER :CALL(ID3DXPRTBuffer_GetNumChannels)
+     type : 458752
+   -
+     name : IsTexture
+     procedure_id : 1866523071144483281
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode IsTexture
+      Procédure IsTexture()
+      RENVOYER :CALL(ID3DXPRTBuffer_IsTexture)
+     type : 458752
+   -
+     name : GetWidth
+     procedure_id : 1866523079734485172
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetWidth
+      Procédure GetWidth()
+      RENVOYER :CALL(ID3DXPRTBuffer_GetWidth)
+     type : 458752
+   -
+     name : GetHeight
+     procedure_id : 1866523084029519689
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetHeight
+      Procédure GetHeight()
+      RENVOYER :CALL(ID3DXPRTBuffer_GetHeight)
+     type : 458752
+   -
+     name : Resize
+     internal_properties : CAAAAAgAAABKtXZQVT6tyBc2O8Y+U4Qrb3itwYAR7D6lOwdbCYsOwwv40B3BmXfXwoIz6UG+99iTSAPLvxfr6ul+HLcRYvlt/smcKdS4aYbHv1xCl1LX3/QTRk+/jxPhYQupGEZxdGsw94UpEXtg6XqTuw==
+     procedure_id : 1866523092619522079
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Resize
+      Procédure Resize(NewSize est un entier sans signe)
+      RENVOYER :CALL(ID3DXPRTBuffer_Resize, NewSize)
+     type : 458752
+   -
+     name : LockBuffer
+     procedure_id : 1866523114094428900
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode LockBuffer
+      Procédure LockBuffer(Start est un entier sans signe, NumSamples est un entier sans signe, pData est un entier système)
+      RENVOYER :CALL(ID3DXPRTBuffer_LockBuffer, Start, NumSamples, &pData)
+     type : 458752
+   -
+     name : UnlockBuffer
+     procedure_id : 1866523122684430978
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UnlockBuffer
+      Procédure UnlockBuffer()
+      RENVOYER :CALL(ID3DXPRTBuffer_UnlockBuffer)
+     type : 458752
+   -
+     name : ScaleBuffer
+     procedure_id : 1866523131274432931
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ScaleBuffer
+      Procédure ScaleBuffer(Scale est un réel sur  4)
+      RENVOYER :CALL(ID3DXPRTBuffer_ScaleBuffer, Scale)
+     type : 458752
+   -
+     name : AddBuffer
+     procedure_id : 1866523139864434994
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode AddBuffer
+      Procédure AddBuffer(pclBuffer est un ID3DXPRTBuffer dynamique)
+      RENVOYER :CALL(ID3DXPRTBuffer_AddBuffer, ptr(pclBuffer))
+     type : 458752
+   -
+     name : AttachGH
+     procedure_id : 1866523148454437212
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode AttachGH
+      Procédure AttachGH(pclGH est un ID3DXTextureGutterHelper dynamique)
+      RENVOYER :CALL(ID3DXPRTBuffer_AttachGH, ptr(pclGH))
+     type : 458752
+   -
+     name : ReleaseGH
+     procedure_id : 1866523157044439555
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ReleaseGH
+      Procédure ReleaseGH()
+      RENVOYER :CALL(ID3DXPRTBuffer_ReleaseGH)
+     type : 458752
+   -
+     name : EvalGH
+     procedure_id : 1866523165634441742
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode EvalGH
+      Procédure EvalGH()
+      RENVOYER :CALL(ID3DXPRTBuffer_EvalGH)
+     type : 458752
+   -
+     name : ExtractTexture
+     procedure_id : 1866523187109347970
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ExtractTexture
+      Procédure ExtractTexture(Channel est un entier sans signe, StartCoefficient est un entier sans signe, NumCoefficients est un entier sans signe, pclTexture est un IDirect3DTexture9 dynamique)
+      RENVOYER :CALL(ID3DXPRTBuffer_ExtractTexture, Channel, StartCoefficient, NumCoefficients, ptr(pclTexture))
+     type : 458752
+   -
+     name : ExtractToMesh
+     procedure_id : 1866523195699350064
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ExtractToMesh
+      Procédure ExtractToMesh(NumCoefficients est un entier sans signe, Usage est un entier sans signe, UsageStartIndex est un entier sans signe, pclScene est un ID3DXMesh dynamique)
+      RENVOYER :CALL(ID3DXPRTBuffer_ExtractToMesh, NumCoefficients, Usage, UsageStartIndex, ptr(pclScene))
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000d32b3d7
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

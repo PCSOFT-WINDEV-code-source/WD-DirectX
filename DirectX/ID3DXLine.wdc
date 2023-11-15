@@ -1,0 +1,239 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXLine
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19dc9d690163b918
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXLine est une classe
+      	un objet IUnknown
+      	
+      FIN
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ID3DXLine (VTABLE)
+      	ID3DXLine_GetDevice				= ::IUnknown___IDXBASE + 1
+      	ID3DXLine_Begin					= ::IUnknown___IDXBASE + 2
+      	ID3DXLine_Draw					= ::IUnknown___IDXBASE + 3
+      	ID3DXLine_DrawTransform			= ::IUnknown___IDXBASE + 4
+      	ID3DXLine_SetPattern			= ::IUnknown___IDXBASE + 5
+      	ID3DXLine_GetPattern			= ::IUnknown___IDXBASE + 6
+      	ID3DXLine_SetPatternScale		= ::IUnknown___IDXBASE + 7
+      	ID3DXLine_GetPatternScale		= ::IUnknown___IDXBASE + 8
+      	ID3DXLine_SetWidth				= ::IUnknown___IDXBASE + 9
+      	ID3DXLine_GetWidth				= ::IUnknown___IDXBASE + 10
+      	ID3DXLine_SetAntialias			= ::IUnknown___IDXBASE + 11
+      	ID3DXLine_GetAntialias			= ::IUnknown___IDXBASE + 12
+      	ID3DXLine_SetGLLines			= ::IUnknown___IDXBASE + 13
+      	ID3DXLine_GetGLLines			= ::IUnknown___IDXBASE + 14
+      	ID3DXLine_End					= ::IUnknown___IDXBASE + 15
+      	ID3DXLine_OnLostDevice			= ::IUnknown___IDXBASE + 16
+      	ID3DXLine_OnResetDevice			= ::IUnknown___IDXBASE + 17
+      	ID3DXLine___IDXBASE				= ::IUnknown___IDXBASE + 17
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863537420145047832
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Core.IID_ID3DXLine
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863537420145113368
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetDevice
+     procedure_id : 1866450099547283261
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDevice
+      Procédure GetDevice(pclDevice est un IDirect3DDevice9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvDevice est un entier systeme
+      
+      	// Appel
+      	HRESULT = :call(ID3DXLine_GetDevice, &ppvDevice)
+      	
+      	// Allocation
+      	__BindInterface(pclDevice, ppvDevice, IDirect3DDevice9)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : Begin
+     internal_properties : CAAAAAgAAABKtXZQVT6tyBc2O8Y+U4Qrb3itwYAR7D6lOwdbCYsOwwv40B3BmXfXwoIz6UG+99iTSAPLvxfr6ul+HLcRYvlt/smcKdS4aYbHv1xCl1LX3/QTRk+/jxPhYQupGEZxdGsw94UpEXtg6XqTuw==
+     procedure_id : 1866450142497030789
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Begin
+      Procédure Begin()
+      renvoyer :CALL(ID3DXLine_Begin)
+     type : 458752
+   -
+     name : Draw
+     procedure_id : 1866450146792065555
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Draw
+      Procédure Draw(tabVertexList est un tableau de D3DXVECTOR2, dwVertexListCount est un entier sans signe, Color est un entier sans signe)
+      RENVOYER :CALL(ID3DXLine_Draw, ptr(tabVertexList), dwVertexListCount, Color)
+     type : 458752
+   -
+     name : DrawTransform
+     procedure_id : 1866450155382067431
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode DrawTransform
+      Procédure DrawTransform(tabVertexList est un tableau de D3DXVECTOR2, dwVertexListCount est un entier sans signe, Transform est un d3dxmatrix, Color est un entier sans signe)
+      RENVOYER :CALL(ID3DXLine_DrawTransform, PTR(tabVertexList), dwVertexListCount, &Transform, Color)
+     type : 458752
+   -
+     name : SetPattern
+     procedure_id : 1866450163972069212
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetPattern
+      Procédure SetPattern(dwPattern est un entier sans signe)
+      RENVOYER :CALL(ID3DXLine_SetPattern, dwPattern)
+     type : 458752
+   -
+     name : GetPattern
+     procedure_id : 1866450168267103589
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetPattern 
+      Procédure GetPattern()
+      RENVOYER :CALL(ID3DXLine_GetPattern)
+     type : 458752
+   -
+     name : SetPatternScale
+     procedure_id : 1866450176857105230
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetPatternScale
+      Procédure SetPatternScale(fPatternScale est un reel sur 4)
+      RENVOYER :CALL(ID3DXLine_SetPatternScale, fPatternScale)
+     type : 458752
+   -
+     name : GetPatternScale
+     procedure_id : 1866450185447107058
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetPatternScale
+      Procédure GetPatternScale()
+      RENVOYER :CALL(ID3DXLine_GetPatternScale)
+     type : 458752
+   -
+     name : SetWidth
+     procedure_id : 1866450198332077368
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetWidth
+      Procédure SetWidth(fWidth est un reel sur 4)
+      RENVOYER :CALL(ID3DXLine_SetWidth, fWidth)
+     type : 458752
+   -
+     name : GetWidth
+     procedure_id : 1866450202627112057
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetWidth
+      Procédure GetWidth()
+      RENVOYER :CALL(ID3DXLine_GetWidth)
+     type : 458752
+   -
+     name : SetAntialias
+     procedure_id : 1866450211217113901
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetAntialias
+      Procédure SetAntialias(bAntiAlias est un booléen)
+      RENVOYER :CALL(ID3DXLine_SetAntialias, bAntiAlias)
+     type : 458752
+   -
+     name : GetAntialias
+     procedure_id : 1866450219807115667
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetAntialias
+      Procédure GetAntialias()
+      RENVOYER :CALL(ID3DXLine_GetAntialias)
+     type : 458752
+   -
+     name : SetGLLines
+     procedure_id : 1866450232692086024
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetGLLines
+      Procédure SetGLLines(bGLLines est un booléen)
+      RENVOYER :CALL(ID3DXLine_SetGLLines, bGLLines)
+     type : 458752
+   -
+     name : GetGLLines
+     procedure_id : 1866450236987120400
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetGLLines
+      Procédure GetGLLines()
+      RENVOYER :CALL(ID3DXLine_GetGLLines)
+     type : 458752
+   -
+     name : End_
+     procedure_id : 1866450245577122509
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode End
+      Procédure End_()
+      RENVOYER :CALL(ID3DXLine_End)
+     type : 458752
+   -
+     name : OnLostDevice
+     procedure_id : 1866450262757060958
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode OnLostDevice
+      Procédure OnLostDevice()
+      RENVOYER :CALL(ID3DXLine_OnLostDevice)
+     type : 458752
+   -
+     name : OnResetDevice
+     procedure_id : 1866450271347062739
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode OnResetDevice
+      Procédure OnResetDevice()
+      RENVOYER :CALL(ID3DXLine_OnResetDevice)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000bc6b26f
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,121 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXEffectCompiler
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19df4ab81e53aee4
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXEffectCompiler est une classe
+      	un objet ID3DXBaseEffect
+      	
+      Fin
+      
+      constant
+      	
+      	// Méthodes de l'interface ID3DXEffectCompiler (VTABLE)
+      	ID3DXEffectCompiler_SetLiteral								= ::ID3DXBaseEffect___IDXBASE + 1
+      	ID3DXEffectCompiler_GetLiteral								= ::ID3DXBaseEffect___IDXBASE + 2
+      	ID3DXEffectCompiler_CompileEffect							= ::ID3DXBaseEffect___IDXBASE + 3
+      	ID3DXEffectCompiler_CompileShader							= ::ID3DXBaseEffect___IDXBASE + 4	
+      	ID3DXEffectCompiler___IDXBASE								= ::ID3DXBaseEffect___IDXBASE + 4
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1864290925397978852
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur ID3DXBaseEffect(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Effect.IID_ID3DXEffectCompiler
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1864290925398044388
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : SetLiteral
+     procedure_id : 1866475671794939108
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetLiteral
+      Procédure SetLiteral(hParameter est un entier sans signe, Literal est un booléen)
+      renvoyer :call(ID3DXEffectCompiler_SetLiteral, hParameter, Literal)
+     type : 458752
+   -
+     name : GetLiteral
+     procedure_id : 1866475680384941764
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetLiteral
+      Procédure GetLiteral(hParameter est un entier sans signe, Literal est un booléen)
+      RENVOYER :CALL(ID3DXEffectCompiler_GetLiteral, hParameter, &Literal)
+     type : 458752
+   -
+     name : CompileEffect
+     procedure_id : 1866475688974878165
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CompileEffect
+      Procédure CompileEffect(Flags est un entier sans signe, pclEffect est un id3dxbuffer dynamique, pclErrorMsgs est un ID3DXBuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvEffect, ppvErrorMsgs sont des entiers systeme
+      
+      	// Appel
+      	HRESULT = :CALL(ID3DXEffectCompiler_CompileEffect, Flags, &ppvEffect, &ppvErrorMsgs)
+      	
+      	// Allocation
+      	__BindInterface(pclEffect, ppvEffect, id3dxbuffer)
+      	__BindInterface(pclErrorMsgs, ppvErrorMsgs, id3dxbuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : CompileShader
+     procedure_id : 1866475697564880072
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CompileShader
+      Procédure CompileShader(hFunction est un entier sans signe, Target est une chaine, Flags est un entier sans signe, pclShader est un id3dxbuffer dynamique, pclErrorMsgs est un id3dxbuffer dynamique, pclConstantTable est un ID3DXConstantTable dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader, ppvErrorMsgs, ppvConstantTable sont des entiers systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXEffectCompiler_CompileShader, hFunction, &Target, Flags, &ppvShader, &ppvErrorMsgs, &ppvConstantTable)
+      	
+      	// Allocation
+      	__BindInterface(pclShader, ppvShader, ID3DXBuffer)
+      	__BindInterface(pclErrorMsgs, ppvErrorMsgs, ID3DXBuffer)
+      	__BindInterface(pclConstantTable, ppvConstantTable, ID3DXConstantTable)
+      
+      RENVOYER HRESULT
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d9990009bcb0ba
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

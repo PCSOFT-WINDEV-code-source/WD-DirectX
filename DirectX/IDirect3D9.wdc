@@ -1,0 +1,208 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IDirect3D9
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19db565a00bc2f08
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      IDirect3D9 est une classe
+      	un objet IUnknown
+      	
+      Fin
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface IDirect3D9 (VTABLE)
+      	IDirect3D9_RegisterSoftwareDevice 		= ::IUnknown___IDXBASE + 1
+      	IDirect3D9_GetAdapterCount 				= ::IUnknown___IDXBASE + 2
+      	IDirect3D9_GetAdapterIdentifier 		= ::IUnknown___IDXBASE + 3
+      	IDirect3D9_GetAdapterModeCount 			= ::IUnknown___IDXBASE + 4
+      	IDirect3D9_EnumAdapterModes 			= ::IUnknown___IDXBASE + 5
+      	IDirect3D9_GetAdapterDisplayMode 		= ::IUnknown___IDXBASE + 6
+      	IDirect3D9_CheckDeviceType 				= ::IUnknown___IDXBASE + 7
+      	IDirect3D9_CheckDeviceFormat 			= ::IUnknown___IDXBASE + 8
+      	IDirect3D9_CheckDeviceMultiSampleType 	= ::IUnknown___IDXBASE + 9
+      	IDirect3D9_CheckDepthStencilMatch 		= ::IUnknown___IDXBASE + 10
+      	IDirect3D9_CheckDeviceFormatConversion 	= ::IUnknown___IDXBASE + 11
+      	IDirect3D9_GetDeviceCaps 				= ::IUnknown___IDXBASE + 12
+      	IDirect3D9_GetAdapterMonitor 			= ::IUnknown___IDXBASE + 13
+      	IDirect3D9_CreateDevice 				= ::IUnknown___IDXBASE + 14
+      	IDirect3D9___IDXBASE					= ::IUnknown___IDXBASE + 14
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863177815407275784
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3D9.IID_IDirect3D9
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863177815407341320
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : RegisterSoftwareDevice
+     procedure_id : 1866801956348967153
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode RegisterSoftwareDevice
+      Procédure RegisterSoftwareDevice(pInitializeFunction est un entier système)
+      renvoyer :call(IDirect3D9_RegisterSoftwareDevice, pInitializeFunction)
+     type : 458752
+   -
+     name : GetAdapterCount
+     procedure_id : 1866801964938969325
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetAdapterCount
+      Procédure GetAdapterCount()
+      RENVOYER :CALL(IDirect3D9_GetAdapterCount)
+     type : 458752
+   -
+     name : GetAdapterIdentifier
+     procedure_id : 1866801973528971622
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetAdapterIdentifier
+      Procédure GetAdapterIdentifier(Adapter est un entier sans signe, Flags est un entier sans signe, Identifier est un D3DADAPTER_IDENTIFIER9)
+      RENVOYER :CALL(IDirect3D9_GetAdapterIdentifier, Adapter, Flags, &Identifier)
+     type : 458752
+   -
+     name : GetAdapterModeCount
+     procedure_id : 1866801982118973856
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetAdapterModeCount
+      Procédure GetAdapterModeCount(Adapter est un entier sans signe, Format est un entier sans signe)
+      RENVOYER :CALL(IDirect3D9_GetAdapterModeCount, Adapter, Format)
+     type : 458752
+   -
+     name : EnumAdapterModes
+     procedure_id : 1866801990708975715
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode EnumAdapterModes
+      Procédure EnumAdapterModes(Adapter est un entier sans signe, Format est un entier sans signe, Mode est un entier sans signe, stMode est un D3DDISPLAYMODE)
+      RENVOYER :CALL(IDirect3D9_EnumAdapterModes, Adapter, Format, Mode, &stMode)
+     type : 458752
+   -
+     name : GetAdapterDisplayMode
+     procedure_id : 1866801999298977684
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetAdapterDisplayMode
+      Procédure GetAdapterDisplayMode(Adapter est un entier sans signe, Mode est un D3DDISPLAYMODE)
+      	RENVOYER :CALL(IDirect3D9_GetAdapterDisplayMode, Adapter, &Mode)
+     type : 458752
+   -
+     name : CheckDeviceType
+     procedure_id : 1866802003594012419
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CheckDeviceType
+      Procédure CheckDeviceType(Adapter est un entier sans signe, DevType est un entier sans signe, AdapterFormat est un entier sans signe, BackBufferFormat est un entier sans signe, bWindowed est un booléen)
+      RENVOYER :CALL(IDirect3D9_CheckDeviceType, Adapter, DevType, AdapterFormat, BackBufferFormat, bWindowed)
+     type : 458752
+   -
+     name : CheckDeviceFormat
+     procedure_id : 1866802012184014232
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CheckDeviceFormat
+      Procédure CheckDeviceFormat(Adapter est un entier sans signe, DeviceType est un entier sans signe, AdapterFormat est un entier sans signe, Usage est un entier sans signe, RType est un entier sans signe, CheckFormat est un entier sans signe)
+      RENVOYER :CALL(IDirect3D9_CheckDeviceFormat, Adapter, DeviceType, AdapterFormat, Usage, RType, CheckFormat)
+     type : 458752
+   -
+     name : CheckDeviceMultiSampleType
+     procedure_id : 1866802020774016107
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CheckDeviceMultiSampleType
+      Procédure CheckDeviceMultiSampleType(Adapter est un entier sans signe, DeviceType est un entier sans signe, SurfaceFormat est un entier sans signe, Windowed est un booléen, MultiSampleType est un entier sans signe, QualityLevels est un entier sans signe)
+      RENVOYER :CALL(IDirect3D9_CheckDeviceMultiSampleType, Adapter, DeviceType, SurfaceFormat, Windowed, MultiSampleType, &QualityLevels)
+     type : 458752
+   -
+     name : CheckDepthStencilMatch
+     procedure_id : 1866802029364018029
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CheckDepthStencilMatch
+      Procédure CheckDepthStencilMatch(Adapter est un entier sans signe, DeviceType est un entier sans signe, AdapterFormat est un entier sans signe, RenderTargetFormat est un entier sans signe, DepthStencilFormat est un entier sans signe)
+      RENVOYER :CALL(IDirect3D9_CheckDepthStencilMatch, Adapter, DeviceType, AdapterFormat, RenderTargetFormat, DepthStencilFormat)
+     type : 458752
+   -
+     name : CheckDeviceFormatConversion
+     procedure_id : 1866802033659052546
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CheckDeviceFormatConversion
+      Procédure CheckDeviceFormatConversion(Adapter est un entier sans signe, DeviceType est un entier sans signe, SourceFormat est un entier sans signe, TargetFormat est un entier sans signe)
+      RENVOYER :CALL(IDirect3D9_CheckDeviceFormatConversion, Adapter, DeviceType, SourceFormat, TargetFormat)
+     type : 458752
+   -
+     name : GetDeviceCaps
+     procedure_id : 1866802042249054796
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDeviceCaps
+      Procédure GetDeviceCaps(Adapter est un entier sans signe, DeviceType est un entier sans signe, Caps est un D3DCAPS9)
+      RENVOYER :CALL(IDirect3D9_GetDeviceCaps, Adapter, DeviceType, &Caps)
+     type : 458752
+   -
+     name : GetAdapterMonitor
+     procedure_id : 1866802055134024856
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetAdapterMonitor
+      Procédure GetAdapterMonitor(Adapter est un entier sans signe)
+      RENVOYER :CALL(IDirect3D9_GetAdapterMonitor, Adapter)
+     type : 458752
+   -
+     name : CreateDevice
+     procedure_id : 1866802063724027152
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CreateDevice
+      Procédure CreateDevice(Adapter est un entier sans signe, DeviceType est un entier sans signe, hFocusWindow est un entier, BehaviorFlags est un entier sans signe, PresentationParameters est un D3DPRESENT_PARAMETERS, pclReturnDevice est un IDirect3DDevice9 dynamique)
+      
+      	HRESULT est un entier système
+      	ppvReturnDevice est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3D9_CreateDevice, Adapter, DeviceType, hFocusWindow, BehaviorFlags, &PresentationParameters, &ppvReturnDevice)
+      	
+      	// Allocation
+      	__BindInterface(pclReturnDevice, ppvReturnDevice, IDirect3DDevice9)
+      
+      RENVOYER HRESULT
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000cd3b379
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

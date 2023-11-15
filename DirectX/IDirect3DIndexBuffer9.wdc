@@ -1,0 +1,91 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IDirect3DIndexBuffer9
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19ddc8d70e366181
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      IDirect3DIndexBuffer9 est une classe
+      	un objet IDirect3DResource9
+      	
+      Fin
+      
+      constant
+      	
+      	// Méthodes de l'interface IDirect3DIndexBuffer9 (VTABLE)
+      	IDirect3DIndexBuffer9_Lock				= ::IDirect3DResource9___IDXBASE + 1
+      	IDirect3DIndexBuffer9_Unlock			= ::IDirect3DResource9___IDXBASE + 2
+      	IDirect3DIndexBuffer9_GetDesc			= ::IDirect3DResource9___IDXBASE + 3
+      	IDirect3DIndexBuffer9___IDXBASE			= ::IDirect3DResource9___IDXBASE + 3
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863866646783287681
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IDirect3DResource9(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3D9.IID_IDirect3DIndexBuffer9
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863866646783353217
+     type_code : 28
+     code : |1+
+      Procédure Destructeur()
+      
+     type : 655360
+   -
+     name : GetDesc
+     procedure_id : 1866835461416960567
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDesc
+      Procédure GetDesc(Desc est un D3DIndEXBUFFER_DESC)
+      RENVOYER :CALL(IDirect3DIndexBuffer9_GetDesc, &Desc)
+     type : 458752
+   -
+     name : Lock
+     internal_properties : CAAAAAgAAABKtXZQVT6tyBc2O8Y+U4Qrb3itwYAR7D6lOwdbCYsOwwv40B3BmXfXwoIz6UG+99iTSAPLvxfr6ul+HLcRYvlt/smcKdS4aYbHv1xCl1LX3/QTRk+/jxPhYQupGEZxdGsw94UpEXtg6XqTuw==
+     procedure_id : 1866835461417026134
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Lock
+      Procédure Lock(OffsetToLock est un entier sans signe, SizeToLock est un entier sans signe, pbData est un entier système, Flags est un entier sans signe)
+      renvoyer :call(IDirect3DIndexBuffer9_Lock, OffsetToLock, SizeToLock, &pbData, Flags)
+     type : 458752
+   -
+     name : Unlock
+     internal_properties : CAAAAAgAAABKtXZQVT6tyBc2O8Y+U4Qrb3itwYAR7D6lOwdbCYsOwwv40B3BmXfXwoIz6UG+99iTSAPLvxfr6ul+HLcRYvlt/smcKdS4aYbHv1xCl1LX3/QTRk+/jxPhYQupGEZxdGsw94UpEXtg6XqTuw==
+     procedure_id : 1866835461417091701
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Unlock
+      Procédure Unlock()
+      RENVOYER :CALL(IDirect3DIndexBuffer9_Unlock)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d9990009a0b09a
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

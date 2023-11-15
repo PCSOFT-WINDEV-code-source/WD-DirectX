@@ -1,0 +1,131 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXMesh
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19ddcdab12cd3f42
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXMesh est une classe
+      	un objet ID3DXBaseMesh
+      	
+      FIN
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ID3DXMesh (VTABLE)
+      	ID3DXMesh_LockAttributeBuffer			= ::ID3DXBaseMesh___IDXBASE + 1
+      	ID3DXMesh_UnlockAttributeBuffer			= ::ID3DXBaseMesh___IDXBASE + 2
+      	ID3DXMesh_Optimize						= ::ID3DXBaseMesh___IDXBASE + 3
+      	ID3DXMesh_OptimizeInplace				= ::ID3DXBaseMesh___IDXBASE + 4
+      	ID3DXMesh_SetAttributeTable				= ::ID3DXBaseMesh___IDXBASE + 5
+      	ID3DXMesh___IDXBASE						= ::ID3DXBaseMesh___IDXBASE + 5
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863871955439861570
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur ID3DXBaseMesh(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Mesh.IID_ID3DXMesh
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863871955439927106
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : LockAttributeBuffer
+     procedure_id : 1866496532456477752
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode LockAttributeBuffer
+      Procédure LockAttributeBuffer(Flags est un entier sans signe, ppData est un entier systeme)
+      renvoyer :call(ID3DXMesh_LockAttributeBuffer, Flags, &ppData)
+     type : 458752
+   -
+     name : UnlockAttributeBuffer
+     procedure_id : 1866496545341447797
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UnlockAttributeBuffer
+      Procédure UnlockAttributeBuffer()
+      RENVOYER :CALL(ID3DXMesh_UnlockAttributeBuffer)
+     type : 458752
+   -
+     name : Optimize
+     internal_properties : CAAAAAgAAABKtXZQVT6tyBc2O8Y+U4Qrb3itwYAR7D6lOwdbCYsOwwv40B3BmXfXwoIz6UG+99iTSAPLvxfr6ul+HLcRYvlt/smcKdS4aYbHv1xCl1LX3/QTRk+/jxPhYQupGEZxdGsw94UpEXtg6XqTuw==
+     procedure_id : 1866496553931449719
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Optimize
+      Procédure Optimize(Flags est un entier sans signe, tabAdjacencyIn est un tableau d'entiers sans signe, tabAdjacencyOut est un tableau d'entiers sans signe, FaceRemap est un entier sans signe, pclVertexRemap est un id3dxbuffer dynamique, pclOptMesh est un id3dxmesh dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvVertexRemap est un entier systeme
+      	ppvOptMesh est un entier systeme
+      
+      	// Appel
+      	HRESULT = :CALL(ID3DXMesh_Optimize, Flags, ptr(tabAdjacencyIn), ptr(tabAdjacencyOut), &FaceRemap, &ppvVertexRemap, &ppvOptMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclVertexRemap, ppvVertexRemap, ID3DXBuffer)
+      	__BindInterface(pclOptMesh, ppvOptMesh, ID3DXMesh)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : OptimizeInplace
+     procedure_id : 1866496562521451782
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode OptimizeInplace
+      Procédure OptimizeInplace(Flags est un entier sans signe, tabAdjacencyIn est un tableau d'entiers sans signe, tabAdjacencyOut est un tableau d'entiers sans signe, FaceRemap est un entier sans signe, pclVertexRemap est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvVertexRemap est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXMesh_OptimizeInplace, Flags, PTR(tabAdjacencyIn), PTR(tabAdjacencyOut), &FaceRemap, &ppvVertexRemap)
+      	
+      	// Allocation
+      	__BindInterface(pclVertexRemap, ppvVertexRemap, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : SetAttributeTable
+     procedure_id : 1866496571111453719
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetAttributeTable
+      Procédure SetAttributeTable(tabAttribTable est un tableau de D3DXATTRIBUTERANGE, cAttribTableSize est un entier sans signe)
+      RENVOYER :CALL(ID3DXMesh_SetAttributeTable, ptr(tabAttribTable), cAttribTableSize)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000c24b2cd
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

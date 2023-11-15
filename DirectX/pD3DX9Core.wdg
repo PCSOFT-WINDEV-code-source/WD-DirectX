@@ -1,0 +1,251 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pD3DX9Core
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x19dc952505156f0e
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAAJu8LmZDSe2N0SeBYcTmTouOURxmTJUT7aHvfk3txdAN7j06vvHtAfMRsK67WEAWDwlUa6hsx6VgLQbgvxG/yOWTrjUoTxrvJ4xuBlzI05zCMU4CXe33xz8rnEsbvRdBM5Iy/2l1WduR0li0CXjnO8TMOrPOhYPCadXjV6ZNYttH0FgS9GU9CR+5XR3Db7Z75mPcLpplGuPZOzfPDvG3XcmmqnR0lRoSeOR5RKjtSdqjeujJqQP2j6TtgKtQmaHoHVCpv1jr/ZUYI/frXrQXHrfRiSfcMykDBkhHzUSQ/goP9WM0EB0AHKzEBk0iqHd/9Xpm78Hq+KWnQnxYWIB8KLkxz1Y8dFGxwkb8tkkOiZcpOyNUmXDyo02+/y8wlRR8I5KtmMsHXrClwWRnjJx0dI4ILEYQc6zdboHfcti/t1OOrC/8QI2zE0JMnYiIP7rx4QUiGsQNRWegNRBqp4rliYTCLsf1cwRJ31IbymRHEj+FKUccWaaCC05M9T/1VbfH5gYuMhTPa64x+FTWrIRxPyRMraBYSNd4Xfsbc1kznLo2uQES5wobdojtnEH+HnKkFN6IYSfwOvMVLhO6p/xWLuDtpT24mLlbMn7icaeEz3LndfiShg8urAcxhL4IzrWb3pvgJDZY6nB2VAOZu6XrXvIjqdsUdOMbb2idwidWvr59UMavdvZebxm3nErrLaYym99/JyQcU1McqfcMiCUShOac4+aQKtyEri6z7q7rPi32BRyNTMfkbLSHb0sa//4EQO6aZcs5lcDAR/qnH4ci56/TnsI5fM/xKdeJES0zJZFEqAc4ZV7FrMOoHjM+cc8Y6XJ45jcuS4+KZ0tOjMJBWUsIRKZrwNrKaWMiLOYsY/xif+zCVFxfZdR4IR5Lfx3qfaqxpL1YeYHu6gnckvR/JLBGT9zuxoyBJpDTvJzFy+iybOxoP4c6LibmO+Cf29gLAfHDmDvpbSR9nVJHnHmiMxVxbwEfN3ppuZVGfuaGGjBn3ElSJj60KUQpuIuGfnmtJHcbldgBzAkz8mF3eZTVVzipWf+geYxnTbqL4h6SHUp11kIpF4RSFvsaF9rNQFRMcCuxEEAIKmq9L/ipOqTTVVXut6lHD7BPe+lKNTtGOuAHw2FtOd+k5WTvk2KBTUqLWdzVPZim2ZXlU49dC8urOa1YOkt8Krky3rZBIY+njO9StusXs/tZGTMlDS2Eo/0e2Ckk83fUYJ8LaCMDOiQ7fpEyUM8RlL88XhhNXO
+     code : |1-
+      
+      constant
+      	D3DX_VERSION 		= 0x902
+      	D3DX_SDK_VERSION	= 38
+      	
+      	LF_FACESIZE			= 32
+      	
+      	D3DXSPRITE_DONOTSAVESTATE               = 1 	// (1 << 0)
+      	D3DXSPRITE_DONOTMODIFY_RENDERSTATE      = 2 	// (1 << 1)
+      	D3DXSPRITE_OBJECTSPACE                  = 4		// (1 << 2)
+      	D3DXSPRITE_BILLBOARD                    = 8		// (1 << 3)
+      	D3DXSPRITE_ALPHABLEND                   = 16	// (1 << 4)
+      	D3DXSPRITE_SORT_TEXTURE                 = 32	// (1 << 5)
+      	D3DXSPRITE_SORT_DEPTH_FRONTTOBACK       = 64	// (1 << 6)
+      	D3DXSPRITE_SORT_DEPTH_BACKTOFRONT       = 128	// (1 << 7)
+      	D3DXSPRITE_DO_NOT_ADDREF_TEXTURE        = 256	// (1 << 8)
+      FIN
+      
+      ////////////////////////////////////////////////////
+      // <IIDs>
+      
+      IID_ID3DXBuffer 			est un IID
+      IID_ID3DXSprite 			est un IID
+      IID_ID3DXFont 				est un IID
+      IID_ID3DXRenderToSurface 	est un IID
+      IID_ID3DXRenderToEnvMap 	est un IID
+      IID_ID3DXLine			 	est un IID
+      
+      // </IIDs>
+      
+      /////////////////////////////////////////////////////
+      // <Déclaration des IIDs>
+      
+      DEFINE_GUID(IID_ID3DXBuffer, 			0x8ba5fb08, 0x5195, 0x40e2, 0xac, 0x58, 0x0d, 0x98, 0x9c, 0x3a, 0x01, 0x02)
+      DEFINE_GUID(IID_ID3DXSprite, 			0xba0b762d, 0x7d28, 0x43ec, 0xb9, 0xdc, 0x2f, 0x84, 0x44, 0x3b, 0x06, 0x14)
+      DEFINE_GUID(IID_ID3DXFont, 				0xd79dbb70, 0x5f21, 0x4d36, 0xbb, 0xc2, 0xff, 0x52, 0x5c, 0x21, 0x3c, 0xdc)
+      DEFINE_GUID(IID_ID3DXRenderToSurface, 	0x6985f346, 0x2c3d, 0x43b3, 0xbe, 0x8b, 0xda, 0xae, 0x8a, 0x03, 0xd8, 0x94)
+      DEFINE_GUID(IID_ID3DXRenderToEnvMap, 	0x313f1b4b, 0xc7b0, 0x4fa2, 0x9d, 0x9d, 0x8d, 0x38, 0x0b, 0x64, 0x38, 0x5e)
+      DEFINE_GUID(IID_ID3DXLine, 				0xd379ba7f, 0x9042, 0x4ac4, 0x9f, 0x5e, 0x58, 0x19, 0x2a, 0x4c, 0x6b, 0xd8)
+      
+      // </Déclaration des IIDs>
+     type : 720896
+  procedures :
+   -
+     name : D3DXCheckVersion
+     procedure_id : 1863528615524069633
+     type_code : 15
+     code : |1+
+      // Résumé : Fonction D3DXCheckVersion
+      Procédure D3DXCheckVersion(D3DSdkVersion est un entier sans signe, D3DXSdkVersion est un entier sans signe)
+      renvoyer api(pD3D9.D3DX9, "D3DXCheckVersion", D3DSdkVersion, D3DXSdkVersion)
+     type : 458752
+   -
+     name : D3DXDebugMute
+     procedure_id : 1863528881812103200
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXDebugMute
+      Procédure D3DXDebugMute(Mute est un booléen)
+      renvoyer api(pD3D9.D3DX9, "D3DXDebugMute", Mute)
+     type : 458752
+   -
+     name : D3DXGetDriverLevel
+     procedure_id : 1863529182461129554
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGetDriverLevel
+      Procédure D3DXGetDriverLevel(pclDevice est un IDirect3DDevice9 dynamique)
+      renvoyer api(pD3D9.D3DX9, "D3DXGetDriverLevel", PTR(pclDevice))
+     type : 458752
+   -
+     name : D3DXCreateSprite
+     procedure_id : 1863531261232928391
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateSprite
+      Procédure D3DXCreateSprite(pclDevice est un IDirect3DDevice9 dynamique, pclSprite est un ID3DXSprite dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXSprite est un entier système
+      
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreateSprite", PTR(pclDevice), &ppvID3DXSprite)
+      	
+      	// Allocation
+      	__BindInterface(pclSprite, ppvID3DXSprite, ID3DXSprite)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXCreateFontA
+     procedure_id : 1863533481658333792
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateFontA
+      Procédure D3DXCreateFontA(pclDevice est un IDirect3DDevice9 dynamique, Height est un entier, Width est un entier sans signe, Weight est un entier sans signe, MipLevels est un entier sans signe, Italic est un booléen, Charset est un entier sur 1 sans signe, OutputPrecision est un entier sur 1 sans signe, Quality est un entier sur 1 sans signe, PitchAndFamily est un entier sur 1 sans signe, FaceName est une chaine, pclFont est un ID3DXFont dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXFont est un entier système
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateFontA", PTR(pclDevice), Height, Width, Weight, MipLevels, Italic, Charset, OutputPrecision, Quality, PitchAndFamily, &FaceName, &ppvID3DXFont)
+      	
+      	// Allocation
+      	__BindInterface(pclFont, ppvID3DXFont, ID3DXFont)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateFontW
+     procedure_id : 1863534271932368656
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateFontW
+      Procédure D3DXCreateFontW(pclDevice est un IDirect3DDevice9 dynamique, Height est un entier, Width est un entier sans signe, Weight est un entier sans signe, MipLevels est un entier sans signe, Italic est un booléen, Charset est un entier sur 1 sans signe, OutputPrecision est un entier sur 1 sans signe, Quality est un entier sur 1 sans signe, PitchAndFamily est un entier sur 1 sans signe, FaceName est une chaine unicode, pclFont est un ID3DXFont dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXFont est un entier système
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateFontW", PTR(pclDevice), Height, Width, Weight, MipLevels, Italic, Charset, OutputPrecision, Quality, PitchAndFamily, &FaceName, &ppvID3DXFont)
+      	
+      	// Allocation
+      	__BindInterface(pclFont, ppvID3DXFont, ID3DXFont)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateFontIndirectA
+     procedure_id : 1863534465205942685
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateFontIndirectA
+      Procédure D3DXCreateFontIndirectA(pclDevice est un IDirect3DDevice9 dynamique, Desc est un D3DXFONT_DESCA, pclFont est un ID3DXFont dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXFont est un entier système
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateFontIndirectA", PTR(pclDevice), &Desc, &ppvID3DXFont)
+      	
+      	// Allocation
+      	__BindInterface(pclFont, ppvID3DXFont, ID3DXFont)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateFontIndirectW
+     procedure_id : 1863534615529898353
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateFontIndirectW
+      Procédure D3DXCreateFontIndirectW(pclDevice est un IDirect3DDevice9 dynamique, Desc est un D3DXFONT_DESCW, pclFont est un ID3DXFont dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXFont est un entier système
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateFontIndirectW", PTR(pclDevice), &Desc, &ppvID3DXFont)
+      	
+      	// Allocation
+      	__BindInterface(pclFont, ppvID3DXFont, ID3DXFont)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateRenderToSurface
+     procedure_id : 1863535569013908085
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateRenderToSurface
+      Procédure D3DXCreateRenderToSurface(pclDevice est un IDirect3DDevice9 dynamique, Width est un entier sans signe, Height est un entier sans signe, Format est un entier sans signe, DepthStencil est un booléen, DepthStencilFormat est un entier sans signe, pclRenderToSurface est un ID3DXRenderToSurface dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXRenderToSurface est un entier système
+      
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreateRenderToSurface", PTR(pclDevice), Width, Height, Format, DepthStencil, DepthStencilFormat, &ppvID3DXRenderToSurface)
+      	
+      	// Allocation
+      	__BindInterface(pclRenderToSurface, ppvID3DXRenderToSurface, ID3DXRenderToSurface)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXCreateRenderToEnvMap
+     procedure_id : 1863536775898295969
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateRenderToEnvMap
+      Procédure D3DXCreateRenderToEnvMap(pclDevice est un IDirect3DDevice9 dynamique, Size est un entier, MipLevels est un entier sans signe, Format est un entier sans signe, DepthStencil est un booléen, DepthStencilFormat est un entier sans signe, pclRenderToEnvMap est un ID3DXRenderToEnvMap dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXRenderToEnvMap est un entier système
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateRenderToEnvMap", PTR(pclDevice), Size, MipLevels, Format, DepthStencil, DepthStencilFormat, &ppvID3DXRenderToEnvMap)
+      	
+      	// Allocation
+      	__BindInterface(pclRenderToEnvMap, ppvID3DXRenderToEnvMap, ID3DXRenderToEnvMap)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateLine
+     procedure_id : 1863537957016084524
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateLine
+      Procédure D3DXCreateLine(pclDevice est un IDirect3DDevice9 dynamique, pclLine est un ID3DXLine dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXLine est un entier système
+      
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreateLine", PTR(pclDevice), &ppvID3DXLine)
+      	
+      	// Allocation
+      	__BindInterface(pclLine, ppvID3DXLine, ID3DXLine)
+      	
+      renvoyer HRESULT
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x10d999010f4ab6b5
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

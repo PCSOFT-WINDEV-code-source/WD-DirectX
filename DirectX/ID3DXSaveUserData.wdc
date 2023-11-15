@@ -1,0 +1,137 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXSaveUserData
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19e5ee36021adcdb
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXSaveUserData est une classe
+      	un objet objetcom
+      	
+      Fin
+      
+      constant
+      	
+      	// Méthodes de l'interface ID3DXSaveUserData (VTABLE)
+      	ID3DXSaveUserData_AddFrameChildData				= 0	
+      	ID3DXSaveUserData_AddMeshChildData				= 1
+      	ID3DXSaveUserData_AddTopLevelDataObjectsPre		= 2
+      	ID3DXSaveUserData_AddTopLevelDataObjectsPost	= 3
+      	ID3DXSaveUserData_RegisterTemplates				= 4
+      	ID3DXSaveUserData_SaveTemplates					= 5
+      	ID3DXSaveUserData___IDXBASE						= 5
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1866159536346029275
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur ObjetCOM(nInterface)
+      	
+      	// Définition de l'IID
+      	VariableRAZ(:IID)
+      	
+      	// Enregistre l'objet auprès de la collection
+      	ID3DXSaveUserData_RegisterObject(objet)
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1866159536346094811
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : AddFrameChildData
+     procedure_id : 1866159536346160347
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle AddFrameChildData
+      Procédure virtuelle AddFrameChildData(stFrame est un d3dxframe <utile>, pclXofSave est un ID3DXFileSaveObject dynamique <utile>, pclXofFrameData est un ID3DXFileSaveData dynamique <utile>)
+      renvoyer e_notimpl
+     type : 458752
+   -
+     name : AddMeshChildData
+     procedure_id : 1866159536346225883
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle AddMeshChildData
+      Procédure VIRTUELLE AddMeshChildData(stMeshContainer est un D3DXMESHCONTAINER <utile>, pclXofSave est un ID3DXFileSaveObject dynamique <utile>, pclXofFrameData est un ID3DXFileSaveData dynamique <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : AddTopLevelDataObjectsPre
+     procedure_id : 1866159536346291419
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle AddTopLevelDataObjectsPre
+      Procédure VIRTUELLE AddTopLevelDataObjectsPre(pclXofSave est un ID3DXFileSaveObject dynamique <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : AddTopLevelDataObjectsPost
+     procedure_id : 1866160343800199836
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle AddTopLevelDataObjectsPost
+      Procédure VIRTUELLE AddTopLevelDataObjectsPost(pclXofSave est un ID3DXFileSaveObject dynamique <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : RegisterTemplates
+     procedure_id : 1866160386749948207
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle RegisterTemplates
+      Procédure VIRTUELLE RegisterTemplates(pclXFileAPI est un ID3DXFile dynamique <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : SaveTemplates
+     procedure_id : 1866160416814791336
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle SaveTemplates
+      Procédure VIRTUELLE SaveTemplates(pclXofSave est un ID3DXFileSaveObject dynamique <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+  properties :
+   -
+     name : Interface
+     identifier : 0x19e5ee36021bdcdb
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         Procédure virtuelle Interface()
+         renvoyer PTRVTbl(objet)
+        type : 1966080
+      -
+        code : |1-
+         
+        type : 2031616
+     template_refs : []
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d9990009fbb0f8
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

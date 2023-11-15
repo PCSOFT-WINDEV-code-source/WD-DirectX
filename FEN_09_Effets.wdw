@@ -1,0 +1,557 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_09_Effets
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_09_Effets
+ identifier : 0x29edfc910a01f2c5
+ internal_properties : CAAAAAgAAABEhv0F8CQJDz51YQYvS2cmJSWfy695lUNAxz3Hk4sbUu4NZRPIxxdex4ljwR9hIUUd6bmL9ypVQI0w4QDL6mQnbdz3UplXNtBrs1IzlYouQpwl6TvpJePoIwYQD4ZL/+8EzI/925KSPhJ3+J4AaFkae3sOPAA7THy9Txb109Eh7/88r/jV2dhgYwQbOot5BES9+0ntrY1yruyeucnQ6YhYSAQJBTkiq2uAcOrJT1ZQzgrCFzvyk7SF0SSaY2rHH+norslsVCMAlU1+9UVA6B5pgXFoG5G+PAcuZ2jE7ox5577HCq5ZAxyg4NhDdMNKDiELzsBMShWG0x2+NGiWLuHfsKeVC/QdPeN/pyt7qGS1g6Jq2rKgF1Mrw+lupjZCnD1Eq3lHd/9GUvFtv+qCB0XqxrQPneYbgQizg0mRMbgxpAkNUhGpMOERUBeetHZb0pwJ/5z1lgZHO0bXKcbPLYQ0FalSHBtvVabf84aGLXOuzyBZBppJWFem29i4KHTkaE1sgkL9LffG+wBLAu9mQdXZNysEnjcj3F2SY9a+6sK1mOlmNMEauMEEhS/p2AgJHAdfSCO7PCBsQ1vQeQaApBYGFHu8aXg9rlf3hJemquAx7ZPsXNDUO3PLGjnBJcjdaO+xqzS7V6EyfSoMj+++RV70u9ZLNkGIJ/2qO9pOsS4Yw0sLFsdbIKMLDylGfBpdvv8uYUOfmRUl+KLFHpQbfILf+nv+SXXC1eLjBnvp6x3okUVen/Dmse7I0+FBRFvVBMHvAExckzj9CJc6QzqC13eXRBLmOgIuTQgAhQPSbL40rDoiEVN2aBnkQE+1RdAwH3RDITyDd5gWqsrjJ0SSJFf/venbV8mNhmpkABD7mIoHStqdY2imqDhzro/+DAzb8ASK6vk8WXJUj8QNKkmJxO82hh/MbKAgUifxwNP+oaUxTa/iJa7e3O2/rhlmjp6i48Rnhh0dFI06k9ZKsQSQ5mfE900831tDUMZgSi9wdVlcoq5DL1qhFlqEJ8UaduQbgLOL+1gT4kNv8EYCZSeokcMcbEy5Fqw6CRtygVqknDcK6U7f3zFo8d28/QwDmz8=
+ properties :
+  width : 796
+  height : 606
+  widthClient : 794
+  heightClient : 574
+ controls :
+  -
+    name : BTN_Echap
+    identifier : 0x2c76674a6d264cd9
+    internal_properties : CAAAAAgAAAATHXGI542BShhwvx5rIR4sztnBidu77/uUfa9+PHE+2lvxpcf6fGgROXCAr9aItNGTIs/lEJtIzBKtSP/ub3W1BhLRPCcDmmveR85eALwzO1w0VYfqP7LQeOI6MSBhwIHVHFJ1Bzd0DU3U3hVHoyg2SD+X5cIR+WWlUsn238BU3aX1Iht3r5EsDv90RLdAk4lfnoi1DUEsEdDnmQ1JavKGUwH8Z87Nwv4Qw0zVyKaqFS5pMIKU1IvW/+CsdWMSTaS6pkdPT1CNlzTuoyqZd9lrzMCRnrekzlgQO4CWe6J8pWF2A4dV09m1s/wwSjG5ndV7nJPtte8E1xugWMu2WdYH4zhrffuPuOhTRI1fw3RI3vSF0nB/BBjwDHffuxCuOt8Ii+u95Ub7FinZ3OebwFn0eXbjQdJjbCkXxcaqfFsPfFqFe5rFVDdpjauAksuck3AfSREAeNbhPP+MEKqyDIuLjksaob1jzX3Hot9FFmbxIVQqXXpPsCAr7bFQUwC/EmehDvOJKekFNTezsNqJux+uLxPijLeS8tkl3PABjDvXPdKZJvBLOrsEcTp+YAKR0WBcTt8yRS6Xku4/PVWXNZhV7FvYl6fqc8sAzY3XzPj7Tbdz6lRcRknKfMCfxlzSZF420pvR8gtVy0lxlwChyAnAmSeavVisiDNrfDd4hykyEEvgYzIxxa9POQ==
+    properties :
+     x : 6
+     y : -55
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAADQZyvpRjJZltgKBVFD+SKMukTEU1n2G2jmPSjnx1ZKdSF2vB36egNKcReVrz/xwpIZdIpZoyUu0CjPxu+MpGLAedmE/39iAmJIcu72BpKoWkpseLXy2lnJGPSMFw==
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : IMG_DX
+    identifier : 0x29edfc910a03f2c5
+    internal_properties : CAAAAAgAAACbhmNNtTPUgVxQMW9rJp2NDj1cW0GKgguxmtEPJpbecKRDZD6pJ1TL8JgmeKZbUaF2HASAAZpbNxYwkMhzvdDzSF1xS//LrKhVH3dUcU9iuvs7XAiRLO49i8imjlVHBmn/9eWJyYNp6/3ZAgl1ZJYPUZT7qv+HTErhaiGyq91uIlsfSbVqWMs8f1q00V0cs77j8V0mK9/iFS+aDw1MXZQsHLy452yHaS7ufiFGgBmUEoB9GttpF0l0J6sxrGyrrEOV2MeKBe69kDtFT1NZQwvv9E2lt3HIakKZEpo2cXJXP/8nDy+OlScHgWlMG1FuRfbOGXBgfDDzx0Wkjol3eMBLnwiBXyXWhaMLMQ++Ydcj/AcUBokFyi83cIQ9B4LEApsgkKIg/ImJwerEPAV6QCCqJCMB+z3KxQU+lhZgMcfKjbTGtnsKFuD0cOYvFx6RVC5I4+GmZe/JwAuEBhmzWlNtcFIYISwvaKwYyk4P/gVGqbpNCcepgPCMVzWyTcCdOO1PkNhGyu8Xg+qro2dx8y/MpbUbeCVXzoPgqm9mEog50atYm6r9EcM2HDTyRbnslSRJG0fmsSpaGHvN0Xfsizv1b28dodwUCtzO2nCw2y7MD5SRapzJrdn48Chl4f5Z2jXKtHg=
+    properties :
+     width : 794
+     height : 574
+    type : 8
+    code_elements :
+     internal_properties : CAAAAAgAAAAjW0JkwpJU6bb4H6gOVG5BbTnI6bKQ5jZqh7f+RvG3nM4Lbyno7TyJc8vGsvwgufYtqM9vZ26FX9b1xFxJoxL2v5dwS+B51GY3n8VNnqblK4fCWhAm64k9EtSiN68W
+     type_code : 8
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x29edfc910a04f2c5
+  internal_properties : CAAAAAgAAAD7S+2GOLjEeheq9Y6YZGIRPpLnwB8KUS2je4S4X5oxSGrv51WBBaVxxbk/BTEdUwW0fnnvlhQNIBAuQTAO0S9+S8FMTvDhqkS1JydqFJBfHlbZSFzBkZAjjJ5aIH/cuMnF4Pme57TAyYvjnlkzTJmN5UX9hu+BEl3AsIsso5gsz3oX/KHp1ai/xWZCb54MlUFXdWmT2EOpULKqea/LH9EOlTkaiWsV2aM2/FfXQjTSY3NhAR6zEzKHYKVJwiZULchG0D4LNvRbPifZJPDMmlF6ptz+Rg0QN6SXG5jU7HifIzmkonwDFnOJQw==
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABHSPkb1tqgSCqRR5dekoL1A/XsC+f7MghpgAiNjk2p+zU290UKFNsf/RG2TXCdD8pkYIQPTC757XGg+l+qdKnSy80OOFd+coZmWvKACTZS1VsEXFXvfAVoTQ4G
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAABh0UD2nOFitifYNd/p2a7gPrksUiEDb4KDjKb7243sboWX34U1RUKgXI4kbNfZcXn3gNAJQJMkH5OqTkYdKiA2TsBeEttyT4pwoQ1snkqli0Xqm83AtOWYNFnHnXyku4tHWQzDmiIxCuSeiS498GosCacfeQRBaj7H4Kid9jmmDQJsgv6viwkGb0OGTMj+Ds0=
+     code : |1-
+      
+      //
+      // Les deux premiers exemple nous ont permit d'initialiser Direct3D et de dessiner des vertices en 2D
+      // On aborde ici le concept de "matrices", un objet Direct3D utilisé pour effectuer différentes transformations sur les objets d'une scène 3D.
+      //
+      
+      // Objets
+      gpclD3D				est un IDirect3D9 dynamique						// Objet de base permettant de créer un "device"
+      gpclD3DDevice 		est un IDirect3DDevice9 dynamique				// Objet de manipulation du "device"
+      gpclObjet			est un ID3DXMesh dynamique						// Objet sur lequel sera rendu l'effet
+      gpclEffet			est un ID3DXEffect dynamique					// Effet
+      gpclTexture			est un IDirect3DTexture9 dynamique				// Texture nécessaire pour l'effet
+      gpclTextureCol		est un IDirect3DTexture9 dynamique				// Texture nécessaire pour l'effet
+      gpclTexte			est un id3dxFont dynamique						// Gestion du texte
+   -
+     code : |1-
+      
+      sErreur est une chaine
+      
+      // Initialise Direct3D
+      si D3DInit() ALORS
+      	
+      	// Initialise les effets
+      	si D3DInitEffets(sErreur) ALORS
+      		
+      		// Démarre le rendu
+      		d3daffiche()
+      	sinon
+      		
+      		SI EnModeTestAutomatique ALORS
+      			TestEcritRésultat(terInfo, "Impossible d'initialiser les effets :" + sErreur)
+      			Ferme
+      			retour
+      		sinon
+      			erreur("Impossible d'initialiser les effets :", sErreur)
+      		FIN
+      	FIN	
+      sinon
+      	SI EnModeTestAutomatique ALORS
+      		TestEcritRésultat(terInfo, "DirectX n'est pas disponible sur cette machine")
+      		Ferme
+      		RETOUR
+      	FIN
+      	
+      	Erreur("Impossible d'initialiser Direct3D")
+      FIN
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : D3DInit
+     internal_properties : CAAAAAgAAADboAMfhBl6h80qawwT4XdIuEx6VF84hWr3zJdkTiL5mb6zcCKNmGiHBMExdswRsbjoDp//zpoHBjZd83S9FTH+O/2wGULzUafneMeT4+7A8zjlpKtyyDTLb1z1Ty7wZaNFXN+CBwf9iUqhFgF5aAUTWYSxzazDZdr+J1D5OOSDVFFGnyN3CFFGKrCarSU8UG3io606YmALDc7QZh+SL+dTBZ3M1nJJfYFjgvGVdW156dI23UYLJEHtQ4WfZaueleE9w/447A==
+     procedure_id : 1868427120566792901
+     type_code : 14
+     code : |1-
+      // Résumé : Initialise Direct3D
+      Procédure D3DInit()
+      
+      	stD3DPP 	est un D3DPRESENT_PARAMETERS
+      	stD3DCaps	est un D3DCAPS9
+      
+      	// Création de l'objet Direct3D
+      	gpclD3D = Direct3DCreate9(D3D_SDK_VERSION)
+      	
+      	// Vérifie si l'objet Direct3D a pu être créé
+      	si gpclD3D = Null ALORS
+      		renvoyer faux	
+      	FIN
+      	
+      	// Paramétrage de la structure utilisée pour créer un "device" Direct3D
+      	stD3DPP:Windowed = vrai														// Mode fenêtré
+      	stD3DPP:SwapEffect = D3DSWAPEFFECT_DISCARD									
+      	stD3DPP:BackBufferFormat = D3DFMT_UNKNOWN
+      	stD3DPP:EnableAutoDepthStencil = Vrai										// Z-Buffer
+      	stD3DPP:AutoDepthStencilFormat = D3DFMT_D16
+      	stD3DPP:BackBufferWidth = img_dx..largeur
+      	stD3DPP:BackBufferHeight = img_dx..largeur
+      	
+      	// Création du "device" Direct3D
+      	// On utilise ici l'écran par défaut (D3DADAPTER_DEFAULT) et un "device" matériel (D3DDEVTYPE_HAL)
+      	si failed(gpclD3D:CreateDevice(D3DADAPTER_DEFAULT, D3DDEVTYPE_HAL, handle(img_dx), D3DCREATE_HARDWARE_VERTEXPROCESSING, stD3DPP, gpclD3DDevice)) _ou_ gpclD3DDevice = null ALORS
+      		renvoyer faux
+      	FIN
+      		
+      	// Récupère les capacités de la carte graphique
+      	gpclD3DDevice:GetDeviceCaps(stD3DCaps)
+      	
+      	// Version du "pixel shader" installé
+      	si D3DSHADER_VERSION_MAJOR(stD3DCaps:PixelShaderVersion) < 2 ALORS
+      		renvoyer faux
+      	FIN
+      	
+      	// Version du "vertex shader" installé
+      	SI D3DSHADER_VERSION_MAJOR(stD3DCaps:vertexShaderVersion) < 2 ALORS
+      		RENVOYER Faux
+      	FIN
+      
+      	// Active le "culling"
+      	gpclD3DDevice:SetRenderState(D3DRS_CULLMODE, D3DCULL_CCW)
+      	
+      	// Active l'éclairage Direct3D
+      	gpclD3DDevice:SetRenderState(D3DRS_LIGHTING, vrai)
+      	
+      	// Active le Z-Buffer
+      	gpclD3DDevice:SetRenderState(D3DRS_ZENABLE, Vrai)
+      	
+      	// Pour éviter les artefacts
+      	gpclD3DDevice:SetRenderState(D3DRS_WRAP0, D3DWRAPCOORD_0)
+      	gpclD3DDevice:SetRenderState(D3DRS_WRAP1, D3DWRAPCOORD_0)
+      		
+      	// Initialise le texte
+      	si pas D3DInitTexte() ALORS
+      		renvoyer faux
+      	FIN
+      		
+      	// Initialise l'éclairage
+      	D3DInitEclairage()
+      	
+      	//
+      	// Chargement de l'objet
+      	//
+      	
+      	pclObjet est un ID3DXMesh dynamique
+      	SI FAILED(D3DXCreateTorus(gpclD3DDevice, 0.4, 1.5, 36, 360, pclObjet, Null)) _OU_ pclObjet = Null ALORS
+      		RENVOYER Faux
+      	FIN
+      	
+      	// Calcule les normals du mesh (pour la lumière)
+      	SI FAILED(D3DXComputeNormals(pclObjet, Null)) ALORS
+      		RENVOYER Faux
+      	FIN 
+      	
+      	// Ajoute les coordonnées de texture
+      	si failed(pclObjet:CloneMeshFVF(0, D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_TEX1, gpclD3DDevice, gpclObjet)) _ou_ gpclObjet = null alors
+      		renvoyer faux
+      	fin
+      	
+      	// Calcule les coordonnées de texture
+      	D3DXComputeTorusTexture(gpclObjet, 1.5)
+      	
+      renvoyer vrai
+     type : 458752
+   -
+     name : D3DInitEffets
+     internal_properties : CAAAAAgAAADsvkAOEVQcSHJSO2PySo1Kt3081QdJoOQ3j9KJxBIsbyIr1tXBL7UWr2aO2QjsNf14lWFCqurQ52YEKV2sbaneLbGIsat96qluwbgz+cDVi9g0o3b/Vvr9Nnwr4HYJpgx+In4TfiDnkPHEq9M3
+     procedure_id : 1868427120566858437
+     type_code : 14
+     code : |1-
+      // Résumé : Initialise le "vertex buffer"
+      Procédure D3DInitEffets(sErreur est une chaine)
+      
+      	rRéel est un reel sur 4
+      	nSize est un entier sans signe = sizeOf(rRéel)
+      	pclErrors est un ID3DXBuffer dynamique
+      
+      	//
+      	// Chargement des textures
+      	//
+      	
+      	si failed(D3DXCreateTextureFromFileA(gpclD3DDevice, fRepExe() + ["\"] + "effet_cartoon.bmp", gpclTexture)) _ou_ gpclTexture = null alors
+      	
+      		sErreur = "Impossible de charger l'objet (3)"	
+      		renvoyer faux
+      	FIN
+      		
+      	SI FAILED(D3DXCreateTextureFromFileA(gpclD3DDevice, fRepExe() + ["\"] + "ColorMap.jpg", gpclTextureCol)) _OU_ gpclTextureCol = Null ALORS
+      		
+      		sErreur = "Impossible de charger l'objet (4)"	
+      		RENVOYER Faux
+      	FIN
+      	
+      	//
+      	// Chargement de l'effet
+      	//
+      		
+      	si failed(D3DXCreateEffectFromFileA(gpclD3DDevice, frepexe() + ["\"] + "effet_cartoon.fx", null, null, null, null, gpclEffet, pclErrors)) _ou_ gpcleffet = null alors
+      		si pclErrors <> null alors
+      			sErreur = chainerecupere(pclErrors:GetBufferPointer(), crAdresseASCIIZ)
+      		sinon
+      			sErreur = erreurinfo(errmessagesysteme)
+      		fin
+      		renvoyer faux
+      	FIN
+      			
+      renvoyer vrai
+      
+      FIN:
+      	SAFE_RELEASE(pclErrors)
+     type : 458752
+   -
+     name : D3DAffiche
+     internal_properties : CAAAAAgAAAAAfchabITmjglOQ0S8d1hhOwmbxg4/Ykz9Fn9uogCWYoc0xnwZtkyiKV6vrJpaqhfNCGS7wV0pT1rcrNsjTjgZJpyfzhEk582oRTOL6HVOA+dTtoEGhLsPLn8ZHLCfZO+5P+Y9jgf4n5qgxKzydM+0B3JQiKS8yKZWUrJr12AssUNKKieRyF/FzSUa8Ib+ZbxHc9ZZyci1RBEzC7NwxlP6qCPbAYj+rSvSWg==
+     procedure_id : 1868427120566923973
+     type_code : 14
+     code : |1-
+      // Résumé : Rendu et affichage du "device" Direct3D
+      // Procédure automatique :
+      // La procédure est exécutée manuellement, lors d'un appel dans le code
+      // Elle sera répétée en boucle, en attendant  entre chaque appel
+      // Chaque appel suivant exécute une seule fois la procédure, sans timer
+      // 
+      Procédure D3DAffiche()
+      
+      	// Si le "device" Direct3D est invalide, on sort
+      	si gpclD3DDevice = null alors retour
+      	
+      	// Efface le "backbuffer" avec une couleur bleue
+      	gpclD3DDevice:Clear(0, Null, D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER, D3DCOLOR_XRGB(0, 0, 255), 1.0, 0.0)
+      
+      	// Début du dessin
+      	gpclD3DDevice:BeginScene()
+      
+      	// Affiche le texte
+      	D3DAfficheTexte()
+      
+      	// Définit les constantes du shader
+      	D3DInitMatrices()	
+      	
+      	// Texture de l'objet
+      	gpclD3DDevice:SetTexture(0, gpclTextureCol)
+      
+      	// Si la touche SHIFT n'est pas maintenue enfoncée
+      	si ToucheEnfoncée(CD3DCamera::VK_SPACE) = faux alors
+      	
+      		// Dessin de la scène avec les effets
+      		D3DAfficheEffet()			
+      	sinon		
+      		
+      		// Dessin de l'objet sans les effets		
+      		gpclObjet:DrawSubset(0)
+      	fin
+      		
+      	// Fin du dessin
+      	gpclD3DDevice:EndScene()
+      		
+      	// Affichage du "backbuffer"
+      	gpclD3DDevice:Present(null, null, null, null)
+     type : 458752
+   -
+     name : D3DInitMatrices
+     internal_properties : CAAAAAgAAACj/TPYuE8CRPM+P6I7suT47dP4Yz26LD7cksJquECbalY1u5WSkqgJQXti/Ko9glAK8abjdcWf9r+68WzP7dHoyXBxHXaKZitQZA+H2NZyHC8iKys7Pl9656vmwA7MRCqvBgalgpeim+gPCxNCysPDhei956ReJwl7ETDSF+4U
+     procedure_id : 1868427120566989509
+     type_code : 14
+     code : |1-
+      // Résumé : Initialisation des matrices
+      Procédure D3DInitMatrices(bRestauration est un booléen = faux)
+      	
+      	nHeure est un entier
+      	rAngle est un reel sur 4
+      		
+      	hDXHANDLE est un entier sans signe
+      		
+      	stMatWorld 	est un D3DXMATRIX	// Matrice de représentation du "monde" Direct3D
+      	stMatWorldI	est un D3DXMATRIX	// Matrice de représentation du "monde" Direct3D
+      	stMatView	est un D3DXMATRIX	// Matrice de représentation de la "vue" Direct3D
+      	stMatProj	est un D3DXMATRIX	// Matrice de projection Direct3D
+      	stVecEye	est un D3DXVECTOR3	// Position de l'oeil
+      	stVecCam	est un D3DXVECTOR3	// Direction de l'oeil
+      	stVecUp		est un D3DXVECTOR3	// Elévation de la caméra
+      	stLight 	est un D3DLIGHT9	// Lumière
+      	stVecLight	est un D3DXVECTOR4	// Direction de la lumière
+      
+      	// Définit une rotation	
+      	nHeure = D3DXGetTime() 
+      	rAngle = nHeure / 180
+      	SI PAS bRestauration ALORS
+      		D3DXMatrixRotationYawPitchRoll(stMatWorld, rAngle, rAngle, rAngle)
+      	sinon
+      		D3DXMatrixRotationYawPitchRoll(stMatWorld, -rAngle, -rAngle, -rAngle)
+      	fin
+      
+      	
+      	// Applique la rotation
+      	gpclD3DDevice:SetTransform(d3dts_world, stMatWorld)
+      	
+      	// Initialise les vecteurs de vue
+      	stVecEye = [0.0, 3.0, -5.0]
+      	stVecCam = [0.0, 0.0,  0.0]
+      	stVecUp  = [0.0, 1.0,  0.0]
+      	
+      	// Définit la matrice de vue
+      	D3DXMatrixLookAtLH(stMatView, stVecEye, stVecCam, stVecUp)
+      	
+      	// Applique la vue
+      	gpclD3DDevice:SetTransform(D3DTS_VIEW, stMatView)
+      	
+      	// Définit la matrice de projection
+      	D3DXMatrixPerspectiveFovLH(stMatProj, d3dx_pi / 4.0, (img_dx..largeur / img_dx..hauteur), 1.0, 100.0)
+      	
+      	// Applique la matrice de projection
+      	gpclD3DDevice:SetTransform(D3DTS_PROJECTION, stMatProj)
+      	
+      	// Transpose la matrice "monde"
+      	D3DXMatrixTranspose(stMatWorldI, stMatWorld)	
+      	
+      	// Matrice de projection
+      	hDXHANDLE = gpclEffet:GetParameterByName(null, "matWorldViewProj")
+      	gpclEffet:SetMatrix(hDXHANDLE, D3DXMatrixMultiplyEx(stMatWorld, stMatView, stMatProj))
+      	
+      	// Matrice inverse du "monde"
+      	hDXHANDLE = gpclEffet:GetParameterByName(Null, "matInverseWorld")
+      	gpclEffet:SetMatrix(hDXHANDLE, stMatWorldI)
+      	
+      	// Direction de la lumière pour l'effet
+      	hDXHANDLE = gpclEffet:GetParameterByName(Null, "vLightDirection")
+      	gpclD3DDevice:GetLight(0, stLight)
+      	
+      	transfert(&stVecLight, &stLight:Direction, sizeOf(stLight:Direction))
+      	stVecLight:w = 1.0	
+      	gpclEffet:SetVector(hDXHANDLE, stVecLight)
+      	
+     type : 458752
+   -
+     name : D3DInitEclairage
+     internal_properties : CAAAAAgAAAB4+9pAFYBzo6WXx4F1akl89TuXdjkSruEePvKsvY6MtL6bYxqvkVENEBnROJ8ItChsTEBr9aH8MeWOO1nSruw1iy1g/zUNZefUaHMbjDJEcANo4SWxwCHWLx4xMfCtczX46KwzYadyZGnxYKcp0V8d40LfJQFwUyo28GutkiuKCFf4qVTTqE9QFdYZZMPlfw==
+     procedure_id : 1868659319403559091
+     type_code : 14
+     code : |1-
+      // Résumé : Initialise l'éclairage
+      Procédure D3DInitEclairage()
+      
+      	stMaterial	est un D3DMATERIAL9
+      	stLumière	est un D3DLIGHT9
+      	
+      	// Création d'un "material"
+      	stMaterial:Diffuse:red 		= 1.0
+      	stMaterial:Diffuse:green 	= 1.0
+      	stMaterial:Diffuse:blue 	= 1.0
+      	stMaterial:Diffuse:alpha 	= 1.0
+      	stMaterial:Ambient:red 		= 1.0
+      	stMaterial:Ambient:green 	= 1.0
+      	stMaterial:Ambient:blue 	= 1.0
+      	stMaterial:Ambient:alpha 	= 1.0
+      	
+      	// Applique le "material"
+      	gpclD3DDevice:SetMaterial(stMaterial)
+      	
+      	// Définit une lumière blanche directionnelle avec une direction oscillatoire
+      	stLumière:Type = D3DLIGHT_DIRECTIONAL
+      	stLumière:Diffuse:red 	= 1.0
+      	stLumière:Diffuse:green = 1.0
+      	stLumière:Diffuse:blue 	= 1.0
+      	stLumière:Ambient:red	= 0.2
+      	stLumière:Ambient:green	= 0.2
+      	stLumière:Ambient:blue	= 0.2
+      	stLumière:Direction		= [0.0, -1.0, 0.0]
+      	// Etendue de l'éclairage
+      	stLumière:Range = 1000.0
+      	
+      	// Applique l'éclairage
+      	gpclD3DDevice:SetLight(0, stLumière)
+      	gpclD3DDevice:LightEnable(0, vrai)
+      	gpclD3DDevice:SetRenderState(D3DRS_LIGHTING, vrai)
+     type : 458752
+   -
+     name : D3DAfficheTexte
+     procedure_id : 1868757708853756779
+     type_code : 14
+     code : |1-
+      // Résumé : Affiche le texte
+      Procédure D3DAfficheTexte()
+      	
+      	gpclTexte:DrawTextA(null, "Maintenez la touche espace enfoncée pour annuler temporairement l'application de l'effet" + caract(0), -1, MAKE_RECT(2, 0, IMG_DX..largeur, img_dx..hauteur), 0x00000000 | 0x00000100, D3DCOLOR_ARGB(255, 255, 255, 255))
+      	
+     type : 458752
+   -
+     name : D3DInitTexte
+     internal_properties : CAAAAAgAAADyE6y5FbmEOWF1E3iF5VMy5hvVm8L+Q7GDeuXL4LCEFRXbj85JfG1hn+Rl4Spp5SoY6zec2+V6KUVwzs6eRaoucCgpr/H1zUPnPQsqwSSCi38PVNBVMkPJ7U5ModB7SVyJ0ffpsCxcYHzCSKjhxg==
+     procedure_id : 1868757708853822425
+     type_code : 14
+     code : |1-
+      // Résumé : Initialise le texte
+      Procédure D3DInitTexte()
+      
+      	// Crée une police	
+      	si failed(D3DXCreateFontA(gpclD3DDevice, 19, 0, 400, 0, faux, 0, 0, 1, 2, "Tahoma", gpclTexte)) _ou_ gpcltexte = null alors
+      		renvoyer faux
+      	FIN
+      	
+      renvoyer vrai
+     type : 458752
+   -
+     name : D3DAfficheEffet
+     procedure_id : 1868762321658423381
+     type_code : 14
+     code : |1-
+      // Résumé : Dessin des passes des effets
+      Procédure D3DAfficheEffet()
+      
+      	nPasses sont des entiers sans signe
+      	hDXHANDLE est un entier sans signe
+      
+      	// Définit le technique utilisée par l'effet
+      	hDXHANDLE = gpclEffet:GetTechniqueByName("EffetCartoon")
+      	gpclEffet:SetTechnique(hDXHANDLE)
+      	
+      	// Définit la texture de l'effet
+      	hDXHANDLE = gpclEffet:GetParameterByName(Null, "CelMap")
+      	gpclEffet:SetTexture(hDXHANDLE, gpclTexture)
+      	
+      	hDXHANDLE = gpclEffet:GetParameterByName(Null, "ColorMap")
+      	gpclEffet:SetTexture(hDXHANDLE, gpclTextureCol)
+      	
+      	// Démarrage de l'effet
+      	gpclEffet:Begin(nPasses, 0)
+      	
+      		POUR i = 0 _a_ nPasses - 1
+      	
+      			gpclEffet:BeginPass(i)
+      			
+      			// Dessin de l'objet
+      			gpclObjet:DrawSubset(0)
+      			
+      			// Fin de l'effet
+      			gpclEffet:EndPass()
+      		FIN
+      		
+      	// Fin de l'effet
+      	gpclEffet:End_()
+      
+      		
+      	
+     type : 458752
+  templates :
+   -
+     name : FEN_09_Effets
+     identifier : 0x1543d3fb369e2690
+     code_elements :
+      internal_properties : CAAAAAgAAACIMP8rh0cZMm+J7g8RNUlsXiqZmOPRK/tf/B3QBD1vZObrdyk+TdDl36cYuEymKXecYWBOpMsaqp9eu12KXJn/pLRlhrumBxv40PYcrbfKDuiju791pEByR5nn6hq7
+      type_code : 1
+      p_codes :
+       -
+         code : |1-
+          
+       -
+         code : |1-
+          
+         type : 34
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+       -
+         code : |1-
+          
+         type : 2
+       -
+         code : |1-
+          
+         type : 11
+       -
+         code : |1-
+          
+         type : 12
+       -
+         code : |1-
+          
+         type : 17
+       -
+         code : |1-
+          
+         type : 13
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAAD41EFVWFF7SAwzd+8+tTlPQzQOqrePoffe3zujAQsXVPKhnbz1Vze9uX1xEHfGZ53L/ImwBVh7QM0ijTy26nuXl6nmgRuF687jh7MrAxkw2m0o/GTSE2RmszekPw==
+  original_name : FEN_Fenêtre1
+resources :
+ string_res :
+  identifier : 0x10d99902101fb8f7
+  internal_properties : CAAAAAgAAACa/HBK/CUtN70EwGNqHiA5Ong4hctn68fiPi5bW47/f5kdMy4EhFbbsLDr9WzJV0mJiQ==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

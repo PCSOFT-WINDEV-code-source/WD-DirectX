@@ -1,0 +1,128 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXRenderToSurface
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19dc9b650158d8f7
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXRenderToSurface est une classe
+      	un objet IUnknown
+      	
+      FIN
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ID3DXRenderToSurface (VTABLE)
+      	ID3DXRenderToSurface_GetDevice				= ::IUnknown___IDXBASE + 1
+      	ID3DXRenderToSurface_GetDesc				= ::IUnknown___IDXBASE + 2
+      	ID3DXRenderToSurface_BeginScene				= ::IUnknown___IDXBASE + 3
+      	ID3DXRenderToSurface_EndScene				= ::IUnknown___IDXBASE + 4
+      	ID3DXRenderToSurface_OnLostDevice			= ::IUnknown___IDXBASE + 5
+      	ID3DXRenderToSurface_OnResetDevice			= ::IUnknown___IDXBASE + 6
+      	ID3DXRenderToSurface___IDXBASE				= ::IUnknown___IDXBASE + 6
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863535203941210359
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Core.IID_ID3DXRenderToSurface
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863535203941275895
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetDevice
+     procedure_id : 1866448579126212594
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDevice
+      Procédure GetDevice(pclDevice est un IDirect3DDevice9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvDevice est un entier systeme
+      
+      	// Appel
+      	HRESULT = :call(ID3DXRenderToSurface_GetDevice, &ppvDevice)
+      	
+      	// Allocation
+      	__BindInterface(pclDevice, ppvDevice, IDirect3DDevice9)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : GetDesc
+     procedure_id : 1866448630665897616
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDesc
+      Procédure GetDesc(Desc est un D3DXRTS_DESC dynamique)
+      renvoyer :call(ID3DXRenderToSurface_GetDesc, &Desc)
+     type : 458752
+   -
+     name : BeginScene
+     procedure_id : 1866448639255899897
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode BeginScene
+      Procédure BeginScene(pclSurface est un IDirect3DSurface9 dynamique, ViewPort est un D3DVIEWPORT9)
+      RENVOYER :CALL(ID3DXRenderToSurface_BeginScene, ptr(pclSurface), &ViewPort)
+     type : 458752
+   -
+     name : EndScene
+     procedure_id : 1866448647845901710
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode EndScene 
+      Procédure EndScene(MipFilter est un entier sans signe)
+      RENVOYER :CALL(ID3DXRenderToSurface_EndScene, MipFilter)
+     type : 458752
+   -
+     name : OnLostDevice
+     procedure_id : 1866448656435903554
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode OnLostDevice
+      Procédure OnLostDevice()
+      RENVOYER :CALL(ID3DXRenderToSurface_OnLostDevice)
+     type : 458752
+   -
+     name : OnResetDevice
+     procedure_id : 1866448660730872394
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode OnResetDevice
+      Procédure OnResetDevice()
+      RENVOYER :CALL(ID3DXRenderToSurface_OnResetDevice)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000dc2b444
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,391 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXPRTEngine
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19e5a8090496bc4b
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXPRTEngine est une classe
+      	un objet IUnknown
+      	
+      FIN
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ID3DXPRTEngine (VTABLE)
+      	ID3DXPRTEngine_SetMeshMaterials						= ::IUnknown___IDXBASE + 1
+      	ID3DXPRTEngine_SetPerVertexAlbedo					= ::IUnknown___IDXBASE + 2
+      	ID3DXPRTEngine_SetPerTexelAlbedo					= ::IUnknown___IDXBASE + 3
+      	ID3DXPRTEngine_GetVertexAlbedo						= ::IUnknown___IDXBASE + 4
+      	ID3DXPRTEngine_SetPerTexelNormal					= ::IUnknown___IDXBASE + 5
+      	ID3DXPRTEngine_ExtractPerVertexAlbedo				= ::IUnknown___IDXBASE + 6
+      	ID3DXPRTEngine_ResampleBuffer						= ::IUnknown___IDXBASE + 7
+      	ID3DXPRTEngine_GetAdaptedMesh						= ::IUnknown___IDXBASE + 8
+      	ID3DXPRTEngine_GetNumVerts							= ::IUnknown___IDXBASE + 9
+      	ID3DXPRTEngine_GetNumFaces							= ::IUnknown___IDXBASE + 10
+      	ID3DXPRTEngine_SetMinMaxIntersection				= ::IUnknown___IDXBASE + 11
+      	ID3DXPRTEngine_RobustMeshRefine						= ::IUnknown___IDXBASE + 12
+      	ID3DXPRTEngine_SetSamplingInfo						= ::IUnknown___IDXBASE + 13
+      	ID3DXPRTEngine_ComputeDirectLightingSH				= ::IUnknown___IDXBASE + 14
+      	ID3DXPRTEngine_ComputeDirectLightingSHAdaptive		= ::IUnknown___IDXBASE + 15
+      	ID3DXPRTEngine_ComputeDirectLightingSHGPU			= ::IUnknown___IDXBASE + 16
+      	ID3DXPRTEngine_ComputeSS							= ::IUnknown___IDXBASE + 17
+      	ID3DXPRTEngine_ComputeSSAdaptive					= ::IUnknown___IDXBASE + 18
+      	ID3DXPRTEngine_ComputeBounce						= ::IUnknown___IDXBASE + 19
+      	ID3DXPRTEngine_ComputeBounceAdaptive				= ::IUnknown___IDXBASE + 20
+      	ID3DXPRTEngine_ComputeVolumeSamplesDirectSH			= ::IUnknown___IDXBASE + 21
+      	ID3DXPRTEngine_ComputeVolumeSamples					= ::IUnknown___IDXBASE + 22
+      	ID3DXPRTEngine_ComputeSurfSamplesDirectSH			= ::IUnknown___IDXBASE + 23
+      	ID3DXPRTEngine_ComputeSurfSamplesBounce				= ::IUnknown___IDXBASE + 24
+      	ID3DXPRTEngine_FreeSSData							= ::IUnknown___IDXBASE + 25
+      	ID3DXPRTEngine_FreeBounceData						= ::IUnknown___IDXBASE + 26
+      	ID3DXPRTEngine_ComputeLDPRTCoeffs					= ::IUnknown___IDXBASE + 27
+      	ID3DXPRTEngine_ScaleMeshChunk						= ::IUnknown___IDXBASE + 28
+      	ID3DXPRTEngine_MultiplyAlbedo						= ::IUnknown___IDXBASE + 29
+      	ID3DXPRTEngine_SetCallBack							= ::IUnknown___IDXBASE + 30
+      	ID3DXPRTEngine_ShadowRayIntersects					= ::IUnknown___IDXBASE + 31
+      	ID3DXPRTEngine_ClosestRayIntersects					= ::IUnknown___IDXBASE + 32	
+      	ID3DXPRTEngine___IDXBASE							= ::IUnknown___IDXBASE + 32
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1866082377300163675
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Mesh.IID_ID3DXPRTEngine
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1866082377300229211
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : SetMeshMaterials
+     procedure_id : 1866537029793215003
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetMeshMaterials
+      Procédure SetMeshMaterials(Materials est un D3DXSHMATERIAL, NumMeshes est un entier sans signe, NumChannels est un entier sans signe, bSetAlbedo est un booléen, fLengthScale est un réel sur 4)
+      
+      	ppvMeshMaterials est un entier systeme = &Materials
+      	
+      renvoyer :call(ID3DXPRTEngine_SetMeshMaterials, &ppvMeshMaterials, NumMeshes, NumChannels, bSetAlbedo, fLengthScale)
+     type : 458752
+   -
+     name : SetPerVertexAlbedo
+     procedure_id : 1866537042678185329
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetPerVertexAlbedo
+      Procédure SetPerVertexAlbedo(pDataIn est un entier systeme, NumChannels est un entier sans signe, Stride est un entier sans signe)
+      RENVOYER :CALL(ID3DXPRTEngine_SetPerVertexAlbedo, pDataIn, NumChannels, Stride)
+     type : 458752
+   -
+     name : SetPerTexelAlbedo
+     procedure_id : 1866537051268121793
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetPerTexelAlbedo
+      Procédure SetPerTexelAlbedo(pclTexture est un IDirect3DTexture9 dynamique, NumChannels est un entier sans signe, pclGH est un ID3DXTextureGutterHelper dynamique)
+      RENVOYER :CALL(ID3DXPRTEngine_SetPerTexelAlbedo, ptr(pclTexture), NumChannels, ptr(pclGH))
+     type : 458752
+   -
+     name : GetVertexAlbedo
+     procedure_id : 1866537064153092524
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetVertexAlbedo
+      Procédure GetVertexAlbedo(VertColors est un tableau de D3DXCOLOR, NumVerts est un entier sans signe)
+      RENVOYER :CALL(ID3DXPRTEngine_GetVertexAlbedo, ptr(VertColors), NumVerts)
+     type : 458752
+   -
+     name : SetPerTexelNormal
+     procedure_id : 1866537072743094774
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetPerTexelNormal
+      Procédure SetPerTexelNormal(pclNormalTexture est un IDirect3DTexture9 dynamique)
+      RENVOYER :CALL(ID3DXPRTEngine_SetPerTexelNormal, ptr(pclNormalTexture))
+     type : 458752
+   -
+     name : ExtractPerVertexAlbedo
+     procedure_id : 1866537085628064896
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ExtractPerVertexAlbedo
+      Procédure ExtractPerVertexAlbedo(pclMesh est un id3dxmesh dynamique, Usage est un entier sans signe, NumChannels est un entier sans signe)
+      RENVOYER :CALL(ID3DXPRTEngine_ExtractPerVertexAlbedo, ptr(pclMesh), Usage, NumChannels)
+     type : 458752
+   -
+     name : ResampleBuffer
+     procedure_id : 1866537094218066974
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ResampleBuffer
+      Procédure ResampleBuffer(pclBufferIn est un ID3DXPRTBuffer dynamique, pclBufferOut est un ID3DXPRTBuffer dynamique)
+      RENVOYER :CALL(ID3DXPRTEngine_ResampleBuffer, ptr(pclBufferIn), ptr(pclBufferOut))
+     type : 458752
+   -
+     name : GetAdaptedMesh
+     procedure_id : 1866537107103037144
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetAdaptedMesh
+      Procédure GetAdaptedMesh(pclDevice est un IDirect3DDevice9 dynamique, FaceRemap est un entier sans signe, tabVertRemap est un tableau d'entier sans signe, tabVertWeights est un tableau de reels sur 4, pclMesh est un id3dxmesh dynamique)
+      
+      	HRESULT est un entier système
+      	ppvMesh est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXPRTEngine_GetAdaptedMesh, ptr(pclDevice), &FaceRemap, ptr(tabVertRemap), ptr(tabVertWeights), &ppvMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclMesh, ppvMesh, ID3DXMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetNumVerts
+     procedure_id : 1866537115693039191
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumVerts
+      Procédure GetNumVerts()
+      RENVOYER :CALL(ID3DXPRTEngine_GetNumVerts)
+     type : 458752
+   -
+     name : GetNumFaces
+     procedure_id : 1866537128578010062
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumFaces
+      Procédure GetNumFaces()
+      RENVOYER :CALL(ID3DXPRTEngine_GetNumFaces)
+     type : 458752
+   -
+     name : SetMinMaxIntersection
+     procedure_id : 1866537137168012016
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetMinMaxIntersection
+      Procédure SetMinMaxIntersection(fMin est un réel sur 4, fMax est un réel sur 4)
+      RENVOYER :CALL(ID3DXPRTEngine_SetMinMaxIntersection, fMin, fMax)
+     type : 458752
+   -
+     name : RobustMeshRefine
+     procedure_id : 1866537150052982497
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode RobustMeshRefine
+      Procédure RobustMeshRefine(MinEdgeLength est un réel sur 4, MaxSubDiv est un entier sans signe)
+      RENVOYER :CALL(ID3DXPRTEngine_RobustMeshRefine, MinEdgeLength, MaxSubDiv)
+     type : 458752
+   -
+     name : SetSamplingInfo
+     procedure_id : 1866537162937952745
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetSamplingInfo
+      Procédure SetSamplingInfo(NumRays est un entier sans signe, UseSphere est un booléen, UseCosine est un booléen, Adaptive est un booléen, AdpativeThresh est un réel sur 4)
+      RENVOYER :CALL(ID3DXPRTEngine_SetSamplingInfo, NumRays, UseSphere, UseCosine, Adaptive, AdpativeThresh)
+     type : 458752
+   -
+     name : ComputeDirectLightingSH
+     procedure_id : 1866537171527954761
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ComputeDirectLightingSH
+      Procédure ComputeDirectLightingSH(SHOrder est un entier sans signe, pclDataOut est un ID3DXPRTBuffer dynamique)
+      RENVOYER :CALL(ID3DXPRTEngine_ComputeDirectLightingSH, SHOrder, ptr(pclDataOut))
+     type : 458752
+   -
+     name : ComputeDirectLightingSHAdaptive
+     procedure_id : 1866537184412925492
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ComputeDirectLightingSHAdaptive
+      Procédure ComputeDirectLightingSHAdaptive(SHOrder est un entier sans signe, AdaptiveThresh est un réel sur 4, MinEdgeLength est un réel sur 4, MaxSubDiv est un entier sans signe, pclDataOut est un ID3DXPRTBuffer dynamique)
+      RENVOYER :CALL(ID3DXPRTEngine_ComputeDirectLightingSHAdaptive, SHOrder, AdaptiveThresh, MinEdgeLength, MaxSubDiv, ptr(pclDataOut))
+     type : 458752
+   -
+     name : ComputeDirectLightingSHGPU
+     procedure_id : 1866537201592863847
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ComputeDirectLightingSHGPU
+      Procédure ComputeDirectLightingSHGPU(pclDevice est un IDirect3DDevice9 dynamique, Flags est un entier sans signe, SHOrder est un entier sans signe, ZBias est un réel sur 4, ZAngleBias est un réel sur 4, pclDataOut est un ID3DXPRTBuffer dynamique)
+      RENVOYER :CALL(ID3DXPRTEngine_ComputeDirectLightingSHGPU, ptr(pclDevice), Flags, SHOrder, ZBias, ZAngleBias, ptr(pclDataOut))
+     type : 458752
+   -
+     name : ComputeSS
+     procedure_id : 1866537210182866814
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ComputeSS
+      Procédure ComputeSS(pclDataIn est un id3dxprtbuffer dynamique, pclDataOut est un ID3DXPRTBuffer dynamique, pclDataTotal est un ID3DXPRTBuffer dynamique)
+      RENVOYER :CALL(ID3DXPRTEngine_ComputeSS, ptr(pclDataIn), ptr(pclDataOut), ptr(pclDataTotal))
+     type : 458752
+   -
+     name : ComputeSSAdaptive
+     procedure_id : 1866537218772868502
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ComputeSSAdaptive
+      Procédure ComputeSSAdaptive(pclDataIn est un id3dxprtbuffer dynamique, AdaptiveThresh est un réel sur 4, MinEdgeLength est un réel sur 4, MaxSubDiv est un entier sans signe, pclDataOut est un ID3DXPRTBuffer dynamique, pclDataTotal est un ID3DXPRTBuffer dynamique)
+      RENVOYER :CALL(ID3DXPRTEngine_ComputeSSAdaptive, ptr(pclDataIn), AdaptiveThresh, MinEdgeLength, MaxSubDiv, ptr(pclDataOut), ptr(pclDataTotal))
+     type : 458752
+   -
+     name : ComputeBounce
+     procedure_id : 1866537231657838625
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ComputeBounce
+      Procédure ComputeBounce(pclDataIn est un id3dxprtbuffer dynamique, pclDataOut est un ID3DXPRTBuffer dynamique, pclDataTotal est un ID3DXPRTBuffer dynamique)
+      RENVOYER :CALL(ID3DXPRTEngine_ComputeBounce, PTR(pclDataIn), PTR(pclDataOut), PTR(pclDataTotal))
+     type : 458752
+   -
+     name : ComputeBounceAdaptive
+     procedure_id : 1866537244542808997
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ComputeBounceAdaptive
+      Procédure ComputeBounceAdaptive(pclDataIn est un id3dxprtbuffer dynamique, AdaptiveThresh est un réel sur 4, MinEdgeLength est un réel sur 4, MaxSubDiv est un entier sans signe, pclDataOut est un ID3DXPRTBuffer dynamique, pclDataTotal est un ID3DXPRTBuffer dynamique)
+      RENVOYER :CALL(ID3DXPRTEngine_ComputeBounceAdaptive, PTR(pclDataIn), AdaptiveThresh, MinEdgeLength, MaxSubDiv, PTR(pclDataOut), PTR(pclDataTotal))
+     type : 458752
+   -
+     name : ComputeVolumeSamplesDirectSH
+     procedure_id : 1866537257427779619
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ComputeVolumeSamplesDirectSH
+      Procédure ComputeVolumeSamplesDirectSH(SHOrderIn est un entier sans signe, SHOrderOut est un entier sans signe, NumVolSamples est un entier sans signe, tabSampleLocs est un tableau de D3DXVECTOR3, pclDataOut est un ID3DXPRTBuffer dynamique)
+      RENVOYER :CALL(ID3DXPRTEngine_ComputeVolumeSamplesDirectSH, SHOrderIn, SHOrderOut, NumVolSamples, ptr(tabSampleLocs), ptr(pclDataOut))
+     type : 458752
+   -
+     name : ComputeVolumeSamples
+     procedure_id : 1866537270312750428
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ComputeVolumeSamples
+      Procédure ComputeVolumeSamples(pclSurfDataIn est un ID3DXPRTBuffer dynamique, SHOrder est un entier sans signe, NumVolSamples est un entier sans signe, tabSampleLocs est un tableau de D3DXVECTOR3, pclDataOut est un ID3DXPRTBuffer dynamique)
+      RENVOYER :CALL(ID3DXPRTEngine_ComputeVolumeSamples, ptr(pclSurfDataIn), SHOrder, NumVolSamples, ptr(tabSampleLocs), ptr(pclDataOut))
+     type : 458752
+   -
+     name : ComputeSurfSamplesDirectSH
+     procedure_id : 1866537283197721050
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ComputeSurfSamplesDirectSH
+      Procédure ComputeSurfSamplesDirectSH(SHOrder est un entier sans signe, NumSamples est un entier sans signe, tabSampleLocs est un tableau de D3DXVECTOR3, tabSampleNorms est un tableau de D3DXVECTOR3, pclDataOut est un ID3DXPRTBuffer dynamique)
+      RENVOYER :CALL(ID3DXPRTEngine_ComputeSurfSamplesDirectSH, SHOrder, NumSamples, ptr(tabSampleLocs), ptr(tabSampleNorms), ptr(pclDataOut))
+     type : 458752
+   -
+     name : ComputeSurfSamplesBounce
+     procedure_id : 1866537291787723004
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ComputeSurfSamplesBounce
+      Procédure ComputeSurfSamplesBounce(pclSurfDataIn est un ID3DXPRTBuffer dynamique, NumSamples est un entier sans signe, tabSampleLocs est un tableau de D3DXVECTOR3, tabSampleNorms est un tableau de D3DXVECTOR3, pclDataOut est un ID3DXPRTBuffer dynamique, pclDataTotal est un ID3DXPRTBuffer dynamique)
+      RENVOYER :CALL(ID3DXPRTEngine_ComputeSurfSamplesBounce, ptr(pclSurfDataIn), NumSamples, ptr(tabSampleLocs), ptr(tabSampleNorms), ptr(pclDataOut), ptr(pclDataTotal))
+     type : 458752
+   -
+     name : FreeSSData
+     procedure_id : 1866537304672693423
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode FreeSSData
+      Procédure FreeSSData()
+      RENVOYER :CALL(ID3DXPRTEngine_FreeSSData)
+     type : 458752
+   -
+     name : FreeBounceData
+     procedure_id : 1866537313262695407
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode FreeBounceData
+      Procédure FreeBounceData()
+      RENVOYER :CALL(ID3DXPRTEngine_FreeBounceData)
+     type : 458752
+   -
+     name : ComputeLDPRTCoeffs
+     procedure_id : 1866537326147665811
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ComputeLDPRTCoeffs
+      Procédure ComputeLDPRTCoeffs(pclDataIn est un ID3DXPRTBuffer dynamique, SHOrder est un entier sans signe, tabNormOut est un tableau de D3DXVECTOR3, pclDataOut est un ID3DXPRTBuffer dynamique)
+      RENVOYER :CALL(ID3DXPRTEngine_ComputeLDPRTCoeffs, ptr(pclDataIn), SHOrder, ptr(tabNormOut), ptr(pclDataOut))
+     type : 458752
+   -
+     name : ScaleMeshChunk
+     procedure_id : 1866537334737602431
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ScaleMeshChunk
+      Procédure ScaleMeshChunk(uMeshChunk est un entier sans signe, fScale est un réel sur 4, pclDataOut est un ID3DXPRTBuffer dynamique)
+      RENVOYER :CALL(ID3DXPRTEngine_ScaleMeshChunk, uMeshChunk, fScale, ptr(pclDataOut))
+     type : 458752
+   -
+     name : MultiplyAlbedo
+     procedure_id : 1866537351917541472
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode MultiplyAlbedo
+      Procédure MultiplyAlbedo(pclDataOut est un ID3DXPRTBuffer dynamique)
+      RENVOYER :CALL(ID3DXPRTEngine_MultiplyAlbedo, PTR(pclDataOut))
+     type : 458752
+   -
+     name : SetCallBack
+     procedure_id : 1866537360507543285
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetCallBack
+      Procédure SetCallBack(pCB est un entier systeme, Frequency est un réel sur 4, lpUserContext est un entier système)
+      RENVOYER :CALL(ID3DXPRTEngine_SetCallBack, pCB, Frequency, lpUserContext)
+     type : 458752
+   -
+     name : ShadowRayIntersects
+     procedure_id : 1866537373392513564
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ShadowRayIntersects
+      Procédure ShadowRayIntersects(RayPos est un D3DXVECTOR3, RayDir est un D3DXVECTOR3)
+      RENVOYER :CALL(ID3DXPRTEngine_ShadowRayIntersects, &RayPos, &RayDir)
+     type : 458752
+   -
+     name : ClosestRayIntersects
+     procedure_id : 1866537386277483983
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ClosestRayIntersects
+      Procédure ClosestRayIntersects(RayPos est un D3DXVECTOR3, RayDir est un D3DXVECTOR3, FaceIndex est un entier sans signe, U est un réel sur 4, V est un réel sur 4, Dist est un réel sur 4)
+      RENVOYER :CALL(ID3DXPRTEngine_ClosestRayIntersects, &RayPos, &RayDir, &FaceIndex, &U, &V, &Dist)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000c8bb33a
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

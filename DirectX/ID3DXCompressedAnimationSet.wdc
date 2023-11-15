@@ -1,0 +1,118 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXCompressedAnimationSet
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19e5f331088b4e62
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXCompressedAnimationSet est une classe
+      	un objet ID3DXAnimationSet
+      	
+      Fin
+      
+      constant
+      	
+      	// Méthodes de l'interface ID3DXCompressedAnimationSet (VTABLE)
+      	ID3DXCompressedAnimationSet_GetPlaybackType						= ::ID3DXAnimationSet___IDXBASE + 1
+      	ID3DXCompressedAnimationSet_GetSourceTicksPerSecond				= ::ID3DXAnimationSet___IDXBASE + 2
+      	ID3DXCompressedAnimationSet_GetCompressedData					= ::ID3DXAnimationSet___IDXBASE + 3
+      	ID3DXCompressedAnimationSet_GetNumCallbackKeys					= ::ID3DXAnimationSet___IDXBASE + 4
+      	ID3DXCompressedAnimationSet_GetCallbackKeys						= ::ID3DXAnimationSet___IDXBASE + 5
+      	ID3DXCompressedAnimationSet___IDXBASE							= ::ID3DXAnimationSet___IDXBASE + 5
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1866165012537298530
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur ID3DXAnimationSet(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Anim.IID_ID3DXCompressedAnimationSet
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1866165012537364066
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetPlaybackType
+     procedure_id : 1866431605348592097
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetPlaybackType
+      Procédure GetPlaybackType()
+      renvoyer :call(ID3DXCompressedAnimationSet_GetPlaybackType)
+     type : 458752
+   -
+     name : GetSourceTicksPerSecond
+     procedure_id : 1866431644003372033
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetSourceTicksPerSecond
+      Procédure GetSourceTicksPerSecond()
+      RENVOYER :CALL(ID3DXCompressedAnimationSet_GetSourceTicksPerSecond)
+     type : 458752
+   -
+     name : GetCompressedData
+     procedure_id : 1866431652593374049
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetCompressedData
+      Procédure GetCompressedData(pclCompressedData est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvCompressedData est un entier systeme
+      
+      	// Appel
+      	HRESULT = :CALL(ID3DXCompressedAnimationSet_GetCompressedData, &ppvCompressedData)
+      	
+      	// Allocation
+      	__BindInterface(pclCompressedData, ppvCompressedData, id3dxbuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : GetNumCallbackKeys
+     procedure_id : 1866431661183376283
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumCallbackKeys
+      Procédure GetNumCallbackKeys()
+      RENVOYER :CALL(ID3DXCompressedAnimationSet_GetNumCallbackKeys)
+     type : 458752
+   -
+     name : GetCallbackKeys
+     procedure_id : 1866431669773378345
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetCallbackKeys
+      Procédure GetCallbackKeys(tabCallbackKeys est un tableau de D3DXKEY_CALLBACK)
+      RENVOYER :CALL(ID3DXCompressedAnimationSet_GetCallbackKeys, ptr(tabCallbackKeys))
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d9990009a7b09a
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

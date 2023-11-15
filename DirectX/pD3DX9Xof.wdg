@@ -1,0 +1,117 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pD3DX9Xof
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x19dcc5ad0121ff7e
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+      //////////////////////////////////////////////////////////////////
+      // <Constantes>
+      
+      constant
+      	// D3DXF_FILEFORMAT
+      	D3DXF_FILEFORMAT_BINARY          = 0
+      	D3DXF_FILEFORMAT_TEXT            = 1
+      	D3DXF_FILEFORMAT_COMPRESSED      = 2
+      	
+      	// D3DXF_FILESAVEOPTIONS
+      	D3DXF_FILESAVE_TOFILE  = 0x00
+      	D3DXF_FILESAVE_TOWFILE  = 0x01
+      	
+      	// D3DXF_FILELOADOPTIONS
+      	D3DXF_FILELOAD_FROMFILE     = 0x00
+      	D3DXF_FILELOAD_FROMWFILE    = 0x01
+      	D3DXF_FILELOAD_FROMRESOURCE = 0x02
+      	D3DXF_FILELOAD_FROMMEMORY   = 0x03
+      	
+      	_FACD3DXF = 0x876
+      		
+      FIN
+      
+      // </Constantes>
+      
+      //////////////////////////////////////////////////////////////////
+      // <IIDs>
+      
+      IID_ID3DXFile 			est un IID
+      IID_ID3DXFileSaveObject est un IID
+      IID_ID3DXFileSaveData 	est un IID
+      IID_ID3DXFileEnumObject est un IID
+      IID_ID3DXFileData 		est un IID
+      
+      // </IIDs>
+      
+      //////////////////////////////////////////////////////////////////
+      // <Déclaration des IIDs>
+      
+      DEFINE_GUID(IID_ID3DXFile, 				0xcef08cf9, 0x7b4f, 0x4429, 0x96, 0x24, 0x2a, 0x69, 0x0a, 0x93, 0x32, 0x01)
+      DEFINE_GUID(IID_ID3DXFileSaveObject, 	0xcef08cfa, 0x7b4f, 0x4429, 0x96, 0x24, 0x2a, 0x69, 0x0a, 0x93, 0x32, 0x01)
+      DEFINE_GUID(IID_ID3DXFileSaveData, 		0xcef08cfb, 0x7b4f, 0x4429, 0x96, 0x24, 0x2a, 0x69, 0x0a, 0x93, 0x32, 0x01)
+      DEFINE_GUID(IID_ID3DXFileEnumObject, 	0xcef08cfc, 0x7b4f, 0x4429, 0x96, 0x24, 0x2a, 0x69, 0x0a, 0x93, 0x32, 0x01)
+      DEFINE_GUID(IID_ID3DXFileData, 			0xcef08cfd, 0x7b4f, 0x4429, 0x96, 0x24, 0x2a, 0x69, 0x0a, 0x93, 0x32, 0x01)
+      
+      // </Déclaration des IIDs>
+      
+      global
+      	public constant
+      		D3DXFERR_BADOBJECT           est un entier systeme = MAKE_HRESULT( 1, _FACD3DXF, 900 )
+      		D3DXFERR_BADVALUE            est un entier système = MAKE_HRESULT( 1, _FACD3DXF, 901 )
+      		D3DXFERR_BADTYPE             est un entier système = MAKE_HRESULT( 1, _FACD3DXF, 902 )
+      		D3DXFERR_NOTFOUND            est un entier système = MAKE_HRESULT( 1, _FACD3DXF, 903 )
+      		D3DXFERR_NOTDONEYET          est un entier système = MAKE_HRESULT( 1, _FACD3DXF, 904 )
+      		D3DXFERR_FILENOTFOUND        est un entier système = MAKE_HRESULT( 1, _FACD3DXF, 905 )
+      		D3DXFERR_RESOURCENOTFOUND    est un entier système = MAKE_HRESULT( 1, _FACD3DXF, 906 )
+      		D3DXFERR_BADRESOURCE         est un entier système = MAKE_HRESULT( 1, _FACD3DXF, 907 )
+      		D3DXFERR_BADFILETYPE         est un entier système = MAKE_HRESULT( 1, _FACD3DXF, 908 )
+      		D3DXFERR_BADFILEVERSION      est un entier système = MAKE_HRESULT( 1, _FACD3DXF, 909 )
+      		D3DXFERR_BADFILEFLOATSIZE    est un entier système = MAKE_HRESULT( 1, _FACD3DXF, 910 )
+      		D3DXFERR_BADFILE             est un entier système = MAKE_HRESULT( 1, _FACD3DXF, 911 )
+      		D3DXFERR_PARSEERROR          est un entier système = MAKE_HRESULT( 1, _FACD3DXF, 912 )
+      		D3DXFERR_BADARRAYSIZE        est un entier système = MAKE_HRESULT( 1, _FACD3DXF, 913 )
+      		D3DXFERR_BADDATAREFERENCE    est un entier système = MAKE_HRESULT( 1, _FACD3DXF, 914 )
+      		D3DXFERR_NOMOREOBJECTS       est un entier système = MAKE_HRESULT( 1, _FACD3DXF, 915 )
+      		D3DXFERR_NOMOREDATA          est un entier système = MAKE_HRESULT( 1, _FACD3DXF, 916 )
+      		D3DXFERR_BADCACHEFILE        est un entier système = MAKE_HRESULT( 1, _FACD3DXF, 917 )		
+     type : 720896
+  procedures :
+   -
+     name : D3DXFileCreate
+     procedure_id : 1863584016243114380
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXFileCreate
+      Procédure D3DXFileCreate(pclDirectXFile est un ID3DXFile dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXFile est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXFileCreate", &ppvID3DXFile)
+      	
+      	// Allocation
+      	__BindInterface(pclDirectXFile, ppvID3DXFile, ID3DXFile)
+      	
+      renvoyer HRESULT
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x10d999010ea5b5bb
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

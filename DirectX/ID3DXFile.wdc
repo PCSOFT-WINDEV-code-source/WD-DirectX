@@ -1,0 +1,128 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXFile
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19dcc782013b29a9
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXFile est une classe
+      	un objet IUnknown
+      	
+      	FIN
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ID3DXFile (VTABLE)
+      	ID3DXFile_CreateEnumObject			= ::IUnknown___IDXBASE + 1
+      	ID3DXFile_CreateSaveObject			= ::IUnknown___IDXBASE + 2
+      	ID3DXFile_RegisterTemplates			= ::IUnknown___IDXBASE + 3
+      	ID3DXFile_RegisterEnumTemplates		= ::IUnknown___IDXBASE + 4
+      	ID3DXFile___IDXBASE					= ::IUnknown___IDXBASE + 4
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863583707004938665
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Xof.IID_ID3DXFile
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863583707005004201
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : CreateEnumObject
+     procedure_id : 1866585211121638380
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CreateEnumObject
+      Procédure CreateEnumObject(lpcVoid est un entier système, dwOptions est un entier sans signe, pclFileEnumObject est un ID3DXFileEnumObject dynamique)
+      
+      	HRESULT est un entier système
+      	ppvFileEnumObject est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXFile_CreateEnumObject, lpcVoid, dwOptions, &ppvFileEnumObject)
+      	
+      	// Allocation
+      	__BindInterface(pclFileEnumObject, ppvFileEnumObject, ID3DXFileEnumObject)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : CreateSaveObject
+     procedure_id : 1866585219711640989
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CreateSaveObject
+      Procédure CreateSaveObject(lpcVoid est un entier système, dwOptions est un entier sans signe, dwFileFormat est un entier sans signe, pclFileSaveObject est un ID3DXFileSaveObject dynamique)
+      
+      	HRESULT est un entier système
+      	ppvFileSaveObject est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXFile_CreateSaveObject, lpcVoid, dwOptions, dwFileFormat, &ppvFileSaveObject)
+      	
+      	// Allocation
+      	__BindInterface(pclFileSaveObject, ppvFileSaveObject, ID3DXFileSaveObject)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : RegisterTemplates
+     procedure_id : 1866585228301643035
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode RegisterTemplates
+      Procédure RegisterTemplates(lpcVoid est un entier système, dwSizeT est un entier sans signe)
+      RENVOYER :CALL(ID3DXFile_RegisterTemplates, lpcVoid, dwSizeT)
+     type : 458752
+   -
+     name : RegisterEnumTemplates
+     procedure_id : 1866585236891645394
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode RegisterEnumTemplates
+      Procédure RegisterEnumTemplates(pclFileSaveObject est un ID3DXFileSaveObject dynamique)
+      
+      	HRESULT est un entier système
+      	ppvFileSaveObject est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXFile_RegisterEnumTemplates, &ppvFileSaveObject)
+      	
+      	// Allocation
+      	__BindInterface(pclFileSaveObject, ppvFileSaveObject, ID3DXFileSaveObject)
+      
+      RENVOYER HRESULT
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000b44b1f2
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

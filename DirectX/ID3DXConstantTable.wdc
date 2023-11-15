@@ -1,0 +1,298 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXConstantTable
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19df63ce0763ae2b
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXConstantTable est une classe
+      	un objet IUnknown
+      	
+      FIN
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ID3DXConstantTable (VTABLE)
+      	ID3DXConstantTable_GetBufferPointer					= ::IUnknown___IDXBASE + 1
+      	ID3DXConstantTable_GetBufferSize					= ::IUnknown___IDXBASE + 2
+      	ID3DXConstantTable_GetDesc							= ::IUnknown___IDXBASE + 3
+      	ID3DXConstantTable_GetConstantDesc					= ::IUnknown___IDXBASE + 4
+      	ID3DXConstantTable_GetSamplerIndex					= ::IUnknown___IDXBASE + 5
+      	ID3DXConstantTable_GetConstant						= ::IUnknown___IDXBASE + 6
+      	ID3DXConstantTable_GetConstantByName				= ::IUnknown___IDXBASE + 7
+      	ID3DXConstantTable_GetConstantElement				= ::IUnknown___IDXBASE + 8
+      	ID3DXConstantTable_SetDefaults						= ::IUnknown___IDXBASE + 9
+      	ID3DXConstantTable_SetValue							= ::IUnknown___IDXBASE + 10
+      	ID3DXConstantTable_SetBool							= ::IUnknown___IDXBASE + 11
+      	ID3DXConstantTable_SetBoolArray						= ::IUnknown___IDXBASE + 12
+      	ID3DXConstantTable_SetInt							= ::IUnknown___IDXBASE + 13
+      	ID3DXConstantTable_SetIntArray						= ::IUnknown___IDXBASE + 14
+      	ID3DXConstantTable_SetFloat							= ::IUnknown___IDXBASE + 15
+      	ID3DXConstantTable_SetFloatArray					= ::IUnknown___IDXBASE + 16
+      	ID3DXConstantTable_SetVector						= ::IUnknown___IDXBASE + 17
+      	ID3DXConstantTable_SetVectorArray					= ::IUnknown___IDXBASE + 18
+      	ID3DXConstantTable_SetMatrix						= ::IUnknown___IDXBASE + 19
+      	ID3DXConstantTable_SetMatrixArray					= ::IUnknown___IDXBASE + 20
+      	ID3DXConstantTable_SetMatrixPointerArray			= ::IUnknown___IDXBASE + 21
+      	ID3DXConstantTable_SetMatrixTranspose				= ::IUnknown___IDXBASE + 22
+      	ID3DXConstantTable_SetMatrixTransposeArray			= ::IUnknown___IDXBASE + 23
+      	ID3DXConstantTable_SetMatrixTransposePointerArray	= ::IUnknown___IDXBASE + 24
+      	ID3DXConstantTable___IDXBASE						= ::IUnknown___IDXBASE + 24
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1864318507293126187
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9shader.IID_ID3DXConstantTable
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1864318507293191723
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetBufferPointer
+     procedure_id : 1866571252466091913
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetBufferPointer
+      Procédure GetBufferPointer()
+      renvoyer :call(ID3DXConstantTable_GetBufferPointer)
+     type : 458752
+   -
+     name : GetBufferSize
+     procedure_id : 1866571269646029737
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetBufferSize
+      Procédure GetBufferSize()
+      RENVOYER :CALL(ID3DXConstantTable_GetBufferSize)
+     type : 458752
+   -
+     name : GetDesc
+     procedure_id : 1866571278236032517
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDesc
+      Procédure GetDesc(Desc est un D3DXCONSTANTTABLE_DESC)
+      RENVOYER :CALL(ID3DXConstantTable_GetDesc, &Desc)
+     type : 458752
+   -
+     name : GetConstantDesc
+     procedure_id : 1866571286826034595
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetConstantDesc
+      Procédure GetConstantDesc(hConstant est un entier sans signe, ConstantDesc est un D3DXCONSTANT_DESC)
+      RENVOYER :CALL(ID3DXConstantTable_GetConstantDesc, hConstant, &ConstantDesc)
+     type : 458752
+   -
+     name : GetSamplerIndex
+     procedure_id : 1866571295416036393
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetSamplerIndex
+      Procédure GetSamplerIndex(hConstant est un entier sans signe)
+      RENVOYER :CALL(ID3DXConstantTable_GetSamplerIndex, hConstant)
+     type : 458752
+   -
+     name : GetConstant
+     procedure_id : 1866571304006038299
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetConstant
+      Procédure GetConstant(hConstant est un entier sans signe, Index est un entier sans signe)
+      RENVOYER :CALL(ID3DXConstantTable_GetConstant, hConstant, Index)
+     type : 458752
+   -
+     name : GetConstantByName
+     procedure_id : 1866571308301072691
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetConstantByName
+      Procédure GetConstantByName(hConstant est un entier sans signe, Name est une chaine)
+      RENVOYER :CALL(ID3DXConstantTable_GetConstantByName, hConstant, &Name)
+     type : 458752
+   -
+     name : GetConstantElement
+     procedure_id : 1866571316891074488
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetConstantElement
+      Procédure GetConstantElement(hConstant est un entier sans signe, Index est un entier sans signe)
+      RENVOYER :CALL(ID3DXConstantTable_GetConstantElement, hConstant, Index)
+     type : 458752
+   -
+     name : SetDefaults
+     procedure_id : 1866571329776044658
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetDefaults
+      Procédure SetDefaults(pclDevice est un IDirect3DDevice9 dynamique)
+      RENVOYER :CALL(ID3DXConstantTable_SetDefaults, ptr(pclDevice))
+     type : 458752
+   -
+     name : SetValue
+     procedure_id : 1866571334071079440
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetValue
+      Procédure SetValue(pclDevice est un IDirect3DDevice9 dynamique, hConstant est un entier sans signe, pData est un entier système, Bytes_ est un entier sans signe)
+      RENVOYER :CALL(ID3DXConstantTable_SetValue, PTR(pclDevice), hConstant, pData, Bytes_)
+     type : 458752
+   -
+     name : SetBool
+     procedure_id : 1866571342661081253
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetBool
+      Procédure SetBool(pclDevice est un IDirect3DDevice9 dynamique, hConstant est un entier sans signe, b est un booléen)
+      RENVOYER :CALL(ID3DXConstantTable_SetBool, PTR(pclDevice), hConstant, b)
+     type : 458752
+   -
+     name : SetBoolArray
+     procedure_id : 1866571351251083690
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetBoolArray
+      Procédure SetBoolArray(pclDevice est un IDirect3DDevice9 dynamique, hConstant est un entier sans signe, tabB est un tableau de booléens, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXConstantTable_SetBoolArray, PTR(pclDevice), hConstant, ptr(tabB), dwCount)
+     type : 458752
+   -
+     name : SetInt
+     procedure_id : 1866571359841085487
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetInt
+      Procédure SetInt(pclDevice est un IDirect3DDevice9 dynamique, hConstant est un entier sans signe, n est un entier)
+      RENVOYER :CALL(ID3DXConstantTable_SetInt, PTR(pclDevice), hConstant, n)
+     type : 458752
+   -
+     name : SetIntArray
+     procedure_id : 1866571368431087284
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetIntArray
+      Procédure SetIntArray(pclDevice est un IDirect3DDevice9 dynamique, hConstant est un entier sans signe, tabI est un tableau d'entiers, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXConstantTable_SetIntArray, PTR(pclDevice), hConstant, ptr(tabI), dwCount)
+     type : 458752
+   -
+     name : SetFloat
+     procedure_id : 1866571377021089378
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetFloat
+      Procédure SetFloat(pclDevice est un IDirect3DDevice9 dynamique, hConstant est un entier sans signe, f est un reel sur 4)
+      RENVOYER :CALL(ID3DXConstantTable_SetFloat, PTR(pclDevice), hConstant, f)
+     type : 458752
+   -
+     name : SetFloatArray
+     procedure_id : 1866572068510854610
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetFloatArray
+      Procédure SetFloatArray(pclDevice est un IDirect3DDevice9 dynamique, hConstant est un entier sans signe, tabF est un tableau de réels sur 4, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXConstantTable_SetFloatArray, PTR(pclDevice), hConstant, ptr(tabF), dwCount)
+     type : 458752
+   -
+     name : SetVector
+     procedure_id : 1866572077100856298
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetVector
+      Procédure SetVector(pclDevice est un IDirect3DDevice9 dynamique, hConstant est un entier sans signe, v est un D3DXVECTOR4)
+      RENVOYER :CALL(ID3DXConstantTable_SetVector, PTR(pclDevice), hConstant, &v)
+     type : 458752
+   -
+     name : SetVectorArray
+     procedure_id : 1866572085690858329
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetVectorArray
+      Procédure SetVectorArray(pclDevice est un IDirect3DDevice9 dynamique, hConstant est un entier sans signe, tabV est un tableau de D3DXVECTOR4, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXConstantTable_SetVectorArray, PTR(pclDevice), hConstant, ptr(tabV), dwCount)
+     type : 458752
+   -
+     name : SetMatrix
+     procedure_id : 1866572089985892721
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetMatrix
+      Procédure SetMatrix(pclDevice est un IDirect3DDevice9 dynamique, hConstant est un entier sans signe, m est un D3DXMATRIX)
+      RENVOYER :CALL(ID3DXConstantTable_SetMatrix, PTR(pclDevice), hConstant, &m)
+     type : 458752
+   -
+     name : SetMatrixArray
+     procedure_id : 1866572098575894549
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetMatrixArray 
+      Procédure SetMatrixArray(pclDevice est un IDirect3DDevice9 dynamique, hConstant est un entier sans signe, tabM est un tableau de D3DXMATRIX, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXConstantTable_SetMatrixArray, PTR(pclDevice), hConstant, ptr(tabM), dwCount)
+     type : 458752
+   -
+     name : SetMatrixPointerArray
+     procedure_id : 1866572107165896565
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetMatrixPointerArray
+      Procédure SetMatrixPointerArray(pclDevice est un IDirect3DDevice9 dynamique, hConstant est un entier sans signe, tabPM est un tableau d'entiers systeme, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXConstantTable_SetMatrixPointerArray, PTR(pclDevice), hConstant, ptr(tabPM), dwCount)
+     type : 458752
+   -
+     name : SetMatrixTranspose
+     procedure_id : 1866572120050866594
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetMatrixTranspose
+      Procédure SetMatrixTranspose(pclDevice est un IDirect3DDevice9 dynamique, hConstant est un entier sans signe, m est un D3DXMATRIX)
+      RENVOYER :CALL(ID3DXConstantTable_SetMatrixTranspose, PTR(pclDevice), hConstant, &m)
+     type : 458752
+   -
+     name : SetMatrixTransposeArray
+     procedure_id : 1866572132935837840
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetMatrixTransposeArray
+      Procédure SetMatrixTransposeArray(pclDevice est un IDirect3DDevice9 dynamique, hConstant est un entier sans signe, tabM est un tableau de D3DXMATRIX, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXConstantTable_SetMatrixTransposeArray, PTR(pclDevice), hConstant, ptr(tabM), dwCount)
+     type : 458752
+   -
+     name : SetMatrixTransposePointerArray
+     procedure_id : 1866572150115775961
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetMatrixTransposePointerArray
+      Procédure SetMatrixTransposePointerArray(pclDevice est un IDirect3DDevice9 dynamique, hConstant est un entier sans signe, tabPM est un tableau d'entiers systeme, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXConstantTable_SetMatrixTransposePointerArray, PTR(pclDevice), hConstant, PTR(tabPM), dwCount)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000b10b1c3
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

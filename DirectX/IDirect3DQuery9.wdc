@@ -1,0 +1,118 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IDirect3DQuery9
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19ddc9860e540e53
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      IDirect3DQuery9 est une classe
+      	un objet IUnknown
+      	
+      Fin
+      
+      constant
+      	
+      	// Méthodes de l'interface IDirect3DQuery9 (VTABLE)
+      	IDirect3DQuery9_GetDevice			= ::IUnknown___IDXBASE + 1
+      	IDirect3DQuery9_GetType				= ::IUnknown___IDXBASE + 2
+      	IDirect3DQuery9_GetDataSize			= ::IUnknown___IDXBASE + 3
+      	IDirect3DQuery9_Issue				= ::IUnknown___IDXBASE + 4
+      	IDirect3DQuery9_GetData				= ::IUnknown___IDXBASE + 5
+      	IDirect3DQuery9___IDXBASE			= ::IUnknown___IDXBASE + 5	
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863867398404509267
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3D9.IID_IDirect3DQuery9
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863867398404574803
+     type_code : 28
+     code : |1+
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetDevice
+     procedure_id : 1866837046266291217
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDevice
+      Procédure GetDevice(pclDevice est un IDirect3DDevice9 dynamique)
+      
+      	HRESULT est un entier système
+      	ppvDevice est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DQuery9_GetDevice, &ppvDevice)
+      	
+      	// Allocation
+      	__BindInterface(pclDevice, ppvDevice, IDirect3DDevice9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetType
+     procedure_id : 1866837059151260747
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetType
+      Procédure GetType()
+      RENVOYER :CALL(IDirect3DQuery9_GetType)
+     type : 458752
+   -
+     name : GetDataSize
+     procedure_id : 1866837067741262856
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDataSize
+      Procédure GetDataSize()
+      RENVOYER :CALL(IDirect3DQuery9_GetDataSize)
+     type : 458752
+   -
+     name : Issue
+     procedure_id : 1866837076331265262
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Issue
+      Procédure Issue(dwIssueFlags est un entier sans signe)
+      RENVOYER :CALL(IDirect3DQuery9_Issue, dwIssueFlags)
+     type : 458752
+   -
+     name : GetData
+     procedure_id : 1866837084921201944
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetData
+      Procédure GetData(pData est un entier système, dwSize est un entier sans signe, dwGetDataFlags est un entier sans signe)
+      RENVOYER :CALL(IDirect3DQuery9_GetData, pData, dwSize, dwGetDataFlags)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000d09b3a8
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

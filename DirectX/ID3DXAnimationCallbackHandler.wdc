@@ -1,0 +1,87 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXAnimationCallbackHandler
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19e5f4bb023c5362
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXAnimationCallbackHandler est une classe
+      	un objet objetcom
+      	
+      Fin
+      
+      constant
+      	
+      	// Méthodes de l'interface ID3DXAnimationCallbackHandler (VTABLE)
+      	ID3DXAnimationCallbackHandler_HandleCallback				= 0	
+      	ID3DXAnimationCallbackHandler___IDXBASE						= 0
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1866166704648639330
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur ObjetCOM(nInterface)
+      	
+      	// Définition de l'IID
+      	VariableRAZ(:IID)
+      	
+      	// Enregistre l'objet auprès de la collection
+      	ID3DXAnimationCallbackHandler_RegisterObject(objet)
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1866166704648704866
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : HandleCallback
+     procedure_id : 1866166854973054062
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle HandleCallback
+      Procédure virtuelle HandleCallback(Track est un entier sans signe <utile>, pCallbackData est un entier systeme <utile>)
+      renvoyer e_notimpl
+     type : 458752
+  properties :
+   -
+     name : Interface
+     identifier : 0x19e5f4bb023d5362
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         Procédure virtuelle Interface()
+         renvoyer PTRVTbl(objet)
+        type : 1966080
+      -
+        code : |1-
+         
+        type : 2031616
+     template_refs : []
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000b5fb202
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

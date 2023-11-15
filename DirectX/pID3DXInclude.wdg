@@ -1,0 +1,101 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pID3DXInclude
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x19df513f04d92fb8
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAACrjc2Vo5nnxtHat7jk7y5/+QuO/FY3pzOhWPM+eFVJUUtegCANqt2R0plvZnTKw7zJPLjk5gqleQEQuyzBn2uHLsbnCtrXB0lrJdXDL3lNVdROFx6zavmY2/uIY0CoCPPyrnI4V9d943P2F0w=
+     code : |1-
+      
+      // Cette collection de procédures est l'interface de rebond pour les objets ID3DXInclude
+      // Elle sert de relai entre DirectX et la classe WLangage ID3DXInclude
+      // La classe ID3DXInclude doit être redéfinie et ses méthodes surchargées
+      
+      __ID3DXIncludeObjects est un tableau associatif (*, *, wlentier) de ID3DXInclude dynamique
+      
+      // NE MODIFIEZ PAS LES PROTOTYPES DES FONCTIONS CI-DESSOUS : il en résulterait des comportements indéfinis (plantages, blocages, ...)
+     type : 720896
+  procedures :
+   -
+     name : ID3DXInclude_RegisterObject
+     procedure_id : 1864298230709920265
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction RegisterObject
+      Procédure ID3DXInclude_RegisterObject(pclID3DXInclude est un ID3DXInclude dynamique)
+      
+      	// Enregistre l'objet
+      	__ID3DXIncludeObjects[&pclID3DXInclude] = pclID3DXInclude
+      	
+      	// Enregistre les méthodes de l'objet
+      	// NE MODIFIEZ PAS L'ORDRE D'ENREGISTREMENT DES METHODES
+      	pclID3DXInclude:__RegisterMethod(&ID3DXInclude_Open)
+      	pclID3DXInclude:__RegisterMethod(&ID3DXInclude_Close)
+      	
+      	// Enregistre la VTABLE
+      	pclID3DXInclude:__SaveVTABLE()
+     type : 458752
+   -
+     name : ID3DXInclude_Close
+     procedure_id : 1864300184957653928
+     type_code : 15
+     code : |1-
+      // Résumé : Méthode virtuelle Close
+      Procédure privee ID3DXInclude_Close(_THIS_, pData est un entier systeme)
+      
+      	// Si on ne trouve pas l'objet
+      	SI __ID3DXIncludeObjects[_THIS_] = Null ALORS
+      		
+      		// Renvoie E_NOTIMPL
+      		RENVOYER E_NOTIMPL
+      	SINON
+      		
+      		// Appel de la méthode
+      		RENVOYER __ID3DXIncludeObjects[_THIS_]:Close(pData)
+      	FIN
+     type : 458752
+   -
+     name : ID3DXInclude_Open
+     procedure_id : 1864300184957719542
+     type_code : 15
+     code : |1-
+      // Résumé : Méthode virtuelle Open
+      Procédure PRIVÉE ID3DXInclude_Open(_THIS_, IncludeType est un entier sans signe, pFileName est un entier systeme, pParentDatap est un entier systeme, ppData est un entier systeme, pBytes est un entier systeme)
+      
+      	sFileName est une chaine
+      
+      	// Si on ne trouve pas l'objet
+      	SI __ID3DXIncludeObjects[_THIS_] = Null ALORS
+      		
+      		// Renvoie E_NOTIMPL
+      		RENVOYER E_NOTIMPL
+      	SINON
+      		
+      		// Récupère la chaîne
+      		sFileName = ChaîneRécupère(pFileName, crAdresseASCIIZ)
+      		
+      		// Appel de la méthode
+      		RENVOYER __ID3DXIncludeObjects[_THIS_]:Open(IncludeType, sFileName, pParentDatap, ppData, pBytes)
+      	FIN
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x10d999010facb742
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

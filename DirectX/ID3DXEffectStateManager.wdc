@@ -1,0 +1,327 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXEffectStateManager
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19df397413cf3d0e
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXEffectStateManager est une classe
+      	un objet objetcom
+      	
+      Fin
+      
+      constant
+      	
+      	// Méthodes de l'interface IUnknown (VTABLE)
+      	ID3DXEffectStateManager_QueryInterface									= 0
+      	ID3DXEffectStateManager_AddRef											= 1
+      	ID3DXEffectStateManager_Release											= 2
+      	
+      	// Méthodes de l'interface ID3DXEffectStateManager (VTABLE) à redéfinir
+      	ID3DXEffectStateManager_SetTransform									= 3
+      	ID3DXEffectStateManager_SetMaterial										= 4
+      	ID3DXEffectStateManager_SetLight										= 5
+      	ID3DXEffectStateManager_LightEnable										= 6
+      	ID3DXEffectStateManager_SetRenderState									= 7
+      	ID3DXEffectStateManager_SetTexture										= 8
+      	ID3DXEffectStateManager_SetTextureStageState							= 9
+      	ID3DXEffectStateManager_SetSamplerState									= 10
+      	ID3DXEffectStateManager_SetNPatchMode									= 11
+      	ID3DXEffectStateManager_SetFVF											= 12
+      	ID3DXEffectStateManager_SetVertexShader									= 13
+      	ID3DXEffectStateManager_SetVertexShaderConstantF						= 14
+      	ID3DXEffectStateManager_SetVertexShaderConstantI						= 15
+      	ID3DXEffectStateManager_SetVertexShaderConstantB						= 16
+      	ID3DXEffectStateManager_SetPixelShader									= 17
+      	ID3DXEffectStateManager_SetPixelShaderConstantF							= 18
+      	ID3DXEffectStateManager_SetPixelShaderConstantI							= 19
+      	ID3DXEffectStateManager_SetPixelShaderConstantB							= 20
+      	ID3DXEffectStateManager___IDXBASE										= 20
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1864271941466078478
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur ObjetCOM(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Effect.IID_ID3DXEffectStateManager	
+      	
+      	// Enregistre l'objet auprès de la collection
+      	ID3DXEffectStateManager_RegisterObject(objet)
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1864271941466144014
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : QueryInterface
+     procedure_id : 1864272813364959479
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle QueryInterface
+      Procédure QueryInterface(_iid est un IID, ppv est un entier systeme)
+      
+      	nPtr est un entier systeme
+      
+      	si ppv <> null alors
+      
+      		// Si c'est l'IID actuel
+      		si IsEqualIID(_iid, :iid) ALORS
+      			
+      			// Récupère le pointeur de l'objet
+      			nPtr = PTRVTbl(objet)
+      			
+      			// Transmet le pointeur
+      			transfert(ppv, &nPtr, dimension(nPtr))
+      			
+      			// Enregistre une référence
+      			addref()
+      			
+      			renvoyer 0						
+      		FIN
+      	fin
+      
+      renvoyer E_NOINTERFACE
+     type : 458752
+   -
+     name : AddRef
+     procedure_id : 1864272839134834750
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle AddRef
+      Procédure AddRef()
+      
+      	// Incrémente le compteur de référence
+      	:m_nRefCount ++
+      	
+      renvoyer :m_nRefCount
+     type : 458752
+   -
+     name : Release
+     internal_properties : CAAAAAgAAADemYLCpZpFuPOu006itwwvWwBRzUQ1lJ7ZQ6dz1b+GT4d4fNktTZevfgobmYWib6SXoH8PszUNjLdIuhU3SFuDQCtir5JGK8gdQdrIHagBhRY9fEX9Rb2DP1UHplR3pskqcRPnF9FepU6nTw==
+     procedure_id : 1864272852019805279
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle Release
+      Procédure Release()
+      
+      	// Décrémente le compteur de référence
+      	:m_nRefCount --
+      	
+      	// Si le compteur de référence arrive à 0
+      	SI :m_nRefCount = 0 ALORS
+      		
+      		// On libère l'objet
+      		libérer objet
+      		RENVOYER 0
+      	FIN
+      	
+      RENVOYER :m_nRefCount
+     type : 458752
+   -
+     name : SetTransform
+     procedure_id : 1864272869199744023
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle SetTransform
+      Procédure VIRTUELLE SetTransform(State est un entier sans signe <utile>, stD3DMATRIX est un D3DXMATRIX <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : SetMaterial
+     procedure_id : 1864272882084714209
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle SetMaterial
+      Procédure VIRTUELLE SetMaterial(stMaterial est un D3DMATERIAL9 <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : SetLight
+     procedure_id : 1864272890674716427
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle SetLight
+      Procédure VIRTUELLE SetLight(stLight est un D3DLIGHT9 <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : LightEnable
+     procedure_id : 1864272903559686347
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle LightEnable
+      Procédure VIRTUELLE LightEnable(Index est un entier sans signe <utile>, Enable est un booléen <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : SetRenderState
+     procedure_id : 1864272916444656688
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle SetRenderState
+      Procédure VIRTUELLE SetRenderState(State est un entier sans signe <utile>, Value est un entier sans signe <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : SetTexture
+     procedure_id : 1864272929329626920
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle SetTexture
+      Procédure VIRTUELLE SetTexture(State est un entier sans signe <utile>, pclTexture est un IDirect3DBaseTexture9 dynamique <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : SetTextureStageState
+     procedure_id : 1864272942214597418
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle SetTextureStageState
+      Procédure VIRTUELLE SetTextureStageState(State est un entier sans signe <utile>, Type est un entier sans signe <utile>, Value est un entier sans signe <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : SetSamplerState
+     procedure_id : 1864272950804600307
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle SetSamplerState
+      Procédure VIRTUELLE SetSamplerState(Sampler est un entier sans signe <utile>, Type est un entier sans signe <utile>, Value est un entier sans signe <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : SetNPatchMode
+     procedure_id : 1864272963689570289
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle SetNPatchMode
+      Procédure VIRTUELLE SetNPatchMode(NumSegments est un reel sur 4 <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : SetFVF
+     procedure_id : 1864272972279572742
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle SetFVF
+      Procédure VIRTUELLE SetFVF(FVF est un entier sans signe <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : SetVertexShader
+     procedure_id : 1864272985164542724
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle SetVertexShader
+      Procédure VIRTUELLE SetVertexShader(pclShader est un IDirect3DVertexShader9 dynamique <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : SetVertexShaderConstantF
+     procedure_id : 1864272993754545426
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle SetVertexShaderConstantF
+      Procédure VIRTUELLE SetVertexShaderConstantF(RegisterIndex est un entier sans signe <utile>, tabConstantData est un tableau <utile> de reels sur 4, RegisterCount est un entier sans signe <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : SetVertexShaderConstantI
+     procedure_id : 1864273006639449826
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle SetVertexShaderConstantI
+      Procédure VIRTUELLE SetVertexShaderConstantI(RegisterIndex est un entier sans signe <utile>, tabConstantData est un tableau <utile> d'entiers, RegisterCount est un entier sans signe <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : SetVertexShaderConstantB
+     procedure_id : 1864273015229452543
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle SetVertexShaderConstantB
+      Procédure VIRTUELLE SetVertexShaderConstantB(RegisterIndex est un entier sans signe <utile>, tabConstantData est un tableau <utile> de booléens, RegisterCount est un entier sans signe <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : SetPixelShader
+     procedure_id : 1864273028114422744
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle SetPixelShader
+      Procédure VIRTUELLE SetPixelShader(pclShader est un IDirect3DPixelShader9 dynamique <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : SetPixelShaderConstantF
+     procedure_id : 1864273040999393085
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle SetPixelShaderConstantF
+      Procédure VIRTUELLE SetPixelShaderConstantF(RegisterIndex est un entier sans signe <utile>, tabConstantData est un tableau <utile> de reels sur 4, RegisterCount est un entier sans signe <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : SetPixelShaderConstantI
+     procedure_id : 1864273053884362881
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle SetPixelShaderConstantI
+      Procédure VIRTUELLE SetPixelShaderConstantI(RegisterIndex est un entier sans signe <utile>, tabConstantData est un tableau <utile> d'entiers, RegisterCount est un entier sans signe <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : SetPixelShaderConstantB
+     procedure_id : 1864273062474365676
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle SetPixelShaderConstantB
+      Procédure VIRTUELLE SetPixelShaderConstantB(RegisterIndex est un entier sans signe <utile>, tabConstantData est un tableau <utile> de booléens, RegisterCount est un entier sans signe <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+  properties :
+   -
+     name : Interface
+     identifier : 0x19df45361a1b2cab
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         Procédure PUBLIQUE virtuelle Interface()
+         renvoyer PTRVTbl(objet)
+        type : 1966080
+      -
+        code : |1-
+         
+        type : 2031616
+     template_refs : []
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000cb9b369
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

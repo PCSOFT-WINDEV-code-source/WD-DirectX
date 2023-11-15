@@ -1,0 +1,99 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXInclude
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19df5197052784e8
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXInclude est une classe
+      	un objet objetcom
+      	
+      Fin
+      
+      constant
+      		
+      	// Méthodes de l'interface ID3DXInclude (VTABLE) à redéfinir
+      	ID3DXInclude_SetTransform									= 0
+      	ID3DXInclude_SetMaterial									= 1
+      	ID3DXInclude___IDXBASE										= 1
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1864298479823193320
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur ObjetCOM(nInterface)
+      	
+      	// Définition de l'IID
+      	VariableRAZ(:IID)
+      	
+      	// Enregistre l'objet auprès de la collection
+      	ID3DXInclude_RegisterObject(objet)
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1864298479823258856
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : Open
+     internal_properties : CAAAAAgAAACyk4d45VDMZEeikVtGso3aRToCmFktPaBj8CJrGS3mak9gdFCZj3jUIw6Sz/Rx4ZlLuUJqUnXRFJhpnQY0eyVrQuNUwgoJQxgIxkJ+fqrV46ky/x13xbx/puENKnUWlrQZiAI+lVhQnVIsncpnh3pofUKsl3iw5ueT/kipBk5RjmulqmnyHNCs7GD4YUuCRLfu5tQLVFT0lafOW+NF+cjzJaQa5jdkX+xFliHORJUvgc0VPadpirRKvN6a2x5J3T8Tjjs8o2u45WRYHGvbnr28CNv1EwA+DwtYC5iMjnVEhwSHSb09d9a7ViEHUpWwcJW53V9bTrxOt6duRYEcM1Y8V9lCF01X/VUw6KEMGhbR1n9/JfQ9Rg==
+     procedure_id : 1864298853486876975
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle Open
+      Procédure VIRTUELLE Open(IncludeType est un entier sans signe <utile>, FileName est une chaine <utile>, pParentData est un entier systeme <utile>, ppData est un entier systeme <utile>, pBytes est un entier systeme <utile>)
+      renvoyer e_notimpl
+     type : 458752
+   -
+     name : Close
+     internal_properties : CAAAAAgAAAA+mOob2AwWwfDvZA9oD89L+HJrSjFBxOcgmPlnwhGW+HcPt5ghquRsRH/expJCfg12XBFoTcWsPb02P5TsAieHVF4lRoTxIGb7RCmyLq18fDX34Vino5xmIPDZRORC4KLLXO8x3NlBCC1jSJaRQkNyousz+DkO4/7tFrK/0mozqyiiVe2UXMHyBnwi9KD2O3nMpjV5fO534IC+Gwr1QAJAsEopelkaotO8SnQv9DH74G71XQ1HjrrBz6z4AapA5c0cr4a/y9tj1i9UtG8rQQ8FhSIRhGZKZDk8/OpxtPXlMihOgz9SMCLi6Hpgd/wt1L6YLFQ0ZaX52v34/8zi4epfefVxY3qTMnE2QTKwNe8yUk5twGGK2CL8lg==
+     procedure_id : 1864298883551720463
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle Close
+      Procédure virtuelle Close(pData est un entier systeme <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+  properties :
+   -
+     name : Interface
+     identifier : 0x19df5197052884e8
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         Procédure virtuelle Interface()
+         renvoyer PTRVTbl(objet)
+        type : 1966080
+      -
+        code : |1-
+         
+        type : 2031616
+     template_refs : []
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000b65b211
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

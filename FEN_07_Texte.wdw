@@ -1,0 +1,423 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_07_Texte
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_07_Texte
+ identifier : 0x29eddf8dfea7a197
+ internal_properties : CAAAAAgAAADpgo5zJ9blsBXBIiM+EocIc5W2+EAK5dbdTHzxZZp/y5tHkUewW08nxqpP8C3kfWUy+nBBFev0ZUzbbfQvV0BtYEN9JlzCPWdvLMUcdOWkgcVW5YBLSx/lz48YZaFCXTNXlAtib0q0XNzAS17MPhPzElD2wRlbuzQBBJrfBFIyL0inUpqLeqTK2rNFRNTOC4w29lQsgFpAqY/n7PXgsTeG7Tt4ta1IBSSfT4Ow6JgHjSqXUU6dyiQvfwJCTcyPzW6NRjDDrPcXEXepJW2tj2GQRzs1cJrg96HjFCg+yX4rVl53IUHKu1kQHdaY2B8GdwXLD1Zh/vG5rfrgRSsDNBbZs5lUHQRdDpJBN8EtZMH3wEn+4eQyrBlWNVWeRR3Nbu5AfQ5cYM7uoXKlb59qmqhYlhtOk8WyyZQSDg1CotCU5Ylyzz9i9wq2wziYsosEnkqolDg2Bxo5xeUpt1aRSUDFYVYeFfxqiEqvl/HdKcHXQ+RX6K7OftFt/ZWdu15S14WEQQy0KFY+BA40aj9ZeHBS9s42zUNRGIsQagjAvdiMIH7QBIg4MQxx7+RAJAVnyEwCy7+UwFXudftDSZL+A3wvJJxGW6ziwwwCHHvr/gQRr067Y4A2rFpEpRvNlXQyy0J50w2w1T1HzIUaBA3naRF8ztyXcWlKwurWO9jcV6fJc+gmJnRP236xJyhY41MnSm78dLnv/yzmHNelKFBwFD1nZsUc7zDKKquafBMNMV3S2xTyULTeEgc1ZrunPKo/VR3w+VacaEYvGqAn4p+C5k/psPrz2j2y+rzPoBnRZj1n8rMB4cbd1hcKTyuphTNvJnXvbGHvPhn7Cci+onAd8/8/J30eNE39zH/ZV6+goYaMeHAPbVEM/We7f1Z2krKKxs+HAIU/uxiaLz0LPf5HoyhTG5ND5rbSCHOTZruhbj3W5Ax9UmpCe3Ua9wikggUy+NWraIomOgp+9vKvIdjHDVCB0SzWenUvZ9pXCFF9ng1ffT9ndGiP++bDHcCO/aakL3g5Jhx03+p+u4oK3FKvJrQ2xGyVYW8Mn415LbRqTZNNAJ2EXUtGBoBB
+ properties :
+  width : 796
+  height : 606
+  widthClient : 794
+  heightClient : 574
+ controls :
+  -
+    name : BTN_Echap
+    identifier : 0x2c7667436b8931ac
+    internal_properties : CAAAAAgAAAAKQR39nCWxFqUasM4+VIdAoe6opfTplT3JKQJC0iiLmubOqrfx9PbD7I7EX8THBzfv0qxy3TM284jsTwOnNr6ryKkL/ERjoqbdKpiCwRoLGXbW2tVMoEtzKlaZteS98sfj3kgI6VzNQO76P6QdvU04GgPwfErjSuNbLFeloYDQ5jIFrhnPkQ7lCxNKKKaiFVFznlnJ7LOV2GNVp/HBvkRdLghL9c7cTT5GSxaA1wdV7qFB++cirjc2mWFo0g2oUFQw/1wPmIdvPxTgJb6skNPP3wdUjDa8ncJRQECptokTeBADDD019d4ZgTuDbAmJMGHd8UR0eJ6JFyAc5W2AVll48uHlQ+LtaGoFOYcWsJimPLGtwZGZYdLFo5y5xX9izBXro05XQXc09wQZG/0XhM0yPUl/JmkoVQKPxmyXY8Si7s959Q+tJYwr0YyTbaDo2t0IrSf7OAZoyxhNEmbxbraBl4BZjFLXecQvjlvXAcYwZ6jLajS3QIUfX37wrzpxaE0BhOV72q+8jLmiEu4hwdWJCBlBxbjXVa3/goIcCLANkht+AbieJ/b/1Jib3PKjRVDXiQzta0Bz8Q104vEjbsxBfAv+D8VdOJbkANJ4wRZzwm4gs/fdgtAYvZmNMCuFsYssApGrDOwJD5YBUSFqY2saMfJsdBjxqhAI71iYWhXGegkv/p7rOmDoEBvhXJc8
+    properties :
+     x : 6
+     y : -55
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAADQZyvpRjJZltgKBVFD+SKMukTEU1n2G2jmPSjnx1ZKdSF2vB36egNKcReVrz/xwpIZdIpZoyUu0CjPxu+MpGLAedmE/39iAmJIcu72BpKoWkpseLXy2lnJGPSMFw==
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : IMG_DX
+    identifier : 0x29eddf8dfea9a197
+    internal_properties : CAAAAAgAAAA0r5LCujLLgF1TAGpy3WSaF9JrAAaxeQqutcCy9cXlSQ3YE+ng/rNikVuFhyGWrFJLqecdbhXWsktHwyeuCEscPQZE2MQO1/t+avJL6BZZAwwg2yHa2zX0CKtlgWiqCSLkrjgOLooAUtLwSaAoXxGoFjEmK1DCA1d2jbCukWMsfuVv4RVG+qMScbbKAWdOre4VKYWex33G8z2SfZVmP+asngw0k6hlrWy0Ll9iOhtSnroNuvspeSGKcR9vkH6dpuvLRE+6MUR5Cj0BtT8LFU2nllVB363aKsQjBujao1SB7/G/U/fGt/c5V/FCN3vAo6KMqndv44tIKhR1zXxaB0NWSN1MYpC1XnrW8raZ/C5atwjhCZSIWbjO853cCk3rRVoZjUXLx+giGHXFw9gdL9PVyVA8High5vQRG7HnuLKBPL07MfaNvdFXSyv6Zu3U+9HFqPzZQMZqk2bVzbxmARoovW/THLe2+U/vkYXMuxhVus1YPDQ+K6VjHiyZBrl0gzraG3NbJ0osNnkacjA6WqbF3GxiQe6OB1orBSoD95MUrqZTvpcCFACVXxf12lZvaPnc9kqDlg1HJ2pcAOAVErJu5uaEyqVDO4+9yW+xJPWHRKuocYXSpNLz/ydk4v9Y5cJ52xc=
+    properties :
+     width : 794
+     height : 574
+    type : 8
+    code_elements :
+     internal_properties : CAAAAAgAAAAjW0JkwpJU6bb4H6gOVG5BbTnI6bKQ5jZqh7f+RvG3nM4Lbyno7TyJc8vGsvwgufYtqM9vZ26FX9b1xFxJoxL2v5dwS+B51GY3n8VNnqblK4fCWhAm64k9EtSiN68W
+     type_code : 8
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x29eddf8dfeaaa197
+  internal_properties : CAAAAAgAAAD7S+2GOLjEeheq9Y6YZGIRPpLnwB8KUS2je4S4X5oxSGrv51WBBaVxxbk/BTEdUwW0fnnvlhQNIBAuQTAO0S9+S8FMTvDhqkS1JydqFJBfHlbZSFzBkZAjjJ5aIH/cuMnF4Pme57TAyYvjnlkzTJmN5UX9hu+BEl3AsIsso5gsz3oX/KHp1ai/xWZCb54MlUFXdWmT2EOpULKqea/LH9EOlTkaiWsV2aM2/FfXQjTSY3NhAR6zEzKHYKVJwiZULchG0D4LNvRbPifZJPDMmlF6ptz+Rg0QN6SXG5jU7HifIzmkonwDFnOJQw==
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAC+9uhLN8i+n3Blheuv1bHLUMSc+WjkXnnqrgK2oFpcFi3GvZzlISmTuqQsHLXmBFnDjoJja95W9fYDTj9DuWluuCK/qeGQkzsBYIcfO1lgi6pfMTvo0v6TrtHi+Q==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAAu58UGYTaqq0VAg+y3uvRhOpypq7r2386+NtQ9NSrU5bZQT1JK+BIAd7ExZ2aArpvZUlizMLNY9qjNF9sn/jiTBhyE5b2945vmpgXnJLUiQYdDETKBnXlWNI7t1pChuqUd3jpOUd0PLPS7hRBsaJzxInWeR94J2fGUTsHl49vWjp/YNe4zba5PsNPjJkENuftq
+     code : |1-
+      
+      //
+      // Cette fenêtre permet de créer un "device" Direct3D
+      //
+      
+      // Objets
+      gpclD3D				est un IDirect3D9 dynamique				// Objet de base permettant de créer un "device"
+      gpclD3DDevice 		est un IDirect3DDevice9 dynamique		// Objet de manipulation du "device"
+      gpclTexte			est un CD3DFont dynamique				// Objet CD3DFont (issu du SDK DirectX)
+      gpclDXFont			est un id3dxfont dynamique				// Objet ID3DXFont (issu de DirectX 9)
+      gpclDXTexte			est un ID3DXMesh dynamique				// Objet ID3DXMesh
+      grLargTx, grHautTx	sont des reels sur 4					// Dimensions du texte 3D
+   -
+     code : |1-
+      
+      // Initialisation de Direct3D
+      si D3DInit() ALORS
+      
+      	// Initialise le texte
+      	si D3DInitTexte() alors
+      	
+      		// Démarre le rendu
+      		D3DAffiche()
+      	sinon
+      		SI EnModeTestAutomatique ALORS
+      			TestEcritRésultat(terInfo, "DirectX n'est pas disponible sur cette machine" + RC + ErreurInfo)
+      			Ferme
+      			RETOUR
+      		FIN
+      		
+      		Erreur("Impossible d'initialiser le texte 3D")	
+      	fin
+      sinon
+      	SI EnModeTestAutomatique ALORS
+      		TestEcritRésultat(terInfo, "DirectX n'est pas disponible sur cette machine")
+      		Ferme
+      		RETOUR
+      	FIN
+      	
+      	erreur("Impossible d'initialiser Direct3D")
+      FIN
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : D3DInit
+     internal_properties : CAAAAAgAAACfQPvTmSQQGFU/jrhiK/IP/B+PijIMmG46ZifDmiFmCK51z4Lg24WCMRm0Dob46dLEbFQQrZGeuxNZ2knFDX/tFiPMd4uwDZnfV6qklRbBi+QZc1ybaOhCe64nkNVaE6kWInooEo34ZMkAAREk4pZgqDkerS4pRR958rt2qZvctMbuY8Q+RH0gp9lS/3l9ePnMPgRkdHJn9prOw39aKcVGzaDrfHlxuRNETAtaLGZhVgH3Dsx4
+     procedure_id : 1868395221701599639
+     type_code : 14
+     code : |1-
+      // Résumé : Initialise Direct3D
+      Procédure D3DInit()
+      
+      	stD3DPP est un D3DPRESENT_PARAMETERS
+      	stLight	est un D3DLIGHT9
+      
+      	// Création de l'objet Direct3D
+      	gpclD3D = Direct3DCreate9(D3D_SDK_VERSION)
+      	
+      	// Vérifie si l'objet Direct3D a pu être créé
+      	si gpclD3D = Null ALORS
+      		renvoyer faux	
+      	FIN
+      	
+      	// Paramétrage de la structure utilisée pour créer un "device" Direct3D
+      	stD3DPP:Windowed = vrai														// Mode fenêtré
+      	stD3DPP:SwapEffect = D3DSWAPEFFECT_DISCARD									
+      	stD3DPP:BackBufferFormat = D3DFMT_UNKNOWN
+      	stD3DPP:EnableAutoDepthStencil = vrai
+      	stD3DPP:AutoDepthStencilFormat = d3dfmt_d16
+      	
+      	// Création du "device" Direct3D
+      	// On utilise ici l'écran par défaut (D3DADAPTER_DEFAULT) et un "device" matériel (D3DDEVTYPE_HAL)
+      	si failed(gpclD3D:CreateDevice(D3DADAPTER_DEFAULT, D3DDEVTYPE_HAL, handle(img_dx), D3DCREATE_HARDWARE_VERTEXPROCESSING, stD3DPP, gpclD3DDevice)) _ou_ gpclD3DDevice = null ALORS
+      		renvoyer faux
+      	FIN
+      	
+      	// Active le Z-Buffer et l'éclairage
+      	gpclD3DDevice:SetRenderState(D3DRS_ZENABLE, vrai)
+      	gpclD3DDevice:SetRenderState(D3DRS_LIGHTING, vrai)
+      	
+      	// Autres paramètres
+      	gpclD3DDevice:SetRenderState(D3DRS_SPECULARENABLE, vrai)
+      	gpclD3DDevice:SetRenderState(D3DRS_DITHERENABLE, vrai)
+      	
+      	// Crée une lumière
+      	stLight:Type = D3DLIGHT_DIRECTIONAL
+      	stLight:Diffuse:red 	= 1.0
+      	stLight:Diffuse:green 	= 1.0
+      	stLight:Diffuse:blue 	= 1.0
+      	stLight:Direction		= [0.0, -10.0, 10.0]	
+      	stLight:Position_		= [0.0, -10.0, 10.0]
+      	stLight:Range			= 1000.0
+      	
+      	D3DXVec3Normalize(stLight:Direction, stLight:Direction)
+      	
+      	// Active la lumière définie
+      	gpclD3DDevice:SetLight(0, stLight)
+      	gpclD3DDevice:LightEnable(0, vrai)
+      	
+      	// Couleur ambiante
+      	gpclD3DDevice:SetRenderState(D3DRS_AMBIENT, D3DCOLOR_XRGB(196, 196, 196))	
+      	
+      renvoyer vrai
+     type : 458752
+   -
+     name : D3DAffiche
+     internal_properties : CAAAAAgAAADE/JPOuFhK0K0MTaTr9cNufhIUP5gcSUbEVXvwchUKUjS+7hnEDEEf6vuNaVPIySL46WXlSboJAMT98GAo0p7V3EQqMiJjkQsctx0xCJf7FbK9QoxTbjw2sinauJhP4ttcJtzcWnMkvnokGRRsa4ZcgNsUtJd+UYaA0qmz6/SyZk+oLdjvz+a6YdR8kuR0lglyIOHxhglsQ/bKRJ0LNt49UVLbt4JpYsJEG4aGVOz1Qogy30HtTbYEdnh5w6tWJp7rTUpf/n1LQsAtzokqQIFa57GscWpozw==
+     procedure_id : 1868395221701665175
+     type_code : 14
+     code : |1-
+      // Résumé : Rendu et affichage du "device" Direct3D
+      // Procédure automatique :
+      // La procédure est exécutée manuellement, lors d'un appel dans le code
+      // Elle sera répétée en boucle, en attendant  entre chaque appel
+      // Chaque appel suivant exécute une seule fois la procédure, sans timer
+      // 
+      Procédure D3DAffiche()
+      
+      	stMaterial est un D3DMATERIAL9 //dynamique = allouer un D3DMATERIAL9
+      
+      	// Si le "device" Direct3D est invalide, on sort
+      	si gpclD3DDevice = null alors retour
+      	si gpclTexte = null alors retour
+      	
+      	// Efface le "backbuffer" avec une couleur bleue
+      	gpclD3DDevice:Clear(0, null, D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER, D3DCOLOR_XRGB(0, 0, 255), 1.0, 0.0)
+      	
+      	// Démarre la scène
+      	si SUCCEEDED(gpclD3DDevice:BeginScene()) ALORS
+      		
+      		// ID3DXFont
+      		gpclDXFont:DrawTextA(null, "Texte avec ID3DXFont", -1, make_rect(320, 0, img_dx..largeur, img_dx..hauteur / 2), 0x00000004, D3DCOLOR_ARGB(255, 255, 255, 255))
+      				
+      		// Texte agrandi x2 (0.03 * 2)
+      		gpclTexte:DrawTextScaled(0.0, -0.5, 0.0, 0.06, 0.06,  D3DCOLOR_XRGB(0, 0, 0), "Texte noir, agrandi x2", 	CD3DFont::D3DFONT_CENTERED_X 									|	CD3DFont::D3DFONT_FILTERED	)
+      		
+      		// Texte multiligne
+      		gpclTexte:DrawText(0.0, 70.0, 0.0, D3DCOLOR_XRGB(255, 255, 255), "Texte sur" + RC + "deux lignes",										 									 	CD3DFont::D3DFONT_FILTERED	)
+      
+      		// Texte fixe
+      		gpclTexte:DrawText( 0.0, 0.0, 0.0, D3DCOLOR_XRGB(255, 255, 255), "Haut gauche", 						CD3DFont::D3DFONT_top 											| 	CD3DFont::D3DFONT_FILTERED	)
+      		gpclTexte:DrawText( 0.0, 0.0, 0.0, D3DCOLOR_XRGB(255, 255, 255), "Haut droite", 							CD3DFont::D3DFONT_top 			| CD3DFont::D3DFONT_right		| 	CD3DFont::D3DFONT_FILTERED	)
+      		gpclTexte:DrawText( 0.0, 0.0, 0.0, D3DCOLOR_XRGB(255, 255, 255), "Bas gauche", 						CD3DFont::D3DFONT_bottom 										| 	CD3DFont::D3DFONT_FILTERED	)
+      		gpclTexte:DrawText( 0.0, 0.0, 0.0, D3DCOLOR_XRGB(255, 255, 255), "Bas droite", 							CD3DFont::D3DFONT_BOTTOM 		| CD3DFont::D3DFONT_RIGHT		| 	CD3DFont::D3DFONT_FILTERED	)
+      		gpclTexte:DrawText( 0.0, 0.0, 0.0, D3DCOLOR_XRGB(255, 255, 255), "Haut centré", 						CD3DFont::D3DFONT_Centered_x 	| CD3DFont::D3DFONT_TOP			|	CD3DFont::D3DFONT_FILTERED	)
+      		gpclTexte:DrawText( 0.0, 0.0, 0.0, D3DCOLOR_XRGB(255, 255, 255), "Gauche centré",	 					CD3DFont::D3DFONT_Centered_y 									| 	CD3DFont::D3DFONT_FILTERED	)
+      		gpclTexte:DrawText( 0.0, 0.0, 0.0, D3DCOLOR_XRGB(255, 255, 255), "Droite centré",	 					CD3DFont::D3DFONT_Centered_y 	| CD3DFont::D3DFONT_RIGHT		| 	CD3DFont::D3DFONT_FILTERED	)
+      		gpclTexte:DrawText( 0.0, 0.0, 0.0, D3DCOLOR_XRGB(255, 255, 255), "Centré", 							CD3DFont::D3DFONT_Centered_y 	| CD3DFont::D3DFONT_CENTERED_X 	| 	CD3DFont::D3DFONT_FILTERED	)
+      		gpclTexte:DrawText( 0.0, 0.0, 0.0, D3DCOLOR_XRGB(255, 255, 255), "Bas centré", 							CD3DFont::D3DFONT_Centered_x 	| CD3DFont::D3DFONT_bottom	 	| 	CD3DFont::D3DFONT_FILTERED	)
+      				
+      		// Initialisation des matrices
+      		D3DInitMatrices()
+      				
+      		// "Material" du texte 3D
+      		stMaterial:Diffuse:red 		= 0.0; stMaterial:Ambient:red 		= 0.0
+      		stMaterial:Diffuse:green 	= 1.0; stMaterial:Ambient:green 	= 0.5
+      		stMaterial:Diffuse:blue 	= 0.0; stMaterial:Ambient:blue 		= 0.0
+      		stMaterial:Diffuse:alpha 	= 1.0; stMaterial:Ambient:alpha 	= 1.0
+      		gpclD3DDevice:SetMaterial(stMaterial)
+      				
+      		// Dessin du texte 3D
+      		gpclDXTexte:DrawSubset(0)
+      		
+      		// Fin de la scène
+      		gpclD3DDevice:EndScene()
+      	FIN
+      	
+      	// Affichage du "backbuffer"
+      	gpclD3DDevice:Present(null, null, null, null)
+     type : 458752
+   -
+     name : D3DInitTexte
+     internal_properties : CAAAAAgAAACvkMuDmbTgKMXvXsiSWyJfDG+rYnMs7rqmMBknRr9cNiZjCdi9MwUK6VE05kZ42Zp8dIRITSEWu9NZckktBbe9ZlM0h+MYPfEHT7pcRQbBs3whc6SreLCSey5zxDmeT0WSnvakNuFk4I10jYWoJpLcJEU6yQJdccttBncqDf84IEJq3xAS6KnM223eQ70B9OXlNSG3tX9a2XHVkrKTylrbAZQrfJmx+dNE7Mt6bAZBVlFH3vxI
+     procedure_id : 1868395221701730711
+     type_code : 14
+     code : |1-
+      // Résumé : Initialise le texte
+      Procédure D3DInitTexte()
+      
+      	hDC est un entier système
+      	hFont est un entier système
+      	hFontOld est un entier système
+      	nScale est un entier
+      	nHauteur est un entier
+      
+      	// Création d'un objet CD3DFONT
+      	gpclTexte = allouer un CD3DFont("Arial")
+      	si gpcltexte = null ALORS
+      		RENVOYER Faux
+      	FIN
+      		
+      	// Initialise l'objet
+      	si failed(gpclTexte:InitDeviceObjects(gpclD3DDevice)) ALORS
+      		renvoyer faux
+      	FIN
+      		
+      	SI FAILED(gpclTexte:RestoreDeviceObjects()) ALORS
+      		RENVOYER Faux
+      	fin
+      	
+      	// Création d'un DC
+      	hDC 	 = API("GDI32", "CreateCompatibleDC", Null)	
+      	
+      	// Calcul de la hauteur de la police
+      	nScale   = SysMétrique(90)
+      	nHauteur = -((9 * nScale) / 72)
+      	
+      	// Crée la police
+      	hFont	 = API("GDI32", "CreateFontA", nHauteur, 0, 0, 0, 700, faux, Faux, Faux, 1, 0, 0, 1, 2, "Arial")
+      	SI hFont = Null ALORS 
+      		RENVOYER faux
+      	FIN
+      	
+      	// Sélectionne la police
+      	hFontOld = API("GDI32", "SelectObject", hDC, hFont)
+      	
+      	// Crée le texte 3D
+      	si failed(D3DXCreateTextA(gpclD3DDevice, hDC, "Texte 3D", 0.001, 0.4, gpclDXTexte, null, null)) _OU_ gpclDXTexte = Null ALORS
+      		renvoyer faux
+      	FIN
+      	
+      	// Nettoyage
+      	API("GDI32", "SelectObject", hDC, hFontOld) 
+      	API("GDI32", "DeleteObject", hFont) 
+      	API("GDI32", "DeleteDC",   hDC) 
+      	
+      	// Récupère les dimensions du texte 3D
+      	D3DXGetMeshDimensions(gpclD3DDevice, gpclDXTexte, grLargTx, grHautTx, null)
+      	
+      	// Crée une police	
+      	SI FAILED(D3DXCreateFontA(gpclD3DDevice, 12, 0, 400, 1, Faux, 0, 0, 1, 2, "Lucida Console", gpclDXFont)) _OU_ gpclDXFont = Null ALORS
+      		RENVOYER Faux
+      	FIN
+      		
+      renvoyer vrai
+     type : 458752
+   -
+     name : D3DInitMatrices
+     internal_properties : CAAAAAgAAAAcZLF9PmMdV0ItEI4PvrNw3zrVc+EBONdo6La+vT/EgRoqDs63ZrZKnvy/XEh3WbtcPQeqLykDfisuqO5qBjiiA++UcSKpT0s456f7hccZYaBTvCVRFNlmILWgRuHiXMHTApnrUFNHgIK9CGsKDHMWsacrhoCZnEMKt7Z8+yOBrI9R8WNQrfbTjyRGjqPnfjZWYw6/OrbMAuPCeEah5A4i0AamOur3
+     procedure_id : 1868395221701796247
+     type_code : 14
+     code : |1-
+      // Résumé : Initialisation des matrices
+      Procédure D3DInitMatrices()
+      	
+      	nHeure est un entier
+      	rAngle est un reel sur 4
+      		
+      	stMatWorld 	est un D3DXMATRIX	// Matrice de représentation du "monde" Direct3D
+      	stMatView	est un D3DXMATRIX	// Matrice de représentation de la "vue" Direct3D
+      	stMatProj	est un D3DXMATRIX	// Matrice de projection Direct3D
+      	stMatTrans	est un D3DXMATRIX	// Déplacement
+      	stVecEye	est un D3DXVECTOR3	// Position de l'oeil
+      	stVecCam	est un D3DXVECTOR3	// Direction de l'oeil
+      	stVecUp		est un D3DXVECTOR3	// Elévation de la caméra
+      
+      	nHeure = D3DXGetTime()
+      	rAngle = -nHeure / 180
+      	
+      	// Définit une rotation horizontale
+      	D3DXMatrixRotationY(stMatWorld, rAngle)
+      	
+      	// Et déplace la rotation sur le centre du texte
+      	D3DXMatrixTranslation(stMatTrans, -(grLargTx / 2.0), -1.0, 0.0)
+      	
+      	// Multiplie les transformations
+      	D3DXMatrixMultiply(stMatWorld, stMatTrans, stMatWorld)
+      		
+      	// Applique la rotation
+      	gpclD3DDevice:SetTransform(D3DTS_WORLD, stMatWorld)
+      	
+      	// Initialise les vecteurs de vue
+      	stVecEye = [0.0, 0.0, -5.0]
+      	stVecCam = [0.0, 0.0,  0.0]
+      	stVecUp  = [0.0, 1.0,  0.0]
+      		
+      	// Définit la matrice de vue
+      	D3DXMatrixLookAtLH(stMatView, stVecEye, stVecCam, stVecUp)
+      	
+      	// Applique la vue
+      	gpclD3DDevice:SetTransform(D3DTS_VIEW, stMatView)
+      	
+      	// Définit la matrice de projection
+      	D3DXMatrixPerspectiveFovLH(stMatProj, d3dx_pi / 4.0, 1.0, 1.0, 100.0)
+      	
+      	// Applique la matrice de projection
+      	gpclD3DDevice:SetTransform(D3DTS_PROJECTION, stMatProj)
+     type : 458752
+  templates :
+   -
+     name : FEN_07_Texte
+     identifier : 0x1543d3fb368b2642
+     code_elements :
+      internal_properties : CAAAAAgAAACIMP8rh0cZMm+J7g8RNUlsXiqZmOPRK/tf/B3QBD1vZObrdyk+TdDl36cYuEymKXecYWBOpMsaqp9eu12KXJn/pLRlhrumBxv40PYcrbfKDuiju791pEByR5nn6hq7
+      type_code : 1
+      p_codes :
+       -
+         code : |1-
+          
+       -
+         code : |1-
+          
+         type : 34
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+       -
+         code : |1-
+          
+         type : 2
+       -
+         code : |1-
+          
+         type : 11
+       -
+         code : |1-
+          
+         type : 12
+       -
+         code : |1-
+          
+         type : 17
+       -
+         code : |1-
+          
+         type : 13
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAAD41EFVWFF7SAwzd+8+tTlPQzQOqrePoffe3zujAQsXVPKhnbz1Vze9uX1xEHfGZ53L/ImwBVh7QM0ijTy26nuXl6nmgRuF687jh7MrAxkw2m0o/GTSE2RmszekPw==
+  original_name : FEN_Fenêtre1
+resources :
+ string_res :
+  identifier : 0x10d99902100ab83c
+  internal_properties : CAAAAAgAAACa/HBK/CUtN70EwGNqHiA5Ong4hctn68fiPi5bW47/f5kdMy4EhFbbsLDr9WzJV0mJiQ==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

@@ -1,0 +1,162 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IStream
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19de1217014284ef
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      IStream est une classe
+      	un objet ISequentialStream
+      	
+      Fin
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface IStream (VTABLE)
+      	IStream_Seek					= ::ISequentialStream___IDXBASE + 1
+      	IStream_SetSize					= ::ISequentialStream___IDXBASE + 2
+      	IStream_CopyTo					= ::ISequentialStream___IDXBASE + 3
+      	IStream_Commit					= ::ISequentialStream___IDXBASE + 4
+      	IStream_Revert					= ::ISequentialStream___IDXBASE + 5
+      	IStream_LockRegion				= ::ISequentialStream___IDXBASE + 6
+      	IStream_UnlockRegion			= ::ISequentialStream___IDXBASE + 7
+      	IStream_Stat					= ::ISequentialStream___IDXBASE + 8
+      	IStream_Clone					= ::ISequentialStream___IDXBASE + 9
+      	IStream___IDXBASE				= ::ISequentialStream___IDXBASE + 9
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863947185792713967
+     type_code : 27
+     code : |1-
+      Procédure Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur ISequentialStream(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = COMUtils.IID_IStream
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863947185792779503
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : Seek
+     internal_properties : CAAAAAgAAAB+v3QZ/3w436qdVcBFnSMeI6rLWSAIvXOir+ZtoZL0VCSiRuttGJ4wiVDaaiISG/yhandlEa4JkpeNGChKCRM60HXaoYkq8QGfoeRWdAH2ld96ZOYX6oPCNhG0JJfOqbZLznVVw3LNao6XDx9VZ9tMUFFEbHUJYpRt0N8V7rePMfa9eZ3ojZ+yCvGcQfoJPfndgBvzghGR/ZySCxValk+Pslol5EczNgaQkO+ipXIMTca9ktNX9RGggbIKwYWUzNE4OjTKC8gNtfEOZkfytUCQLVEwgVAP5slZuTqUaeuUm9YP+oOFaF/iWTz359bH/838dFE6lbL85VQEbw0paXKc0lOrG2hA67gUa2hJGHFBh2JA8e7lwkU=
+     procedure_id : 1866796243932802463
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Seek
+      Procédure Seek(dlibMove est un entier sur 8, dwOrigin est un entier sans signe, libNewPosition est un entier sans signe sur 8)
+      renvoyer :call(IStream_Seek, dlibMove, dwOrigin, &libNewPosition)
+     type : 458752
+   -
+     name : SetSize
+     procedure_id : 1866796252522805025
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetSize
+      Procédure SetSize(libNewSize est un entier sans signe sur 8)
+      RENVOYER :CALL(IStream_SetSize, libNewSize)
+     type : 458752
+   -
+     name : CopyTo
+     procedure_id : 1866796261112807415
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CopyTo
+      Procédure CopyTo(pclStream est un istream dynamique, cb est un entier sur 8 sans signe, cbRead est un entier sur 8 sans signe, cbWritten est un entier sur 8 sans signe)
+      RENVOYER :CALL(IStream_CopyTo, ptr(pclStream), cb, &cbRead, &cbWritten)
+     type : 458752
+   -
+     name : Commit
+     procedure_id : 1866796269702743973
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Commit
+      Procédure Commit(grfCommitFlags est un entier sans signe)
+      RENVOYER :CALL(IStream_Commit, grfCommitFlags)
+     type : 458752
+   -
+     name : Revert
+     internal_properties : CAAAAAgAAABKtXZQVT6tyBc2O8Y+U4Qrb3itwYAR7D6lOwdbCYsOwwv40B3BmXfXwoIz6UG+99iTSAPLvxfr6ul+HLcRYvlt/smcKdS4aYbHv1xCl1LX3/QTRk+/jxPhYQupGEZxdGsw94UpEXtg6XqTuw==
+     procedure_id : 1866796278292746175
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Revert
+      Procédure Revert()
+      RENVOYER :CALL(IStream_Revert)
+     type : 458752
+   -
+     name : LockRegion
+     procedure_id : 1866796295472684873
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode LockRegion
+      Procédure LockRegion(libOffset est un entier sur 8 sans signe, cb est un entier sur 8 sans signe, dwLockType est un entier sans signe)
+      RENVOYER :CALL(IStream_LockRegion, libOffset, cb, dwLockType)
+     type : 458752
+   -
+     name : UnlockRegion
+     procedure_id : 1866796304062686905
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UnlockRegion 
+      Procédure UnlockRegion(libOffset est un entier sur 8 sans signe, cb est un entier sur 8 sans signe, dwLockType est un entier sans signe)
+      RENVOYER :CALL(IStream_UnlockRegion, libOffset, cb, dwLockType)
+     type : 458752
+   -
+     name : Stat
+     internal_properties : CAAAAAgAAABKtXZQVT6tyBc2O8Y+U4Qrb3itwYAR7D6lOwdbCYsOwwv40B3BmXfXwoIz6UG+99iTSAPLvxfr6ul+HLcRYvlt/smcKdS4aYbHv1xCl1LX3/QTRk+/jxPhYQupGEZxdGsw94UpEXtg6XqTuw==
+     procedure_id : 1866796312652688639
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Stat
+      Procédure Stat(stSTATSTG est un STATSTG, grfStatFlag est un entier sans signe)
+      RENVOYER :CALL(IStream_Stat, &stSTATSTG, grfStatFlag)
+     type : 458752
+   -
+     name : Clone
+     internal_properties : CAAAAAgAAACVhhoXmV/oOBrUoVWg5OvQbo2iCe2CL/nPG+amK7dRFu2/b5LGGKWeHNFZzL7XKQjLDlvo7ATjqKzVQhIuFbSDxJaje8EDiGQHqRDcrPIaYnmKqaul/xUyE0mHOGXWr8tOlyuiUuXiuIGj6y7zXqa5rnXLLm9l9F9/u8GbmjZvMMt2hKykzLxdzV+iE/NnklMGLYVyZq9fCg/hCaft1JD1s7dblf3xai2Bd5aO+LElUT06pUR58b5zTrq99nlez+Oln3gvpcTvLkARTq9ZjV1eqvTu4n7gTdzXfw==
+     procedure_id : 1866796321242690717
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Clone
+      Procédure Clone(pclStream est un istream dynamique)
+      
+      	HRESULT est un entier système
+      	ppvStream est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(IStream_Clone, &ppvStream)
+      	
+      	// Allocation
+      	__BindInterface(pclStream, ppvStream, IStream)
+      
+      RENVOYER HRESULT
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000d71b3f6
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

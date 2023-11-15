@@ -1,0 +1,148 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXFileSaveData
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19de17540550f80c
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXFileSaveData est une classe
+      	un objet IUnknown
+      	
+      FIN
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ID3DXFileSaveData (VTABLE)
+      	ID3DXFileSaveData_GetSave			= ::IUnknown___IDXBASE + 1
+      	ID3DXFileSaveData_GetName			= ::IUnknown___IDXBASE + 2
+      	ID3DXFileSaveData_GetId				= ::IUnknown___IDXBASE + 3
+      	ID3DXFileSaveData_GetType			= ::IUnknown___IDXBASE + 4
+      	ID3DXFileSaveData_AddDataObject		= ::IUnknown___IDXBASE + 5
+      	ID3DXFileSaveData_AddDataReference	= ::IUnknown___IDXBASE + 6
+      	ID3DXFileSaveData___IDXBASE			= ::IUnknown___IDXBASE + 6
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863952945411913740
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Xof.IID_ID3DXFileSaveData
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863952945411979276
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetSave
+     procedure_id : 1866587478866013499
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetSave
+      Procédure GetSave(pclFileSaveObject est un ID3DXFileSaveObject dynamique)
+      
+      	HRESULT est un entier système
+      	ppvFileSaveObject est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXFileSaveData_GetSave, &ppvFileSaveObject)
+      	
+      	// Allocation
+      	__BindInterface(pclFileSaveObject, ppvFileSaveObject, ID3DXFileSaveObject)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetName
+     procedure_id : 1866587487456015358
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetName
+      Procédure GetName(sName est une chaine, dwSizeT est un entier sans signe)
+      
+      	HRESULT est un entier systeme
+      	ppvName est un entier système
+      
+      	// Appel
+      	HRESULT = :CALL(ID3DXFileSaveData_GetName, &ppvName, &dwSizeT)
+      	
+      	// Allocation
+      	sName = chainerecupere(ppvName, crAdresseASCIIZ)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : GetId
+     procedure_id : 1866587496046017452
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetId
+      Procédure GetId(Id est un GUID)
+      RENVOYER :CALL(ID3DXFileSaveData_GetId, &Id)
+     type : 458752
+   -
+     name : GetType
+     procedure_id : 1866587508930988183
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetType
+      Procédure GetType(Type est un GUID)
+      RENVOYER :CALL(ID3DXFileSaveData_GetType, &Type)
+     type : 458752
+   -
+     name : AddDataObject
+     procedure_id : 1866587521815957791
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode AddDataObject
+      Procédure AddDataObject(refGUID est un guid, sName est une chaine, GUID est un GUID, dwSizeT est un entier sans signe, pclFileSaveData est un ID3DXFileSaveData dynamique)
+      
+      	HRESULT est un entier système
+      	ppvFileSaveData est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXFileSaveData_AddDataObject, &refGUID, &sName, &GUID, dwSizeT, &ppvFileSaveData)
+      	
+      	// Allocation
+      	__BindInterface(pclFileSaveData, ppvFileSaveData, ID3DXFileSaveData)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : AddDataReference
+     procedure_id : 1866587530405960228
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode AddDataReference
+      Procédure AddDataReference(sRef est une chaine, GUID est un guid)
+      RENVOYER :CALL(ID3DXFileSaveData_AddDataReference, &sRef, &GUID)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000cafb35a
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

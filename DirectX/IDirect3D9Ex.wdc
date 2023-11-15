@@ -1,0 +1,118 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IDirect3D9Ex
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19db5faa018a8bb9
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      IDirect3D9Ex est une classe
+      	un objet IDirect3D9
+      	
+      Fin
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface IDirect3D9Ex (VTABLE)
+      	IDirect3D9Ex_GetAdapterModeCountEx			= ::IDirect3D9___IDXBASE + 1
+      	IDirect3D9Ex_EnumAdapterModesEx				= ::IDirect3D9___IDXBASE + 2
+      	IDirect3D9Ex_GetAdapterDisplayModeEx		= ::IDirect3D9___IDXBASE + 3
+      	IDirect3D9Ex_CreateDeviceEx					= ::IDirect3D9___IDXBASE + 4
+      	IDirect3D9Ex_GetAdapterLUID					= ::IDirect3D9___IDXBASE + 5
+      	IDirect3D9Ex___IDXBASE						= ::IDirect3D9___IDXBASE + 5
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863188054622833593
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IDirect3D9(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3D9.IID_IDirect3D9Ex
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863188054622899129
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetAdapterModeCountEx
+     procedure_id : 1866837643267407944
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetAdapterModeCountEx
+      Procédure GetAdapterModeCountEx(Adapter est un entier sans signe, Filter_ est un D3DDISPLAYMODEFILTER)
+      renvoyer :call(IDirect3D9Ex_GetAdapterModeCountEx, Adapter, &Filter_)
+     type : 458752
+   -
+     name : EnumAdapterModesEx
+     procedure_id : 1866837651857410100
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode EnumAdapterModesEx
+      Procédure EnumAdapterModesEx(Adapter est un entier sans signe,	Filter_ est un D3DDISPLAYMODEFILTER, Mode est un entier sans signe, stMode est un D3DDISPLAYMODEEX)
+      RENVOYER :CALL(IDirect3D9Ex_EnumAdapterModesEx, Adapter, &Filter_, Mode, &stMode)
+     type : 458752
+   -
+     name : GetAdapterDisplayModeEx
+     procedure_id : 1866837660447411991
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetAdapterDisplayModeEx
+      Procédure GetAdapterDisplayModeEx(Adapter est un entier sans signe, Mode est un D3DDISPLAYMODEEX, Rotation est un entier sans signe)
+      RENVOYER :CALL(IDirect3D9Ex_GetAdapterDisplayModeEx, Adapter, &Mode, &Rotation)
+     type : 458752
+   -
+     name : CreateDeviceEx
+     procedure_id : 1866837669037414084
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CreateDeviceEx
+      Procédure CreateDeviceEx(Adapter est un entier sans signe, DeviceType est un entier sans signe, hFocusWindow est un entier, BehaviorFlags est un entier sans signe, PresentationParameters est un D3DPRESENT_PARAMETERS, FullscreenDisplayMode est un D3DDISPLAYMODEEX, pclDeviceEx est un IDirect3DDevice9Ex dynamique)
+      	
+      	HRESULT est un entier système
+      	ppvDeviceEx est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3D9Ex_CreateDeviceEx, Adapter, DeviceType, hFocusWindow, BehaviorFlags, &PresentationParameters, &FullscreenDisplayMode, &ppvDeviceEx)
+      	
+      	// Allocation
+      	__BindInterface(pclDeviceEx, ppvDeviceEx, IDirect3DDevice9Ex)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetAdapterLUID
+     procedure_id : 1866837677627416256
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetAdapterLUID
+      Procédure GetAdapterLUID(Adapter est un entier sans signe, luid est un luid)
+      RENVOYER :CALL(IDirect3D9Ex_GetAdapterLUID, Adapter, &luid)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000d9db425
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

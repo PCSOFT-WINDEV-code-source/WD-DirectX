@@ -1,0 +1,296 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pD3DUtils
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x19e89e965cf0d892
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+      
+      STVERTEX est une structure
+      	x, y, z sont des réels sur 4
+      	normal_ est un D3DXVECTOR3
+      	u, v	sont des réels sur 4
+      FIN
+      
+      public constant
+      	gstResolution		est un SCREENRES
+      	
+      prive
+      	
+      	// Récupère la résolution actuelle de l'écran
+      	sRésolution est une chaine = SysRésolutionEcran()
+      	gstResolution = [ExtraitChaîne(sRésolution, 1), ExtraitChaîne(sRésolution, 2), ExtraitChaîne(sRésolution, 3), ExtraitChaîne(sRésolution, 4)]
+     type : 720896
+  procedures :
+   -
+     name : D3DXMatrixMultiplyEx
+     procedure_id : 1866916517276694169
+     type_code : 15
+     code : |1-
+      // Résumé : Multiplie les matrices m1, m2, ... mN ensemble
+      Procédure D3DXMatrixMultiplyEx(m1 est un D3DXMATRIX, m2 est un D3DXMATRIX, *)
+      
+      	stMatrice est un D3DXMATRIX
+      	
+      	// Multiplie les deux premières matrices
+      	D3DXMatrixMultiply(stMatrice, m1, m2)
+      	
+      	// Multiplie les autres matrices
+      	pour i = 3 _a_ MesParamètres..NbReçus		
+      		D3DXMatrixMultiply(stMatrice, stMatrice, MesParamètres[i])				
+      	FIN
+      	
+      renvoyer stMatrice
+     type : 458752
+   -
+     name : D3DXGetTime
+     procedure_id : 1867982737223783699
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie le temps écoulé depuis le 01/01/1800 en centièmes de secondes
+      Procédure D3DXGetTime()
+      
+      	nTime est un entier sans signe	
+      	nTime = (DateVersEntier(datedujour) * 24 + heureversentier(maintenant))
+      	
+      renvoyer nTime
+     type : 458752
+   -
+     name : SysRestaureRésolutionEcran
+     procedure_id : 1867993964486391577
+     type_code : 15
+     code : |1-
+      // Résumé : Restaure la résolution d'écran originale
+      Procédure SysRestaureRésolutionEcran()
+      renvoyer SysChangeRésolutionEcran(gstResolution:Width, gstResolution:Height, gstResolution:bBitsPerPixel, gstResolution:RefreshRate)
+     type : 458752
+   -
+     name : D3DXGetMeshDimensions
+     internal_properties : CAAAAAgAAABW4BBkLcH81aMpxilBZ37LjcCqWVadCNKE8MoVIp6dovzpnqvyWOPVK5pUJGFE7YZtHSvDXr57ATDDIeDQgZWvwy9CoQfz4nyaj8gaybTvNZqhEnjeR5p38qUgPS9GUr5DjElL4yv8Y9NrCUdOMaQxVvivA/A0+Trgi3eO6cYoMT00j/HXBvoM17t7NJbtK4aZnJza2PjU/rLvyslqUDAe8XHUH5rNkqGXu9U6hO2o4CWEC9HqqvD1S8QW2j7Yj7WN8RBUG0VR6BvvZMdtsIlq9K9ZKg==
+     procedure_id : 1868356025806830216
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie les dimensions d'un mesh
+      Procédure D3DXGetMeshDimensions(pclDevice est un IDirect3DDevice9 dynamique, pclMesh est un id3dxmesh dynamique, rWidth est un réel sur 4, rHeight est un réel sur 4, rDepth est un reel sur 4)
+      
+      	pclClonedMesh	est un ID3DXMesh dynamique
+      	pclVertexBuffer est un IDirect3DVertexBuffer9 dynamique
+      	pVertices		est un entier systeme
+      	nTaille			est un entier sans signe
+      	rXMin, rYMin	sont des reels sur 4
+      	rXMax, rYMax	sont des reels sur 4
+      	rZMax, rZMin	sont des reels sur 4
+      	tabVertices		est un tableau de D3DXVECTOR3
+      	
+      	// Clone le mesh
+      	si failed(pclMesh:CloneMeshFVF(D3DXMESH_VB_MANAGED, D3DFVF_XYZ, pclDevice, pclClonedMesh)) _ou_ pclClonedMesh = null alors
+      		renvoyer e_fail
+      	FIN
+      	
+      	// Ajoute une référence 
+      	pclClonedMesh:AddRef()
+      
+      	// Récupère le "vertex buffer" du "mesh"
+      	si failed(pclClonedMesh:GetVertexBuffer(pclVertexBuffer)) _ou_ pclVertexBuffer = null ALORS
+      		renvoyer e_fail
+      	FIN
+      	
+      	// Bornes
+      	rXMin = 0xffffffff
+      	rZMin = 0xffffffff
+      	rYMin = 0xffffffff
+      	rZMax = -rZMin
+      	rXMax = -rXMin
+      	rYMax = -rYMin
+      		
+      	// Récupère la taille du buffer
+      	nTaille = pclClonedMesh:GetNumVertices()
+      	dimension(tabVertices, nTaille)
+      	
+      	// Récupère un pointeur sur le buffer
+      	pclVertexBuffer:Lock(0, nTaille, pVertices, D3DLOCK_READONLY)
+      	
+      	// Récupère le contenu 
+      	transfert(&tabVertices, pVertices, sizeof(tabVertices))
+      
+      	// Libère le pointeur
+      	pclVertexBuffer:Unlock()
+      	
+      	// Parcourt les vertices
+      	pour i = 1 _a_ tabVertices..Occurrence
+      		
+      		// Z maximum
+      		SI tabVertices[i]:z > rZMax ALORS
+      			rZMax = tabVertices[i]:z
+      		FIN
+      		
+      		// Z minimum
+      		SI tabVertices[i]:z < rZMin ALORS
+      			rZMin = tabVertices[i]:z
+      		FIN
+      		
+      		// X minimum
+      		si tabVertices[i]:x < rXMin ALORS
+      			rXMin = tabVertices[i]:x
+      		FIN
+      		
+      		// Y minimum
+      		SI tabVertices[i]:y < rYMin ALORS
+      			rYMin = tabVertices[i]:y
+      		FIN
+      		
+      		// X maximum
+      		SI tabVertices[i]:x > rXMax ALORS
+      			rXMax = tabVertices[i]:x
+      		FIN
+      		
+      		// Y maximum
+      		SI tabVertices[i]:y > rYMax ALORS
+      			rYMax = tabVertices[i]:y
+      		FIN			
+      	FIN
+      	
+      	// Calcule les dimensions
+      	rWidth 	= rXMax - rXMin
+      	rHeight = rYMax - rYMin
+      	rDepth  = rZMax - rZMin
+      	
+      renvoyer 0
+      
+      fin:
+      
+      	// Libère
+      	SAFE_RELEASE(pclVertexBuffer)
+      	SAFE_RELEASE(pclClonedMesh)
+     type : 458752
+   -
+     name : MAKE_RECT
+     procedure_id : 1868403369462698478
+     type_code : 15
+     code : |1-
+      // Résumé : Crée un RECT
+      Procédure MAKE_RECT(x1, y1, x2, y2)
+      
+      	stRECT est un rect = [x1, y1, x2, y2]
+      	
+      renvoyer stRECT
+     type : 458752
+   -
+     name : MAKE_D3DXVECTOR2
+     procedure_id : 1868795332402343407
+     type_code : 15
+     code : |1-
+      // Résumé : Crée un D3DXVECTOR2
+      Procédure MAKE_D3DXVECTOR2(x, y)
+      
+      	st est un D3DXVECTOR2 = [x, y]
+      	
+      renvoyer st
+     type : 458752
+   -
+     name : MAKE_D3DXVECTOR3
+     procedure_id : 1868795491325411017
+     type_code : 15
+     code : |1-
+      // Résumé : Crée un D3DXVECTOR3
+      Procédure MAKE_D3DXVECTOR3(x, y, z)
+      
+      	st est un D3DXVECTOR3 = [x, y, z]
+      	
+      renvoyer st
+     type : 458752
+   -
+     name : MAKE_D3DXVECTOR4
+     procedure_id : 1868795555750000376
+     type_code : 15
+     code : |1-
+      // Résumé : Crée un D3DXVECTOR4
+      Procédure MAKE_D3DXVECTOR4(x, y, z, w)
+      
+      	st est un D3DXVECTOR4 = [x, y, z, w]
+      	
+      renvoyer st
+     type : 458752
+   -
+     name : atan2
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1869171301066422557
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction atan2
+      Procédure atan2(y est un réel sur 4, x est un réel sur 4)
+      
+      	nSigne est un entier sur 1
+      	nSigne = y < 0 ? -1 sinon 1
+      
+      	si x > 0 ALORS
+      		renvoyer D3DXToRadian(ArcTang(y / x))
+      	sinon si x < 0
+      		renvoyer ((nSigne) * (d3dx_pi - D3DXToRadian(ArcTang(abs(y / x)))))
+      	sinon si y = 0
+      		renvoyer 0
+      	sinon
+      		renvoyer ((nSigne) * d3dx_pi / 2)
+      	FIN
+     type : 458752
+   -
+     name : D3DXComputeTorusTexture
+     internal_properties : CAAAAAgAAABgiwzaR+TS4drqF/UqhuuS5yRE7DrDJT4Q6jSF5Vy6q8ZT8ZRBsgAtkPgqGA5m1V6cLOw1Rt71U5hkbd5URPy91yh6Umxqn7pWHjqggrOcjwyRf7eT9Jmmch+6NAnqtNn5KE+Feg/bhLZh3Lta1tc6IwEF7BYDxt2GM9JMi5d1qJRuqByVdNvGog+Rl4oSK6XDiq1A0/g=
+     procedure_id : 1869173762302408042
+     type_code : 15
+     code : |1-
+      // Résumé : Génère les coordonnées de texture pour un tore
+      Procédure D3DXComputeTorusTexture(pclMesh est un id3dxmesh dynamique, rOuterRadius est un réel sur 4)
+      
+      	tabVertex est un tableau de 0 STVERTEX
+      	pclVertexBuffer est un IDirect3DVertexBuffer9 dynamique
+      	pVertices est un entier système
+      	rLen est un réel sur 4
+      	rX est un réel sur 4
+      	
+      	// Récupère le vertex buffer
+      	pclMesh:GetVertexBuffer(pclVertexBuffer)
+      	dimension(tabVertex, pclMesh:getnumvertices())
+      	
+      	// Récupère les données
+      	pclVertexBuffer:Lock(0, sizeof(tabVertex), pVertices, 0)
+      	transfert(&tabVertex, pVertices, sizeof(tabVertex))
+      	
+      	pour i = 1 _a_ tabVertex..occurrence
+      
+      		tabVertex[i]:u = (1.0 - (atan2(tabVertex[i]:z, tabVertex[i]:x) + d3dx_pi) / (2 * d3dx_pi))
+      		
+      		rLen = racine(tabVertex[i]:x ^ 2 + tabVertex[i]:z ^ 2)
+      		rX = rLen - rOuterRadius / 4
+      		
+      		tabVertex[i]:v = (atan2(tabVertex[i]:y, rX) + D3DX_PI) / (2 * D3DX_PI)
+      	FIN
+      	
+      	// Renvoie les données modifiées
+      	Transfert(pVertices, &tabVertex, sizeOf(tabVertex))
+      	pclVertexBuffer:Unlock()
+      	
+      renvoyer 0
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x10d999010f57b6c5
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

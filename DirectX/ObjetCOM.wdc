@@ -1,0 +1,161 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ObjetCOM
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x194685220c8b5551
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAAH8cZM3aKPYuvAa87g65ipR5HEkAhRA98r1ncM1HEX77UA5jRzvKEhHL/v8Bwq/Q6b7qLc4NjMfgwjkif+wrCKc9uO3bv2mtry1AzG9LSaYIEz8jV47XgZ3qbvhu2bKdobH3kLaO7NZ2hK+6A=
+     code : |1-
+      ObjetCOM est une classe
+      
+      	// NE PAS MODIFIER LE PREMIER MEMBRE DE LA CLASSE
+      	// Il doit toujours être une structure VTABLE, car le pointeur d'un objet WLangage est en fait le pointeur vers le premier membre de l'objet
+      
+      	PROTÉGÉE
+      		__vTable		est une vtable					// VTABLE de l'objet
+      		m_Interface		est un COMObjet					// Pointeur de l'interface COM
+      
+      	prive
+      		m_IID			est un iid						// IID de l'interface
+      		
+      	protege
+      		m_nRefCount		est un entier sans signe		// Compteur de référence (utilisé par les méthodes AddRef et Release des interfaces dérivées de IUnknown)
+      Fin
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1821289480603850065
+     type_code : 27
+     code : |1-
+      Procédure Constructeur(local nInterface est un entier systeme = null)
+      
+      	// Enregistre le pointeur de la VTABLE
+      	__vTable:Pointeur = &__vTable:Méthodes
+      
+      	// Initialise le compteur de référence
+      	m_nRefCount = 1
+      	
+      	// Conserve le pointeur de l'objet
+      	m_Interface..Adresse = nInterface		
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1821289480603915601
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : CALL
+     internal_properties : CAAAAAgAAABYA3VRhWOK0aCLH7ZuEG9qWoypHWU2mfWlA/6GyLLFYRnX9bDeNjKBQo05DIirCKt8XVG75zGTP5MbeOVWXpxv1nCWVim200XurUPOfCjDsGNYQPN6ZCgR/sAmMxNhExFBLBD8uSFTS7vTReQXmzzpTZj8aXbTd9Z3y0HXH/1Sb0rI
+     procedure_id : 1821296958142932616
+     type_code : 12
+     code : |1-
+      // Résumé : Appelle une méthode de l'interface COM
+      // Syntaxe :
+      //[ <Résultat> = ] CALL (<nMéthode> est entier [, ...])
+      //
+      // Paramètres :
+      //	nMéthode (entier) : Numéro de la méthode à appeler
+      // Valeur de retour :
+      // 	variant :        Valeur de retour 
+      //
+      Procédure CALL(local nMéthode est un entier, *)
+      
+      	HRESULT est un variant
+      	
+      	// On a passé des paramètres
+      	si MesParamètres..Occurrence > 1 alors
+      		
+      		// Empile les paramètres
+      		HRESULT = COMAppelleMéthode(m_Interface, nMéthode, MesParamètres[2 A])
+      	sinon
+      		
+      		// Aucun paramètre
+      		HRESULT = COMAppelleMéthode(m_Interface, nMéthode)
+      	fin
+      	
+      renvoyer HRESULT
+      
+      CAS EXCEPTION:
+      	HRESULT = E_NOINTERFACE
+      	renvoyer HRESULT
+     type : 458752
+   -
+     name : __RegisterMethod
+     procedure_id : 1864284495760054231
+     type_code : 12
+     code : |1-
+      // Résumé : Fonction interne permettant d'enregistrer le pointeur vers une méthode 
+      Procédure __RegisterMethod(ptrMethod est un entier systeme)
+      
+      	// Enregistre le pointeur de la méthode
+      	ajoute(__vTable:Méthodes, ptrMethod)
+     type : 458752
+   -
+     name : __SaveVTABLE
+     procedure_id : 1866206635013647507
+     type_code : 12
+     code : |1-
+      // Résumé : Fonction interne permettant de sauver la VTABLE
+      Procédure __SaveVTABLE()
+      
+      	// Enregistre le pointeur de la VTABLE
+      	:__vTable:Pointeur = &:__vTable:Méthodes
+     type : 458752
+  properties :
+   -
+     name : Interface
+     identifier : 0x19dc7e61040e7f13
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         Procédure PUBLIQUE VIRTUELLE Interface()
+         renvoyer m_Interface
+        type : 1966080
+      -
+        code : |1-
+         
+        type : 2031616
+     template_refs : []
+   -
+     name : IID
+     identifier : 0x19de1e7109f5c3a4
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         Procédure IID()
+         renvoyer m_iid
+        type : 1966080
+      -
+        code : |1-
+         Procédure IID(stIID est un IID)
+         
+         	// Conserve l'IID de l'objet
+         	m_iid = stIID
+        type : 2031616
+     template_refs : []
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000d29b3c7
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

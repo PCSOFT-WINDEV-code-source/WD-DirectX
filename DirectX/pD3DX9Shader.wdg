@@ -1,0 +1,756 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pD3DX9Shader
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x19df4e512953bb34
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+      /////////////////////////////////////////////////
+      // <Constantes>
+      
+      constant
+      	D3DXSHADER_DEBUG                          = 1 //(1 << 0)
+      	D3DXSHADER_SKIPVALIDATION                 = 2 //(1 << 1)
+      	D3DXSHADER_SKIPOPTIMIZATION               = 4 //(1 << 2)
+      	D3DXSHADER_PACKMATRIX_ROWMAJOR            = 8 //(1 << 3)
+      	D3DXSHADER_PACKMATRIX_COLUMNMAJOR         = 16 //(1 << 4)
+      	D3DXSHADER_PARTIALPRECISION               = 32 //(1 << 5)
+      	D3DXSHADER_FORCE_VS_SOFTWARE_NOOPT        = 64 //(1 << 6)
+      	D3DXSHADER_FORCE_PS_SOFTWARE_NOOPT        = 128 //(1 << 7)
+      	D3DXSHADER_NO_PRESHADER                   = 256 //(1 << 8)
+      	D3DXSHADER_AVOID_FLOW_CONTROL             = 512 //(1 << 9)
+      	D3DXSHADER_PREFER_FLOW_CONTROL            = 1024 //(1 << 10)
+      	D3DXSHADER_ENABLE_BACKWARDS_COMPATIBILITY = 4096 //(1 << 12)
+      	D3DXSHADER_IEEE_STRICTNESS                = 8192 //(1 << 13)
+      	D3DXSHADER_USE_LEGACY_D3DX9_31_DLL        = 65536 //(1 << 16)
+      	D3DXSHADER_OPTIMIZATION_LEVEL0            = 16384 //(1 << 14)
+      	D3DXSHADER_OPTIMIZATION_LEVEL1            = 0
+      	D3DXSHADER_OPTIMIZATION_LEVEL2            = 49152 //((1 << 14) | (1 << 15))
+      	D3DXSHADER_OPTIMIZATION_LEVEL3            = 32768 //(1 << 15)
+      	D3DXFRAGMENT_LARGEADDRESSAWARE            = 131072 //(1 << 17)
+      	D3DXCONSTTABLE_LARGEADDRESSAWARE          = 131072 //(1 << 17)
+      	
+      	// D3DXREGISTER_SET
+      	D3DXRS_BOOL = 0
+      	D3DXRS_INT4 = 1
+      	D3DXRS_FLOAT4 = 2
+      	D3DXRS_SAMPLER = 3
+      	
+      	// D3DXPARAMETER_CLASS
+      	D3DXPC_SCALAR = 0
+      	D3DXPC_VECTOR = 1
+      	D3DXPC_MATRIX_ROWS = 2
+      	D3DXPC_MATRIX_COLUMNS = 3
+      	D3DXPC_OBJECT = 4
+      	D3DXPC_STRUCT = 5
+      	
+      	// D3DXPARAMETER_TYPE
+      	D3DXPT_VOID = 0
+      	D3DXPT_BOOL = 1
+      	D3DXPT_INT = 2
+      	D3DXPT_FLOAT = 3
+      	D3DXPT_STRING = 4
+      	D3DXPT_TEXTURE = 5
+      	D3DXPT_TEXTURE1D = 6
+      	D3DXPT_TEXTURE2D = 7
+      	D3DXPT_TEXTURE3D = 8
+      	D3DXPT_TEXTURECUBE = 9
+      	D3DXPT_SAMPLER = 10
+      	D3DXPT_SAMPLER1D = 11
+      	D3DXPT_SAMPLER2D = 12
+      	D3DXPT_SAMPLER3D = 13
+      	D3DXPT_SAMPLERCUBE = 14
+      	D3DXPT_PIXELSHADER = 15
+      	D3DXPT_VERTEXSHADER = 16
+      	D3DXPT_PIXELFRAGMENT = 17
+      	D3DXPT_VERTEXFRAGMENT = 18
+      	D3DXPT_UNSUPPORTED = 19
+      	
+      	// D3DXINCLUDE_TYPE
+      	D3DXINC_LOCAL = 0
+      	D3DXINC_SYSTEM = 1
+      FIN
+      
+      // </Constantes>
+      
+      /////////////////////////////////////////////////
+      // <IIDs>
+      
+      IID_ID3DXConstantTable	est un iid
+      IID_ID3DXTextureShader	est un iid
+      IID_ID3DXFragmentLinker	est un iid
+      
+      // </IIDs>
+      
+      /////////////////////////////////////////////////
+      // <Déclarations des IIDs>
+      
+      DEFINE_GUID(IID_ID3DXConstantTable, 	0xab3c758f, 0x093e, 0x4356, 0xb7, 0x62, 0x4d, 0xb1, 0x8f, 0x1b, 0x3a, 0x01)
+      DEFINE_GUID(IID_ID3DXTextureShader, 	0x3e3d67f8, 0xaa7a, 0x405d, 0xa8, 0x57, 0xba, 0x01, 0xd4, 0x75, 0x84, 0x26)
+      DEFINE_GUID(IID_ID3DXFragmentLinker, 	0x1a2c0cc2, 0xe5b6, 0x4ebc, 0x9e, 0x8d, 0x39, 0x0e, 0x05, 0x78, 0x11, 0xb6)
+      
+      // </Déclarations des IIDs>
+     type : 720896
+  procedures :
+   -
+     name : D3DXTX_VERSION
+     procedure_id : 1864294932787030669
+     type_code : 15
+     code : |1-
+      // Résumé : Macro D3DXTX_VERSION
+      Procédure D3DXTX_VERSION(_Major, _Minor)
+      renvoyer ((asc("T") bitdecalegauche 24) | (Asc("X") bitDécaleGauche 16) | ((_Major) bitdecalegauche 8) | (_Minor))
+     type : 458752
+   -
+     name : D3DXAssembleShaderFromFileA
+     procedure_id : 1864312730559522780
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXAssembleShaderFromFileA
+      Procédure D3DXAssembleShaderFromFileA(SrcFile est une chaine, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, Flags est un entier sans signe, pclShader est un ID3DXBuffer dynamique, pclErrorsMsgs est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXAssembleShaderFromFileA", &SrcFile, PTR(Defines), PTR(pclInclude), Flags, &ppvShader, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclShader, ppvShader, ID3DXBuffer)
+      	__BindInterface(pclErrorsMsgs, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXAssembleShaderFromFileW
+     procedure_id : 1864313061272081387
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXAssembleShaderFromFileW
+      Procédure D3DXAssembleShaderFromFileW(SrcFile est une chaine unicode, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, Flags est un entier sans signe, pclShader est un ID3DXBuffer dynamique, pclErrorsMsgs est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXAssembleShaderFromFileW", &SrcFile, PTR(Defines), PTR(pclInclude), Flags, &ppvShader, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclShader, ppvShader, ID3DXBuffer)
+      	__BindInterface(pclErrorsMsgs, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXAssembleShaderFromResourceA
+     procedure_id : 1864313233070878684
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXAssembleShaderFromResourceA
+      Procédure D3DXAssembleShaderFromResourceA(hSrcModule est un entier systeme, SrcResource est une chaine, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, Flags est un entier sans signe, pclShader est un ID3DXBuffer dynamique, pclErrorsMsgs est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXAssembleShaderFromResourceA", hSrcModule, &SrcResource, PTR(Defines), PTR(pclInclude), Flags, &ppvShader, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclShader, ppvShader, ID3DXBuffer)
+      	__BindInterface(pclErrorsMsgs, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXAssembleShaderFromResourceW
+     procedure_id : 1864313387689737750
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXAssembleShaderFromResourceW
+      Procédure D3DXAssembleShaderFromResourceW(hSrcModule est un entier systeme, SrcResource est une chaine unicode, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, Flags est un entier sans signe, pclShader est un ID3DXBuffer dynamique, pclErrorsMsgs est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXAssembleShaderFromResourceW", hSrcModule, &SrcResource, PTR(Defines), PTR(pclInclude), Flags, &ppvShader, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclShader, ppvShader, ID3DXBuffer)
+      	__BindInterface(pclErrorsMsgs, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXAssembleShader
+     procedure_id : 1864313499358979003
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXAssembleShader
+      Procédure D3DXAssembleShader(SrcData est un entier systeme, SrcDataLen est un entier sans signe, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, Flags est un entier sans signe, pclShader est un ID3DXBuffer dynamique, pclErrorsMsgs est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXAssembleShader", SrcData, SrcDataLen, PTR(Defines), PTR(pclInclude), Flags, &ppvShader, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclShader, ppvShader, ID3DXBuffer)
+      	__BindInterface(pclErrorsMsgs, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCompileShaderFromFileA
+     procedure_id : 1864314006165172519
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCompileShaderFromFileA
+      Procédure D3DXCompileShaderFromFileA(SrcFile est une chaine, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, FunctionName est une chaine, Profile est une chaine, Flags est un entier sans signe, pclShader est un ID3DXBuffer dynamique, pclErrorsMsgs est un id3dxbuffer dynamique, pclConstantTable est un ID3DXConstantTable dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	ppvID3DXConstantTable est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCompileShaderFromFileA", &SrcFile, PTR(Defines), PTR(pclInclude), &FunctionName, &Profile, Flags, &ppvShader, &ppvID3DXBuffer, &ppvID3DXConstantTable)
+      	
+      	// Allocation
+      	__BindInterface(pclShader, ppvShader, ID3DXBuffer)
+      	__BindInterface(pclErrorsMsgs, ppvID3DXBuffer, ID3DXBuffer)
+      	__BindInterface(pclConstantTable, ppvID3DXConstantTable, ID3DXConstantTable)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCompileShaderFromFileW
+     procedure_id : 1864314521561301844
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCompileShaderFromFileW
+      Procédure D3DXCompileShaderFromFileW(SrcFile est une chaine unicode, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, FunctionName est une chaine, Profile est une chaine, Flags est un entier sans signe, pclShader est un ID3DXBuffer dynamique, pclErrorsMsgs est un id3dxbuffer dynamique, pclConstantTable est un ID3DXConstantTable dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	ppvID3DXConstantTable est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCompileShaderFromFileW", &SrcFile, PTR(Defines), PTR(pclInclude), &FunctionName, &Profile, Flags, &ppvShader, &ppvID3DXBuffer, &ppvID3DXConstantTable)
+      	
+      	// Allocation
+      	__BindInterface(pclShader, ppvShader, ID3DXBuffer)
+      	__BindInterface(pclErrorsMsgs, ppvID3DXBuffer, ID3DXBuffer)
+      	__BindInterface(pclConstantTable, ppvID3DXConstantTable, ID3DXConstantTable)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCompileShaderFromResourceA
+     procedure_id : 1864314740604685374
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCompileShaderFromResourceA
+      Procédure D3DXCompileShaderFromResourceA(hSrcModule est un entier systeme, SrcResource est une chaine, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, FunctionName est une chaine, Profile est une chaine, Flags est un entier sans signe, pclShader est un ID3DXBuffer dynamique, pclErrorsMsgs est un id3dxbuffer dynamique, pclConstantTable est un ID3DXConstantTable dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	ppvID3DXConstantTable est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCompileShaderFromResourceA", hSrcModule, &SrcResource, PTR(Defines), PTR(pclInclude), &FunctionName, &Profile, Flags, &ppvShader, &ppvID3DXBuffer, &ppvID3DXConstantTable)
+      	
+      	// Allocation
+      	__BindInterface(pclShader, ppvShader, ID3DXBuffer)
+      	__BindInterface(pclErrorsMsgs, ppvID3DXBuffer, ID3DXBuffer)
+      	__BindInterface(pclConstantTable, ppvID3DXConstantTable, ID3DXConstantTable)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCompileShaderFromResourceW
+     procedure_id : 1864314994007814744
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCompileShaderFromResourceW
+      Procédure D3DXCompileShaderFromResourceW(hSrcModule est un entier systeme, SrcResource est une chaine unicode, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, FunctionName est une chaine, Profile est une chaine, Flags est un entier sans signe, pclShader est un ID3DXBuffer dynamique, pclErrorsMsgs est un id3dxbuffer dynamique, pclConstantTable est un ID3DXConstantTable dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	ppvID3DXConstantTable est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCompileShaderFromResourceW", hSrcModule, &SrcResource, PTR(Defines), PTR(pclInclude), &FunctionName, &Profile, Flags, &ppvShader, &ppvID3DXBuffer, &ppvID3DXConstantTable)
+      	
+      	// Allocation
+      	__BindInterface(pclShader, ppvShader, ID3DXBuffer)
+      	__BindInterface(pclErrorsMsgs, ppvID3DXBuffer, ID3DXBuffer)
+      	__BindInterface(pclConstantTable, ppvID3DXConstantTable, ID3DXConstantTable)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCompileShader
+     procedure_id : 1864315105677056262
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXAssembleShader
+      Procédure D3DXCompileShader(SrcData est un entier systeme, SrcDataLen est un entier sans signe, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, FunctionName est une chaine, Profile est une chaine, Flags est un entier sans signe, pclShader est un ID3DXBuffer dynamique, pclErrorsMsgs est un id3dxbuffer dynamique, pclConstantTable est un ID3DXConstantTable dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	ppvID3DXConstantTable est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXAssembleShader", SrcData, SrcDataLen, PTR(Defines), PTR(pclInclude), &FunctionName, &Profile, Flags, &ppvShader, &ppvID3DXBuffer, &ppvID3DXConstantTable)
+      	
+      	// Allocation
+      	__BindInterface(pclShader, ppvShader, ID3DXBuffer)
+      	__BindInterface(pclErrorsMsgs, ppvID3DXBuffer, ID3DXBuffer)
+      	__BindInterface(pclConstantTable, ppvID3DXConstantTable, ID3DXConstantTable)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXDisassembleShader
+     procedure_id : 1864315367670121440
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXDisassembleShader
+      Procédure D3DXDisassembleShader(Shader est un entier systeme, EnableColorCode est un booléen, Comments est une chaine, pclDisassembly est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXDisassembleShader", Shader, EnableColorCode, &Comments, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclDisassembly, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXGetPixelShaderProfile
+     procedure_id : 1864315646843061326
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGetPixelShaderProfile
+      Procédure D3DXGetPixelShaderProfile(pclDevice est un IDirect3DDevice9 dynamique)
+      renvoyer chainerecupere(API(pD3D9.D3DX9, "D3DXGetPixelShaderProfile", PTR(pclDevice)), crAdresseASCIIZ)
+     type : 458752
+   -
+     name : D3DXGetVertexShaderProfile
+     procedure_id : 1864315947490841544
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGetVertexShaderProfile
+      Procédure D3DXGetVertexShaderProfile(pclDevice est un IDirect3DDevice9 dynamique)
+      renvoyer chainerecupere(API(pD3D9.D3DX9, "D3DXGetVertexShaderProfile", PTR(pclDevice)), crAdresseASCIIZ)
+     type : 458752
+   -
+     name : D3DXFindShaderComment
+     procedure_id : 1864316067749954068
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXFindShaderComment
+      Procédure D3DXFindShaderComment(pFunction est un entier systeme, FourCC est un entier sans signe, ppData est un entier systeme, pSizeInBytes est un entier sans signe)
+      renvoyer API(pD3D9.D3DX9, "D3DXFindShaderComment", pFunction, FourCC, ppData, &pSizeInBytes)
+     type : 458752
+   -
+     name : D3DXGetShaderSize
+     procedure_id : 1864316591736086719
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGetShaderSize
+      Procédure D3DXGetShaderSize(pFunction est un entier systeme)
+      RENVOYER API(pD3D9.D3DX9, "D3DXGetShaderSize", pFunction)
+     type : 458752
+   -
+     name : D3DXGetShaderVersion
+     procedure_id : 1864316694815325005
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGetShaderVersion
+      Procédure D3DXGetShaderVersion(pFunction est un entier systeme)
+      RENVOYER API(pD3D9.D3DX9, "D3DXGetShaderVersion", pFunction)
+     type : 458752
+   -
+     name : D3DXGetShaderSamplers
+     procedure_id : 1864316858024251186
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGetShaderInputSemantics
+      Procédure D3DXGetShaderSamplers(pFunction est un entier systeme, Semantics est un D3DXSEMANTIC, pCount est un entier sans signe)
+      renvoyer API(pD3D9.D3DX9, "D3DXGetShaderInputSemantics", pFunction, &Semantics, &pCount)
+     type : 458752
+   -
+     name : D3DXGetShaderOutputSemantics
+     procedure_id : 1864317029822983399
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGetShaderOutputSemantics
+      Procédure D3DXGetShaderOutputSemantics(pFunction est un entier systeme, Semantics est un D3DXSEMANTIC, pCount est un entier sans signe)
+      renvoyer API(pD3D9.D3DX9, "D3DXGetShaderOutputSemantics", pFunction, &Semantics, &pCount)
+     type : 458752
+   -
+     name : D3DXGetShaderInputSemantics
+     procedure_id : 1864317154377129738
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGetShaderSamplers
+      Procédure D3DXGetShaderInputSemantics(pFunction est un entier systeme, Samplers est un tableau de entiers systeme, pCount est un entier sans signe)
+      
+      	HRESULT est un entier systeme
+      	tabSamples est un tableau de 16 entiers systeme
+      		
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXGetShaderSamplers", pFunction, &tabSamples, &pCount)
+      	
+      	// Vide le tableau
+      	Supprimetout(Samplers)
+      	
+      	// Récupère les chaînes
+      	pour i = 1 _a_ pCount
+      		ajoute(Samplers, chainerecupere(tabSamples[i], crAdresseASCIIZ))		
+      	FIN
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXGetShaderConstantTable
+     procedure_id : 1865774531176895134
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGetShaderConstantTable
+      Procédure D3DXGetShaderConstantTable(pFunction est un entier systeme, pclConstantTable est un ID3DXConstantTable dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXConstantTable est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXGetShaderConstantTable", pFunction, &ppvID3DXConstantTable)
+      
+      	// Allocation
+      	__BindInterface(pclConstantTable, ppvID3DXConstantTable, ID3DXConstantTable)
+      	
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXGetShaderConstantTableEx
+     procedure_id : 1865774896249200861
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGetShaderConstantTableEx
+      Procédure D3DXGetShaderConstantTableEx(pFunction est un entier systeme, Flags est un entier sans signe, pclConstantTable est un ID3DXConstantTable dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXConstantTable est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXGetShaderConstantTableEx", pFunction, Flags, &ppvID3DXConstantTable)
+      
+      	// Allocation
+      	__BindInterface(pclConstantTable, ppvID3DXConstantTable, ID3DXConstantTable)
+      	
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateTextureShader
+     procedure_id : 1865775059458061693
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateTextureShader
+      Procédure D3DXCreateTextureShader(pFunction est un entier systeme, pclTextureShader est un ID3DXTextureShader dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXTextureShader est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateTextureShader", pFunction, &ppvID3DXTextureShader)
+      
+      	// Allocation
+      	__BindInterface(pclTextureShader, ppvID3DXTextureShader, ID3DXTextureShader)
+      	
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXGatherFragmentsFromFileA
+     procedure_id : 1865775239846729434
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGatherFragmentsFromFileA
+      Procédure D3DXGatherFragmentsFromFileA(srcFile est une chaine, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, Flags est un entier sans signe, pclShader est un id3dxbuffer dynamique, pclErrorMsgs est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	ppvErrors est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXGatherFragmentsFromFileA", &srcFile, PTR(Defines), PTR(pclInclude), Flags, &ppvShader, &ppvErrors)
+      	
+      	// Allocation
+      	__BindInterface(pclShader, ppvShader, id3dxbuffer)
+      	__BindInterface(pclErrorMsgs, ppvErrors, id3dxbuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXGatherFragmentsFromFileW
+     procedure_id : 1865775776717701620
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGatherFragmentsFromFileW
+      Procédure D3DXGatherFragmentsFromFileW(srcFile est une chaine unicode, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, Flags est un entier sans signe, pclShader est un id3dxbuffer dynamique, pclErrorMsgs est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	ppvErrors est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXGatherFragmentsFromFileW", &srcFile, PTR(Defines), PTR(pclInclude), Flags, &ppvShader, &ppvErrors)
+      	
+      	// Allocation
+      	__BindInterface(pclShader, ppvShader, id3dxbuffer)
+      	__BindInterface(pclErrorMsgs, ppvErrors, id3dxbuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXGatherFragmentsFromResourceA
+     procedure_id : 1865775875502038036
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGatherFragmentsFromResourceA
+      Procédure D3DXGatherFragmentsFromResourceA(hSrcModule est un entier, srcResource est une chaine, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, Flags est un entier sans signe, pclShader est un id3dxbuffer dynamique, pclErrorMsgs est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	ppvErrors est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXGatherFragmentsFromResourceA", hSrcModule, &srcResource, PTR(Defines), PTR(pclInclude), Flags, &ppvShader, &ppvErrors)
+      	
+      	// Allocation
+      	__BindInterface(pclShader, ppvShader, id3dxbuffer)
+      	__BindInterface(pclErrorMsgs, ppvErrors, id3dxbuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXGatherFragmentsFromResourceW
+     procedure_id : 1865776008646054851
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGatherFragmentsFromResourceW
+      Procédure D3DXGatherFragmentsFromResourceW(hSrcModule est un entier, srcResource est une chaine unicode, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, Flags est un entier sans signe, pclShader est un id3dxbuffer dynamique, pclErrorMsgs est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	ppvErrors est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXGatherFragmentsFromResourceW", hSrcModule, &srcResource, PTR(Defines), PTR(pclInclude), Flags, &ppvShader, &ppvErrors)
+      	
+      	// Allocation
+      	__BindInterface(pclShader, ppvShader, id3dxbuffer)
+      	__BindInterface(pclErrorMsgs, ppvErrors, id3dxbuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXGatherFragments
+     procedure_id : 1865776111725358969
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXGatherFragments
+      Procédure D3DXGatherFragments(SrcData est un entier systeme, SrcDataLen est un entier sans signe, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, Flags est un entier sans signe, pclShader est un ID3DXBuffer dynamique, pclErrorsMsgs est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXGatherFragments", SrcData, SrcDataLen, PTR(Defines), PTR(pclInclude), Flags, &ppvShader, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclShader, ppvShader, ID3DXBuffer)
+      	__BindInterface(pclErrorsMsgs, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateFragmentLinker
+     procedure_id : 1865776287819059196
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateFragmentLinker
+      Procédure D3DXCreateFragmentLinker(pclDevice est un IDirect3DDevice9 dynamique, ShaderCacheSize est un entier sans signe, pclFragmentLinker est un ID3DXFragmentLinker dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXFragmentLinker est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateFragmentLinker", PTR(pclDevice), ShaderCacheSize, &ppvID3DXFragmentLinker)
+      
+      	// Allocation
+      	__BindInterface(pclFragmentLinker, ppvID3DXFragmentLinker, ID3DXFragmentLinker)
+      	
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXCreateFragmentLinkerEx
+     procedure_id : 1865776545517157624
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateFragmentLinkerEx
+      Procédure D3DXCreateFragmentLinkerEx(pclDevice est un IDirect3DDevice9 dynamique, ShaderCacheSize est un entier sans signe, Flags est un entier sans signe, pclFragmentLinker est un ID3DXFragmentLinker dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXFragmentLinker est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXCreateFragmentLinkerEx", PTR(pclDevice), ShaderCacheSize, Flags, &ppvID3DXFragmentLinker)
+      
+      	// Allocation
+      	__BindInterface(pclFragmentLinker, ppvID3DXFragmentLinker, ID3DXFragmentLinker)
+      	
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXPreprocessShaderFromFileA
+     procedure_id : 1865776674366272180
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXPreprocessShaderFromFileA
+      Procédure D3DXPreprocessShaderFromFileA(srcFile est une chaine, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, pclShaderText est un id3dxbuffer dynamique, pclErrorMsgs est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	ppvErrors est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXPreprocessShaderFromFileA", &srcFile, PTR(Defines), PTR(pclInclude), &ppvShader, &ppvErrors)
+      	
+      	// Allocation
+      	__BindInterface(pclShaderText, ppvShader, id3dxbuffer)
+      	__BindInterface(pclErrorMsgs, ppvErrors, id3dxbuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXPreprocessShaderFromFileW
+     procedure_id : 1865776811805256868
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXPreprocessShaderFromFileW
+      Procédure D3DXPreprocessShaderFromFileW(srcFile est une chaine unicode, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, pclShaderText est un id3dxbuffer dynamique, pclErrorMsgs est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	ppvErrors est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXPreprocessShaderFromFileW", &srcFile, PTR(Defines), PTR(pclInclude), &ppvShader, &ppvErrors)
+      	
+      	// Allocation
+      	__BindInterface(pclShaderText, ppvShader, id3dxbuffer)
+      	__BindInterface(pclErrorMsgs, ppvErrors, id3dxbuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXPreprocessShaderFromResourceA
+     procedure_id : 1865776901999656711
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXPreprocessShaderFromResourceA
+      Procédure D3DXPreprocessShaderFromResourceA(hSrcModule est un entier, srcResource est une chaine, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, pclShaderText est un id3dxbuffer dynamique, pclErrorMsgs est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	ppvErrors est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXPreprocessShaderFromResourceA", hSrcModule, &srcResource, PTR(Defines), PTR(pclInclude), &ppvShader, &ppvErrors)
+      	
+      	// Allocation
+      	__BindInterface(pclShaderText, ppvShader, id3dxbuffer)
+      	__BindInterface(pclErrorMsgs, ppvErrors, id3dxbuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXPreprocessShaderFromResourceW
+     procedure_id : 1865777000783993205
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXPreprocessShaderFromResourceW
+      Procédure D3DXPreprocessShaderFromResourceW(hSrcModule est un entier, srcResource est une chaine unicode, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, pclShaderText est un id3dxbuffer dynamique, pclErrorMsgs est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	ppvErrors est un entier systeme
+      	
+      	// Appel
+      	HRESULT = API(pD3D9.D3DX9, "D3DXPreprocessShaderFromResourceW", hSrcModule, &srcResource, PTR(Defines), PTR(pclInclude), &ppvShader, &ppvErrors)
+      	
+      	// Allocation
+      	__BindInterface(pclShaderText, ppvShader, id3dxbuffer)
+      	__BindInterface(pclErrorMsgs, ppvErrors, id3dxbuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : D3DXPreprocessShader
+     procedure_id : 1865777086683359671
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXPreprocessShader
+      Procédure D3DXPreprocessShader(SrcData est un entier systeme, SrcDataLen est un entier sans signe, Defines est un tableau de d3dxmacro, pclInclude est un ID3DXInclude dynamique, pclShaderText est un ID3DXBuffer dynamique, pclErrorsMsgs est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	ppvID3DXBuffer est un entier systeme
+      	
+      	// Appel 
+      	HRESULT = API(pD3D9.D3DX9, "D3DXPreprocessShader", SrcData, SrcDataLen, PTR(Defines), PTR(pclInclude), &ppvShader, &ppvID3DXBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclShaderText, ppvShader, ID3DXBuffer)
+      	__BindInterface(pclErrorsMsgs, ppvID3DXBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x10d999010dd0b454
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

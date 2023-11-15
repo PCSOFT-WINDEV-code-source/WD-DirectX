@@ -1,0 +1,130 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXAllocateHierarchy
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19e5b28c1152ca8e
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXAllocateHierarchy est une classe
+      	un objet objetcom
+      	
+      Fin
+      
+      constant
+      	
+      	// Méthodes de l'interface IUnknown (VTABLE)
+      	ID3DXAllocateHierarchy_CreateFrame				= 0	
+      	ID3DXAllocateHierarchy_CreateMeshContainer		= 1
+      	ID3DXAllocateHierarchy_DestroyFrame				= 2
+      	ID3DXAllocateHierarchy_DestroyMeshContainer		= 3
+      	ID3DXAllocateHierarchy___IDXBASE				= 3
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1866093935270873742
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur ObjetCOM(nInterface)
+      	
+      	// Définition de l'IID
+      	VariableRAZ(:IID)
+      	
+      	// Enregistre l'objet auprès de la collection
+      	ID3DXAllocateHierarchy_RegisterObject(objet)
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1866093935270939278
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : CreateFrame
+     procedure_id : 1866094987541187359
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle CreateFrame
+      Procédure virtuelle CreateFrame(Name est une chaine <utile>, NewFrame est un d3dxframe <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : CreateMeshContainer
+     procedure_id : 1866095009016093727
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle CreateMeshContainer
+      Procédure VIRTUELLE CreateMeshContainer(sName est une chaine <utile>, MeshData est un D3DXMESHDATA <utile>, tabMaterials est un tableau <utile> de D3DXMATERIAL, tabEffectInstances est un tableau <utile> de D3DXEFFECTINSTANCE, nNumMaterials est un entier sans signe <utile>, tabAdjacency est un tableau <utile> d'entiers sans signe, pclSkinInfo est un ID3DXSkinInfo dynamique <utile>, NewMeshContainer est un D3DXMESHCONTAINER <utile>)
+      
+      	pclMesh est un objet dynamique
+      	
+      	// Récupère l'objet
+      	selon MeshData:Type
+      		cas D3DXMESHTYPE_MESH
+      			__BindInterface(pclMesh, MeshData:ppvMesh, id3dxmesh)
+      		cas D3DXMESHTYPE_PMESH
+      			__BindInterface(pclMesh, MeshData:ppvMesh, ID3DXpMesh)
+      		cas D3DXMESHTYPE_PATCHMESH
+      			__BindInterface(pclMesh, MeshData:ppvMesh, ID3DXpatchMesh)			
+      	FIN
+      
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : DestroyFrame
+     procedure_id : 1866095021901064817
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle DestroyFrame
+      Procédure VIRTUELLE DestroyFrame(FrameToFree est un d3dxframe <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : DestroyMeshContainer
+     procedure_id : 1866095039081002922
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle DestroyMeshContainer
+      Procédure VIRTUELLE DestroyMeshContainer(MeshContainerToFree est un D3DXMESHCONTAINER <utile>)
+      renvoyer E_NOTIMPL
+     type : 458752
+  properties :
+   -
+     name : Interface
+     identifier : 0x19e5b28c1153ca8e
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         Procédure virtuelle Interface()
+         renvoyer PTRVTbl(objet)
+        type : 1966080
+      -
+        code : |1-
+         
+        type : 2031616
+     template_refs : []
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000d00b398
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

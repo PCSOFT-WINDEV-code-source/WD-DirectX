@@ -1,0 +1,118 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IDirect3DVolumeTexture9
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19ddc7d90e22845c
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      IDirect3DVolumeTexture9 est une classe
+      	un objet IDirect3DBaseTexture9
+      	
+      Fin
+      
+      constant
+      	
+      	// Méthodes de l'interface IDirect3DVolumeTexture9 (VTABLE)
+      	IDirect3DVolumeTexture9_GetLevelDesc		= ::IDirect3DBaseTexture9___IDXBASE + 1
+      	IDirect3DVolumeTexture9_GetVolumeLevel		= ::IDirect3DBaseTexture9___IDXBASE + 2
+      	IDirect3DVolumeTexture9_LockBox				= ::IDirect3DBaseTexture9___IDXBASE + 3
+      	IDirect3DVolumeTexture9_UnlockBox			= ::IDirect3DBaseTexture9___IDXBASE + 4
+      	IDirect3DVolumeTexture9_AddDirtyBox			= ::IDirect3DBaseTexture9___IDXBASE + 5
+      	IDirect3DVolumeTexture9___IDXBASE			= ::IDirect3DBaseTexture9___IDXBASE + 5	
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863865555860292700
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IDirect3DBaseTexture9(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3D9.IID_IDirect3DVolumeTexture9
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863865555860358236
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : AddDirtyBox
+     procedure_id : 1866831772037490504
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode AddDirtyBox
+      Procédure AddDirtyBox(DirtyBox est un d3dbox)
+      RENVOYER :CALL(IDirect3DVolumeTexture9_AddDirtyBox, &DirtyBox)
+     type : 458752
+   -
+     name : GetLevelDesc
+     procedure_id : 1866831772037556071
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetLevelDesc
+      Procédure GetLevelDesc(Level est un entier sans signe, Desc est un D3DVOLUME_DESC)
+      renvoyer :call(IDirect3DVolumeTexture9_GetLevelDesc, Level, &Desc)
+     type : 458752
+   -
+     name : GetVolumeLevel
+     procedure_id : 1866831776332588934
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetVolumeLevel
+      Procédure GetVolumeLevel(Level est un entier sans signe, pclVolumeLevel est un IDirect3DVolume9 dynamique)
+      
+      	HRESULT est un entier système
+      	ppvVolumeLevel est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DVolumeTexture9_GetVolumeLevel, Level, &ppvVolumeLevel)
+      	
+      	// Allocation
+      	__BindInterface(pclVolumeLevel, ppvVolumeLevel, IDirect3DVolume9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : LockBox
+     procedure_id : 1866831776332654517
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode LockBox
+      Procédure LockBox(Level est un entier sans signe, LockedBox est un D3DLOCKED_BOX, Box est un D3DBOX, Flags est un entier sans signe)
+      RENVOYER :CALL(IDirect3DVolumeTexture9_LockBox, Level, &LockedBox, &Box, Flags)
+     type : 458752
+   -
+     name : UnlockBox
+     procedure_id : 1866831776332720100
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UnlockBox
+      Procédure UnlockBox(Level est un entier sans signe)
+      RENVOYER :CALL(IDirect3DVolumeTexture9_UnlockBox, Level)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000c82b32b
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

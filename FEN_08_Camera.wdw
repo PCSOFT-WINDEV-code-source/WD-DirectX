@@ -1,0 +1,498 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_08_Camera
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_08_Camera
+ identifier : 0x29eddf87f97c8b49
+ internal_properties : CAAAAAgAAAB+Pulof+9WjAKrT+kJl1GmX1Vm5cAYp6lMJCPHbaE+SuPGhiE3VMyejtFmy4hymYCxPmiulg//3YvLcC1q+YualkCKB4qpE2KFWur6CXygMr1FtBr2XkUN+tNsmZhenV7qsM8VvfYhV658/LvTI/mVbUTat0Vri1nTyxJh7o9bZ6+b0D3ztGSeK1pygqRzvfB/MLdlGvRjaXu5mZ9P8i1XpiwO5noNIiLatXE8JWEabwzJp5j4d2ESAbaTm5Q4JZc7iaHYyuib1n2HUmlZxx7D0XV6lDBMfdd1BMS/m3yW01d7XWG48QD3AhOybK8IQuKk4O3+dMcZjwlppPd/txa8NbbEVcvDRFoqfuzSMpPxxbn4Z1OIrI+FImCB/NgMjqjYQgtNEY17Z3fdx82P7IHFn58s/gd8M4xrsjd1LII00MdItefJec12CgiTmQ1KBDatsb0Lw9kdaC0omMG1ey+81jgFv+/orsuv7MAbDZhPc7Qzl1+ychfBD8xzYNq0PuIEbCXpWz+iTFT4WXOmyv9uIQEf4EUawZx1oSRA+1lR8A5hiv0AlpGtgbmLNktXEmf2VGEscuCdZIst20dyZJy+fjZnxEXWHxJBzpLE6U23AUWTDw//A8DA4MTNwVML+INvuOe1bvoZLV6LrqwF4GmIuSi/q7EdFLyhIJDyqeC5JHprhieL9n261Q2tuFYfGMMujjHdwiwTFpCf5nilCe4kLJ/uamI+XZcNZ4qi+/EhVuWHGGQqlX29mBkpOZK0RHodhQjMeRf4YOLMt9Wr0KWmNVslitzK2DjnbQhMb2bU8jZZJ4Hs15y+ZBTrv6cHDZjuKzWOgLHwdwkEyeNexT4JpX4bPK/XPWGiypUAlddfttopm6yz2j9RnS8inobUHzD3N35XK9aCQBdemzMKuWURtd1ECURqdby4DerPNIgRDGZCvEnGnOgAy3wuwjj5YMJ4nFcS5ti1nEooM+sAIelgcmWHdHm4cYAZC4vpbGaguvCthicjkoDV9YyPC9eXSJKIFCqB2CJl
+ properties :
+  width : 796
+  height : 606
+  widthClient : 794
+  heightClient : 574
+ controls :
+  -
+    name : BTN_ECHAP
+    identifier : 0x2a26b48892fb144d
+    internal_properties : CAAAAAgAAABMUZy7y7NIKp4jrzOIZj8EUi6mj/bGpsj8q3Bnz9VWKlogp3nItfU/spsymt0vptWiGasBH7Tes0dpRb90x0LsBaB1jeVmv0XErWZRSAW25BzBd8uiIITZYTKGw53tEmGFXZ7+8j5p0J9r5yCOhTYE1PbuRbE3ReHrnnLB7mXtuLRspazw1XkbeQFOhB7DufOzZ6KX8WIyBYUg6slyJsjSCG3R3wucJ5uislxH65AMTSRWNl4AUIt/2jGq0xS2RevvoRDh29N6iiAYBDbPN+wJ3WTqCVT23QxtwNuIlomubEyJ75qSd0seSVLyKmFhpQepJ9EFlyodIWyoAci8QcnNbsbnCNM2vZOAKhmKnvr6K2wl5GZ3yUrd/Xo9mpdDlBqq3i3yK1iufYw/iNxBiTKLzHZZb7qErM3qhMSL/MdrMTk+MAtJzgPU6jB9rtxc3etfdKz8esjWWStxmOR4EXyGLax4v0fC8dAXNYIakTYHbl7lb452WIF4GJhwrxnDJFHKIinyNixTp/YjCBiLGf62TROjCcNseTDgqpF76QI2KjxTm4oEwTiErtObzmmIHoBdo5oW+HN/RWaegwqGmSooi1fpSwfBRMX+HYRwjJpMnAGpfQ9Yjvk13zLjXjpryH7CxMJx52qzxSX1ift7tv5kWf98WpY3tz4xNTc2ESG6KCPBD1UOvId1D1b9mLSkuBm09Gao+B8HP26G
+    properties :
+     x : 6
+     y : -53
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAADQZyvpRjJZltgKBVFD+SKMukTEU1n2G2jmPSjnx1ZKdSF2vB36egNKcReVrz/xwpIZdIpZoyUu0CjPxu+MpGLAedmE/39iAmJIcu72BpKoWkpseLXy2lnJGPSMFw==
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : IMG_DX
+    identifier : 0x29eddf87f97e8b49
+    internal_properties : CAAAAAgAAAAyUZTEPLRd+icZyii8nyZkVZS1wtjzO1Tw2xJA59cfq3O6hc0oadiBplRU1CTRY6UASHyoNfx/zcjA7nB1B/qf4okF71PFeI63Dykwe0FsvolDVLC9ljLjFcisOv9R5Im1PaW5ZakhtSd5eKUL8sTXM0DXij8xiJT7IpcWAfswLvVzybm+mtduEYL+IQeugf4dTaXin01iVy1uWd0Wv6K8LhDk/5BlYSh0WhPqInN+tqp5YrdJ6e0W+QMbqEbNCrOD0M+GcfRNxs096ed7bTl35jGZ823SLoBLSlxiS7QVb3nbQzNOd3s17xWWNxMoh6LsPO3leTHytGZnwxLwZe381n/a6B7TeBSADHQnSmyUZV67X8pG50LIzS9SOLuxD6Anj5MZhQZMUqcP8bYzlWXrn8paFJa3sN4j5Y+N3pCz+vM95wx7m7OZnV1AZKsyxZf7UgrPXuSMtVjf+9pEp+z+6wkRelXEA0mV6Q9MM84P8rVQHtQuOb+d4Hh/ZtlSve5Ol9Hnq8zybJv2CLhKqPCZmGgwfTJIvRCRGdDDv/le9h57CN+6QjJXAcs7ykbt+pVoBnQLngN56cQEgqzZzAi4UEhm6JtVSZ2PGzH3YrdFhm3qM0MQZpAxOeGuWHXSY7xz3RE=
+    properties :
+     width : 794
+     height : 574
+    type : 8
+    code_elements :
+     internal_properties : CAAAAAgAAAAjW0JkwpJU6bb4H6gOVG5BbTnI6bKQ5jZqh7f+RvG3nM4Lbyno7TyJc8vGsvwgufYtqM9vZ26FX9b1xFxJoxL2v5dwS+B51GY3n8VNnqblK4fCWhAm64k9EtSiN68W
+     type_code : 8
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x29eddf87f97f8b49
+  internal_properties : CAAAAAgAAAD7S+2GOLjEeheq9Y6YZGIRPpLnwB8KUS2je4S4X5oxSGrv51WBBaVxxbk/BTEdUwW0fnnvlhQNIBAuQTAO0S9+S8FMTvDhqkS1JydqFJBfHlbZSFzBkZAjjJ5aIH/cuMnF4Pme57TAyYvjnlkzTJmN5UX9hu+BEl3AsIsso5gsz3oX/KHp1ai/xWZCb54MlUFXdWmT2EOpULKqea/LH9EOlTkaiWsV2aM2/FfXQjTSY3NhAR6zEzKHYKVJwiZULchG0D4LNvRbPifZJPDMmlF6ptz+Rg0QN6SXG5jU7HifIzmkonwDFnOJQw==
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABHSPkb1tqgSCqRR5dekoL1A/XsC+f7MghpgAiNjk2p+zU290UKFNsf/RG2TXCdD8pkYIQPTC757XGg+l+qdKnSy80OOFd+coZmWvKACTZS1VsEXFXvfAVoTQ4G
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAADPQmJV1Ybzu2CimDf7t2MDDiG23XjL86bwt9CvwjWLV84mHcbt9I+virGHmIvVHzueGKpPVPD0yeUsYPgLNiy9M/MlilIvSa4KMOh0ya6IzpckDAQOge/S26lQ7k2QqYfWyD547I11eucIIve4RAy2+mBv2NJo3O5ODqFyk3HcgQ/xEDGHxLFiej/PfUl+RIgcSc2v5R364ZlUHrXT
+     code : |1-
+      
+      //
+      // Les deux premiers exemple nous ont permit d'initialiser Direct3D et de dessiner des vertices en 2D
+      // On aborde ici le concept de "matrices", un objet Direct3D utilisé pour effectuer différentes transformations sur les objets d'une scène 3D.
+      //
+      
+      // Objets
+      gpclD3D				est un IDirect3D9 dynamique					// Objet de base permettant de créer un "device"
+      gpclD3DDevice 		est un IDirect3DDevice9 dynamique			// Objet de manipulation du "device"
+      gpclVertexBuffer	est un IDirect3DVertexBuffer9 dynamique		// Objet permettant de stocker des vertices
+      gpclCamera			est un CD3DCamera dynamique					// Gestion de la caméra
+      gpclTexte			est un id3dxFont dynamique					// Gestion du texte
+      
+      // Structure personnalisée pour stocker un type de vertex 
+      VERTEXPERSO est une structure
+      	x, y, z      sont des reels sur 4			// Position du vertex
+      	color 		 est un entier sans signe		// Couleur du vertex
+      FIN
+      
+      // Décrit le type de notre vertex personnalisé
+      constant
+      	D3DFVF_VERTEXPERSO = D3DFVF_XYZ + D3DFVF_DIFFUSE
+      FIN
+   -
+     internal_properties : CAAAAAgAAAA7Evr0L+Ei/amyQ912fk4LCkziAFUSRImNjpwemp3DARRh0SEA7y3zUl0y//FYDaynW61LCBlGuxj1VYITS1OsrxNzN/aNS30LNGwtJ8Fw5wWq3y3n7fN2/zDpNx0JgAozX8AK9F3dHIyGw9h1iNqmfbwwIPq3RDzdorZvS320tw==
+     code : |1-
+      
+      // Initialise Direct3D
+      si D3DInit() ALORS
+      	
+      	// Initialise le "vertex buffer"
+      	si D3DInitVertexBuffer() ALORS
+      		
+      		// Démarre le rendu
+      		d3daffiche()
+      	sinon
+      		SI EnModeTestAutomatique ALORS
+      			TestEcritRésultat(terInfo, "DirectX n'est pas disponible sur cette machine" + RC + ErreurInfo)
+      			Ferme
+      			RETOUR
+      		FIN
+      		
+      		erreur("Impossible d'initialiser le vertex buffer")
+      	FIN	
+      sinon
+      	SI EnModeTestAutomatique ALORS
+      		TestEcritRésultat(terInfo, "DirectX n'est pas disponible sur cette machine")
+      		Ferme
+      		RETOUR
+      	FIN
+      	
+      	Erreur("Impossible d'initialiser Direct3D")
+      FIN
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     internal_properties : CAAAAAgAAABkYxCOAWHWSEcmS47+Q4zr76DFeUhRJGaNs29bIcM+i9P48K1hoWenUlLTUcG+n+jT4Jtjp2sXjnWCcDud5gVpkt1ArZhMBRqjw7AWM4YjS6jH+jMDU88Vva+NPKIVwCdEi8l9zIuOl9Q91Q==
+     code : |1-
+      
+      // Réaffiche le curseur de la souris 
+      CurseurAffiche(vrai)
+     type : 2
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : D3DInit
+     internal_properties : CAAAAAgAAACeDpXEBsDQRWLWjSxTPUU3ALfCoJjO9r6zNrA9lk9obUGTifMCx9VA5CmWbH4zzoSjcd6CczsAqaqj0rjORjC2lJ2e2hIoROadx9+MOvMNCbwyt64jA5C2Bt0NLByjrKYWUHzDsuax8Q1/ZpAESp5BBomaDnJqSnpv/9KpC036nR0R8mz7inXQiLkoo4K4H5n9n9E62755LnNmwa0PFl4gcje2yuh1L1UXYt++13+U+gakH8I2Hd/tNlA/L99RHYaZ
+     procedure_id : 1868395195931069257
+     type_code : 14
+     code : |1-
+      // Résumé : Initialise Direct3D
+      Procédure D3DInit()
+      
+      	stD3DPP est un D3DPRESENT_PARAMETERS
+      
+      	// Création de l'objet Direct3D
+      	gpclD3D = Direct3DCreate9(D3D_SDK_VERSION)
+      	
+      	// Vérifie si l'objet Direct3D a pu être créé
+      	si gpclD3D = Null ALORS
+      		renvoyer faux	
+      	FIN
+      	
+      	// Paramétrage de la structure utilisée pour créer un "device" Direct3D
+      	stD3DPP:Windowed = vrai														// Mode fenêtré
+      	stD3DPP:SwapEffect = D3DSWAPEFFECT_DISCARD									
+      	stD3DPP:BackBufferFormat = D3DFMT_UNKNOWN
+      	stD3DPP:EnableAutoDepthStencil = vrai										// Z-Buffer
+      	stD3DPP:AutoDepthStencilFormat = D3DFMT_D16
+      	
+      	// Création du "device" Direct3D
+      	// On utilise ici l'écran par défaut (D3DADAPTER_DEFAULT) et un "device" matériel (D3DDEVTYPE_HAL)
+      	si failed(gpclD3D:CreateDevice(D3DADAPTER_DEFAULT, D3DDEVTYPE_HAL, handle(img_dx), D3DCREATE_HARDWARE_VERTEXPROCESSING, stD3DPP, gpclD3DDevice)) _ou_ gpclD3DDevice = null ALORS
+      		renvoyer faux
+      	FIN
+      	
+      	// Désactive le "culling", afin de visualiser le devant et l'arrière du triangle
+      	gpclD3DDevice:SetRenderState(D3DRS_CULLMODE, d3dcull_none)
+      	
+      	// Désactive l'éclairage Direct3D
+      	gpclD3DDevice:SetRenderState(D3DRS_LIGHTING, Faux)
+      	
+      	// Active le Z-Buffer
+      	gpclD3DDevice:SetRenderState(D3DRS_ZENABLE, vrai)
+      	
+      	// Autres paramètres
+      	gpclD3DDevice:SetRenderState(D3DRS_SPECULARENABLE, Vrai)
+      	gpclD3DDevice:SetRenderState(D3DRS_DITHERENABLE, Vrai)
+      	
+      	// Création de la caméra
+      	gpclCamera = allouer un CD3DCamera(img_dx..nomcomplet)
+      	
+      	// Position originale de la caméra
+      	gpclCamera:SetPosition(0.0, 2.5, 5.0, 0.0, 2.5, 0.0, 0.0, 1.0, 0.0)
+      	
+      	// Place le curseur de la souris au centre
+      	CurseurPos(cpClient, img_dx..largeur / 2, IMG_DX..hauteur / 2)
+      	
+      	// Cache le curseur de la souris 
+      	CurseurAffiche(faux)
+      	
+      renvoyer vrai
+     type : 458752
+   -
+     name : D3DInitVertexBuffer
+     internal_properties : CAAAAAgAAAAbZQd+2+Hdgk3rbFNyxbwavxiZ7pTS9L5AxoQU2dI9QGx6kzruWhvrKR+20VFB4uNlTan5vMehm8i0siE5gwc2w8PyvPcPs35+0EKr++18BxQgI0oluP9XU+TiJXIGXrauASmgfPEFx1QqboCsnrIuqLKquzBYlpcQVhaCAJXNwHDqcrv3caAs6oP5wfGW/m8dEFfwzl5dgDYuRzf+cOoQRu9tDGPg3PVMTbN1j5OvR5kMxFQO+NgVV8kqQyFQcwnAaMkz0JpAAjsTPJDd2p857FJqnMj11DC7MnFycDVQis5K
+     procedure_id : 1868395195931134793
+     type_code : 14
+     code : |1-
+      // Résumé : Initialise le "vertex buffer"
+      Procédure D3DInitVertexBuffer()
+      
+      	pBuffer est un entier système
+      
+      	// Crée les 24 vertices pour effectuer le rendu d'un cube
+      	tabVertices est un tableau de VERTEXPERSO = [ ...
+      		[-1.0, 1.0,-1.0,  D3DCOLOR_XRGB(0, 0, 128) ], 		// Avant
+      		[ 1.0, 1.0,-1.0,  D3DCOLOR_XRGB(0, 0, 128) ],
+      		[-1.0,-1.0,-1.0,  D3DCOLOR_XRGB(0, 0, 128) ],
+      		[ 1.0,-1.0,-1.0,  D3DCOLOR_XRGB(0, 0, 128) ],		
+      		[-1.0, 1.0, 1.0,  D3DCOLOR_XRGB(255, 0, 0) ],			// Arrière
+      		[-1.0,-1.0, 1.0,  D3DCOLOR_XRGB(255, 0, 0) ],
+      		[ 1.0, 1.0, 1.0,  D3DCOLOR_XRGB(255, 0, 0) ],
+      		[ 1.0,-1.0, 1.0,  D3DCOLOR_XRGB(255, 0, 0) ],		
+      		[-1.0, 1.0, 1.0,  D3DCOLOR_XRGB(0, 255, 0) ],			// Dessus
+      		[ 1.0, 1.0, 1.0,  D3DCOLOR_XRGB(0, 255, 0) ],
+      		[-1.0, 1.0,-1.0,  D3DCOLOR_XRGB(0, 255, 0) ],
+      		[ 1.0, 1.0,-1.0,  D3DCOLOR_XRGB(0, 255, 0) ],		
+      		[-1.0,-1.0, 1.0,  D3DCOLOR_XRGB(255, 0, 255) ],			// Dessous
+      		[-1.0,-1.0,-1.0,  D3DCOLOR_XRGB(255, 0, 255) ],
+      		[ 1.0,-1.0, 1.0,  D3DCOLOR_XRGB(255, 0, 255) ],
+      		[ 1.0,-1.0,-1.0,  D3DCOLOR_XRGB(255, 0, 255) ],		
+      		[ 1.0, 1.0,-1.0,  D3DCOLOR_XRGB(0, 255, 255) ],			// Droite
+      		[ 1.0, 1.0, 1.0,  D3DCOLOR_XRGB(0, 255, 255) ],
+      		[ 1.0,-1.0,-1.0,  D3DCOLOR_XRGB(0, 255, 255) ],
+      		[ 1.0,-1.0, 1.0,  D3DCOLOR_XRGB(0, 255, 255) ],		
+      		[-1.0, 1.0,-1.0,  D3DCOLOR_XRGB(255, 255, 0) ],			// Gauche
+      		[-1.0,-1.0,-1.0,  D3DCOLOR_XRGB(255, 255, 0) ],
+      		[-1.0, 1.0, 1.0,  D3DCOLOR_XRGB(255, 255, 0) ],
+      		[-1.0,-1.0, 1.0,  D3DCOLOR_XRGB(255, 255, 0) ]
+      	]
+      	
+      	// Crée le "vertex buffer" en lui allouant la taille mémoire nécessaire pour stocker les trois vertices (fonction sizeOf)
+      	si failed(gpclD3DDevice:CreateVertexBuffer(sizeof(tabVertices), 0, D3DFVF_VERTEXPERSO, D3DPOOL_DEFAULT, gpclVertexBuffer, null)) _ou_ gpclVertexBuffer = Null ALORS
+      		renvoyer faux
+      	FIN
+      	
+      	// On doit maintenant remplir le "vertex buffer" avec nos trois vertices
+      	
+      	// On commence donc par récupérer le pointeur mémoire du "vertex buffer"
+      	si failed(gpclVertexBuffer:Lock(0, sizeof(tabVertices), pBuffer, 0)) ALORS
+      		renvoyer faux
+      	FIN
+      	
+      	// On copie le tableau des vertices dans le "vertex buffer"
+      	transfert(pBuffer, &tabVertices, sizeof(tabVertices))
+      	
+      	// On libère le pointeur mémoire du "vertex buffer"
+      	gpclVertexBuffer:Unlock()	
+      	
+      	// Initialisation du texte
+      	si pas D3DInitTexte() ALORS
+      		renvoyer faux
+      	FIN
+      	
+      renvoyer vrai
+     type : 458752
+   -
+     name : D3DAffiche
+     internal_properties : CAAAAAgAAADMUsnj5vKrWWAZpDJs6o5hiAav2qemjNQTIl0PH3O1wbkq6sS4VUOdPNydOO52o8eqqq7+awCgU0awgk2yOvPg6y2HvLP5GW1SehFaZzxC8HVAAAymKGPn1ATWm/Edo/QzC7dOPU9F5qTVSu4UuinH6dzBIZsjKITtzzK4ofQA/lD1pOg1mLSMS91XWZvm/+QCgHrN6JPxydBFnuy+OjQILonCbt5wMSdShoQYmlTZWpwPOLdJIg8XYKbbpjWOX1hZpM7O2iDmudJ/ozJOs17gK8MsM+YOr0Uronb6xrkz
+     procedure_id : 1868395195931200329
+     type_code : 14
+     code : |1-
+      // Résumé : Rendu et affichage du "device" Direct3D
+      // Procédure automatique :
+      // La procédure est exécutée manuellement, lors d'un appel dans le code
+      // Elle sera répétée en boucle, en attendant  entre chaque appel
+      // Chaque appel suivant exécute une seule fois la procédure, sans timer
+      // 
+      Procédure D3DAffiche()
+      
+      	stVertex est un vertexperso
+      
+      	// Si le "device" Direct3D est invalide, on sort
+      	si gpclD3DDevice = null alors retour
+      	
+      	// Efface le "backbuffer" avec une couleur bleue
+      	gpclD3DDevice:Clear(0, null, D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER, D3DCOLOR_XRGB(0, 0, 255), 1.0, 0.0)
+      	
+      	// Démarre la scène
+      	si SUCCEEDED(gpclD3DDevice:BeginScene()) ALORS
+      		
+      		// Définit et applique les matrices
+      		D3DInitMatrices()
+      		
+      		// Affiche le texte
+      		D3DAfficheTexte()
+      				
+      		// Pour cela, on indique au "device" la source des données
+      		gpclD3DDevice:SetStreamSource(0, gpclVertexBuffer, 0, sizeof(stVertex))
+      		
+      		// On indique le format des vertices
+      		gpclD3DDevice:SetFVF(D3DFVF_VERTEXPERSO)
+      		
+      		// Et on dessine les vertices
+      		gpclD3DDevice:DrawPrimitive(D3DPT_TRIANGLESTRIP,  0, 2)
+      		gpclD3DDevice:DrawPrimitive(D3DPT_TRIANGLESTRIP,  4, 2)
+      		gpclD3DDevice:DrawPrimitive(D3DPT_TRIANGLESTRIP,  8, 2)
+      		gpclD3DDevice:DrawPrimitive(D3DPT_TRIANGLESTRIP, 12, 2)
+      		gpclD3DDevice:DrawPrimitive(D3DPT_TRIANGLESTRIP, 16, 2)
+      		gpclD3DDevice:DrawPrimitive(D3DPT_TRIANGLESTRIP, 20, 2)
+      
+      		// Affiche la grille
+      		D3DAfficheGrille()
+      		
+      		// Fin de la scène
+      		gpclD3DDevice:EndScene()
+      	FIN
+      	
+      	// Affichage du "backbuffer"
+      	gpclD3DDevice:Present(null, null, null, null)
+     type : 458752
+   -
+     name : D3DInitMatrices
+     procedure_id : 1868395195931265865
+     type_code : 14
+     code : |1-
+      // Résumé : Initialisation des matrices
+      Procédure D3DInitMatrices(bRestaure est un booléen = faux)
+      	
+      	stMatProj	est un D3DXMATRIX	// Matrice de projection Direct3D
+      	stMatView	est un D3DXMATRIX	// Matrice de vue Direct3D
+      	stMatWorld	est un D3DXMATRIX	// Matrice du "monde" Direct3D
+      	
+      	si bRestaure = faux alors
+      
+      		// Définit la matrice de projection
+      		D3DXMatrixPerspectiveFovLH(stMatProj, d3dx_pi / 4.0, 1.0, 1.0, 100.0)
+      		
+      		// Applique la matrice de projection
+      		gpclD3DDevice:SetTransform(D3DTS_PROJECTION, stMatProj)
+      		
+      		// Définit la vue en fonction de la caméra
+      		D3DXMatrixLookAtLH(stMatView, gpclCamera:m_Position, gpclCamera:m_Vue, gpclCamera:m_Up)
+      		
+      		// Applique la vue
+      		gpclD3DDevice:SetTransform(D3DTS_VIEW, stMatView)
+      		
+      		// Définit le "monde"
+      		D3DXMatrixTranslation(stMatWorld, 0.0, 1.0, 0.0)
+      		
+      		// Applique la matrice
+      		gpclD3DDevice:SetTransform(D3DTS_WORLD, stMatWorld)
+      	sinon
+      	
+      		// Définit le "monde"
+      		D3DXMatrixTranslation(stMatWorld, 0.0, 0.0, 0.0)
+      		
+      		// Applique la matrice
+      		gpclD3DDevice:SetTransform(D3DTS_WORLD, stMatWorld)
+      	fin
+      	
+     type : 458752
+   -
+     name : D3DAfficheGrille
+     procedure_id : 1868395195931331401
+     type_code : 14
+     code : |1-
+      // Résumé : Affiche la grille
+      Procédure D3DAfficheGrille()
+      
+      	tabVertex est un tableau fixe de 2 VERTEXPERSO
+      	
+      	// Restaure la matrice du "monde"
+      	D3DInitMatrices(Vrai)
+      	
+      	// Dessin de la grille
+      	pour i = -500 _a_ 500 pas 5
+      		
+      		// Horizontal
+      		tabVertex[1] = [-500.0, 0.0, i, blanc]
+      		tabVertex[2] = [500.0, 0.0, i, Blanc]
+      		
+      		// Dessin de la ligne horizontale
+      		gpclD3DDevice:DrawPrimitiveUP(D3DPT_LINELIST, 1, &tabVertex, sizeof(tabVertex[1]))
+      		
+      		// vertical
+      		tabVertex[1] = [i, 0,-500.0, Blanc]
+      		tabVertex[2] = [i, 0, 500.0, Blanc]
+      		
+      		// Dessin de la ligne verticale
+      		gpclD3DDevice:DrawPrimitiveUP(D3DPT_LINELIST, 1, &tabVertex, sizeOf(tabVertex[1]))
+      	FIN
+     type : 458752
+   -
+     name : D3DInitTexte
+     internal_properties : CAAAAAgAAAA0j3DGtWCOIVZGWyWKOgu+QzBE/LKvGQ7ULmDFpcDSXxLHYUypNmQFHKT2iBbCFerIcBTlluLhI0Tw4X6cyOyRg7TKAiS+szIKop5G8FlKcZIPdRFJ0qdEwK2ooufgEnu3Hj2PkBX5suQXMtmgRAWsOQ8bniR5fCPcEfBauU0TAmq05l5rWrmkSG3/HbDQqcdpfplUz8Q=
+     procedure_id : 1868395286126386230
+     type_code : 14
+     code : |1-
+      // Résumé : Initialise le texte
+      Procédure D3DInitTexte()
+      
+      	// Crée une police	
+      	si failed(D3DXCreateFontA(gpclD3DDevice, 12, 0, 400, 1, faux, 0, 0, 1, 2, "Lucida Console", gpclTexte)) _ou_ gpcltexte = null alors
+      		renvoyer faux
+      	FIN
+      	
+      renvoyer vrai
+     type : 458752
+   -
+     name : D3DAfficheTexte
+     procedure_id : 1868398971412542552
+     type_code : 14
+     code : |1-
+      // Résumé : Affiche le texte
+      Procédure D3DAfficheTexte()
+      	
+      	nHauteur est un entier sans signe
+      	nY est un entier sans signe
+      	
+      	// Première ligne
+      	nHauteur = gpclTexte:DrawTextA(null, "Déplacez la souris pour orienter la caméra." + caract(0), -1, MAKE_RECT(2, 2, IMG_DX..largeur, img_dx..hauteur), 0x00000000, D3DCOLOR_ARGB(255, 255, 255, 255))
+      	
+      	// Deuxième ligne
+      	nHauteur += gpclTexte:DrawTextA(Null, "Utilisez les flèches du clavier ou la molette de la souris pour vous déplacer." + Caract(0), -1, MAKE_RECT(2, 2 + nHauteur, IMG_DX..Largeur, IMG_DX..Hauteur), 0x00000000, D3DCOLOR_ARGB(255, 255, 255, 255))
+      	nHauteur += 10
+      	
+      	nY = nHauteur
+      	
+      	// Affiche les informations de position
+      	nHauteur += gpclTexte:DrawTextA(Null, "Position :" + Caract(0), -1, 						  	MAKE_RECT(2, 2 + nHauteur, IMG_DX..Largeur, IMG_DX..Hauteur), 0x00000000, D3DCOLOR_ARGB(255, 255, 255, 255))
+      	nHauteur += gpclTexte:DrawTextA(Null, " X = " + gpclCamera:m_position:x + Caract(0), -1, 	MAKE_RECT(2, 2 + nHauteur, IMG_DX..Largeur, IMG_DX..Hauteur), 0x00000000, D3DCOLOR_ARGB(255, 255, 255, 255))
+      	nHauteur += gpclTexte:DrawTextA(Null, " Y = " + gpclCamera:m_position:y + Caract(0), -1,	MAKE_RECT(2, 2 + nHauteur, IMG_DX..Largeur, IMG_DX..Hauteur), 0x00000000, D3DCOLOR_ARGB(255, 255, 255, 255))
+      	nHauteur += gpclTexte:DrawTextA(Null, " Z = " + gpclCamera:m_position:z + Caract(0), -1, 	MAKE_RECT(2, 2 + nHauteur, IMG_DX..Largeur, IMG_DX..Hauteur), 0x00000000, D3DCOLOR_ARGB(255, 255, 255, 255))
+      
+      	nHauteur = nY
+      	
+      	// Affiche les informations de la vue
+      	nHauteur += gpclTexte:DrawTextA(Null, "Vue :" + Caract(0), -1, 						  	MAKE_RECT(120, 2 + nHauteur, IMG_DX..Largeur, IMG_DX..Hauteur), 0x00000000, D3DCOLOR_ARGB(255, 255, 255, 255))
+      	nHauteur += gpclTexte:DrawTextA(Null, " X = " + gpclCamera:m_vue:x + Caract(0), -1, 		MAKE_RECT(120, 2 + nHauteur, IMG_DX..Largeur, IMG_DX..Hauteur), 0x00000000, D3DCOLOR_ARGB(255, 255, 255, 255))
+      	nHauteur += gpclTexte:DrawTextA(Null, " Y = " + gpclCamera:m_Vue:y + Caract(0), -1,		MAKE_RECT(120, 2 + nHauteur, IMG_DX..Largeur, IMG_DX..Hauteur), 0x00000000, D3DCOLOR_ARGB(255, 255, 255, 255))
+      	nHauteur += gpclTexte:DrawTextA(Null, " Z = " + gpclCamera:m_Vue:z + Caract(0), -1, 		MAKE_RECT(120, 2 + nHauteur, IMG_DX..Largeur, IMG_DX..Hauteur), 0x00000000, D3DCOLOR_ARGB(255, 255, 255, 255))
+      	
+     type : 458752
+  templates :
+   -
+     name : FEN_08_Camera
+     identifier : 0x1543d3fb36872632
+     code_elements :
+      internal_properties : CAAAAAgAAACIMP8rh0cZMm+J7g8RNUlsXiqZmOPRK/tf/B3QBD1vZObrdyk+TdDl36cYuEymKXecYWBOpMsaqp9eu12KXJn/pLRlhrumBxv40PYcrbfKDuiju791pEByR5nn6hq7
+      type_code : 1
+      p_codes :
+       -
+         code : |1-
+          
+       -
+         code : |1-
+          
+         type : 34
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+       -
+         code : |1-
+          
+         type : 2
+       -
+         code : |1-
+          
+         type : 11
+       -
+         code : |1-
+          
+         type : 12
+       -
+         code : |1-
+          
+         type : 17
+       -
+         code : |1-
+          
+         type : 13
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAAD41EFVWFF7SAwzd+8+tTlPQzQOqrePoffe3zujAQsXVPKhnbz1Vze9uX1xEHfGZ53L/ImwBVh7QM0ijTy26nuXl6nmgRuF687jh7MrAxkw2m0o/GTSE2RmszekPw==
+  original_name : FEN_Fenêtre1
+resources :
+ string_res :
+  identifier : 0x10d999010ffdb80d
+  internal_properties : CAAAAAgAAACa/HBK/CUtN70EwGNqHiA5Ong4hctn68fiPi5bW47/f5kdMy4EhFbbsLDr9WzJV0mJiQ==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

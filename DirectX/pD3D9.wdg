@@ -1,0 +1,298 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pD3D9
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x19db4d4e0059d7e3
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAAX4QHZt2BIgmU247wIs7bPzQdWoB57D98dPMcK7HEp8bd66HztFsVttnVT6iiW+yRtWHi4xj4z57NiaVoLpWGBiLxlkAxdBUeV3wvB6a+bZ4as9TSVkC9Ohe2m0dI2hq3MVKhWEfZRlyc667A=
+     code : |1-
+      
+      CONSTANT
+      	// Version de DirectX
+      	DIRECT3D_VERSION 	= 0x0900
+      	D3D_SDK_VERSION	 	= 32
+      	D3D9b_SDK_VERSION	= 31
+      	D3D9				= "d3d9.dll"
+      FIN
+      
+      CONSTANT
+      	D3DSPD_IUNKNOWN                         = 0x00000001
+      	
+      	D3DCREATE_FPU_PRESERVE                  = 0x00000002
+      	D3DCREATE_MULTITHREADED                 = 0x00000004
+      	D3DCREATE_PUREDEVICE                    = 0x00000010
+      	D3DCREATE_SOFTWARE_VERTEXPROCESSING     = 0x00000020
+      	D3DCREATE_HARDWARE_VERTEXPROCESSING     = 0x00000040
+      	D3DCREATE_MIXED_VERTEXPROCESSING        = 0x00000080
+      	D3DCREATE_DISABLE_DRIVER_MANAGEMENT     = 0x00000100
+      	D3DCREATE_ADAPTERGROUP_DEVICE           = 0x00000200
+      	D3DCREATE_DISABLE_DRIVER_MANAGEMENT_EX  = 0x00000400
+      	D3DCREATE_NOWINDOWCHANGES				= 0x00000800
+      	D3DCREATE_DISABLE_PSGP_THREADING        = 0x00002000
+      	D3DCREATE_ENABLE_PRESENTSTATS           = 0x00004000
+      	D3DCREATE_DISABLE_PRINTSCREEN           = 0x00008000
+      	D3DCREATE_SCREENSAVER                   = 0x10000000
+      	
+      	D3DADAPTER_DEFAULT						= 0
+      	
+      	D3DENUM_WHQL_LEVEL                      = 0x00000002
+      	D3DENUM_NO_DRIVERVERSION                = 0x00000004
+      	
+      	D3DPRESENT_BACK_BUFFERS_MAX				= 3
+      	D3DPRESENT_BACK_BUFFERS_MAX_EX			= 30
+      	
+      	D3DSGR_NO_CALIBRATION                  	= 0x00000000
+      	D3DSGR_CALIBRATE                       	= 0x00000001
+      	
+      	D3DCURSOR_IMMEDIATE_UPDATE				= 0x00000001
+      	
+      	D3DPRESENT_DONOTWAIT                   	= 0x00000001
+      	D3DPRESENT_LINEAR_CONTENT              	= 0x00000002
+      	D3DPRESENT_DONOTFLIP                   	= 0x00000004
+      	D3DPRESENT_FLIPRESTART                 	= 0x00000008
+      	D3DPRESENT_VIDEO_RESTRICT_TO_MONITOR   	= 0x00000010
+      	
+      	_FACD3D									= 0x876
+      	D3D_OK									= 0
+      FIN
+      
+      ///////////////////////////////////////////////////////////
+      // <IIDs>
+      
+      IID_IDirect3D9					est un iid
+      IID_IDirect3DDevice9			est un iid
+      IID_IDirect3DResource9			est un iid
+      IID_IDirect3DBaseTexture9		est un iid
+      IID_IDirect3DTexture9			est un iid
+      IID_IDirect3DCubeTexture9		est un iid
+      IID_IDirect3DVolumeTexture9		est un iid
+      IID_IDirect3DVertexBuffer9		est un iid
+      IID_IDirect3DIndexBuffer9		est un iid
+      IID_IDirect3DSurface9			est un iid
+      IID_IDirect3DVolume9			est un iid
+      IID_IDirect3DSwapChain9			est un iid
+      IID_IDirect3DVertexDeclaration9	est un iid
+      IID_IDirect3DVertexShader9		est un iid
+      IID_IDirect3DPixelShader9		est un iid
+      IID_IDirect3DStateBlock9		est un iid
+      IID_IDirect3DQuery9				est un iid
+      IID_HelperName					est un iid
+      IID_IDirect3D9Ex				est un iid
+      IID_IDirect3DDevice9Ex			est un iid
+      IID_IDirect3DSwapChain9Ex		est un iid
+      
+      // </IIDs>
+      
+      ///////////////////////////////////////////////////////////
+      // <Déclarations des IIDs>
+      
+      DEFINE_GUID(IID_IDirect3D9, 					0x81bdcbca, 0x64d4, 0x426d, 0xae, 0x8d, 0xad, 0x01, 0x47, 0xf4, 0x27, 0x5c)
+      DEFINE_GUID(IID_IDirect3DDevice9,			 	0xd0223b96, 0xbf7a, 0x43fd, 0x92, 0xbd, 0xa4, 0x3b, 0x0d, 0x82, 0xb9, 0xeb)
+      DEFINE_GUID(IID_IDirect3DResource9,				0x05eec05d, 0x8f7d, 0x4362, 0xb9, 0x99, 0xd1, 0xba, 0xf3, 0x57, 0xc7, 0x04)
+      DEFINE_GUID(IID_IDirect3DBaseTexture9, 			0x580ca87e, 0x1d3c, 0x4d54, 0x99, 0x1d, 0xb7, 0xd3, 0xe3, 0xc2, 0x98, 0xce)
+      DEFINE_GUID(IID_IDirect3DTexture9, 				0x85c31227, 0x3de5, 0x4f00, 0x9b, 0x3a, 0xf1, 0x1a, 0xc3, 0x8c, 0x18, 0xb5)
+      DEFINE_GUID(IID_IDirect3DCubeTexture9, 			0xfff32f81, 0xd953, 0x473a, 0x92, 0x23, 0x93, 0xd6, 0x52, 0xab, 0xa9, 0x3f)
+      DEFINE_GUID(IID_IDirect3DVolumeTexture9, 		0x2518526c, 0xe789, 0x4111, 0xa7, 0xb9, 0x47, 0xef, 0x32, 0x8d, 0x13, 0xe6)
+      DEFINE_GUID(IID_IDirect3DVertexBuffer9, 		0xb64bb1b5, 0xfd70, 0x4df6, 0xbf, 0x91, 0x19, 0xd0, 0xa1, 0x24, 0x55, 0xe3)
+      DEFINE_GUID(IID_IDirect3DIndexBuffer9, 			0x7c9dd65e, 0xd3f7, 0x4529, 0xac, 0xee, 0x78, 0x58, 0x30, 0xac, 0xde, 0x35)
+      DEFINE_GUID(IID_IDirect3DSurface9, 				0x0cfbaf3a, 0x9ff6, 0x429a, 0x99, 0xb3, 0xa2, 0x79, 0x6a, 0xf8, 0xb8, 0x9b)
+      DEFINE_GUID(IID_IDirect3DVolume9, 				0x24f416e6, 0x1f67, 0x4aa7, 0xb8, 0x8e, 0xd3, 0x3f, 0x6f, 0x31, 0x28, 0xa1)
+      DEFINE_GUID(IID_IDirect3DSwapChain9, 			0x794950f2, 0xadfc, 0x458a, 0x90, 0x5e, 0x10, 0xa1, 0x0b, 0x0b, 0x50, 0x3b)
+      DEFINE_GUID(IID_IDirect3DVertexDeclaration9, 	0xdd13c59c, 0x36fa, 0x4098, 0xa8, 0xfb, 0xc7, 0xed, 0x39, 0xdc, 0x85, 0x46)
+      DEFINE_GUID(IID_IDirect3DVertexShader9, 		0xefc5557e, 0x6265, 0x4613, 0x8a, 0x94, 0x43, 0x85, 0x78, 0x89, 0xeb, 0x36)
+      DEFINE_GUID(IID_IDirect3DPixelShader9, 			0x6d3bdbdc, 0x5b02, 0x4415, 0xb8, 0x52, 0xce, 0x5e, 0x8b, 0xcc, 0xb2, 0x89)
+      DEFINE_GUID(IID_IDirect3DStateBlock9, 			0xb07c4fe5, 0x310d, 0x4ba8, 0xa2, 0x3c, 0x4f, 0x0f, 0x20, 0x6f, 0x21, 0x8b)
+      DEFINE_GUID(IID_IDirect3DQuery9, 				0xd9771460, 0xa695, 0x4f26, 0xbb, 0xd3, 0x27, 0xb8, 0x40, 0xb5, 0x41, 0xcc)
+      DEFINE_GUID(IID_HelperName, 					0xe4a36723, 0xfdfe, 0x4b22, 0xb1, 0x46, 0x3c, 0x04, 0xc0, 0x7f, 0x4c, 0xc8)
+      DEFINE_GUID(IID_IDirect3D9Ex, 					0x02177241, 0x69FC, 0x400C, 0x8F, 0xF1, 0x93, 0xA4, 0x4D, 0xF6, 0x86, 0x1D)
+      DEFINE_GUID(IID_IDirect3DDevice9Ex, 			0xb18b10ce, 0x2649, 0x405a, 0x87, 0x0f, 0x95, 0xf7, 0x77, 0xd4, 0x31, 0x3a)
+      DEFINE_GUID(IID_IDirect3DSwapChain9Ex, 			0x91886caf, 0x1c3d, 0x4d2e, 0xa0, 0xab, 0x3e, 0x4c, 0x7d, 0x8d, 0x33, 0x03)
+      
+      // </Déclarations des IIDs>
+      
+      GLOBAL
+      	PUBLIC constant
+      		D3DX9 									est une chaine = DirectXGetD3DX9Dll()		
+      		D3DERR_WRONGTEXTUREFORMAT               est un entier = MAKE_D3DHRESULT(2072)
+      		D3DERR_UNSUPPORTEDCOLOROPERATION        est un entier = MAKE_D3DHRESULT(2073)
+      		D3DERR_UNSUPPORTEDCOLORARG              est un entier = MAKE_D3DHRESULT(2074)
+      		D3DERR_UNSUPPORTEDALPHAOPERATION        est un entier = MAKE_D3DHRESULT(2075)
+      		D3DERR_UNSUPPORTEDALPHAARG              est un entier = MAKE_D3DHRESULT(2076)
+      		D3DERR_TOOMANYOPERATIONS                est un entier = MAKE_D3DHRESULT(2077)
+      		D3DERR_CONFLICTINGTEXTUREFILTER         est un entier = MAKE_D3DHRESULT(2078)
+      		D3DERR_UNSUPPORTEDFACTORVALUE           est un entier = MAKE_D3DHRESULT(2079)
+      		D3DERR_CONFLICTINGRENDERSTATE           est un entier = MAKE_D3DHRESULT(2081)
+      		D3DERR_UNSUPPORTEDTEXTUREFILTER         est un entier = MAKE_D3DHRESULT(2082)
+      		D3DERR_CONFLICTINGTEXTUREPALETTE        est un entier = MAKE_D3DHRESULT(2086)
+      		D3DERR_DRIVERINTERNALERROR              est un entier = MAKE_D3DHRESULT(2087)		
+      		D3DERR_NOTFOUND                         est un entier = MAKE_D3DHRESULT(2150)
+      		D3DERR_MOREDATA                         est un entier = MAKE_D3DHRESULT(2151)
+      		D3DERR_DEVICELOST                       est un entier = MAKE_D3DHRESULT(2152)
+      		D3DERR_DEVICENOTRESET                   est un entier = MAKE_D3DHRESULT(2153)
+      		D3DERR_NOTAVAILABLE                     est un entier = MAKE_D3DHRESULT(2154)
+      		D3DERR_OUTOFVIDEOMEMORY                 est un entier = MAKE_D3DHRESULT(380)
+      		D3DERR_INVALIDDEVICE                    est un entier = MAKE_D3DHRESULT(2155)
+      		D3DERR_INVALIDCALL                      est un entier = MAKE_D3DHRESULT(2156)
+      		D3DERR_DRIVERINVALIDCALL                est un entier = MAKE_D3DHRESULT(2157)
+      		D3DERR_WASSTILLDRAWING                  est un entier = MAKE_D3DHRESULT(540)
+      		D3DOK_NOAUTOGEN                         est un entier = MAKE_D3DSTATUS(2159)		
+      		D3DERR_DEVICEREMOVED                    est un entier = MAKE_D3DHRESULT(2160)
+      		S_NOT_RESIDENT                          est un entier = MAKE_D3DSTATUS(2165)
+      		S_RESIDENT_IN_SHARED_MEMORY             est un entier = MAKE_D3DSTATUS(2166)
+      		S_PRESENT_MODE_CHANGED                  est un entier = MAKE_D3DSTATUS(2167)
+      		S_PRESENT_OCCLUDED                      est un entier = MAKE_D3DSTATUS(2168)
+      		D3DERR_DEVICEHUNG                       est un entier = MAKE_D3DHRESULT(2164)
+      	
+      	PRIVÉ
+      		// Charge DirectX
+      		__d3dx9inst est un entier = chargedll(D3DX9)
+      		__d3d9inst	est un entier = chargedll(D3D9)
+     type : 720896
+   -
+     code : |1-
+      
+      // Déchargement des DLL
+      DéchargeDLL(__d3d9inst)
+      DéchargeDLL(__d3dx9inst)
+     type : 720898
+  procedures :
+   -
+     name : D3DPERF_BeginEvent
+     procedure_id : 1863169633488084534
+     type_code : 15
+     code : |1-
+      // Résumé : D3DPERF_BeginEvent
+      Procédure D3DPERF_BeginEvent(col est un entier sans signe, wszName est une chaine unicode)
+      renvoyer api(d3d9, "D3DPERF_BeginEvent", col, &wszName)
+     type : 458752
+   -
+     name : D3DPERF_EndEvent
+     procedure_id : 1863170337862819374
+     type_code : 15
+     code : |1-
+      // Résumé : D3DPERF_EndEvent
+      Procédure D3DPERF_EndEvent()
+      renvoyer api(d3d9, "D3DPERF_EndEvent")
+     type : 458752
+   -
+     name : D3DPERF_SetMarker
+     procedure_id : 1863170410877345822
+     type_code : 15
+     code : |1-
+      // Résumé : D3DPERF_SetMarker
+      Procédure D3DPERF_SetMarker(col est un entier sans signe, wszName est une chaine unicode)
+      api(d3d9, "D3DPERF_SetMarker", col, &wszName)
+     type : 458752
+   -
+     name : D3DPERF_SetRegion
+     procedure_id : 1863170471006901350
+     type_code : 15
+     code : |1-
+      // Résumé : D3DPERF_SetRegion
+      Procédure D3DPERF_SetRegion(col est un entier sans signe, wszName est une chaine unicode)
+      api(d3d9, "D3DPERF_SetRegion", col, &wszName)
+     type : 458752
+   -
+     name : D3DPERF_QueryRepeatFrame
+     procedure_id : 1863170544021428110
+     type_code : 15
+     code : |1-
+      // Résumé : D3DPERF_QueryRepeatFrame
+      Procédure D3DPERF_QueryRepeatFrame()
+      renvoyer api(d3d9, "D3DPERF_QueryRepeatFrame")
+     type : 458752
+   -
+     name : D3DPERF_GetStatus
+     procedure_id : 1863170621330923117
+     type_code : 15
+     code : |1-
+      // Résumé : D3DPERF_GetStatus
+      Procédure D3DPERF_GetStatus()
+      renvoyer api(d3d9, "D3DPERF_GetStatus")
+     type : 458752
+   -
+     name : D3DPERF_SetOptions
+     procedure_id : 1863170672870608342
+     type_code : 15
+     code : |1-
+      // Résumé : D3DPERF_SetOptions
+      Procédure D3DPERF_SetOptions(dwOptions est un entier sans signe <utile>)
+      renvoyer api(d3d9, "D3DPERF_SetOptions")
+     type : 458752
+   -
+     name : MAKE_D3DHRESULT
+     procedure_id : 1863175036560231527
+     type_code : 15
+     code : |1-
+      // Résumé : Macro MAKE_D3DHRESULT
+      Procédure MAKE_D3DHRESULT(code)
+      renvoyer MAKE_HRESULT(1, _FACD3D, code)
+     type : 458752
+   -
+     name : MAKE_D3DSTATUS
+     procedure_id : 1863175152524441761
+     type_code : 15
+     code : |1-
+      // Résumé : Macro MAKE_D3DSTATUS
+      Procédure MAKE_D3DSTATUS(code)
+      renvoyer MAKE_HRESULT(0, _FACD3D, code)
+     type : 458752
+   -
+     name : Direct3DCreate9
+     procedure_id : 1863179048063045160
+     type_code : 15
+     code : |1-
+      // Résumé : Direct3DCreate9
+      procédure Direct3DCreate9(SDKVersion est un entier sans signe)
+      
+      	pclIDirect3D9	est un IDirect3D9 dynamique
+      	ppvIDirect3D9	est un entier systeme
+      		
+      	// Appel
+      	ppvIDirect3D9 = api(d3d9, "Direct3DCreate9", SDKVersion)
+      	
+      	// Allocation
+      	__BindInterface(pclIDirect3D9, ppvIDirect3D9, IDirect3D9)
+      	
+      renvoyer pclIDirect3D9
+     type : 458752
+   -
+     name : Direct3DCreate9Ex
+     procedure_id : 1863188943681926753
+     type_code : 15
+     code : |1-
+      // Résumé : Direct3DCreate9Ex
+      procédure Direct3DCreate9Ex(SDKVersion est un entier sans signe, pclIDirect3D9Ex est un IDirect3D9Ex dynamique)
+      	
+      	HRESULT			est un entier systeme
+      	ppvIDirect3D9Ex	est un entier systeme
+      		
+      	// Appel
+      	HRESULT = api(d3d9, "Direct3DCreate9Ex", SDKVersion, &ppvIDirect3D9Ex)
+      	
+      	// Allocation
+      	__BindInterface(pclIDirect3D9Ex, ppvIDirect3D9Ex, IDirect3D9Ex)
+      	
+      renvoyer HRESULT
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x10d999010f73b6f3
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

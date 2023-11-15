@@ -1,0 +1,358 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXSkinInfo
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19ddd194130683c1
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXSkinInfo est une classe
+      	un objet IUnknown
+      	
+      FIN
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ID3DXSkinInfo (VTABLE)
+      	ID3DXSkinInfo_SetBoneInfluence				= ::IUnknown___IDXBASE + 1
+      	ID3DXSkinInfo_SetBoneVertexInfluence		= ::IUnknown___IDXBASE + 2
+      	ID3DXSkinInfo_GetNumBoneInfluences			= ::IUnknown___IDXBASE + 3
+      	ID3DXSkinInfo_GetBoneInfluence				= ::IUnknown___IDXBASE + 4
+      	ID3DXSkinInfo_GetBoneVertexInfluence		= ::IUnknown___IDXBASE + 5
+      	ID3DXSkinInfo_GetMaxVertexInfluences		= ::IUnknown___IDXBASE + 6
+      	ID3DXSkinInfo_GetNumBones					= ::IUnknown___IDXBASE + 7
+      	ID3DXSkinInfo_FindBoneVertexInfluenceIndex	= ::IUnknown___IDXBASE + 8
+      	ID3DXSkinInfo_GetMaxFaceInfluences			= ::IUnknown___IDXBASE + 9
+      	ID3DXSkinInfo_SetMinBoneInfluence			= ::IUnknown___IDXBASE + 10
+      	ID3DXSkinInfo_GetMinBoneInfluence			= ::IUnknown___IDXBASE + 11
+      	ID3DXSkinInfo_SetBoneName					= ::IUnknown___IDXBASE + 12
+      	ID3DXSkinInfo_GetBoneName					= ::IUnknown___IDXBASE + 13
+      	ID3DXSkinInfo_SetBoneOffsetMatrix			= ::IUnknown___IDXBASE + 14
+      	ID3DXSkinInfo_GetBoneOffsetMatrix			= ::IUnknown___IDXBASE + 15
+      	ID3DXSkinInfo_Clone							= ::IUnknown___IDXBASE + 16
+      	ID3DXSkinInfo_Remap							= ::IUnknown___IDXBASE + 17
+      	ID3DXSkinInfo_SetFVF						= ::IUnknown___IDXBASE + 18
+      	ID3DXSkinInfo_SetDeclaration				= ::IUnknown___IDXBASE + 19
+      	ID3DXSkinInfo_GetFVF						= ::IUnknown___IDXBASE + 20
+      	ID3DXSkinInfo_GetDeclaration				= ::IUnknown___IDXBASE + 21
+      	ID3DXSkinInfo_UpdateSkinnedMesh				= ::IUnknown___IDXBASE + 22
+      	ID3DXSkinInfo_ConvertToBlendedMesh			= ::IUnknown___IDXBASE + 23
+      	ID3DXSkinInfo_ConvertToIndexedBlendedMesh	= ::IUnknown___IDXBASE + 24
+      	ID3DXSkinInfo___IDXBASE						= ::IUnknown___IDXBASE + 24
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863876254705877953
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Mesh.IID_ID3DXSkinInfo
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863876254705943489
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : SetBoneInfluence
+     procedure_id : 1866516104703613779
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetBoneInfluence
+      Procédure SetBoneInfluence(bone est un entier sans signe, numInfluences est un entier sans signe, tabVertices est un tableau d'entiers sans signe, tabWeights est un tableau de reels sur 4)
+      renvoyer :call(ID3DXSkinInfo_SetBoneInfluence, bone, numInfluences, ptr(tabVertices), ptr(tabWeights))
+     type : 458752
+   -
+     name : SetBoneVertexInfluence
+     procedure_id : 1866516113293615982
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetBoneVertexInfluence
+      Procédure SetBoneVertexInfluence(boneNum est un entier sans signe, influenceNum est un entier sans signe, weight est un reel sur 4)
+      RENVOYER :CALL(ID3DXSkinInfo_SetBoneVertexInfluence, boneNum, influenceNum, weight)
+     type : 458752
+   -
+     name : GetNumBoneInfluences
+     procedure_id : 1866516121883617998
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumBoneInfluences
+      Procédure GetNumBoneInfluences(bone est un entier sans signe)
+      RENVOYER :CALL(ID3DXSkinInfo_GetNumBoneInfluences, bone)
+     type : 458752
+   -
+     name : GetBoneInfluence
+     procedure_id : 1866516130473620403
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetBoneInfluence
+      Procédure GetBoneInfluence(bone est un entier sans signe, tabVertices est un tableau d'entiers sans signe, tabWeights est un tableau de reels sur 4)
+      RENVOYER :CALL(ID3DXSkinInfo_GetBoneInfluence, bone, PTR(tabVertices), PTR(tabWeights))
+     type : 458752
+   -
+     name : GetBoneVertexInfluence
+     procedure_id : 1866516139063622388
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetBoneVertexInfluence
+      Procédure GetBoneVertexInfluence(dwBoneNum est un entier sans signe, dwInfluenceNum est un entier sans signe, rWeight est un reel sur 4, dwVertexNum est un entier sans signe)
+      RENVOYER :CALL(ID3DXSkinInfo_GetBoneVertexInfluence, dwBoneNum, dwInfluenceNum, &rWeight, &dwVertexNum)
+     type : 458752
+   -
+     name : GetMaxVertexInfluences
+     procedure_id : 1866516147653624247
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetMaxVertexInfluences
+      Procédure GetMaxVertexInfluences(maxVertexInfluences est un entier sans signe)
+      RENVOYER :CALL(ID3DXSkinInfo_GetMaxVertexInfluences, &maxVertexInfluences)
+     type : 458752
+   -
+     name : GetNumBones
+     procedure_id : 1866516156243626497
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumBones
+      Procédure GetNumBones()
+      RENVOYER :CALL(ID3DXSkinInfo_GetNumBones)
+     type : 458752
+   -
+     name : FindBoneVertexInfluenceIndex
+     procedure_id : 1866516164833628544
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode FindBoneVertexInfluenceIndex
+      Procédure FindBoneVertexInfluenceIndex(boneNum est un entier sans signe, vertexNum est un entier sans signe, InfluenceIndex est un entier sans signe)
+      RENVOYER :CALL(ID3DXSkinInfo_FindBoneVertexInfluenceIndex, boneNum, vertexNum, &InfluenceIndex)
+     type : 458752
+   -
+     name : GetMaxFaceInfluences
+     procedure_id : 1866516177718598791
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetMaxFaceInfluences
+      Procédure GetMaxFaceInfluences(pclIB est un IDirect3DIndexBuffer9 dynamique, NumFaces est un entier sans signe, maxFaceInfluences est un entier sans signe)
+      RENVOYER :CALL(ID3DXSkinInfo_GetMaxFaceInfluences, ptr(pclIB), NumFaces, &maxFaceInfluences)
+     type : 458752
+   -
+     name : SetMinBoneInfluence
+     procedure_id : 1866516186308601150
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetMinBoneInfluence
+      Procédure SetMinBoneInfluence(MinInfl est un réel sur  4)
+      RENVOYER :CALL(ID3DXSkinInfo_SetMinBoneInfluence, MinInfl)
+     type : 458752
+   -
+     name : GetMinBoneInfluence
+     procedure_id : 1866516203488539864
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetMinBoneInfluence
+      Procédure GetMinBoneInfluence()
+      RENVOYER :CALL(ID3DXSkinInfo_GetMinBoneInfluence)
+     type : 458752
+   -
+     name : SetBoneName
+     procedure_id : 1866516212078541988
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetBoneName
+      Procédure SetBoneName(Bone est un entier sans signe, Name est une chaine)
+      RENVOYER :CALL(ID3DXSkinInfo_SetBoneName, Bone, &Name)
+     type : 458752
+   -
+     name : GetBoneName
+     procedure_id : 1866516220668478718
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetBoneName
+      Procédure GetBoneName(Bone est un entier sans signe)
+      	
+      	sName est une chaine
+      	ppvName est un entier systeme
+      	
+      	// Appel
+      	ppvName = :CALL(ID3DXSkinInfo_GetBoneName, Bone)
+      	
+      	// Allocation
+      	sName = chainerecupere(ppvName, crAdresseASCIIZ)
+      	
+      renvoyer sName
+     type : 458752
+   -
+     name : SetBoneOffsetMatrix
+     procedure_id : 1866516242143385133
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetBoneOffsetMatrix
+      Procédure SetBoneOffsetMatrix(Bone est un entier sans signe, BoneTransform est un D3DXMATRIX)
+      RENVOYER :CALL(ID3DXSkinInfo_SetBoneOffsetMatrix, Bone &BoneTransform)
+     type : 458752
+   -
+     name : GetBoneOffsetMatrix
+     procedure_id : 1866516250733387476
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetBoneOffsetMatrix
+      Procédure GetBoneOffsetMatrix(Bone est un entier sans signe)
+      
+      	stMatrix est un D3DXMATRIX
+      	ppvMatrix est un entier systeme
+      
+      	// Appel
+      	ppvMatrix = :CALL(ID3DXSkinInfo_GetBoneOffsetMatrix, Bone)
+      	
+      	// Allocation
+      	transfert(&stMatrix, ppvMatrix, dimension(stMatrix))
+      	
+      renvoyer stMatrix
+     type : 458752
+   -
+     name : Clone
+     internal_properties : CAAAAAgAAACVhhoXmV/oOBrUoVWg5OvQbo2iCe2CL/nPG+amK7dRFu2/b5LGGKWeHNFZzL7XKQjLDlvo7ATjqKzVQhIuFbSDxJaje8EDiGQHqRDcrPIaYnmKqaul/xUyE0mHOGXWr8tOlyuiUuXiuIGj6y7zXqa5rnXLLm9l9F9/u8GbmjZvMMt2hKykzLxdzV+iE/NnklMGLYVyZq9fCg/hCaft1JD1s7dblf3xai2Bd5aO+LElUT06pUR58b5zTrq99nlez+Oln3gvpcTvLkARTq9ZjV1eqvTu4n7gTdzXfw==
+     procedure_id : 1866516263618358145
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Clone
+      Procédure Clone(pclSkinInfo est un ID3DXSkinInfo dynamique)
+      
+      	HRESULT est un entier système
+      	ppvSkinInfo est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXSkinInfo_Clone, &ppvSkinInfo)
+      	
+      	// Allocation
+      	__BindInterface(pclSkinInfo, ppvSkinInfo, ID3DXSkinInfo)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : Remap
+     internal_properties : CAAAAAgAAABKtXZQVT6tyBc2O8Y+U4Qrb3itwYAR7D6lOwdbCYsOwwv40B3BmXfXwoIz6UG+99iTSAPLvxfr6ul+HLcRYvlt/smcKdS4aYbHv1xCl1LX3/QTRk+/jxPhYQupGEZxdGsw94UpEXtg6XqTuw==
+     procedure_id : 1866516272208360332
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Remap
+      Procédure Remap(NumVertices est un entier sans signe, VertexRemap est un entier sans signe)
+      RENVOYER :CALL(ID3DXSkinInfo_Remap, NumVertices, &VertexRemap)
+     type : 458752
+   -
+     name : SetFVF
+     procedure_id : 1866516280798362847
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetFVF
+      Procédure SetFVF(FVF est un entier sans signe)
+      RENVOYER :CALL(ID3DXSkinInfo_SetFVF, FVF)
+     type : 458752
+   -
+     name : SetDeclaration
+     procedure_id : 1866516289388364847
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetDeclaration
+      Procédure SetDeclaration(tabDeclaration est un tableau de D3DVERTEXELEMENT9)
+      RENVOYER :CALL(ID3DXSkinInfo_SetDeclaration, ptr(tabDeclaration))
+     type : 458752
+   -
+     name : GetFVF
+     procedure_id : 1866516297978366894
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetFVF
+      Procédure GetFVF()
+      RENVOYER :CALL(ID3DXSkinInfo_GetFVF)
+     type : 458752
+   -
+     name : GetDeclaration
+     procedure_id : 1866516306568368941
+     type_code : 12
+     code : |1-
+      // Résumé : MéthodeGetDeclaration 
+      Procédure GetDeclaration(tabDeclaration est un tableau de MAX_FVF_DECL_SIZE D3DVERTEXELEMENT9)
+      RENVOYER :CALL(ID3DXSkinInfo_GetDeclaration, ptr(tabDeclaration))
+     type : 458752
+   -
+     name : UpdateSkinnedMesh
+     procedure_id : 1866516315158370972
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UpdateSkinnedMesh
+      Procédure UpdateSkinnedMesh(BoneTransforms est un D3DXMATRIX, BoneInvTransposeTransforms est un D3DXMATRIX, pVerticesSrc est un entier systeme, pVerticesDst est un entier systeme)
+      RENVOYER :CALL(ID3DXSkinInfo_UpdateSkinnedMesh, &BoneTransforms, &BoneInvTransposeTransforms, pVerticesSrc, pVerticesDst)
+     type : 458752
+   -
+     name : ConvertToBlendedMesh
+     procedure_id : 1866516332338309514
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ConvertToBlendedMesh
+      Procédure ConvertToBlendedMesh(pclMesh est un id3dxmesh dynamique, Options est un entier sans signe, tabAdjacencyIn est un tableau d'entier sans signe, tabAdjacencyOut est un tableau d'entiers sans signe, FaceRemap est un entier sans signe, pclVertexRemap est un id3dxbuffer dynamique, MaxFaceInfl est un entier sans signe, NumBoneCombinations est un entier sans signe, pclBoneCombinationTable est un id3dxbuffer dynamique, pclMeshOut est un id3dxmesh dynamique)
+      
+      	HRESULT est un entier système
+      	ppvVertexRemap est un entier système
+      	ppvBoneCombinationTable est un entier système
+      	ppvMeshOut est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXSkinInfo_ConvertToBlendedMesh, ptr(pclMesh), Options, ptr(tabAdjacencyIn), ptr(tabAdjacencyOut), &FaceRemap, &ppvVertexRemap, &MaxFaceInfl, &NumBoneCombinations, &ppvBoneCombinationTable, &ppvMeshOut)
+      	
+      	// Allocation
+      	__BindInterface(pclVertexRemap, ppvVertexRemap, ID3DXBuffer)
+      	__BindInterface(pclBoneCombinationTable, ppvBoneCombinationTable, ID3DXBuffer)
+      	__BindInterface(pclMeshOut, ppvMeshOut, ID3DXMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : ConvertToIndexedBlendedMesh
+     procedure_id : 1866516340928312013
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ConvertToIndexedBlendedMesh
+      Procédure ConvertToIndexedBlendedMesh(pclMesh est un id3dxmesh dynamique, Options est un entier sans signe, paletteSize est un entier sans signe, tabAdjacencyIn est un tableau d'entier sans signe, tabAdjacencyOut est un tableau d'entiers sans signe, FaceRemap est un entier sans signe, pclVertexRemap est un id3dxbuffer dynamique, MaxFaceInfl est un entier sans signe, NumBoneCombinations est un entier sans signe, pclBoneCombinationTable est un id3dxbuffer dynamique, pclMeshOut est un id3dxmesh dynamique)
+      
+      	HRESULT est un entier système
+      	ppvVertexRemap est un entier système
+      	ppvBoneCombinationTable est un entier système
+      	ppvMeshOut est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXSkinInfo_ConvertToIndexedBlendedMesh, PTR(pclMesh), Options, paletteSize, PTR(tabAdjacencyIn), PTR(tabAdjacencyOut), &FaceRemap, &ppvVertexRemap, &MaxFaceInfl, &NumBoneCombinations, &ppvBoneCombinationTable, &ppvMeshOut)
+      	
+      	// Allocation
+      	__BindInterface(pclVertexRemap, ppvVertexRemap, ID3DXBuffer)
+      	__BindInterface(pclBoneCombinationTable, ppvBoneCombinationTable, ID3DXBuffer)
+      	__BindInterface(pclMeshOut, ppvMeshOut, ID3DXMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000baab260
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

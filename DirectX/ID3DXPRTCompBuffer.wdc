@@ -1,0 +1,198 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXPRTCompBuffer
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19e5a717047f0bd1
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXPRTCompBuffer est une classe
+      	un objet IUnknown
+      	
+      FIN
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ID3DXPRTCompBuffer (VTABLE)
+      	ID3DXPRTCompBuffer_GetNumSamples		= ::IUnknown___IDXBASE + 1
+      	ID3DXPRTCompBuffer_GetNumCoeffs			= ::IUnknown___IDXBASE + 2
+      	ID3DXPRTCompBuffer_GetNumChannels		= ::IUnknown___IDXBASE + 3
+      	ID3DXPRTCompBuffer_IsTexture			= ::IUnknown___IDXBASE + 4
+      	ID3DXPRTCompBuffer_GetWidth				= ::IUnknown___IDXBASE + 5
+      	ID3DXPRTCompBuffer_GetHeight			= ::IUnknown___IDXBASE + 6
+      	ID3DXPRTCompBuffer_GetNumClusters		= ::IUnknown___IDXBASE + 7
+      	ID3DXPRTCompBuffer_GetNumPCA			= ::IUnknown___IDXBASE + 8
+      	ID3DXPRTCompBuffer_NormalizeData		= ::IUnknown___IDXBASE + 9
+      	ID3DXPRTCompBuffer_ExtractBasis			= ::IUnknown___IDXBASE + 10
+      	ID3DXPRTCompBuffer_ExtractClusterIDs	= ::IUnknown___IDXBASE + 11
+      	ID3DXPRTCompBuffer_ExtractPCA			= ::IUnknown___IDXBASE + 12
+      	ID3DXPRTCompBuffer_ExtractTexture		= ::IUnknown___IDXBASE + 13
+      	ID3DXPRTCompBuffer_ExtractToMesh		= ::IUnknown___IDXBASE + 14
+      	ID3DXPRTCompBuffer___IDXBASE			= ::IUnknown___IDXBASE + 14
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1866081337916525521
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Mesh.IID_ID3DXPRTCompBuffer
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1866081337916591057
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetHeight
+     procedure_id : 1866524913686734127
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetHeight
+      Procédure GetHeight()
+      RENVOYER :CALL(ID3DXPRTCompBuffer_GetHeight)
+     type : 458752
+   -
+     name : GetNumChannels
+     procedure_id : 1866524913686799803
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumChannels
+      Procédure GetNumChannels()
+      RENVOYER :CALL(ID3DXPRTCompBuffer_GetNumChannels)
+     type : 458752
+   -
+     name : GetNumCoeffs
+     procedure_id : 1866524913686865371
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumCoeffs
+      Procédure GetNumCoeffs()
+      RENVOYER :CALL(ID3DXPRTCompBuffer_GetNumCoeffs)
+     type : 458752
+   -
+     name : GetNumSamples
+     procedure_id : 1866524913686930953
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumSamples
+      Procédure GetNumSamples()
+      renvoyer :call(ID3DXPRTCompBuffer_GetNumSamples)
+     type : 458752
+   -
+     name : GetWidth
+     procedure_id : 1866524913686996536
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetWidth
+      Procédure GetWidth()
+      RENVOYER :CALL(ID3DXPRTCompBuffer_GetWidth)
+     type : 458752
+   -
+     name : IsTexture
+     procedure_id : 1866524913687062103
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode IsTexture
+      Procédure IsTexture()
+      RENVOYER :CALL(ID3DXPRTCompBuffer_IsTexture)
+     type : 458752
+   -
+     name : GetNumClusters
+     procedure_id : 1866524995291459791
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumClusters
+      Procédure GetNumClusters()
+      RENVOYER :CALL(ID3DXPRTCompBuffer_GetNumClusters)
+     type : 458752
+   -
+     name : GetNumPCA
+     procedure_id : 1866525003881461728
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumPCA
+      Procédure GetNumPCA()
+      RENVOYER :CALL(ID3DXPRTCompBuffer_GetNumPCA)
+     type : 458752
+   -
+     name : NormalizeData
+     procedure_id : 1866525012471463822
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode NormalizeData
+      Procédure NormalizeData()
+      RENVOYER :CALL(ID3DXPRTCompBuffer_NormalizeData)
+     type : 458752
+   -
+     name : ExtractBasis
+     procedure_id : 1866525021061465791
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ExtractBasis
+      Procédure ExtractBasis(Cluster est un entier sans signe, tabClusterBasis est un tableau de réels sur 4)
+      RENVOYER :CALL(ID3DXPRTCompBuffer_ExtractBasis, Cluster, ptr(tabClusterBasis))
+     type : 458752
+   -
+     name : ExtractClusterIDs
+     procedure_id : 1866525033946437037
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ExtractClusterIDs
+      Procédure ExtractClusterIDs(tabClusterIDs est un tableau d'entiers sans signe)
+      RENVOYER :CALL(ID3DXPRTCompBuffer_ExtractClusterIDs, ptr(tabClusterIDs))
+     type : 458752
+   -
+     name : ExtractPCA
+     procedure_id : 1866525042536438772
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ExtractPCA
+      Procédure ExtractPCA(StartPCA est un entier sans signe, NumExtract est un entier sans signe, tabPCACoefficients est un tableau de reels sur 4)
+      RENVOYER :CALL(ID3DXPRTCompBuffer_ExtractPCA, StartPCA, NumExtract, ptr(tabPCACoefficients))
+     type : 458752
+   -
+     name : ExtractTexture
+     procedure_id : 1866525051126440772
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ExtractTexture
+      Procédure ExtractTexture(StartPCA est un entier sans signe, NumPCA est un entier sans signe, pclTexture est un IDirect3DTexture9 dynamique)
+      RENVOYER :CALL(ID3DXPRTCompBuffer_ExtractTexture, StartPCA, NumPCA, ptr(pclTexture))
+     type : 458752
+   -
+     name : ExtractToMesh
+     procedure_id : 1866525068306379282
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ExtractToMesh
+      Procédure ExtractToMesh(NumPCA est un entier sans signe, Usage est un entier sans signe, UsageIndexStart est un entier sans signe, pclScene est un id3dxmesh dynamique)
+      RENVOYER :CALL(ID3DXPRTCompBuffer_ExtractToMesh, NumPCA, Usage, UsageIndexStart, ptr(pclScene))
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000bf9b29e
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

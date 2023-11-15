@@ -1,0 +1,1421 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pD3DX9Math
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x19db673d01df23a4
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+      ///////////////////////////////////////////////////////////
+      // <Constantes>
+      
+      constant
+      	D3DX_PI 	= 3.141592654
+      	D3DX_1BYPI	= 0.318309886
+      	
+      	D3DXSH_MINORDER	= 2
+      	D3DXSH_MAXORDER = 6
+      FIN
+      
+      // </Constantes>
+      
+      
+      
+      ///////////////////////////////////////////////////////////
+      // <IIDs>
+      
+      IID_ID3DXMatrixStack est un iid
+      
+      // </IIDs>
+      
+      ///////////////////////////////////////////////////////////
+      // <Déclarations des IIDs>
+      
+      DEFINE_GUID(IID_ID3DXMatrixStack, 0xc7885ba7, 0xf990, 0x4fe7, 0x92, 0x2d, 0x85, 0x15, 0xe4, 0x77, 0xdd, 0x85)	
+      
+      // </Déclarations des IIDs>	
+     type : 720896
+  procedures :
+   -
+     name : D3DXToRadian
+     procedure_id : 1863196507124045427
+     type_code : 15
+     code : |1-
+      // Résumé : Macro D3DXToRadian
+      Procédure D3DXToRadian(degree)
+      renvoyer (degree * (D3DX_PI / 180.0))
+     type : 458752
+   -
+     name : D3DXToDegree
+     procedure_id : 1863196635973093573
+     type_code : 15
+     code : |1-
+      // Résumé : Macro D3DXToDegree
+      Procédure D3DXToDegree(radian)
+      renvoyer (radian * (180.0 / D3DX_PI))
+     type : 458752
+   -
+     name : D3DXVec2Length
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863200059063218897
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec2Length
+      Procédure D3DXVec2Length(v est un D3DXVECTOR2)
+      renvoyer racine(v:x^2 + v:y^2)
+     type : 458752
+   -
+     name : D3DXVec2LengthSq
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863200329646221850
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec2LengthSq
+      Procédure D3DXVec2LengthSq(v est un D3DXVECTOR2)
+      renvoyer (v:x^2 + v:y^2)
+     type : 458752
+   -
+     name : D3DXVec2Dot
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863200471380240774
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec2Dot
+      Procédure D3DXVec2Dot(v1 est un D3DXVECTOR2, v2 est un D3DXVECTOR2)
+      renvoyer (v1:x * v2:x + v1:y * v2:y)
+     type : 458752
+   -
+     name : D3DXVec2CCW
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863200656063877730
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec2CCW
+      Procédure D3DXVec2CCW(v1 est un D3DXVECTOR2, v2 est un D3DXVECTOR2)
+      renvoyer (v1:x * v2:y - v1:y * v2:x)
+     type : 458752
+   -
+     name : D3DXVec2Add
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863200836452611428
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec2Add
+      Procédure D3DXVec2Add(vOut est un D3DXVECTOR2, v1 est un D3DXVECTOR2, v2 est un D3DXVECTOR2)
+      	vOut = [v1:x + v2:x, v1:y + v2:y]
+      renvoyer vOut
+     type : 458752
+   -
+     name : D3DXVec2Substract
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863201227294660558
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec2Substract
+      Procédure D3DXVec2Substract(vOut est un D3DXVECTOR2, v1 est un D3DXVECTOR2, v2 est un D3DXVECTOR2)
+      	vOut = [v1:x - v2:x, v1:y - v2:y]
+      renvoyer vOut
+     type : 458752
+   -
+     name : D3DXVec2Minimize
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863201317489060948
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec2Minimize
+      Procédure D3DXVec2Minimize(vOut est un D3DXVECTOR2, v1 est un D3DXVECTOR2, v2 est un D3DXVECTOR2)
+      	vOut = [min(v1:x,v2:x), min(v1:y,v2:y)]
+      renvoyer vOut
+     type : 458752
+   -
+     name : D3DXVec2Maximize
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863201480697856197
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec2Minimize
+      Procédure D3DXVec2Maximize(vOut est un D3DXVECTOR2, v1 est un D3DXVECTOR2, v2 est un D3DXVECTOR2)
+      	vOut = [max(v1:x,v2:x), max(v1:y,v2:y)]
+      renvoyer vOut
+     type : 458752
+   -
+     name : D3DXVec2Scale
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863201562302319483
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec2Scale
+      Procédure D3DXVec2Scale(vOut est un D3DXVECTOR2, v est un D3DXVECTOR2, s est un reel sur 4)
+      	vOut = [v:x * s, v:y * s]
+      renvoyer vOut
+     type : 458752
+   -
+     name : D3DXVec2Lerp
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863201734101051337
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec2Lerp
+      Procédure D3DXVec2Lerp(vOut est un D3DXVECTOR2, v1 est un D3DXVECTOR2, v2 est un D3DXVECTOR2, s est un reel sur 4)
+      	vOut = [v1:x * s * (v2:x - v1:x), v1:y * s * (v2:y - v1:y)]
+      renvoyer vOut
+     type : 458752
+   -
+     name : D3DXVec3Length
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863202039043800412
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec3Length
+      Procédure D3DXVec3Length(v est un D3DXVECTOR3)
+      renvoyer racine(v:x^2 + v:y^2 + v:z^2)
+     type : 458752
+   -
+     name : D3DXVec3LengthSq
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863202185072787162
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec3LengthSq
+      Procédure D3DXVec3LengthSq(v est un D3DXVECTOR3)
+      renvoyer (v:x^2 + v:y^2 + v:z^2)
+     type : 458752
+   -
+     name : D3DXVec3Dot
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863202275267121735
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec3Dot
+      Procédure D3DXVec3Dot(v1 est un D3DXVECTOR3, v2 est un D3DXVECTOR3)
+      renvoyer (v1:x * v2:x + v1:y * v2:y + v1:z * v2:z)
+     type : 458752
+   -
+     name : D3DXVec3Cross
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863202412706173191
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec3Cross
+      Procédure D3DXVec3Cross(vOut est un D3DXVECTOR3, v1 est un D3DXVECTOR3, v2 est un D3DXVECTOR3)
+      	vOut = [v1:y * v2:z - v1:z * v2:y, v1:z * v2:x - v1:x * v2:z, v1:x * v2:y - v1:y * v2:x]
+      renvoyer vOut
+     type : 458752
+   -
+     name : D3DXVec3Add
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863202773483509188
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec3Add
+      Procédure D3DXVec3Add(vOut est un D3DXVECTOR3, v1 est un D3DXVECTOR3, v2 est un D3DXVECTOR3)
+      	vOut = [v1:x + v2:x, v1:y + v2:y,v1:z + v2:z]
+      renvoyer vOut
+     type : 458752
+   -
+     name : D3DXVec3Substract
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863202889447653511
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec3Substract
+      Procédure D3DXVec3Substract(vOut est un D3DXVECTOR3, v1 est un D3DXVECTOR3, v2 est un D3DXVECTOR3)
+      	vOut = [v1:x - v2:x, v1:y - v2:y, v1:z - v2:z]
+      renvoyer vOut
+     type : 458752
+   -
+     name : D3DXVec3Minimize
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863202996821926485
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec3Minimize
+      Procédure D3DXVec3Minimize(vOut est un D3DXVECTOR3, v1 est un D3DXVECTOR3, v2 est un D3DXVECTOR3)
+      	vOut = [min(v1:x,v2:x), min(v1:y,v2:y), Min(v1:z,v2:z)]
+      renvoyer vOut
+     type : 458752
+   -
+     name : D3DXVec3Maximize
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863203095606262871
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec3Maximize
+      Procédure D3DXVec3Maximize(vOut est un D3DXVECTOR3, v1 est un D3DXVECTOR3, v2 est un D3DXVECTOR3)
+      	vOut = [max(v1:x,v2:x), max(v1:y,v2:y), Max(v1:z,v2:z)]
+      renvoyer vOut
+     type : 458752
+   -
+     name : D3DXVec3Scale
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863203181505628728
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec3Scale
+      Procédure D3DXVec3Scale(vOut est un D3DXVECTOR3, v est un D3DXVECTOR3, s est un reel sur 4)
+      	vOut = [v:x * s, v:y * s, v:z * s]
+      renvoyer vOut
+     type : 458752
+   -
+     name : D3DXVec3Lerp
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863203280289964785
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec3Lerp
+      Procédure D3DXVec3Lerp(vOut est un D3DXVECTOR3, v1 est un D3DXVECTOR3, v2 est un D3DXVECTOR3, s est un reel sur 4)
+      	vOut = [v1:x * s * (v2:x - v1:x), v1:y * s * (v2:y - v1:y), v1:z * s * (v2:z - v1:z)]
+      renvoyer vOut
+     type : 458752
+   -
+     name : D3DXVec4Add
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863206106378513742
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec4Add
+      Procédure D3DXVec4Add(vOut est un D3DXVECTOR4, v1 est un D3DXVECTOR4, v2 est un D3DXVECTOR4)
+      	vOut = [v1:x + v2:x, v1:y + v2:y, v1:z + v2:z, v1:w + v2:w]
+      renvoyer vOut
+     type : 458752
+   -
+     name : D3DXVec4Dot
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863206106378579340
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec4Dot
+      Procédure D3DXVec4Dot(v1 est un D3DXVECTOR4, v2 est un D3DXVECTOR4)
+      renvoyer (v1:x * v2:x + v1:y * v2:y + v1:z * v2:z + v1:w * v2:w)
+     type : 458752
+   -
+     name : D3DXVec4Length
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863206106378644954
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec4Length
+      Procédure D3DXVec4Length(v est un D3DXVECTOR4)
+      renvoyer racine(v:x^2 + v:y^2 + v:z^2 + v:w^2)
+     type : 458752
+   -
+     name : D3DXVec4LengthSq
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863206106378710552
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec4LengthSq
+      Procédure D3DXVec4LengthSq(v est un D3DXVECTOR4)
+      renvoyer (v:x^2 + v:y^2 + v:z^2 + v:w^2)
+     type : 458752
+   -
+     name : D3DXVec4Lerp
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863206106378776166
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec4Lerp
+      Procédure D3DXVec4Lerp(vOut est un D3DXVECTOR4, v1 est un D3DXVECTOR4, v2 est un D3DXVECTOR4, s est un reel sur 4)
+      	vOut = [v1:x * s * (v2:x - v1:x), v1:y * s * (v2:y - v1:y), v1:z * s * (v2:z - v1:z), v1:w * s * (v2:w - v1:w)]
+      renvoyer vOut
+     type : 458752
+   -
+     name : D3DXVec4Maximize
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863206106378841765
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec4Maximize
+      Procédure D3DXVec4Maximize(vOut est un D3DXVECTOR4, v1 est un D3DXVECTOR4, v2 est un D3DXVECTOR4)
+      	vOut = [max(v1:x,v2:x), max(v1:y,v2:y), Max(v1:z,v2:z), Max(v1:w,v2:w)]
+      renvoyer vOut
+     type : 458752
+   -
+     name : D3DXVec4Minimize
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863206106378907379
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec4Minimize
+      Procédure D3DXVec4Minimize(vOut est un D3DXVECTOR4, v1 est un D3DXVECTOR4, v2 est un D3DXVECTOR4)
+      	vOut = [min(v1:x,v2:x), min(v1:y,v2:y), Min(v1:z,v2:z), Min(v1:w,v2:w)]
+      renvoyer vOut
+     type : 458752
+   -
+     name : D3DXVec4Scale
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863206106378972993
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec4Scale
+      Procédure D3DXVec4Scale(vOut est un D3DXVECTOR4, v est un D3DXVECTOR4, s est un reel sur 4)
+      	vOut = [v:x * s, v:y * s, v:z * s, v:w * s]
+      renvoyer vOut
+     type : 458752
+   -
+     name : D3DXVec4Substract
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863206106379038607
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXVec4Substract
+      Procédure D3DXVec4Substract(vOut est un D3DXVECTOR4, v1 est un D3DXVECTOR4, v2 est un D3DXVECTOR4)
+      	vOut = [v1:x - v2:x, v1:y - v2:y, v1:z - v2:z, v1:w - v2:w]
+      renvoyer vOut
+     type : 458752
+   -
+     name : D3DXMatrixIdentity
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863206999732312974
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXMatrixIdentity
+      Procédure D3DXMatrixIdentity(mOut est un D3DXMATRIX)
+      
+      	VariableRAZ(mOut)
+      	mOut:m[1][1] = 1.0
+      	mOut:m[2][2] = 1.0
+      	mOut:m[3][3] = 1.0
+      	mOut:m[4][4] = 1.0
+      	
+      renvoyer mOut
+     type : 458752
+   -
+     name : D3DXMatrixIsIdentity
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863207381984425344
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXMatrixIdentity
+      Procédure D3DXMatrixIsIdentity(m est un D3DXMATRIX)
+      renvoyer (m:m[1][1] = 1.0 _ET_ m:m[1][2] = 0.0 _ET_ m:m[1][3] = 0.0 _ET_ m:m[1][4] = 0.0 _ET_ 
+      		  m:m[2][1] = 0.0 _ET_ m:m[2][2] = 1.0 _ET_ m:m[2][3] = 0.0 _ET_ m:m[2][4] = 0.0 _ET_
+      		  m:m[3][1] = 0.0 _ET_ m:m[3][2] = 0.0 _ET_ m:m[3][3] = 1.0 _ET_ m:m[3][4] = 0.0 _ET_ 
+      		  m:m[4][1] = 0.0 _ET_ m:m[4][2] = 0.0 _ET_ m:m[4][3] = 0.0 _ET_ m:m[4][4] = 1.0)
+     type : 458752
+   -
+     name : D3DXQuaternionLength
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863208129308844111
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXQuaternionLength
+      Procédure D3DXQuaternionLength(q est un D3DXQUATERNION)
+      renvoyer racine(q:x^2 + q:y^2 + q:z^2 + q:w^2)
+     type : 458752
+   -
+     name : D3DXQuaternionLengthSq
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863208232388083021
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXQuaternionLengthSq
+      Procédure D3DXQuaternionLengthSq(q est un D3DXQUATERNION)
+      renvoyer (q:x^2 + q:y^2 + q:z^2 + q:w^2)
+     type : 458752
+   -
+     name : D3DXQuaternionDot
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863208283927768261
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXQuaternionDot
+      Procédure D3DXQuaternionDot(q1 est un D3DXQUATERNION, q2 est un D3DXQUATERNION)
+      renvoyer (q1:x * q2:x + q1:y * q2:y + q1:z * q2:z + q1:w * q2:w)
+     type : 458752
+   -
+     name : D3DXQuaternionIdentity
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863208391302040518
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXQuaternionIdentity
+      Procédure D3DXQuaternionIdentity(qOut est un D3DXQUATERNION)
+      	qOut = [0.0, 0.0, 0.0, 1.0]
+      renvoyer qOut
+     type : 458752
+   -
+     name : D3DXQuaternionConjugate
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863208726309568339
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXQuaternionConjugate
+      Procédure D3DXQuaternionConjugate(qOut est un D3DXQUATERNION, q est un D3DXQUATERNION)
+      	qOut = [-q:x, -q:y, -q:z, q:w]
+      renvoyer qOut
+     type : 458752
+   -
+     name : D3DXPlaneDot
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863210684814717966
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXPlaneDot
+      Procédure D3DXPlaneDot(p est un D3DXPLANE, v est un D3DXVECTOR4)
+      renvoyer (p:a_ * v:x + p:b * v:y + p:c * v:z + p:d * v:w)
+     type : 458752
+   -
+     name : D3DXPlaneDotCoord
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863211037002052836
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXPlaneDotCoord
+      Procédure D3DXPlaneDotCoord(p est un D3DXPLANE, v est un D3DXVECTOR3)
+      renvoyer (p:a_ * v:x + p:b * v:y + p:c * v:z + p:d)
+     type : 458752
+   -
+     name : D3DXPlaneDotNormal
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863211200210912967
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXPlaneDotNormal
+      Procédure D3DXPlaneDotNormal(p est un D3DXPLANE, v est un D3DXVECTOR3)
+      renvoyer (p:a_ * v:x + p:b * v:y + p:c * v:z)
+     type : 458752
+   -
+     name : D3DXPlaneScale
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863211324764993442
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXPlaneScale
+      Procédure D3DXPlaneScale(pOut est un D3DXPLANE, p est un D3DXPLANE, s est un reel sur 4)
+      	pOut = [p:a_ * s, p:b * s, p:c * s, p:d * s]
+      renvoyer pOut
+     type : 458752
+   -
+     name : D3DXColorNegative
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863211616822838195
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXColorNegative
+      Procédure D3DXColorNegative(cOut est un D3DXCOLOR, c est un D3DXCOLOR)
+      	cOut = [1.0 - c:r, 1.0 - c:g, 1.0 - c:b, c:a_]
+      renvoyer cOut
+     type : 458752
+   -
+     name : D3DXColorAdd
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863211895995777160
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXColorAdd
+      Procédure D3DXColorAdd(cOut est un D3DXCOLOR, c1 est un D3DXCOLOR, c2 est un D3DXCOLOR)
+      	cOut = [c1:r + c2:r, c1:g + c2:g, c1:b + c2:b, c1:a_ + c2:a_]
+      renvoyer cOut
+     type : 458752
+   -
+     name : D3DXColorSubstract
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863212123629096436
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXColorSubstract
+      Procédure D3DXColorSubstract(cOut est un D3DXCOLOR, c1 est un D3DXCOLOR, c2 est un D3DXCOLOR)
+      	cOut = [c1:r - c2:r, c1:g - c2:g, c1:b - c2:b, c1:a_ - c2:a_]
+      renvoyer cOut
+     type : 458752
+   -
+     name : D3DXColorScale
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863212252478210710
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXColorScale
+      Procédure D3DXColorScale(cOut est un D3DXCOLOR, c est un D3DXCOLOR, s est un reel sur 4)
+      	cOut = [c:r * s, c:g * s, c:b * s, c:a_ * s]
+      renvoyer cOut
+     type : 458752
+   -
+     name : D3DXColorModulate
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863212527356182364
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXColorModulate
+      Procédure D3DXColorModulate(cOut est un D3DXCOLOR, c1 est un D3DXCOLOR, c2 est un D3DXCOLOR)
+      	cOut = [c1:r * c2:r, c1:g * c2:g, c1:b * c2:b, c1:a_ * c2:a_]
+      renvoyer cOut
+     type : 458752
+   -
+     name : D3DXColorLerp
+     internal_properties : CAAAAAgAAAA+ENbkpiVzKbscWEi3kAfTsKi7Jj4pN13VtKofv3G82GRJPeLShV9vW0lXqJ1SoALJpAwdExgFG24EP4I9UEjSfwGFiRRRsF2JMp7eDBvnfa9hWAhjAnJSSUqbnNc+LyWCFAxC6isaAuMKez8GINgU7AdUJ+ARrYfpEntMR93SusfMXYkN5NTuceJepcxSBegrd76flw==
+     procedure_id : 1863212664795233071
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction inline D3DXColorLerp
+      Procédure D3DXColorLerp(cOut est un D3DXCOLOR, c1 est un D3DXCOLOR, c2 est un D3DXCOLOR, s est un reel sur 4)
+      	cOut = [c1:r * s * (c2:r - c1:r), c1:g * s * (c2:g - c1:g), c1:b * s * (c2:b - c1:b), c1:a_ * s * (c2:a_ - c1:a_)]
+      renvoyer cOut
+     type : 458752
+   -
+     name : D3DXVec2Normalize
+     internal_properties : CAAAAAgAAABqs0nSMKzBdVEO4m6VaBExC0XkeENZhrdv5ZKp4a9p/gN2VwkM8bMtpF9GdJj6wwH9gFeDKeBccynfnRJTZG2cQdryX0oEZsyb6N/P9b8t7gnM0KeB6k6tAsZ6vYmeQ0k6G1Izlhs+qdxAPDLqykIArGDCChIfU3hwtuBJlylitKbOtFEEk2Es6X0iOcXn8vWY1wmZWliMPHEBoU8tGDCgVSUp
+     procedure_id : 1863213876002113434
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec2Normalize
+      Procédure D3DXVec2Normalize(vOut est un D3DXVECTOR2, v est un D3DXVECTOR2)
+      renvoyer api(pd3d9.d3dx9, "D3DXVec2Normalize", &vOut, &v)
+     type : 458752
+   -
+     name : D3DXVec2Hermite
+     procedure_id : 1863214206714672134
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec2Hermite
+      Procédure D3DXVec2Hermite(vOut est un D3DXVECTOR2, v1 est un D3DXVECTOR2, t1 est un D3DXVECTOR2, v2 est un D3DXVECTOR2, t2 est un D3DXVECTOR2, s est un reel sur 4)
+      renvoyer api(pd3d9.d3dx9, "D3DXVec2Hermite", &vOut, &v1, &t1, &v2, &t2, s)
+     type : 458752
+   -
+     name : D3DXVec2CatmullRom
+     procedure_id : 1863214614736660898
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec2CatmullRom
+      Procédure D3DXVec2CatmullRom(vOut est un D3DXVECTOR2, v0 est un D3DXVECTOR2, v1 est un D3DXVECTOR2, v2 est un D3DXVECTOR2, v3 est un D3DXVECTOR2, s est un reel sur 4)
+      renvoyer api(pd3d9.d3dx9, "D3DXVec2CatmullRom", &vOut, &v0, &v1, &v2, &v3, s)
+     type : 458752
+   -
+     name : D3DXVec2BaryCentric
+     procedure_id : 1863214799420297776
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec2BaryCentric
+      Procédure D3DXVec2BaryCentric(vOut est un D3DXVECTOR2, v1 est un D3DXVECTOR2, v2 est un D3DXVECTOR2, v3 est un D3DXVECTOR2, f est un reel sur 4, g est un reel sur 4)
+      renvoyer api(pd3d9.d3dx9, "D3DXVec2BaryCentric", &vOut, &v1, &v2, &v3, f, g)
+     type : 458752
+   -
+     name : D3DXVec2Transform
+     internal_properties : CAAAAAgAAABqs0nSMKzBdVEO4m6VaBExC0XkeENZhrdv5ZKp4a9p/gN2VwkM8bMtpF9GdJj6wwH9gFeDKeBccynfnRJTZG2cQdryX0oEZsyb6N/P9b8t7gnM0KeB6k6tAsZ6vYmeQ0k6G1Izlhs+qdxAPDLqykIArGDCChIfU3hwtuBJlylitKbOtFEEk2Es6X0iOcXn8vWY1wmZWliMPHEBoU8tGDCgVSUp
+     procedure_id : 1863215048528458618
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec2Transform
+      Procédure D3DXVec2Transform(vOut est un D3DXVECTOR4, v est un D3DXVECTOR2, m est un D3DXMATRIX)
+      renvoyer api(pD3D9.D3DX9, "D3DXVec2Transform", &vOut, &v, &m)
+     type : 458752
+   -
+     name : D3DXVec2TransformCoord
+     procedure_id : 1863215362061144343
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec2TransformCoord
+      Procédure D3DXVec2TransformCoord(vOut est un D3DXVECTOR2, v est un D3DXVECTOR2, m est un D3DXMATRIX)
+      renvoyer api(pD3D9.D3DX9, "D3DXVec2TransformCoord", &vOut, &v, &m)
+     type : 458752
+   -
+     name : D3DXVec2TransformNormal
+     procedure_id : 1863215430780702481
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec2TransformNormal
+      Procédure D3DXVec2TransformNormal(vOut est un D3DXVECTOR2, v est un D3DXVECTOR2, m est un D3DXMATRIX)
+      renvoyer api(pD3D9.D3DX9, "D3DXVec2TransformNormal", &vOut, &v, &m)
+     type : 458752
+   -
+     name : D3DXVec3BaryCentric
+     procedure_id : 1863221495274887978
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec3BaryCentric
+      Procédure D3DXVec3BaryCentric(vOut est un D3DXVECTOR3, v1 est un D3DXVECTOR3, v2 est un D3DXVECTOR3, v3 est un D3DXVECTOR3, f est un reel sur 4, g est un reel sur 4)
+      renvoyer api(pd3d9.d3dx9, "D3DXVec3BaryCentric", &vOut, &v1, &v2, &v3, f, g)
+     type : 458752
+   -
+     name : D3DXVec3CatmullRom
+     procedure_id : 1863221495274953576
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec3CatmullRom
+      Procédure D3DXVec3CatmullRom(vOut est un D3DXVECTOR3, v0 est un D3DXVECTOR3, v1 est un D3DXVECTOR3, v2 est un D3DXVECTOR3, v3 est un D3DXVECTOR3, s est un reel sur 4)
+      renvoyer api(pd3d9.d3dx9, "D3DXVec3CatmullRom", &vOut, &v0, &v1, &v2, &v3, s)
+     type : 458752
+   -
+     name : D3DXVec3Hermite
+     procedure_id : 1863221495275019175
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec3Hermite
+      Procédure D3DXVec3Hermite(vOut est un D3DXVECTOR3, v1 est un D3DXVECTOR3, t1 est un D3DXVECTOR3, v2 est un D3DXVECTOR3, t2 est un D3DXVECTOR3, s est un reel sur 4)
+      renvoyer api(pd3d9.d3dx9, "D3DXVec3Hermite", &vOut, &v1, &t1, &v2, &t2, s)
+     type : 458752
+   -
+     name : D3DXVec3Transform
+     internal_properties : CAAAAAgAAABqs0nSMKzBdVEO4m6VaBExC0XkeENZhrdv5ZKp4a9p/gN2VwkM8bMtpF9GdJj6wwH9gFeDKeBccynfnRJTZG2cQdryX0oEZsyb6N/P9b8t7gnM0KeB6k6tAsZ6vYmeQ0k6G1Izlhs+qdxAPDLqykIArGDCChIfU3hwtuBJlylitKbOtFEEk2Es6X0iOcXn8vWY1wmZWliMPHEBoU8tGDCgVSUp
+     procedure_id : 1863221495275084773
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec3Transform
+      Procédure D3DXVec3Transform(vOut est un D3DXVECTOR4, v est un D3DXVECTOR3, m est un D3DXMATRIX)
+      renvoyer api(pD3D9.D3DX9, "D3DXVec3Transform", &vOut, &v, &m)
+     type : 458752
+   -
+     name : D3DXVec3TransformCoord
+     procedure_id : 1863221495275215954
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec3TransformCoord
+      Procédure D3DXVec3TransformCoord(vOut est un D3DXVECTOR3, v est un D3DXVECTOR3, m est un D3DXMATRIX)
+      renvoyer api(pD3D9.D3DX9, "D3DXVec3TransformCoord", &vOut, &v, &m)
+     type : 458752
+   -
+     name : D3DXVec3TransformNormal
+     procedure_id : 1863221499570314447
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec3TransformNormal
+      Procédure D3DXVec3TransformNormal(vOut est un D3DXVECTOR3, v est un D3DXVECTOR3, m est un D3DXMATRIX)
+      renvoyer api(pD3D9.D3DX9, "D3DXVec3TransformNormal", &vOut, &v, &m)
+     type : 458752
+   -
+     name : D3DXVec3Project
+     internal_properties : CAAAAAgAAABqs0nSMKzBdVEO4m6VaBExC0XkeENZhrdv5ZKp4a9p/gN2VwkM8bMtpF9GdJj6wwH9gFeDKeBccynfnRJTZG2cQdryX0oEZsyb6N/P9b8t7gnM0KeB6k6tAsZ6vYmeQ0k6G1Izlhs+qdxAPDLqykIArGDCChIfU3hwtuBJlylitKbOtFEEk2Es6X0iOcXn8vWY1wmZWliMPHEBoU8tGDCgVSUp
+     procedure_id : 1863222770880799876
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec3Project
+      Procédure D3DXVec3Project(vOut est un D3DXVECTOR3, v est un D3DXVECTOR3, viewport est un D3DVIEWPORT9, projection est un D3DXMATRIX, view est un D3DXMATRIX, world est un D3DXMATRIX)
+      renvoyer api(pd3d9.d3dx9, "D3DXVec3Project", &vOut, &v, &viewport, &projection, &view, &world)
+     type : 458752
+   -
+     name : D3DXVec3Unproject
+     internal_properties : CAAAAAgAAABqs0nSMKzBdVEO4m6VaBExC0XkeENZhrdv5ZKp4a9p/gN2VwkM8bMtpF9GdJj6wwH9gFeDKeBccynfnRJTZG2cQdryX0oEZsyb6N/P9b8t7gnM0KeB6k6tAsZ6vYmeQ0k6G1Izlhs+qdxAPDLqykIArGDCChIfU3hwtuBJlylitKbOtFEEk2Es6X0iOcXn8vWY1wmZWliMPHEBoU8tGDCgVSUp
+     procedure_id : 1863223204672531841
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec3Unproject
+      Procédure D3DXVec3Unproject(vOut est un D3DXVECTOR3, v est un D3DXVECTOR3, viewport est un D3DVIEWPORT9, projection est un D3DXMATRIX, view est un D3DXMATRIX, world est un D3DXMATRIX)
+      renvoyer api(pd3d9.d3dx9, "D3DXVec3Unproject", &vOut, &v, &viewport, &projection, &view, &world)
+     type : 458752
+   -
+     name : D3DXVec4Cross
+     procedure_id : 1863475031440560808
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec4Cross
+      Procédure D3DXVec4Cross(vOut est un D3DXVECTOR4, v1 est un D3DXVECTOR4, v2 est un D3DXVECTOR4, v3 est un D3DXVECTOR4)
+      renvoyer api(pD3D9.D3DX9, "D3DXVec4Cross", &vOut, &v1, &v2, &v3)
+     type : 458752
+   -
+     name : D3DXVec4Normalize
+     internal_properties : CAAAAAgAAABqs0nSMKzBdVEO4m6VaBExC0XkeENZhrdv5ZKp4a9p/gN2VwkM8bMtpF9GdJj6wwH9gFeDKeBccynfnRJTZG2cQdryX0oEZsyb6N/P9b8t7gnM0KeB6k6tAsZ6vYmeQ0k6G1Izlhs+qdxAPDLqykIArGDCChIfU3hwtuBJlylitKbOtFEEk2Es6X0iOcXn8vWY1wmZWliMPHEBoU8tGDCgVSUp
+     procedure_id : 1863475302023563683
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec4Normalize
+      Procédure D3DXVec4Normalize(vOut est un D3DXVECTOR4, v est un D3DXVECTOR4)
+      renvoyer api(pD3D9.D3DX9, "D3DXVec4Normalize", &vOut, &v)
+     type : 458752
+   -
+     name : D3DXVec4Hermite
+     procedure_id : 1863475443757648642
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec4Hermite
+      Procédure D3DXVec4Hermite(vOut est un D3DXVECTOR4, v1 est un D3DXVECTOR4, t1 est un D3DXVECTOR4, v2 est un D3DXVECTOR4, t2 est un D3DXVECTOR4, s est un reel sur 4)
+      renvoyer api(pd3d9.d3dx9, "D3DXVec4Hermite", &vOut, &v1, &t1, &v2, &t2, s)
+     type : 458752
+   -
+     name : D3DXVec4BaryCentric
+     procedure_id : 1863475615556380044
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec4BaryCentric
+      Procédure D3DXVec4BaryCentric(vOut est un D3DXVECTOR4, v1 est un D3DXVECTOR4, v2 est un D3DXVECTOR4, v3 est un D3DXVECTOR4, f est un reel sur 4, g est un reel sur 4)
+      renvoyer api(pd3d9.d3dx9, "D3DXVec4BaryCentric", &vOut, &v1, &v2, &v3, f, g)
+     type : 458752
+   -
+     name : D3DXVec4CatmullRom
+     procedure_id : 1863475615556445643
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec4CatmullRom
+      Procédure D3DXVec4CatmullRom(vOut est un D3DXVECTOR4, v0 est un D3DXVECTOR4, v1 est un D3DXVECTOR4, v2 est un D3DXVECTOR4, v3 est un D3DXVECTOR4, s est un reel sur 4)
+      renvoyer api(pd3d9.d3dx9, "D3DXVec4CatmullRom", &vOut, &v0, &v1, &v2, &v3, s)
+     type : 458752
+   -
+     name : D3DXVec4Transform
+     internal_properties : CAAAAAgAAABqs0nSMKzBdVEO4m6VaBExC0XkeENZhrdv5ZKp4a9p/gN2VwkM8bMtpF9GdJj6wwH9gFeDKeBccynfnRJTZG2cQdryX0oEZsyb6N/P9b8t7gnM0KeB6k6tAsZ6vYmeQ0k6G1Izlhs+qdxAPDLqykIArGDCChIfU3hwtuBJlylitKbOtFEEk2Es6X0iOcXn8vWY1wmZWliMPHEBoU8tGDCgVSUp
+     procedure_id : 1863475615556511241
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec4Transform
+      Procédure D3DXVec4Transform(vOut est un D3DXVECTOR4, v est un D3DXVECTOR4, m est un D3DXMATRIX)
+      renvoyer api(pD3D9.D3DX9, "D3DXVec4Transform", &vOut, &v, &m)
+     type : 458752
+   -
+     name : D3DXMatrixDeterminant
+     procedure_id : 1863475881844545026
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixDeterminant
+      Procédure D3DXMatrixDeterminant(m est un D3DXMATRIX)
+      renvoyer api(pD3D9.D3DX9, "D3DXMatrixDeterminant", &m)
+     type : 458752
+   -
+     name : D3DXMatrixDecompose
+     procedure_id : 1863476500319914992
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixDecompose
+      Procédure D3DXMatrixDecompose(vOutScale est un D3DXVECTOR3, qOutRotation est un D3DXQUATERNION, vOutTranslation est un D3DXVECTOR3, m est un D3DXMATRIX)
+      renvoyer api(pD3D9.D3DX9, "D3DXMatrixDecompose", &vOutScale, &qOutRotation, &vOutTranslation, &m)
+     type : 458752
+   -
+     name : D3DXMatrixTranspose
+     procedure_id : 1863476800967694914
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixTranspose
+      Procédure D3DXMatrixTranspose(mOut est un D3DXMATRIX, m est un D3DXMATRIX)
+      renvoyer api(pD3D9.D3DX9, "D3DXMatrixTranspose", &mOut, &m)
+     type : 458752
+   -
+     name : D3DXMatrixMultiply
+     procedure_id : 1863476968471523963
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixMultiply
+      Procédure D3DXMatrixMultiply(mOut est un D3DXMATRIX, m1 est un D3DXMATRIX, m2 est un D3DXMATRIX)
+      renvoyer api(pD3D9.D3DX9, "D3DXMatrixMultiply", &mOut, &m1, &m2)
+     type : 458752
+   -
+     name : D3DXMatrixMultiplyTranspose
+     procedure_id : 1863477084435668630
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixMultiplyTranspose
+      Procédure D3DXMatrixMultiplyTranspose(mOut est un D3DXMATRIX, m1 est un D3DXMATRIX, m2 est un D3DXMATRIX)
+      renvoyer api(pD3D9.D3DX9, "D3DXMatrixMultiplyTranspose", &mOut, &m1, &m2)
+     type : 458752
+   -
+     name : D3DXMatrixInverse
+     procedure_id : 1863477234759624143
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixInverse
+      Procédure D3DXMatrixInverse(mOut est un D3DXMATRIX, rDeterminant est un reel sur 4, m est un D3DXMATRIX)
+      renvoyer api(pD3D9.D3DX9, "D3DXMatrixInverse", &mOut, &rDeterminant, &m)
+     type : 458752
+   -
+     name : D3DXMatrixScaling
+     procedure_id : 1863477458097976076
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixScaling
+      Procédure D3DXMatrixScaling(mOut est un D3DXMATRIX, sx est un reel sur 4, sy est un reel sur 4, sz est un reel sur 4)
+      renvoyer api(pD3D9.D3DX9, "D3DXMatrixScaling", &mOut, sx, sy, sz)
+     type : 458752
+   -
+     name : D3DXMatrixTranslation
+     procedure_id : 1863477664256454020
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixTranslation
+      Procédure D3DXMatrixTranslation(mOut est un D3DXMATRIX, x est un reel sur 4, y est un reel sur 4, z est un reel sur 4)
+      renvoyer api(pD3D9.D3DX9, "D3DXMatrixTranslation", &mOut, x, y, z)
+     type : 458752
+   -
+     name : D3DXMatrixRotationX
+     procedure_id : 1863477771630726979
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixRotationX
+      Procédure D3DXMatrixRotationX(mOut est un D3DXMATRIX, angle est un reel sur 4)
+      renvoyer api(pD3D9.D3DX9, "D3DXMatrixRotationX", &mOut, angle)
+     type : 458752
+   -
+     name : D3DXMatrixRotationY
+     procedure_id : 1863477866120029627
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixRotationY
+      Procédure D3DXMatrixRotationY(mOut est un D3DXMATRIX, angle est un reel sur 4)
+      renvoyer api(pD3D9.D3DX9, "D3DXMatrixRotationY", &mOut, angle)
+     type : 458752
+   -
+     name : D3DXMatrixRotationZ
+     procedure_id : 1863477913364746168
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixRotationZ
+      Procédure D3DXMatrixRotationZ(mOut est un D3DXMATRIX, angle est un reel sur 4)
+      renvoyer api(pD3D9.D3DX9, "D3DXMatrixRotationZ", &mOut, angle)
+     type : 458752
+   -
+     name : D3DXMatrixRotationAxis
+     procedure_id : 1863477964904431236
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixRotationAxis
+      Procédure D3DXMatrixRotationAxis(mOut est un D3DXMATRIX, v est un D3DXVECTOR3, angle est un reel sur 4)
+      renvoyer api(pD3D9.D3DX9, "D3DXMatrixRotationAxis", &mOut, &v, angle)
+     type : 458752
+   -
+     name : D3DXMatrixRotationQuaternion
+     procedure_id : 1863478050803862411
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixRotationQuaternion
+      Procédure D3DXMatrixRotationQuaternion(mOut est un D3DXMATRIX, q est un D3DXQUATERNION, angle est un reel sur 4)
+      renvoyer api(pD3D9.D3DX9, "D3DXMatrixRotationQuaternion", &mOut, &q, angle)
+     type : 458752
+   -
+     name : D3DXMatrixRotationYawPitchRoll
+     procedure_id : 1863478201127753370
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixRotationYawPitchRoll
+      Procédure D3DXMatrixRotationYawPitchRoll(mOut est un D3DXMATRIX, Yaw est un reel sur 4, Pitch est un reel sur 4, Roll est un reel sur 4)
+      renvoyer api(pD3D9.D3DX9, "D3DXMatrixRotationYawPitchRoll", &mOut, Yaw, Pitch, Roll)
+     type : 458752
+   -
+     name : D3DXMatrixTransformation
+     procedure_id : 1863478398696294648
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixTransformation
+      Procédure D3DXMatrixTransformation(mOut est un D3DXMATRIX, vScalingCenter est un D3DXVECTOR3, qScalingRotation est un D3DXQUATERNION, vScaling est un D3DXVECTOR3, vRotationCenter est un D3DXVECTOR3, qRotation est un D3DXQUATERNION, vTranslation est un D3DXVECTOR3)
+      RENVOYER API(pD3D9.D3DX9, "D3DXMatrixTransformation", &mOut, &vScalingCenter, &qScalingRotation, &vScaling, &vRotationCenter, &qRotation, &vTranslation)
+     type : 458752
+   -
+     name : D3DXMatrixTransformation2D
+     procedure_id : 1863479124545870664
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixTransformation2D
+      Procédure D3DXMatrixTransformation2D(mOut est un D3DXMATRIX, vScalingCenter est un D3DXVECTOR2, ScalingRotation est un reel sur 4, vScaling est un D3DXVECTOR2, vRotationCenter est un D3DXVECTOR2, Rotation est un reel sur 4, vTranslation est un D3DXVECTOR2)
+      RENVOYER API(pD3D9.D3DX9, "D3DXMatrixTransformation2D", &mOut, &vScalingCenter, ScalingRotation, &vScaling, &vRotationCenter, Rotation, &vTranslation)
+     type : 458752
+   -
+     name : D3DXMatrixAffineTransformation
+     procedure_id : 1863479438078556670
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixAffineTransformation
+      Procédure D3DXMatrixAffineTransformation(mOut est un D3DXMATRIX, rScaling est un reel sur 4, vRotationCenter est un D3DXVECTOR3, qRotation est un D3DXQUATERNION, vTranslation est un D3DXVECTOR3)
+      RENVOYER API(pD3D9.D3DX9, "D3DXMatrixAffineTransformation", &mOut, rScaling, &vRotationCenter, &qRotation, &vTranslation)
+     type : 458752
+   -
+     name : D3DXMatrixAffineTransformation2D
+     procedure_id : 1863479914819971564
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixAffineTransformation2D
+      Procédure D3DXMatrixAffineTransformation2D(mOut est un D3DXMATRIX, rScaling est un reel sur 4, vRotationCenter est un D3DXVECTOR2, rRotation est un reel sur 4, vTranslation est un D3DXVECTOR2)
+      RENVOYER API(pD3D9.D3DX9, "D3DXMatrixAffineTransformation2D", &mOut, rScaling, &vRotationCenter, rRotation, &vTranslation)
+     type : 458752
+   -
+     name : D3DXMatrixLookAtRH
+     procedure_id : 1863480159633165234
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixLookAtRH
+      Procédure D3DXMatrixLookAtRH(mOut est un D3DXMATRIX, vEye est un D3DXVECTOR3, vAt est un D3DXVECTOR3, vUp est un D3DXVECTOR3)
+      RENVOYER API(pD3D9.D3DX9, "D3DXMatrixLookAtRH", &mOut, &vEye, &vAt, &vUp)
+     type : 458752
+   -
+     name : D3DXMatrixLookAtLH
+     procedure_id : 1863480447396040616
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixLookAtLH
+      Procédure D3DXMatrixLookAtLH(mOut est un D3DXMATRIX, vEye est un D3DXVECTOR3, vAt est un D3DXVECTOR3, vUp est un D3DXVECTOR3)
+      RENVOYER API(pD3D9.D3DX9, "D3DXMatrixLookAtLH", &mOut, &vEye, &vAt, &vUp)
+     type : 458752
+   -
+     name : D3DXMatrixPerspectiveRH
+     procedure_id : 1863480516115599424
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixPerspectiveRH
+      Procédure D3DXMatrixPerspectiveRH(mOut est un D3DXMATRIX, w est un reel sur 4, h est un reel sur 4, zn est un reel sur 4, zf est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXMatrixPerspectiveRH", &mOut, w, h, zn, zf)
+     type : 458752
+   -
+     name : D3DXMatrixPerspectiveLH
+     procedure_id : 1863480662144521496
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixPerspectiveLH
+      Procédure D3DXMatrixPerspectiveLH(mOut est un D3DXMATRIX, w est un reel sur 4, h est un reel sur 4, zn est un reel sur 4, zf est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXMatrixPerspectiveLH", &mOut, w, h, zn, zf)
+     type : 458752
+   -
+     name : D3DXMatrixPerspectiveFovRH
+     procedure_id : 1863480756633888745
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixPerspectiveFovRH
+      Procédure D3DXMatrixPerspectiveFovRH(mOut est un D3DXMATRIX, fovy est un reel sur 4, aspect est un reel sur 4, zn est un reel sur 4, zf est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXMatrixPerspectiveFovRH", &mOut, fovy, aspect, zn, zf)
+     type : 458752
+   -
+     name : D3DXMatrixPerspectiveFovLH
+     procedure_id : 1863480902662877071
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixPerspectiveFovLH
+      Procédure D3DXMatrixPerspectiveFovLH(mOut est un D3DXMATRIX, fovy est un reel sur 4, aspect est un reel sur 4, zn est un reel sur 4, zf est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXMatrixPerspectiveFovLH", &mOut, fovy, aspect, zn, zf)
+     type : 458752
+   -
+     name : D3DXMatrixPerspectiveOffCenterRH
+     procedure_id : 1863481005742115294
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixPerspectiveOffCenterRH
+      Procédure D3DXMatrixPerspectiveOffCenterRH(mOut est un D3DXMATRIX, l est un reel sur 4, r est un reel sur 4, b est un reel sur 4, t est un reel sur 4, zn est un reel sur 4, zf est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXMatrixPerspectiveOffCenterRH", &mOut, l, r, b, t, zn, zf)
+     type : 458752
+   -
+     name : D3DXMatrixPerspectiveOffCenterLH
+     procedure_id : 1863481164656008285
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixPerspectiveOffCenterLH
+      Procédure D3DXMatrixPerspectiveOffCenterLH(mOut est un D3DXMATRIX, l est un reel sur 4, r est un reel sur 4, b est un reel sur 4, t est un reel sur 4, zn est un reel sur 4, zf est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXMatrixPerspectiveOffCenterLH", &mOut, l, r, b, t, zn, zf)
+     type : 458752
+   -
+     name : D3DXMatrixOrthoRH
+     procedure_id : 1863481267735247397
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixOrthoRH
+      Procédure D3DXMatrixOrthoRH(mOut est un D3DXMATRIX, w est un reel sur 4, h est un reel sur 4, zn est un reel sur 4, zf est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXMatrixOrthoRH", &mOut, w, h, zn, zf)
+     type : 458752
+   -
+     name : D3DXMatrixOrthoLH
+     procedure_id : 1863481332159837708
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixOrthoLH
+      Procédure D3DXMatrixOrthoLH(mOut est un D3DXMATRIX, w est un reel sur 4, h est un reel sur 4, zn est un reel sur 4, zf est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXMatrixOrthoLH", &mOut, w, h, zn, zf)
+     type : 458752
+   -
+     name : D3DXMatrixOrthoOffCenterRH
+     procedure_id : 1863481392289459444
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixOrthoOffCenterRH
+      Procédure D3DXMatrixOrthoOffCenterRH(mOut est un D3DXMATRIX, l est un reel sur 4, r est un reel sur 4, b est un reel sur 4, t est un reel sur 4, zn est un reel sur 4, zf est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXMatrixOrthoOffCenterRH", &mOut, l, r, b, t, zn, zf)
+     type : 458752
+   -
+     name : D3DXMatrixOrthoOffCenterLH
+     procedure_id : 1863481456714048538
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixOrthoOffCenterLH
+      Procédure D3DXMatrixOrthoOffCenterLH(mOut est un D3DXMATRIX, l est un reel sur 4, r est un reel sur 4, b est un reel sur 4, t est un reel sur 4, zn est un reel sur 4, zf est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXMatrixOrthoOffCenterLH", &mOut, l, r, b, t, zn, zf)
+     type : 458752
+   -
+     name : D3DXMatrixShadow
+     procedure_id : 1863481512548636646
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixShadow
+      Procédure D3DXMatrixShadow(mOut est un D3DXMATRIX, vLight est un D3DXVECTOR4, vPlane est un D3DXPLANE)
+      RENVOYER API(pD3D9.D3DX9, "D3DXMatrixShadow", &mOut, &vLight, &vPlane)
+     type : 458752
+   -
+     name : D3DXMatrixReflect
+     procedure_id : 1863481740182022004
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXMatrixReflect
+      Procédure D3DXMatrixReflect(mOut est un D3DXMATRIX, vPlane est un D3DXPLANE)
+      RENVOYER API(pD3D9.D3DX9, "D3DXMatrixReflect", &mOut, &vPlane)
+     type : 458752
+   -
+     name : D3DXQuaternionToAxisAngle
+     procedure_id : 1863491996594035033
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXQuaternionToAxisAngle
+      Procédure D3DXQuaternionToAxisAngle(q est un D3DXQUATERNION, vAxis est un D3DXVECTOR3, rAngle est un reel sur 4)
+      renvoyer api(pd3d9.d3Dx9, "D3DXQuaternionToAxisAngle", &q, &vAxis, &rAngle)
+     type : 458752
+   -
+     name : D3DXQuaternionRotationMatrix
+     procedure_id : 1863492353076402658
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction
+      Procédure D3DXQuaternionRotationMatrix(qOut est un D3DXQUATERNION, m est un D3DXMATRIX)
+      RENVOYER API(pD3D9.D3DX9, "D3DXQuaternionRotationMatrix", &qOut, &m)
+     type : 458752
+   -
+     name : D3DXQuaternionRotationAxis
+     procedure_id : 1863492365961373358
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXQuaternionRotationAxis
+      Procédure D3DXQuaternionRotationAxis(qOut est un D3DXQUATERNION, v est un D3DXVECTOR3, rAngle est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXQuaternionRotationAxis", &qOut, &v, rAngle)
+     type : 458752
+   -
+     name : D3DXQuaternionRotationYawPitchRoll
+     procedure_id : 1863492391731248770
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXQuaternionRotationYawPitchRoll
+      Procédure D3DXQuaternionRotationYawPitchRoll(qOut est un D3DXQUATERNION, Yaw est un reel sur 4, Pitch est un reel sur 4, Roll est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXQuaternionRotationYawPitchRoll", &qOut, Yaw, Pitch, Roll)
+     type : 458752
+   -
+     name : D3DXQuaternionMultiply
+     procedure_id : 1863492404616219438
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXQuaternionMultiply
+      Procédure D3DXQuaternionMultiply(qOut est un D3DXQUATERNION, q1 est un D3DXQUATERNION, q2 est un D3DXQUATERNION)
+      RENVOYER API(pD3D9.D3DX9, "D3DXQuaternionMultiply", &qOut, &q1, &q2)
+     type : 458752
+   -
+     name : D3DXQuaternionNormalize
+     procedure_id : 1863493027386491477
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXQuaternionNormalize
+      Procédure D3DXQuaternionNormalize(qOut est un D3DXQUATERNION, q est un D3DXQUATERNION)
+      RENVOYER API(pD3D9.D3DX9, "D3DXQuaternionNormalize", &qOut, &q)
+     type : 458752
+   -
+     name : D3DXQuaternionInverse
+     procedure_id : 1863493040271461724
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXQuaternionInverse
+      Procédure D3DXQuaternionInverse(qOut est un D3DXQUATERNION, q est un D3DXQUATERNION)
+      RENVOYER API(pD3D9.D3DX9, "D3DXQuaternionInverse", &qOut, &q)
+     type : 458752
+   -
+     name : D3DXQuaternionLn
+     procedure_id : 1863493053156431707
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXQuaternionLn
+      Procédure D3DXQuaternionLn(qOut est un D3DXQUATERNION, q est un D3DXQUATERNION)
+      RENVOYER API(pD3D9.D3DX9, "D3DXQuaternionLn", &qOut, &q)
+     type : 458752
+   -
+     name : D3DXQuaternionExp
+     procedure_id : 1863493061746434003
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXQuaternionExp
+      Procédure D3DXQuaternionExp(qOut est un D3DXQUATERNION, q est un D3DXQUATERNION)
+      RENVOYER API(pD3D9.D3DX9, "D3DXQuaternionExp", &qOut, &q)
+     type : 458752
+   -
+     name : D3DXQuaternionSlerp
+     procedure_id : 1863493486948295524
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXQuaternionSlerp
+      Procédure D3DXQuaternionSlerp(qOut est un D3DXQUATERNION, q1 est un D3DXQUATERNION, q2 est un D3DXQUATERNION, t est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXQuaternionSlerp", &qOut, &q1, &q2, t)
+     type : 458752
+   -
+     name : D3DXQuaternionSquad
+     procedure_id : 1863493499833265834
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXQuaternionSquad
+      Procédure D3DXQuaternionSquad(qOut est un D3DXQUATERNION, q1 est un D3DXQUATERNION, qA est un D3DXQUATERNION, qB est un D3DXQUATERNION, qC est un D3DXQUATERNION, t est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXQuaternionSquad", &qOut, &q1, &qA, &qB, &qC, t)
+     type : 458752
+   -
+     name : D3DXQuaternionSquadSetup
+     procedure_id : 1863493508423268380
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXQuaternionSquadSetup
+      Procédure D3DXQuaternionSquadSetup(qAOut est un D3DXQUATERNION, qBOut est un D3DXQUATERNION, qCOut est un D3DXQUATERNION, q0 est un D3DXQUATERNION, q1 est un D3DXQUATERNION, q2 est un D3DXQUATERNION, q3 est un D3DXQUATERNION)
+      RENVOYER API(pD3D9.D3DX9, "D3DXQuaternionSquadSetup", &qAOut, &qBOut, &qCOut, &q0, &q1, &q2, &q3)
+     type : 458752
+   -
+     name : D3DXQuaternionBaryCentric
+     procedure_id : 1863494367416795659
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXQuaternionBaryCentric
+      Procédure D3DXQuaternionBaryCentric(qOut est un D3DXQUATERNION, q1 est un D3DXQUATERNION, q2 est un D3DXQUATERNION, q3 est un D3DXQUATERNION, f est un reel sur 4, g est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXQuaternionBaryCentric", &qOut, &q1, &q2, &q3, f, g)
+     type : 458752
+   -
+     name : D3DXPlaneNormalize
+     procedure_id : 1863494616524957389
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXPlaneNormalize
+      Procédure D3DXPlaneNormalize(pOut est un D3DXPLANE, p est un D3DXPLANE)
+      RENVOYER API(pD3D9.D3DX9, "D3DXPlaneNormalize", &pOut, &p)
+     type : 458752
+   -
+     name : D3DXPlaneIntersectLine
+     procedure_id : 1863494629409927590
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXPlaneIntersectLine
+      Procédure D3DXPlaneIntersectLine(pOut est un D3DXPLANE, p est un D3DXPLANE, v1 est un D3DXVECTOR3, v2 est un D3DXVECTOR3)
+      RENVOYER API(pD3D9.D3DX9, "D3DXPlaneIntersectLine", &pOut, &p, &v1, &v2)
+     type : 458752
+   -
+     name : D3DXPlaneFromPointNormal
+     procedure_id : 1863494637999930105
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXPlaneFromPointNormal
+      Procédure D3DXPlaneFromPointNormal(pOut est un D3DXPLANE, vPoint est un D3DXVECTOR3, vNormal est un D3DXVECTOR3)
+      RENVOYER API(pD3D9.D3DX9, "D3DXPlaneFromPointNormal", &pOut, &vPoint, &vNormal)
+     type : 458752
+   -
+     name : D3DXPlaneFromPoints
+     procedure_id : 1863494650884899931
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXPlaneFromPoints
+      Procédure D3DXPlaneFromPoints(pOut est un D3DXPLANE, v1 est un D3DXVECTOR3, v2 est un D3DXVECTOR3, v3 est un D3DXVECTOR3)
+      RENVOYER API(pD3D9.D3DX9, "D3DXPlaneFromPoints", &pOut, &v1, &v2, &v3)
+     type : 458752
+   -
+     name : D3DXPlaneTransform
+     procedure_id : 1863495359554537702
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXPlaneTransform
+      Procédure D3DXPlaneTransform(pOut est un d3dxplane, p est un d3dxplane, m est un D3DXMATRIX)
+      RENVOYER API(pD3D9.D3DX9, "D3DXPlaneTransform", &pOut, &p, &m)
+     type : 458752
+   -
+     name : D3DXColorAdjustSaturation
+     procedure_id : 1863495668792321308
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXColorAdjustSaturation
+      Procédure D3DXColorAdjustSaturation(cOut est un D3DXCOLOR, c est un D3DXCOLOR, sat est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXColorAdjustSaturation", &cOut, &c, sat)
+     type : 458752
+   -
+     name : D3DXColorAdjustContrast
+     procedure_id : 1863495685972259975
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXColorAdjustSaturation
+      Procédure D3DXColorAdjustContrast(cOut est un D3DXCOLOR, c est un D3DXCOLOR, constrast est un réel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXColorAdjustContrast", &cOut, &c, constrast)
+     type : 458752
+   -
+     name : D3DXFresnelTerm
+     procedure_id : 1863496081109342437
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXFresnelTerm
+      Procédure D3DXFresnelTerm(rCosTheta est un reel sur 4, rRefractionIndex est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXFresnelTerm", rCosTheta, rRefractionIndex)
+     type : 458752
+   -
+     name : D3DXCreateMatrixStack
+     procedure_id : 1863497670251216549
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateMatrixStack
+      Procédure D3DXCreateMatrixStack(Flags est un entier sans signe, pclStack est un ID3DXMatrixStack dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvID3DXMatrixStack est un entier système
+      	
+      	// Appel
+      	HRESULT = api(pD3D9.D3DX9, "D3DXCreateMatrixStack", Flags, &ppvID3DXMatrixStack)
+      	
+      	// Création de l'objet
+      	__BindInterface(pclStack, ppvID3DXMatrixStack, ID3DXMatrixStack)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXSHEvalDirection
+     procedure_id : 1863498151287600517
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSHEvalDirection
+      Procédure D3DXSHEvalDirection(rOut est un reel sur 4, Order est un entier sans signe, vDir est un D3DXVECTOR3)
+      RENVOYER API(pD3D9.D3DX9, "D3DXSHEvalDirection", &rOut, Order, &vDir)
+     type : 458752
+   -
+     name : D3DXSHRotate
+     procedure_id : 1863498378920920152
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSHRotate
+      Procédure D3DXSHRotate(rOut est un reel sur 4, Order est un entier sans signe, m est un D3DXMATRIX, rIn est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXSHRotate", &rOut, Order, &m, &rIn)
+     type : 458752
+   -
+     name : D3DXSHRotateZ
+     procedure_id : 1863498649503988391
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSHRotateZ
+      Procédure D3DXSHRotateZ(rOut est un reel sur 4, Order est un entier sans signe, angle est un reel sur 4, rIn est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXSHRotateZ", &rOut, Order, angle, &rIn)
+     type : 458752
+   -
+     name : D3DXSHAdd
+     procedure_id : 1863498782648005097
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSHAdd
+      Procédure D3DXSHAdd(rOut est un reel sur 4, Order est un entier sans signe, rA est un reel sur 4, rB est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXSHAdd", &rOut, Order, &rA, &rB)
+     type : 458752
+   -
+     name : D3DXSHScale
+     procedure_id : 1863498997396420566
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSHScale
+      Procédure D3DXSHScale(rOut est un reel sur 4, Order est un entier sans signe, rIn est un reel sur 4, Scale est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXSHScale", &rOut, Order, &rIn, Scale)
+     type : 458752
+   -
+     name : D3DXSHDot
+     procedure_id : 1863499117655597940
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSHDot
+      Procédure D3DXSHDot(Order est un entier sans signe, rA est un reel sur 4, rB est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXSHDot", Order, &rA, &rB)
+     type : 458752
+   -
+     name : D3DXSHMultiply2
+     procedure_id : 1863499276569424583
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSHMultiply2
+      Procédure D3DXSHMultiply2(rOut est un reel sur 4, rF est un reel sur 4, rG est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXSHMultiply2", &rOut, &rF, &rG)
+     type : 458752
+   -
+     name : D3DXSHMultiply3
+     procedure_id : 1863499375353761109
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSHMultiply3
+      Procédure D3DXSHMultiply3(rOut est un reel sur 4, rF est un reel sur 4, rG est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXSHMultiply3", &rOut, &rF, &rG)
+     type : 458752
+   -
+     name : D3DXSHMultiply4
+     procedure_id : 1863499396828668179
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSHMultiply4
+      Procédure D3DXSHMultiply4(rOut est un reel sur 4, rF est un reel sur 4, rG est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXSHMultiply4", &rOut, &rF, &rG)
+     type : 458752
+   -
+     name : D3DXSHMultiply5
+     procedure_id : 1863499414008607345
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSHMultiply5
+      Procédure D3DXSHMultiply5(rOut est un reel sur 4, rF est un reel sur 4, rG est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXSHMultiply5", &rOut, &rF, &rG)
+     type : 458752
+   -
+     name : D3DXSHMultiply6
+     procedure_id : 1863499435483514478
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSHMultiply6
+      Procédure D3DXSHMultiply6(rOut est un reel sur 4, rF est un reel sur 4, rG est un reel sur 4)
+      RENVOYER API(pD3D9.D3DX9, "D3DXSHMultiply6", &rOut, &rF, &rG)
+     type : 458752
+   -
+     name : D3DXSHEvalDirectionalLight
+     procedure_id : 1863499955174612596
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSHEvalDirectionalLight
+      Procédure D3DXSHEvalDirectionalLight(Order est un entier sans signe, vDir est un D3DXVECTOR3, rRIntensity est un reel sur 4, rGIntensity est un reel sur 4, rBIntensity est un reel sur 4, rOut est un reel sur 4, gOut est un reel sur 4, bOut est un reel sur 4)
+      renvoyer API(pD3D9.D3DX9, "D3DXSHEvalDirectionalLight", Order, &vDir, rRIntensity, rGIntensity, rBIntensity, &rOut, &gOut, &bOut)
+     type : 458752
+   -
+     name : D3DXSHEvalSphericalLight
+     procedure_id : 1863500449095900980
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSHEvalSphericalLight
+      Procédure D3DXSHEvalSphericalLight(Order est un entier sans signe, vDir est un D3DXVECTOR3, Radius est un reel sur 4, rRIntensity est un reel sur 4, rGIntensity est un reel sur 4, rBIntensity est un reel sur 4, rOut est un reel sur 4, gOut est un reel sur 4, bOut est un reel sur 4)
+      renvoyer API(pD3D9.D3DX9, "D3DXSHEvalSphericalLight", Order, &vDir, Radius, rRIntensity, rGIntensity, rBIntensity, &rOut, &gOut, &bOut)
+     type : 458752
+   -
+     name : D3DXSHEvalConeLight
+     procedure_id : 1863500603714825551
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSHEvalConeLight
+      Procédure D3DXSHEvalConeLight(Order est un entier sans signe, vDir est un D3DXVECTOR3, Radius est un reel sur 4, rRIntensity est un reel sur 4, rGIntensity est un reel sur 4, rBIntensity est un reel sur 4, rOut est un reel sur 4, gOut est un reel sur 4, bOut est un reel sur 4)
+      renvoyer API(pD3D9.D3DX9, "D3DXSHEvalConeLight", Order, &vDir, Radius, rRIntensity, rGIntensity, rBIntensity, &rOut, &gOut, &bOut)
+     type : 458752
+   -
+     name : D3DXSHEvalHemisphereLight
+     procedure_id : 1863500702499095636
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSHEvalHemisphereLight
+      Procédure D3DXSHEvalHemisphereLight(Order est un entier sans signe, vDir est un D3DXVECTOR3, Top est un d3dxcolor, Bottom est un d3dxcolor, rOut est un reel sur 4, gOut est un reel sur 4, bOut est un reel sur 4)
+      renvoyer API(pD3D9.D3DX9, "D3DXSHEvalHemisphereLight", Order, &vDir, &Top, &Bottom, &rOut, &gOut, &bOut)
+     type : 458752
+   -
+     name : D3DXSHProjectCubeMap
+     procedure_id : 1863502089774248772
+     type_code : 15
+     code : |1+
+      // Résumé : Fonction D3DXSHProjectCubeMap
+      Procédure D3DXSHProjectCubeMap(Order est un entier sans signe, pclCubeMap est un IDirect3DCubeTexture9 dynamique, rOut est un reel sur 4, gOut est un reel sur 4, bOut est un reel sur 4)
+      renvoyer API(pD3D9.D3DX9, "D3DXSHProjectCubeMap", Order, PTR(pclCubeMap), &rOut, &gOut, &bOut)
+     type : 458752
+   -
+     name : D3DXVec3Normalize
+     internal_properties : CAAAAAgAAABqs0nSMKzBdVEO4m6VaBExC0XkeENZhrdv5ZKp4a9p/gN2VwkM8bMtpF9GdJj6wwH9gFeDKeBccynfnRJTZG2cQdryX0oEZsyb6N/P9b8t7gnM0KeB6k6tAsZ6vYmeQ0k6G1Izlhs+qdxAPDLqykIArGDCChIfU3hwtuBJlylitKbOtFEEk2Es6X0iOcXn8vWY1wmZWliMPHEBoU8tGDCgVSUp
+     procedure_id : 1867946715207506931
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXVec3Normalize
+      Procédure D3DXVec3Normalize(vOut est un D3DXVECTOR3, v est un D3DXVECTOR3)
+      renvoyer api(pd3d9.d3dx9, "D3DXVec3Normalize", &vOut, &v)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x10d999010ebab609
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

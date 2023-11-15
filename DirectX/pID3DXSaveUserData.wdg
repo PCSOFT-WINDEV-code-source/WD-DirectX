@@ -1,0 +1,204 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pID3DXSaveUserData
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x19e5ef5907d24bb4
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAACrjc2Vo5nnxtHat7jk7y5/+QuO/FY3pzOhWPM+eFVJUUtegCANqt2R0plvZnTKw7zJPLjk5gqleQEQuyzBn2uHLsbnCtrXB0lrJdXDL3lNVdROFx6zavmY2/uIY0CoCPPyrnI4V9d943P2F0w=
+     code : |1-
+      
+      // Cette collection de procédures est l'interface de rebond pour les objets ID3DXSaveUserData
+      // Elle sert de relai entre DirectX et la classe WLangage ID3DXSaveUserData
+      // La classe ID3DXSaveUserData doit être redéfinie et ses méthodes surchargées
+      
+      __ID3DXSaveUserDataObjects est un tableau associatif (*, *, wlentier) de ID3DXSaveUserData dynamique
+      
+      // NE MODIFIEZ PAS LES PROTOTYPES DES FONCTIONS CI-DESSOUS : il en résulterait des comportements indéfinis (plantages, blocages, ...)
+     type : 720896
+  procedures :
+   -
+     name : ID3DXSaveUserData_RegisterObject
+     procedure_id : 1866160919421371811
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction RegisterObject
+      Procédure ID3DXSaveUserData_RegisterObject(pclID3DXSaveUserData est un ID3DXSaveUserData dynamique)
+      
+      	// Enregistre l'objet
+      	__ID3DXSaveUserDataObjects[&pclID3DXSaveUserData] = pclID3DXSaveUserData
+      	
+      	// Enregistre les méthodes de l'objet
+      	// NE MODIFIEZ PAS L'ORDRE D'ENREGISTREMENT DES METHODES
+      	pclID3DXSaveUserData:__RegisterMethod(&ID3DXSaveUserData_AddFrameChildData)
+      	pclID3DXSaveUserData:__RegisterMethod(&ID3DXSaveUserData_AddMeshChildData)
+      	pclID3DXSaveUserData:__RegisterMethod(&ID3DXSaveUserData_AddTopLevelDataObjectsPre)
+      	pclID3DXSaveUserData:__RegisterMethod(&ID3DXSaveUserData_AddTopLevelDataObjectsPost)
+      	pclID3DXSaveUserData:__RegisterMethod(&ID3DXSaveUserData_RegisterTemplates)
+      	pclID3DXSaveUserData:__RegisterMethod(&ID3DXSaveUserData_SaveTemplates)
+      	
+      	// Enregistre la VTABLE
+      	pclID3DXSaveUserData:__SaveVTABLE()
+     type : 458752
+   -
+     name : ID3DXSaveUserData_AddFrameChildData
+     procedure_id : 1866161056860947119
+     type_code : 15
+     code : |1-
+      // Résumé : Méthode virtuelle AddFrameChildData
+      Procédure privee ID3DXSaveUserData_AddFrameChildData(_THIS_, pFrame est un entier systeme, pXofSave est un entier systeme, pXofFrameData est un entier systeme)
+      
+      	// Si on ne trouve pas l'objet
+      	SI __ID3DXSaveUserDataObjects[_THIS_] = Null ALORS
+      		
+      		// Renvoie E_NOTIMPL
+      		RENVOYER E_NOTIMPL
+      	SINON
+      		
+      		stFrame 		est un D3DXFRAME
+      		pclXofSave		est un ID3DXFileSaveObject dynamique
+      		pclXofFrameData	est un ID3DXFilesaveData dynamique
+      		
+      		Transfert(&stFrame, pFrame, Dimension(stFrame))
+      		__BindInterface(pclXofSave, pXofSave, ID3DXFileSaveObject)
+      		__BindInterface(pclXofFrameData, pXofFrameData, ID3DXFilesaveData)
+      		
+      		// Appel de la méthode
+      		RENVOYER __ID3DXSaveUserDataObjects[_THIS_]:AddFrameChildData(stFrame, pclXofSave, pclXofFrameData)
+      	FIN
+     type : 458752
+   -
+     name : ID3DXSaveUserData_AddMeshChildData
+     procedure_id : 1866161056861012686
+     type_code : 15
+     code : |1-
+      // Résumé : Méthode virtuelle AddMeshChildData
+      Procédure PRIVÉE ID3DXSaveUserData_AddMeshChildData(_THIS_, pMeshContainer est un entier systeme, pXofSave est un entier systeme, pXofFrameData est un entier systeme)
+      
+      	// Si on ne trouve pas l'objet
+      	SI __ID3DXSaveUserDataObjects[_THIS_] = Null ALORS
+      		
+      		// Renvoie E_NOTIMPL
+      		RENVOYER E_NOTIMPL
+      	SINON
+      		
+      		stMeshContainer 		est un D3DXMESHCONTAINER
+      		pclXofSave		est un ID3DXFileSaveObject dynamique
+      		pclXofFrameData	est un ID3DXFilesaveData dynamique
+      		
+      		Transfert(&stMeshContainer, pMeshContainer, Dimension(stMeshContainer))
+      		__BindInterface(pclXofSave, pXofSave, ID3DXFileSaveObject)
+      		__BindInterface(pclXofFrameData, pXofFrameData, ID3DXFileSaveData)
+      		
+      		// Appel de la méthode
+      		RENVOYER __ID3DXSaveUserDataObjects[_THIS_]:AddMeshChildData(stMeshContainer, pclXofSave, pclXofFrameData)
+      	FIN
+     type : 458752
+   -
+     name : ID3DXSaveUserData_AddTopLevelDataObjectsPost
+     procedure_id : 1866161056861078253
+     type_code : 15
+     code : |1-
+      // Résumé : Méthode virtuelle AddTopLevelDataObjectsPost
+      Procédure PRIVÉE ID3DXSaveUserData_AddTopLevelDataObjectsPost(_THIS_, pXofSave est un entier systeme)
+      
+      	// Si on ne trouve pas l'objet
+      	SI __ID3DXSaveUserDataObjects[_THIS_] = Null ALORS
+      		
+      		// Renvoie E_NOTIMPL
+      		RENVOYER E_NOTIMPL
+      	SINON
+      		
+      		pclXofSave		est un ID3DXFileSaveObject dynamique
+      		__BindInterface(pclXofSave, pXofSave, ID3DXFileSaveObject)
+      		
+      		// Appel de la méthode
+      		RENVOYER __ID3DXSaveUserDataObjects[_THIS_]:AddTopLevelDataObjectsPost(pclXofSave)
+      	FIN
+     type : 458752
+   -
+     name : ID3DXSaveUserData_AddTopLevelDataObjectsPre
+     procedure_id : 1866161056861143805
+     type_code : 15
+     code : |1-
+      // Résumé : Méthode virtuelle AddTopLevelDataObjectsPre
+      Procédure PRIVÉE ID3DXSaveUserData_AddTopLevelDataObjectsPre(_THIS_, pXofSave est un entier systeme)
+      
+      	// Si on ne trouve pas l'objet
+      	SI __ID3DXSaveUserDataObjects[_THIS_] = Null ALORS
+      		
+      		// Renvoie E_NOTIMPL
+      		RENVOYER E_NOTIMPL
+      	SINON
+      		
+      		pclXofSave		est un ID3DXFileSaveObject dynamique
+      		__BindInterface(pclXofSave, pXofSave, ID3DXFileSaveObject)
+      		
+      		// Appel de la méthode
+      		RENVOYER __ID3DXSaveUserDataObjects[_THIS_]:AddTopLevelDataObjectsPre(pclXofSave)
+      	FIN
+     type : 458752
+   -
+     name : ID3DXSaveUserData_RegisterTemplates
+     procedure_id : 1866161056861209372
+     type_code : 15
+     code : |1-
+      // Résumé : Méthode virtuelle RegisterTemplates
+      Procédure PRIVÉE ID3DXSaveUserData_RegisterTemplates(_THIS_, pXFileAPI est un entier systeme)
+      
+      	// Si on ne trouve pas l'objet
+      	SI __ID3DXSaveUserDataObjects[_THIS_] = Null ALORS
+      		
+      		// Renvoie E_NOTIMPL
+      		RENVOYER E_NOTIMPL
+      	SINON
+      		
+      		pclXFileAPI		est un ID3DXFile dynamique
+      		__BindInterface(pclXFileAPI, pXFileAPI, ID3DXFile)
+      		
+      		// Appel de la méthode
+      		RENVOYER __ID3DXSaveUserDataObjects[_THIS_]:RegisterTemplates(pclXFileAPI)
+      	FIN
+     type : 458752
+   -
+     name : ID3DXSaveUserData_SaveTemplates
+     procedure_id : 1866161056861274955
+     type_code : 15
+     code : |1-
+      // Résumé : Méthode virtuelle SaveTemplates
+      Procédure PRIVÉE ID3DXSaveUserData_SaveTemplates(_THIS_, pXofSave est un entier systeme)
+      
+      	// Si on ne trouve pas l'objet
+      	SI __ID3DXSaveUserDataObjects[_THIS_] = Null ALORS
+      		
+      		// Renvoie E_NOTIMPL
+      		RENVOYER E_NOTIMPL
+      	SINON
+      		
+      		pclXofSave		est un ID3DXFileSaveObject dynamique
+      		__BindInterface(pclXofSave, pXofSave, ID3DXFileSaveObject)
+      		
+      		// Appel de la méthode
+      		RENVOYER __ID3DXSaveUserDataObjects[_THIS_]:SaveTemplates(pclXofSave)
+      	FIN
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x10d999010f87b713
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

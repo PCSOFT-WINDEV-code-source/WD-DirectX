@@ -1,0 +1,179 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXSprite
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19dc97560598fcdb
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXSprite est une classe
+      	un objet IUnknown
+      	
+      FIN
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ID3DXSprite (VTABLE)
+      	ID3DXSprite_GetDevice				= ::IUnknown___IDXBASE + 1
+      	ID3DXSprite_GetTransform			= ::IUnknown___IDXBASE + 2
+      	ID3DXSprite_SetTransform			= ::IUnknown___IDXBASE + 3
+      	ID3DXSprite_SetWorldViewRH			= ::IUnknown___IDXBASE + 4
+      	ID3DXSprite_SetWorldViewLH			= ::IUnknown___IDXBASE + 5
+      	ID3DXSprite_Begin					= ::IUnknown___IDXBASE + 6
+      	ID3DXSprite_Draw					= ::IUnknown___IDXBASE + 7
+      	ID3DXSprite_Flush					= ::IUnknown___IDXBASE + 8
+      	ID3DXSprite_End						= ::IUnknown___IDXBASE + 9
+      	ID3DXSprite_OnLostDevice			= ::IUnknown___IDXBASE + 10
+      	ID3DXSprite_OnResetDevice			= ::IUnknown___IDXBASE + 11
+      	ID3DXSprite___IDXBASE				= ::IUnknown___IDXBASE + 11
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863530741541502171
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Core.IID_ID3DXSprite
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863530741541567707
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetDevice
+     procedure_id : 1866443790212837803
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDevice
+      Procédure GetDevice(pclDevice est un IDirect3DDevice9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvDevice est un entier systeme
+      
+      	// Appel
+      	HRESULT = :call(id3dxsprite_GetDevice, &ppvDevice)
+      	
+      	// Allocation
+      	__BindInterface(pclDevice, ppvDevice, IDirect3DDevice9)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : GetTransform
+     procedure_id : 1866443798802839990
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetTransform
+      Procédure GetTransform(Transform est un D3DXMATRIX)
+      RENVOYER :CALL(id3dxsprite_GetTransform, &Transform)
+     type : 458752
+   -
+     name : SetTransform
+     procedure_id : 1866443807392842287
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetTransform
+      Procédure SetTransform(Transform est un D3DXMATRIX)
+      RENVOYER :CALL(id3dxsprite_SetTransform, &Transform)
+     type : 458752
+   -
+     name : SetWorldViewRH
+     procedure_id : 1866443815982844474
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetWorldViewRH
+      Procédure SetWorldViewRH(World est un D3DXMATRIX, View est un D3DXMATRIX)
+      RENVOYER :CALL(id3dxsprite_SetWorldViewRH, &World, &View)
+     type : 458752
+   -
+     name : SetWorldViewLH
+     procedure_id : 1866443824572846552
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetWorldViewLH
+      Procédure SetWorldViewLH(World est un D3DXMATRIX, View est un D3DXMATRIX)
+      RENVOYER :CALL(id3dxsprite_SetWorldViewLH, &World, &View)
+     type : 458752
+   -
+     name : Begin
+     internal_properties : CAAAAAgAAABKtXZQVT6tyBc2O8Y+U4Qrb3itwYAR7D6lOwdbCYsOwwv40B3BmXfXwoIz6UG+99iTSAPLvxfr6ul+HLcRYvlt/smcKdS4aYbHv1xCl1LX3/QTRk+/jxPhYQupGEZxdGsw94UpEXtg6XqTuw==
+     procedure_id : 1866443833162848458
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Begin 
+      Procédure Begin(Flags est un entier sans signe)
+      RENVOYER :CALL(id3dxsprite_Begin, Flags)
+     type : 458752
+   -
+     name : Draw
+     procedure_id : 1866443837457883116
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Draw
+      Procédure Draw(pclTexture est un IDirect3DTexture9 dynamique, srcRect est un rect dynamique, Center est un D3DXVECTOR3 dynamique, stPosition est un D3DXVECTOR3 dynamique, Color est un entier sans signe)
+      RENVOYER :CALL(id3dxsprite_Draw, ptr(pclTexture), (srcRect = null ? null sinon &srcRect), (Center = null ? null sinon &Center), (stPosition = null ? null sinon &stPosition), Color)
+     type : 458752
+   -
+     name : Flush
+     procedure_id : 1866443846047884913
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Flush
+      Procédure Flush()
+      RENVOYER :CALL(id3dxsprite_Flush)
+     type : 458752
+   -
+     name : End_
+     procedure_id : 1866443854637886913
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode End
+      Procédure End_()
+      RENVOYER :CALL(id3dxsprite_End)
+     type : 458752
+   -
+     name : OnLostDevice
+     procedure_id : 1866443906177506633
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode OnLostDevice
+      Procédure OnLostDevice()
+      RENVOYER :CALL(id3dxsprite_OnLostDevice)
+     type : 458752
+   -
+     name : OnResetDevice
+     procedure_id : 1866443914767508633
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode OnResetDevice
+      Procédure OnResetDevice()
+      RENVOYER :CALL(id3dxsprite_OnResetDevice)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000ae3b1a4
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

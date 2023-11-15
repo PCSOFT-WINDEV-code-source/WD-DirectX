@@ -1,0 +1,502 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_10_Animation
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_10_Animation
+ identifier : 0x29f1ed964f87cdc8
+ internal_properties : CAAAAAgAAACn6Of2qHEwuTfy9gwOsfx5j/StzvApugsHmjxMCmXKquaHuDCh7tp65940m9YJfF8M59u+DL7cbcTa2qB16mQCJQ11bQWBK+F9tekH2EqCm+6TQ3aRDICdb3FwzZo4HW9417xzN72q5uDCAJp99JXPSnLWPEb+HJBIb5FAhgHE8JoPzrtZ/gCKT9pqlRTd05kKq40UjSl8tqtbZWGmp5VlYKOeiIGn5TlLio3t2PcR0Ivs4AmlvpWqvtP489h2tnd9n5WwGA91EuAXR1WaBMSj23TkSoJAkcnRTpUPZwihG2NoKq2eAt7JsWKBjLCKbtxPHh3erDlNc4+FlXLIOeh7zJGjx6qSijRwy1goY9M/y8BeHjUCCkNL6+3+d87U7gmXoPdniSF2Scb35ebzuVMi5X1odQzgn8UZD1I6rky0VZrxV/k+ZBsJRY3VjNcGOH2ZX0DoufTqCOuhhRuWSwWHUuF1QBqV+j/hhsszBp84CaR0Ben9I5hlInVetwKWCeBHsq0F7gXwaRDrVZdMhG74ZyiuM2nc/w4FB0TPY96TYPT6l8+FX1v3sXt0LLihzmTLfJQy8I/ESngaYnoEU3N1l1OC7WqkcgVIlLJQwCTDhyBo3Cj+pHAQxO0zQzaXMcM18deTAzFGeTl8seND1mHxOwFtR0kHJB0MP00t3P4DkvQTG7aQtzpCznyzYTkTTKxdr6e3p0VmyPR6+gxiN/tvCnizgSkHs4uRxfT7SEREeXHT5xVsmwCPnjAG8hagJU6jEULSjFXzBjxJjcQJMoaIVx8Xl1DsUuWuG8PFEr9hrTuPU5fhceH2Gc/Wle4P41CECxhEIkAQIiyLwVsbES+Nfg1lseVidEPCQFIzkWqj/wFgeAror4vzgKzXZVE4oIfSHce3YKlvuQOqsATnkKyYBJquyRHUM++rBXS88q0W15Xrx2kTHdYQLVA75wZy8M0qox1ap5P6Kf4UfQjUaC85kqnFaqza7/EuyXJicF8WvHYn2mjpkp1JvL0Xve5M8Zan65NCRwKUqkWt
+ properties :
+  width : 796
+  height : 606
+  widthClient : 794
+  heightClient : 574
+ controls :
+  -
+    name : BTN_ECHAP
+    identifier : 0x2a27d5440d26e8b2
+    internal_properties : CAAAAAgAAADv+V20s1nlpvS8i8qn/RLA8o0Vfa9f+++oAYOC0NVqNmct8bNWiAwN1bzcaxJUaJVXtnNphFn7dqa5+DVmPRIHaQm4U8a7wcCbPuk5Id8MRLE/4iyDIF01Ca2p4JVo+V7uwR31UZ1EdaVE5gW3i8AO4F+HrbrRKRWVuvnOp2B0XfUtKotXB+lkln8MpGdIC9EXzmid1TGswWAPiQVhmvI2s4lUV841qnYIwxSVSA7SffZ5MEo8VHv2nzjcvasC3dQank+/T+glfyy+i8rZbyFT9KBhdi9kntgg01BOg8IMBbFOy+eV+6Gty7xoqkHxtT2DXANVzc9UF8u4WBNeqRZHQ5CzTTdTTLRfUJlbP0gUQrCR7tQb2OwMOANrB5xyJjOER1ex0UpP4gWlGFMX1EXItWKfdZ6noMXDUWLGGM/b8DYRt67ReDtluUe8XqdAT6Tb9Q0EZCpVuLsInCY+IGdPygdGdQlX4SkTnutxQlr9JVDmSX4bZPRnyT18H4yTzju9Co/tlf3ZQXN/HLa1b3sCm58O0HPWlgURaAzdWE/Dwa5lcnD7yus4txLG2sQPc6Q+1q/0p4bPIjC7udNVN96dUo/cPAxV0K6Hbi50aSvG7N6EAOjI0t1ewITTihgWmBJK7r89hr8BdyWdQ1zFtCXctTumoWRYPGdfYCtMU31mxJ+8R96FqYurRQ==
+    properties :
+     x : 6
+     y : -53
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAADQZyvpRjJZltgKBVFD+SKMukTEU1n2G2jmPSjnx1ZKdSF2vB36egNKcReVrz/xwpIZdIpZoyUu0CjPxu+MpGLAedmE/39iAmJIcu72BpKoWkpseLXy2lnJGPSMFw==
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : IMG_DX
+    identifier : 0x29f1ed964f89cdc8
+    internal_properties : CAAAAAgAAABzbsuF/QscOWRYCVdz3mWlFtV0AxmyehOpstkH3p7WeLxrrIjvRgAfMBxKqG4LxUEekLzEGdq3U0ZUjCBLtdRLcOlZB3drkHz1s1OkwT/2unM/LBSxFLrhg1Sq1gWXosmnoe0lgROlR6WFLmFFDBq3kQDbtlcvmIYhvpUii2Vq8kuLQcEC4G8I7x6IwX08//6zPTWie+ee2ZcWO23URcjsfPigq2SXHQLWSsUG6HFg6giZOnexp+0Abxc9bJSzgDN9VL9mLUbZLKMhS/MBG38/3BE1A9FgdkYJNhYWgTIb9y97pxs+tbtzyZUI2xmucR5mn4ISThqRpaPCuBv5eiY1Ub4zKW+QO0nJx7HgA9kh9vECwAsH1HUNNnovGZzeaH0ajpQahit3DxCaDo8Uqk5MRsGTTf88M9PUVHDia+Hgp06sQIWMuI7CLsQpcbgL8kASObNop1k/BrlyUIv1ZEnnknCS+1bR3vK+IBBBKO9cQyTr47nLUtYixYNsb9pfntehttJYpNH14RD5DYELbaVOB8udgj957EHOYKGIPEKXM2XWDfwf28n84uI81xMO635jcdGog3To5vFzc7kuY4O9F5c1mdQcEuTGwmi4I/aER6ypcoTRpdHw+CBtmbaRIv0yHNA=
+    properties :
+     width : 794
+     height : 574
+    type : 8
+    code_elements :
+     internal_properties : CAAAAAgAAAAjW0JkwpJU6bb4H6gOVG5BbTnI6bKQ5jZqh7f+RvG3nM4Lbyno7TyJc8vGsvwgufYtqM9vZ26FX9b1xFxJoxL2v5dwS+B51GY3n8VNnqblK4fCWhAm64k9EtSiN68W
+     type_code : 8
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x29f1ed964f8acdc8
+  internal_properties : CAAAAAgAAAD7S+2GOLjEeheq9Y6YZGIRPpLnwB8KUS2je4S4X5oxSGrv51WBBaVxxbk/BTEdUwW0fnnvlhQNIBAuQTAO0S9+S8FMTvDhqkS1JydqFJBfHlbZSFzBkZAjjJ5aIH/cuMnF4Pme57TAyYvjnlkzTJmN5UX9hu+BEl3AsIsso5gsz3oX/KHp1ai/xWZCb54MlUFXdWmT2EOpULKqea/LH9EOlTkaiWsV2aM2/FfXQjTSY3NhAR6zEzKHYKVJwiZULchG0D4LNvRbPifZJPDMmlF6ptz+Rg0QN6SXG5jU7HifIzmkonwDFnOJQw==
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABHSPkb1tqgSCqRR5dekoL1A/XsC+f7MghpgAiNjk2p+zU290UKFNsf/RG2TXCdD8pkYIQPTC757XGg+l+qdKnSy80OOFd+coZmWvKACTZS1VsEXFXvfAVoTQ4G
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAADh1yuhepQK+hLxpZS8wMtM5izBH7NLxT6J63FZK9sAOvtpKMzVO4tn9q3asHT4JrNftV205WthNgy1kxND0gSHI+ddWlO4jIWtbbF6whT5X1XmbH9/0Jlfl7gw0EzLX25AdiK3w7IDOcNqPNZ8mOVekx2GBHrmlx4NjurPT33RtbS6x6vBpMgOJa2uwk/ZHDaHsYCBewGPmiWJ+OpwUw==
+     code : |1-
+      
+      //
+      //
+      
+      // Objets
+      gpclD3D				est un IDirect3D9 dynamique					// Objet de base permettant de créer un "device"
+      gpclD3DDevice 		est un IDirect3DDevice9 dynamique			// Objet de manipulation du "device"
+      gpclTerreVB			est un IDirect3DVertexBuffer9 dynamique		// Mesh de la terre
+      gpclTerreIB			est un IDirect3DIndexBuffer9 dynamique		// Mesh de la terre
+      gpclTerreTex		est un IDirect3DTexture9 dynamique			// Texture de la terre
+      gpclTerreNuagesTex	est un IDirect3DTexture9 dynamique			// Texture des nuages
+      gnNbVertices		est un entier sans signe
+      gnNbIndexes			est un entier sans signe
+      gnNbPoly			est un entier sans signe
+      gpclCamera			est un CD3DCamera dynamique					// Gestion de la caméra
+      
+      
+      // Structure personnalisée pour stocker un type de vertex 
+      VERTEXPERSO est une structure
+      	x, y, z      sont des reels sur 4			// Position du vertex	
+      	normal_		 est un D3DXVECTOR3				// normal du vertex	
+      	diffuse		 est un entier sans signe		// couleur du vertex
+      	u, v		 sont des reels sur 4			// coordonnées de la texture
+      	u1, v1		 sont des reels sur 4			// coordonnées de la texture
+      FIN
+      
+      // Décrit le type de notre vertex personnalisé
+      constant
+      	D3DFVF_VERTEXPERSO = D3DFVF_XYZ + D3DFVF_DIFFUSE + D3DFVF_NORMAL + D3DFVF_TEX2
+      FIN
+   -
+     internal_properties : CAAAAAgAAAA7Evr0L+Ei/amyQ912fk4LCkziAFUSRImNjpwemp3DARRh0SEA7y3zUl0y//FYDaynW61LCBlGuxj1VYITS1OsrxNzN/aNS30LNGwtJ8Fw5wWq3y3n7fN2/zDpNx0JgAozX8AK9F3dHIyGw9h1iNqmfbwwIPq3RDzdorZvS320tw==
+     code : |1-
+      
+      // Initialise Direct3D
+      si D3DInit() ALORS
+      	
+      	// Initialise le "vertex buffer"
+      	si D3DInitObjets() ALORS
+      		
+      		// Démarre le rendu
+      		d3daffiche()
+      	sinon
+      		SI EnModeTestAutomatique ALORS
+      			TestEcritRésultat(terInfo, "DirectX n'est pas disponible sur cette machine" + RC + ErreurInfo)
+      			Ferme
+      			RETOUR
+      		FIN
+      		
+      		erreur("Impossible d'initialiser le vertex buffer")
+      	FIN	
+      sinon
+      	SI EnModeTestAutomatique ALORS
+      		TestEcritRésultat(terInfo, "DirectX n'est pas disponible sur cette machine")
+      		Ferme
+      		RETOUR
+      	FIN
+      	
+      	Erreur("Impossible d'initialiser Direct3D")
+      FIN
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+      CurseurAffiche(vrai)
+     type : 2
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : D3DInit
+     internal_properties : CAAAAAgAAAC+LvXkJqAABJoGEZ8GkGoLudaMCLAI8oivWEcXxSWllZFrEWvCj4V4BCGWPFYDpkQrUQ6C+wvI+WKDCsAO/vBelIWGAqKwxG5tP7+s4mPV+SQC1y5bo3jW3g1VlOyLDA5CJEjnxpqVXaHr2kSA1vIdcr3GQga+fqZDO5Z9N6leWVn1bvB/jnl8HFW8x54UoyWpA01OD6IdWkdylSFbosJsDusdrSCJ0tj0ZdL9Bi5DfqsDz4E4kqBsh8AfD/8xPaa5
+     procedure_id : 1869536548880895432
+     type_code : 14
+     code : |1-
+      // Résumé : Initialise Direct3D
+      Procédure D3DInit()
+      
+      	stD3DPP est un D3DPRESENT_PARAMETERS
+      
+      	// Création de l'objet Direct3D
+      	gpclD3D = Direct3DCreate9(D3D_SDK_VERSION)
+      	
+      	// Vérifie si l'objet Direct3D a pu être créé
+      	si gpclD3D = Null ALORS
+      		renvoyer faux	
+      	FIN
+      	
+      	// Paramétrage de la structure utilisée pour créer un "device" Direct3D
+      	stD3DPP:Windowed = vrai														// Mode fenêtré
+      	stD3DPP:SwapEffect = D3DSWAPEFFECT_DISCARD									
+      	
+      	// Création du "device" Direct3D
+      	// On utilise ici l'écran par défaut (D3DADAPTER_DEFAULT) et un "device" matériel (D3DDEVTYPE_HAL)
+      	SI FAILED(gpclD3D:CreateDevice(D3DADAPTER_DEFAULT, D3DDEVTYPE_HAL, Handle(IMG_DX), D3DCREATE_hardwarE_VERTEXPROCESSING, stD3DPP, gpclD3DDevice)) _OU_ gpclD3DDevice = Null ALORS
+      		RENVOYER Faux
+      	FIN
+      	
+      	// Désactive le "culling", afin de visualiser le devant et l'arrière des éléments
+      	gpclD3DDevice:SetRenderState(D3DRS_CULLMODE, D3DCULL_CCW)
+      	gpclD3DDevice:SetRenderState(D3DRS_ALPHABLENDENABLE, vrai)
+      	
+      	// Active l'éclairage Direct3D
+      	gpclD3DDevice:SetRenderState(D3DRS_LIGHTING, vrai)
+      	
+      	// Crée une lumière directionnelle pointant vers la gauche
+      	stLight est un D3DLIGHT9
+      	stLight:type = D3DLIGHT_DIRECTIONAL
+      	stLight:Direction = MAKE_D3DXVECTOR3(-1.0, 0.0, 0.5)
+      	stLight:Position_ = MAKE_D3DXVECTOR3(1.0, 0.0, 0.0)
+      	stLight:Diffuse   = [1.0, 1.0, 1.0, 1.0]
+      	stLight:Ambient   = [0.1, 0.1, 0.1, 1.0]	
+      	stLight:Specular  = [0.0, 0.0, 0.0, 1.0]
+      	stLight:Range  	  = 1000
+      	D3DXVec3Normalize(stLight:Direction, stLight:Direction)
+      	
+      	gpclD3DDevice:SetLight(0, stLight)
+      	gpclD3DDevice:LightEnable(0, vrai)
+      	
+      	// Création de la caméra
+      	gpclCamera = allouer un CD3DCamera(IMG_DX..NomComplet)
+      	
+      	// Position originale de la caméra
+      	gpclCamera:SetPosition(0.0, 0.0, -4.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0)
+      	gpclCamera:SetVitesse(0.001)
+      	
+      	// Place le curseur de la souris au centre
+      	CurseurPos(cpClient, IMG_DX..Largeur / 2, IMG_DX..Hauteur / 2)
+      	
+      	// Cache le curseur de la souris 
+      	CurseurAffiche(Faux)
+      	
+      renvoyer vrai
+     type : 458752
+   -
+     name : D3DInitObjets
+     internal_properties : CAAAAAgAAAA9vgllQyDpd61K0NQuNolKiK4Rvx4MDG0d93qFzcAjf0KeDzt1hbH7XxCUb5bNiW+oxfIHIZLiqwzAB0YpCFnME/i562P+MGmtC9vcSqgOoUO4VFZWKx33RHvpLEnjR3Kc350U+Cjg7/CRWdvm0ZYHhL6RRdIK4yRuvU/anfp28+KpdKpuX1Hd1IxUC4ES7jsm/GC09grgSr4LVluYcgZwMBWQBWXq78eZr99QnExWqHCTkKc=
+     procedure_id : 1869536548880960968
+     type_code : 14
+     code : |1-
+      // Résumé : Initialise le "vertex buffer"
+      Procédure D3DInitObjets()
+      
+      	stVertexF	est un VERTEXPERSO
+      	nFaces		est un entier sans signe = 40
+      	tabIndices	est un tableau d'entiers sur 2
+      	tabVertices	est un tableau de VERTEXPERSO
+      	pData		est un entier système
+      	nIndex		est un entier sur 2
+      	i, j		sont des entiers sans signe
+      	rDeltaRing	est un réel sur 4
+      	rDeltaSeg	est un réel sur 4
+      
+      	// Charge la texture de la terre
+      	si failed(D3DXCreateTextureFromFileA(gpclD3DDevice, frepexe() + ["\"] + "Terre2.jpg", gpclTerreTex)) _ou_ gpclTerreTex = Null ALORS
+      		renvoyer faux
+      	FIN
+      	
+      	// Charge la texture des nuages
+      	SI FAILED(D3DXCreateTextureFromFileA(gpclD3DDevice, fRepExe() + ["\"] + "TerreNuages2.png", gpclTerreNuagesTex)) _OU_ gpclTerreNuagesTex = Null ALORS
+      		RENVOYER Faux
+      	FIN
+      	
+      	gnNbVertices = (nFaces + 1) ^2
+      	gnNbIndexes  = 2 * nFaces * (nFaces + 1)
+      	gnNbPoly 	= gnNbIndexes - 2
+      	
+      	gpclD3DDevice:CreateVertexBuffer(gnNbVertices * sizeof(stVertexF), 0, D3DFVF_VERTEXPERSO, d3dpool_default, gpclTerreVB, null)
+      	gpclD3DDevice:CreateIndexBuffer(gnNbIndexes * 2, 0, D3DFMT_INDEX16, d3dpool_default, gpclTerreIB, null)
+      
+      	gpclTerreIB:Lock(0, gnNbIndexes * 2, pData, 0)
+      	dimension(tabIndices, gnNbIndexes)
+      	transfert(&tabIndices, pData, sizeof(tabIndices))
+      	
+      	// Calcul des indices
+      	pour nCurrentRing = 0 _a_ nFaces
+      		pour nCurrentSegment = 0 _a_ nFaces
+      			
+      			si nCurrentRing <> nFaces - 1 ALORS
+      				tabIndices[j + 1] = nIndex
+      				j ++
+      				tabIndices[j + 1] = nIndex + nFaces + 1
+      				j ++
+      				nIndex ++
+      			FIN
+      			
+      			i ++
+      		FIN
+      	FIN
+      	
+      	Transfert(pData, &tabIndices, sizeOf(tabIndices))	
+      	gpclTerreIB:Unlock()
+      	
+      	gpclTerreVB:Lock(0, gnNbVertices * sizeOf(stVertexF), pData, 0)
+      	dimension(tabVertices, gnNbVertices)
+      	transfert(&tabVertices, pData, sizeof(tabVertices))
+      
+      	rDeltaRing = d3dx_pi / nFaces
+      	rDeltaSeg  = 2 * d3dx_pi / nFaces
+      	i = 0
+      	j = 0
+      	r0, x0, y0, z0 sont des reels sur 4
+      	
+      	// Calcul des coordonnées
+      	pour nCurrentRing = 0 _a_ nFaces // - 1
+      		
+      		r0 = sin(D3DXToDegree(nCurrentRing * rDeltaRing))
+      		y0 = Cos(D3DXToDegree(nCurrentRing * rDeltaRing))
+      			
+      		POUR nCurrentSegment = 0 _A_ nFaces //- 1
+      			
+      			x0 = r0 * sin(D3DXToDegree(nCurrentSegment * rDeltaSeg))
+      			z0 = r0 * cos(D3DXToDegree(nCurrentSegment * rDeltaSeg))
+      			
+      			tabVertices[i + 1]:x = x0
+      			tabVertices[i + 1]:y = y0
+      			tabVertices[i + 1]:z = z0
+      			
+      			tabVertices[i + 1]:diffuse = D3DCOLOR_aRGB(255, 255, 255, 255)
+      			
+      			D3DXVec3Normalize(tabVertices[i + 1]:normal_, MAKE_D3DXVECTOR3(x0, y0, z0))
+      			
+      			tabVertices[i + 1]:u = 1.0 - nCurrentSegment / nFaces
+      			tabVertices[i + 1]:v = nCurrentRing / nFaces
+      
+      			tabVertices[i + 1]:u1 = tabVertices[i + 1]:u
+      			tabVertices[i + 1]:v1 = tabVertices[i + 1]:v
+      			
+      			i ++			
+      		FIN
+      	FIN
+      
+      
+      	Transfert(pData, &tabVertices, sizeOf(tabVertices))
+      	gpclTerreVB:Unlock()
+      
+      		
+      renvoyer vrai
+     type : 458752
+   -
+     name : D3DAffiche
+     internal_properties : CAAAAAgAAAC0GuQbg5OE86zcHGW4/4x1iAzJNgkiz7ycU+rN4TmcydjF1GR7rSXgUfwnK6LptBhyTgIKOLqm4j3aWlhRxCE5UOvHT1XJ4U0Cw3t+FrUPX4d8kKy6DQI6xvZyrJcogsTWTZ7LhvJAuyF+zLdVO158HnzrCtbzwLzBs9Jbdjg/DvrtmDkI0v6Ul7lfXr4QM/jS1eTme7M7106fed4eD2w2KyAEuYY5uyzirW5nAjfygV740BSjPI56Ie0VPe4y2eqTQTzxn0ojuk6Rorj+iBFHCOSYbgCzGB3RFS4ZOo9QCyOepGaE1CM=
+     procedure_id : 1869536548881026504
+     type_code : 14
+     code : |1-
+      // Résumé : Rendu et affichage du "device" Direct3D
+      // Procédure automatique :
+      // La procédure est exécutée manuellement, lors d'un appel dans le code
+      // Elle sera répétée en boucle, en attendant  entre chaque appel
+      // Chaque appel suivant exécute une seule fois la procédure, sans timer
+      // 
+      Procédure D3DAffiche()
+      
+      	stVertexPerso 	est un vertexperso
+      	stMaterial 		est un D3DMATERIAL9
+      	bAxeRotation	est un booléen
+      
+      	// Si le "device" Direct3D est invalide, on sort
+      	si gpclD3DDevice = null alors retour
+      	
+      	// Définit et applique les matrices
+      	D3DInitMatrices()
+      	
+      	// Efface le "backbuffer" avec une couleur bleue
+      	gpclD3DDevice:Clear(0, null, D3DCLEAR_TARGET, D3DCOLOR_XRGB(0, 0, 0), 1.0, 0.0)
+      	
+      	// Si la touche SHIFT est maintenue enfoncée
+      	SI ToucheEnfoncée(CD3DCamera::VK_SHIFT) = vrai ALORS		
+      		// Dessin en mode fil de fer
+      		gpclD3DDevice:SetRenderState(D3DRS_FILLMODE, D3DFILL_WIREFRAME)		
+      	sinon
+      		gpclD3DDevice:SetRenderState(D3DRS_FILLMODE, D3DFILL_SOLID)		
+      	fin
+      	
+      	bAxeRotation = ToucheEnfoncée(CD3DCamera::VK_F10) 
+      	
+      	// Démarre la scène
+      	si SUCCEEDED(gpclD3DDevice:BeginScene()) ALORS
+      				
+      		// Couleur ambiante et de réflexion de la lumière		
+      		stMaterial:Ambient 	= [1.0, 1.0, 1.0, 0.0]
+      		stMaterial:Specular = [1.0, 1.0, 1.0, 0.0]
+      		stMaterial:Power	= 10
+      
+      		// Format et source de la terre
+      		gpclD3DDevice:SetFVF(D3DFVF_VERTEXPERSO)
+      		gpclD3DDevice:SetStreamSource(0, gpclTerreVB, 0, sizeOf(stVertexPerso))
+      		gpclD3DDevice:SetIndices(gpclTerreIB)
+      		
+      		// Ombre complète
+      		stMaterial:Diffuse  = [0.0, 0.0, 0.0, 0.0]
+      
+      //		// Lumière cendrée sur la face dans l'ombre
+      //		stMaterial:Diffuse  = [1.0, 1.0, 1.0, 1.0]
+      	
+      		// Définit le material 
+      		gpclD3DDevice:SetMaterial(stMaterial)
+      		
+      		// Mapping de la terre
+      		gpclD3DDevice:SetTexture(0, gpclTerreTex)
+      		gpclD3DDevice:SetRenderState(D3DRS_SRCBLEND, d3dblend_one)
+      		gpclD3DDevice:SetRenderState(D3DRS_DESTBLEND, D3DBLEND_ZERO)
+      		
+      		// Dessin de la terre
+      		gpclD3DDevice:DrawIndexedPrimitive(D3DPT_TRIANGLESTRIP, 0, 0, gnNbVertices, 0, gnNbPoly)
+      
+      		// On remodifie les matrices pour faire tourner les nuages un peu plus vite que la terre
+      		D3DInitMatrices(1.1)
+      
+      		// Mapping des nuages
+      		gpclD3DDevice:SetTexture(0, gpclTerreNuagesTex)
+      		gpclD3DDevice:SetRenderState(D3DRS_SRCBLEND, D3DBLEND_BOTHSRCALPHA)
+      		gpclD3DDevice:SetRenderState(D3DRS_DESTBLEND, D3DBLEND_SRCALPHA)
+      		
+      		// Dessin de la terre
+      		gpclD3DDevice:DrawIndexedPrimitive(D3DPT_TRIANGLESTRIP, 0, 0, gnNbVertices, 0, gnNbPoly)
+      						
+      		// Fin de la scène
+      		gpclD3DDevice:EndScene()
+      	FIN
+      	
+      	// Affichage du "backbuffer"
+      	gpclD3DDevice:Present(null, null, null, null)
+     type : 458752
+   -
+     name : D3DInitMatrices
+     procedure_id : 1869536548881092040
+     type_code : 14
+     code : |1-
+      // Résumé : Initialisation des matrices
+      Procédure D3DInitMatrices(local rFactor est un reel sur 4 = 1)
+      	
+      	nHeure est un entier
+      	rAngle est un reel sur 4
+      		
+      	stMatWorld 	est un D3DXMATRIX	// Matrice de représentation du "monde" Direct3D
+      	stMatScale 	est un D3DXMATRIX	// Matrice de représentation du "monde" Direct3D
+      	stMatView	est un D3DXMATRIX	// Matrice de représentation de la "vue" Direct3D
+      	stMatProj	est un D3DXMATRIX	// Matrice de projection Direct3D
+      	rRatio		est un réel sur 4
+      	
+      	// Définit une rotation de 0.0067 (vitesse de rotation de la Terre sur son axe) * 100
+      	nHeure = D3DXGetTime()
+      	rAngle = nHeure * 0.0067 * rFactor
+      	D3DXMatrixRotationYawPitchRoll(stMatScale, -rAngle, 0.0, 0.0)
+      	
+      	// Modifie l'axe de rotation
+      	D3DXMatrixRotationYawPitchRoll(stMatWorld, 0.0, -0.4, 0.1)
+      	stMatWorld = D3DXMatrixMultiplyEx(stMatScale, stMatWorld)
+      			
+      	// Définit la matrice de projection
+      	rRatio = img_dx..largeur / img_dx..hauteur
+      	D3DXMatrixPerspectiveFovLH(stMatProj, d3dx_pi / 4.0, rRatio, 0.0, 100.0)
+      	
+      	si rFactor = 1 alors
+      	
+      	 	// Applique la matrice de projection
+      	 	gpclD3DDevice:SetTransform(D3DTS_PROJECTION, stMatProj)
+      	 	
+      	 	// Définit la vue en fonction de la caméra
+      	 	D3DXMatrixLookAtLH(stMatView, gpclCamera:m_Position, gpclCamera:m_Vue, gpclCamera:m_up)
+      	 	
+      	 	// Applique la vue
+      	 	gpclD3DDevice:SetTransform(D3DTS_VIEW, stMatView)
+      	fin
+      	
+      	// Applique la matrice
+      	gpclD3DDevice:SetTransform(D3DTS_WORLD, stMatWorld)
+     type : 458752
+  templates :
+   -
+     name : FEN_10_Animation
+     identifier : 0x1543d3fb367225d5
+     code_elements :
+      internal_properties : CAAAAAgAAACIMP8rh0cZMm+J7g8RNUlsXiqZmOPRK/tf/B3QBD1vZObrdyk+TdDl36cYuEymKXecYWBOpMsaqp9eu12KXJn/pLRlhrumBxv40PYcrbfKDuiju791pEByR5nn6hq7
+      type_code : 1
+      p_codes :
+       -
+         code : |1-
+          
+       -
+         code : |1-
+          
+         type : 34
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+       -
+         code : |1-
+          
+         type : 2
+       -
+         code : |1-
+          
+         type : 11
+       -
+         code : |1-
+          
+         type : 12
+       -
+         code : |1-
+          
+         type : 17
+       -
+         code : |1-
+          
+         type : 13
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAAD41EFVWFF7SAwzd+8+tTlPQzQOqrePoffe3zujAQsXVPKhnbz1Vze9uX1xEHfGZ53L/ImwBVh7QM0ijTy26nuXl6nmgRuF687jh7MrAxkw2m0o/GTSE2RmszekPw==
+  original_name : FEN_Fenêtre1
+resources :
+ string_res :
+  identifier : 0x10d999010fe7b7bf
+  internal_properties : CAAAAAgAAACa/HBK/CUtN70EwGNqHiA5Ong4hctn68fiPi5bW47/f5kdMy4EhFbbsLDr9WzJV0mJiQ==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

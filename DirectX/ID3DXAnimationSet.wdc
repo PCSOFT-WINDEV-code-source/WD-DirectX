@@ -1,0 +1,157 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXAnimationSet
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19e5f1890877d59b
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXAnimationSet est une classe
+      	un objet IUnknown
+      	
+      Fin
+      
+      constant
+      	
+      	// Méthodes de l'interface ID3DXAnimationSet (VTABLE)
+      	ID3DXAnimationSet_GetName								= ::IUnknown___IDXBASE + 1
+      	ID3DXAnimationSet_GetPeriod								= ::IUnknown___IDXBASE + 2
+      	ID3DXAnimationSet_GetPeriodicPosition					= ::IUnknown___IDXBASE + 3
+      	ID3DXAnimationSet_GetNumAnimations						= ::IUnknown___IDXBASE + 4
+      	ID3DXAnimationSet_GetAnimationNameByIndex				= ::IUnknown___IDXBASE + 5
+      	ID3DXAnimationSet_GetAnimationIndexByName				= ::IUnknown___IDXBASE + 6
+      	ID3DXAnimationSet_GetSRT								= ::IUnknown___IDXBASE + 7
+      	ID3DXAnimationSet_GetCallback							= ::IUnknown___IDXBASE + 8
+      	ID3DXAnimationSet___IDXBASE								= ::IUnknown___IDXBASE + 8
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1866163191469888923
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Anim.IID_ID3DXAnimationSet
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1866163191469954459
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetName
+     procedure_id : 1866424952439621655
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetName
+      Procédure GetName()
+      
+      	sName est une chaine
+      	
+      	// Appel
+      	lName est un entier système = :call(ID3DXAnimationSet_GetName)
+      	
+      	// Allocation
+      	sName = ChaîneRécupère(lName, crAdresseASCIIZ)
+      	
+      renvoyer sName
+     type : 458752
+   -
+     name : GetPeriod
+     procedure_id : 1866424965324591762
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetPeriod
+      Procédure GetPeriod()
+      renvoyer :call(ID3DXAnimationSet_GetPeriod)
+     type : 458752
+   -
+     name : GetPeriodicPosition
+     procedure_id : 1866424973914594324
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetPeriodicPosition
+      Procédure GetPeriodicPosition(rPosition est un reel sur 8)
+      renvoyer :call(ID3DXAnimationSet_GetPeriodicPosition, rPosition)
+     type : 458752
+   -
+     name : GetNumAnimations
+     procedure_id : 1866424986799564010
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumAnimations
+      Procédure GetNumAnimations()
+      RENVOYER :CALL(ID3DXAnimationSet_GetNumAnimations)
+     type : 458752
+   -
+     name : GetAnimationNameByIndex
+     procedure_id : 1866424995389566166
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetAnimationNameByIndex
+      Procédure GetAnimationNameByIndex(Index est un entier sans signe, sName est une chaine)
+      
+      	HRESULT	est un entier systeme
+      	ppvName est un entier systeme
+      
+      	// Appel
+      	HRESULT = :CALL(ID3DXAnimationSet_GetAnimationNameByIndex, Index, &ppvName)
+      	
+      	// Allocation
+      	sName = chainerecupere(ppvName, crAdresseASCIIZ)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : GetAnimationIndexByName
+     procedure_id : 1866425003979568368
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetAnimationIndexByName
+      Procédure GetAnimationIndexByName(sName est une chaine, Index est un entier sans signe)
+      renvoyer :CALL(ID3DXAnimationSet_GetAnimationIndexByName, &sName, &Index)
+     type : 458752
+   -
+     name : GetSRT
+     procedure_id : 1866425012569570524
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetSRT
+      Procédure GetSRT(rPeriodicPosition est un reel sur 8, nAnimation est un entier sans signe, Scale est un D3DXVECTOR3, Rotation est un D3DXQUATERNION, Translation est un D3DXVECTOR3)
+      renvoyer :call(ID3DXAnimationSet_GetAnimationIndexByName, rPeriodicPosition, nAnimation, &Scale, &Rotation, &Translation)
+     type : 458752
+   -
+     name : GetCallback
+     procedure_id : 1866425025454475766
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetCallback
+      Procédure GetCallback(rPosition est un reel sur 8, nFlags est un entier sans signe, rCallbackPosition est un reel sur 8, nCallbackData est un entier systeme)
+      RENVOYER :CALL(ID3DXAnimationSet_GetCallback, rPosition, nFlags, &rCallbackPosition, &nCallbackData)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d9990009b0b0aa
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

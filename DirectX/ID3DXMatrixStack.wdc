@@ -1,0 +1,221 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXMatrixStack
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19dc78b1030e4991
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXMatrixStack est une classe
+      	un objet IUnknown
+      	
+      Fin
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ID3DXMatrixStack (VTABLE)
+      	ID3DXMatrixStack_Pop 					= ::IUnknown___IDXBASE + 1
+      	ID3DXMatrixStack_Push 					= ::IUnknown___IDXBASE + 2
+      	ID3DXMatrixStack_LoadIdentity 			= ::IUnknown___IDXBASE + 3
+      	ID3DXMatrixStack_LoadMatrix 			= ::IUnknown___IDXBASE + 4
+      	ID3DXMatrixStack_MultMatrix 			= ::IUnknown___IDXBASE + 5
+      	ID3DXMatrixStack_MultMatrixLocal 		= ::IUnknown___IDXBASE + 6
+      	ID3DXMatrixStack_RotateAxis 			= ::IUnknown___IDXBASE + 7
+      	ID3DXMatrixStack_RotateAxisLocal 		= ::IUnknown___IDXBASE + 8
+      	ID3DXMatrixStack_RotateYawPitchRoll 	= ::IUnknown___IDXBASE + 9
+      	ID3DXMatrixStack_RotateYawPitchRollLocal = ::IUnknown___IDXBASE + 10
+      	ID3DXMatrixStack_Scale 					= ::IUnknown___IDXBASE + 11
+      	ID3DXMatrixStack_ScaleLocal 			= ::IUnknown___IDXBASE + 12
+      	ID3DXMatrixStack_Translate 				= ::IUnknown___IDXBASE + 13
+      	ID3DXMatrixStack_TranslateLocal 		= ::IUnknown___IDXBASE + 14
+      	ID3DXMatrixStack_GetTop					= ::IUnknown___IDXBASE + 15
+      	ID3DXMatrixStack___IDXBASE				= ::IUnknown___IDXBASE + 15
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863497047480420753
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3Dx9Math.IID_ID3DXMatrixStack
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863497047480486289
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : Pop
+     internal_properties : CAAAAAgAAAD01RAQRyyGVl5ovwkUWr77CIRQYq3jGRiVyiYHBXsiBhGaHcq/vY6aeYS4DRZP02mVdwTg9PsfdlHRQz9Hxj+VJc/8fB4QHSNMv6yvnKbCNFSUvdtZaptz3g1M5Gv6fpPqSnkOFzoGddXc16458aQqpwlu3aoGHJk5ZL4L3AwvbFlrlFclQhCsonZYLppdLV6FDnTzcNQIGS9ee4+hcXRnNbSiZtpp9Cs4sTKZHdml/8NzMdDikncRXeeDfZrntTRvLj9IG+jIfsFvDuNuFakqfWIMpJWiqdPvyaetTZH8xxijVeFVn/jdtA9VrM+WalMXk0UEk1XHPizj2gSZ1JU1oLqlrC5FAGkaBk+uxJ1uMeLQZjr7gA==
+     procedure_id : 1866478867251678950
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Pop
+      Procédure Pop()
+      renvoyer :call(ID3DXMatrixStack_Pop)
+     type : 458752
+   -
+     name : Push
+     internal_properties : CAAAAAgAAADQIZZzRbZy4Yynb6IvG72EtSwVm+ZCb13U+XAXM/AW8saMoAWDiqhiW4KEjERgLQrTxBnPj9CTxPk3UuoEx/0Qqp/s20d0GxuZo+ZIdjfIk9lEZuAV7IXEwBO2LpnMq7RV+Edn0XxX3KgB+Wn/XeU6IitxljdBnsz5ui1lHDcxGRBPLfPSZetenmPujjNWFHgaP1q2DUKONvUlhvLHOy7Oey1QTxUNhIxqupn48wTyt1DHpMFl5w+eg7QMx4OWwssyPDbICcoLs/MAaEXwt0aa1/tqxx55TK9zg3RSLzXCRWCRdBnz+u1wK06ZBTSZrX8OBuOoO9QagzYmAbOXG8BuBA3tWS66YS6e5dInPltfoRz6OxTDLKs=
+     procedure_id : 1866478871546713560
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Push
+      Procédure Push()
+      RENVOYER :CALL(ID3DXMatrixStack_Push)
+     type : 458752
+   -
+     name : LoadIdentity
+     procedure_id : 1866478880136715373
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode LoadIdentity
+      Procédure LoadIdentity()
+      RENVOYER :CALL(ID3DXMatrixStack_LoadIdentity)
+     type : 458752
+   -
+     name : LoadMatrix
+     procedure_id : 1866478888726717857
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode LoadMatrix
+      Procédure LoadMatrix(m est un D3DXMATRIX)
+      RENVOYER :CALL(ID3DXMatrixStack_LoadMatrix, &m)
+     type : 458752
+   -
+     name : MultMatrix
+     procedure_id : 1866478901611688011
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode MultMatrix
+      Procédure MultMatrix(m est un D3DXMATRIX)
+      RENVOYER :CALL(ID3DXMatrixStack_MultMatrix, &m)
+     type : 458752
+   -
+     name : MultMatrixLocal
+     procedure_id : 1866478918791626553
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode MultMatrixLocal
+      Procédure MultMatrixLocal(m est un D3DXMATRIX)
+      RENVOYER :CALL(ID3DXMatrixStack_MultMatrixLocal, &m)
+     type : 458752
+   -
+     name : RotateAxis
+     procedure_id : 1866478940266533654
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode RotateAxis
+      Procédure RotateAxis(v est un D3DXVECTOR3, Angle est un reel sur 4)
+      RENVOYER :CALL(ID3DXMatrixStack_RotateAxis, &v, Angle)
+     type : 458752
+   -
+     name : RotateAxisLocal
+     procedure_id : 1866478953151504198
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode RotateAxisLocal
+      Procédure RotateAxisLocal(v est un D3DXVECTOR3, Angle est un reel sur 4)
+      RENVOYER :CALL(ID3DXMatrixStack_RotateAxisLocal, &v, Angle)
+     type : 458752
+   -
+     name : RotateYawPitchRoll
+     procedure_id : 1866478970331442662
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode RotateYawPitchRoll
+      Procédure RotateYawPitchRoll(Yaw est un reel sur 4, Pitch est un reel sur 4, Roll est un reel sur 4)
+      RENVOYER :CALL(ID3DXMatrixStack_RotateYawPitchRoll, Yaw, Pitch, Roll)
+     type : 458752
+   -
+     name : RotateYawPitchRollLocal
+     procedure_id : 1866478978921445146
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode RotateYawPitchRollLocal
+      Procédure RotateYawPitchRollLocal(Yaw est un reel sur 4, Pitch est un reel sur 4, Roll est un reel sur 4)
+      RENVOYER :CALL(ID3DXMatrixStack_RotateYawPitchRollLocal, Yaw, Pitch, Roll)
+     type : 458752
+   -
+     name : Scale
+     internal_properties : CAAAAAgAAABKtXZQVT6tyBc2O8Y+U4Qrb3itwYAR7D6lOwdbCYsOwwv40B3BmXfXwoIz6UG+99iTSAPLvxfr6ul+HLcRYvlt/smcKdS4aYbHv1xCl1LX3/QTRk+/jxPhYQupGEZxdGsw94UpEXtg6XqTuw==
+     procedure_id : 1866478996101383595
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Scale
+      Procédure Scale(x est un reel sur 4, y est un reel sur 4, z est un reel sur 4)
+      RENVOYER :CALL(ID3DXMatrixStack_Scale, x, y, z)
+     type : 458752
+   -
+     name : ScaleLocal
+     procedure_id : 1866479004691386109
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ScaleLocal
+      Procédure ScaleLocal(x est un reel sur 4, y est un reel sur 4, z est un reel sur 4)
+      RENVOYER :CALL(ID3DXMatrixStack_ScaleLocal, x, y, z)
+     type : 458752
+   -
+     name : Translate
+     procedure_id : 1866479013281388109
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Translate
+      Procédure Translate(x est un reel sur 4, y est un reel sur 4, z est un reel sur 4)
+      RENVOYER :CALL(ID3DXMatrixStack_Translate, x, y, z)
+     type : 458752
+   -
+     name : TranslateLocal
+     procedure_id : 1866479021871389953
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode TranslateLocal
+      Procédure TranslateLocal(x est un reel sur 4, y est un reel sur 4, z est un reel sur 4)
+      RENVOYER :CALL(ID3DXMatrixStack_TranslateLocal, x, y, z)
+     type : 458752
+   -
+     name : GetTop
+     procedure_id : 1866479039051328464
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetTop
+      Procédure GetTop()
+      
+      	m est un D3DXMATRIX
+      	ppvM est un entier systeme
+      
+      	// Appel
+      	ppvM = :CALL(ID3DXMatrixStack_GetTop)
+      	
+      	// Allocation
+      	transfert(&m, ppvM, dimension(m))
+      	
+      renvoyer m
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d9990009c4b0ba
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,148 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXFileEnumObject
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19de17a0055d21f9
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXFileEnumObject est une classe
+      	un objet IUnknown
+      	
+      FIN
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ID3DXFileEnumObject (VTABLE)
+      	ID3DXFileEnumObject_GetFile				= ::IUnknown___IDXBASE + 1
+      	ID3DXFileEnumObject_GetChildren			= ::IUnknown___IDXBASE + 2
+      	ID3DXFileEnumObject_GetChild			= ::IUnknown___IDXBASE + 3
+      	ID3DXFileEnumObject_GetDataObjectById	= ::IUnknown___IDXBASE + 4
+      	ID3DXFileEnumObject_GetDataObjectByName	= ::IUnknown___IDXBASE + 5
+      	ID3DXFileEnumObject___IDXBASE			= ::IUnknown___IDXBASE + 5
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863953271830225401
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Xof.IID_ID3DXFileEnumObject
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863953271830290937
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetFile
+     procedure_id : 1866792236565901643
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetFile
+      Procédure GetFile(pclFile est un id3dxfile dynamique)
+      
+      	HRESULT est un entier système
+      	ppvFile est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXFileEnumObject_GetFile, &ppvFile)
+      	
+      	// Allocation
+      	__BindInterface(pclFile, ppvFile, ID3DXFile)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetChildren
+     procedure_id : 1866792249450872249
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetChildren
+      Procédure GetChildren(dwSizeT est un entier sans signe)
+      RENVOYER :CALL(ID3DXFileEnumObject_GetChildren, &dwSizeT)
+     type : 458752
+   -
+     name : GetChild
+     procedure_id : 1866792258040874327
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetChild
+      Procédure GetChild(dwSizeT est un entier sans signe, pclFileData est un id3dxfiledata dynamique)
+      	
+      	HRESULT est un entier système
+      	ppvFileData est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXFileEnumObject_GetChild, dwSizeT, &ppvFileData)
+      	
+      	// Allocation
+      	__BindInterface(pclFileData, ppvFileData, id3dxfiledata)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetDataObjectById
+     procedure_id : 1866792266630876749
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDataObjectById
+      Procédure GetDataObjectById(GUID est un GUID, pclFileData est un id3dxfiledata dynamique)
+      
+      	HRESULT est un entier système
+      	ppvFileData est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXFileEnumObject_GetDataObjectById, &GUID, &ppvFileData)
+      	
+      	// Allocation
+      	__BindInterface(pclFileData, ppvFileData, id3dxfiledata)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetDataObjectByName
+     procedure_id : 1866792279515846965
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDataObjectByName
+      Procédure GetDataObjectByName(sName est une chaine, pclFileData est un id3dxfiledata dynamique)
+      
+      	HRESULT est un entier système
+      	ppvFileData est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXFileEnumObject_GetDataObjectByName, &sName, &ppvFileData)
+      	
+      	// Allocation
+      	__BindInterface(pclFileData, ppvFileData, id3dxfiledata)
+      
+      RENVOYER HRESULT
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d998ff098bb04c
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

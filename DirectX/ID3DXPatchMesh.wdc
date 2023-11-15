@@ -1,0 +1,340 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXPatchMesh
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19ddd0b612fc23f6
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXPatchMesh est une classe
+      	un objet IUnknown
+      	
+      FIN
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ID3DXPatchMesh (VTABLE)
+      	ID3DXPatchMesh_GetNumPatches				= ::IUnknown___IDXBASE + 1
+      	ID3DXPatchMesh_GetNumVertices				= ::IUnknown___IDXBASE + 2
+      	ID3DXPatchMesh_GetDeclaration				= ::IUnknown___IDXBASE + 3
+      	ID3DXPatchMesh_GetControlVerticesPerPatch	= ::IUnknown___IDXBASE + 4
+      	ID3DXPatchMesh_GetOptions					= ::IUnknown___IDXBASE + 5
+      	ID3DXPatchMesh_GetDevice					= ::IUnknown___IDXBASE + 6
+      	ID3DXPatchMesh_GetPatchInfo					= ::IUnknown___IDXBASE + 7
+      	ID3DXPatchMesh_GetVertexBuffer				= ::IUnknown___IDXBASE + 8
+      	ID3DXPatchMesh_GetIndexBuffer				= ::IUnknown___IDXBASE + 9
+      	ID3DXPatchMesh_LockVertexBuffer				= ::IUnknown___IDXBASE + 10
+      	ID3DXPatchMesh_UnlockVertexBuffer			= ::IUnknown___IDXBASE + 11
+      	ID3DXPatchMesh_LockIndexBuffer				= ::IUnknown___IDXBASE + 12
+      	ID3DXPatchMesh_UnlockIndexBuffer			= ::IUnknown___IDXBASE + 13
+      	ID3DXPatchMesh_LockAttributeBuffer			= ::IUnknown___IDXBASE + 14
+      	ID3DXPatchMesh_UnlockAttributeBuffer		= ::IUnknown___IDXBASE + 15
+      	ID3DXPatchMesh_GetTessSize					= ::IUnknown___IDXBASE + 16
+      	ID3DXPatchMesh_GenerateAdjacency			= ::IUnknown___IDXBASE + 17
+      	ID3DXPatchMesh_CloneMesh					= ::IUnknown___IDXBASE + 18
+      	ID3DXPatchMesh_Optimize						= ::IUnknown___IDXBASE + 19
+      	ID3DXPatchMesh_SetDisplaceParam				= ::IUnknown___IDXBASE + 20
+      	ID3DXPatchMesh_GetDisplaceParam				= ::IUnknown___IDXBASE + 21
+      	ID3DXPatchMesh_Tessellate					= ::IUnknown___IDXBASE + 22
+      	ID3DXPatchMesh_TessellateAdaptive			= ::IUnknown___IDXBASE + 23
+      	ID3DXPatchMesh___IDXBASE					= ::IUnknown___IDXBASE + 23
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863875301222458358
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Mesh.IID_ID3DXPatchMesh
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863875301222523894
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetNumPatches
+     procedure_id : 1866506466724306733
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumPatches
+      Procédure GetNumPatches()
+      renvoyer :call(ID3DXPatchMesh_GetNumPatches)
+     type : 458752
+   -
+     name : GetNumVertices
+     procedure_id : 1866506475314308655
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumVertices
+      Procédure GetNumVertices()
+      RENVOYER :CALL(ID3DXPatchMesh_GetNumVertices)
+     type : 458752
+   -
+     name : GetDeclaration
+     procedure_id : 1866506483904310608
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDeclaration
+      Procédure GetDeclaration(tabDeclaration est un tableau de MAX_FVF_DECL_SIZE D3DVERTEXELEMENT9)
+      RENVOYER :CALL(ID3DXPatchMesh_GetDeclaration, ptr(tabDeclaration))
+     type : 458752
+   -
+     name : GetControlVerticesPerPatch
+     procedure_id : 1866506492494313186
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetControlVerticesPerPatch
+      Procédure GetControlVerticesPerPatch()
+      RENVOYER :CALL(ID3DXPatchMesh_GetControlVerticesPerPatch)
+     type : 458752
+   -
+     name : GetOptions
+     procedure_id : 1866506505379283246
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetOptions
+      Procédure GetOptions()
+      RENVOYER :CALL(ID3DXPatchMesh_GetOptions)
+     type : 458752
+   -
+     name : GetDevice
+     procedure_id : 1866506513969285605
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDevice
+      Procédure GetDevice(pclDevice est un IDirect3DDevice9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvDevice est un entier systeme
+      
+      	// Appel
+      	HRESULT = :CALL(ID3DXPatchMesh_GetDevice, &ppvDevice)
+      	
+      	// Allocation
+      	__BindInterface(pclDevice, ppvDevice, IDirect3DDevice9)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : GetPatchInfo
+     procedure_id : 1866506522559287511
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetPatchInfo
+      Procédure GetPatchInfo(PatchInfo est un D3DXPATCHINFO)
+      RENVOYER :CALL(ID3DXPatchMesh_GetPatchInfo, &PatchInfo)
+     type : 458752
+   -
+     name : GetVertexBuffer
+     procedure_id : 1866506535444257728
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetVertexBuffer
+      Procédure GetVertexBuffer(pclVB est un IDirect3DVertexBuffer9 dynamique)
+      
+      	HRESULT est un entier système
+      	ppvVB est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXPatchMesh_GetVertexBuffer, &ppvVB)
+      	
+      	// Allocation
+      	__BindInterface(pclVB, ppvVB, IDirect3DVertexBuffer9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetIndexBuffer
+     procedure_id : 1866506544034259556
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetIndexBuffer
+      Procédure GetIndexBuffer(pclIB est un IDirect3DIndexBuffer9 dynamique)
+      
+      	HRESULT est un entier système
+      	ppvIB est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXPatchMesh_GetIndexBuffer, &ppvIB)
+      	
+      	// Allocation
+      	__BindInterface(pclIB, ppvIB, IDirect3DIndexBuffer9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : LockVertexBuffer
+     procedure_id : 1866506552624261774
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode LockVertexBuffer
+      Procédure LockVertexBuffer(Flags est un entier sans signe, ppData est un entier systeme)
+      RENVOYER :CALL(ID3DXPatchMesh_LockVertexBuffer, Flags, &ppData)
+     type : 458752
+   -
+     name : UnlockVertexBuffer
+     procedure_id : 1866506561214263790
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UnlockVertexBuffer
+      Procédure UnlockVertexBuffer()
+      RENVOYER :CALL(ID3DXPatchMesh_UnlockVertexBuffer)
+     type : 458752
+   -
+     name : LockIndexBuffer
+     procedure_id : 1866506569804266086
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode LockIndexBuffer
+      Procédure LockIndexBuffer(Flags est un entier sans signe, ppData est un entier systeme)
+      RENVOYER :CALL(ID3DXPatchMesh_LockIndexBuffer, Flags, &ppData)
+     type : 458752
+   -
+     name : UnlockIndexBuffer
+     procedure_id : 1866506595574141139
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UnlockIndexBuffer
+      Procédure UnlockIndexBuffer()
+      RENVOYER :CALL(ID3DXPatchMesh_UnlockIndexBuffer)
+     type : 458752
+   -
+     name : LockAttributeBuffer
+     procedure_id : 1866506604164143405
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode LockAttributeBuffer
+      Procédure LockAttributeBuffer(Flags est un entier sans signe, ppData est un entier systeme)
+      RENVOYER :CALL(ID3DXPatchMesh_LockAttributeBuffer, Flags, &ppData)
+     type : 458752
+   -
+     name : UnlockAttributeBuffer
+     procedure_id : 1866506612754145420
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UnlockAttributeBuffer
+      Procédure UnlockAttributeBuffer()
+      RENVOYER :CALL(ID3DXPatchMesh_UnlockAttributeBuffer)
+     type : 458752
+   -
+     name : GetTessSize
+     procedure_id : 1866506625639116354
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetTessSize
+      Procédure GetTessSize(fTessLevel est un reel sur 4, Adaptive est un entier sans signe, NumTriangles est un entier sans signe, NumVertices est un entier sans signe)
+      RENVOYER :CALL(ID3DXPatchMesh_GetTessSize, fTessLevel, Adaptive, &NumTriangles, &NumVertices)
+     type : 458752
+   -
+     name : GenerateAdjacency
+     procedure_id : 1866506634229118510
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GenerateAdjacency
+      Procédure GenerateAdjacency(Tolerance est un reel sur 4)
+      RENVOYER :CALL(ID3DXPatchMesh_GenerateAdjacency, Tolerance)
+     type : 458752
+   -
+     name : CloneMesh
+     procedure_id : 1866506642819120900
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CloneMesh
+      Procédure CloneMesh(dwOptions est un entier sans signe, tabDecl est un tableau de D3DVERTEXELEMENT9, pclMesh est un ID3DXPatchMesh dynamique)
+      
+      	HRESULT est un entier système
+      	ppvMesh est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXPatchMesh_CloneMesh, dwOptions, ptr(tabDecl), &ppvMesh)
+      	
+      	// Allocation
+      	__BindInterface(pclMesh, ppvMesh, ID3DXPatchMesh)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : Optimize
+     internal_properties : CAAAAAgAAABKtXZQVT6tyBc2O8Y+U4Qrb3itwYAR7D6lOwdbCYsOwwv40B3BmXfXwoIz6UG+99iTSAPLvxfr6ul+HLcRYvlt/smcKdS4aYbHv1xCl1LX3/QTRk+/jxPhYQupGEZxdGsw94UpEXtg6XqTuw==
+     procedure_id : 1866506659998993579
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Optimize
+      Procédure Optimize(flags est un entier sans signe)
+      RENVOYER :CALL(ID3DXPatchMesh_Optimize, flags)
+     type : 458752
+   -
+     name : SetDisplaceParam
+     procedure_id : 1866506668588996000
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetDisplaceParam
+      Procédure SetDisplaceParam(pclTexture est un IDirect3DBaseTexture9 dynamique, MinFilter est un entier sans signe, MagFilter est un entier sans signe, MipFilter est un entier sans signe, Wrap est un entier sans signe, dwLODBias est un entier sans signe)
+      RENVOYER :CALL(ID3DXPatchMesh_SetDisplaceParam, ptr(pclTexture), &MinFilter, &MagFilter, &MipFilter, &Wrap, &dwLODBias)
+     type : 458752
+   -
+     name : GetDisplaceParam
+     procedure_id : 1866506677178997844
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDisplaceParam
+      Procédure GetDisplaceParam(pclTexture est un IDirect3DBaseTexture9 dynamique, MinFilter est un entier sans signe, MagFilter est un entier sans signe, MipFilter est un entier sans signe, Wrap est un entier sans signe, dwLODBias est un entier sans signe)
+      
+      	HRESULT est un entier système
+      	ppvTexture est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXPatchMesh_GetDisplaceParam, &ppvTexture, &MinFilter, &MagFilter, &MipFilter, &Wrap, &dwLODBias)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DBaseTexture9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : Tessellate
+     internal_properties : CAAAAAgAAABKtXZQVT6tyBc2O8Y+U4Qrb3itwYAR7D6lOwdbCYsOwwv40B3BmXfXwoIz6UG+99iTSAPLvxfr6ul+HLcRYvlt/smcKdS4aYbHv1xCl1LX3/QTRk+/jxPhYQupGEZxdGsw94UpEXtg6XqTuw==
+     procedure_id : 1866506707243841550
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Tessellate
+      Procédure Tessellate(fTessLevel est un reel sur 4, pclMesh est un id3dxmesh dynamique)
+      RENVOYER :CALL(ID3DXPatchMesh_Tessellate, fTessLevel, ptr(pclMesh))
+     type : 458752
+   -
+     name : TessellateAdaptive
+     procedure_id : 1866506715833843768
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode TessellateAdaptive
+      Procédure TessellateAdaptive(Trans est un D3DXVECTOR4, dwMaxTessLevel est un entier sans signe, dwMinTessLevel est un entier sans signe, pclMesh est id3dxmesh dynamique)
+      RENVOYER :CALL(ID3DXPatchMesh_TessellateAdaptive, &Trans, dwMaxTessLevel, dwMinTessLevel, ptr(pclMesh))
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000b74b231
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

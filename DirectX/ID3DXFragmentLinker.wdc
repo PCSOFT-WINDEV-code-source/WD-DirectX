@@ -1,0 +1,244 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXFragmentLinker
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19df64ea07770188
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXFragmentLinker est une classe
+      	un objet IUnknown
+      	
+      FIN
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ID3DXFragmentLinker (VTABLE)
+      	ID3DXFragmentLinker_GetDevice					= ::IUnknown___IDXBASE + 1
+      	ID3DXFragmentLinker_GetNumberOfFragments		= ::IUnknown___IDXBASE + 2
+      	ID3DXFragmentLinker_GetFragmentHandleByIndex	= ::IUnknown___IDXBASE + 3
+      	ID3DXFragmentLinker_GetFragmentHandleByName		= ::IUnknown___IDXBASE + 4
+      	ID3DXFragmentLinker_GetFragmentDesc				= ::IUnknown___IDXBASE + 5
+      	ID3DXFragmentLinker_AddFragments				= ::IUnknown___IDXBASE + 6
+      	ID3DXFragmentLinker_GetAllFragments				= ::IUnknown___IDXBASE + 7
+      	ID3DXFragmentLinker_GetFragment					= ::IUnknown___IDXBASE + 8
+      	ID3DXFragmentLinker_LinkShader					= ::IUnknown___IDXBASE + 9
+      	ID3DXFragmentLinker_LinkVertexShader			= ::IUnknown___IDXBASE + 10
+      	ID3DXFragmentLinker_LinkPixelShader				= ::IUnknown___IDXBASE + 11
+      	ID3DXFragmentLinker_ClearCache					= ::IUnknown___IDXBASE + 12
+      	ID3DXFragmentLinker___IDXBASE					= ::IUnknown___IDXBASE + 12
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1864319727065104776
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9shader.IID_ID3DXFragmentLinker
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1864319727065170312
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetDevice
+     procedure_id : 1866583003505640609
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDevice
+      Procédure GetDevice(pclDevice est un IDirect3DDevice9 dynamique)
+      
+      	HRESULT est un entier système
+      	ppvDevice est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXFragmentLinker_GetDevice, &ppvDevice)
+      	
+      	// Allocation
+      	__BindInterface(pclDevice, ppvDevice, IDirect3DDevice9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetNumberOfFragments
+     procedure_id : 1866583012095642531
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumberOfFragments
+      Procédure GetNumberOfFragments()
+      RENVOYER :CALL(ID3DXFragmentLinker_GetNumberOfFragments)
+     type : 458752
+   -
+     name : GetFragmentHandleByIndex
+     procedure_id : 1866583016390677079
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetFragmentHandleByIndex
+      Procédure GetFragmentHandleByIndex(Index est un entier sans signe)
+      RENVOYER :CALL(ID3DXFragmentLinker_GetFragmentHandleByIndex, Index)
+     type : 458752
+   -
+     name : GetFragmentHandleByName
+     procedure_id : 1866583024980679001
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetFragmentHandleByName
+      Procédure GetFragmentHandleByName(Name est une chaine)
+      RENVOYER :CALL(ID3DXFragmentLinker_GetFragmentHandleByName, &Name)
+     type : 458752
+   -
+     name : GetFragmentDesc
+     procedure_id : 1866583033570681141
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetFragmentDesc
+      Procédure GetFragmentDesc(Name est un entier sans signe, FragDesc est un D3DXFRAGMENT_DESC)
+      RENVOYER :CALL(ID3DXFragmentLinker_GetFragmentDesc, Name, &FragDesc)
+     type : 458752
+   -
+     name : AddFragments
+     procedure_id : 1866583042160683329
+     type_code : 12
+     code : |1-
+      	// Résumé : Méthode AddFragments
+      Procédure AddFragments(Fragments est un tableau d'entiers sans signe)
+      RENVOYER :CALL(ID3DXFragmentLinker_AddFragments, ptr(Fragments))
+     type : 458752
+   -
+     name : GetAllFragments
+     procedure_id : 1866583055045653717
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetAllFragments
+      Procédure GetAllFragments(pclBuffer est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier système
+      	ppvBuffer est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXFragmentLinker_GetAllFragments, &ppvBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclBuffer, ppvBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetFragment
+     procedure_id : 1866583063635655826
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetFragment
+      Procédure GetFragment(Name est un entier sans signe, pclBuffer est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier système
+      	ppvBuffer est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXFragmentLinker_GetFragment, Name, &ppvBuffer)
+      	
+      	// Allocation
+      	__BindInterface(pclBuffer, ppvBuffer, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : LinkShader
+     procedure_id : 1866583072225657888
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode LinkShader
+      Procédure LinkShader(Profile est une chaine, Flags est un entier sans signe, tabRgFragmentHandles est un tableau d'entiers sans signe, dwCFragmentscFragments est un entier sans signe, pclBuffer est un id3dxbuffer dynamique, pclErrorMsgs est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier système
+      	ppvBuffer est un entier système
+      	ppvErrorMsgs est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXFragmentLinker_LinkShader, &Profile, Flags, ptr(tabRgFragmentHandles), dwCFragmentscFragments, &ppvBuffer, &ppvErrorMsgs)
+      	
+      	// Allocation
+      	__BindInterface(pclBuffer, ppvBuffer, ID3DXBuffer)
+      	__BindInterface(pclErrorMsgs, ppvErrorMsgs, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : LinkVertexShader
+     procedure_id : 1866583080815659810
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode LinkVertexShader
+      Procédure LinkVertexShader(Profile est une chaine, Flags est un entier sans signe, tabRgFragmentHandles est un tableau d'entiers sans signe, dwCFragmentscFragments est un entier sans signe, pclVShader est un IDirect3DVertexShader9 dynamique, pclErrorMsgs est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier système
+      	ppvVShader est un entier système
+      	ppvErrorMsgs est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXFragmentLinker_LinkVertexShader, &Profile, Flags, PTR(tabRgFragmentHandles), dwCFragmentscFragments, &ppvVShader, &ppvErrorMsgs)
+      	
+      	// Allocation
+      	__BindInterface(pclVShader, ppvVShader, IDirect3DVertexShader9)
+      	__BindInterface(pclErrorMsgs, ppvErrorMsgs, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : LinkPixelShader
+     procedure_id : 1866583089405662122
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode LinkPixelShader
+      Procédure LinkPixelShader(Profile est une chaine, Flags est un entier sans signe, tabRgFragmentHandles est un tableau d'entiers sans signe, dwCFragmentscFragments est un entier sans signe, pclPShader est un IDirect3DPixelShader9 dynamique, pclErrorMsgs est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier système
+      	ppvPShader est un entier système
+      	ppvErrorMsgs est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXFragmentLinker_LinkPixelShader, &Profile, Flags, PTR(tabRgFragmentHandles), dwCFragmentscFragments, &ppvPShader, &ppvErrorMsgs)
+      	
+      	// Allocation
+      	__BindInterface(pclPShader, ppvPShader, IDirect3DPixelShader9)
+      	__BindInterface(pclErrorMsgs, ppvErrorMsgs, ID3DXBuffer)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : ClearCache
+     procedure_id : 1866583097995664278
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ClearCache
+      Procédure ClearCache()
+      RENVOYER :CALL(ID3DXFragmentLinker_ClearCache)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000b8fb240
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

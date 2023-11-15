@@ -1,0 +1,168 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXRenderToEnvMap
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19dc9c7b0148157a
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXRenderToEnvMap est une classe
+      	un objet IUnknown
+      	
+      FIN
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ID3DXRenderToEnvMap (VTABLE)
+      	ID3DXRenderToEnvMap_GetDevice			= ::IUnknown___IDXBASE + 1
+      	ID3DXRenderToEnvMap_GetDesc				= ::IUnknown___IDXBASE + 2
+      	ID3DXRenderToEnvMap_BeginCube			= ::IUnknown___IDXBASE + 3
+      	ID3DXRenderToEnvMap_BeginSphere			= ::IUnknown___IDXBASE + 4
+      	ID3DXRenderToEnvMap_BeginHemisphere		= ::IUnknown___IDXBASE + 5
+      	ID3DXRenderToEnvMap_BeginParabolic		= ::IUnknown___IDXBASE + 6
+      	ID3DXRenderToEnvMap_Face				= ::IUnknown___IDXBASE + 7
+      	ID3DXRenderToEnvMap_End					= ::IUnknown___IDXBASE + 8
+      	ID3DXRenderToEnvMap_OnLostDevice		= ::IUnknown___IDXBASE + 9
+      	ID3DXRenderToEnvMap_OnResetDevice		= ::IUnknown___IDXBASE + 10
+      	ID3DXRenderToEnvMap___IDXBASE			= ::IUnknown___IDXBASE + 10
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863536397941020026
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Core.IID_ID3DXRenderToEnvMap
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863536397941085562
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetDesc
+     procedure_id : 1866449150357650596
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDesc
+      Procédure GetDesc(Desc est un D3DXRTS_DESC dynamique)
+      renvoyer :call(ID3DXRenderToEnvMap_GetDesc, &Desc)
+     type : 458752
+   -
+     name : GetDevice
+     procedure_id : 1866449150357716210
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDevice
+      Procédure GetDevice(pclDevice est un IDirect3DDevice9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvDevice est un entier systeme
+      
+      	// Appel
+      	HRESULT = :call(ID3DXRenderToEnvMap_GetDevice, &ppvDevice)
+      	
+      	// Allocation
+      	__BindInterface(pclDevice, ppvDevice, IDirect3DDevice9)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : BeginCube
+     procedure_id : 1866449227667145524
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode BeginCube
+      Procédure BeginCube(pclCubeTex est un IDirect3DCubeTexture9 dynamique)
+      RENVOYER :CALL(ID3DXRenderToEnvMap_BeginCube, ptr(pclCubeTex))
+     type : 458752
+   -
+     name : BeginSphere
+     procedure_id : 1866449236257147493
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode BeginSphere
+      Procédure BeginSphere(pclTex est un IDirect3DTexture9 dynamique)
+      RENVOYER :CALL(ID3DXRenderToEnvMap_BeginSphere, ptr(pclTex))
+     type : 458752
+   -
+     name : BeginHemisphere
+     procedure_id : 1866449240552182197
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode BeginHemisphere
+      Procédure BeginHemisphere(pclTexZPos est un IDirect3DTexture9 dynamique, pclTexZNeg est un IDirect3DTexture9 dynamique)
+      RENVOYER :CALL(ID3DXRenderToEnvMap_BeginHemisphere, ptr(pclTexZPos), ptr(pclTexZNeg))
+     type : 458752
+   -
+     name : BeginParabolic
+     procedure_id : 1866449253437151837
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode BeginParabolic
+      Procédure BeginParabolic(pclTexZPos est un IDirect3DTexture9 dynamique, pclTexZNeg est un IDirect3DTexture9 dynamique)
+      RENVOYER :CALL(ID3DXRenderToEnvMap_BeginParabolic, PTR(pclTexZPos), PTR(pclTexZNeg))
+     type : 458752
+   -
+     name : Face
+     procedure_id : 1866449262027153837
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Face
+      Procédure Face(nFace est un entier sans signe, MipFilter est un entier sans signe)
+      RENVOYER :CALL(ID3DXRenderToEnvMap_Face, nFace, MipFilter)
+     type : 458752
+   -
+     name : End_
+     procedure_id : 1866449270617156741
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode End
+      Procédure End_(MipFilter est un entier sans signe)
+      RENVOYER :CALL(ID3DXRenderToEnvMap_End, MipFilter)
+     type : 458752
+   -
+     name : OnLostDevice
+     procedure_id : 1866449287797095127
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode OnLostDevice
+      Procédure OnLostDevice()
+      RENVOYER :CALL(ID3DXRenderToEnvMap_OnLostDevice)
+     type : 458752
+   -
+     name : OnResetDevice
+     procedure_id : 1866449300682065687
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode OnResetDevice
+      Procédure OnResetDevice()
+      RENVOYER :CALL(ID3DXRenderToEnvMap_OnResetDevice)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000d12b3b7
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,107 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXLoadUserData
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19e5b920119a7d0c
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXLoadUserData est une classe
+      	un objet objetcom
+      	
+      Fin
+      
+      constant
+      	
+      	// Méthodes de l'interface ID3DXLoadUserData (VTABLE)
+      	ID3DXLoadUserData_LoadTopLevelData			= 0	
+      	ID3DXLoadUserData_LoadFrameChildData		= 1
+      	ID3DXLoadUserData_LoadMeshChildData			= 2
+      	ID3DXLoadUserData___IDXBASE					= 2
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1866101168000498956
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur ObjetCOM(nInterface)
+      	
+      	// Définition de l'IID
+      	VariableRAZ(:IID)
+      	
+      	// Enregistre l'objet auprès de la collection
+      	ID3DXLoadUserData_RegisterObject(objet)
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1866101168000564492
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : LoadTopLevelData
+     procedure_id : 1866101425698924596
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle LoadTopLevelData
+      Procédure virtuelle LoadTopLevelData(pclXofChildData est un ID3DXFileData dynamique <utile>)
+      renvoyer e_notimpl
+     type : 458752
+   -
+     name : LoadFrameChildData
+     procedure_id : 1866101451468800226
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle LoadFrameChildData
+      Procédure VIRTUELLE LoadFrameChildData(stFrame est un d3dxframe <utile>, pclXofChildData est un ID3DXFileData dynamique <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+   -
+     name : LoadMeshChildData
+     procedure_id : 1866101477238675061
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode virtuelle LoadMeshChildData
+      Procédure VIRTUELLE LoadMeshChildData(stMeshContainer est un D3DXMESHCONTAINER <utile>, pclXofChildData est un ID3DXFileData dynamique <utile>)
+      RENVOYER E_NOTIMPL
+     type : 458752
+  properties :
+   -
+     name : Interface
+     identifier : 0x19e5b920119b7d0c
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         Procédure virtuelle Interface()
+         renvoyer PTRVTbl(objet)
+        type : 1966080
+      -
+        code : |1-
+         
+        type : 2031616
+     template_refs : []
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000b6cb221
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

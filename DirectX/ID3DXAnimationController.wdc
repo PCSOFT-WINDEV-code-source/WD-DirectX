@@ -1,0 +1,488 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXAnimationController
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19e5f63b05072cbf
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXAnimationController est une classe
+      	un objet IUnknown
+      	
+      Fin
+      
+      constant
+      	
+      	// Méthodes de l'interface ID3DXAnimationController (VTABLE)
+      	ID3DXAnimationController_GetMaxNumAnimationOutputs				= ::IUnknown___IDXBASE + 1
+      	ID3DXAnimationController_GetMaxNumAnimationSets					= ::IUnknown___IDXBASE + 2
+      	ID3DXAnimationController_GetMaxNumTracks						= ::IUnknown___IDXBASE + 3
+      	ID3DXAnimationController_GetMaxNumEvents						= ::IUnknown___IDXBASE + 4
+      	ID3DXAnimationController_RegisterAnimationOutput				= ::IUnknown___IDXBASE + 5
+      	ID3DXAnimationController_RegisterAnimationSet					= ::IUnknown___IDXBASE + 6
+      	ID3DXAnimationController_UnregisterAnimationSet					= ::IUnknown___IDXBASE + 7
+      	ID3DXAnimationController_GetNumAnimationSets					= ::IUnknown___IDXBASE + 8
+      	ID3DXAnimationController_GetAnimationSet						= ::IUnknown___IDXBASE + 9
+      	ID3DXAnimationController_GetAnimationSetByName					= ::IUnknown___IDXBASE + 10
+      	ID3DXAnimationController_AdvanceTime							= ::IUnknown___IDXBASE + 11
+      	ID3DXAnimationController_ResetTime								= ::IUnknown___IDXBASE + 12
+      	ID3DXAnimationController_GetTime								= ::IUnknown___IDXBASE + 13
+      	ID3DXAnimationController_SetTrackAnimationSet					= ::IUnknown___IDXBASE + 14
+      	ID3DXAnimationController_GetTrackAnimationSet					= ::IUnknown___IDXBASE + 15
+      	ID3DXAnimationController_SetTrackPriority						= ::IUnknown___IDXBASE + 16
+      	ID3DXAnimationController_SetTrackSpeed							= ::IUnknown___IDXBASE + 17
+      	ID3DXAnimationController_SetTrackWeight							= ::IUnknown___IDXBASE + 18
+      	ID3DXAnimationController_SetTrackPosition						= ::IUnknown___IDXBASE + 19
+      	ID3DXAnimationController_SetTrackEnable							= ::IUnknown___IDXBASE + 20
+      	ID3DXAnimationController_SetTrackDesc							= ::IUnknown___IDXBASE + 21
+      	ID3DXAnimationController_GetTrackDesc							= ::IUnknown___IDXBASE + 22
+      	ID3DXAnimationController_SetPriorityBlend						= ::IUnknown___IDXBASE + 23
+      	ID3DXAnimationController_GetPriorityBlend						= ::IUnknown___IDXBASE + 24
+      	ID3DXAnimationController_KeyTrackSpeed							= ::IUnknown___IDXBASE + 25
+      	ID3DXAnimationController_KeyTrackWeight							= ::IUnknown___IDXBASE + 26
+      	ID3DXAnimationController_KeyTrackPosition						= ::IUnknown___IDXBASE + 27
+      	ID3DXAnimationController_KeyTrackEnable							= ::IUnknown___IDXBASE + 28
+      	ID3DXAnimationController_KeyPriorityBlend						= ::IUnknown___IDXBASE + 29
+      	ID3DXAnimationController_UnkeyEvent								= ::IUnknown___IDXBASE + 30
+      	ID3DXAnimationController_UnkeyAllTrackEvents					= ::IUnknown___IDXBASE + 31
+      	ID3DXAnimationController_UnkeyAllPriorityBlends					= ::IUnknown___IDXBASE + 32
+      	ID3DXAnimationController_GetCurrentTrackEvent					= ::IUnknown___IDXBASE + 33
+      	ID3DXAnimationController_GetCurrentPriorityBlend				= ::IUnknown___IDXBASE + 34
+      	ID3DXAnimationController_GetUpcomingTrackEvent					= ::IUnknown___IDXBASE + 35
+      	ID3DXAnimationController_GetUpcomingPriorityBlend				= ::IUnknown___IDXBASE + 36
+      	ID3DXAnimationController_ValidateEvent							= ::IUnknown___IDXBASE + 37
+      	ID3DXAnimationController_GetEventDesc							= ::IUnknown___IDXBASE + 38
+      	ID3DXAnimationController_CloneAnimationController				= ::IUnknown___IDXBASE + 39
+      	ID3DXAnimationController___IDXBASE								= ::IUnknown___IDXBASE + 40
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1866168353962863807
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Anim.IID_ID3DXAnimationController
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1866168353962929343
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetMaxNumAnimationOutputs
+     procedure_id : 1866432387035115471
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetMaxNumAnimationOutputs
+      Procédure GetMaxNumAnimationOutputs()
+      renvoyer :call(ID3DXAnimationController_GetMaxNumAnimationOutputs)
+     type : 458752
+   -
+     name : GetMaxNumAnimationSets
+     procedure_id : 1866432391330149909
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetMaxNumAnimationSets
+      Procédure GetMaxNumAnimationSets()
+      RENVOYER :CALL(ID3DXAnimationController_GetMaxNumAnimationSets)
+     type : 458752
+   -
+     name : GetMaxNumTracks
+     procedure_id : 1866432399920151800
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetMaxNumTracks
+      Procédure GetMaxNumTracks()
+      RENVOYER :CALL(ID3DXAnimationController_GetMaxNumTracks)
+     type : 458752
+   -
+     name : GetMaxNumEvents
+     procedure_id : 1866432408510153597
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetMaxNumEvents
+      Procédure GetMaxNumEvents()
+      RENVOYER :CALL(ID3DXAnimationController_GetMaxNumEvents)
+     type : 458752
+   -
+     name : RegisterAnimationOutput
+     procedure_id : 1866432417100155317
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode RegisterAnimationOutput
+      Procédure RegisterAnimationOutput(Name est une chaine, Matrix est un D3DXMATRIX, Scale est un D3DXVECTOR3, Rotation est un D3DXQUATERNION, Translation est un D3DXVECTOR3)
+      RENVOYER :CALL(ID3DXAnimationController_RegisterAnimationOutput, &Name, &Matrix, &Scale, &Rotation, &Translation)
+     type : 458752
+   -
+     name : RegisterAnimationSet
+     procedure_id : 1866432429985126219
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode RegisterAnimationSet
+      Procédure RegisterAnimationSet(pclAnimationSet est un ID3DXAnimationSet dynamique)
+      RENVOYER :CALL(ID3DXAnimationController_RegisterAnimationSet, ptr(pclAnimationSet))
+     type : 458752
+   -
+     name : UnregisterAnimationSet
+     procedure_id : 1866432442870096467
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UnregisterAnimationSet
+      Procédure UnregisterAnimationSet(pclAnimationSet est un ID3DXAnimationSet dynamique)
+      RENVOYER :CALL(ID3DXAnimationController_UnregisterAnimationSet, ptr(pclAnimationSet))
+     type : 458752
+   -
+     name : GetNumAnimationSets
+     procedure_id : 1866432451460098717
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNumAnimationSets
+      Procédure GetNumAnimationSets()
+      RENVOYER :CALL(ID3DXAnimationController_GetNumAnimationSets)
+     type : 458752
+   -
+     name : GetAnimationSet
+     procedure_id : 1866432460050100654
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetAnimationSet
+      Procédure GetAnimationSet(nIndex est un entier sans signe, pclAnimationSet est un ID3DXAnimationSet dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvAnimationSet est un entier systeme
+      
+      	// Appel
+      	HRESULT = :CALL(ID3DXAnimationController_GetAnimationSet, nIndex, &ppvAnimationSet)
+      	
+      	// Allocation
+      	__BindInterface(pclAnimationSet, ppvAnimationSet, ID3DXAnimationSet)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : GetAnimationSetByName
+     procedure_id : 1866432468640102779
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetAnimationSetByName
+      Procédure GetAnimationSetByName(Name est une chaine, pclAnimationSet est un ID3DXAnimationSet dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvAnimationSet est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXAnimationController_GetAnimationSetByName, &Name, &ppvAnimationSet)
+      	
+      	// Allocation
+      	__BindInterface(pclAnimationSet, ppvAnimationSet, ID3DXAnimationSet)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : AdvanceTime
+     procedure_id : 1866432485820041399
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode AdvanceTime
+      Procédure AdvanceTime(TimeDelta est un reel sur 8, pclCallbackHandler est un ID3DXAnimationCallbackHandler dynamique)
+      RENVOYER :CALL(ID3DXAnimationController_AdvanceTime, TimeDelta, ptr(pclCallbackHandler))
+     type : 458752
+   -
+     name : ResetTime
+     procedure_id : 1866432494410044335
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ResetTime
+      Procédure ResetTime()
+      RENVOYER :CALL(ID3DXAnimationController_ResetTime)
+     type : 458752
+   -
+     name : GetTime
+     procedure_id : 1866432503000046086
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetTime
+      Procédure GetTime()
+      RENVOYER :CALL(ID3DXAnimationController_GetTime)
+     type : 458752
+   -
+     name : SetTrackAnimationSet
+     procedure_id : 1866432511590047852
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetTrackAnimationSet
+      Procédure SetTrackAnimationSet(Track est un entier sans signe, pclAnimationSet est un ID3DXAnimationSet dynamique)
+      RENVOYER :CALL(ID3DXAnimationController_SetTrackAnimationSet, Track, ptr(pclAnimationSet))
+     type : 458752
+   -
+     name : GetTrackAnimationSet
+     procedure_id : 1866432520180050148
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetTrackAnimationSet
+      Procédure GetTrackAnimationSet(Track est un entier sans signe, pclAnimationSet est un ID3DXAnimationSet dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvAnimationSet est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXAnimationController_GetTrackAnimationSet, Track, &ppvAnimationSet)
+      	
+      	// Allocation
+      	__BindInterface(pclAnimationSet, ppvAnimationSet, ID3DXAnimationSet)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : SetTrackPriority
+     procedure_id : 1866432528770052086
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetTrackPriority
+      Procédure SetTrackPriority(Track est un entier sans signe, Priority est un entier sans signe)
+      RENVOYER :CALL(ID3DXAnimationController_SetTrackPriority, Track, Priority)
+     type : 458752
+   -
+     name : SetTrackSpeed
+     procedure_id : 1866432537360054039
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetTrackSpeed
+      Procédure SetTrackSpeed(Track est un entier sans signe, Speed est un reel sur 4)
+      RENVOYER :CALL(ID3DXAnimationController_SetTrackSpeed, Track, Speed)
+     type : 458752
+   -
+     name : SetTrackWeight
+     procedure_id : 1866432563129929918
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetTrackWeight
+      Procédure SetTrackWeight(Track est un entier sans signe, Weight est un reel sur 4)
+      RENVOYER :CALL(ID3DXAnimationController_SetTrackWeight, Track, Weight)
+     type : 458752
+   -
+     name : SetTrackPosition
+     procedure_id : 1866432580309869022
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetTrackPosition
+      Procédure SetTrackPosition(Track est un entier sans signe, rPosition est un reel sur 8)
+      RENVOYER :CALL(ID3DXAnimationController_SetTrackPosition, Track, rPosition)
+     type : 458752
+   -
+     name : SetTrackEnable
+     procedure_id : 1866432588899871147
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetTrackEnable
+      Procédure SetTrackEnable(Track est un entier sans signe, Enable est un booléen)
+      RENVOYER :CALL(ID3DXAnimationController_SetTrackEnable, Track, Enable)
+     type : 458752
+   -
+     name : SetTrackDesc
+     procedure_id : 1866432597489872944
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetTrackDesc
+      Procédure SetTrackDesc(Track est un entier sans signe, Desc est un D3DXTRACK_DESC)
+      RENVOYER :CALL(ID3DXAnimationController_SetTrackDesc, Track, &Desc)
+     type : 458752
+   -
+     name : GetTrackDesc
+     procedure_id : 1866432606079874975
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetTrackDesc
+      Procédure GetTrackDesc(Track est un entier sans signe, Desc est un D3DXTRACK_DESC)
+      RENVOYER :CALL(ID3DXAnimationController_GetTrackDesc, Track, &Desc)
+     type : 458752
+   -
+     name : SetPriorityBlend
+     procedure_id : 1866432614669876804
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetPriorityBlend
+      Procédure SetPriorityBlend()
+      RENVOYER :CALL(ID3DXAnimationController_SetPriorityBlend)
+     type : 458752
+   -
+     name : GetPriorityBlend
+     procedure_id : 1866432623259813408
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetPriorityBlend
+      Procédure GetPriorityBlend(BlendWeight est un reel sur 4)
+      RENVOYER :CALL(ID3DXAnimationController_GetPriorityBlend, BlendWeight)
+     type : 458752
+   -
+     name : KeyTrackSpeed
+     procedure_id : 1866432644734720900
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode KeyTrackSpeed
+      Procédure KeyTrackSpeed(Track est un entier sans signe, NewSpeed est un reel sur 4, StartTime est un reel sur 8, Duration est un reel sur 8, Transition est un entier sans signe)
+      RENVOYER :CALL(ID3DXAnimationController_KeyTrackSpeed, Track, NewSpeed, StartTime, Duration, Transition)
+     type : 458752
+   -
+     name : KeyTrackWeight
+     procedure_id : 1866432653324722900
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode KeyTrackWeight
+      Procédure KeyTrackWeight(Track est un entier sans signe, NewWeight est un reel sur 4, StartTime est un reel sur 8, Duration est un reel sur 8, Transition est un entier sans signe)
+      RENVOYER :CALL(ID3DXAnimationController_KeyTrackWeight, Track, NewWeight, StartTime, Duration, Transition)
+     type : 458752
+   -
+     name : KeyTrackPosition
+     procedure_id : 1866432661914725181
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode KeyTrackPosition
+      Procédure KeyTrackPosition(Track est un entier sans signe, NewPosition est un reel sur 8, StartTime est un reel sur 8)
+      RENVOYER :CALL(ID3DXAnimationController_KeyTrackPosition, Track, NewPosition, StartTime)
+     type : 458752
+   -
+     name : KeyTrackEnable
+     procedure_id : 1866432670504727352
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode KeyTrackEnable
+      Procédure KeyTrackEnable(Track est un entier sans signe, NewEnable est un booléen, StartTime est un reel sur 8)
+      RENVOYER :CALL(ID3DXAnimationController_KeyTrackEnable, Track, NewEnable, StartTime)
+     type : 458752
+   -
+     name : KeyPriorityBlend
+     procedure_id : 1866432679094729399
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode KeyPriorityBlend
+      Procédure KeyPriorityBlend(NewBlendWeight est un reel sur 4, StartTime est un reel sur 8, Duration est un reel sur 8, Transition est un entier sans signe)
+      RENVOYER :CALL(ID3DXAnimationController_KeyPriorityBlend, NewBlendWeight, StartTime, Duration, Transition)
+     type : 458752
+   -
+     name : UnkeyEvent
+     procedure_id : 1866432691979699662
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UnkeyEvent
+      Procédure UnkeyEvent(hEvent est une entier sans signe)
+      RENVOYER :CALL(ID3DXAnimationController_UnkeyEvent, hEvent)
+     type : 458752
+   -
+     name : UnkeyAllTrackEvents
+     procedure_id : 1866432700569701834
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UnkeyAllTrackEvents
+      Procédure UnkeyAllTrackEvents(Track est un entier sans signe)
+      RENVOYER :CALL(ID3DXAnimationController_UnkeyAllTrackEvents, Track)
+     type : 458752
+   -
+     name : UnkeyAllPriorityBlends
+     procedure_id : 1866432709159703881
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UnkeyAllPriorityBlends
+      Procédure UnkeyAllPriorityBlends()
+      RENVOYER :CALL(ID3DXAnimationController_UnkeyAllPriorityBlends)
+     type : 458752
+   -
+     name : GetCurrentTrackEvent
+     procedure_id : 1866432717749706130
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetCurrentTrackEvent
+      Procédure GetCurrentTrackEvent(Track est un entier sans signe, EventType est un entier sans signe)
+      RENVOYER :CALL(ID3DXAnimationController_GetCurrentTrackEvent, Track, EventType)
+     type : 458752
+   -
+     name : GetCurrentPriorityBlend
+     procedure_id : 1866432726339708037
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetCurrentPriorityBlend
+      Procédure GetCurrentPriorityBlend()
+      RENVOYER :CALL(ID3DXAnimationController_GetCurrentPriorityBlend)
+     type : 458752
+   -
+     name : GetUpcomingTrackEvent
+     procedure_id : 1866432734929710239
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetUpcomingTrackEvent
+      Procédure GetUpcomingTrackEvent(Track est un entier sans signe, hEvent est un entier sans signe)
+      RENVOYER :CALL(ID3DXAnimationController_GetUpcomingTrackEvent, Track, hEvent)
+     type : 458752
+   -
+     name : GetUpcomingPriorityBlend
+     procedure_id : 1866432743519712224
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetUpcomingPriorityBlend
+      Procédure GetUpcomingPriorityBlend(hEvent est un entier sans signe)
+      RENVOYER :CALL(ID3DXAnimationController_GetUpcomingPriorityBlend, hEvent)
+     type : 458752
+   -
+     name : ValidateEvent
+     procedure_id : 1866432756404682456
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ValidateEvent
+      Procédure ValidateEvent(hEvent est un entier sans signe)
+      RENVOYER :CALL(ID3DXAnimationController_ValidateEvent, hEvent)
+     type : 458752
+   -
+     name : GetEventDesc
+     procedure_id : 1866432777879589682
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetEventDesc
+      Procédure GetEventDesc(hEvent est un entier sans signe, Desc est un D3DXEVENT_DESC)
+      RENVOYER :CALL(ID3DXAnimationController_GetEventDesc, hEvent, &Desc)
+     type : 458752
+   -
+     name : CloneAnimationController
+     procedure_id : 1866432786469591636
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CloneAnimationController
+      Procédure CloneAnimationController(MaxNumAnimationOutputs est un entier sans signe, MaxNumAnimationSets est un entier sans signe, MaxNumTracks est un entier sans signe, MaxNumEvents est un entier sans signe, pclAnimController est un ID3DXAnimationController dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvAnimationController est un entier systeme
+      
+      	// Appel
+      	HRESULT = :CALL(ID3DXAnimationController_CloneAnimationController, MaxNumAnimationOutputs, MaxNumAnimationSets, MaxNumTracks, MaxNumEvents, &ppvAnimationController)
+      	
+      	// Allocation
+      	__BindInterface(pclAnimController, ppvAnimationController, ID3DXAnimationController)
+      	
+      renvoyer HRESULT
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000d46b3e6
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

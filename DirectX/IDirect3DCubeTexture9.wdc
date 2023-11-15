@@ -1,0 +1,119 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IDirect3DCubeTexture9
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19dc7d1a032b846f
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      IDirect3DCubeTexture9 est une classe
+      	un objet IDirect3DBaseTexture9
+      
+      Fin
+      
+      constant
+      	
+      	// Méthode de l'interface IDirect3DCubeTexture9 (VTABLE)
+      	IDirect3DCubeTexture9_GetLevelDesc			= ::IDirect3DBaseTexture9___IDXBASE + 1
+      	IDirect3DCubeTexture9_GetCubeMapSurface		= ::IDirect3DBaseTexture9___IDXBASE + 2
+      	IDirect3DCubeTexture9_LockRect				= ::IDirect3DBaseTexture9___IDXBASE + 3
+      	IDirect3DCubeTexture9_UnlockRect			= ::IDirect3DBaseTexture9___IDXBASE + 4
+      	IDirect3DCubeTexture9_AddDirtyRect			= ::IDirect3DBaseTexture9___IDXBASE + 5
+      	IDirect3DCubeTexture9___IDXBASE				= ::IDirect3DBaseTexture9___IDXBASE + 5
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863501896500413551
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IDirect3DBaseTexture9(nInterface)
+      
+      	// Définition de l'IID
+      	:IID = pD3D9.IID_IDirect3DCubeTexture9
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863501896500479087
+     type_code : 28
+     code : |1+
+      Procédure Destructeur()
+      
+     type : 655360
+   -
+     name : GetLevelDesc
+     procedure_id : 1866834091321090332
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetLevelDesc
+      Procédure GetLevelDesc(Level est un entier sans signe, Desc est un D3DSURFACE_DESC)
+      renvoyer :call(IDirect3DCubeTexture9_GetLevelDesc, Level, &Desc)
+     type : 458752
+   -
+     name : GetCubeMapSurface
+     procedure_id : 1866834099911092551
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetCubeMapSurface
+      Procédure GetCubeMapSurface(FaceType est un entier sans signe, Level est un entier sans signe, pclCubeMapSurface est un IDirect3DSurface9 dynamique)
+      
+      	HRESULT est un entier système
+      	ppvCubeMapSurface est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DCubeTexture9_GetCubeMapSurface, FaceType, Level, &ppvCubeMapSurface)
+      	
+      	// Allocation
+      	__BindInterface(pclCubeMapSurface, ppvCubeMapSurface, IDirect3DSurface9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : LockRect
+     procedure_id : 1866834108501094753
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode LockRect
+      Procédure LockRect(FaceType est un entier sans signe, Level est un entier sans signe, LockedRect est un D3DLOCKED_RECT, Rect est un rect)
+      RENVOYER :CALL(IDirect3DCubeTexture9_LockRect, FaceType, Level, PTR(LockedRect), PTR(Rect))
+     type : 458752
+   -
+     name : UnlockRect
+     procedure_id : 1866834117091097237
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UnlockRect
+      Procédure UnlockRect(FaceType est un entier sans signe, Level est un entier sans signe)
+      RENVOYER :CALL(IDirect3DCubeTexture9_UnlockRect, FaceType, Level)
+     type : 458752
+   -
+     name : AddDirtyRect
+     procedure_id : 1866834125681099487
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode AddDirtyRect 
+      Procédure AddDirtyRect(FaceType est un entier sans signe, DirtyRect est un rect)
+      RENVOYER :CALL(IDirect3DCubeTexture9_AddDirtyRect, FaceType, PTR(DirtyRect))
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000d20b3b7
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,646 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pD3DStructs
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1d2ed9cf4f6d94fa
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1+
+      
+      ///////////////////////////////////////////////////////////
+      // <Structures> 
+      RECT			est une Structure
+      	Top, Left, Right, Bottom sont des entiers sans signe	
+      FIN
+      
+      RGNDATAHEADER	est une structure
+      	dwSize, iType, nCount, nRgnSize est un entier sans signe
+      	rcBound est un rect
+      FIN
+      
+      RGNDATA 		est une structure
+      	rdh		est un RGNDATAHEADER
+      	buf 	est un tableau fixe de 1 entier sans signe sur 1
+      FIN
+      
+      D3DXFLOAT16			est une structure
+      	Value			est un entier sur 2 sans signe
+      FIN
+      
+      D3DXVECTOR2			est une structure
+      	x, y			sont des reels sur 4
+      FIN
+      
+      D3DXVECTOR3			est une structure
+      	x, y, z			sont des reels sur 4	
+      FIN
+      
+      D3DXVECTOR4			est une structure
+      	x, y, z, w		sont des reels sur 4	
+      FIN
+      
+      D3DXVECTOR2_16F		est une structure
+      	x, y 			sont des D3DXFLOAT16
+      FIN
+      
+      D3DXVECTOR3_16F		est une structure
+      	x, y, z			sont des D3DXFLOAT16
+      FIN
+      
+      D3DXVECTOR4_16F		est une structure
+      	x, y, z, w		sont des D3DXFLOAT16
+      FIN
+      
+      D3DXMATRIX			est une structure
+      	m est un tableau fixe de 4 par 4 reels sur 4	
+      FIN
+      
+      _D3DXMATRIX 		est une structure
+      	_11, _12, _13, _14 sont des reels sur 4	
+      	_21, _22, _23, _24 sont des reels sur 4	
+      	_31, _32, _33, _34 sont des reels sur 4	
+      	_41, _42, _43, _44 sont des reels sur 4	
+      FIN
+      
+      D3DXQUATERNION		est une structure
+      	x, y, z, w		sont des reel sur 4	
+      FIN
+      
+      D3DXPLANE			est une structure
+      a_, b, c, d		sont des reels sur 4	
+      FIN
+      
+      D3DXCOLOR			est une structure
+      	r, g, b, a_		sont des reels sur 4	
+      FIN
+      
+      
+      D3DVSHADERCAPS2_0 		est une structure
+      	Caps														est un entier sans signe	
+      	DynamicFlowControlDepth, NumTemps, StaticFlowControlDepth	sont des entiers
+      FIN
+      
+      D3DPSHADERCAPS2_0 		est une structure
+      	Caps																			est un entier sans signe	
+      	DynamicFlowControlDepth, NumTemps, StaticFlowControlDepth, NumInstructionSlots	sont des entiers
+      FIN
+      
+      D3DCAPS9 				est une structure
+      	DeviceType																									est un entier sans signe
+      	AdapterOrdinal																								est un entier sans signe
+      	Caps, Caps2, Caps3																							sont des entiers sans signe
+      	PresentationIntervals																						est un entier sans signe
+      	CursorCaps																									est un entier sans signe
+      	DevCaps, PrimitiveMiscCaps																					sont des entiers sans signe
+      	RasterCaps, ZCmpCaps, SrcBlendCaps, DestBlendCaps, AlphaCmpCaps 											sont des entiers sans signe
+      	ShadeCaps, TextureCaps, TextureFilterCaps, CubeTextureFilterCaps, VolumeTextureFilterCaps 					sont des entiers sans signe
+      	TextureAddressCaps, VolumeTextureAddressCaps																sont des entiers sans signe
+      	LineCaps																									est un entier sans signe
+      	MaxTextureWidth, MaxTextureHeight, MaxVolumeExtent, MaxTextureRepeat, MaxTextureAspectRatio, MaxAnisotropy	sont des entiers sans signe
+      	MaxVertexW, GuardBandLeft, GuardBandTop, GuardBandRight, GuardBandBottom, ExtentsAdjust						sont des reels sur 4
+      	StencilCaps, FVFCaps, TextureOpCaps, MaxTextureBlendStages, MaxSimultaneousTextures							sont des entiers sans signe
+      	VertexProcessingCaps, MaxActiveLights, MaxUserClipPlanes, MaxVertexBlendMatrices, MaxVertexBlendMatrixIndex	sont des entiers sans signe
+      	MaxPointSize																								est un reel sur 4
+      	MaxPrimitiveCount, MaxVertexIndex, MaxStreams, MaxStreamStride												sont des entiers sans signe
+      	VertexShaderVersion, MaxVertexShaderConst, PixelShaderVersion												sont des entiers sans signe
+      	PixelShader1xMaxValue																						est un réel sur 4
+      	DevCaps2																									est un entier sans signe
+      	MaxNpatchTessellationLevel																					est un réel sur 4
+      	Reserved5																									est un entier sans signe
+      	MasterAdapterOrdinal, AdapterOrdinalInGroup, NumberOfAdaptersInGroup										sont des entiers sans signe
+      	DeclTypes, NumSimultaneousRTs, StretchRectFilterCaps														sont des entiers sans signe
+      	VS20Caps																									est un D3DVSHADERCAPS2_0
+      	PS20Caps																									est un D3DPSHADERCAPS2_0
+      	VertexTextureFilterCaps, MaxVShaderInstructionsExecuted, MaxPShaderInstructionsExecuted						sont des entiers sans signe
+      	MaxVertexShader30InstructionSlots, MaxPixelShader30InstructionSlots											sont des entiers sans signe
+      FIN
+      
+      D3DCOLORVALUE 					est une structure
+      	red, green, blue, alpha sont des reels sur 4	
+      FIN
+      
+      D3DLIGHT9 						est une structure
+      	Type										est un entier sans signe	
+      	Diffuse, Specular, Ambient 					sont des D3DCOLORVALUE
+      	Position_									est un D3DXVECTOR3
+      	Direction 									est un D3DXVECTOR3
+      	Range, Falloff								sont des reels sur 4
+      	Attenuation0, Attenuation1, Attenuation2	sont des reels sur 4
+      	Theta, Phi 									sont des reels sur 4
+      FIN
+      
+      D3DVECTOR 						est une structure
+      	x, y, z sont des reels sur 4	
+      FIN
+      
+      
+      D3DRECT 						est une structure
+      	x1, y1, x2, y2 sont des entiers
+      FIN
+      
+      _D3DMATRIX 						est une structure
+      	_11, _12, _13, _14 sont des reels sur 4	
+      	_21, _22, _23, _24 sont des reels sur 4	
+      	_31, _32, _33, _34 sont des reels sur 4	
+      	_41, _42, _43, _44 sont des reels sur 4	
+      FIN
+      
+      D3DVIEWPORT9 					est une structure
+      	X, Y, Width, Height	sont des entiers sans signe
+      	MinZ, MaxZ 			sont des reels sur 4
+      FIN
+      
+      D3DCLIPSTATUS9 					est une structure
+      	ClipUnion, ClipIntersection sont des entiers sans signe	
+      FIN
+      
+      D3DMATERIAL9 					est une structure
+      	Diffuse, Ambient, Specular, Emissive 	sont des D3DCOLORVALUE
+      	Power 									est un reel sur 4
+      FIN
+      
+      D3DVERTEXELEMENT9 				est une structure
+      	Stream, Offset						sont des entiers sur 2 sans signe	
+      	Type, Method, Usage, UsageIndex	 	sont des entiers sur 1 sans signe
+      FIN
+      
+      D3DDISPLAYMODE 					est une structure
+      	Width, Height, RefreshRate 	sont des entiers sans signe	
+      	Format 						est un entier sans signe
+      FIN
+      
+      D3DDEVICE_CREATION_PARAMETERS 	est une structure
+      	AdapterOrdinal				est un entier sans signe
+      	DeviceType					est un entier sans signe
+      	hFocusWindow				est un entier
+      	BehaviorFlags				est un entier sans signe
+      FIN
+      
+      D3DPRESENT_PARAMETERS 			est une structure
+      	BackBufferWidth, BackBufferHeight 	sont des entiers sans signe
+      	BackBufferFormat 					est un entier sans signe
+      	BackBufferCount						est un entier sans signe
+      	MultiSampleType						est un entier sans signe
+      	MultiSampleQuality					est un entier sans signe
+      	SwapEffect							est un entier sans signe
+      	hDeviceWindow						est un entier
+      	Windowed, EnableAutoDepthStencil	sont des booléens
+      	AutoDepthStencilFormat				est un entier sans signe
+      	Flags								est un entier sans signe
+      	FullScreen_RefreshRateInHz			est un entier sans signe
+      	PresentationInterval				est un entier sans signe
+      FIN
+      
+      D3DGAMMARAMP					est une structure
+      	red, green, blue			sont des tableaux fixes de 256 entiers sur 2 sans signe
+      FIN
+      
+      D3DVERTEXBUFFER_DESC			est une structure
+      	Format, Type, Usage, Pool	sont des entiers sans signe
+      	Size, FVF					sont des entiers sans signe
+      FIN
+      
+      D3DINDEXBUFFER_DESC				est une structure
+      	Format, Type, Usage, Pool	sont des entiers sans signe
+      	Size						est un entier sans signe
+      FIN
+      
+      D3DSURFACE_DESC					est une structure
+      	Format, Type, Usage, Pool	sont des entiers sans signe
+      	MultiSampleType				est un entier sans signe
+      	MultiSampleQuality			est un entier sans signe
+      	Width, Height				sont des entiers sans signe
+      FIN
+      
+      D3DVOLUME_DESC					est une structure
+      	Format, Type, Usage, Pool	sont des entiers sans signe
+      	MultiSampleType				est un entier sans signe
+      	MultiSampleQuality			est un entier sans signe
+      	Width, Height, Depth		sont des entiers sans signe
+      FIN
+      
+      D3DLOCKED_RECT					est une structure
+      	Pitch						est un entier
+      	pBits						est un entier systeme
+      FIN
+      
+      D3DBOX							est une structure
+      	Left, Top, Right, Bottom	sont des entiers sans signe
+      	Front, Back					sont des entiers sans signe
+      FIN
+      
+      D3DLOCKED_BOX					est une structure
+      	RowPitch, SlicePitch		sont des entiers	
+      	pBits						est un entier systeme
+      FIN
+      
+      D3DRANGE						est une structure
+      	Offset, Size				sont des entiers sans signe	
+      FIN
+      
+      D3DRECTPATCH_INFO				est une structure
+      	StartVertexOffsetWidth		est un entier sans signe	
+      	StartVertexOffsetHeight		est un entier sans signe	
+      	Width, Height, Stride 		sont des entiers sans signe
+      	Basis, Degree				sont des entiers sans signe
+      FIN
+      
+      D3DTRIPATCH_INFO				est une structure
+      	StartVertexOffsetWidth		est un entier sans signe	
+      	NumVertices					est un entier sans signe	
+      	Basis, Degree				sont des entiers sans signe
+      FIN
+      
+      D3DADAPTER_IDENTIFIER9			est une structure
+      	Driver						est une chaine asciiz sur MAX_DEVICE_IDENTIFIER_STRING
+      	Description					est une chaine asciiz sur MAX_DEVICE_IDENTIFIER_STRING
+      	DeviceName					est une chaine asciiz sur 32
+      	DriverVersion				est un entier sur 8 sans signe
+      	VendorId, DeviceId			sont des entiers sans signe
+      	SubSysId, Revision			sont des entiers sans signe
+      	DeviceIdentifier			est un guid
+      	WHQLLevel					est un entier sans signe
+      FIN
+      
+      D3DRASTER_STATUS				est une structure
+      	InVBlank					est un booléen	
+      	ScanLine					est un entier sans signe
+      FIN
+      
+      D3DRESOURCESTATS				est une structure
+      	bThrashing							est un booléen
+      	ApproxBytesDownloaded				est un entier sans signe
+      	NumEvicts, NumVidCreates			sont des entiers sans signe	
+      	LastPri, NumUsed, NumUsedInVidMem	sont des entiers sans signe	
+      	WorkingSet, WorkingSetBytes			sont des entiers sans signe	
+      	TotalManaged, TotalBytes			sont des entiers sans signe	
+      FIN
+      
+      D3DDEVINFO_RESOURCEMANAGER		est une structure
+      	stats						est un tableau de 8 D3DRESOURCESTATS		// tableau de D3DRTYPECOUNT D3DRESOURCESTATS
+      FIN
+      
+      D3DDEVINFO_D3DVERTEXSTATS		est une structure
+      	NumRenderedTriangles, NumExtraClippingTriangles	sont des entiers sans signe	
+      FIN
+      
+      D3DDEVINFO_VCACHE				est une structure
+      	Pattern, OptMethod			sont des entiers sans signe	
+      	CacheSize, MagicNumber		sont des entiers sans signe	
+      FIN
+      
+      D3DDEVINFO_D3D9PIPELINETIMINGS	est une structure
+      	VertexProcessingTimePercent, PixelProcessingTimePercent, OtherGPUProcessingTimePercent, GPUIdleTimePercent sont des reels sur 4
+      FIN
+      
+      D3DDEVINFO_D3D9INTERFACETIMINGS	est une structure
+      	WaitingForGPUToUseApplicationResourceTimePercent, WaitingForGPUToAcceptMoreCommandsTimePercent							sont des reels sur 4
+      	WaitingForGPUToStayWithinLatencyTimePercent, WaitingForGPUExclusiveResourceTimePercent, WaitingForGPUOtherTimePercent	sont des reels sur 4
+      FIN
+      
+      D3DDEVINFO_D3D9STAGETIMINGS		est une structure
+      	MemoryProcessingPercent, ComputationProcessingPercent	sont des reels sur 4
+      FIN
+      
+      D3DDEVINFO_D3D9BANDWIDTHTIMINGS	est une structure
+      	MaxBandwidthUtilized, FrontEndUploadMemoryUtilizedPercent, VertexRateUtilizedPercent	sont des reels sur 4
+      	TriangleSetupRateUtilizedPercent, FillRateUtilizedPercent								sont des reels sur 4
+      FIN
+      
+      D3DDEVINFO_D3D9CACHEUTILIZATION	est une structure
+      	TextureCacheHitRate, PostTransformVertexCacheHitRate	sont des reels sur 4
+      FIN
+      
+      D3DCOMPOSERECTDESC				est une structure
+      	X, Y, Width, Height			sont des entiers sur 2 sans signe	
+      FIN
+      
+      D3DCOMPOSERECTDESTINATION		est une structure
+      	SrcRectIndex, Reserved		sont des entiers sur 2 sans signe	
+      	X, Y						sont des entiers sur 2 sans signe	
+      FIN
+      
+      D3DPRESENTSTATS					est une structure
+      	PresentCount, PresentRefreshCount, SyncRefreshCount		sont des entiers sans signe	
+      	SyncQPCTime, SyncGPUTime								sont des entiers sur 8
+      FIN
+      
+      D3DDISPLAYMODEEX				est une structure
+      	Size, Width, Height, RefreshRate	sont des entiers sans signe	
+      	Format, ScanLineOrdering			sont des entiers sans signe	
+      FIN
+      
+      D3DDISPLAYMODEFILTER			est une structure
+      	Size, Format, ScanLineOrdering		sont des entiers sans signe		
+      FIN
+      
+      D3DXMESHDATA 			est une structure
+      	Type 	est un entier sans signe
+      	ppvMesh est un entier systeme // (ID3DXMesh, ID3DXPMesh, ID3DXPatchMesh)	
+      FIN
+      
+      D3DXMESHCONTAINER		est une structure
+      	Name				est un entier systeme
+      	MeshData			est un D3DXMESHDATA
+      	pMaterials			est un entier systeme
+      	pEffects			est un entier systeme
+      	NumMaterials		est un entier sans signe
+      	Adjacency			est un entier systeme
+      	pSkinInfo			est un entier systeme
+      	pNextMeshContainer	est un entier systeme
+      FIN
+      
+      D3DXKEY_VECTOR3			est une structure
+      	Time		est un reel sur 4
+      	Value		est un D3DXVECTOR3
+      FIN
+      
+      D3DXKEY_QUATERNION		est une structure
+      	Time		est un reel sur 4
+      	Value		est un D3DXQUATERNION
+      FIN
+      
+      D3DXKEY_CALLBACK		est une structure
+      	Time			est un reel sur 4
+      	pCallbackData	est un entier systeme
+      FIN
+      
+      D3DXFRAME				est une structure
+      	Name					est un entier systeme
+      	TransformationMatrix	est un d3dxmatrix
+      	MeshContainer			est un entier systeme
+      	pFrameSibling			est un entier système
+      	pFrameFirstChild		est un entier système
+      FIN
+      
+      D3DXTRACK_DESC			est une structure
+      	Priority			est un entier sans signe
+      	Weight, Speed 		sont des reels sur 4
+      	Position 			est un reel sur 8
+      	Enable				est un booléen
+      FIN
+      
+      D3DXEVENT_DESC			est une structure
+      	Type 				est un entier sans signe
+      	Track 				est un entier sans signe
+      	StartTime, Duration	sont des reels sur 8
+      	Transition			est un entier sans signe
+      	Union_Weight_Speed_Position_Enable est un variant
+      FIN
+      
+      
+      D3DXFONT_DESCA 					est une structure
+      	Height												est un entier
+      	Width, Weight										sont des entiers sans signe
+      	MipLevels											est un entier sans signe
+      	Italic 												est un booléen
+      	Charset, OutputPrecision, Quality, PitchAndFamily 	sont des entiers sur 1 sans signe
+      	FaceName											est une chaine asciiz sur LF_FACESIZE
+      FIN
+      
+      D3DXFONT_DESCW 					est une structure
+      	nHeight												est un entier
+      	nWidth, nWeight										sont des entiers sans signe
+      	nMipLevels											est un entier sans signe
+      	bItalic 												est un booléen
+      	nCharset, nOutputPrecision, nQuality, nPitchAndFamily 	sont des entiers sur 1 sans signe
+      	sFaceName											est une chaine UNICODE sur LF_FACESIZE
+      FIN
+      
+      D3DXRTS_DESC					est une structure
+      	Width, Height				sont des entiers sans signe
+      	Format 						est un entier sans signe
+      	DepthStencil				est un booléen
+      	DepthStencilFormat			est un entier sans signe
+      FIN
+      
+      STD3DXRTE_DESC					est une structure
+      	Size, MipLevels				sont des entiers sans signe
+      	Format 						est un entier sans signe
+      	DepthStencil				est un booléen
+      	DepthStencilFormat			est un entier sans signe
+      FIN
+      
+      TEXTMETRICA						est une structure
+      	tmHeight, tmAscent, tmDescent, tmInternalLeading, tmExternalLeading, tmAveCharWidth, tmMaxCharWidth, tmWeight, tmOverHang, tmDigitizedAspectX, tmDigitizeAspectY sont des entiers
+      	tmFirstChar, tmLastChar, tmDefaultChar, tmBreakChar, tmItalic, tmUnderlined, tmStruckOut, tmPitchAndFamily, tmCharset sont des entiers sur 1 sans signe
+      FIN
+      
+      TEXTMETRICW						est une structure
+      	tmHeight, tmAscent, tmDescent, tmInternalLeading, tmExternalLeading, tmAveCharWidth, tmMaxCharWidth, tmWeight, tmOverHang, tmDigitizedAspectX, tmDigitizeAspectY sont des entiers
+      	tmFirstChar, tmLastChar, tmDefaultChar, tmBreakChar sont des entiers sur 2 sans signe
+      	tmItalic, tmUnderlined, tmStruckOut, tmPitchAndFamily, tmCharset sont des entiers sur 1 sans signe
+      FIN
+      
+      
+      D3DXEFFECT_DESC			est une structure
+      	Creator								est un entier systeme
+      	Parameters, Techniques, Functions 	sont des entiers sans signe
+      FIN
+      
+      D3DXPARAMETER_DESC		est une structure
+      	Name, Semantic							sont des entiers systeme
+      	Class_, nType							sont des entiers sans signe
+      	Rows, Columns, Elements, Annotations	sont des entiers sans signe
+      	StructMembers, Flags, Bytes_			sont des entiers sans signe
+      FIN
+      
+      D3DXTECHNIQUE_DESC		est une structure
+      	Name						est un entier systeme
+      	Passes, Annotations			sont des entiers sans signe
+      FIN
+      
+      D3DXPASS_DESC			est une structure
+      	Name										est un entier systeme
+      	Annotations									est un entier sans signe
+      	VertexShaderFunction, PixelShaderFunction	sont des entiers systeme
+      FIN
+      
+      D3DXFUNCTION_DESC		est une structure
+      	Name			est un entier systeme	
+      	Annotations		est un entier sans signe
+      FIN
+      
+      
+      
+      D3DXATTRIBUTERANGE				est une structure
+      	AttribId, FaceStart, FaceCount, VertexStart, VertexCount	sont des entiers sans signe	
+      FIN
+      
+      D3DXMATERIAL					est une structure
+      	MatD3D					est un D3DMATERIAL9
+      	pTextureFilename		est un entier systeme
+      FIN
+      
+      D3DXEFFECTDEFAULT				est une structure
+      	pParamName				est un entier systeme
+      	Type, NumBytes			sont des entiers sans signe
+      	pValue					est un entier systeme
+      FIN
+      
+      D3DXEFFECTINSTANCE				est une structure
+      	pEffectFilename			est un entier systeme
+      	NumDefauls				est un entier sans signe
+      	pDefaults				est un entier systeme
+      FIN
+      
+      D3DXATTRIBUTEWEIGHTS			est une structure
+      	Position, Boundary, Normal, Diffuse, Specular 	sont des reels sur 4	
+      	TexCoord 										est un tableau fixe de 8 reels sur 4
+      	Tangent, Binormal								sont des reels sur 4	
+      FIN
+      
+      D3DXWELDEPSILONS				est une structure
+      	Position, BlendWeights, Normal, PSize, Specular, Diffuse	sont des reels sur 4
+      	TexCoord 													est un tableau fixe de 8 reels sur 4
+      	Tangent, Binormal, TessFactor								sont des reels sur 4
+      FIN
+      
+      D3DXBONECOMBINATION				est une structure
+      	AttribId, FaceStart, FaceCount, VertexStart, VertexCount sont des entiers sans signe
+      	BoneId													 est un entier systeme
+      FIN
+      
+      D3DXPATCHINFO					est une structure
+      	PatchType, Degree, Basis	sont des entiers sans signe
+      FIN
+      
+      D3DXSHMATERIAL					est une structure
+      	Diffuse							est un d3dcolorvalue
+      	bMirror, bSubSurf				sont des booléens
+      	RelativeIndexOfRefraction		est un reel
+      	Absorption, ReducedScattering	sont des D3DCOLORVALUE
+      FIN
+      
+      D3DXSHPRTSPLITMESHVERTDATA		est une structure
+      	UVertRemap, USubCluster, UcVertStatus sont des entiers sans signe		
+      FIN
+      
+      D3DXSHPRTSPLITMESHCLUSTERDATA	est une structure
+      	UVertStart, UVertLength, UFaceStart, UFaceLength, UClusterStart, UClusterLength	sont des entiers sans signe
+      FIN
+      
+      XFILECOMPRESSEDANIMATIONSET		est une structure
+      	CompressedBlockSize			est un entier sans signe
+      	TicksPerSec					est un reel sur 4
+      	PlaybackType				est un entier sans signe
+      	BufferLength				est un entier sans signe	
+      FIN
+      
+      D3DXINTERSECTINFO				est une structure
+      	FaceIndex est un entier sans signe	
+      	U, V, Dist sont des reels sur 4
+      FIN
+      
+      
+      
+      D3DXMACRO					est une structure
+      	Name, Definition	sont des entiers systeme	
+      FIN
+      
+      D3DXSEMANTIC				est une structure
+      	Usage, UsageIndex	sont des entiers sans signe	
+      FIN
+      
+      D3DXFRAGMENT_DESC			est une structure
+      	Name				est un entier systeme
+      	Target				est un entier sans signe	
+      FIN
+      
+      D3DXCONSTANTTABLE_DESC		est une structure
+      	Creator				est un entier systeme
+      	Version, Constants 	sont des entiers sans signe
+      FIN
+      
+      D3DXCONSTANT_DESC			est une structure
+      	RegisterSet, RegisterIndex, RegisterCount	sont des entiers sans signe
+      	Class_, Type								sont des entiers sans signe
+      	Rows, Columns, Elements, StructMembers		sont des entiers sans signe
+      	Bytes_										est un entier sans signe
+      	DefaultValue								est un entier systeme
+      FIN
+      
+      D3DXSHADER_CONSTANTTABLE	est une structure
+      	Size, Creator, Version, Constants, ConstantInfo, Flags, Target sont des entiers sans signe	
+      FIN
+      
+      D3DXSHADER_CONSTANTINFO		est une structure
+      	Name	est un entier sans signe
+      	RegisterSet, RegisterIndex, RegisterCount, Reserved sont des entiers sur 2 sans signe
+      	TypeInfo, DefaultValue sont des entiers sans signe
+      FIN
+      
+      D3DXSHADER_TYPEINFO			est une structure
+      	Class_, Type, Rows, Columns, Elements, StructMembers sont des entiers sur 2 sans signe	
+      	StructMemberInfo est un entier sans signe
+      FIN
+      
+      D3DXSHADER_STRUCTMEMBERINFO	est une structure
+      	Name, TypeInfo	sont des entiers sans signe	
+      FIN
+      
+      
+      POINTFLOAT 			est une structure
+      	x, y sont des reels sur 4
+      FIN
+      
+      GLYPHMETRICSFLOAT 	est une structure
+      	gmfBlackBoxX, gmfBlackBoxY sont des reels sur 4
+      	gmfptGlyphOrigin est un pointfloat
+      	gmfCellIncX, gmfCellIncY sont des reels sur 4
+      FIN
+      
+      
+      D3DXIMAGE_INFO	est une structure
+      	Width, Height, Depth, MipLevels sont des entiers sans signe	
+      	Format 							est un entier sans signe
+      	ResourceType, ImageFileFormat	sont des entiers sans signe
+      FIN
+      
+      PALETTEENTRY	est une structure
+      	red, green, blue, Flags sont des entiers sur 1 sans signe
+      FIN
+      
+      
+      POINT			est une structure
+      	x, y		sont des entiers
+      FIN
+      
+      SCREENRES 		est une structure
+      	Width, Height	sont des entiers
+      	bBitsPerPixel	est un entier sur 1 sans signe
+      	RefreshRate		est un entier
+      FIN
+      
+      
+      D3DXF_FILELOADRESOURCE	est une structure
+      	hModule			est un entier
+      	lpName, lpType	sont des entiers systeme
+      FIN
+      
+      D3DXF_FILELOADMEMORY	est une structure
+      	lpMemory		est un entier systeme	
+      	dSize			est un entier systeme
+      FIN
+      
+      
+      // </Structures>
+     type : 720896
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x10d999010f48b676
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

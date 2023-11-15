@@ -1,0 +1,149 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IDirect3DVolume9
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19ddc94d0e4a2f3b
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      IDirect3DVolume9 est une classe
+      	un objet IUnknown
+      	
+      Fin
+      
+      constant
+      	
+      	// Méthodes de l'interface IDirect3DVolume9 (VTABLE)
+      	IDirect3DVolume9_GetDevice				= ::IUnknown___IDXBASE + 1
+      	IDirect3DVolume9_SetPrivateData			= ::IUnknown___IDXBASE + 2
+      	IDirect3DVolume9_GetPrivateData			= ::IUnknown___IDXBASE + 3
+      	IDirect3DVolume9_FreePrivateData		= ::IUnknown___IDXBASE + 4
+      	IDirect3DVolume9_GetContainer			= ::IUnknown___IDXBASE + 5
+      	IDirect3DVolume9_GetDesc				= ::IUnknown___IDXBASE + 6
+      	IDirect3DVolume9_LockBox				= ::IUnknown___IDXBASE + 7
+      	IDirect3DVolume9_UnlockBox				= ::IUnknown___IDXBASE + 8
+      	IDirect3DVolume9___IDXBASE				= ::IUnknown___IDXBASE + 8	
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863867153590726459
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3D9.IID_IDirect3DVolume9
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863867153590791995
+     type_code : 28
+     code : |1+
+      Procédure Destructeur()
+      
+     type : 655360
+   -
+     name : GetContainer
+     procedure_id : 1866836213037657506
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetContainer
+      Procédure GetContainer(iid_ est un iid, ppContainer est un entier système)
+      renvoyer :call(IDirect3DVolume9_GetContainer, &iid_, &ppContainer)
+     type : 458752
+   -
+     name : GetDesc
+     procedure_id : 1866836213037723151
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDesc
+      Procédure GetDesc(Desc est un D3DVolumE_DESC)
+      RENVOYER :CALL(IDirect3DVolume9_GetDesc, &Desc)
+     type : 458752
+   -
+     name : LockBox
+     procedure_id : 1866836367656581766
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode LockBox
+      Procédure LockBox(LockedVolume est un D3DLOCKED_BOX, Box est un d3dbox, Flags est un entier sans signe)
+      RENVOYER :CALL(IDirect3DVolume9_LockBox, &LockedVolume, &Box, Flags)
+     type : 458752
+   -
+     name : UnlockBox
+     procedure_id : 1866836393426456569
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UnlockBox
+      Procédure UnlockBox()
+      RENVOYER :CALL(IDirect3DVolume9_UnlockBox)
+     type : 458752
+   -
+     name : FreePrivateData
+     procedure_id : 1866836552342904793
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode FreePrivateData
+      Procédure FreePrivateData(GUID est un guid)
+      RENVOYER :CALL(IDirect3DVolume9_FreePrivateData, &GUID)
+     type : 458752
+   -
+     name : GetDevice
+     procedure_id : 1866836552342970391
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDevice
+      Procédure GetDevice(pclDevice est un IDirect3DDevice9 dynamique)
+      
+      	HRESULT est un entier système
+      	ppvDevice est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DVolume9_GetDevice, &ppvDevice)
+      	
+      	// Allocation
+      	__BindInterface(pclDevice, ppvDevice, IDirect3DDevice9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetPrivateData
+     procedure_id : 1866836552343035974
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetPrivateData
+      Procédure GetPrivateData(GUID est un guid, pData est un entier système, SizeOfData est un entier sans signe)
+      RENVOYER :CALL(IDirect3DVolume9_GetPrivateData, &GUID, pData, &SizeOfData)
+     type : 458752
+   -
+     name : SetPrivateData
+     procedure_id : 1866836552343101557
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetPrivateData
+      Procédure SetPrivateData(GUID est un guid, pData est un entier système, SizeOfData est un entier sans signe, Flags est un entier sans signe)
+      RENVOYER :CALL(IDirect3DVolume9_SetPrivateData, &GUID, pData, SizeOfData, Flags)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000d91b415
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,119 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IDirect3DSurface9
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19ddc9000e400455
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      IDirect3DSurface9 est une classe
+      	un objet IDirect3DResource9
+      	
+      Fin
+      
+      constant
+      	
+      	// Méthodes de l'interface IDirect3DSurface9 (VTABLE)
+      	IDirect3DSurface9_GetContainer			= ::IDirect3DResource9___IDXBASE + 1
+      	IDirect3DSurface9_GetDesc				= ::IDirect3DResource9___IDXBASE + 2
+      	IDirect3DSurface9_LockRect				= ::IDirect3DResource9___IDXBASE + 3
+      	IDirect3DSurface9_UnlockRect			= ::IDirect3DResource9___IDXBASE + 4
+      	IDirect3DSurface9_GetDC					= ::IDirect3DResource9___IDXBASE + 5
+      	IDirect3DSurface9_ReleaseDC				= ::IDirect3DResource9___IDXBASE + 6
+      	IDirect3DSurface9___IDXBASE				= ::IDirect3DResource9___IDXBASE + 6
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863866822877578325
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IDirect3DResource9(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3D9.IID_IDirect3DSurface9
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863866822877643861
+     type_code : 28
+     code : |1+
+      Procédure Destructeur()
+      
+     type : 655360
+   -
+     name : GetContainer
+     procedure_id : 1866835611741440258
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetContainer
+      Procédure GetContainer(iid_ est un iid, ppContainer est un entier système)
+      renvoyer :call(IDirect3DSurface9_GetContainer, &iid_, &ppContainer)
+     type : 458752
+   -
+     name : GetDesc
+     procedure_id : 1866835620331442555
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDesc
+      Procédure GetDesc(Desc est un D3DSURFACE_DESC)
+      RENVOYER :CALL(IDirect3DSurface9_GetDesc, &Desc)
+     type : 458752
+   -
+     name : LockRect
+     procedure_id : 1866835628921444633
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode LockRect
+      Procédure LockRect(LockedRect est un D3DLOCKED_RECT dynamique, Rect est un rect dynamique, Flags est un entier sans signe)
+      RENVOYER :CALL(IDirect3DSurface9_LockRect, (LockedRect = null ? null sinon &LockedRect), (Rect = null ? null sinon &Rect), Flags)
+     type : 458752
+   -
+     name : UnlockRect
+     procedure_id : 1866835637511446695
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode UnlockRect
+      Procédure UnlockRect()
+      RENVOYER :CALL(IDirect3DSurface9_UnlockRect)
+     type : 458752
+   -
+     name : GetDC
+     procedure_id : 1866835646101448898
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDC
+      Procédure GetDC(hDC est un entier)
+      RENVOYER :CALL(IDirect3DSurface9_GetDC, &hDC)
+     type : 458752
+   -
+     name : ReleaseDC
+     procedure_id : 1866835654691450929
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ReleaseDC
+      Procédure ReleaseDC(hDC est un entier)
+      RENVOYER :CALL(IDirect3DSurface9_ReleaseDC, hDC)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000befb29e
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

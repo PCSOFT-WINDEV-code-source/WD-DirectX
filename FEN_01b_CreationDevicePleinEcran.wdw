@@ -1,0 +1,281 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_01b_CreationDevicePleinEcran
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_01b_CreationDevicePleinEcran
+ identifier : 0x29ec6e2dc819a87c
+ internal_properties : CAAAAAgAAABH4Hh2VKAeVBaE9k7RIFbHD61SfTLES20e50iUdfNs9/W9bnnbZfT9gJ85FZoqqCDvTbFukkv2xppQ6wcpV55Pwzlv7XMCW2NlHC74HyfT76kJxnwpTzYFR8RbOLwSLC/ovHY5JJrZVDSZbFlD3YEHC+Eq3lB0Q+vBxxLjIlLAaB6mYyKp6OKyRzyOwSJYFBELfmug6C+4uPEEUb2sfjDyNEJFJYSRl14yon3VGhVg+jZdJjO4h6ApQaKeexepcXAa+fw2kDJ7E+8wnIKjgNKucdxrCHrFQhCqkvg38bSzMyO0a5ch1OFsTypEfVa/LgQI+oZGj/vyAX7ZYWh4XS/cXwCkEpirMEcTgNAjgcTy0TTxYj86X4/pvOMS8GXxyBbqUM8CYCWR0MQTDAVZdEGEvp1GKwtfncsM11EYCgX530gCS4sGyDo02EvOpBExYTFdKRZCPOeWKCVBxurYfm5f1+yWASU0FVX3m2CKow5CJk/AGk3b2RcP6wp26eCWTV8XOVciat1yD/8Wj8aUrqxqE8nevZ6eGM7bYmPoDfpgmy22EmWIsjXbY1WU7H/aCADcxsCY9FAF0FNJ0bk3wNiY8C6G5d3rTL88poEChgu4Aiu4Jzly3mCbjYOCIdX2Tjp8uvK4UlNGImaZ+SaQmBNwsK0Yu2uUxQUEFw4sMett9yE6JgvvidsZ6pGVBMhc2hfLLuMdr+wRGQXMqusrHo7N0v/3I/iE58bPUIgVnsrbw6nFlkOaCn1LYQLY8AsTUZOf5wI54ZgDlXyo5xUL//WLe4mSIV6RobK3f+vA4eiR8YYurlpNoB3nnrIf3L5WliNdjHsSy/ZgLAFILOdidcKTjLM5mlbUNxtkIzb52lHHn1tYnh3/7dJfjueYup1uGiJLOuXLCR8fmej6TJg2iJ9Q1/uF23RIquINayGf1wOXPMHeKaG6vq8xrnU/opfK8th388N56fNE1MkNG1jhRwRZAJpJCz4BDtUJm4b8nqraPIESwcjqnoWHeDcVIVJk5RbSeqn3V9cEkxJRoHgIM/cOz8J4+IaT6zkDgTblnzGXKqFhpmc9JyA6ekzo0Z59B/2GU/iaU2iABHJLHH+F+PVkHX802t/BJK4Smgrw73KTcIshwlMJUyoBTeYNY7uNj2beNhhYdnXDyaQA694/tIgx+NDrvPIR8cnYA6vAHD95u2/AdMPQSuMb01GFVpreLTI37clcfQJRfQZOfTZ+YiUAm/1ZHQE1Rxys4vVNNRd5FcdFKMfnxRCx3TnlQhfXK1da8zTR7UANCBUjxmL+NnZrPvVENdC6Tzx2PtRO+a74uu7tNjE=
+ properties :
+  width : 794
+  height : 574
+ controls :
+  -
+    name : BTN_Echap
+    identifier : 0x2c7667286488c801
+    internal_properties : CAAAAAgAAABSGQWVlE3Jji3SeAbmnL8oWRYAjfzhvSUhkboKCgDzku7Gsq/p3M67NMYMF2xvHz/nmuS6ZWt+u8D0ZytPmHBdmvORyn613ARfbNJEb1xd01iIEJM+OgWx7ADjj6JdCeHT/rCQccTt6HaaL7TdNVUQIgtQPOoj0pPbdD+NGRBA9jIVhjGXSd6NYzPqyPYa7YkLBhnprKP9CAMtj+k5DgSdbugzDdbk/Vbeuzagxw+9hmmZ6yfijv/2ObmgatXIsASAv8TnoH+/d8zQVY5MGNu3x7+EfNZ81QIBWFgxrlnjuMCTdFVNfX5BWesjrOkxSHlFaYREOA6BBxAEjaV4hvnYghHdq5p1CJah1btC7DwaMIWxHQ2lRaYRTxi90TumAFlfFxrjHbsoMxDFT8njOJGGkW0LAnUMSX6L8oCTHwjmIpNNcaupKeCHfehnWVwM/hHcgSMXZPo8F0QJ1lKdwroFa9S1KD4r3bBLai8DHco06yxfFpCDhPmb66qk6zZVDGE1aEGnFmOwuMWOBtodxcn9jJ2NQdT7uRmLHpY4RGRx9s+y/eSKKwqbwLSvyK7XTVjPiZxpZ0B3/VVc2uGPxhCVLLM2Y5GtbBKEYDp4/c7Hlka429/lugjQZfFVaGN9uZPUqsnjxDRR167pSSlya2MSCcq0vMAJwigQ50Dw8m1uotF3tlYjwuhw6CP5RL/k
+    properties :
+     x : 6
+     y : -30
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAADQZyvpRjJZltgKBVFD+SKMukTEU1n2G2jmPSjnx1ZKdSF2vB36egNKcReVrz/xwpIZdIpZoyUu0CjPxu+MpGLAedmE/39iAmJIcu72BpKoWkpseLXy2lnJGPSMFw==
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : IMG_DX
+    identifier : 0x29ec6e2dc81ba87c
+    internal_properties : CAAAAAgAAAA2AHlwLoN/ecfLAdidjOLiDBnzVLJGd/5xjQRNS0kYUq7WOa3TrftiCUYgRMj7irWEpBKE90RT1zvWykHFEvEDE86dmJexivtWvnL7MZCwuUdwKMJcbCIr3PjWZOQl/LQ3mI+QBpCx7X88G+wSDXvC4lEKTOTLorAO10/zyBXi04n0clvRs2hO45hDjLvBaxULvRB5B6YELXuk2LOypcKVQJM0lXuG2yXf+53rNjI7T4/GkvDB0/GT3yb60BpX9oeV1uWQo7QoTX/pWR5TBuq4o6YFKztIKrQ33PLVgVR2WNRKWLWA2arzOSq/7mZltHag8MUzjotjpMWLJzfDJpI6FizF+GWE8FebevnQ3CMfkU6OZjrEjNTUM4c3hznxz7dKmicbX7Eptg/6naKKoZpAIwl4xtK3IkQxbOHMKDgiLlG7urqDMRSVZbNOTINko8NpKKcGa6K9qV3cpO2k8SirBHlxJqQw1d/DG9jYUR4aqB76UlGzZZkRegF3QgKrm0IiVhFgRPOzduPgyJ8Py5aIqoxAcZin8J92n1dc22YmT3bq7ZppnUTHtTOGuoqef6Qyu6BOF/lMpgLvorXAhQ/IHvcIyfxhDW0tmcFiug+oOEW2Yiluohe7Roo7Zovq54tgvq2S31b0z+0PlXJvSi0nsjMzfqTj3ZXM61+59C1XC5S3OaIm/wIS85iWZgHH0KDyEQ8L6VWTg+QWsdySke2PqD4PYH23qF41OJFilJjMHTA=
+    properties :
+     width : 794
+     height : 574
+    type : 8
+    code_elements :
+     internal_properties : CAAAAAgAAABTS1KUMsKEueZIrzi+5N7R3akYGWJAlkbaVwdONsGnrL47f9nYXWxZoysmslxA2QbdGB9/9561D4Yl9GxZswLmj+fA+zAphJZnT3WdLjZVmxdS6oC2G7ntwgRSR7/m
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         //Exécute le traitement défini dans le modèle
+         ExécuteAncêtre
+        type : 14
+      -
+        code : |1-
+         //Exécute le traitement défini dans le modèle
+         ExécuteAncêtre
+        type : 18
+     templates :
+      -
+        name : IMG_DX
+        identifier : 0x1543d3fb36832623
+        code_elements :
+         internal_properties : CAAAAAgAAABzQSIYiU7oi5WJNn+eJR54HUHApLdzO1lvMNzI92/kWZx/cLZ3vVtgxLS0OvAOY/1tAspFE7rZ8pmrsOZ0gSLXPBHGvoLAnXRXoRUjvi9Hv09sUx36J2s1MWApyzBinou2Xec/FJXz/VHcJntVRE6mSKuwvoBaZLmrDqkxEppKLGcgo2SvLUmlqssbzgi/
+         type_code : 8
+         p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x29ec6e2dc81ca87c
+  internal_properties : CAAAAAgAAAD7S+2GOLjEeheq9Y6YZGIRPpLnwB8KUS2je4S4X5oxSGrv51WBBaVxxbk/BTEdUwW0fnnvlhQNIBAuQTAO0S9+S8FMTvDhqkS1JydqFJBfHlbZSFzBkZAjjJ5aIH/cuMnF4Pme57TAyYvjnlkzTJmN5UX9hu+BEl3AsIsso5gsz3oX/KHp1ai/xWZCb54MlUFXdWmT2EOpULKqea/LH9EOlTkaiWsV2aM2/FfXQjTSY3NhAR6zEzKHYKVJwiZULchG0D4LNvRbPifZJPDMmlF6ptz+Rg0QN6SXG5jU7HifIzmkonwDFnOJQw==
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAC+9uhLN8i+n3Blheuv1bHLUMSc+WjkXnnqrgK2oFpcFi3GvZzlISmTuqQsHLXmBFnDjoJja95W9fYDTj9DuWluuCK/qeGQkzsBYIcfO1lgi6pfMTvo0v6TrtHi+Q==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAAu58UGYTaqq0VAg+y3uvRhOpypq7r2386+NtQ9NSrU5bZQT1JK+BIAd7ExZ2aArpvZUlizMLNY9qjNF9sn/jiTBhyE5b2945vmpgXnJLUiQYdDETKBnXlWNI7t1pChuqUd3jpOUd0PLPS7hRBsaJzxInWeR94J2fGUTsHl49vWjp/YNe4zba5PsNPjJkENuftq
+     code : |1+
+      
+      //
+      // Cette fenêtre permet de créer un "device" Direct3D
+      //
+      
+      // Objets
+      gpclD3D				est un IDirect3D9 dynamique				// Objet de base permettant de créer un "device"
+      gpclD3DDevice 		est un IDirect3DDevice9 dynamique		// Objet de manipulation du "device"
+   -
+     code : |1-
+      
+      // Pour fermer la fenêtre, il faudra appuyer sur ALT+F4
+      si pas EnModeTestAutomatique alors info("Pour terminer, appuyez sur ALT+F4")
+      
+      // Initialisation de Direct3D
+      si D3DInit() ALORS
+      	
+      	// En plein écran, il est conseillé de cacher le curseur de la souris
+      	CurseurAffiche(faux)
+      	
+      	// Démarre le rendu
+      	D3DAffiche()
+      sinon
+      	
+      	SI EnModeTestAutomatique ALORS
+      		TestEcritRésultat(terInfo, "DirectX n'est pas disponible sur cette machine")
+      		Ferme
+      		RETOUR
+      	FIN
+      	
+      	erreur("Impossible d'initialiser Direct3D")
+      	ferme()
+      FIN
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     internal_properties : CAAAAAgAAADj1fohzV5m1t/sDyp8B2h5G22crCgNwxP3qrs4+FVPZwFkFmBrCNm9+MODxNDetW5/yrqw0DS+cDI5fBHM5JKwWY2wx+GAFHTYmrZgQlZstve1hK/2b4JzZEQRqOOVK9CxkXMtbl+myowu34Q=
+     code : |1-
+      
+      // Restaure la résolution d'origine
+      SysRestaureRésolutionEcran()
+      
+      // Réaffiche le curseur de la souris 
+      CurseurAffiche(Vrai)
+     type : 2
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : D3DInit
+     internal_properties : CAAAAAgAAABsimSHDPYiQ9BUKZ7+oNnGUSFcLbSEHRbof1kMNVyze889UUM/rtam9f2CiUMaYul20rQSiydI6xKjIgBKcgFAQV3TEpVXoVYhybnhA2aNVoNkU62+l0yySJ0/PKVOhmZlLa2DiL1pkTLo0++PekM5U7Jfthj5vPBO1gXS0H3Bh+hSV7YH0cWG2cw/Us0Ysl9ObhSGObNppgIz2vAmSqfIuzwNx1DGw67M0dbqcXsBIMZEw2qc0dryYbG/V5bhGw==
+     procedure_id : 1867989089630267516
+     type_code : 14
+     code : |1-
+      // Résumé : Initialise Direct3D
+      Procédure D3DInit()
+      
+      	stD3DPP 		est un D3DPRESENT_PARAMETERS
+      		
+      	// Création de l'objet Direct3D
+      	gpclD3D = Direct3DCreate9(D3D_SDK_VERSION)
+      	
+      	// Vérifie si l'objet Direct3D a pu être créé
+      	SI gpclD3D = Null ALORS
+      		RENVOYER Faux	
+      	FIN
+      	
+      	// Change la résolution de l'écran
+      	SysChangeRésolutionEcran(800, 600, pD3DUtils.gstResolution:bBitsPerPixel, pD3DUtils.gstResolution:RefreshRate)
+      			
+      	// Modifie les dimensions et la position de la fenêtre
+      	mafenetre..x = 0
+      	mafenetre..Y = 0
+      	mafenetre..Largeur = 800
+      	mafenetre..hauteur = 600
+      	
+      	// Passe la fenêtre en avant-plan
+      	MaFenêtre..Visible = vrai
+      	fenetat(MaFenêtre, actifdevant)
+      	fenetat(MaFenêtre, dessustout)
+      	
+      	// Paramétrage de la structure utilisée pour créer un "device" Direct3D
+      	stD3DPP:Windowed = faux														// Mode plein écran
+      	stD3DPP:hDeviceWindow = handle(MaFenêtre)									// C'est le champ image qui recevra les informations
+      	stD3DPP:BackBufferFormat = D3DFMT_X8R8G8B8									// 32bits
+      	stD3DPP:BackBufferWidth = 800												// Largeur de l'écran
+      	stD3DPP:BackBufferHeight = 600												// Hauteur de l'écran
+      	stD3DPP:BackBufferCount = 1							
+      	stD3DPP:SwapEffect = D3DSWAPEFFECT_DISCARD							
+      	stD3DPP:FullScreen_RefreshRateInHz = pD3DUtils.gstResolution:RefreshRate									
+      	
+      	// Création du "device" Direct3D
+      	// On utilise ici l'écran par défaut (D3DADAPTER_DEFAULT) et un "device" matériel (D3DDEVTYPE_HAL)
+      	si failed(gpclD3D:CreateDevice(D3DADAPTER_DEFAULT, D3DDEVTYPE_HAL, handle(mafenetre), D3DCREATE_HARDWARE_VERTEXPROCESSING, stD3DPP, gpclD3DDevice)) _ou_ gpclD3DDevice = null ALORS
+      		renvoyer faux
+      	FIN
+      	
+      renvoyer vrai
+     type : 458752
+   -
+     name : D3DAffiche
+     internal_properties : CAAAAAgAAAAB4tVbOAtAgfq2jejDdq1MceKLJEFMpKn6Ix1vG++QXsy4zLpo0nyUX/nsdx4dKKUgz8Lp+dYO7Ba7u9gakMRAAKasvdc93Wi6dTww64sK48rHUkbdj+Q9lXWRbaKh7nX3T+ixCgv7IldprB14/6Elw9H8TuDkUL0L7YxKm9wHOmNrOtvDMMQSeX4uljWPGs22/5bczihcQSBuYJ84s6/mm5WPMtxyyECnw4adEqyoQ5lhKBQ+kOIUMfaV3no=
+     procedure_id : 1867989089630333052
+     type_code : 14
+     code : |1-
+      // Résumé : Rendu et affichage du "device" Direct3D
+      // Procédure automatique :
+      // La procédure est exécutée manuellement, lors d'un appel dans le code
+      // Elle sera répétée en boucle, en attendant  entre chaque appel
+      // Chaque appel suivant exécute une seule fois la procédure, sans timer
+      // 
+      Procédure D3DAffiche()
+      
+      	// Si le "device" Direct3D est invalide, on sort
+      	si gpclD3DDevice = null alors retour
+      	
+      	// Efface le "backbuffer" avec une couleur bleue
+      	gpclD3DDevice:Clear(0, null, D3DCLEAR_TARGET, D3DCOLOR_XRGB(0, 0, 255), 1.0, 0.0)
+      	
+      	// Démarre la scène
+      	si SUCCEEDED(gpclD3DDevice:BeginScene()) ALORS
+      		
+      		// Le rendu des objets de la scène s'effectuera ici
+      		
+      		// Fin de la scène
+      		gpclD3DDevice:EndScene()
+      	FIN
+      	
+      	// Affichage du "backbuffer"
+      	gpclD3DDevice:Present(null, null, null, null)
+     type : 458752
+  templates :
+   -
+     name : FEN_01b_CreationDevicePleinEcran
+     identifier : 0x1543d3fb36822623
+     code_elements :
+      internal_properties : CAAAAAgAAADQDhiBbh065wxsvFfu0Sik+NzOemqxAp7OoaWWefWCQsTxeJNtSf/B919R9pg97VZzgPFM/GnXzU4iNPzMgArEsy4Df67kb/6gUTgUjefW0EopbzSdxhC39/rVTmCWjaeVzD/xEYnUo+izctfRVNZb
+      type_code : 1
+      p_codes :
+       -
+         code : |1-
+          
+       -
+         code : |1-
+          
+         type : 34
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+       -
+         code : |1-
+          
+         type : 2
+       -
+         code : |1-
+          
+         type : 11
+       -
+         code : |1-
+          
+         type : 12
+       -
+         code : |1-
+          
+         type : 17
+       -
+         code : |1-
+          
+         type : 13
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAAD41EFVWFF7SAwzd+8+tTlPQzQOqrePoffe3zujAQsXVPKhnbz1Vze9uX1xEHfGZ53L/ImwBVh7QM0ijTy26nuXl6nmgRuF687jh7MrAxkw2m0o/GTSE2RmszekPw==
+  original_name : FEN_Fenêtre1
+resources :
+ string_res :
+  identifier : 0x10d999011006b82c
+  internal_properties : CAAAAAgAAACa/HBK/CUtN70EwGNqHiA5Ong4hctn68fiPi5bW47/f5kdMy4EhFbbsLDr9WzJV0mJiQ==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+associated_test :
+ name : TEST_01b_CreationDevicePleinEcran.wxt
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

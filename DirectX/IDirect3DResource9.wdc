@@ -1,0 +1,149 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IDirect3DResource9
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19ddc6070de96603
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      IDirect3DResource9 est une classe
+      	un objet IUnknown
+      	
+      Fin
+      
+      constant
+      	
+      	// Méthodes de l'interface IDirect3DResource9 (VTABLE)
+      	IDirect3DResource9_GetDevice			= ::IUnknown___IDXBASE + 1
+      	IDirect3DResource9_SetPrivateData		= ::IUnknown___IDXBASE + 2
+      	IDirect3DResource9_GetPrivateData		= ::IUnknown___IDXBASE + 3
+      	IDirect3DResource9_FreePrivateData		= ::IUnknown___IDXBASE + 4
+      	IDirect3DResource9_SetPriority			= ::IUnknown___IDXBASE + 5
+      	IDirect3DResource9_GetPriority			= ::IUnknown___IDXBASE + 6
+      	IDirect3DResource9_PreLoad				= ::IUnknown___IDXBASE + 7
+      	IDirect3DResource9_GetType				= ::IUnknown___IDXBASE + 8
+      	IDirect3DResource9___IDXBASE			= ::IUnknown___IDXBASE + 8	
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863863554401789443
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3D9.IID_IDirect3DResource9
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863863554401854979
+     type_code : 28
+     code : |1+
+      Procédure Destructeur()
+      
+     type : 655360
+   -
+     name : GetDevice
+     procedure_id : 1866828632414093180
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDevice
+      Procédure GetDevice(pclDevice est un IDirect3DDevice9 dynamique)
+      
+      	HRESULT est un entier système
+      	ppvDevice est un entier système
+      	
+      	// Appel
+      	HRESULT = :CALL(IDirect3DResource9_GetDevice, &ppvDevice)
+      	
+      	// Allocation
+      	__BindInterface(pclDevice, ppvDevice, IDirect3DDevice9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : SetPrivateData
+     procedure_id : 1866828645298997362
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetPrivateData
+      Procédure SetPrivateData(GUID est un guid, pData est un entier système, SizeOfData est un entier sans signe, Flags est un entier sans signe)
+      RENVOYER :CALL(IDirect3DResource9_SetPrivateData, &GUID, pData, SizeOfData, Flags)
+     type : 458752
+   -
+     name : GetPrivateData
+     procedure_id : 1866828653888999533
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetPrivateData
+      Procédure GetPrivateData(GUID est un guid, pData est un entier système, SizeOfData est un entier sans signe)
+      RENVOYER :CALL(IDirect3DResource9_GetPrivateData, &GUID, pData, &SizeOfData)
+     type : 458752
+   -
+     name : FreePrivateData
+     procedure_id : 1866828662479001814
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode FreePrivateData
+      Procédure FreePrivateData(GUID est un guid)
+      RENVOYER :CALL(IDirect3DResource9_FreePrivateData, &GUID)
+     type : 458752
+   -
+     name : SetPriority
+     procedure_id : 1866828671069003783
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetPriority
+      Procédure SetPriority(PriorityNew est un entier sans signe)
+      RENVOYER :CALL(IDirect3DResource9_SetPriority, PriorityNew)
+     type : 458752
+   -
+     name : GetPriority
+     procedure_id : 1866828679659006469
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetPriority
+      Procédure GetPriority()
+      RENVOYER :CALL(IDirect3DResource9_GetPriority)
+     type : 458752
+   -
+     name : PreLoad
+     procedure_id : 1866828692543976093
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode PreLoad
+      Procédure PreLoad()
+      RENVOYER :CALL(IDirect3DResource9_PreLoad)
+     type : 458752
+   -
+     name : GetType
+     procedure_id : 1866828701133978811
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetType
+      Procédure GetType()
+      RENVOYER :CALL(IDirect3DResource9_GetType)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000b4cb1f2
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

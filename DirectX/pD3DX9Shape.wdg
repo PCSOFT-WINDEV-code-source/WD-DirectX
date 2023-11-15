@@ -1,0 +1,199 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pD3DX9Shape
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x19e495a10380dc14
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+     type : 720896
+  procedures :
+   -
+     name : D3DXCreatePolygon
+     procedure_id : 1865780715958897845
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreatePolygon
+      Procédure D3DXCreatePolygon(pclDevice est un IDirect3DDevice9 dynamique, rLength est un reel sur 4, Sides est un entier sans signe, pclMesh est un ID3DXMesh dynamique, pclAdjacency est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvMesh est un entier systeme
+      	ppvAdjacency est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreatePolygon", PTR(pclDevice), rLength, Sides, &ppvMesh, &ppvAdjacency)
+      	
+      	// Allocation
+      	__BindInterface(pclMesh, ppvMesh, ID3DXMesh)
+      	__BindInterface(pclAdjacency, ppvAdjacency, ID3DXBuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXCreateBox
+     procedure_id : 1865781265714774290
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateBox
+      Procédure D3DXCreateBox(pclDevice est un IDirect3DDevice9 dynamique, Width est un reel sur 4, Height est un reel sur 4, Depth est un reel sur 4, pclMesh est un ID3DXMesh dynamique, pclAdjacency est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvMesh est un entier systeme
+      	ppvAdjacency est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreateBox", PTR(pclDevice), Width, Height, Depth, &ppvMesh, &ppvAdjacency)
+      	
+      	// Allocation
+      	__BindInterface(pclMesh, ppvMesh, ID3DXMesh)
+      	__BindInterface(pclAdjacency, ppvAdjacency, ID3DXBuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXCreateCylinder
+     procedure_id : 1865781458988413558
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateCylinder
+      Procédure D3DXCreateCylinder(pclDevice est un IDirect3DDevice9 dynamique, Radius1 est un reel sur 4, Radius2 est un reel sur 4, rLength est un reel sur 4, Slices est un entier sans signe, Stacks est un entier sans signe, pclMesh est un ID3DXMesh dynamique, pclAdjacency est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvMesh est un entier systeme
+      	ppvAdjacency est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreateCylinder", PTR(pclDevice), Radius1, Radius2, rLength, Slices, Stacks, &ppvMesh, &ppvAdjacency)
+      	
+      	// Allocation
+      	__BindInterface(pclMesh, ppvMesh, ID3DXMesh)
+      	__BindInterface(pclAdjacency, ppvAdjacency, ID3DXBuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXCreateSphere
+     procedure_id : 1865781695211669220
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateSphere
+      Procédure D3DXCreateSphere(pclDevice est un IDirect3DDevice9 dynamique, Radius est un reel sur 4, Slices est un entier sans signe, Stacks est un entier sans signe, pclMesh est un ID3DXMesh dynamique, pclAdjacency est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvMesh est un entier systeme
+      	ppvAdjacency est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreateSphere", PTR(pclDevice), Radius, Slices, Stacks, &ppvMesh, &ppvAdjacency)
+      	
+      	// Allocation
+      	__BindInterface(pclMesh, ppvMesh, ID3DXMesh)
+      	__BindInterface(pclAdjacency, ppvAdjacency, ID3DXBuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXCreateTorus
+     procedure_id : 1865781798290974180
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateTorus
+      Procédure D3DXCreateTorus(pclDevice est un IDirect3DDevice9 dynamique, InnerRadius est un reel sur 4, OuterRadius est un reel sur 4, Sides est un entier sans signe, Rings est un entier sans signe, pclMesh est un ID3DXMesh dynamique, pclAdjacency est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvMesh est un entier systeme
+      	ppvAdjacency est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreateTorus", PTR(pclDevice), InnerRadius, OuterRadius, Sides, Rings, &ppvMesh, &ppvAdjacency)
+      	
+      	// Allocation
+      	__BindInterface(pclMesh, ppvMesh, ID3DXMesh)
+      	__BindInterface(pclAdjacency, ppvAdjacency, ID3DXBuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXCreateTeapot
+     procedure_id : 1865781991564547288
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateTeapot
+      Procédure D3DXCreateTeapot(pclDevice est un IDirect3DDevice9 dynamique, pclMesh est un ID3DXMesh dynamique, pclAdjacency est un id3dxbuffer dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvMesh est un entier systeme
+      	ppvAdjacency est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreateTeapot", PTR(pclDevice), &ppvMesh, &ppvAdjacency)
+      	
+      	// Allocation
+      	__BindInterface(pclMesh, ppvMesh, ID3DXMesh)
+      	__BindInterface(pclAdjacency, ppvAdjacency, ID3DXBuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXCreateTextA
+     procedure_id : 1865782098938820527
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateTeapot
+      Procédure D3DXCreateTextA(pclDevice est un IDirect3DDevice9 dynamique, HDC est un entier systeme, Text est une chaine, Deviation est un reel sur 4, Extrusion est un reel sur 4, pclMesh est un ID3DXMesh dynamique, pclAdjacency est un id3dxbuffer dynamique, GlyphMetrics est un GLYPHMETRICSFLOAT dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvMesh est un entier systeme
+      	ppvAdjacency est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreateTextA", PTR(pclDevice), HDC, &Text, Deviation, Extrusion, &ppvMesh, &ppvAdjacency, GlyphMetrics = null ? null sinon &GlyphMetrics)
+      	
+      	// Allocation
+      	__BindInterface(pclMesh, ppvMesh, ID3DXMesh)
+      	__BindInterface(pclAdjacency, ppvAdjacency, ID3DXBuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXCreateTextW
+     procedure_id : 1865783181270634687
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateTextW
+      Procédure D3DXCreateTextW(pclDevice est un IDirect3DDevice9 dynamique, HDC est un entier systeme, Text est une chaine unicode, Deviation est un reel sur 4, Extrusion est un reel sur 4, pclMesh est un ID3DXMesh dynamique, pclAdjacency est un id3dxbuffer dynamique, GlyphMetrics est un GLYPHMETRICSFLOAT)
+      
+      	HRESULT est un entier systeme
+      	ppvMesh est un entier systeme
+      	ppvAdjacency est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreateTextW", PTR(pclDevice), HDC, &Text, Deviation, Extrusion, &ppvMesh, &ppvAdjacency, &GlyphMetrics)
+      	
+      	// Allocation
+      	__BindInterface(pclMesh, ppvMesh, ID3DXMesh)
+      	__BindInterface(pclAdjacency, ppvAdjacency, ID3DXBuffer)
+      	
+      renvoyer HRESULT
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x10d999010fb1b751
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

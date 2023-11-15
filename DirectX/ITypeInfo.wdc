@@ -1,0 +1,249 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ITypeInfo
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x198966520429e05d
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ITypeInfo est une classe
+      	un objet IUnknown
+      	
+      Fin
+      
+      CONSTANT
+      	
+      	// Méthodes de l'interface ITypeInfo (VTABLE)
+      	ITypeInfo_GetTypeAttr			= ::IUnknown___IDXBASE + 1
+      	ITypeInfo_GetTypeComp			= ::IUnknown___IDXBASE + 2
+      	ITypeInfo_GetFuncDesc			= ::IUnknown___IDXBASE + 3
+      	ITypeInfo_GetVarDesc			= ::IUnknown___IDXBASE + 4
+      	ITypeInfo_GetNames				= ::IUnknown___IDXBASE + 5
+      	ITypeInfo_GetRefTypeOfImplType	= ::IUnknown___IDXBASE + 6
+      	ITypeInfo_GetImplTypeFlags		= ::IUnknown___IDXBASE + 7
+      	ITypeInfo_GetIDsOfNames			= ::IUnknown___IDXBASE + 8
+      	ITypeInfo_Invoke				= ::IUnknown___IDXBASE + 9
+      	ITypeInfo_GetDocumentation		= ::IUnknown___IDXBASE + 10
+      	ITypeInfo_GetDllEntry			= ::IUnknown___IDXBASE + 11
+      	ITypeInfo_GetRefTypeInfo		= ::IUnknown___IDXBASE + 12
+      	ITypeInfo_AddressOfMember		= ::IUnknown___IDXBASE + 13
+      	ITypeInfo_CreateInstance		= ::IUnknown___IDXBASE + 14
+      	ITypeInfo_GetMops				= ::IUnknown___IDXBASE + 15
+      	ITypeInfo_GetContainingTypeLib	= ::IUnknown___IDXBASE + 16
+      	ITypeInfo_ReleaseTypeAttr		= ::IUnknown___IDXBASE + 17
+      	ITypeInfo_ReleaseFuncDesc		= ::IUnknown___IDXBASE + 18
+      	ITypeInfo_ReleaseVarDesc		= ::IUnknown___IDXBASE + 19
+      	ITypeInfo___IDXBASE				= ::IUnknown___IDXBASE + 20
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1840114425200828509
+     type_code : 27
+     code : |1-
+      Procédure Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = COMUtils.IID_ITypeInfo
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1840114425200894045
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetTypeAttr
+     procedure_id : 1866800757956737581
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetTypeAttr
+      Procédure GetTypeAttr(*)
+      renvoyer :call(ITypeInfo_GetTypeAttr, MesParamètres)
+     type : 458752
+   -
+     name : GetTypeComp
+     procedure_id : 1866800770841641747
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetTypeComp
+      Procédure GetTypeComp(*)
+      RENVOYER :CALL(ITypeInfo_GetTypeComp, MesParamètres)
+     type : 458752
+   -
+     name : GetFuncDesc
+     procedure_id : 1866800779431644106
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetFuncDesc
+      Procédure GetFuncDesc(*)
+      RENVOYER :CALL(ITypeInfo_GetFuncDesc, MesParamètres)
+     type : 458752
+   -
+     name : GetVarDesc
+     procedure_id : 1866800788021646293
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetVarDesc
+      Procédure GetVarDesc(*)
+      RENVOYER :CALL(ITypeInfo_GetVarDesc, MesParamètres)
+     type : 458752
+   -
+     name : GetNames
+     procedure_id : 1866800796611648511
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetNames
+      Procédure GetNames(*)
+      RENVOYER :CALL(ITypeInfo_GetNames, MesParamètres)
+     type : 458752
+   -
+     name : GetRefTypeOfImplType
+     procedure_id : 1866800818086555270
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetRefTypeOfImplType
+      Procédure GetRefTypeOfImplType(*)
+      RENVOYER :CALL(ITypeInfo_GetRefTypeOfImplType, MesParamètres)
+     type : 458752
+   -
+     name : GetImplTypeFlags
+     procedure_id : 1866800826676557441
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetImplTypeFlags
+      Procédure GetImplTypeFlags(*)
+      RENVOYER :CALL(ITypeInfo_GetImplTypeFlags, MesParamètres)
+     type : 458752
+   -
+     name : GetIDsOfNames
+     procedure_id : 1866800835266559332
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetIDsOfNames
+      Procédure GetIDsOfNames(*)
+      RENVOYER :CALL(ITypeInfo_GetIDsOfNames, MesParamètres)
+     type : 458752
+   -
+     name : Invoke
+     internal_properties : CAAAAAgAAABKtXZQVT6tyBc2O8Y+U4Qrb3itwYAR7D6lOwdbCYsOwwv40B3BmXfXwoIz6UG+99iTSAPLvxfr6ul+HLcRYvlt/smcKdS4aYbHv1xCl1LX3/QTRk+/jxPhYQupGEZxdGsw94UpEXtg6XqTuw==
+     procedure_id : 1866800852446497999
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode Invoke
+      Procédure Invoke(*)
+      RENVOYER :CALL(ITypeInfo_Invoke, MesParamètres)
+     type : 458752
+   -
+     name : GetDocumentation
+     procedure_id : 1866800856741532750
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDocumentation
+      Procédure GetDocumentation(*)
+      RENVOYER :CALL(ITypeInfo_GetDocumentation, MesParamètres)
+     type : 458752
+   -
+     name : GetDllEntry
+     procedure_id : 1866800869626503153
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDllEntry
+      Procédure GetDllEntry(*)
+      RENVOYER :CALL(ITypeInfo_GetDllEntry, MesParamètres)
+     type : 458752
+   -
+     name : GetRefTypeInfo
+     procedure_id : 1866800886806440993
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetRefTypeInfo
+      Procédure GetRefTypeInfo(*)
+      RENVOYER :CALL(ITypeInfo_GetRefTypeInfo, MesParamètres)
+     type : 458752
+   -
+     name : AddressOfMember
+     procedure_id : 1866800891101475541
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode AddressOfMember
+      Procédure AddressOfMember(*)
+      RENVOYER :CALL(ITypeInfo_AddressOfMember, MesParamètres)
+     type : 458752
+   -
+     name : CreateInstance
+     procedure_id : 1866800908281414193
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode CreateInstance
+      Procédure CreateInstance(*)
+      RENVOYER :CALL(ITypeInfo_CreateInstance, MesParamètres)
+     type : 458752
+   -
+     name : GetMops
+     procedure_id : 1866800921166384550
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetMops 
+      Procédure GetMops(*)
+      RENVOYER :CALL(ITypeInfo_GetMops, MesParamètres)
+     type : 458752
+   -
+     name : GetContainingTypeLib
+     procedure_id : 1866800929756386674
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetContainingTypeLib
+      Procédure GetContainingTypeLib(*)
+      RENVOYER :CALL(ITypeInfo_GetContainingTypeLib, MesParamètres)
+     type : 458752
+   -
+     name : ReleaseTypeAttr
+     procedure_id : 1866800938346388737
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ReleaseTypeAttr
+      Procédure ReleaseTypeAttr(*)
+      RENVOYER :CALL(ITypeInfo_ReleaseTypeAttr, MesParamètres)
+     type : 458752
+   -
+     name : ReleaseFuncDesc
+     procedure_id : 1866800946936390877
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ReleaseFuncDesc
+      Procédure ReleaseFuncDesc(*)
+      RENVOYER :CALL(ITypeInfo_ReleaseFuncDesc, MesParamètres)
+     type : 458752
+   -
+     name : ReleaseVarDesc
+     procedure_id : 1866800964116329310
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode ReleaseVarDesc
+      Procédure ReleaseVarDesc(*)
+      RENVOYER :CALL(ITypeInfo_ReleaseVarDesc, MesParamètres)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000af2b1b4
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

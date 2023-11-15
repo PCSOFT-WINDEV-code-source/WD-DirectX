@@ -1,0 +1,638 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ID3DXBaseEffect
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19df3839128e6fa2
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ID3DXBaseEffect est une classe
+      	un objet IUnknown
+      	
+      Fin
+      
+      constant
+      	
+      	// Méthodes de l'interface ID3DXBaseEffect (VTABLE)
+      	ID3DXBaseEffect_GetDesc									= ::IUnknown___IDXBASE + 1
+      	ID3DXBaseEffect_GetParameterDesc						= ::IUnknown___IDXBASE + 2
+      	ID3DXBaseEffect_GetTechniqueDesc						= ::IUnknown___IDXBASE + 3
+      	ID3DXBaseEffect_GetPassDesc								= ::IUnknown___IDXBASE + 4
+      	ID3DXBaseEffect_GetFunctionDesc							= ::IUnknown___IDXBASE + 5
+      	ID3DXBaseEffect_GetParameter							= ::IUnknown___IDXBASE + 6
+      	ID3DXBaseEffect_GetParameterByName						= ::IUnknown___IDXBASE + 7
+      	ID3DXBaseEffect_GetParameterBySemantic					= ::IUnknown___IDXBASE + 8
+      	ID3DXBaseEffect_GetParameterElement						= ::IUnknown___IDXBASE + 9
+      	ID3DXBaseEffect_GetTechnique							= ::IUnknown___IDXBASE + 10
+      	ID3DXBaseEffect_GetTechniqueByName						= ::IUnknown___IDXBASE + 11
+      	ID3DXBaseEffect_GetPass									= ::IUnknown___IDXBASE + 12
+      	ID3DXBaseEffect_GetPassByName							= ::IUnknown___IDXBASE + 13
+      	ID3DXBaseEffect_GetFunction								= ::IUnknown___IDXBASE + 14
+      	ID3DXBaseEffect_GetFunctionByName						= ::IUnknown___IDXBASE + 15
+      	ID3DXBaseEffect_GetAnnotation							= ::IUnknown___IDXBASE + 16
+      	ID3DXBaseEffect_GetAnnotationByName						= ::IUnknown___IDXBASE + 17
+      	ID3DXBaseEffect_SetValue								= ::IUnknown___IDXBASE + 18
+      	ID3DXBaseEffect_GetValue								= ::IUnknown___IDXBASE + 19
+      	ID3DXBaseEffect_SetBool									= ::IUnknown___IDXBASE + 20
+      	ID3DXBaseEffect_GetBool									= ::IUnknown___IDXBASE + 21
+      	ID3DXBaseEffect_SetBoolArray							= ::IUnknown___IDXBASE + 22
+      	ID3DXBaseEffect_GetBoolArray							= ::IUnknown___IDXBASE + 23
+      	ID3DXBaseEffect_SetInt									= ::IUnknown___IDXBASE + 24
+      	ID3DXBaseEffect_GetInt									= ::IUnknown___IDXBASE + 25
+      	ID3DXBaseEffect_SetIntArray								= ::IUnknown___IDXBASE + 26
+      	ID3DXBaseEffect_GetIntArray								= ::IUnknown___IDXBASE + 27
+      	ID3DXBaseEffect_SetFloat								= ::IUnknown___IDXBASE + 28
+      	ID3DXBaseEffect_GetFloat								= ::IUnknown___IDXBASE + 29
+      	ID3DXBaseEffect_SetFloatArray							= ::IUnknown___IDXBASE + 30
+      	ID3DXBaseEffect_GetFloatArray							= ::IUnknown___IDXBASE + 31
+      	ID3DXBaseEffect_SetVector								= ::IUnknown___IDXBASE + 32
+      	ID3DXBaseEffect_GetVector								= ::IUnknown___IDXBASE + 33
+      	ID3DXBaseEffect_SetVectorArray							= ::IUnknown___IDXBASE + 34
+      	ID3DXBaseEffect_GetVectorArray							= ::IUnknown___IDXBASE + 35
+      	ID3DXBaseEffect_SetMatrix								= ::IUnknown___IDXBASE + 36
+      	ID3DXBaseEffect_GetMatrix								= ::IUnknown___IDXBASE + 37
+      	ID3DXBaseEffect_SetMatrixArray							= ::IUnknown___IDXBASE + 38
+      	ID3DXBaseEffect_GetMatrixArray							= ::IUnknown___IDXBASE + 39
+      	ID3DXBaseEffect_SetMatrixPointerArray					= ::IUnknown___IDXBASE + 40
+      	ID3DXBaseEffect_GetMatrixPointerArray					= ::IUnknown___IDXBASE + 41
+      	ID3DXBaseEffect_SetMatrixTranspose						= ::IUnknown___IDXBASE + 42
+      	ID3DXBaseEffect_GetMatrixTranspose						= ::IUnknown___IDXBASE + 43
+      	ID3DXBaseEffect_SetMatrixTransposeArray					= ::IUnknown___IDXBASE + 44
+      	ID3DXBaseEffect_GetMatrixTransposeArray					= ::IUnknown___IDXBASE + 45
+      	ID3DXBaseEffect_SetMatrixTransposePointerArray			= ::IUnknown___IDXBASE + 46
+      	ID3DXBaseEffect_GetMatrixTransposePointerArray			= ::IUnknown___IDXBASE + 47
+      	ID3DXBaseEffect_SetString								= ::IUnknown___IDXBASE + 48
+      	ID3DXBaseEffect_GetString								= ::IUnknown___IDXBASE + 49
+      	ID3DXBaseEffect_SetTexture								= ::IUnknown___IDXBASE + 50
+      	ID3DXBaseEffect_GetTexture								= ::IUnknown___IDXBASE + 51
+      	ID3DXBaseEffect_GetPixelShader							= ::IUnknown___IDXBASE + 52
+      	ID3DXBaseEffect_GetVertexShader							= ::IUnknown___IDXBASE + 53
+      	ID3DXBaseEffect_SetArrayRange							= ::IUnknown___IDXBASE + 54
+      	ID3DXBaseEffect___IDXBASE								= ::IUnknown___IDXBASE + 54
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1864270588530356130
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IUnknown(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3DX9Effect.IID_ID3DXBaseEffect
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1864270588530421666
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+     type : 655360
+   -
+     name : GetDesc
+     procedure_id : 1866464036719009902
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetDesc
+      Procédure GetDesc(Desc est un D3DXEFFECT_DESC)
+      renvoyer :call(ID3DXBaseEffect_GetDesc, &Desc)
+     type : 458752
+   -
+     name : GetParameterDesc
+     procedure_id : 1866464045309011949
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetParameterDesc
+      Procédure GetParameterDesc(hParameter est un entier sans signe, Desc est un D3DXPARAMETER_DESC)
+      RENVOYER :CALL(ID3DXBaseEffect_GetParameterDesc, hParameter, &Desc)
+     type : 458752
+   -
+     name : GetTechniqueDesc
+     procedure_id : 1866464053899014214
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetTechniqueDesc
+      Procédure GetTechniqueDesc(hTechnique est un entier sans signe, Desc est un D3DXTECHNIQUE_DESC)
+      RENVOYER :CALL(ID3DXBaseEffect_GetTechniqueDesc, hTechnique, &Desc)
+     type : 458752
+   -
+     name : GetPassDesc
+     procedure_id : 1866464062489016760
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetPassDesc
+      Procédure GetPassDesc(hPass_ est un entier sans signe, Desc est un D3DXPASS_DESC)
+      RENVOYER :CALL(ID3DXBaseEffect_GetPassDesc, hPass_, &Desc)
+     type : 458752
+   -
+     name : GetFunctionDesc
+     procedure_id : 1866464071079018963
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetFunctionDesc
+      Procédure GetFunctionDesc(hShader est un entier sans signe, Desc est un D3DXFUNCTION_DESC)
+      RENVOYER :CALL(ID3DXBaseEffect_GetFunctionDesc, hShader, &Desc)
+     type : 458752
+   -
+     name : GetParameter
+     procedure_id : 1866464122618703688
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetParameter
+      Procédure GetParameter(hParameter est un entier sans signe, Index est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_GetParameter, hParameter, Index)
+     type : 458752
+   -
+     name : GetParameterByName
+     procedure_id : 1866464131208705439
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetParameterByName
+      Procédure GetParameterByName(hParameter est un entier sans signe, Name est une chaine ansi)
+      RENVOYER :CALL(ID3DXBaseEffect_GetParameterByName, hParameter, &Name)
+     type : 458752
+   -
+     name : GetParameterBySemantic
+     procedure_id : 1866464139798707564
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetParameterBySemantic
+      Procédure GetParameterBySemantic(hParameter est un entier sans signe, Semantic est une chaine ansi)
+      RENVOYER :CALL(ID3DXBaseEffect_GetParameterBySemantic, hParameter, &Semantic)
+     type : 458752
+   -
+     name : GetParameterElement
+     procedure_id : 1866464148388644636
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetParameterElement
+      Procédure GetParameterElement(hParameter est un entier sans signe, Index est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_GetParameterElement, hParameter, Index)
+     type : 458752
+   -
+     name : GetTechnique
+     procedure_id : 1866464156978646683
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetTechnique
+      Procédure GetTechnique(Index est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_GetTechnique, Index)
+     type : 458752
+   -
+     name : GetTechniqueByName
+     procedure_id : 1866464169863616509
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetTechniqueByName
+      Procédure GetTechniqueByName(Name est une chaine)
+      RENVOYER :CALL(ID3DXBaseEffect_GetTechniqueByName, &Name)
+     type : 458752
+   -
+     name : GetPass
+     procedure_id : 1866464174158651073
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetPass 
+      Procédure GetPass(hTechnique est un entier sans signe, Index est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_GetPass, hTechnique, Index)
+     type : 458752
+   -
+     name : GetPassByName
+     procedure_id : 1866464182748653166
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetPassByName
+      Procédure GetPassByName(hTechnique est un entier sans signe, Name est une chaine ansi)
+      RENVOYER :CALL(ID3DXBaseEffect_GetPassByName, hTechnique, &Name)
+     type : 458752
+   -
+     name : GetFunction
+     procedure_id : 1866464208518528094
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetFunction
+      Procédure GetFunction(Index est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_GetFunction, Index)
+     type : 458752
+   -
+     name : GetFunctionByName
+     procedure_id : 1866464217108530313
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetFunctionByName
+      Procédure GetFunctionByName(Name est une chaine)
+      RENVOYER :CALL(ID3DXBaseEffect_GetFunctionByName, &Name)
+     type : 458752
+   -
+     name : GetAnnotation
+     procedure_id : 1866464225698532640
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetAnnotation
+      Procédure GetAnnotation(hObject est un entier sans signe, Index est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_GetAnnotation, hObject, Index)
+     type : 458752
+   -
+     name : GetAnnotationByName
+     procedure_id : 1866464238583503091
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetAnnotationByName
+      Procédure GetAnnotationByName(hObject est un entier sans signe, Name est une chaine)
+      RENVOYER :CALL(ID3DXBaseEffect_GetAnnotationByName, hObject, &Name)
+     type : 458752
+   -
+     name : SetValue
+     procedure_id : 1866464251468473729
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetValue
+      Procédure SetValue(hParameter est un entier sans signe, pData est un entier systeme, nBytes est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_SetValue, hParameter, pData, nBytes)
+     type : 458752
+   -
+     name : GetValue
+     procedure_id : 1866464268648412052
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetValue
+      Procédure GetValue(hParameter est un entier sans signe, pData est un entier systeme, nBytes est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_GetValue, hParameter, pData, nBytes)
+     type : 458752
+   -
+     name : SetBool
+     procedure_id : 1866464277238414676
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetBool
+      Procédure SetBool(hParameter est un entier sans signe, b est un booléen)
+      RENVOYER :CALL(ID3DXBaseEffect_SetBool, hParameter, b)
+     type : 458752
+   -
+     name : GetBool
+     procedure_id : 1866464285828416489
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetBool
+      Procédure GetBool(hParameter est un entier sans signe, b est un booléen)
+      RENVOYER :CALL(ID3DXBaseEffect_GetBool, hParameter, &b)
+     type : 458752
+   -
+     name : SetBoolArray
+     procedure_id : 1866464294418418442
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetBoolArray
+      Procédure SetBoolArray(hParameter est un entier sans signe, tabB est un tableau de booléens, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_SetBoolArray, hParameter, ptr(tabB), dwCount)
+     type : 458752
+   -
+     name : GetBoolArray
+     procedure_id : 1866464303008420863
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetBoolArray
+      Procédure GetBoolArray(hParameter est un entier sans signe, tabB est un tableau de booléens, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_GetBoolArray, hParameter, ptr(tabB), dwCount)
+     type : 458752
+   -
+     name : SetInt
+     procedure_id : 1866464315893390830
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetInt
+      Procédure SetInt(hParameter est un entier sans signe, n est un entier)
+      RENVOYER :CALL(ID3DXBaseEffect_SetInt, hParameter, n)
+     type : 458752
+   -
+     name : GetInt
+     procedure_id : 1866464324483392877
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetInt
+      Procédure GetInt(hParameter est un entier sans signe, n est un entier)
+      RENVOYER :CALL(ID3DXBaseEffect_GetInt, hParameter, &n)
+     type : 458752
+   -
+     name : SetIntArray
+     procedure_id : 1866464333073395017
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetIntArray
+      Procédure SetIntArray(hParameter est un entier sans signe, tabN est un tableau d'entiers, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_SetIntArray, hParameter, ptr(tabN), dwCount)
+     type : 458752
+   -
+     name : GetIntArray
+     procedure_id : 1866464345958365951
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetIntArray
+      Procédure GetIntArray(hParameter est un entier sans signe, tabN est un tableau d'entiers, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_GetIntArray, hParameter, ptr(tabN), dwCount)
+     type : 458752
+   -
+     name : SetFloat
+     procedure_id : 1866464371728241207
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetFloat
+      Procédure SetFloat(hParameter est un entier sans signe, f est un reel sur 4)
+      RENVOYER :CALL(ID3DXBaseEffect_SetFloat, hParameter, f)
+     type : 458752
+   -
+     name : GetFloat
+     procedure_id : 1866464380318243363
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetFloat
+      Procédure GetFloat(hParameter est un entier sans signe, f est un reel sur 4)
+      RENVOYER :CALL(ID3DXBaseEffect_GetFloat, hParameter, &f)
+     type : 458752
+   -
+     name : SetFloatArray
+     procedure_id : 1866464388908245675
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetFloatArray
+      Procédure SetFloatArray(hParameter est un entier sans signe, tabF est un tableau de reels sur 4, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_SetFloatArray, hParameter, ptr(tabF), dwCount)
+     type : 458752
+   -
+     name : GetFloatArray
+     procedure_id : 1866464401793215923
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetFloatArray
+      Procédure GetFloatArray(hParameter est un entier sans signe, tabF est un tableau de reels sur 4, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_GetFloatArray, hParameter, ptr(tabF), dwCount)
+     type : 458752
+   -
+     name : SetVector
+     procedure_id : 1866464410383218141
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetVector
+      Procédure SetVector(hParameter est un entier sans signe, Vector est un D3DXVECTOR4)
+      RENVOYER :CALL(ID3DXBaseEffect_SetVector, hParameter, &Vector)
+     type : 458752
+   -
+     name : GetVector
+     procedure_id : 1866464423268187936
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetVector
+      Procédure GetVector(hParameter est un entier sans signe, Vector est un D3DXVECTOR4)
+      RENVOYER :CALL(ID3DXBaseEffect_GetVector, hParameter, &Vector)
+     type : 458752
+   -
+     name : SetVectorArray
+     procedure_id : 1866464431858125118
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetVectorArray
+      Procédure SetVectorArray(hParameter est un entier sans signe, tabVector est un tableau de D3DXVECTOR4, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_SetVectorArray, hParameter, ptr(tabVector), dwCount)
+     type : 458752
+   -
+     name : GetVectorArray
+     procedure_id : 1866464444743095459
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetVectorArray
+      Procédure GetVectorArray(hParameter est un entier sans signe, tabVector est un tableau de D3DXVECTOR4, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_GetVectorArray, hParameter, PTR(tabVector), dwCount)
+     type : 458752
+   -
+     name : SetMatrix
+     procedure_id : 1866464453333097771
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetMatrix
+      Procédure SetMatrix(hParameter est un entier sans signe, Matrix est un D3DXMATRIX)
+      RENVOYER :CALL(ID3DXBaseEffect_SetMatrix, hParameter, &Matrix)
+     type : 458752
+   -
+     name : GetMatrix
+     procedure_id : 1866464466218067410
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetMatrix
+      Procédure GetMatrix(hParameter est un entier sans signe, Matrix est un D3DXMATRIX)
+      RENVOYER :CALL(ID3DXBaseEffect_GetMatrix, hParameter, &Matrix)
+     type : 458752
+   -
+     name : SetMatrixArray
+     procedure_id : 1866464474808069988
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetMatrixArray
+      Procédure SetMatrixArray(hParameter est un entier sans signe, tabMatrix est un tableau de D3DXMATRIX, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_SetMatrixArray, hParameter, ptr(tabMatrix), dwCount)
+     type : 458752
+   -
+     name : GetMatrixArray
+     procedure_id : 1866464483398072331
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetMatrixArray
+      Procédure GetMatrixArray(hParameter est un entier sans signe, tabMatrix est un tableau de D3DXMATRIX, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_GetMatrixArray, hParameter, PTR(tabMatrix), dwCount)
+     type : 458752
+   -
+     name : SetMatrixPointerArray
+     procedure_id : 1866464496283042563
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetMatrixPointerArray
+      Procédure SetMatrixPointerArray(hParameter est un entier sans signe, tabPMatrix est un tableau d'entiers systeme, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_SetMatrixPointerArray, hParameter, ptr(tabPMatrix), dwCount)
+     type : 458752
+   -
+     name : GetMatrixPointerArray
+     procedure_id : 1866464504873044578
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetMatrixPointerArray
+      Procédure GetMatrixPointerArray(hParameter est un entier sans signe, tabPMatrix est un tableau d'entiers systeme, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_GetMatrixPointerArray, hParameter, PTR(tabPMatrix), dwCount)
+     type : 458752
+   -
+     name : SetMatrixTranspose
+     procedure_id : 1866464513463046532
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetMatrixTranspose
+      Procédure SetMatrixTranspose(hParameter est un entier sans signe, Matrix est un D3DXMATRIX)
+      RENVOYER :CALL(ID3DXBaseEffect_SetMatrixTranspose, hParameter, &Matrix)
+     type : 458752
+   -
+     name : GetMatrixTranspose
+     procedure_id : 1866464526348017325
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetMatrixTranspose
+      Procédure GetMatrixTranspose(hParameter est un entier sans signe, Matrix est un D3DXMATRIX)
+      RENVOYER :CALL(ID3DXBaseEffect_GetMatrixTranspose, hParameter, &Matrix)
+     type : 458752
+   -
+     name : SetMatrixTransposeArray
+     procedure_id : 1866464534938019591
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetMatrixTransposeArray
+      Procédure SetMatrixTransposeArray(hParameter est un entier sans signe, tabMatrix est un tableau de D3DXMATRIX, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_SetMatrixTransposeArray, hParameter, PTR(tabMatrix), dwCount)
+     type : 458752
+   -
+     name : GetMatrixTransposeArray
+     procedure_id : 1866464543528021793
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetMatrixTransposeArray
+      Procédure GetMatrixTransposeArray(hParameter est un entier sans signe, tabMatrix est un tableau de D3DXMATRIX, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_GetMatrixTransposeArray, hParameter, PTR(tabMatrix), dwCount)
+     type : 458752
+   -
+     name : SetMatrixTransposePointerArray
+     procedure_id : 1866464552118023840
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetMatrixTransposePointerArray
+      Procédure SetMatrixTransposePointerArray(hParameter est un entier sans signe, tabPMatrix est un tableau d'entiers systeme, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_SetMatrixTransposePointerArray, hParameter, PTR(tabPMatrix), dwCount)
+     type : 458752
+   -
+     name : GetMatrixTransposePointerArray
+     procedure_id : 1866464560708026121
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetMatrixTransposePointerArray
+      Procédure GetMatrixTransposePointerArray(hParameter est un entier sans signe, tabPMatrix est un tableau d'entiers systeme, dwCount est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_GetMatrixTransposePointerArray, hParameter, PTR(tabPMatrix), dwCount)
+     type : 458752
+   -
+     name : SetString
+     procedure_id : 1866464573592995667
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetString
+      Procédure SetString(hParameter est un entier sans signe, sString est une chaine)
+      RENVOYER :CALL(ID3DXBaseEffect_SetString, hParameter, &sString)
+     type : 458752
+   -
+     name : GetString
+     procedure_id : 1866464582182998041
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetString
+      Procédure GetString(hParameter est un entier sans signe, sString est une chaine)
+      
+      	HRESULT est un entier systeme
+      	ppvString est un entier systeme
+      	
+      	// Appel
+      	HRESULT = :CALL(ID3DXBaseEffect_GetString, hParameter, &ppvString)
+      	
+      	// Allocation
+      	sString = ChaîneRécupère(ppvString, crAdresseASCIIZ)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : SetTexture
+     procedure_id : 1866464590773000291
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetTexture
+      Procédure SetTexture(hParameter est un entier sans signe, pclTexture est un IDirect3DBaseTexture9 dynamique)
+      RENVOYER :CALL(ID3DXBaseEffect_SetTexture, hParameter, ptr(pclTexture))
+     type : 458752
+   -
+     name : GetTexture
+     procedure_id : 1866464599363002821
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetTexture
+      Procédure GetTexture(hParameter est un entier sans signe, pclTexture est un IDirect3DBaseTexture9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvTexture est un entier systeme
+      	
+      	// Appel	
+      	HRESULT = :CALL(ID3DXBaseEffect_GetTexture, hParameter, &ppvTexture)
+      	
+      	// Allocation
+      	__BindInterface(pclTexture, ppvTexture, IDirect3DBaseTexture9)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : GetPixelShader
+     procedure_id : 1866464620837909611
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetPixelShader
+      Procédure GetPixelShader(hParameter est un entier sans signe, pclPShader est un IDirect3DPixelShader9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	
+      	// Appel	
+      	HRESULT = :CALL(ID3DXBaseEffect_GetPixelShader, hParameter, &ppvShader)
+      	
+      	// Allocation
+      	__BindInterface(pclPShader, ppvShader, IDirect3DPixelShader9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : GetVertexShader
+     procedure_id : 1866464633722879484
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetVertexShader
+      Procédure GetVertexShader(hParameter est un entier sans signe, pclVShader est un IDirect3DVertexShader9 dynamique)
+      
+      	HRESULT est un entier systeme
+      	ppvShader est un entier systeme
+      	
+      	// Appel	
+      	HRESULT = :CALL(ID3DXBaseEffect_GetVertexShader, hParameter, &ppvShader)
+      	
+      	// Allocation
+      	__BindInterface(pclVShader, ppvShader, IDirect3DVertexShader9)
+      
+      RENVOYER HRESULT
+     type : 458752
+   -
+     name : SetArrayRange
+     procedure_id : 1866464642312882233
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetArrayRange
+      Procédure SetArrayRange(hParameter est un entier sans signe, uStart est un entier sans signe, uEnd est un entier sans signe)
+      RENVOYER :CALL(ID3DXBaseEffect_SetArrayRange, hParameter, uStart, uEnd)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000a84b156
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,119 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IDirect3DBaseTexture9
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19ddc70d0e0e66ee
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      IDirect3DBaseTexture9 est une classe
+      	un objet IDirect3DResource9
+      	
+      Fin
+      
+      constant
+      	
+      	// Méthodes de l'interface IDirect3DBaseTexture9 (VTABLE)
+      	IDirect3DBaseTexture9_SetLOD				= ::IDirect3DResource9___IDXBASE + 1
+      	IDirect3DBaseTexture9_GetLOD				= ::IDirect3DResource9___IDXBASE + 2
+      	IDirect3DBaseTexture9_GetLevelCount			= ::IDirect3DResource9___IDXBASE + 3
+      	IDirect3DBaseTexture9_SetAutoGenFilterType	= ::IDirect3DResource9___IDXBASE + 4
+      	IDirect3DBaseTexture9_GetAutoGenFilterType	= ::IDirect3DResource9___IDXBASE + 5
+      	IDirect3DBaseTexture9_GenerateMipSubLevels	= ::IDirect3DResource9___IDXBASE + 6
+      	IDirect3DBaseTexture9___IDXBASE				= ::IDirect3DResource9___IDXBASE + 6	
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1863864679685646062
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(LOCAL nInterface est un entier système = Null)
+      	Constructeur IDirect3DResource9(nInterface)
+      	
+      	// Définition de l'IID
+      	:IID = pD3D9.IID_IDirect3DBaseTexture9
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1863864679685711598
+     type_code : 28
+     code : |1+
+      Procédure Destructeur()
+      
+     type : 655360
+   -
+     name : SetLOD
+     procedure_id : 1866830427712020655
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetLOD
+      Procédure SetLOD(LODNew est un entier sans signe)
+      renvoyer :call(IDirect3DBaseTexture9_SetLOD, LODNew)
+     type : 458752
+   -
+     name : GetLOD
+     procedure_id : 1866830436302022546
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetLOD
+      Procédure GetLOD()
+      RENVOYER :CALL(IDirect3DBaseTexture9_GetLOD)
+     type : 458752
+   -
+     name : GetLevelCount
+     procedure_id : 1866830444892024421
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetLevelCount
+      Procédure GetLevelCount()
+      RENVOYER :CALL(IDirect3DBaseTexture9_GetLevelCount)
+     type : 458752
+   -
+     name : SetAutoGenFilterType
+     procedure_id : 1866830453482026374
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode SetAutoGenFilterType
+      Procédure SetAutoGenFilterType(FilterType est un entier sans signe)
+      RENVOYER :CALL(IDirect3DBaseTexture9_SetAutoGenFilterType, FilterType)
+     type : 458752
+   -
+     name : GetAutoGenFilterType
+     procedure_id : 1866830462072028561
+     type_code : 12
+     code : |1-
+      // Résumé : Méthode GetAutoGenFilterType
+      Procédure GetAutoGenFilterType()
+      RENVOYER :CALL(IDirect3DBaseTexture9_GetAutoGenFilterType)
+     type : 458752
+   -
+     name : GenerateMipSubLevels
+     procedure_id : 1866830470662031060
+     type_code : 12
+     code : |1+
+      // Résumé : Méthode GenerateMipSubLevels
+      Procédure GenerateMipSubLevels()
+      RENVOYER :CALL(IDirect3DBaseTexture9_GenerateMipSubLevels)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x10d999000c78b32b
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

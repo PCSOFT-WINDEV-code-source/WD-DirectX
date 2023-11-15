@@ -1,0 +1,276 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pD3DX9Anim
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x19e5af9810fc41a1
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+      /////////////////////////////////////////////////////////
+      // <Constantes>
+      
+      Constant
+      	
+      	// D3DXMESHDATATYPE
+      	D3DXMESHTYPE_MESH      = 0x001
+      	D3DXMESHTYPE_PMESH     = 0x002
+      	D3DXMESHTYPE_PATCHMESH = 0x003
+      	
+      	// D3DXCALLBACK_SEARCH_FLAGS
+      	D3DXCALLBACK_SEARCH_EXCLUDING_INITIAL_POSITION = 0x01
+      	D3DXCALLBACK_SEARCH_BEHIND_INITIAL_POSITION    = 0x02
+      	
+      	// D3DXPLAYBACK_TYPE
+      	D3DXPLAY_LOOP          = 0
+      	D3DXPLAY_ONCE          = 1
+      	D3DXPLAY_PINGPONG      = 2
+      	
+      	// D3DXCOMPRESSION_FLAGS
+      	D3DXCOMPRESS_DEFAULT     = 0x00
+      	
+      	// D3DXPRIORITY_TYPE 
+      	D3DXPRIORITY_LOW         = 0
+      	D3DXPRIORITY_HIGH        = 1
+      	
+      	// D3DXEVENT_TYPE
+      	D3DXEVENT_TRACKSPEED    = 0
+      	D3DXEVENT_TRACKWEIGHT   = 1
+      	D3DXEVENT_TRACKPOSITION = 2
+      	D3DXEVENT_TRACKENABLE   = 3
+      	D3DXEVENT_PRIORITYBLEND = 4
+      	
+      	// D3DXTRANSITION_TYPE
+      	D3DXTRANSITION_LINEAR        = 0x000
+      	D3DXTRANSITION_EASEINEASEOUT = 0x001
+      FIN
+      
+      // </Constantes>
+      
+      /////////////////////////////////////////////////////////
+      // <IIDs>
+      
+      IID_ID3DXAnimationSet 			est un iid
+      IID_ID3DXKeyframedAnimationSet 	est un iid
+      IID_ID3DXCompressedAnimationSet est un iid
+      IID_ID3DXAnimationController 	est un iid
+      
+      // </IIDs>
+      
+      /////////////////////////////////////////////////////////
+      // <Déclaration des IIDs>
+      
+      DEFINE_GUID(IID_ID3DXAnimationSet, 				0x698cfb3f, 0x9289, 0x4d95, 0x9a, 0x57, 0x33, 0xa9, 0x4b, 0x5a, 0x65, 0xf9)
+      DEFINE_GUID(IID_ID3DXKeyframedAnimationSet, 	0xfa4e8e3a, 0x9786, 0x407d, 0x8b, 0x4c, 0x59, 0x95, 0x89, 0x37, 0x64, 0xaf)
+      DEFINE_GUID(IID_ID3DXCompressedAnimationSet, 	0x6cc2480d, 0x3808, 0x4739, 0x9f, 0x88, 0xde, 0x49, 0xfa, 0xcd, 0x8d, 0x4c)
+      DEFINE_GUID(IID_ID3DXAnimationController, 		0xac8948ec, 0xf86d, 0x43e2, 0x96, 0xde, 0x31, 0xfc, 0x35, 0xf9, 0x6d, 0x9e)
+      
+      // </Déclaration des IIDs>
+     type : 720896
+  procedures :
+   -
+     name : D3DXLoadMeshHierarchyFromXA
+     procedure_id : 1866170974415060568
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadMeshHierarchyFromXA
+      Procédure D3DXLoadMeshHierarchyFromXA(FileName est une chaine, MeshOptions est un entier sans signe, pclDevice est un IDirect3DDevice9 dynamique, pclAlloc est un ID3DXAllocateHierarchy dynamique, pclUserDataLoader est un ID3DXLoadUserData dynamique, stFrameHierarchy est un d3dxframe, pclAnimController est un ID3DXAnimationController dynamique)
+      	
+      	HRESULT est un entier systeme
+      	ppvAnimController est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXLoadMeshHierarchyFromXA", &FileName, MeshOptions, ptr(pclDevice), ptr(pclAlloc), ptr(pclUserDataLoader), &stFrameHierarchy, &ppvAnimController)
+      	
+      	// Allocation
+      	__bindinterface(pclAnimController, ppvAnimController, ID3DXAnimationController)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXLoadMeshHierarchyFromXW
+     procedure_id : 1866171738921120924
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadMeshHierarchyFromXW
+      Procédure D3DXLoadMeshHierarchyFromXW(FileName est une chaine unicode, MeshOptions est un entier sans signe, pclDevice est un IDirect3DDevice9 dynamique, pclAlloc est un ID3DXAllocateHierarchy dynamique, pclUserDataLoader est un ID3DXLoadUserData dynamique, stFrameHierarchy est un d3dxframe dynamique, pclAnimController est un ID3DXAnimationController dynamique)
+      	
+      	HRESULT est un entier systeme
+      	ppvAnimController est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXLoadMeshHierarchyFromXW", &FileName, MeshOptions, ptr(pclDevice), ptr(pclAlloc), ptr(pclUserDataLoader), (stFrameHierarchy = null ? null sinon &stFrameHierarchy), &ppvAnimController)
+      	
+      	// Allocation
+      	__bindinterface(pclAnimController, ppvAnimController, ID3DXAnimationController)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXLoadMeshHierarchyFromXInMemory
+     procedure_id : 1866171829115520674
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXLoadMeshHierarchyFromXInMemory
+      Procédure D3DXLoadMeshHierarchyFromXInMemory(Memory est un entier systeme, SizeOfMemory est un entier sans signe, MeshOptions est un entier sans signe, pclDevice est un IDirect3DDevice9 dynamique, pclAlloc est un ID3DXAllocateHierarchy dynamique, pclUserDataLoader est un ID3DXLoadUserData dynamique, stFrameHierarchy est un d3dxframe dynamique, pclAnimController est un ID3DXAnimationController dynamique)
+      	
+      	HRESULT est un entier systeme
+      	ppvAnimController est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXLoadMeshHierarchyFromXInMemory", Memory, SizeOfMemory, MeshOptions, ptr(pclDevice), ptr(pclAlloc), ptr(pclUserDataLoader), (stFrameHierarchy = Null ? Null SINON &stFrameHierarchy), &ppvAnimController)
+      	
+      	// Allocation
+      	__bindinterface(pclAnimController, ppvAnimController, ID3DXAnimationController)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXSaveMeshHierarchyToFileA
+     procedure_id : 1866172185597889640
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSaveMeshHierarchyToFileA
+      Procédure D3DXSaveMeshHierarchyToFileA(FileName est une chaine, XFormat est un entier sans signe, stFrameRoot est un d3dxframe dynamique, pclAnimController est un ID3DXAnimationController dynamique, pclUserDataSaver est un ID3DXSaveUserData dynamique)
+      renvoyer api(pd3d9.d3dx9, "D3DXSaveMeshHierarchyToFileA", &FileName, XFormat, (stFrameRoot = null ? null sinon &stFrameRoot), ptr(pclAnimController), ptr(pclUserDataSaver))
+     type : 458752
+   -
+     name : D3DXSaveMeshHierarchyToFileW
+     procedure_id : 1866172499130574274
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXSaveMeshHierarchyToFileW
+      Procédure D3DXSaveMeshHierarchyToFileW(FileName est une chaine unicode, XFormat est un entier sans signe, stFrameRoot est un d3dxframe dynamique, pclAnimController est un ID3DXAnimationController dynamique, pclUserDataSaver est un ID3DXSaveUserData dynamique)
+      renvoyer api(pd3d9.d3dx9, "D3DXSaveMeshHierarchyToFileW", &FileName, XFormat, (stFrameRoot = Null ? Null SINON &stFrameRoot), ptr(pclAnimController), ptr(pclUserDataSaver))
+     type : 458752
+   -
+     name : D3DXFrameDestroy
+     procedure_id : 1866172576440004337
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXFrameDestroy
+      Procédure D3DXFrameDestroy(stFrameRoot est un d3dxframe, pclAlloc est un ID3DXAllocateHierarchy dynamique)
+      renvoyer api(pd3d9.d3dx9, "D3DXFrameDestroy", &stFrameRoot, ptr(pclAlloc))
+     type : 458752
+   -
+     name : D3DXFrameAppendChild
+     procedure_id : 1866172739648864468
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXFrameAppendChild
+      Procédure D3DXFrameAppendChild(stFrameParent est un d3dxframe, stFrameChild est un d3dxframe)
+      renvoyer api(pd3d9.d3dx9, "D3DXFrameAppendChild", &stFrameParent, &stFrameChild)
+     type : 458752
+   -
+     name : D3DXFrameFind
+     procedure_id : 1866172877087850638
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXFrameFind
+      Procédure D3DXFrameFind(stFrameRoot est un d3dxframe, Name est une chaine)
+      renvoyer api(pd3d9.d3dx9, "D3DXFrameFind", &stFrameRoot, &Name)
+     type : 458752
+   -
+     name : D3DXFrameRegisterNamedMatrices
+     procedure_id : 1866172988757091922
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXFrameRegisterNamedMatrices
+      Procédure D3DXFrameRegisterNamedMatrices(stFrameRoot est un d3dxframe, pclAnimController est un ID3DXAnimationController dynamique)
+      renvoyer api(pd3d9.d3dx9, "D3DXFrameRegisterNamedMatrices", &stFrameRoot, ptr(pclAnimController))
+     type : 458752
+   -
+     name : D3DXFrameNumNamedMatrices
+     procedure_id : 1866173083246459373
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXFrameNumNamedMatrices
+      Procédure D3DXFrameNumNamedMatrices(stFrameRoot est un d3dxframe)
+      renvoyer api(pd3d9.d3dx9, "D3DXFrameNumNamedMatrices", &stFrameRoot)
+     type : 458752
+   -
+     name : D3DXFrameCalculateBoundingSphere
+     procedure_id : 1866173199210603541
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXFrameCalculateBoundingSphere
+      Procédure D3DXFrameCalculateBoundingSphere(stFrameRoot est un d3dxframe, ObjectCenter est un d3dxvector3 dynamique, ObjectRadius est un reel sur 4)
+      renvoyer api(pd3d9.d3dx9, "D3DXFrameCalculateBoundingSphere", &stFrameRoot, (ObjectCenter = null ? null sinon &ObjectCenter), &ObjectRadius)
+     type : 458752
+   -
+     name : D3DXCreateKeyframedAnimationSet
+     procedure_id : 1866173456908701735
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateKeyframedAnimationSet
+      Procédure D3DXCreateKeyframedAnimationSet(Name est une chaine, TicksPerSecond est un reel sur 8, Playback est un entier sans signe, NumAnimations est un entier sans signe, NumCallbackKeys est un entier sans signe, CallbackKeys est un tableau de D3DXKEY_CALLBACK, pclAnimationSet est un ID3DXKeyframedAnimationSet dynamique)
+      	
+      	HRESULT est un entier systeme
+      	ppvAnimationSet est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreateKeyframedAnimationSet", &Name, TicksPerSecond, Playback, NumAnimations, NumCallbackKeys, ptr(CallbackKeys), &ppvAnimationSet)
+      	
+      	// Allocation
+      	__bindinterface(pclAnimationSet, ppvAnimationSet, ID3DXKeyframedAnimationSet)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXCreateCompressedAnimationSet
+     procedure_id : 1866174247182736507
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateCompressedAnimationSet
+      Procédure D3DXCreateCompressedAnimationSet(Name est une chaine, TicksPerSecond est un reel sur 8, Playback est un entier sans signe, pclCompressedData est un id3dxbuffer dynamique, NumCallbackKeys est un entier sans signe, CallbackKeys est un tableau de D3DXKEY_CALLBACK, pclAnimationSet est un ID3DXCompressedAnimationSet dynamique)
+      	
+      	HRESULT est un entier systeme
+      	ppvAnimationSet est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreateCompressedAnimationSet", &Name, TicksPerSecond, Playback, ptr(pclCompressedData), NumCallbackKeys, ptr(CallbackKeys), &ppvAnimationSet)
+      	
+      	// Allocation
+      	__bindinterface(pclAnimationSet, ppvAnimationSet, ID3DXCompressedAnimationSet)
+      	
+      renvoyer HRESULT
+     type : 458752
+   -
+     name : D3DXCreateAnimationController
+     procedure_id : 1866174543535549273
+     type_code : 15
+     code : |1-
+      // Résumé : Fonction D3DXCreateAnimationController
+      Procédure D3DXCreateAnimationController(MaxNumMatrices est un entier sans signe, MaxNumAnimationSets est un entier sans signe, MaxNumTracks est un entier sans signe, MaxNumEvents est un entier sans signe, pclAnimController est un ID3DXAnimationController dynamique)
+      	
+      	HRESULT est un entier systeme
+      	ppvAnimController est un entier systeme
+      	
+      	// Appel
+      	HRESULT = api(pd3d9.d3dx9, "D3DXCreateAnimationController", MaxNumMatrices, MaxNumAnimationSets, MaxNumTracks, MaxNumEvents, &ppvAnimController)
+      	
+      	// Allocation
+      	__bindinterface(pclAnimController, ppvAnimController, ID3DXAnimationController)
+      	
+      renvoyer HRESULT
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x10d999010f63b6d4
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
